@@ -3,12 +3,10 @@ import { redirect } from 'next/navigation';
 import archive from '../../data/archive/index.json';
 import { COOKIE_NAME, safeEqual, sessionToken } from '../auth';
 
-export const dynamic = 'force-dynamic';
+export const dynamic='force-dynamic';
 
 export default async function ArchivePage(){
-  const jar=await cookies();
-  const expected=sessionToken();
-  const actual=jar.get(COOKIE_NAME)?.value;
-  if(!expected||!safeEqual(actual,expected)) redirect('/');
-  return <main className="archive-shell"><section className="archive-page"><header className="archive-head"><div><span>PLAYSTATION-RADAR</span><h1>Ausgaben-Archiv</h1><p>Alle bisherigen täglichen Radar-Ausgaben.</p></div><a href="/radar">Aktuelle Ausgabe</a></header><div className="archive-grid">{archive.map(issue=><a className="archive-card" href={`/archive/${issue.id}`} key={issue.id}><div className="archive-number">#{issue.id}</div><div><small>{issue.date}</small><h2>{issue.edition}</h2><p>{issue.headline}</p><strong>{issue.lead}</strong></div><span className="archive-open">Öffnen →</span></a>)}</div></section></main>
+  const jar=await cookies();const expected=sessionToken();const actual=jar.get(COOKIE_NAME)?.value;
+  if(!expected||!safeEqual(actual,expected))redirect('/');
+  return <main className="archive-shell"><section className="archive-page"><header className="archive-head"><div><span>PLAYSTATION-RADAR · MAGAZIN</span><h1>Ausgaben-Archiv</h1><p>Jede Daily-Ausgabe bleibt mit ihrem damaligen Stand erhalten.</p></div><a href="/radar">Aktuelle Ausgabe →</a></header><div className="archive-grid archive-cover-grid">{archive.map(issue=><a className="archive-cover-card" href={`/archive/${issue.id}`} key={issue.id}><div className="archive-cover-image" style={{backgroundImage:`linear-gradient(180deg,rgba(3,8,18,.05),rgba(3,8,18,.92)),url("${issue.image||''}")`}}><div className="archive-cover-edition">{issue.edition}</div><div className="archive-cover-copy"><small>{issue.date}</small><h2>{issue.lead}</h2><p>{issue.headline}</p></div></div><div className="archive-cover-foot"><span>PLAYSTATION-RADAR</span><b>Ausgabe öffnen →</b></div></a>)}</div></section></main>
 }
