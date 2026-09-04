@@ -1,0 +1,55 @@
+name: Daily PlayStation Radar
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub cron uses UTC. Two entries cover CET/CEST; the Berlin-time guard below
+    # ensures the job actually updates only at 08:00 Europe/Berlin.
+    - cron: '0 6 * * *'
+    - cron: '0 7 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-playstation-radar
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Check Berlin schedule
+        id: time
+        shell: bash
+        run: |
+          HOUR=$(TZ=Europe/Berlin date +%H)
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" || "$HOUR" == "08" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check official sources and update Radar
+        if: steps.time.outputs.run == 'true'
+        run: node scripts/update-radar.mjs
+
+      - name: Commit daily update
+        if: steps.time.outputs.run == 'true'
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No Radar changes."
+            exit 0
+          fi
+          git config user.name "playstation-radar-bot"
+          git config user.email "playstation-radar-bot@users.noreply.github.com"
+          git add data/radar.json data/source-state.json
+          git commit -m "Daily Radar update $(TZ=Europe/Berlin date +%Y-%m-%d)"
+          git push
