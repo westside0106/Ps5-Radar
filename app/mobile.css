@@ -1,0 +1,336 @@
+@media (max-width: 900px) {
+  html,
+  body {
+    overflow-x: hidden;
+    background: #050b14;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  .page-shell {
+    min-height: 100dvh;
+    padding: 12px 12px calc(24px + env(safe-area-inset-bottom));
+  }
+
+  .toolbar {
+    width: 100%;
+    margin: 0 0 12px;
+    padding: 0 2px;
+  }
+
+  .logout {
+    padding: 9px 14px;
+    font-size: 14px;
+  }
+
+  .canvas-wrap {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 22px;
+    box-shadow: 0 20px 55px rgba(0, 0, 0, .32);
+  }
+
+  /* On phones the desktop 1600x900 poster is NOT scaled. The same content
+     becomes a native vertical dashboard. Inline ScaleCanvas dimensions are
+     intentionally overridden here. */
+  .canvas-host {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .canvas-scale {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+  }
+
+  .canvas {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0;
+    overflow: visible;
+    background:
+      radial-gradient(circle at 85% 8%, rgba(42, 167, 255, .16), transparent 23%),
+      radial-gradient(circle at 8% 76%, rgba(94, 232, 255, .07), transparent 24%),
+      linear-gradient(180deg, #081321, #06101c);
+  }
+
+  .canvas::after {
+    inset: 120px 0 0;
+    opacity: .15;
+    background-size: 30px 30px;
+  }
+
+  .header {
+    height: auto;
+    min-height: 86px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    align-items: center;
+    background: linear-gradient(135deg, #fbfdff, #e7f3fc);
+    color: #07111f;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    border-width: 2px;
+    box-shadow: inset 0 0 0 4px rgba(42, 167, 255, .12);
+  }
+
+  .logo::before {
+    inset: 6px;
+    border-width: 1px;
+  }
+
+  .logo::after {
+    inset: 13px;
+    border-width: 1px;
+  }
+
+  .logo i {
+    width: 20px;
+    height: 2px;
+  }
+
+  .logo b {
+    width: 7px;
+    height: 7px;
+    left: 16px;
+    top: 16px;
+  }
+
+  .kicker {
+    margin-bottom: 3px;
+    font-size: 8px;
+    letter-spacing: .22em;
+    white-space: nowrap;
+  }
+
+  .title {
+    font-size: clamp(19px, 5.6vw, 24px);
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .date {
+    min-width: 88px;
+  }
+
+  .date strong {
+    font-size: 13px;
+  }
+
+  .date span {
+    margin-top: 3px;
+    font-size: 7px;
+    letter-spacing: .08em;
+    white-space: nowrap;
+  }
+
+  .newbar {
+    height: auto;
+    min-height: 44px;
+    margin: 0 12px 12px;
+    padding: 9px 11px;
+    border-radius: 0 0 14px 14px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  .newbar .tag {
+    font-size: 10px;
+    letter-spacing: .09em;
+  }
+
+  .newbar .headline {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .newbar .count {
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .content {
+    height: auto;
+    padding: 0 12px 2px;
+    display: block;
+  }
+
+  .left,
+  .right {
+    display: block;
+  }
+
+  .secondary {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .card {
+    margin: 0 0 10px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .14);
+  }
+
+  .card .inner {
+    height: auto;
+    min-height: 118px;
+    padding: 16px;
+    gap: 18px;
+  }
+
+  .card .eyebrow {
+    font-size: 10px;
+    letter-spacing: .14em;
+  }
+
+  .card h2,
+  .card h3 {
+    margin: 6px 0 7px;
+  }
+
+  .card h2 {
+    font-size: clamp(28px, 8vw, 34px);
+  }
+
+  .card h3 {
+    font-size: 21px;
+  }
+
+  .meta {
+    max-width: 92%;
+    font-size: 14px;
+    line-height: 1.42;
+  }
+
+  .price {
+    margin-top: 9px;
+    font-size: 20px;
+  }
+
+  .lead .inner {
+    min-height: 214px;
+    padding: 20px 18px;
+  }
+
+  .lead::after {
+    right: -150px;
+    bottom: -165px;
+    width: 330px;
+    height: 330px;
+  }
+
+  .badge {
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+
+  .right {
+    margin-top: 2px;
+  }
+
+  .module .inner {
+    min-height: 104px;
+    padding: 15px 16px;
+  }
+
+  .module h3 {
+    margin: 5px 0 7px;
+    font-size: 20px;
+  }
+
+  .module p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .bottom {
+    height: auto;
+    margin: 0 12px 14px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .strip {
+    min-height: 74px;
+    padding: 15px 16px;
+    border-radius: 16px;
+    display: block;
+  }
+
+  .strip strong {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 12px;
+    letter-spacing: .03em;
+  }
+
+  .strip span {
+    display: block;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 430px) {
+  .page-shell {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .header {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .logo {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .logo b {
+    left: 14px;
+    top: 14px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .date span {
+    display: none;
+  }
+
+  .newbar,
+  .content,
+  .bottom {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
