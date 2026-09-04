@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 
 function StoryCard({ image, eyebrow, title, text, price, className = '' }) {
   return (
-    <article className={`mag-story ${className}`} style={{ backgroundImage: `linear-gradient(180deg, rgba(3,8,18,.08), rgba(3,8,18,.92)), url("${image}")` }}>
+    <article className={`mag-story ${className}`} style={{ backgroundImage: `linear-gradient(180deg, rgba(3,8,18,.06), rgba(3,8,18,.91)), url("${image}")` }}>
       <div className="mag-story-copy">
         <span className="mag-eyebrow">{eyebrow}</span>
         <h2>{title}</h2>
@@ -24,6 +24,19 @@ function Panel({ tone, icon, title, children, className = '' }) {
       <div className="mag-panel-head"><span className="mag-panel-icon">{icon}</span><h3>{title}</h3></div>
       <div className="mag-panel-body">{children}</div>
     </section>
+  );
+}
+
+function PlusCover({ kind, title }) {
+  return <div className={`plus-cover plus-cover-${kind}`}><span>PS PLUS</span><strong>{title}</strong><small>SEPTEMBER</small></div>;
+}
+
+function DealCard({ deal }) {
+  return (
+    <article className={`deal-card deal-art-${deal.art}`}>
+      <div className="deal-cover"><span className="deal-discount">{deal.discount}</span><strong>{deal.title}</strong><small>{deal.platform}</small></div>
+      <div className="deal-copy"><del>{deal.oldPrice}</del><b>{deal.price}</b></div>
+    </article>
   );
 }
 
@@ -47,19 +60,10 @@ export default async function RadarPage() {
           <div className="mag-datebox"><strong>{radar.date}</strong><span>{radar.edition}</span></div>
         </header>
 
-        <div className="mag-ticker">
-          <strong>HEUTE NEU</strong><span>{radar.newHeadline}</span><b>{radar.newCount}</b>
-        </div>
+        <div className="mag-ticker"><strong>HEUTE NEU</strong><span>{radar.newHeadline}</span><b>{radar.newCount}</b></div>
 
         <section className="mag-topgrid">
-          <StoryCard
-            className="mag-hero"
-            image={radar.leadImage}
-            eyebrow="TOP-NEWS · HEUTE ERSCHIENEN"
-            title={radar.leadTitle}
-            text={radar.leadMeta}
-            price={radar.leadPrice}
-          />
+          <StoryCard className="mag-hero" image={radar.leadImage} eyebrow="TOP-NEWS · HEUTE ERSCHIENEN" title={radar.leadTitle} text={radar.leadMeta} price={radar.leadPrice} />
           <div className="mag-side-stack">
             <StoryCard image={radar.secondary1Image} eyebrow="RELEASE" title={radar.secondary1Title} text={radar.secondary1Meta} price={radar.secondary1Price} />
             <StoryCard image={radar.secondary2Image} eyebrow="SEIT GESTERN" title={radar.secondary2Title} text={radar.secondary2Meta} price={radar.secondary2Price} />
@@ -67,43 +71,38 @@ export default async function RadarPage() {
         </section>
 
         <Panel tone="plus" icon="＋" title="PLAYSTATION PLUS · SEPTEMBER 2026" className="mag-plus">
-          <div className="plus-grid">
-            <div className="plus-lead"><span>ESSENTIAL</span><h4>{radar.psplusTitle}</h4><p>{radar.psplusText}</p></div>
-            <div className="plus-mini"><b>EXTRA</b><span>Katalog-Updates im Radar</span></div>
-            <div className="plus-mini"><b>PREMIUM</b><span>Klassiker, Trials & Cloud-Updates</span></div>
+          <div className="plus-compact">
+            <div className="plus-summary"><span>ESSENTIAL</span><h4>{radar.psplusTitle}</h4><p>{radar.psplusText}</p></div>
+            <div className="plus-covers">
+              <PlusCover kind="sniper" title="SNIPER ELITE" />
+              <PlusCover kind="mlb" title="MLB THE SHOW 26" />
+              <PlusCover kind="wobbly" title="WOBBLY LIFE" />
+              <PlusCover kind="chained" title="CHAINED ECHOES" />
+            </div>
           </div>
         </Panel>
 
-        <section className="mag-midgrid">
-          <Panel tone="danger" icon="⌛" title="VERLÄSST / ENDET BALD">
-            <h4>{radar.leavingTitle}</h4><p>{radar.leavingText}</p><div className="mag-deadline">NOCH 6 TAGE</div>
+        <section className="mag-focusgrid">
+          <Panel tone="danger" icon="⌛" title="ENDET BALD" className="compact-panel">
+            <div className="deadline-row"><div><h4>{radar.leavingTitle}</h4><p>{radar.leavingText}</p></div><div className="mag-deadline">6 TAGE</div></div>
           </Panel>
-          <Panel tone="store" icon="◆" title="AKTUELLE STORE-DEALS">
-            <h4>{radar.storeTitle}</h4><p>{radar.storeText}</p><div className="deal-row"><span>STORE</span><b>bis 10.09.</b></div>
-          </Panel>
-          <Panel tone="ea" icon="EA" title="EA PLAY AUF PLAYSTATION">
-            <p>{radar.benefitsText}</p><div className="ea-chip">FC 27 · 10h Trial ab 18.09.</div>
+          <Panel tone="store" icon="◆" title="STORE-DEALS" className="store-panel">
+            <div className="store-intro"><div><h4>{radar.storeTitle}</h4><p>{radar.storeText}</p></div><span>bis 10.09.</span></div>
+            <div className="deal-grid">{radar.deals.map((deal) => <DealCard key={deal.title} deal={deal} />)}</div>
           </Panel>
         </section>
 
-        <section className="mag-bottomgrid">
-          <Panel tone="ubi" icon="◎" title="UBISOFT+">
-            <p>{radar.ubisoftText}</p><div className="ubi-list"><span>Assassin’s Creed</span><span>Far Cry</span><span>Watch Dogs</span></div>
-          </Panel>
+        <section className="benefit-grid">
+          <Panel tone="ea" icon="EA" title="EA PLAY"><p>{radar.benefitsText}</p><div className="ea-chip">FC 27 · 10h Trial ab 18.09.</div></Panel>
+          <Panel tone="ubi" icon="◎" title="UBISOFT+"><p>{radar.ubisoftText}</p><div className="ubi-list"><span>Assassin’s Creed</span><span>Far Cry</span><span>Watch Dogs</span></div></Panel>
+        </section>
+
+        <section className="mag-bottomgrid v21-bottom">
           <Panel tone="releases" icon="▦" title="KOMMENDE PS5-RELEASES">
-            <div className="release-list">
-              <div><b>04.09.</b><span>Onimusha + NBA 2K27</span></div>
-              <div><b>08.09.</b><span>Mewgenics</span></div>
-              <div><b>15.09.</b><span>Marvel’s Wolverine</span></div>
-            </div>
+            <div className="release-list"><div><b>04.09.</b><span>Onimusha + NBA 2K27</span></div><div><b>08.09.</b><span>Mewgenics</span></div><div><b>15.09.</b><span>Marvel’s Wolverine</span></div></div>
           </Panel>
           <Panel tone="quick" icon="✓" title="KURZ & KOMPAKT">
-            <ul className="quick-list">
-              <li>Onimusha und NBA 2K27 heute neu</li>
-              <li>PS Plus September-Spiele verfügbar</li>
-              <li>gamescom-Rabatte bis 10.09.</li>
-              <li>FC 27 Trial ab 18.09. über EA Play</li>
-            </ul>
+            <ul className="quick-list"><li>Onimusha und NBA 2K27 heute neu</li><li>PS Plus September-Spiele verfügbar</li><li>gamescom-Rabatte bis 10.09.</li><li>FC 27 Trial ab 18.09. über EA Play</li></ul>
           </Panel>
         </section>
 
