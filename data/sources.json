@@ -2,7 +2,10 @@
   "playstationBlogFeed": "https://blog.de.playstation.com/feed/",
   "monthlyReleases": "https://blog.de.playstation.com/?p=204875",
   "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
+  "psPlusWhatsNew": "https://www.playstation.com/de-de/ps-plus/whats-new/",
   "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
+  "eaPlayGeneral": "https://www.ea.com/de-de/ea-play",
+  "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
   "storeDeals": [
     {
       "title": "Hogwarts Legacy",
