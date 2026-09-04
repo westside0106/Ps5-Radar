@@ -1,6 +1,7 @@
 import './globals.css';
 import './mobile.css';
 import './magazine.css';
+import './archive.css';
 
 export const metadata = {
   title: 'PlayStation Radar',
