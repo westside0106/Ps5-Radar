@@ -18,6 +18,7 @@
   "secondary2Meta": "Seit 03.09. auf PS5 · Dark-Fantasy Open-World-RPG",
   "secondary2Price": "69,99 €",
   "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/07/174ccb5bb7aba84e2ebd620623f858b3bea0b628.jpg?crop_strategy=smart&resize=1088%2C612",
+  "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
   "plusGames": [
@@ -47,7 +48,11 @@
   ],
   "leavingTitle": "gamescom-Rabatte laufen aus",
   "leavingText": "Aktuelle Store-Aktion endet am 10.09., 00:59 Uhr.",
+  "eaTitle": "FC 27 · 10h Trial ab 18.09.",
   "benefitsText": "EA Play: FC 27 10h-Trial ab 18.09.; 10 % auf digitale EA-Käufe und laufende Mitgliederbelohnungen.",
-  "ubisoftText": "Heute keine neue PS5-spezifische Ubisoft+-Aktion verifiziert.",
+  "eaItems": ["10h-Trials ausgewählter Neuerscheinungen","10 % auf digitale EA-Käufe","Monatliche Mitgliederbelohnungen"],
+  "ubisoftTitle": "Ubisoft+ Classics",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar; in PS Plus Extra und Premium enthalten.",
+  "ubisoftItems": ["Ubisoft+ Classics","PS Plus Extra","PS Plus Premium"],
   "radarCheck": "Stand 04.09.2026 · Offizielle PlayStation- & EA-Quellen geprüft"
 }
