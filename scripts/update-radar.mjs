@@ -1,0 +1,69 @@
+import fs from 'node:fs/promises';
+
+const radarPath = new URL('../data/radar.json', import.meta.url);
+const sourcesPath = new URL('../data/sources.json', import.meta.url);
+const statePath = new URL('../data/source-state.json', import.meta.url);
+
+const radar = JSON.parse(await fs.readFile(radarPath, 'utf8'));
+const sources = JSON.parse(await fs.readFile(sourcesPath, 'utf8'));
+let oldState = {};
+try { oldState = JSON.parse(await fs.readFile(statePath, 'utf8')); } catch {}
+
+const now = new Date();
+const berlinDate = new Intl.DateTimeFormat('de-DE', { timeZone:'Europe/Berlin', day:'2-digit', month:'2-digit', year:'numeric' }).format(now);
+
+async function get(url) {
+  const res = await fetch(url, { headers: { 'user-agent':'PlayStation-Radar/1.0 (+private daily source checker)', accept:'text/html,application/rss+xml,application/xml;q=0.9,*/*;q=0.8' }, redirect:'follow' });
+  if (!res.ok) throw new Error(`${res.status} ${url}`);
+  return await res.text();
+}
+
+function strip(s='') { return s.replace(/<!\[CDATA\[|\]\]>/g,'').replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&#8217;/g,'’').replace(/&#8211;/g,'–').replace(/\s+/g,' ').trim(); }
+function firstItems(xml, limit=12) {
+  return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].slice(0,limit).map(m=>{
+    const x=m[1];
+    return {
+      title: strip(x.match(/<title>([\s\S]*?)<\/title>/i)?.[1]),
+      link: strip(x.match(/<link>([\s\S]*?)<\/link>/i)?.[1]),
+      pubDate: strip(x.match(/<pubDate>([\s\S]*?)<\/pubDate>/i)?.[1])
+    };
+  }).filter(x=>x.title&&x.link);
+}
+
+const checks = {};
+const errors = [];
+try {
+  const feed = await get(sources.playstationBlogFeed);
+  const posts = firstItems(feed);
+  checks.playstationBlog = { ok:true, posts };
+  const previous = new Set(oldState.playstationBlog?.posts?.map(x=>x.link) || []);
+  const newPosts = posts.filter(x=>!previous.has(x.link));
+  if (newPosts.length) {
+    checks.playstationBlog.newPosts = newPosts;
+    radar.sourceAlerts = newPosts.slice(0,5).map(x=>({ title:x.title, url:x.link, source:'PlayStation Blog DE' }));
+  } else {
+    radar.sourceAlerts = [];
+  }
+} catch (e) { errors.push(`PlayStation Blog: ${e.message}`); checks.playstationBlog={ok:false}; }
+
+for (const [key,url] of Object.entries({ monthlyReleases:sources.monthlyReleases, psPlusMonthly:sources.psPlusMonthly, eaPlay:sources.eaPlay })) {
+  try { const body=await get(url); checks[key]={ok:true,bytes:body.length}; }
+  catch(e){ errors.push(`${key}: ${e.message}`); checks[key]={ok:false}; }
+}
+
+checks.storeDeals=[];
+for (const deal of sources.storeDeals || []) {
+  try { const body=await get(deal.url); checks.storeDeals.push({title:deal.title,ok:true,bytes:body.length}); }
+  catch(e){ errors.push(`${deal.title}: ${e.message}`); checks.storeDeals.push({title:deal.title,ok:false}); }
+}
+
+radar.date = berlinDate;
+radar.newCount = `${berlinDate.slice(0,5)} · LIVE`;
+radar.radarCheck = `Stand ${berlinDate} · ${errors.length ? `Quellencheck mit ${errors.length} Warnung(en)` : 'Offizielle PlayStation- & EA-Quellen geprüft'}`;
+radar.sourceCheck = { checkedAt:now.toISOString(), errors };
+
+await fs.writeFile(radarPath, JSON.stringify(radar,null,2)+'\n');
+await fs.writeFile(statePath, JSON.stringify({checkedAt:now.toISOString(),...checks},null,2)+'\n');
+
+console.log(`Radar checked for ${berlinDate}. ${errors.length} warning(s).`);
+if (errors.length) console.log(errors.join('\n'));
