@@ -18,11 +18,16 @@
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Sniper Elite: Resistance · MLB The Show 26 · Wobbly Life · Chained Echoes — verfügbar bis 05.10.",
   "storeTitle": "gamescom-Rabatte aktiv",
-  "storeText": "Die aktuelle PlayStation-Store-Aktion läuft noch bis 10.09., 00:59 Uhr.",
+  "storeText": "Ausgewählte aktuelle Angebote im deutschen PlayStation Store. Aktion bis 10.09., 00:59 Uhr.",
+  "deals": [
+    {"title":"Hogwarts Legacy","platform":"PS5","discount":"-85 %","price":"11,24 €","oldPrice":"74,99 €","art":"hogwarts"},
+    {"title":"Star Wars Outlaws","platform":"PS5","discount":"-75 %","price":"19,99 €","oldPrice":"79,99 €","art":"outlaws"},
+    {"title":"Red Dead Redemption","platform":"PS4 · PS5","discount":"-50 %","price":"24,99 €","oldPrice":"49,99 €","art":"rdr"}
+  ],
   "releasesTitle": "Heute + als Nächstes",
   "releasesText": "04.09.: Onimusha + NBA 2K27 · 08.09.: Mewgenics · 15.09.: Marvel’s Wolverine.",
-  "leavingTitle": "Rabatte enden bald",
-  "leavingText": "Die gamescom-Rabatte im PlayStation Store enden am 10.09. um 00:59 Uhr.",
+  "leavingTitle": "gamescom-Rabatte laufen aus",
+  "leavingText": "Noch bis 10.09., 00:59 Uhr — danach endet die aktuelle Store-Aktion.",
   "benefitsText": "EA Play: FC 27 10h-Trial ab 18.09.; 10 % auf digitale EA-Käufe und laufende Mitgliederbelohnungen.",
   "ubisoftText": "Heute keine neue PS5-spezifische Ubisoft+-Aktion verifiziert.",
   "radarCheck": "Stand 04.09.2026 · Offizielle PlayStation- & EA-Quellen geprüft"
