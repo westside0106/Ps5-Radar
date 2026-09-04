@@ -1,0 +1,20 @@
+{
+  "playstationBlogFeed": "https://blog.de.playstation.com/feed/",
+  "monthlyReleases": "https://blog.de.playstation.com/?p=204875",
+  "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
+  "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
+  "storeDeals": [
+    {
+      "title": "Hogwarts Legacy",
+      "url": "https://store.playstation.com/de-de/concept/232447"
+    },
+    {
+      "title": "Star Wars Outlaws",
+      "url": "https://store.playstation.com/de-de/product/EP0001-PPSA08260_00-GAME000000000000"
+    },
+    {
+      "title": "Red Dead Redemption",
+      "url": "https://store.playstation.com/de-de/concept/10006164"
+    }
+  ]
+}
