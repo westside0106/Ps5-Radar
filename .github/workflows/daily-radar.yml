@@ -38,6 +38,9 @@ jobs:
       - name: Check official sources and update Radar
         if: steps.time.outputs.run == 'true'
         run: node scripts/update-radar.mjs
+      - name: Validate prices, releases and stale labels
+        if: steps.time.outputs.run == 'true'
+        run: node scripts/sanitize-radar.mjs
       - name: Commit daily issue and archive
         if: steps.time.outputs.run == 'true'
         shell: bash
