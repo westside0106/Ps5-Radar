@@ -1,8 +1,8 @@
 {
-  "date": "04.09.2026",
-  "edition": "AUSGABE #001",
-  "newHeadline": "2 PS5-RELEASES HEUTE",
-  "newCount": "04.09. · LIVE",
+  "date": "05.09.2026",
+  "edition": "AUSGABE #002",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "05.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "Heute neu auf PS5 · Capcom · Samurai-Action in Kyoto",
@@ -22,37 +22,125 @@
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
   "plusGames": [
-    {"title":"Sniper Elite: Resistance","image":"https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/b026676dfa9d7639fef041a9f0ed4c6d076e2ad3647eae1c.png"},
-    {"title":"MLB The Show 26","image":"https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/fad9745a2bf4a41089b90514eb9ea126c4099bf281f96d0b.jpg"},
-    {"title":"Wobbly Life","image":"https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/l2VMZjLR9en9orx3nHGCaj8U.png"},
-    {"title":"Chained Echoes","image":"https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/2dmcrpRqwwcV89IGO9TqQsNd.jpg"}
+    {
+      "title": "Sniper Elite: Resistance",
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/647b263fa902f91c5952957ae44f11ee14d70d52-scaled.jpg"
+    },
+    {
+      "title": "MLB The Show 26",
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/0e750aeb538a3a762afb44ac9b8e2b3a5ae2c24a.jpg"
+    },
+    {
+      "title": "Wobbly Life",
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/478ff13a49601ba96c7f2b89dfec0de1f69299fb.jpg"
+    },
+    {
+      "title": "Chained Echoes",
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/ea3c4d6d1b631d6797579b6c6002a1e2578348f9.jpg"
+    }
   ],
   "storeTitle": "gamescom-Rabatte aktiv",
   "storeText": "Ausgewählte aktuelle Angebote im deutschen PlayStation Store.",
   "storeEnd": "2026-09-10T00:59:00+02:00",
   "deals": [
-    {"title":"Hogwarts Legacy","platform":"PS5","discount":"-85 %","price":"11,24 €","oldPrice":"74,99 €","image":"https://image.api.playstation.com/vulcan/ap/rnd/202503/2716/9d691701d881f2d5cd2275b5b3cbebca3c82046a7ba2a77b.jpg"},
-    {"title":"Star Wars Outlaws","platform":"PS5","discount":"-75 %","price":"19,99 €","oldPrice":"79,99 €","image":"https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-hero-banner-desktop-01-en-17jul23"},
-    {"title":"Red Dead Redemption","platform":"PS4 · PS5","discount":"-50 %","price":"24,99 €","oldPrice":"49,99 €","image":"https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-cover-01-en-9aug23"}
+    {
+      "title": "Hogwarts Legacy",
+      "platform": "PS5",
+      "discount": "-85 %",
+      "price": "11,24 €",
+      "oldPrice": "74,99 €",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2716/9d691701d881f2d5cd2275b5b3cbebca3c82046a7ba2a77b.jpg"
+    },
+    {
+      "title": "Star Wars Outlaws",
+      "platform": "PS5",
+      "discount": "-75 %",
+      "price": "19,99 €",
+      "oldPrice": "79,99 €",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-hero-banner-desktop-01-en-17jul23"
+    },
+    {
+      "title": "Red Dead Redemption",
+      "platform": "PS4 · PS5",
+      "discount": "-50 %",
+      "price": "5 €",
+      "oldPrice": "99,99 €",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-cover-01-en-9aug23"
+    }
   ],
   "releases": [
-    {"date":"04.09.","title":"Onimusha + NBA 2K27"},
-    {"date":"08.09.","title":"Mewgenics"},
-    {"date":"15.09.","title":"Marvel’s Wolverine"}
+    {
+      "date": "20.09.",
+      "title": "The Blood of Dawnwalker"
+    },
+    {
+      "date": "20.09.",
+      "title": "EA Sports FC 27"
+    }
   ],
   "quickItems": [
-    "Onimusha und NBA 2K27 heute neu",
-    "PS Plus September-Spiele verfügbar",
-    "gamescom-Rabatte bis 10.09.",
-    "FC 27 Trial ab 18.09. über EA Play"
+    "September-Spiele sind live",
+    "FC 27 · 10h Trial ab 18.09."
   ],
   "leavingTitle": "gamescom-Rabatte laufen aus",
   "leavingText": "Aktuelle Store-Aktion endet am 10.09., 00:59 Uhr.",
   "eaTitle": "FC 27 · 10h Trial ab 18.09.",
-  "benefitsText": "EA Play: FC 27 10h-Trial ab 18.09.; 10 % auf digitale EA-Käufe und laufende Mitgliederbelohnungen.",
-  "eaItems": ["10h-Trials ausgewählter Neuerscheinungen","10 % auf digitale EA-Käufe","Monatliche Mitgliederbelohnungen"],
+  "benefitsText": "EA Play: FC 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
+  "eaItems": [
+    "10 % auf digitale EA-Käufe",
+    "Monatliche Mitgliederbelohnungen",
+    "The Play List"
+  ],
   "ubisoftTitle": "Ubisoft+ Classics",
-  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar; in PS Plus Extra und Premium enthalten.",
-  "ubisoftItems": ["Ubisoft+ Classics","PS Plus Extra","PS Plus Premium"],
-  "radarCheck": "Stand 04.09.2026 · Offizielle PlayStation- & EA-Quellen geprüft"
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftItems": [
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
+  ],
+  "radarCheck": "Stand 05.09.2026 · 6 Quellen erfolgreich geprüft",
+  "sourceAlerts": [
+    {
+      "title": "State of Play & State of Play Japan: alle Ankündigungen/Trailer",
+      "url": "https://blog.de.playstation.com/2026/09/03/state-of-play-state-of-play-japan-alle-ankuendigungen-trailer/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Fate/Extra Record erscheint am 28. Januar 2027 für PS5 und PS4",
+      "url": "https://blog.de.playstation.com/2026/09/03/fate-extra-record-launch-28-januar-2027/",
+      "source": "PlayStation Blog DE",
+      "category": "release"
+    },
+    {
+      "title": "Final Fantasy VII Revelation erscheint am 8. April 2027 auf PS5",
+      "url": "https://blog.de.playstation.com/2026/09/03/final-fantasy-vii-revelation-erscheint-am-8-april-2027-auf-ps5/",
+      "source": "PlayStation Blog DE",
+      "category": "release"
+    },
+    {
+      "title": "Rhapsody in Scarlet für PS5 angekündigt",
+      "url": "https://blog.de.playstation.com/2026/09/03/rhapsody-in-scarlet-fuer-ps5-angekuendigt/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Lüftet die Geheimnisse von Uncanyon, einem neuen PS5-Adventure, das 2027 erscheint",
+      "url": "https://blog.de.playstation.com/2026/09/03/uncanyon-ps5-adventure-2027-ankuendigung/",
+      "source": "PlayStation Blog DE",
+      "category": "release"
+    }
+  ],
+  "editorial": [],
+  "health": {
+    "status": "ok",
+    "checkedAt": "2026-09-05T06:27:35.197Z",
+    "okSources": 6,
+    "warnings": 0,
+    "lastSuccessfulCheck": "2026-09-05T06:27:35.197Z"
+  },
+  "sourceCheck": {
+    "checkedAt": "2026-09-05T06:27:35.197Z",
+    "errors": []
+  }
 }
