@@ -28,6 +28,7 @@ function strip(s='') {
     .replace(/&amp;|&#038;/g,'&')
     .replace(/&euro;|&#8364;/g,'€')
     .replace(/&#8217;/g,'’')
+    .replace(/&nbsp;/g,' ')
     .replace(/\s+/g,' ')
     .trim();
 }
@@ -54,21 +55,30 @@ function parsePrimarySale(html, title) {
 }
 
 function parseReleaseList(html) {
-  const out = [];
+  const text = strip(html);
+  const marker = 'Die September-Highlights im PlayStation Store kaufen:';
+  const start = text.indexOf(marker);
+  if (start < 0) return [];
 
-  for (const m of html.matchAll(/<li[^>]*>\s*([0-3]?\d)\.\s*September:\s*([\s\S]*?)<\/li>/gi)) {
+  const listStart = start + marker.length;
+  const releaseAt = text.indexOf('Release:', listStart);
+  if (releaseAt < 0) return [];
+
+  const segment = text.slice(listStart, releaseAt).trim();
+  const out = [];
+  for (const m of segment.matchAll(/([0-3]?\d)\.\s*September:\s*(.+?)(?=\s+[0-3]?\d\.\s*September:|$)/gi)) {
     const day = Number(m[1]);
-    const title = strip(m[2]);
-    if (day && title && title.length < 100) out.push({ date: `${String(day).padStart(2,'0')}.09.`, title });
+    const title = m[2].trim();
+    if (day && title && title.length < 120) out.push({ date: `${String(day).padStart(2,'0')}.09.`, title });
   }
 
-  if (out.length < 8) {
-    for (const h of html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)) {
-      const title = strip(h[1]);
-      if (!title || /Schlusswort|September-Highlights|PS5-Spiele September/i.test(title)) continue;
-      const after = html.slice((h.index ?? 0) + h[0].length, (h.index ?? 0) + h[0].length + 1800);
-      const dm = strip(after).match(/Release:\s*([0-3]?\d)\.\s*September\s*2026/i);
-      if (dm) out.push({ date: `${String(Number(dm[1])).padStart(2,'0')}.09.`, title });
+  // WordPress appends the first article heading directly after the compact list.
+  // Remove that duplicated suffix from the final list item when present.
+  if (out.length > 1) {
+    const firstTitle = out[0].title;
+    const last = out.at(-1);
+    if (last.title.toLowerCase().endsWith(` ${firstTitle.toLowerCase()}`)) {
+      last.title = last.title.slice(0, -(firstTitle.length + 1)).trim();
     }
   }
 
