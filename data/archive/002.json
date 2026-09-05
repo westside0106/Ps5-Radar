@@ -5,17 +5,17 @@
   "newCount": "05.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
-  "leadMeta": "Heute neu auf PS5 · Capcom · Samurai-Action in Kyoto",
+  "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
   "leadPrice": "79,99 €",
   "leadImage": "https://i.ytimg.com/vi/UZYxGBeGOzY/maxresdefault.jpg",
   "secondary1Title": "NBA 2K27",
   "secondary1Date": "04.09.2026",
-  "secondary1Meta": "Heute neu auf PS5 · Basketball · The City erstmals Co-Ed",
+  "secondary1Meta": "PS5 · Basketball · The City erstmals Co-Ed",
   "secondary1Price": "79,99 €",
   "secondary1Image": "https://i.ytimg.com/vi/5l-a3U3Y8aA/maxresdefault.jpg",
   "secondary2Title": "The Blood of Dawnwalker",
   "secondary2Date": "03.09.2026",
-  "secondary2Meta": "Seit 03.09. auf PS5 · Dark-Fantasy Open-World-RPG",
+  "secondary2Meta": "PS5 · Dark-Fantasy Open-World-RPG",
   "secondary2Price": "69,99 €",
   "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/07/174ccb5bb7aba84e2ebd620623f858b3bea0b628.jpg?crop_strategy=smart&resize=1088%2C612",
   "psplusLabel": "SEPTEMBER 2026",
@@ -63,19 +63,31 @@
       "title": "Red Dead Redemption",
       "platform": "PS4 · PS5",
       "discount": "-50 %",
-      "price": "5 €",
-      "oldPrice": "99,99 €",
+      "price": "24,99 €",
+      "oldPrice": "49,99 €",
       "image": "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-cover-01-en-9aug23"
     }
   ],
   "releases": [
     {
-      "date": "20.09.",
-      "title": "The Blood of Dawnwalker"
+      "date": "08.09.",
+      "title": "Mewgenics"
     },
     {
-      "date": "20.09.",
-      "title": "EA Sports FC 27"
+      "date": "15.09.",
+      "title": "Marvel’s Wolverine"
+    },
+    {
+      "date": "16.09.",
+      "title": "Aniimo"
+    },
+    {
+      "date": "24.09.",
+      "title": "Control Resonant"
+    },
+    {
+      "date": "24.09.",
+      "title": "Silent Hill: Townfall"
     }
   ],
   "quickItems": [
@@ -99,48 +111,17 @@
     "PS Plus Premium"
   ],
   "radarCheck": "Stand 05.09.2026 · 6 Quellen erfolgreich geprüft",
-  "sourceAlerts": [
-    {
-      "title": "State of Play & State of Play Japan: alle Ankündigungen/Trailer",
-      "url": "https://blog.de.playstation.com/2026/09/03/state-of-play-state-of-play-japan-alle-ankuendigungen-trailer/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
-    {
-      "title": "Fate/Extra Record erscheint am 28. Januar 2027 für PS5 und PS4",
-      "url": "https://blog.de.playstation.com/2026/09/03/fate-extra-record-launch-28-januar-2027/",
-      "source": "PlayStation Blog DE",
-      "category": "release"
-    },
-    {
-      "title": "Final Fantasy VII Revelation erscheint am 8. April 2027 auf PS5",
-      "url": "https://blog.de.playstation.com/2026/09/03/final-fantasy-vii-revelation-erscheint-am-8-april-2027-auf-ps5/",
-      "source": "PlayStation Blog DE",
-      "category": "release"
-    },
-    {
-      "title": "Rhapsody in Scarlet für PS5 angekündigt",
-      "url": "https://blog.de.playstation.com/2026/09/03/rhapsody-in-scarlet-fuer-ps5-angekuendigt/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
-    {
-      "title": "Lüftet die Geheimnisse von Uncanyon, einem neuen PS5-Adventure, das 2027 erscheint",
-      "url": "https://blog.de.playstation.com/2026/09/03/uncanyon-ps5-adventure-2027-ankuendigung/",
-      "source": "PlayStation Blog DE",
-      "category": "release"
-    }
-  ],
+  "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-05T06:27:35.197Z",
+    "checkedAt": "2026-09-05T06:36:13.336Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-05T06:27:35.197Z"
+    "lastSuccessfulCheck": "2026-09-05T06:36:13.336Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-05T06:27:35.197Z",
+    "checkedAt": "2026-09-05T06:36:13.336Z",
     "errors": []
   }
 }

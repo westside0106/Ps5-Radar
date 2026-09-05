@@ -115,13 +115,13 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-05T06:34:42.413Z",
+    "checkedAt": "2026-09-05T06:36:13.336Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-05T06:34:42.413Z"
+    "lastSuccessfulCheck": "2026-09-05T06:36:13.336Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-05T06:34:42.413Z",
+    "checkedAt": "2026-09-05T06:36:13.336Z",
     "errors": []
   }
 }
