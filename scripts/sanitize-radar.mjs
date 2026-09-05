@@ -2,6 +2,8 @@ import fs from 'node:fs/promises';
 
 const radarPath = new URL('../data/radar.json', import.meta.url);
 const sourcesPath = new URL('../data/sources.json', import.meta.url);
+const archiveDir = new URL('../data/archive/', import.meta.url);
+const archiveIndexPath = new URL('../data/archive/index.json', import.meta.url);
 const radar = JSON.parse(await fs.readFile(radarPath, 'utf8'));
 const sources = JSON.parse(await fs.readFile(sourcesPath, 'utf8'));
 
@@ -72,8 +74,6 @@ function parseReleaseList(html) {
     if (day && title && title.length < 120) out.push({ date: `${String(day).padStart(2,'0')}.09.`, title });
   }
 
-  // WordPress appends the first article heading directly after the compact list.
-  // Remove that duplicated suffix from the final list item when present.
   if (out.length > 1) {
     const firstTitle = out[0].title;
     const last = out.at(-1);
@@ -91,6 +91,34 @@ function normalizeMeta(dateKey, metaKey) {
   radar[metaKey] = radar[metaKey]
     .replace(/^Heute neu auf PS5\s*·\s*/i, 'PS5 · ')
     .replace(/^Seit\s+\d{2}\.\d{2}\.\s+auf PS5\s*·\s*/i, 'PS5 · ');
+}
+
+async function writeValidatedArchive() {
+  await fs.mkdir(archiveDir, { recursive:true });
+  let index = [];
+  try { index = JSON.parse(await fs.readFile(archiveIndexPath, 'utf8')); } catch {}
+
+  const match = String(radar.edition || '').match(/#(\d+)/);
+  if (!match) throw new Error('Ausgabennummer fehlt');
+  const id = String(Number(match[1])).padStart(3, '0');
+  const file = `${id}.json`;
+
+  await fs.writeFile(new URL(file, archiveDir), JSON.stringify(radar, null, 2) + '\n');
+
+  const item = {
+    id,
+    edition: radar.edition,
+    date: radar.date,
+    headline: radar.newHeadline,
+    lead: radar.leadTitle,
+    image: radar.leadImage,
+    file
+  };
+  const existing = index.findIndex(x => x.id === id);
+  if (existing >= 0) index[existing] = item;
+  else index.unshift(item);
+  index.sort((a,b)=>Number(b.id)-Number(a.id));
+  await fs.writeFile(archiveIndexPath, JSON.stringify(index, null, 2) + '\n');
 }
 
 const problems = [];
@@ -130,4 +158,5 @@ if (problems.length) {
 }
 
 await fs.writeFile(radarPath, JSON.stringify(radar,null,2)+'\n');
-console.log('Radar safety validation passed.');
+await writeValidatedArchive();
+console.log(`Radar safety validation passed; ${radar.edition} archived from validated data.`);
