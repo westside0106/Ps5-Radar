@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-05T06:27:35.197Z",
+  "checkedAt": "2026-09-05T06:34:42.413Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,72 +54,11 @@
         "pubDate": "Thu, 03 Sep 2026 14:52:48 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "State of Play & State of Play Japan: alle Ankündigungen/Trailer",
-        "link": "https://blog.de.playstation.com/2026/09/03/state-of-play-state-of-play-japan-alle-ankuendigungen-trailer/",
-        "pubDate": "Thu, 03 Sep 2026 18:13:29 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Fate/Extra Record erscheint am 28. Januar 2027 für PS5 und PS4",
-        "link": "https://blog.de.playstation.com/2026/09/03/fate-extra-record-launch-28-januar-2027/",
-        "pubDate": "Thu, 03 Sep 2026 17:31:33 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Final Fantasy VII Revelation erscheint am 8. April 2027 auf PS5",
-        "link": "https://blog.de.playstation.com/2026/09/03/final-fantasy-vii-revelation-erscheint-am-8-april-2027-auf-ps5/",
-        "pubDate": "Thu, 03 Sep 2026 16:46:30 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Rhapsody in Scarlet für PS5 angekündigt",
-        "link": "https://blog.de.playstation.com/2026/09/03/rhapsody-in-scarlet-fuer-ps5-angekuendigt/",
-        "pubDate": "Thu, 03 Sep 2026 16:27:14 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Lüftet die Geheimnisse von Uncanyon, einem neuen PS5-Adventure, das 2027 erscheint",
-        "link": "https://blog.de.playstation.com/2026/09/03/uncanyon-ps5-adventure-2027-ankuendigung/",
-        "pubDate": "Thu, 03 Sep 2026 16:12:12 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Hunter’s Moon, ein immersiver historischer Folk-Horror, erscheint am 26. Oktober für PS5",
-        "link": "https://blog.de.playstation.com/2026/09/03/hunters-moon-folk-horror-ps5-26-oktober/",
-        "pubDate": "Thu, 03 Sep 2026 16:01:27 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Final Fantasy Resonance-Demo für PS5 ab heute verfügbar, Sephiroth enthüllt",
-        "link": "https://blog.de.playstation.com/2026/09/03/final-fantasy-resonance-demo-fuer-ps5-ab-heute-verfuegbar-sephiroth-enthuellt/",
-        "pubDate": "Thu, 03 Sep 2026 15:41:07 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Erster Blick auf die Grand Theft Auto VI Limited-Edition DualSense Wireless-Controller",
-        "link": "https://blog.de.playstation.com/2026/09/03/erster-blick-auf-die-grand-theft-auto-vi-limited-edition-dualsense-wireless-controller/",
-        "pubDate": "Thu, 03 Sep 2026 15:23:48 +0000",
-        "category": "news"
-      },
-      {
-        "title": "„Spec IV“-Aktualisierung für Gran Turismo 7 erscheint noch in diesem Jahr in zwei Teilen",
-        "link": "https://blog.de.playstation.com/2026/09/03/spec-iv-aktualisierung-fuer-gran-turismo-7-erscheint-noch-in-diesem-jahr-in-zwei-teilen/",
-        "pubDate": "Thu, 03 Sep 2026 15:06:11 +0000",
-        "category": "release"
-      },
-      {
-        "title": "30 Jahre Spielfreude zum Selberbauen: Der erste Blick auf die LEGO® PlayStation™",
-        "link": "https://blog.de.playstation.com/2026/09/03/30-jahre-spielfreude-zum-selberbauen-der-erste-blick-auf-die-lego-playstation/",
-        "pubDate": "Thu, 03 Sep 2026 14:52:48 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211741,
+    "bytes": 211791,
     "schedule": [
       {
         "date": "03.09.",
@@ -161,7 +100,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178332,
+    "bytes": 178382,
     "updated": true,
     "parsed": {
       "games": [
@@ -196,7 +135,7 @@
   },
   "eaPlay": {
     "ok": true,
-    "bytes": 241948,
+    "bytes": 241947,
     "updated": true,
     "parsed": {
       "trial": true,
@@ -209,7 +148,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 162701,
+    "bytes": 162713,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
