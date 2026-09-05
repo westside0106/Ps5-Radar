@@ -55,11 +55,23 @@ function parsePrimarySale(html, title) {
 
 function parseReleaseList(html) {
   const out = [];
+
   for (const m of html.matchAll(/<li[^>]*>\s*([0-3]?\d)\.\s*September:\s*([\s\S]*?)<\/li>/gi)) {
     const day = Number(m[1]);
     const title = strip(m[2]);
     if (day && title && title.length < 100) out.push({ date: `${String(day).padStart(2,'0')}.09.`, title });
   }
+
+  if (out.length < 8) {
+    for (const h of html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)) {
+      const title = strip(h[1]);
+      if (!title || /Schlusswort|September-Highlights|PS5-Spiele September/i.test(title)) continue;
+      const after = html.slice((h.index ?? 0) + h[0].length, (h.index ?? 0) + h[0].length + 1800);
+      const dm = strip(after).match(/Release:\s*([0-3]?\d)\.\s*September\s*2026/i);
+      if (dm) out.push({ date: `${String(Number(dm[1])).padStart(2,'0')}.09.`, title });
+    }
+  }
+
   return out.filter((x,i,a)=>a.findIndex(y=>y.date===x.date && y.title.toLowerCase()===x.title.toLowerCase())===i)
     .sort((a,b)=>Number(a.date.slice(0,2))-Number(b.date.slice(0,2)));
 }
