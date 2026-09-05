@@ -1,5 +1,4 @@
 name: Daily PlayStation Radar
-# Manual smoke-test trigger: 2026-09-05 09:35 Europe/Berlin
 
 on:
   workflow_dispatch:
@@ -9,7 +8,9 @@ on:
       - '.github/workflows/daily-radar.yml'
       - 'scripts/update-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
+      - 'scripts/screenshot-radar.mjs'
       - 'data/sources.json'
+      - 'package.json'
   schedule:
     - cron: '0 6 * * *'
     - cron: '0 7 * * *'
@@ -45,16 +46,37 @@ jobs:
       - name: Validate prices, releases and stale labels
         if: steps.time.outputs.run == 'true'
         run: node scripts/sanitize-radar.mjs
-      - name: Commit daily issue and archive
+      - name: Install screenshot renderer
+        if: steps.time.outputs.run == 'true'
+        run: |
+          npm install --package-lock=false --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Render private magazine PNG
+        if: steps.time.outputs.run == 'true'
+        shell: bash
+        env:
+          RADAR_PASSWORD: radar-local
+          RADAR_SESSION_SECRET: radar-local-screenshot-secret
+          RADAR_SCREENSHOT_PASSWORD: radar-local
+        run: |
+          npm run dev -- --hostname 127.0.0.1 > /tmp/radar-next.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
+          for i in {1..60}; do
+            if curl -fsS http://127.0.0.1:3000/ >/dev/null; then break; fi
+            sleep 1
+          done
+          npm run radar:screenshot
+      - name: Commit daily issue, archive and PNG
         if: steps.time.outputs.run == 'true'
         shell: bash
         run: |
-          if git diff --quiet; then
+          if git diff --quiet && [ -z "$(git status --porcelain data/daily)" ]; then
             echo "No Radar changes."
             exit 0
           fi
           git config user.name "playstation-radar-bot"
           git config user.email "playstation-radar-bot@users.noreply.github.com"
-          git add data/radar.json data/source-state.json data/archive/
+          git add data/radar.json data/source-state.json data/archive/ data/daily/
           git commit -m "Daily Radar update $(TZ=Europe/Berlin date +%Y-%m-%d)"
           git push
