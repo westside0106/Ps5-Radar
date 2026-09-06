@@ -24,12 +24,23 @@ function historyFor(title) {
   return priceHistory.games?.[title]?.points || [];
 }
 
+function signalFor(title) {
+  return priceHistory.games?.[title]?.signal || null;
+}
+
+function shortDate(value) {
+  const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return match ? `${match[3]}.${match[2]}.` : value;
+}
+
 function enrichedItem(saved) {
   const info = radar.gameDetails?.[saved.title] || {};
   const deal = (radar.deals || []).find((item) => item.title === saved.title);
   const points = historyFor(saved.title);
   const prices = points.map((point) => point.price).filter(Number.isFinite);
-  const current = deal?.price || (prices.length ? euro(prices.at(-1)) : saved.price || null);
+  const lastPoint = points.at(-1) || null;
+  const signal = signalFor(saved.title);
+  const current = deal?.price || null;
   const low = prices.length ? Math.min(...prices) : null;
   const image = deal?.image || info.gallery?.[0] || saved.image || null;
   const storeUrl = radar.resolvedSources?.storeDeals?.[saved.title] || info.storeUrl || priceHistory.games?.[saved.title]?.storeUrl || saved.storeUrl || null;
@@ -40,13 +51,20 @@ function enrichedItem(saved) {
     current,
     low,
     points: points.length,
+    lastObserved: lastPoint?.price ?? null,
+    lastObservedDate: lastPoint?.date || null,
     genre: info.genre || null,
     platform: deal?.platform || info.platform || saved.platform || null,
     psPlusStatus: info.psPlusStatus || null,
-    discount: deal?.discount || saved.discount || null,
+    discount: deal?.discount || null,
     activeDeal: Boolean(deal),
     storeUrl,
+    signal,
   };
+}
+
+function signalRank(item) {
+  return { buy: 0, watch: 1, wait: 2 }[item.signal?.code] ?? 3;
 }
 
 export default function WatchlistClient() {
@@ -63,7 +81,7 @@ export default function WatchlistClient() {
     };
   }, []);
 
-  const items = useMemo(() => saved.map(enrichedItem), [saved]);
+  const items = useMemo(() => saved.map(enrichedItem).sort((a, b) => signalRank(a) - signalRank(b) || Number(b.activeDeal) - Number(a.activeDeal)), [saved]);
 
   function remove(title) {
     const next = saved.filter((item) => item.title !== title);
@@ -89,7 +107,7 @@ export default function WatchlistClient() {
         <article className="watchlist-card" key={item.title}>
           <div className="watchlist-card-art" style={item.image ? { backgroundImage: `url("${item.image}")` } : undefined}>
             <div className="watchlist-card-top">
-              <span>{item.activeDeal ? 'AKTIVER DEAL' : 'BEOBACHTET'}</span>
+              <span className={item.signal ? `signal-${item.signal.code}` : ''}>{item.signal?.label || (item.activeDeal ? 'AKTIVER DEAL' : 'BEOBACHTET')}</span>
               {item.discount ? <b>{item.discount}</b> : null}
             </div>
             <div className="watchlist-card-copy">
@@ -101,11 +119,30 @@ export default function WatchlistClient() {
               </div>
             </div>
           </div>
+
+          {item.signal ? (
+            <div className={`watchlist-signal signal-${item.signal.code}`}>
+              <div>
+                <small>RADAR-SIGNAL · SICHERHEIT {String(item.signal.confidence || 'niedrig').toUpperCase()}</small>
+                <strong>{item.signal.label}</strong>
+              </div>
+              <p>{item.signal.reason}</p>
+              {item.signal.daysRemaining !== null && item.signal.daysRemaining !== undefined ? (
+                <span>{item.signal.daysRemaining === 0 ? 'Angebot endet heute' : item.signal.daysRemaining === 1 ? 'Noch 1 Tag' : `Noch ${item.signal.daysRemaining} Tage`}</span>
+              ) : null}
+            </div>
+          ) : null}
+
           <div className="watchlist-card-foot">
             <div className="watchlist-price">
-              <small>AKTUELL</small>
-              <strong>{item.current || '—'}</strong>
-              {item.low !== null ? <span>Radar-Tief {euro(item.low)} · {item.points} {item.points === 1 ? 'Punkt' : 'Punkte'}</span> : <span>Noch kein Preisverlauf</span>}
+              <small>{item.activeDeal ? 'AKTUELL' : 'ZULETZT GEMESSEN'}</small>
+              <strong>{item.current || (item.lastObserved !== null ? euro(item.lastObserved) : '—')}</strong>
+              {item.low !== null ? (
+                <span>
+                  Radar-Tief {euro(item.low)} · {item.points} {item.points === 1 ? 'Punkt' : 'Punkte'}
+                  {!item.activeDeal && item.lastObservedDate ? ` · ${shortDate(item.lastObservedDate)}` : ''}
+                </span>
+              ) : <span>Noch kein Preisverlauf</span>}
             </div>
             <div className="watchlist-card-actions">
               {item.storeUrl ? <a href={item.storeUrl} target="_blank" rel="noreferrer">Store ↗</a> : null}
