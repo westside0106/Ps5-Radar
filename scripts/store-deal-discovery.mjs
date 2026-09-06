@@ -9,7 +9,7 @@ const now = new Date();
 async function get(url) {
   const res = await fetch(url, {
     headers: {
-      'user-agent': 'Mozilla/5.0 PlayStation-Radar/2.1',
+      'user-agent': 'Mozilla/5.0 PlayStation-Radar/2.2',
       'accept-language': 'de-DE,de;q=0.9,en;q=0.7',
       accept: 'text/html,application/xhtml+xml,*/*;q=0.8'
     },
@@ -61,7 +61,38 @@ function productLinks(html) {
       if (candidate) found.push(candidate);
     }
   }
-  return [...new Set(found)].slice(0, 60);
+  return [...new Set(found)].slice(0, 80);
+}
+
+async function browserProductLinks(url) {
+  const { chromium } = await import('playwright');
+  const browser = await chromium.launch({ headless: true });
+  try {
+    const context = await browser.newContext({
+      locale: 'de-DE',
+      viewport: { width: 1440, height: 1100 },
+      userAgent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/153 Safari/537.36'
+    });
+    const page = await context.newPage();
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForTimeout(2500);
+
+    let lastHeight = 0;
+    for (let i = 0; i < 8; i++) {
+      const height = await page.evaluate(() => document.documentElement.scrollHeight);
+      await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+      await page.waitForTimeout(900);
+      if (height === lastHeight && i >= 3) break;
+      lastHeight = height;
+    }
+
+    const hrefs = await page.locator('a[href*="/product/"],a[href*="/concept/"]').evaluateAll((anchors) =>
+      anchors.map((a) => a.href).filter(Boolean)
+    );
+    return [...new Set(hrefs.map(normalizeStoreUrl).filter(Boolean))].slice(0, 80);
+  } finally {
+    await browser.close();
+  }
 }
 
 function numericPrice(raw='') {
@@ -135,6 +166,8 @@ const telemetry = {
   checkedAt: new Date().toISOString(),
   collection: collectionUrl,
   activeCampaign: Boolean(campaignEnd && !Number.isNaN(campaignEnd.getTime()) && campaignEnd.getTime() > now.getTime()),
+  staticLinks: 0,
+  browserLinks: 0,
   links: 0,
   fetched: 0,
   verified: 0,
@@ -153,13 +186,25 @@ if (!telemetry.activeCampaign || !collectionUrl) {
 
 try {
   const collection = await get(collectionUrl);
-  const links = productLinks(collection.text);
+  let links = productLinks(collection.text);
+  telemetry.staticLinks = links.length;
+
+  if (links.length < 3) {
+    try {
+      const rendered = await browserProductLinks(collectionUrl);
+      telemetry.browserLinks = rendered.length;
+      links = [...new Set([...links, ...rendered])];
+    } catch (error) {
+      telemetry.warnings.push(`Browser-Fallback: ${error.message}`);
+    }
+  }
+
   telemetry.links = links.length;
   if (!links.length) {
     telemetry.mode = 'collection-not-machine-readable';
-    telemetry.warnings.push('Store-Kategorieseite enthält keine direkt extrahierbaren Produktlinks.');
+    telemetry.warnings.push('Store-Kategorieseite enthält auch nach Browser-Rendering keine Produktlinks.');
   } else {
-    const results = await pool(links.slice(0, 36), 6, async (url) => {
+    const results = await pool(links.slice(0, 48), 6, async (url) => {
       const page = await get(url);
       return parseProduct(page.text, page.url);
     });
@@ -171,17 +216,18 @@ try {
       all.findIndex((x) => x.title.toLowerCase() === item.title.toLowerCase()) === index
     ).sort((a,b) => b._score - a._score);
 
-    const selected = unique.slice(0, 3).map(({ _score, sourceUrl, ...deal }) => deal);
+    const selectedRows = unique.slice(0, 3);
+    const selected = selectedRows.map(({ _score, sourceUrl, ...deal }) => deal);
     if (selected.length >= 3) {
       radar.deals = selected;
       radar.storeTitle = 'Aktuelle Store-Top-Deals';
       radar.storeText = 'Automatisch aus der aktuell verifizierten PlayStation-Store-Aktion ausgewählt.';
       radar.resolvedSources = {
         ...(radar.resolvedSources || {}),
-        storeDeals: Object.fromEntries(unique.slice(0,3).map((item) => [item.title, item.sourceUrl]))
+        storeDeals: Object.fromEntries(selectedRows.map((item) => [item.title, item.sourceUrl]))
       };
       telemetry.selected = selected.length;
-      telemetry.mode = 'dynamic';
+      telemetry.mode = telemetry.browserLinks ? 'dynamic-browser' : 'dynamic-static';
     } else {
       telemetry.mode = 'insufficient-verified-products';
       telemetry.warnings.push(`Nur ${selected.length} verifizierbare Deal-Produkte entdeckt; bestehende verifizierte Auswahl bleibt erhalten.`);
@@ -198,6 +244,8 @@ radar.automationV2 = {
   resolved: {
     ...(radar.automationV2?.resolved || {}),
     storeDiscoveryMode: telemetry.mode,
+    storeDiscoveryStaticLinks: telemetry.staticLinks,
+    storeDiscoveryBrowserLinks: telemetry.browserLinks,
     storeDiscoveryLinks: telemetry.links,
     storeDiscoveryVerified: telemetry.verified,
     storeDiscoverySelected: telemetry.selected
@@ -205,4 +253,4 @@ radar.automationV2 = {
 };
 
 await fs.writeFile(radarPath, JSON.stringify(radar,null,2)+'\n');
-console.log(`Store discovery: mode=${telemetry.mode}; links=${telemetry.links}; verified=${telemetry.verified}; selected=${telemetry.selected}.`);
+console.log(`Store discovery: mode=${telemetry.mode}; static=${telemetry.staticLinks}; browser=${telemetry.browserLinks}; links=${telemetry.links}; verified=${telemetry.verified}; selected=${telemetry.selected}.`);
