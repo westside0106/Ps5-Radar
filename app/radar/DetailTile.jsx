@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 function linkList(detail) {
   const links = [...(detail.links || [])];
@@ -11,6 +11,28 @@ function linkList(detail) {
     seen.add(item.url);
     return true;
   });
+}
+
+function galleryList(detail) {
+  const images = [detail.image, ...(detail.gallery || [])].filter(Boolean);
+  return [...new Set(images)].slice(0, 8);
+}
+
+function youtubeEmbedUrl(url = '') {
+  try {
+    const parsed = new URL(url);
+    let id = null;
+    if (parsed.hostname === 'youtu.be') id = parsed.pathname.split('/').filter(Boolean)[0];
+    if (/youtube\.com$/i.test(parsed.hostname) || /\.youtube\.com$/i.test(parsed.hostname)) {
+      if (parsed.pathname === '/watch') id = parsed.searchParams.get('v');
+      if (parsed.pathname.startsWith('/embed/')) id = parsed.pathname.split('/embed/')[1]?.split('/')[0];
+      if (parsed.pathname.startsWith('/shorts/')) id = parsed.pathname.split('/shorts/')[1]?.split('/')[0];
+    }
+    if (!id || !/^[A-Za-z0-9_-]{6,20}$/.test(id)) return null;
+    return `https://www.youtube-nocookie.com/embed/${id}?rel=0&modestbranding=1`;
+  } catch {
+    return null;
+  }
 }
 
 function badgeList(detail) {
@@ -46,9 +68,21 @@ export default function DetailTile({ children, detail, className = '' }) {
   const dialogRef = useRef(null);
   const links = linkList(detail);
   const badges = badgeList(detail);
+  const gallery = galleryList(detail);
+  const trailerLink = links.find((item) => /trailer|video/i.test(item.label || ''))?.url || detail.trailerUrl || null;
+  const trailerEmbed = youtubeEmbedUrl(trailerLink || '');
+  const [activeImage, setActiveImage] = useState(gallery[0] || null);
+  const [isOpen, setIsOpen] = useState(false);
 
   function open() {
+    setActiveImage(gallery[0] || null);
+    setIsOpen(true);
     dialogRef.current?.showModal();
+  }
+
+  function close() {
+    setIsOpen(false);
+    dialogRef.current?.close();
   }
 
   function onKeyDown(event) {
@@ -75,27 +109,38 @@ export default function DetailTile({ children, detail, className = '' }) {
       <dialog
         ref={dialogRef}
         className="radar-dialog"
+        onClose={() => setIsOpen(false)}
         onClick={(event) => {
-          if (event.target === dialogRef.current) dialogRef.current.close();
+          if (event.target === dialogRef.current) close();
         }}
       >
         <section className="radar-sheet" onClick={(event) => event.stopPropagation()}>
           <div className="radar-sheet-handle" aria-hidden="true" />
-          <button
-            type="button"
-            className="radar-sheet-close"
-            aria-label="Schließen"
-            onClick={() => dialogRef.current?.close()}
-          >
-            ×
-          </button>
+          <button type="button" className="radar-sheet-close" aria-label="Schließen" onClick={close}>×</button>
 
-          {detail.image ? (
+          {activeImage ? (
             <div
               className="radar-sheet-image"
-              style={{ backgroundImage: `url("${detail.image}")` }}
+              style={{ backgroundImage: `url("${activeImage}")` }}
               aria-hidden="true"
             />
+          ) : null}
+
+          {gallery.length > 1 ? (
+            <div className="radar-sheet-gallery" aria-label="Bildergalerie">
+              {gallery.map((image, index) => (
+                <button
+                  type="button"
+                  key={image}
+                  className={`radar-gallery-thumb ${activeImage === image ? 'is-active' : ''}`}
+                  onClick={() => setActiveImage(image)}
+                  aria-label={`Bild ${index + 1} anzeigen`}
+                  aria-pressed={activeImage === image}
+                >
+                  <span style={{ backgroundImage: `url("${image}")` }} />
+                </button>
+              ))}
+            </div>
           ) : null}
 
           <div className="radar-sheet-content">
@@ -115,6 +160,22 @@ export default function DetailTile({ children, detail, className = '' }) {
             </div>
 
             {detail.summary ? <p className="radar-sheet-summary">{detail.summary}</p> : null}
+
+            {trailerEmbed && isOpen ? (
+              <>
+                <div className="radar-sheet-section-title">Trailer</div>
+                <div className="radar-sheet-video">
+                  <iframe
+                    src={trailerEmbed}
+                    title={`${detail.title} Trailer`}
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+              </>
+            ) : null}
 
             {detail.rows?.length ? (
               <>
