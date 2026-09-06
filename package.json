@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "radar:screenshot": "node scripts/screenshot-radar.mjs"
+    "radar:screenshot": "node scripts/finalize-health.mjs && node scripts/screenshot-radar.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",
