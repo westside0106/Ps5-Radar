@@ -1,4 +1,112 @@
 {
-  "updatedAt": null,
-  "games": {}
+  "updatedAt": "2026-09-06T18:29:25.164Z",
+  "games": {
+    "Hogwarts Legacy": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-04",
+          "price": 11.24,
+          "oldPrice": 74.99,
+          "discount": 85
+        },
+        {
+          "date": "2026-09-05",
+          "price": 11.24,
+          "oldPrice": 74.99,
+          "discount": 85
+        }
+      ],
+      "title": "Hogwarts Legacy",
+      "platform": "PS5",
+      "storeUrl": null
+    },
+    "Star Wars Outlaws": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-04",
+          "price": 19.99,
+          "oldPrice": 79.99,
+          "discount": 75
+        },
+        {
+          "date": "2026-09-05",
+          "price": 19.99,
+          "oldPrice": 79.99,
+          "discount": 75
+        }
+      ],
+      "title": "Star Wars Outlaws",
+      "platform": "PS5",
+      "storeUrl": null
+    },
+    "Red Dead Redemption": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-04",
+          "price": 24.99,
+          "oldPrice": 49.99,
+          "discount": 50
+        },
+        {
+          "date": "2026-09-05",
+          "price": 24.99,
+          "oldPrice": 49.99,
+          "discount": 50
+        }
+      ],
+      "title": "Red Dead Redemption",
+      "platform": "PS4 · PS5",
+      "storeUrl": null
+    },
+    "Forza Horizon 5 Deluxe Edition": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-06",
+          "price": 35.99,
+          "oldPrice": 89.99,
+          "discount": 60
+        }
+      ],
+      "title": "Forza Horizon 5 Deluxe Edition",
+      "platform": "PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0547256477986893"
+    },
+    "Battlefield™ 6": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-06",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
+        }
+      ],
+      "title": "Battlefield™ 6",
+      "platform": "PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA19534_00-SANTIAGOSTANDARD"
+    },
+    "WWE 2K26 Attitude Era Edition": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-06",
+          "price": 71.49,
+          "oldPrice": 129.99,
+          "discount": 45
+        }
+      ],
+      "title": "WWE 2K26 Attitude Era Edition",
+      "platform": "PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26TUDEEDITN"
+    }
+  },
+  "summary": {
+    "titles": 6,
+    "points": 9,
+    "archiveIssuesScanned": 3
+  }
 }
