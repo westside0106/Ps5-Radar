@@ -50,6 +50,18 @@ function badgeList(detail) {
   return badges;
 }
 
+function rowValue(detail, label) {
+  return detail.rows?.find((row) => row.label === label)?.value || null;
+}
+
+function claimDate(detail) {
+  const source = [rowValue(detail, 'Zeitraum'), rowValue(detail, 'PS Plus'), detail.summary]
+    .filter(Boolean)
+    .join(' ');
+  const match = source.match(/bis\s+(\d{1,2}\.\d{1,2}\.)/i);
+  return match?.[1] || null;
+}
+
 function actionKind(label = '') {
   if (/trailer|video/i.test(label)) return 'video';
   if (/store/i.test(label)) return 'primary';
@@ -74,6 +86,13 @@ export default function DetailTile({ children, detail, className = '' }) {
   const [activeImage, setActiveImage] = useState(gallery[0] || null);
   const [isOpen, setIsOpen] = useState(false);
 
+  const isPlusCard = detail.kicker === 'PLAYSTATION PLUS' && Boolean(detail.image);
+  const isPlusSummary = detail.kicker === 'PLAYSTATION PLUS' && !detail.image;
+  const plusGenre = rowValue(detail, 'Genre');
+  const plusPlatform = rowValue(detail, 'Plattform');
+  const plusClaimDate = claimDate(detail);
+  const semanticClass = isPlusCard ? ' plus-showcase-game' : isPlusSummary ? ' plus-showcase-summary' : '';
+
   function open() {
     setActiveImage(gallery[0] || null);
     setIsOpen(true);
@@ -95,7 +114,7 @@ export default function DetailTile({ children, detail, className = '' }) {
   return (
     <>
       <div
-        className={`radar-clickable ${className}`.trim()}
+        className={`radar-clickable ${className}${semanticClass}`.trim()}
         role="button"
         tabIndex={0}
         aria-label={`Mehr Informationen zu ${detail.title}`}
@@ -103,6 +122,31 @@ export default function DetailTile({ children, detail, className = '' }) {
         onKeyDown={onKeyDown}
       >
         {children}
+
+        {isPlusCard ? (
+          <div className="plus-showcase-overlay" aria-hidden="true">
+            <div className="plus-showcase-topline">
+              <span>PS PLUS ESSENTIAL</span>
+              {plusClaimDate ? <b>BIS {plusClaimDate}</b> : null}
+            </div>
+            <div className="plus-showcase-copy">
+              <h4>{detail.title}</h4>
+              <div className="plus-showcase-meta">
+                {plusPlatform ? <span>{plusPlatform}</span> : null}
+                {plusGenre ? <span>{plusGenre}</span> : null}
+              </div>
+              {plusClaimDate ? <small>Nur noch bis {plusClaimDate} beanspruchbar</small> : null}
+            </div>
+          </div>
+        ) : null}
+
+        {isPlusSummary && plusClaimDate ? (
+          <div className="plus-claim-window" aria-hidden="true">
+            <small>CLAIM-FENSTER</small>
+            <b>BIS {plusClaimDate} BEANSPRUCHBAR</b>
+          </div>
+        ) : null}
+
         <span className="radar-more" aria-hidden="true">i</span>
       </div>
 
