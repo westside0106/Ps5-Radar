@@ -10,6 +10,7 @@ on:
       - 'scripts/automation-v2.mjs'
       - 'scripts/store-campaign-fallback.mjs'
       - 'scripts/store-deal-discovery.mjs'
+      - 'scripts/patch-radar-source-ui.mjs'
       - 'scripts/enrich-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
       - 'scripts/screenshot-radar.mjs'
@@ -54,6 +55,8 @@ jobs:
         run: node scripts/enrich-radar.mjs
       - name: Finalize validated issue and archive
         run: node scripts/sanitize-radar.mjs
+      - name: Apply resolved-source UI migration
+        run: node scripts/patch-radar-source-ui.mjs
       - name: Render private magazine PNG
         shell: bash
         env:
@@ -78,7 +81,7 @@ jobs:
           fi
           git config user.name "playstation-radar-bot"
           git config user.email "playstation-radar-bot@users.noreply.github.com"
-          git add data/radar.json data/source-state.json data/archive/ data/daily/
+          git add data/radar.json data/source-state.json data/archive/ data/daily/ app/radar/page.jsx
           git commit -m "Daily Radar update $(TZ=Europe/Berlin date +%Y-%m-%d)"
           if git push; then
             exit 0
