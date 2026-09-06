@@ -39,6 +39,31 @@ function displayEndFull(iso) {
   }).format(new Date(iso))} Uhr`;
 }
 
+function issueDateParts() {
+  const [day, month, year] = String(radar.date || '').split('.').map(Number);
+  return { day, month, year };
+}
+
+function releaseTiming(date) {
+  const [day, month] = String(date || '').split('.').filter(Boolean).map(Number);
+  const issue = issueDateParts();
+  if (!day || !month || !issue.day || !issue.month || !issue.year) {
+    return { days: null, label: 'DEMNÄCHST', fullDate: date || '' };
+  }
+
+  let year = issue.year;
+  if (month < issue.month - 6) year += 1;
+  const target = Date.UTC(year, month - 1, day);
+  const current = Date.UTC(issue.year, issue.month - 1, issue.day);
+  const days = Math.round((target - current) / 86400000);
+  const fullDate = `${String(day).padStart(2, '0')}.${String(month).padStart(2, '0')}.${year}`;
+
+  if (days === 0) return { days, label: 'HEUTE', fullDate };
+  if (days === 1) return { days, label: 'MORGEN', fullDate };
+  if (days > 1) return { days, label: `IN ${days} TAGEN`, fullDate };
+  return { days, label: 'ERSCHIENEN', fullDate };
+}
+
 function alertUrl(title) {
   const needle = String(title || '').toLowerCase();
   if (!needle) return null;
@@ -157,13 +182,15 @@ function dealDetail(deal) {
 
 function releaseDetail(item) {
   const info = gameInfo(item.title);
+  const timing = releaseTiming(item.date);
   return {
     kicker: 'PS5-RELEASE',
     title: item.title,
     ...gameMedia(item.title),
     summary: info.description || 'Kommender PS5-Release aus dem aktuellen Monats-Radar.',
     rows: richRows(item.title, [
-      { label: 'Release', value: item.date },
+      { label: 'Release', value: timing.fullDate },
+      { label: 'Countdown', value: timing.label },
     ]),
     links: gameLinks(item.title, [
       { label: 'Monatsübersicht', url: sources.monthlyReleases },
@@ -262,6 +289,36 @@ function DealCard({ deal }) {
   );
 }
 
+function ReleaseCard({ item }) {
+  const info = gameInfo(item.title);
+  const media = gameMedia(item.title);
+  const timing = releaseTiming(item.date);
+  const meta = [info.genre, info.platform].filter(Boolean).slice(0, 2);
+  const timingClass = timing.days === 0 ? 'is-today' : timing.days !== null && timing.days <= 3 ? 'is-soon' : '';
+
+  return (
+    <DetailTile detail={releaseDetail(item)} className="release-card-wrap">
+      <article
+        className={`release-card ${media.image ? 'has-art' : 'no-art'}`}
+        style={media.image ? { backgroundImage: `url("${media.image}")` } : undefined}
+      >
+        <div className="release-card-top">
+          <span className={`release-countdown ${timingClass}`.trim()}>{timing.label}</span>
+        </div>
+        <div className="release-card-copy">
+          <span className="release-date">{timing.fullDate}</span>
+          <h4>{item.title}</h4>
+          {meta.length ? (
+            <div className="release-card-meta">
+              {meta.map((value) => <span key={value}>{value}</span>)}
+            </div>
+          ) : null}
+        </div>
+      </article>
+    </DetailTile>
+  );
+}
+
 export default async function RadarPage() {
   const jar = await cookies();
   const expected = sessionToken();
@@ -270,6 +327,8 @@ export default async function RadarPage() {
 
   const remaining = daysUntil(radar.storeEnd);
   const storeEnd = displayEnd(radar.storeEnd);
+  const nextRelease = radar.releases?.[0] || null;
+  const nextTiming = nextRelease ? releaseTiming(nextRelease.date) : null;
 
   const leadDetail = storyDetail({
     title: radar.leadTitle, date: radar.leadDate, text: radar.leadMeta, price: radar.leadPrice, image: radar.leadImage, top: true,
@@ -397,17 +456,22 @@ export default async function RadarPage() {
         </section>
 
         <section className="mag-bottomgrid">
-          <Panel tone="releases" icon="▦" title="KOMMENDE PS5-RELEASES">
-            <div className="release-list">
-              {radar.releases.map((item) => (
-                <DetailTile key={`${item.date}-${item.title}`} detail={releaseDetail(item)}>
-                  <div className="release-row"><b>{item.date}</b><span>{item.title}</span></div>
-                </DetailTile>
-              ))}
+          <Panel tone="releases" icon="▦" title={`KOMMENDE PS5-RELEASES · ${radar.releases.length}`} className="release-showcase">
+            {nextRelease && nextTiming ? (
+              <div className="release-intro">
+                <div className="release-intro-copy">
+                  <strong>{radar.releases.length} Releases im Blick</strong>
+                  <span>Nächster Termin: {nextRelease.title} · {nextTiming.fullDate}</span>
+                </div>
+                <b className="release-intro-badge">{nextTiming.label}</b>
+              </div>
+            ) : null}
+            <div className="release-grid">
+              {radar.releases.map((item) => <ReleaseCard key={`${item.date}-${item.title}`} item={item} />)}
             </div>
           </Panel>
 
-          <Panel tone="quick" icon="✓" title="KURZ & KOMPAKT">
+          <Panel tone="quick" icon="✓" title="KURZ & KOMPAKT" className="quick-showcase">
             <ul className="quick-list">
               {(radar.quickItems || []).map((item) => (
                 <li key={item}>
