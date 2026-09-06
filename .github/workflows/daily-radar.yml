@@ -37,9 +37,11 @@ jobs:
           node-version: '22'
       - name: Check official sources and update Radar
         run: node scripts/update-radar.mjs
+      - name: Validate core prices, releases and stale labels
+        run: node scripts/sanitize-radar.mjs
       - name: Enrich game detail sheets
         run: node scripts/enrich-radar.mjs
-      - name: Validate prices, releases and stale labels
+      - name: Finalize validated issue and archive
         run: node scripts/sanitize-radar.mjs
       - name: Install screenshot renderer
         run: |
