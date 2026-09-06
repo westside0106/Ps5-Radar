@@ -10,8 +10,11 @@ on:
       - 'scripts/sanitize-radar.mjs'
       - 'scripts/screenshot-radar.mjs'
       - 'data/sources.json'
+      - 'data/radar-trigger.txt'
       - 'package.json'
   schedule:
+    # GitHub scheduled workflows can start late. These are fallback runs only;
+    # the 08:00 ChatGPT trigger below causes a normal push run at the desired time.
     - cron: '0 6 * * *'
     - cron: '0 7 * * *'
 
@@ -30,29 +33,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check Berlin schedule
-        id: time
-        shell: bash
-        run: |
-          HOUR=$(TZ=Europe/Berlin date +%H)
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" || "${{ github.event_name }}" == "push" || "$HOUR" == "08" ]]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
       - name: Check official sources and update Radar
-        if: steps.time.outputs.run == 'true'
         run: node scripts/update-radar.mjs
       - name: Validate prices, releases and stale labels
-        if: steps.time.outputs.run == 'true'
         run: node scripts/sanitize-radar.mjs
       - name: Install screenshot renderer
-        if: steps.time.outputs.run == 'true'
         run: |
           npm install --package-lock=false --no-audit --no-fund
           npx playwright install --with-deps chromium
       - name: Render private magazine PNG
-        if: steps.time.outputs.run == 'true'
         shell: bash
         env:
           RADAR_PASSWORD: radar-local
@@ -68,7 +57,6 @@ jobs:
           done
           npm run radar:screenshot
       - name: Commit daily issue, archive and PNG
-        if: steps.time.outputs.run == 'true'
         shell: bash
         run: |
           if git diff --quiet && [ -z "$(git status --porcelain data/daily)" ]; then
