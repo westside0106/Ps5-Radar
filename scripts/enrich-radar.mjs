@@ -160,17 +160,17 @@ for (const title of titles) {
   const previous = existing[title] || {};
   const merged = {
     ...previous,
-    ...seed,
     ...parsed,
+    ...seed,
     pageUrl: seed.pageUrl || previous.pageUrl || (pageUrl && !pageUrl.includes('store.playstation.com') ? pageUrl : null),
     storeUrl: storeUrlFor(title) || seed.storeUrl || previous.storeUrl || (pageUrl?.includes('store.playstation.com') ? pageUrl : null),
     trailerUrl: seed.trailerUrl || previous.trailerUrl || null,
     developer: seed.developer || previous.developer || null,
-    description: parsed.description || seed.description || previous.description || null,
+    description: seed.description || parsed.description || previous.description || null,
     genre: seed.genre || parsed.genre || previous.genre || null,
-    platform: parsed.platform || seed.platform || previous.platform || null,
-    publisher: parsed.publisher || seed.publisher || previous.publisher || null,
-    release: parsed.release || seed.release || previous.release || null,
+    platform: seed.platform || parsed.platform || previous.platform || null,
+    publisher: seed.publisher || parsed.publisher || previous.publisher || null,
+    release: seed.release || parsed.release || previous.release || null,
     psPlusStatus: seed.psPlusStatus || parsed.psPlusStatus || previous.psPlusStatus || null,
   };
 
