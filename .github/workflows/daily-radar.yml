@@ -9,6 +9,7 @@ on:
       - 'scripts/update-radar.mjs'
       - 'scripts/automation-v2.mjs'
       - 'scripts/store-campaign-fallback.mjs'
+      - 'scripts/store-deal-discovery.mjs'
       - 'scripts/enrich-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
       - 'scripts/screenshot-radar.mjs'
@@ -18,7 +19,7 @@ on:
       - 'package.json'
   schedule:
     # GitHub scheduled workflows can start late. These are fallback runs only;
-    # the 08:00 ChatGPT trigger below causes a normal push run at the desired time.
+    # the 08:00 ChatGPT trigger causes a normal push run at the desired time.
     - cron: '0 6 * * *'
     - cron: '0 7 * * *'
 
@@ -43,6 +44,8 @@ jobs:
         run: node scripts/automation-v2.mjs
       - name: Resolve configured Store campaign fallback
         run: node scripts/store-campaign-fallback.mjs
+      - name: Discover and rank Store deals dynamically
+        run: node scripts/store-deal-discovery.mjs
       - name: Validate core prices, releases and stale labels
         run: node scripts/sanitize-radar.mjs
       - name: Enrich game detail sheets
@@ -75,8 +78,22 @@ jobs:
             echo "No Radar changes."
             exit 0
           fi
+
           git config user.name "playstation-radar-bot"
           git config user.email "playstation-radar-bot@users.noreply.github.com"
           git add data/radar.json data/source-state.json data/archive/ data/daily/
           git commit -m "Daily Radar update $(TZ=Europe/Berlin date +%Y-%m-%d)"
-          git push
+
+          if git push; then
+            exit 0
+          fi
+
+          echo "Remote main advanced while this run was working; trying one safe rebase."
+          git fetch origin main
+          if git rebase origin/main && git push; then
+            exit 0
+          fi
+
+          git rebase --abort 2>/dev/null || true
+          echo "A newer main commit overlaps this generated update. This run is treated as superseded instead of failing with fetch-first."
+          exit 0
