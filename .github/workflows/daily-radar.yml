@@ -8,6 +8,7 @@ on:
       - '.github/workflows/daily-radar.yml'
       - 'scripts/update-radar.mjs'
       - 'scripts/automation-v2.mjs'
+      - 'scripts/store-campaign-fallback.mjs'
       - 'scripts/enrich-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
       - 'scripts/screenshot-radar.mjs'
@@ -40,6 +41,8 @@ jobs:
         run: node scripts/update-radar.mjs
       - name: Resolve current month, active campaigns and dynamic sources
         run: node scripts/automation-v2.mjs
+      - name: Resolve configured Store campaign fallback
+        run: node scripts/store-campaign-fallback.mjs
       - name: Validate core prices, releases and stale labels
         run: node scripts/sanitize-radar.mjs
       - name: Enrich game detail sheets
