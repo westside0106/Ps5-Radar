@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 
 const radarPath = new URL('../data/radar.json', import.meta.url);
+const sourcesPath = new URL('../data/sources.json', import.meta.url);
 const historyPath = new URL('../data/price-history.json', import.meta.url);
 const archiveDir = new URL('../data/archive/', import.meta.url);
 
@@ -35,11 +36,11 @@ async function readJson(url, fallback) {
   }
 }
 
-function ingestIssue(history, issue) {
+function ingestIssue(history, issue, sourceUrls) {
   const date = isoDate(issue?.date);
   if (!date) return 0;
   let added = 0;
-  const urls = issue?.resolvedSources?.storeDeals || {};
+  const resolved = issue?.resolvedSources?.storeDeals || {};
 
   for (const deal of issue?.deals || []) {
     const price = numberFromEuro(deal.price);
@@ -58,12 +59,13 @@ function ingestIssue(history, issue) {
       .sort((a, b) => a.date.localeCompare(b.date))
       .slice(-180);
 
+    const gameStoreUrl = issue?.gameDetails?.[deal.title]?.storeUrl || null;
     history.games[deal.title] = {
       ...previous,
       title: deal.title,
       currency: 'EUR',
       platform: deal.platform || previous.platform || null,
-      storeUrl: urls[deal.title] || previous.storeUrl || null,
+      storeUrl: resolved[deal.title] || gameStoreUrl || sourceUrls[deal.title] || previous.storeUrl || null,
       points,
     };
     added += 1;
@@ -72,6 +74,8 @@ function ingestIssue(history, issue) {
 }
 
 const radar = await readJson(radarPath, {});
+const sources = await readJson(sourcesPath, {});
+const sourceUrls = Object.fromEntries((sources.storeDeals || []).map((item) => [item.title, item.url]));
 const history = await readJson(historyPath, { updatedAt: null, games: {} });
 history.games ||= {};
 
@@ -85,11 +89,11 @@ try {
     const issue = await readJson(new URL(name, archiveDir), null);
     if (!issue) continue;
     issueCount += 1;
-    pointWrites += ingestIssue(history, issue);
+    pointWrites += ingestIssue(history, issue, sourceUrls);
   }
 } catch {}
 
-pointWrites += ingestIssue(history, radar);
+pointWrites += ingestIssue(history, radar, sourceUrls);
 history.updatedAt = new Date().toISOString();
 history.summary = {
   titles: Object.keys(history.games).length,
