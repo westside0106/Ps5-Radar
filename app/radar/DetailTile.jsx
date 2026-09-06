@@ -105,6 +105,10 @@ function historyPoints(title) {
   return priceHistory.games?.[title]?.points || [];
 }
 
+function dealSignal(title) {
+  return priceHistory.games?.[title]?.signal || null;
+}
+
 function formatHistoryPrice(value) {
   return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(value);
 }
@@ -156,6 +160,29 @@ function PriceHistory({ title }) {
   );
 }
 
+function DealSignal({ signal }) {
+  if (!signal) return null;
+  return (
+    <div className={`radar-deal-signal signal-${signal.code}`}>
+      <div className="radar-deal-signal-head">
+        <div>
+          <small>RADAR-SIGNAL</small>
+          <strong>{signal.label}</strong>
+        </div>
+        <span>Sicherheit {signal.confidence}</span>
+      </div>
+      <p>{signal.reason}</p>
+      <div className="radar-deal-signal-meta">
+        {Number.isFinite(signal.radarLow) ? <span>Radar-Tief {formatHistoryPrice(signal.radarLow)}</span> : null}
+        {Number.isFinite(signal.deltaFromLowPct) ? <span>{signal.deltaFromLowPct === 0 ? 'am Tief' : `${String(signal.deltaFromLowPct).replace('.', ',')} % über Tief`}</span> : null}
+        {signal.daysRemaining !== null && signal.daysRemaining !== undefined ? (
+          <span>{signal.daysRemaining === 0 ? 'endet heute' : signal.daysRemaining === 1 ? 'noch 1 Tag' : `noch ${signal.daysRemaining} Tage`}</span>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
 export default function DetailTile({ children, detail, className = '' }) {
   const dialogRef = useRef(null);
   const links = linkList(detail);
@@ -171,6 +198,8 @@ export default function DetailTile({ children, detail, className = '' }) {
   const isPlusSummary = detail.kicker === 'PLAYSTATION PLUS' && !detail.image;
   const isEaBenefit = detail.kicker === 'EA PLAY';
   const isUbiBenefit = detail.kicker === 'UBISOFT+';
+  const isDealDetail = Boolean(rowValue(detail, 'Aktuell'));
+  const signal = isDealDetail ? dealSignal(detail.title) : null;
   const plusGenre = rowValue(detail, 'Genre');
   const plusPlatform = rowValue(detail, 'Plattform');
   const plusClaimDate = claimDate(detail);
@@ -325,6 +354,7 @@ export default function DetailTile({ children, detail, className = '' }) {
           </div>
         ) : null}
 
+        {signal?.activeDeal ? <span className={`radar-signal-pill signal-${signal.code}`} aria-hidden="true">{signal.label}</span> : null}
         <span className="radar-more" aria-hidden="true">i</span>
       </div>
 
@@ -394,6 +424,7 @@ export default function DetailTile({ children, detail, className = '' }) {
 
             {detail.summary ? <p className="radar-sheet-summary">{detail.summary}</p> : null}
 
+            {isDealDetail ? <DealSignal signal={signal} /> : null}
             <PriceHistory title={detail.title} />
 
             {trailerEmbed && isOpen ? (
