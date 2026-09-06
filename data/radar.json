@@ -115,13 +115,13 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-06T11:37:50.707Z",
+    "checkedAt": "2026-09-06T11:41:54.825Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-06T11:37:50.707Z"
+    "lastSuccessfulCheck": "2026-09-06T11:41:54.825Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-06T11:37:50.707Z",
+    "checkedAt": "2026-09-06T11:41:54.825Z",
     "errors": []
   },
   "gameDetails": {
@@ -129,36 +129,36 @@
       "pageUrl": "https://www.playstation.com/de-de/games/onimusha-way-of-the-sword/",
       "developer": "Capcom",
       "genre": "Action · Samurai",
-      "description": "Buy Onimusha: Way of the Sword at PlayStation Store. Slice through scores of monstrous creatures in the story of one samurai's journey to prove his courage.",
+      "description": "Düsteres Samurai-Actionspiel im historischen Kyoto. Im Mittelpunkt stehen präziser Schwertkampf, Genma-Gegner und eine übernatürliche Geschichte.",
       "trailerUrl": "https://www.youtube.com/watch?v=UZYxGBeGOzY",
       "publisher": "CE EUROPE LIMITED",
-      "release": "3.9.2026",
+      "release": "04.09.2026",
       "platform": "PS5"
     },
     "NBA 2K27": {
       "pageUrl": "https://www.playstation.com/de-de/games/nba-2k/",
       "developer": "Visual Concepts",
       "genre": "Sport · Basketball",
-      "description": "Entdecke NBA 2K27 für PS5 auf der offiziellen PlayStation-Website. In NBA 2K27 gibt es keine Verschnaufpause. Jage in MyCAREER, MyTEAM und MyNBA rund um die Uhr dem Ruhm hinterher und mach deine Basketballträume zur Realität.",
+      "description": "Basketball-Simulation von 2K mit MyCAREER, MyTEAM, The City und Online-Modi auf PS5.",
       "trailerUrl": "https://www.youtube.com/watch?v=5l-a3U3Y8aA",
       "publisher": "Take-Two",
-      "release": "3.9.2026",
+      "release": "04.09.2026",
       "platform": "PS5"
     },
     "The Blood of Dawnwalker": {
       "pageUrl": "https://www.playstation.com/de-de/games/the-blood-of-dawnwalker/",
       "developer": "Rebel Wolves",
       "genre": "Open-World-Action-RPG · Dark Fantasy",
-      "description": "Erkunde ein Open-World-Dark-Fantasy-Action-RPG im Europa des 14. Jahrhunderts in The Blood of Dawnwalker für PlayStation 5.",
+      "description": "Düsteres Open-World-Action-RPG, in dem ein zwischen Mensch und Vampir gefangener Protagonist in einer mittelalterlichen Welt um Zeit, Macht und Überleben kämpft.",
       "publisher": "BANDAI NAMCO ENTERTAINMENT EUROPE",
-      "release": "20.09.2026",
+      "release": "03.09.2026",
       "platform": "PS5"
     },
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
       "genre": "Taktik-Shooter · Stealth · Action",
-      "description": "NEUER AGENT, NEUE BEDROHUNG, NEUE LEGENDÄRE KAMPAGNE Mit einzigartigen Scharfschützenmechanismen, Tarnung und taktischem Third-Person-Kampf lenkt Sniper Elite Resistance die Aufmerksamkeit der preisgekrönten Serie auf einen verborgenen Krieg fernab der Front und tief im Herzen des besetzten Frankreichs. In einer fesselnden neuen Geschichte, die parallel zu Sniper Elite 5 läuft, übernimmt Harry Hawker, Agent des Special Operations Executive SOE, zum ersten Mal die Führung, als er eine heimtückische Wunderwaffe en…",
+      "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "REBELLION INTERACTIVE",
       "release": "30.1.2025",
@@ -168,7 +168,7 @@
       "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
       "developer": "San Diego Studio",
       "genre": "Sport · Baseball",
-      "description": "Entdecke MLB® The Show™ 26 für PlayStation 5 auf der offiziellen PlayStation-Website. Übernimm die Kontrolle darüber, wie du dich im größten, immersivsten MLB® The Show™ aller Zeiten verewigst. Erlebe verbesserte Mechaniken für Road to the Show, komplexere Franchise-Erlebnisse, packende „Diamond Dynasty“-Modi, erweiterte Anpassungsmöglichkeiten und authentische Spielfeld-Action.",
+      "description": "Baseball-Simulation von San Diego Studio mit Road to the Show, Diamond Dynasty und weiteren Einzelspieler- und Online-Modi.",
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "Sony Interactive Entertainment",
       "release": "17.3.2026",
@@ -178,7 +178,7 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10004896",
       "developer": "RubberBandGames",
       "genre": "Sandbox · Adventure · Familie",
-      "description": "Oma hat dich rausgeworfen und verlangt von dir, dass du dir in der großen, weiten Wobbly-Welt einen JOB suchst Sie wäre so stolz auf dich, wenn du etwas Geld verdienst und irgendwann dein eigenes Haus hast Es wird Zeit, dass du Geld verdienst und in Wobbly Life zurechtkommst 1–4 Spieler online und im lokalen Koop mit geteiltem Bildschirm Offene Sandbox-Welt voller Minispiele, Spielzeuge, Geheimnisse und SO VIEL mehr 100 einzigartige Missionen und Jobs mit exklusiven Belohnungen, die du alleine oder mit Freunden…",
+      "description": "Offene Physik-Sandbox mit Jobs, Missionen, Fahrzeugen, Häusern und Koop für bis zu vier Spieler.",
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "RUBBERBANDGAMES LTD",
       "release": "18.9.2025",
@@ -188,7 +188,7 @@
       "pageUrl": "https://www.playstation.com/de-de/games/chained-echoes/",
       "developer": "Matthias Linda",
       "genre": "Rollenspiel · JRPG-inspiriert",
-      "description": "Nimm dein Schwert, steig in deinen Mech und rette Valandis",
+      "description": "Storyfokussiertes 16-Bit-Rollenspiel mit rundenbasierten Kämpfen, Fantasywelt, Mechs und einer Reise durch den Kontinent Valandis.",
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "DECK13 INTERACTIVE",
       "release": "7.12.2022",
@@ -198,7 +198,7 @@
       "pageUrl": "https://www.playstation.com/de-de/games/hogwarts-legacy/",
       "developer": "Avalanche Software",
       "genre": "Open-World-Action-RPG",
-      "description": "Bestelle Hogwarts Legacy, ein immersives Open-World-Action-Rollenspiel in einer Welt, die direkt den Harry-Potter-Büchern entspringt, im PlayStation Store vor.",
+      "description": "Open-World-Action-RPG in der Zaubererwelt des 19. Jahrhunderts mit Erkundung, Zaubersprüchen, Tierwesen und Charakterentwicklung.",
       "publisher": "WARNER BROS. INTERACTIVE",
       "release": "9.2.2023",
       "platform": "PS5",
@@ -209,7 +209,7 @@
       "pageUrl": "https://www.playstation.com/de-de/games/star-wars-outlaws/",
       "developer": "Massive Entertainment",
       "genre": "Open-World-Action-Adventure",
-      "description": "Kaufe Star Wars Outlaws im PlayStation Store. Riskiere alles als Kay Vess, eine Gesetzlose auf der Suche nach Freiheit und einem neuen Leben.",
+      "description": "Open-World-Star-Wars-Abenteuer rund um die Gesetzlose Kay Vess, Verbrechersyndikate, planetare Erkundung und Kämpfe.",
       "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
       "publisher": "Ubisoft",
       "release": "29.8.2024",
@@ -219,30 +219,70 @@
     "Red Dead Redemption": {
       "pageUrl": "https://www.playstation.com/de-de/games/red-dead-redemption/",
       "genre": "Open-World-Action-Adventure · Western",
-      "description": "Kaufe Red Dead Redemption für PS5 und PS4 im PlayStation Store und erlebe das epische Westernabenteuer, das eine ganze Generation geprägt hat. Diese Edition beinhaltet Albtraum der lebenden Toten, das die Welt von Red Dead Redemption in einen apokalyptischen Überlebenskampf verwandelt, sowie alle Bonusinhalte der Game of the Year Edition.",
+      "description": "Western-Open-World-Abenteuer um John Marston inklusive Undead Nightmare; die PS5-Version bietet unter anderem 60 FPS und höhere Bildqualität.",
       "publisher": "Rockstar Games",
       "release": "1.12.2025",
       "platform": "PS4 · PS5",
       "storeUrl": "https://store.playstation.com/de-de/product/EP1004-PPSA30523_00-REDEMPTION000001"
     },
-    "EA Sports FC 27": {
-      "release": "20.09.2026"
+    "Mewgenics": {
+      "description": "Rundenbasiertes Taktik-Roguelike mit Katzenzucht, vererbten Merkmalen, Mutationen, Klassen und umfangreichen Item-Synergien.",
+      "publisher": "Nicalis Inc.",
+      "release": "08.09.2026",
+      "platform": "PS5 · PS4",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10019219",
+      "genre": "Strategie · Taktik-Roguelike"
+    },
+    "Marvel’s Wolverine": {
+      "description": "Storybasiertes Singleplayer-Action-Adventure mit Insomniac Games' eigener Interpretation von Logan und seinen Adamantium-Klauen.",
+      "publisher": "Sony Interactive Entertainment",
+      "release": "15.09.2026",
+      "platform": "PS5",
+      "pageUrl": "https://www.playstation.com/de-de/games/marvels-wolverine/",
+      "developer": "Insomniac Games",
+      "genre": "Action-Adventure"
+    },
+    "Aniimo": {
+      "description": "Free-to-play Open-World-RPG mit Kreaturensammlung, Erkundung, Kämpfen und unterschiedlichen Fähigkeiten der Aniimo.",
+      "publisher": "PAWPRINT INTERACTIVE ENTERTAINMENT PTE. LTD.",
+      "release": "16.09.2026",
+      "platform": "PS5",
+      "pageUrl": "https://www.playstation.com/de-de/games/aniimo/",
+      "genre": "Open-World-Kreaturensammlung-RPG · Action · Adventure"
+    },
+    "Control Resonant": {
+      "description": "Nachfolger von CONTROL mit Dylan Faden in einem paranormal verzerrten Manhattan, neuen Kräften und großflächigen Zonen.",
+      "publisher": "REMEDY ENTERTAINMENT LTD.",
+      "release": "24.09.2026",
+      "platform": "PS5",
+      "pageUrl": "https://www.playstation.com/de-de/games/control-resonant/",
+      "developer": "Remedy Entertainment",
+      "genre": "Action-Adventure-RPG",
+      "trailerUrl": "https://blog.de.playstation.com/2026/06/03/control-resonant-erscheint-am-24-september-fuer-ps5/"
+    },
+    "Silent Hill: Townfall": {
+      "description": "Psychologisches First-Person-Horrorspiel, in dem Simon Ordell nach St. Amelia zurückkehrt und das Geheimnis hinter einem rätselhaften Rauschen untersucht.",
+      "publisher": "KONAMI",
+      "release": "24.09.2026",
+      "platform": "PS5",
+      "pageUrl": "https://www.playstation.com/de-de/games/silent-hill-townfall/",
+      "genre": "Psychologischer First-Person-Horror"
     },
     "EA SPORTS FC 27": {
       "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
       "developer": "EA SPORTS",
       "genre": "Sport · Fußball",
-      "description": "Entdecke EA SPORTS™ FC 27 für PS5 und PS4 auf der offiziellen PlayStation-Webseite. Schau dir die neusten Gameplay-Details und -Features sowie Screenshots und Trailer an. Erfahre mehr über neue Anpassungen und Spielmodi. Schau dir die Editionen an und kaufe das Spiel direkt über PlayStation.com.",
+      "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
       "publisher": "EA Swiss Sarl",
       "release": "17.9.2026",
       "platform": "PS5"
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-06T11:37:56.983Z",
-    "titles": 12,
-    "fetched": 11,
-    "enriched": 12,
+    "checkedAt": "2026-09-06T11:42:02.908Z",
+    "titles": 16,
+    "fetched": 16,
+    "enriched": 16,
     "warnings": []
   }
 }
