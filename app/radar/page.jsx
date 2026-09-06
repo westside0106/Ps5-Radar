@@ -59,6 +59,16 @@ function gameInfo(title) {
   return radar.gameDetails?.[title] || {};
 }
 
+function gameMedia(title, fallbackImage = null) {
+  const info = gameInfo(title);
+  const gallery = [fallbackImage, ...(info.gallery || [])].filter(Boolean);
+  const unique = [...new Set(gallery)].slice(0, 8);
+  return {
+    image: fallbackImage || unique[0] || null,
+    gallery: unique,
+  };
+}
+
 function richRows(title, baseRows = []) {
   const info = gameInfo(title);
   const used = new Set(baseRows.map((row) => row.label));
@@ -94,7 +104,7 @@ function storyDetail({ title, date, text, price, image, top = false }) {
   return {
     kicker: top ? 'TOP-NEWS' : 'NEWS',
     title,
-    image,
+    ...gameMedia(title, image),
     summary: info.description || text,
     rows: richRows(title, [
       { label: 'Status', value: ageLabel(date) },
@@ -113,7 +123,7 @@ function psPlusDetail(game) {
   return {
     kicker: 'PLAYSTATION PLUS',
     title: game.title,
-    image: game.image,
+    ...gameMedia(game.title, game.image),
     summary: info.description || 'Teil der aktuell im Radar geführten monatlichen PlayStation-Plus-Spiele.',
     rows: richRows(game.title, [
       { label: 'Paket', value: radar.psplusLabel },
@@ -132,7 +142,7 @@ function dealDetail(deal) {
   return {
     kicker: 'PLAYSTATION STORE',
     title: deal.title,
-    image: deal.image,
+    ...gameMedia(deal.title, deal.image),
     summary: info.description || radar.storeText,
     rows: richRows(deal.title, [
       { label: 'Plattform', value: deal.platform },
@@ -150,6 +160,7 @@ function releaseDetail(item) {
   return {
     kicker: 'PS5-RELEASE',
     title: item.title,
+    ...gameMedia(item.title),
     summary: info.description || 'Kommender PS5-Release aus dem aktuellen Monats-Radar.',
     rows: richRows(item.title, [
       { label: 'Release', value: item.date },
@@ -166,6 +177,7 @@ function eaDetail() {
   return {
     kicker: 'EA PLAY',
     title: radar.eaTitle || title,
+    ...gameMedia(title),
     summary: info.description || radar.benefitsText,
     rows: richRows(title, [
       { label: 'EA-Play-Vorteil', value: radar.eaTitle },
