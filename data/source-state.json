@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-06T10:21:16.083Z",
+  "checkedAt": "2026-09-06T11:37:50.707Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -148,7 +148,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 162725,
+    "bytes": 162741,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

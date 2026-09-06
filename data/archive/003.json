@@ -115,13 +115,134 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-06T10:21:16.083Z",
+    "checkedAt": "2026-09-06T11:37:50.707Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-06T10:21:16.083Z"
+    "lastSuccessfulCheck": "2026-09-06T11:37:50.707Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-06T10:21:16.083Z",
+    "checkedAt": "2026-09-06T11:37:50.707Z",
     "errors": []
+  },
+  "gameDetails": {
+    "Onimusha: Way of the Sword": {
+      "pageUrl": "https://www.playstation.com/de-de/games/onimusha-way-of-the-sword/",
+      "developer": "Capcom",
+      "genre": "Action · Samurai",
+      "description": "Buy Onimusha: Way of the Sword at PlayStation Store. Slice through scores of monstrous creatures in the story of one samurai's journey to prove his courage.",
+      "trailerUrl": "https://www.youtube.com/watch?v=UZYxGBeGOzY",
+      "publisher": "CE EUROPE LIMITED",
+      "release": "3.9.2026",
+      "platform": "PS5"
+    },
+    "NBA 2K27": {
+      "pageUrl": "https://www.playstation.com/de-de/games/nba-2k/",
+      "developer": "Visual Concepts",
+      "genre": "Sport · Basketball",
+      "description": "Entdecke NBA 2K27 für PS5 auf der offiziellen PlayStation-Website. In NBA 2K27 gibt es keine Verschnaufpause. Jage in MyCAREER, MyTEAM und MyNBA rund um die Uhr dem Ruhm hinterher und mach deine Basketballträume zur Realität.",
+      "trailerUrl": "https://www.youtube.com/watch?v=5l-a3U3Y8aA",
+      "publisher": "Take-Two",
+      "release": "3.9.2026",
+      "platform": "PS5"
+    },
+    "The Blood of Dawnwalker": {
+      "pageUrl": "https://www.playstation.com/de-de/games/the-blood-of-dawnwalker/",
+      "developer": "Rebel Wolves",
+      "genre": "Open-World-Action-RPG · Dark Fantasy",
+      "description": "Erkunde ein Open-World-Dark-Fantasy-Action-RPG im Europa des 14. Jahrhunderts in The Blood of Dawnwalker für PlayStation 5.",
+      "publisher": "BANDAI NAMCO ENTERTAINMENT EUROPE",
+      "release": "20.09.2026",
+      "platform": "PS5"
+    },
+    "Sniper Elite: Resistance": {
+      "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
+      "developer": "Rebellion",
+      "genre": "Taktik-Shooter · Stealth · Action",
+      "description": "NEUER AGENT, NEUE BEDROHUNG, NEUE LEGENDÄRE KAMPAGNE Mit einzigartigen Scharfschützenmechanismen, Tarnung und taktischem Third-Person-Kampf lenkt Sniper Elite Resistance die Aufmerksamkeit der preisgekrönten Serie auf einen verborgenen Krieg fernab der Front und tief im Herzen des besetzten Frankreichs. In einer fesselnden neuen Geschichte, die parallel zu Sniper Elite 5 läuft, übernimmt Harry Hawker, Agent des Special Operations Executive SOE, zum ersten Mal die Führung, als er eine heimtückische Wunderwaffe en…",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "REBELLION INTERACTIVE",
+      "release": "30.1.2025",
+      "platform": "PS4 · PS5"
+    },
+    "MLB The Show 26": {
+      "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
+      "developer": "San Diego Studio",
+      "genre": "Sport · Baseball",
+      "description": "Entdecke MLB® The Show™ 26 für PlayStation 5 auf der offiziellen PlayStation-Website. Übernimm die Kontrolle darüber, wie du dich im größten, immersivsten MLB® The Show™ aller Zeiten verewigst. Erlebe verbesserte Mechaniken für Road to the Show, komplexere Franchise-Erlebnisse, packende „Diamond Dynasty“-Modi, erweiterte Anpassungsmöglichkeiten und authentische Spielfeld-Action.",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "Sony Interactive Entertainment",
+      "release": "17.3.2026",
+      "platform": "PS5"
+    },
+    "Wobbly Life": {
+      "storeUrl": "https://store.playstation.com/de-de/concept/10004896",
+      "developer": "RubberBandGames",
+      "genre": "Sandbox · Adventure · Familie",
+      "description": "Oma hat dich rausgeworfen und verlangt von dir, dass du dir in der großen, weiten Wobbly-Welt einen JOB suchst Sie wäre so stolz auf dich, wenn du etwas Geld verdienst und irgendwann dein eigenes Haus hast Es wird Zeit, dass du Geld verdienst und in Wobbly Life zurechtkommst 1–4 Spieler online und im lokalen Koop mit geteiltem Bildschirm Offene Sandbox-Welt voller Minispiele, Spielzeuge, Geheimnisse und SO VIEL mehr 100 einzigartige Missionen und Jobs mit exklusiven Belohnungen, die du alleine oder mit Freunden…",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "RUBBERBANDGAMES LTD",
+      "release": "18.9.2025",
+      "platform": "PS4 · PS5"
+    },
+    "Chained Echoes": {
+      "pageUrl": "https://www.playstation.com/de-de/games/chained-echoes/",
+      "developer": "Matthias Linda",
+      "genre": "Rollenspiel · JRPG-inspiriert",
+      "description": "Nimm dein Schwert, steig in deinen Mech und rette Valandis",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "DECK13 INTERACTIVE",
+      "release": "7.12.2022",
+      "platform": "PS4"
+    },
+    "Hogwarts Legacy": {
+      "pageUrl": "https://www.playstation.com/de-de/games/hogwarts-legacy/",
+      "developer": "Avalanche Software",
+      "genre": "Open-World-Action-RPG",
+      "description": "Bestelle Hogwarts Legacy, ein immersives Open-World-Action-Rollenspiel in einer Welt, die direkt den Harry-Potter-Büchern entspringt, im PlayStation Store vor.",
+      "publisher": "WARNER BROS. INTERACTIVE",
+      "release": "9.2.2023",
+      "platform": "PS5",
+      "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
+      "storeUrl": "https://store.playstation.com/de-de/product/EP1018-PPSA01603_00-HOGWARTSLEGACY01/"
+    },
+    "Star Wars Outlaws": {
+      "pageUrl": "https://www.playstation.com/de-de/games/star-wars-outlaws/",
+      "developer": "Massive Entertainment",
+      "genre": "Open-World-Action-Adventure",
+      "description": "Kaufe Star Wars Outlaws im PlayStation Store. Riskiere alles als Kay Vess, eine Gesetzlose auf der Suche nach Freiheit und einem neuen Leben.",
+      "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
+      "publisher": "Ubisoft",
+      "release": "29.8.2024",
+      "platform": "PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA08260_00-GAME000000000000"
+    },
+    "Red Dead Redemption": {
+      "pageUrl": "https://www.playstation.com/de-de/games/red-dead-redemption/",
+      "genre": "Open-World-Action-Adventure · Western",
+      "description": "Kaufe Red Dead Redemption für PS5 und PS4 im PlayStation Store und erlebe das epische Westernabenteuer, das eine ganze Generation geprägt hat. Diese Edition beinhaltet Albtraum der lebenden Toten, das die Welt von Red Dead Redemption in einen apokalyptischen Überlebenskampf verwandelt, sowie alle Bonusinhalte der Game of the Year Edition.",
+      "publisher": "Rockstar Games",
+      "release": "1.12.2025",
+      "platform": "PS4 · PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/EP1004-PPSA30523_00-REDEMPTION000001"
+    },
+    "EA Sports FC 27": {
+      "release": "20.09.2026"
+    },
+    "EA SPORTS FC 27": {
+      "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
+      "developer": "EA SPORTS",
+      "genre": "Sport · Fußball",
+      "description": "Entdecke EA SPORTS™ FC 27 für PS5 und PS4 auf der offiziellen PlayStation-Webseite. Schau dir die neusten Gameplay-Details und -Features sowie Screenshots und Trailer an. Erfahre mehr über neue Anpassungen und Spielmodi. Schau dir die Editionen an und kaufe das Spiel direkt über PlayStation.com.",
+      "publisher": "EA Swiss Sarl",
+      "release": "17.9.2026",
+      "platform": "PS5"
+    }
+  },
+  "enrichment": {
+    "checkedAt": "2026-09-06T11:37:56.983Z",
+    "titles": 12,
+    "fetched": 11,
+    "enriched": 12,
+    "warnings": []
   }
 }
