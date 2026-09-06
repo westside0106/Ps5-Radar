@@ -8,6 +8,8 @@ import './plus-showcase.css';
 import './benefit-showcase.css';
 import './mobile-webview-fix.css';
 import './archive.css';
+import './watchlist.css';
+import WatchlistDock from './WatchlistDock';
 
 export const metadata = {
   title: 'PlayStation Radar',
@@ -22,5 +24,5 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="de"><body>{children}</body></html>;
+  return <html lang="de"><body>{children}<WatchlistDock /></body></html>;
 }
