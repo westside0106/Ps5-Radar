@@ -20,7 +20,10 @@ export default async function WatchlistPage() {
             <h1>Watchlist</h1>
             <p>Gemerkte Spiele und Deals. Preise stammen aus dem täglich gespeicherten Radar-Verlauf.</p>
           </div>
-          <a href="/radar">← Zur Ausgabe</a>
+          <div style={{ display:'flex', gap:'8px', flexWrap:'wrap' }}>
+            <a href="/preise">€ Preisradar</a>
+            <a href="/radar">← Zur Ausgabe</a>
+          </div>
         </header>
         <WatchlistClient />
       </section>
