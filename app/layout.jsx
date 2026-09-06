@@ -6,7 +6,6 @@ import './release-showcase.css';
 import './store-showcase.css';
 import './plus-showcase.css';
 import './mobile-webview-fix.css';
-import './phone-zoom-safe.css';
 import './archive.css';
 
 export const metadata = {
