@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-06T14:43:12.580Z",
+  "checkedAt": "2026-09-06T14:49:01.383Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -135,7 +135,7 @@
   },
   "eaPlay": {
     "ok": true,
-    "bytes": 242071,
+    "bytes": 242067,
     "updated": true,
     "parsed": {
       "trial": true,
