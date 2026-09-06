@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-06T14:40:16.872Z",
+  "checkedAt": "2026-09-06T14:43:12.580Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -100,7 +100,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178380,
+    "bytes": 178331,
     "updated": true,
     "parsed": {
       "games": [
@@ -135,7 +135,7 @@
   },
   "eaPlay": {
     "ok": true,
-    "bytes": 242070,
+    "bytes": 242071,
     "updated": true,
     "parsed": {
       "trial": true,
@@ -161,7 +161,7 @@
     {
       "title": "Hogwarts Legacy",
       "ok": true,
-      "updated": true,
+      "updated": false,
       "parsed": {
         "prices": [
           "74,99 €",
@@ -176,7 +176,7 @@
     {
       "title": "Star Wars Outlaws",
       "ok": true,
-      "updated": true,
+      "updated": false,
       "parsed": {
         "prices": [
           "79,99 €",
@@ -190,7 +190,7 @@
     {
       "title": "Red Dead Redemption",
       "ok": true,
-      "updated": true,
+      "updated": false,
       "parsed": {
         "prices": [
           "24,99 €",
