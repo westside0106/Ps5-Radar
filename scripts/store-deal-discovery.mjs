@@ -104,6 +104,25 @@ function money(raw='') {
   return `${String(raw).replace('.',',')} €`;
 }
 
+function productPlatform(text, title='') {
+  const explicit = text.match(/Plattform:\s*((?:PS[45](?:\s*(?:,|·|\/|und)\s*)?)+)/i)?.[1];
+  if (explicit) {
+    const found = [];
+    if (/PS5/i.test(explicit)) found.push('PS5');
+    if (/PS4/i.test(explicit)) found.push('PS4');
+    if (found.length) return found.reverse().join(' · ');
+  }
+
+  const at = title ? text.toLowerCase().indexOf(title.toLowerCase()) : -1;
+  const local = at >= 0 ? text.slice(Math.max(0, at - 300), at + 2200) : text.slice(0, 2500);
+  const hasPS5 = /\bPS5\b|PlayStation 5/i.test(local);
+  const hasPS4 = /\bPS4\b|PlayStation 4/i.test(local);
+  if (hasPS5 && hasPS4) return 'PS4 · PS5';
+  if (hasPS5) return 'PS5';
+  if (hasPS4) return 'PS4';
+  return 'PlayStation';
+}
+
 function parseProduct(html, sourceUrl) {
   const text = strip(html);
   const titleRaw = decode(
@@ -132,9 +151,8 @@ function parseProduct(html, sourceUrl) {
   const discount = discountMatch ? Number(discountMatch[1]) : calculated;
   if (!Number.isFinite(discount) || discount < 10 || discount > 95 || Math.abs(discount - calculated) > 3) return null;
 
-  const hasPS5 = /\bPS5\b|PlayStation 5/i.test(text);
-  const hasPS4 = /\bPS4\b|PlayStation 4/i.test(text);
-  const platform = hasPS5 && hasPS4 ? 'PS4 · PS5' : hasPS5 ? 'PS5' : hasPS4 ? 'PS4' : 'PlayStation';
+  const platform = productPlatform(text, title);
+  const hasPS5 = /PS5/.test(platform);
 
   return {
     title,
