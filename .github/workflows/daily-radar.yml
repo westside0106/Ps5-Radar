@@ -36,8 +36,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Install Node runtime dependencies
-        run: npm install --package-lock=false --no-audit --no-fund
+      - name: Prepare browser runtime
+        run: |
+          npm install --package-lock=false --no-audit --no-fund
+          npx playwright install --with-deps chromium
       - name: Check official sources and update Radar
         run: node scripts/update-radar.mjs
       - name: Resolve current month, active campaigns and dynamic sources
@@ -52,8 +54,6 @@ jobs:
         run: node scripts/enrich-radar.mjs
       - name: Finalize validated issue and archive
         run: node scripts/sanitize-radar.mjs
-      - name: Install screenshot browser
-        run: npx playwright install --with-deps chromium
       - name: Render private magazine PNG
         shell: bash
         env:
