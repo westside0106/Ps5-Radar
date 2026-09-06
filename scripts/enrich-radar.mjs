@@ -183,7 +183,9 @@ async function get(url) {
 }
 
 function storeUrlFor(title) {
-  return (sources.storeDeals || []).find((item) => item.title === title)?.url || null;
+  return radar.resolvedSources?.storeDeals?.[title]
+    || (sources.storeDeals || []).find((item) => item.title === title)?.url
+    || null;
 }
 
 function mergeGallery(...groups) {
