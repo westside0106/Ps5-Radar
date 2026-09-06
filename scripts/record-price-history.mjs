@@ -73,6 +73,105 @@ function ingestIssue(history, issue, sourceUrls) {
   return added;
 }
 
+function confidenceFor(points) {
+  if (points >= 7) return 'hoch';
+  if (points >= 3) return 'mittel';
+  return 'niedrig';
+}
+
+function signalFor(game, deal, storeEnd, now) {
+  const points = (game.points || []).filter((point) => Number.isFinite(point.price));
+  if (!points.length) return null;
+
+  const latest = points.at(-1);
+  const prices = points.map((point) => point.price);
+  const low = Math.min(...prices);
+  const deltaFromLowPct = low > 0 ? ((latest.price - low) / low) * 100 : 0;
+  const currentDealPrice = numberFromEuro(deal?.price);
+  const currentDiscount = numberFromPercent(deal?.discount) ?? latest.discount ?? null;
+  const endMs = storeEnd ? new Date(storeEnd).getTime() : NaN;
+  const activeDeal = Boolean(deal && currentDealPrice > 0 && Number.isFinite(endMs) && endMs > now.getTime());
+  const daysRemaining = activeDeal ? Math.max(0, Math.ceil((endMs - now.getTime()) / 86400000)) : null;
+  const confidence = confidenceFor(points.length);
+  const atRadarLow = deltaFromLowPct <= 2;
+  const nearRadarLow = deltaFromLowPct <= 5;
+
+  const base = {
+    version: 1,
+    activeDeal,
+    confidence,
+    measurements: points.length,
+    currentPrice: activeDeal ? currentDealPrice : null,
+    lastObservedPrice: latest.price,
+    lastObservedDate: latest.date,
+    radarLow: low,
+    deltaFromLowPct: Number(deltaFromLowPct.toFixed(1)),
+    discount: activeDeal ? currentDiscount : null,
+    daysRemaining,
+  };
+
+  if (!activeDeal) {
+    return {
+      ...base,
+      code: 'wait',
+      label: 'WARTEN',
+      reason: 'Kein aktuell verifizierter Store-Deal im Radar.',
+    };
+  }
+
+  if (points.length < 2) {
+    return {
+      ...base,
+      code: 'watch',
+      label: 'BEOBACHTEN',
+      reason: `${currentDiscount !== null ? `-${currentDiscount} % Rabatt, ` : ''}aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.`,
+    };
+  }
+
+  if (atRadarLow && currentDiscount !== null && currentDiscount >= 50) {
+    return {
+      ...base,
+      code: 'buy',
+      label: 'KAUFEN',
+      reason: `Aktuell am eigenen Radar-Tief und mit -${currentDiscount} % deutlich reduziert.`,
+    };
+  }
+
+  if (nearRadarLow && currentDiscount !== null && currentDiscount >= 35) {
+    return {
+      ...base,
+      code: 'watch',
+      label: 'BEOBACHTEN',
+      reason: `Nur ${deltaFromLowPct.toFixed(1).replace('.', ',')} % über dem eigenen Radar-Tief bei -${currentDiscount} %.`,
+    };
+  }
+
+  if (deltaFromLowPct > 8) {
+    return {
+      ...base,
+      code: 'wait',
+      label: 'WARTEN',
+      reason: `Der aktuelle Preis liegt ${deltaFromLowPct.toFixed(1).replace('.', ',')} % über einem bereits gemessenen Radar-Tief.`,
+    };
+  }
+
+  if (currentDiscount !== null && currentDiscount >= 60) {
+    return {
+      ...base,
+      code: 'watch',
+      label: 'BEOBACHTEN',
+      reason: `Starker Rabatt von -${currentDiscount} %, aber noch kein eindeutiges Kaufsignal gegenüber dem Radar-Verlauf.`,
+    };
+  }
+
+  return {
+    ...base,
+    code: 'wait',
+    label: 'WARTEN',
+    reason: 'Der aktuelle Rabatt reicht gegenüber dem bisherigen Radar-Verlauf noch nicht für ein Kaufsignal.',
+  };
+}
+
 const radar = await readJson(radarPath, {});
 const sources = await readJson(sourcesPath, {});
 const sourceUrls = Object.fromEntries((sources.storeDeals || []).map((item) => [item.title, item.url]));
@@ -94,12 +193,29 @@ try {
 } catch {}
 
 pointWrites += ingestIssue(history, radar, sourceUrls);
-history.updatedAt = new Date().toISOString();
+
+const now = new Date();
+const currentDeals = new Map((radar.deals || []).map((deal) => [deal.title, deal]));
+const signalCounts = { buy: 0, watch: 0, wait: 0 };
+for (const [title, game] of Object.entries(history.games)) {
+  const signal = signalFor(game, currentDeals.get(title), radar.storeEnd, now);
+  if (signal) {
+    game.signal = signal;
+    if (signalCounts[signal.code] !== undefined) signalCounts[signal.code] += 1;
+  }
+}
+
+history.updatedAt = now.toISOString();
+history.method = {
+  signalVersion: 1,
+  note: 'Radar-Signal basiert ausschließlich auf den eigenen verifizierten Radar-Messpunkten, dem aktuellen Rabatt und dem aktiven Store-Zeitraum; kein externer Allzeit-Tiefpreis.',
+};
 history.summary = {
   titles: Object.keys(history.games).length,
   points: Object.values(history.games).reduce((sum, game) => sum + (game.points?.length || 0), 0),
   archiveIssuesScanned: issueCount,
+  signals: signalCounts,
 };
 
 await fs.writeFile(historyPath, `${JSON.stringify(history, null, 2)}\n`);
-console.log(`Price history updated: ${history.summary.titles} titles, ${history.summary.points} points (${pointWrites} issue/deal observations processed).`);
+console.log(`Price history updated: ${history.summary.titles} titles, ${history.summary.points} points; signals buy=${signalCounts.buy}, watch=${signalCounts.watch}, wait=${signalCounts.wait}.`);
