@@ -2,8 +2,20 @@
 
 import { useRef } from 'react';
 
+function linkList(detail) {
+  const links = [...(detail.links || [])];
+  if (detail.sourceUrl) links.push({ label: 'Offizielle Quelle', url: detail.sourceUrl });
+  const seen = new Set();
+  return links.filter((item) => {
+    if (!item?.url || seen.has(item.url)) return false;
+    seen.add(item.url);
+    return true;
+  });
+}
+
 export default function DetailTile({ children, detail, className = '' }) {
   const dialogRef = useRef(null);
+  const links = linkList(detail);
 
   function open() {
     dialogRef.current?.showModal();
@@ -78,10 +90,14 @@ export default function DetailTile({ children, detail, className = '' }) {
               </ul>
             ) : null}
 
-            {detail.sourceUrl ? (
-              <a className="radar-sheet-source" href={detail.sourceUrl} target="_blank" rel="noreferrer">
-                Offizielle Quelle öffnen ↗
-              </a>
+            {links.length ? (
+              <div className="radar-sheet-links">
+                {links.map((item) => (
+                  <a key={`${item.label}-${item.url}`} className="radar-sheet-source" href={item.url} target="_blank" rel="noreferrer">
+                    {item.label || 'Öffnen'} ↗
+                  </a>
+                ))}
+              </div>
             ) : null}
           </div>
         </section>
