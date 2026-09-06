@@ -1,6 +1,10 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import priceHistory from '../../data/price-history.json';
+
+const WATCHLIST_KEY = 'psradar_watchlist_v1';
+const WATCHLIST_EVENT = 'psradar-watchlist';
 
 function linkList(detail) {
   const links = [...(detail.links || [])];
@@ -87,6 +91,71 @@ function actionGlyph(label = '') {
   return '↗';
 }
 
+function readWatchlist() {
+  if (typeof window === 'undefined') return [];
+  try {
+    const parsed = JSON.parse(window.localStorage.getItem(WATCHLIST_KEY) || '[]');
+    return Array.isArray(parsed) ? parsed.map((item) => typeof item === 'string' ? { title: item } : item).filter((item) => item?.title) : [];
+  } catch {
+    return [];
+  }
+}
+
+function historyPoints(title) {
+  return priceHistory.games?.[title]?.points || [];
+}
+
+function formatHistoryPrice(value) {
+  return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(value);
+}
+
+function shortHistoryDate(value) {
+  const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return match ? `${match[3]}.${match[2]}.` : value;
+}
+
+function PriceHistory({ title }) {
+  const points = historyPoints(title).slice(-30);
+  if (!points.length) return null;
+
+  const values = points.map((point) => point.price).filter(Number.isFinite);
+  if (!values.length) return null;
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const current = values.at(-1);
+  const span = Math.max(0.01, max - min);
+  const coords = points.map((point, index) => {
+    const x = points.length === 1 ? 50 : 4 + (index / (points.length - 1)) * 92;
+    const y = 34 - ((point.price - min) / span) * 28;
+    return { x, y, ...point };
+  });
+  const path = coords.map((point, index) => `${index ? 'L' : 'M'} ${point.x.toFixed(2)} ${point.y.toFixed(2)}`).join(' ');
+  const atLow = Math.abs(current - min) < 0.005;
+  const status = points.length === 1
+    ? 'STARTWERT'
+    : atLow
+      ? 'RADAR-TIEF'
+      : `${formatHistoryPrice(current - min)} ÜBER RADAR-TIEF`;
+
+  return (
+    <div className="radar-price-history">
+      <div className="radar-price-history-head">
+        <div><small>PREISVERLAUF · {points.length} {points.length === 1 ? 'MESSPUNKT' : 'MESSPUNKTE'}</small><strong>{status}</strong></div>
+        <b>{formatHistoryPrice(current)}</b>
+      </div>
+      <svg viewBox="0 0 100 38" role="img" aria-label={`Preisverlauf für ${title}`}>
+        {points.length > 1 ? <path className="radar-price-line" d={path} fill="none" /> : null}
+        {coords.map((point) => <circle key={`${point.date}-${point.price}`} cx={point.x} cy={point.y} r="1.8" />)}
+      </svg>
+      <div className="radar-price-history-foot">
+        <span>{shortHistoryDate(points[0].date)} · {formatHistoryPrice(values[0])}</span>
+        <span>Tief {formatHistoryPrice(min)}</span>
+        <span>{shortHistoryDate(points.at(-1).date)}</span>
+      </div>
+    </div>
+  );
+}
+
 export default function DetailTile({ children, detail, className = '' }) {
   const dialogRef = useRef(null);
   const links = linkList(detail);
@@ -96,6 +165,7 @@ export default function DetailTile({ children, detail, className = '' }) {
   const trailerEmbed = youtubeEmbedUrl(trailerLink || '');
   const [activeImage, setActiveImage] = useState(gallery[0] || null);
   const [isOpen, setIsOpen] = useState(false);
+  const [isWatched, setIsWatched] = useState(false);
 
   const isPlusCard = detail.kicker === 'PLAYSTATION PLUS' && Boolean(detail.image);
   const isPlusSummary = detail.kicker === 'PLAYSTATION PLUS' && !detail.image;
@@ -117,6 +187,17 @@ export default function DetailTile({ children, detail, className = '' }) {
           ? ' benefit-showcase-ubi'
           : '';
 
+  useEffect(() => {
+    const sync = () => setIsWatched(readWatchlist().some((item) => item.title === detail.title));
+    sync();
+    window.addEventListener('storage', sync);
+    window.addEventListener(WATCHLIST_EVENT, sync);
+    return () => {
+      window.removeEventListener('storage', sync);
+      window.removeEventListener(WATCHLIST_EVENT, sync);
+    };
+  }, [detail.title]);
+
   function open() {
     setActiveImage(gallery[0] || null);
     setIsOpen(true);
@@ -133,6 +214,26 @@ export default function DetailTile({ children, detail, className = '' }) {
       event.preventDefault();
       open();
     }
+  }
+
+  function toggleWatchlist() {
+    const items = readWatchlist();
+    const exists = items.some((item) => item.title === detail.title);
+    const next = exists
+      ? items.filter((item) => item.title !== detail.title)
+      : [...items, {
+          title: detail.title,
+          kicker: detail.kicker || null,
+          image: detail.image || gallery[0] || null,
+          platform: rowValue(detail, 'Plattform'),
+          price: rowValue(detail, 'Aktuell') || rowValue(detail, 'Preis'),
+          discount: rowValue(detail, 'Rabatt'),
+          storeUrl: links.find((item) => /store/i.test(item.label || ''))?.url || null,
+          savedAt: new Date().toISOString(),
+        }];
+    window.localStorage.setItem(WATCHLIST_KEY, JSON.stringify(next));
+    setIsWatched(!exists);
+    window.dispatchEvent(new Event(WATCHLIST_EVENT));
   }
 
   return (
@@ -267,7 +368,18 @@ export default function DetailTile({ children, detail, className = '' }) {
           <div className="radar-sheet-content">
             <div className="radar-sheet-heading">
               {detail.kicker ? <span className="radar-sheet-kicker">{detail.kicker}</span> : null}
-              <h2>{detail.title}</h2>
+              <div className="radar-sheet-title-row">
+                <h2>{detail.title}</h2>
+                <button
+                  type="button"
+                  className={`radar-watch-button ${isWatched ? 'is-active' : ''}`}
+                  onClick={toggleWatchlist}
+                  aria-pressed={isWatched}
+                >
+                  <span aria-hidden="true">{isWatched ? '★' : '☆'}</span>
+                  {isWatched ? 'Gemerkt' : 'Watchlist'}
+                </button>
+              </div>
               {badges.length ? (
                 <div className="radar-sheet-badges" aria-label="Schnellinfos">
                   {badges.map((badge) => (
@@ -281,6 +393,8 @@ export default function DetailTile({ children, detail, className = '' }) {
             </div>
 
             {detail.summary ? <p className="radar-sheet-summary">{detail.summary}</p> : null}
+
+            <PriceHistory title={detail.title} />
 
             {trailerEmbed && isOpen ? (
               <>
