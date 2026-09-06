@@ -18,8 +18,6 @@ on:
       - 'data/radar-trigger.txt'
       - 'package.json'
   schedule:
-    # GitHub scheduled workflows can start late. These are fallback runs only;
-    # the 08:00 ChatGPT trigger causes a normal push run at the desired time.
     - cron: '0 6 * * *'
     - cron: '0 7 * * *'
 
@@ -38,6 +36,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Install Node runtime dependencies
+        run: npm install --package-lock=false --no-audit --no-fund
       - name: Check official sources and update Radar
         run: node scripts/update-radar.mjs
       - name: Resolve current month, active campaigns and dynamic sources
@@ -52,10 +52,8 @@ jobs:
         run: node scripts/enrich-radar.mjs
       - name: Finalize validated issue and archive
         run: node scripts/sanitize-radar.mjs
-      - name: Install screenshot renderer
-        run: |
-          npm install --package-lock=false --no-audit --no-fund
-          npx playwright install --with-deps chromium
+      - name: Install screenshot browser
+        run: npx playwright install --with-deps chromium
       - name: Render private magazine PNG
         shell: bash
         env:
@@ -78,22 +76,18 @@ jobs:
             echo "No Radar changes."
             exit 0
           fi
-
           git config user.name "playstation-radar-bot"
           git config user.email "playstation-radar-bot@users.noreply.github.com"
           git add data/radar.json data/source-state.json data/archive/ data/daily/
           git commit -m "Daily Radar update $(TZ=Europe/Berlin date +%Y-%m-%d)"
-
           if git push; then
             exit 0
           fi
-
           echo "Remote main advanced while this run was working; trying one safe rebase."
           git fetch origin main
           if git rebase origin/main && git push; then
             exit 0
           fi
-
           git rebase --abort 2>/dev/null || true
-          echo "A newer main commit overlaps this generated update. This run is treated as superseded instead of failing with fetch-first."
+          echo "A newer main commit overlaps this generated update; treating this run as superseded."
           exit 0
