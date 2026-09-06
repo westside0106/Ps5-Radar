@@ -55,52 +55,125 @@ function compactRows(rows) {
   return rows.filter((row) => row.value !== undefined && row.value !== null && row.value !== '');
 }
 
+function gameInfo(title) {
+  return radar.gameDetails?.[title] || {};
+}
+
+function richRows(title, baseRows = []) {
+  const info = gameInfo(title);
+  const used = new Set(baseRows.map((row) => row.label));
+  const extra = [
+    { label: 'Genre', value: info.genre },
+    { label: 'Entwickler', value: info.developer },
+    { label: 'Publisher', value: info.publisher },
+    { label: 'Plattform', value: info.platform },
+    { label: 'Release', value: info.release },
+    { label: 'PS Plus', value: info.psPlusStatus },
+  ].filter((row) => !used.has(row.label));
+  return compactRows([...baseRows, ...extra]);
+}
+
+function gameLinks(title, fallbackLinks = []) {
+  const info = gameInfo(title);
+  const links = [
+    info.storeUrl ? { label: 'PlayStation Store', url: info.storeUrl } : null,
+    info.pageUrl ? { label: 'PlayStation-Seite', url: info.pageUrl } : null,
+    info.trailerUrl ? { label: 'Trailer / Video', url: info.trailerUrl } : null,
+    ...fallbackLinks,
+  ].filter(Boolean);
+  const seen = new Set();
+  return links.filter((item) => {
+    if (!item.url || seen.has(item.url)) return false;
+    seen.add(item.url);
+    return true;
+  });
+}
+
 function storyDetail({ title, date, text, price, image, top = false }) {
+  const info = gameInfo(title);
   return {
     kicker: top ? 'TOP-NEWS' : 'NEWS',
     title,
     image,
-    summary: text,
-    rows: compactRows([
+    summary: info.description || text,
+    rows: richRows(title, [
       { label: 'Status', value: ageLabel(date) },
       { label: 'Datum', value: date },
       { label: 'Preis', value: price },
       { label: 'Ausgabe', value: radar.edition },
     ]),
-    sourceUrl: alertUrl(title) || sources.monthlyReleases,
+    links: gameLinks(title, [
+      { label: 'Radar-Quelle', url: alertUrl(title) || sources.monthlyReleases },
+    ]),
   };
 }
 
 function psPlusDetail(game) {
+  const info = gameInfo(game.title);
   return {
     kicker: 'PLAYSTATION PLUS',
     title: game.title,
     image: game.image,
-    summary: 'Teil der aktuell im Radar geführten monatlichen PlayStation-Plus-Spiele.',
-    rows: compactRows([
+    summary: info.description || 'Teil der aktuell im Radar geführten monatlichen PlayStation-Plus-Spiele.',
+    rows: richRows(game.title, [
       { label: 'Paket', value: radar.psplusLabel },
       { label: 'Status', value: radar.psplusTitle },
       { label: 'Zeitraum', value: radar.psplusText },
     ]),
-    sourceUrl: sources.psPlusMonthly,
+    links: gameLinks(game.title, [
+      { label: 'PS-Plus-Ankündigung', url: sources.psPlusMonthly },
+    ]),
   };
 }
 
 function dealDetail(deal) {
+  const info = gameInfo(deal.title);
   const source = (sources.storeDeals || []).find((item) => item.title === deal.title)?.url;
   return {
     kicker: 'PLAYSTATION STORE',
     title: deal.title,
     image: deal.image,
-    summary: radar.storeText,
-    rows: compactRows([
+    summary: info.description || radar.storeText,
+    rows: richRows(deal.title, [
       { label: 'Plattform', value: deal.platform },
       { label: 'Aktuell', value: deal.price },
       { label: 'Vorher', value: deal.oldPrice },
       { label: 'Rabatt', value: deal.discount },
       { label: 'Ende', value: displayEndFull(radar.storeEnd) },
     ]),
-    sourceUrl: source,
+    links: gameLinks(deal.title, source ? [{ label: 'Store-Angebot', url: source }] : []),
+  };
+}
+
+function releaseDetail(item) {
+  const info = gameInfo(item.title);
+  return {
+    kicker: 'PS5-RELEASE',
+    title: item.title,
+    summary: info.description || 'Kommender PS5-Release aus dem aktuellen Monats-Radar.',
+    rows: richRows(item.title, [
+      { label: 'Release', value: item.date },
+    ]),
+    links: gameLinks(item.title, [
+      { label: 'Monatsübersicht', url: sources.monthlyReleases },
+    ]),
+  };
+}
+
+function eaDetail() {
+  const title = 'EA SPORTS FC 27';
+  const info = gameInfo(title);
+  return {
+    kicker: 'EA PLAY',
+    title: radar.eaTitle || title,
+    summary: info.description || radar.benefitsText,
+    rows: richRows(title, [
+      { label: 'EA-Play-Vorteil', value: radar.eaTitle },
+    ]),
+    bullets: radar.eaItems || [],
+    links: gameLinks(title, [
+      { label: 'EA Play', url: sources.eaPlay },
+    ]),
   };
 }
 
@@ -111,23 +184,15 @@ function quickDetail(item) {
       title: item,
       summary: radar.psplusText,
       rows: [{ label: 'Paket', value: radar.psplusLabel }],
-      sourceUrl: sources.psPlusMonthly,
+      links: [{ label: 'PS-Plus-Ankündigung', url: sources.psPlusMonthly }],
     };
   }
-  if (item === radar.eaTitle) {
-    return {
-      kicker: 'EA PLAY',
-      title: item,
-      summary: radar.benefitsText,
-      bullets: radar.eaItems || [],
-      sourceUrl: sources.eaPlay,
-    };
-  }
+  if (item === radar.eaTitle) return eaDetail();
   return {
     kicker: 'KURZMELDUNG',
     title: item,
     summary: 'Kurzmeldung aus der aktuellen PlayStation-Radar-Ausgabe.',
-    sourceUrl: alertUrl(item),
+    links: alertUrl(item) ? [{ label: 'Offizielle Quelle', url: alertUrl(item) }] : [],
   };
 }
 
@@ -260,7 +325,7 @@ export default async function RadarPage() {
             title: radar.psplusTitle,
             summary: radar.psplusText,
             rows: [{ label: 'Paket', value: radar.psplusLabel }],
-            sourceUrl: sources.psPlusMonthly,
+            links: [{ label: 'PS-Plus-Ankündigung', url: sources.psPlusMonthly }],
           }}>
             <div className="plus-summary compact-summary">
               <div><span>ESSENTIAL</span><h4>{radar.psplusTitle}</h4></div><p>{radar.psplusText}</p>
@@ -299,13 +364,7 @@ export default async function RadarPage() {
         </section>
 
         <section className="benefit-grid">
-          <DetailTile detail={{
-            kicker: 'EA PLAY',
-            title: radar.eaTitle || 'EA Play',
-            summary: radar.benefitsText,
-            bullets: radar.eaItems || [],
-            sourceUrl: sources.eaPlay,
-          }} className="radar-panel-clickable">
+          <DetailTile detail={eaDetail()} className="radar-panel-clickable">
             <Panel tone="ea" icon="EA" title="EA PLAY">
               <p>{radar.benefitsText}</p>{radar.eaTitle ? <div className="ea-chip">{radar.eaTitle}</div> : null}
             </Panel>
@@ -316,7 +375,7 @@ export default async function RadarPage() {
             title: radar.ubisoftTitle,
             summary: radar.ubisoftText,
             bullets: radar.ubisoftItems || [],
-            sourceUrl: sources.ubisoftPlus,
+            links: [{ label: 'Ubisoft+ auf PlayStation', url: sources.ubisoftPlus }],
           }} className="radar-panel-clickable">
             <Panel tone="ubi" icon="◎" title="UBISOFT+">
               <p>{radar.ubisoftText}</p>
@@ -329,16 +388,7 @@ export default async function RadarPage() {
           <Panel tone="releases" icon="▦" title="KOMMENDE PS5-RELEASES">
             <div className="release-list">
               {radar.releases.map((item) => (
-                <DetailTile
-                  key={`${item.date}-${item.title}`}
-                  detail={{
-                    kicker: 'PS5-RELEASE',
-                    title: item.title,
-                    summary: 'Kommender PS5-Release aus dem aktuellen Monats-Radar.',
-                    rows: [{ label: 'Release', value: item.date }],
-                    sourceUrl: sources.monthlyReleases,
-                  }}
-                >
+                <DetailTile key={`${item.date}-${item.title}`} detail={releaseDetail(item)}>
                   <div className="release-row"><b>{item.date}</b><span>{item.title}</span></div>
                 </DetailTile>
               ))}
