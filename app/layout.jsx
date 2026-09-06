@@ -3,6 +3,7 @@ import './mobile.css';
 import './magazine.css';
 import './detail-sheet.css';
 import './release-showcase.css';
+import './store-showcase.css';
 import './archive.css';
 
 export const metadata = {
