@@ -39,33 +39,33 @@
       "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/478ff13a49601ba96c7f2b89dfec0de1f69299fb.jpg"
     }
   ],
-  "storeTitle": "gamescom-Rabatte aktiv",
-  "storeText": "Ausgewählte aktuelle Angebote im deutschen PlayStation Store.",
+  "storeTitle": "Aktuelle Store-Top-Deals",
+  "storeText": "Automatisch aus der aktuell verifizierten PlayStation-Store-Aktion ausgewählt.",
   "storeEnd": "2026-09-10T00:59:00+02:00",
   "deals": [
     {
-      "title": "Hogwarts Legacy",
-      "platform": "PS5",
-      "discount": "-85 %",
-      "price": "11,24 €",
-      "oldPrice": "74,99 €",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2716/9d691701d881f2d5cd2275b5b3cbebca3c82046a7ba2a77b.jpg"
-    },
-    {
-      "title": "Star Wars Outlaws",
-      "platform": "PS5",
-      "discount": "-75 %",
-      "price": "19,99 €",
-      "oldPrice": "79,99 €",
-      "image": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-hero-banner-desktop-01-en-17jul23"
-    },
-    {
-      "title": "Red Dead Redemption",
+      "title": "Forza Horizon 5 Deluxe Edition",
       "platform": "PS4 · PS5",
+      "price": "35,99 €",
+      "oldPrice": "89,99 €",
+      "discount": "-60 %",
+      "image": null
+    },
+    {
+      "title": "Battlefield™ 6",
+      "platform": "PS4 · PS5",
+      "price": "39,99 €",
+      "oldPrice": "79,99 €",
       "discount": "-50 %",
-      "price": "24,99 €",
-      "oldPrice": "49,99 €",
-      "image": "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-cover-01-en-9aug23"
+      "image": null
+    },
+    {
+      "title": "WWE 2K26 Attitude Era Edition",
+      "platform": "PS4 · PS5",
+      "price": "71,49 €",
+      "oldPrice": "129,99 €",
+      "discount": "-45 %",
+      "image": null
     }
   ],
   "releases": [
@@ -115,13 +115,13 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-06T14:38:27.689Z",
+    "checkedAt": "2026-09-06T14:40:54.169Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-06T14:38:13.227Z"
+    "lastSuccessfulCheck": "2026-09-06T14:40:16.872Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-06T14:38:13.227Z",
+    "checkedAt": "2026-09-06T14:40:16.872Z",
     "errors": []
   },
   "gameDetails": {
@@ -253,64 +253,9 @@
         "https://gmedia.playstation.com/is/image/SIEPDC/loader-spinner-dark"
       ]
     },
-    "Hogwarts Legacy": {
-      "pageUrl": "https://www.playstation.com/de-de/games/hogwarts-legacy/",
-      "developer": "Avalanche Software",
-      "genre": "Open-World-Action-RPG",
-      "description": "Open-World-Action-RPG in der Zaubererwelt des 19. Jahrhunderts mit Erkundung, Zaubersprüchen, Tierwesen und Charakterentwicklung.",
-      "publisher": "WARNER BROS. INTERACTIVE",
-      "release": "9.2.2023",
-      "platform": "PS5",
-      "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
-      "storeUrl": "https://store.playstation.com/de-de/product/EP1018-PPSA01603_00-HOGWARTSLEGACY01/",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202503/2716/ce2e7f5896365b4e35a192b1f7592b590fee98827644ddb4.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-hero-banner-desktop-01-en-24jan22",
-        "https://i.ytimg.com/vi_webp/NTnok1LvKUk/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/2AZmuZNu5LA/maxresdefault.webp",
-        "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-01-ps5-en-02oct20",
-        "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-02-ps5-en-02oct20"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=1O6Qstncpnc"
-    },
-    "Star Wars Outlaws": {
-      "pageUrl": "https://www.playstation.com/de-de/games/star-wars-outlaws/",
-      "developer": "Massive Entertainment",
-      "genre": "Open-World-Action-Adventure",
-      "description": "Open-World-Star-Wars-Abenteuer rund um die Gesetzlose Kay Vess, Verbrechersyndikate, planetare Erkundung und Kämpfe.",
-      "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
-      "publisher": "Ubisoft",
-      "release": "29.8.2024",
-      "platform": "PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA08260_00-GAME000000000000",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202306/3020/bca42b94af09b7a7ffd27fcb76a7bb1e46b60ed0c5f99322.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-hero-banner-desktop-01-en-17jul23",
-        "https://i.ytimg.com/vi_webp/XNf5MdFw5cU/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/gjhsh-WHs6E/maxresdefault.webp",
-        "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-screenshot-08-en-01nov23",
-        "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-screenshot-07-en-27oct23"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=gjhsh-WHs6E"
-    },
-    "Red Dead Redemption": {
-      "pageUrl": "https://www.playstation.com/de-de/games/red-dead-redemption/",
-      "genre": "Open-World-Action-Adventure · Western",
-      "description": "Western-Open-World-Abenteuer um John Marston inklusive Undead Nightmare; die PS5-Version bietet unter anderem 60 FPS und höhere Bildqualität.",
-      "publisher": "Rockstar Games",
-      "release": "1.12.2025",
-      "platform": "PS4 · PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/EP1004-PPSA30523_00-REDEMPTION000001",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202511/1414/84fc4c00ab4df9b0fa85c42f30e718bacd0273ca4bb9742f.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202307/3122/4a4c8caf534b020c8a4ac093c61d3715505d4feaea666cab.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-cover-01-en-9aug23",
-        "https://i.ytimg.com/vi_webp/Xu81znuI8tw/maxresdefault.webp",
-        "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-screenshot-04-en-24nov25",
-        "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-screenshot-06-en-24nov25"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=Xu81znuI8tw"
-    },
+    "Forza Horizon 5 Deluxe Edition": {},
+    "Battlefield™ 6": {},
+    "WWE 2K26 Attitude Era Edition": {},
     "Mewgenics": {
       "description": "Rundenbasiertes Taktik-Roguelike mit Katzenzucht, vererbten Merkmalen, Mutationen, Klassen und umfangreichen Item-Synergien.",
       "publisher": "Nicalis Inc.",
@@ -417,10 +362,10 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-06T14:38:21.388Z",
+    "checkedAt": "2026-09-06T14:40:45.151Z",
     "titles": 16,
-    "fetched": 16,
-    "enriched": 16,
+    "fetched": 13,
+    "enriched": 13,
     "warnings": []
   },
   "resolvedSources": {
@@ -448,9 +393,9 @@
     "storeCampaign": "https://blog.de.playstation.com/2026/08/28/die-gamescom-rabatte-sind-im-playstation-store-gelandet/",
     "storeCollection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
     "storeDeals": {
-      "Hogwarts Legacy": "https://store.playstation.com/de-de/product/EP1018-PPSA01603_00-HOGWARTSLEGACY01/",
-      "Star Wars Outlaws": "https://store.playstation.com/de-de/product/EP0001-PPSA08260_00-GAME000000000000",
-      "Red Dead Redemption": "https://store.playstation.com/de-de/product/EP1004-PPSA30523_00-REDEMPTION000001"
+      "Forza Horizon 5 Deluxe Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0547256477986893",
+      "Battlefield™ 6": "https://store.playstation.com/de-de/product/UP0006-PPSA19534_00-SANTIAGOSTANDARD",
+      "WWE 2K26 Attitude Era Edition": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26TUDEEDITN"
     }
   },
   "eaPlay": {
@@ -478,33 +423,30 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-06T14:38:20.052Z",
+    "checkedAt": "2026-09-06T14:40:22.495Z",
     "month": "September",
     "year": 2026,
     "notes": [],
     "resolved": {
-      "storeDiscoveryMode": "insufficient-verified-products",
+      "storeDiscoveryMode": "dynamic-browser",
       "storeDiscoveryStaticLinks": 1,
-      "storeDiscoveryBrowserLinks": 0,
-      "storeDiscoveryLinks": 1,
-      "storeDiscoveryVerified": 0,
-      "storeDiscoverySelected": 0
+      "storeDiscoveryBrowserLinks": 24,
+      "storeDiscoveryLinks": 25,
+      "storeDiscoveryVerified": 20,
+      "storeDiscoverySelected": 3
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-06T14:38:20.171Z",
+    "checkedAt": "2026-09-06T14:40:22.589Z",
     "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
     "activeCampaign": true,
     "staticLinks": 1,
-    "browserLinks": 0,
-    "links": 1,
-    "fetched": 1,
-    "verified": 0,
-    "selected": 0,
-    "mode": "insufficient-verified-products",
-    "warnings": [
-      "Browser-Fallback: Cannot find package 'playwright' imported from /home/runner/work/Ps5-Radar/Ps5-Radar/scripts/store-deal-discovery.mjs",
-      "Nur 0 verifizierbare Deal-Produkte entdeckt; bestehende verifizierte Auswahl bleibt erhalten."
-    ]
+    "browserLinks": 24,
+    "links": 25,
+    "fetched": 25,
+    "verified": 20,
+    "selected": 3,
+    "mode": "dynamic-browser",
+    "warnings": []
   }
 }
