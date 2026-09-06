@@ -1,5 +1,14 @@
 [
   {
+    "id": "003",
+    "edition": "AUSGABE #003",
+    "date": "06.09.2026",
+    "headline": "RADAR-CHECK AKTUELL",
+    "lead": "Onimusha: Way of the Sword",
+    "image": "https://i.ytimg.com/vi/UZYxGBeGOzY/maxresdefault.jpg",
+    "file": "003.json"
+  },
+  {
     "id": "002",
     "edition": "AUSGABE #002",
     "date": "05.09.2026",

@@ -1,0 +1,127 @@
+{
+  "date": "06.09.2026",
+  "edition": "AUSGABE #003",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "06.09 · LIVE",
+  "leadTitle": "Onimusha: Way of the Sword",
+  "leadDate": "04.09.2026",
+  "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
+  "leadPrice": "79,99 €",
+  "leadImage": "https://i.ytimg.com/vi/UZYxGBeGOzY/maxresdefault.jpg",
+  "secondary1Title": "NBA 2K27",
+  "secondary1Date": "04.09.2026",
+  "secondary1Meta": "PS5 · Basketball · The City erstmals Co-Ed",
+  "secondary1Price": "79,99 €",
+  "secondary1Image": "https://i.ytimg.com/vi/5l-a3U3Y8aA/maxresdefault.jpg",
+  "secondary2Title": "The Blood of Dawnwalker",
+  "secondary2Date": "03.09.2026",
+  "secondary2Meta": "PS5 · Dark-Fantasy Open-World-RPG",
+  "secondary2Price": "69,99 €",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/07/174ccb5bb7aba84e2ebd620623f858b3bea0b628.jpg?crop_strategy=smart&resize=1088%2C612",
+  "psplusLabel": "SEPTEMBER 2026",
+  "psplusTitle": "September-Spiele sind live",
+  "psplusText": "Verfügbar bis 05.10.",
+  "plusGames": [
+    {
+      "title": "Sniper Elite: Resistance",
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/647b263fa902f91c5952957ae44f11ee14d70d52-scaled.jpg"
+    },
+    {
+      "title": "MLB The Show 26",
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/0e750aeb538a3a762afb44ac9b8e2b3a5ae2c24a.jpg"
+    },
+    {
+      "title": "Wobbly Life",
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/478ff13a49601ba96c7f2b89dfec0de1f69299fb.jpg"
+    },
+    {
+      "title": "Chained Echoes",
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/ea3c4d6d1b631d6797579b6c6002a1e2578348f9.jpg"
+    }
+  ],
+  "storeTitle": "gamescom-Rabatte aktiv",
+  "storeText": "Ausgewählte aktuelle Angebote im deutschen PlayStation Store.",
+  "storeEnd": "2026-09-10T00:59:00+02:00",
+  "deals": [
+    {
+      "title": "Hogwarts Legacy",
+      "platform": "PS5",
+      "discount": "-85 %",
+      "price": "11,24 €",
+      "oldPrice": "74,99 €",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2716/9d691701d881f2d5cd2275b5b3cbebca3c82046a7ba2a77b.jpg"
+    },
+    {
+      "title": "Star Wars Outlaws",
+      "platform": "PS5",
+      "discount": "-75 %",
+      "price": "19,99 €",
+      "oldPrice": "79,99 €",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-hero-banner-desktop-01-en-17jul23"
+    },
+    {
+      "title": "Red Dead Redemption",
+      "platform": "PS4 · PS5",
+      "discount": "-50 %",
+      "price": "24,99 €",
+      "oldPrice": "49,99 €",
+      "image": "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-cover-01-en-9aug23"
+    }
+  ],
+  "releases": [
+    {
+      "date": "08.09.",
+      "title": "Mewgenics"
+    },
+    {
+      "date": "15.09.",
+      "title": "Marvel’s Wolverine"
+    },
+    {
+      "date": "16.09.",
+      "title": "Aniimo"
+    },
+    {
+      "date": "24.09.",
+      "title": "Control Resonant"
+    },
+    {
+      "date": "24.09.",
+      "title": "Silent Hill: Townfall"
+    }
+  ],
+  "quickItems": [
+    "September-Spiele sind live",
+    "FC 27 · 10h Trial ab 18.09."
+  ],
+  "leavingTitle": "gamescom-Rabatte laufen aus",
+  "leavingText": "Aktuelle Store-Aktion endet am 10.09., 00:59 Uhr.",
+  "eaTitle": "FC 27 · 10h Trial ab 18.09.",
+  "benefitsText": "EA Play: FC 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
+  "eaItems": [
+    "10 % auf digitale EA-Käufe",
+    "Monatliche Mitgliederbelohnungen",
+    "The Play List"
+  ],
+  "ubisoftTitle": "Ubisoft+ Classics",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftItems": [
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
+  ],
+  "radarCheck": "Stand 06.09.2026 · 6 Quellen erfolgreich geprüft",
+  "sourceAlerts": [],
+  "editorial": [],
+  "health": {
+    "status": "ok",
+    "checkedAt": "2026-09-06T09:42:34.826Z",
+    "okSources": 6,
+    "warnings": 0,
+    "lastSuccessfulCheck": "2026-09-06T09:42:34.826Z"
+  },
+  "sourceCheck": {
+    "checkedAt": "2026-09-06T09:42:34.826Z",
+    "errors": []
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "date": "05.09.2026",
-  "edition": "AUSGABE #002",
+  "date": "06.09.2026",
+  "edition": "AUSGABE #003",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "05.09 · LIVE",
+  "newCount": "06.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -110,18 +110,18 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 05.09.2026 · 6 Quellen erfolgreich geprüft",
+  "radarCheck": "Stand 06.09.2026 · 6 Quellen erfolgreich geprüft",
   "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-05T08:08:12.565Z",
+    "checkedAt": "2026-09-06T09:42:34.826Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-05T08:08:12.565Z"
+    "lastSuccessfulCheck": "2026-09-06T09:42:34.826Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-05T08:08:12.565Z",
+    "checkedAt": "2026-09-06T09:42:34.826Z",
     "errors": []
   }
 }
