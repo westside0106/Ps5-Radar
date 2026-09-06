@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-06T14:35:27.851Z",
+  "checkedAt": "2026-09-06T14:38:13.227Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -100,7 +100,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178379,
+    "bytes": 178331,
     "updated": true,
     "parsed": {
       "games": [
@@ -135,7 +135,7 @@
   },
   "eaPlay": {
     "ok": true,
-    "bytes": 241947,
+    "bytes": 242071,
     "updated": true,
     "parsed": {
       "trial": true,
