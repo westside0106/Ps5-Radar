@@ -62,6 +62,17 @@ function claimDate(detail) {
   return match?.[1] || null;
 }
 
+function servicePrice(detail) {
+  const source = [detail.summary, ...(detail.bullets || [])].filter(Boolean).join(' ');
+  const match = source.match(/(\d{1,3},\d{2}\s*€)(?:\s*\/\s*Monat|\/Monat)?/i);
+  return match?.[1] || null;
+}
+
+function trialDate(detail) {
+  const source = [detail.title, detail.summary].filter(Boolean).join(' ');
+  return source.match(/ab\s+(\d{1,2}\.\d{1,2}\.)/i)?.[1] || null;
+}
+
 function actionKind(label = '') {
   if (/trailer|video/i.test(label)) return 'video';
   if (/store/i.test(label)) return 'primary';
@@ -88,10 +99,23 @@ export default function DetailTile({ children, detail, className = '' }) {
 
   const isPlusCard = detail.kicker === 'PLAYSTATION PLUS' && Boolean(detail.image);
   const isPlusSummary = detail.kicker === 'PLAYSTATION PLUS' && !detail.image;
+  const isEaBenefit = detail.kicker === 'EA PLAY';
+  const isUbiBenefit = detail.kicker === 'UBISOFT+';
   const plusGenre = rowValue(detail, 'Genre');
   const plusPlatform = rowValue(detail, 'Plattform');
   const plusClaimDate = claimDate(detail);
-  const semanticClass = isPlusCard ? ' plus-showcase-game' : isPlusSummary ? ' plus-showcase-summary' : '';
+  const eaTrialDate = isEaBenefit ? trialDate(detail) : null;
+  const ubiPrice = isUbiBenefit ? servicePrice(detail) : null;
+  const benefitItems = (detail.bullets || []).slice(0, 4);
+  const semanticClass = isPlusCard
+    ? ' plus-showcase-game'
+    : isPlusSummary
+      ? ' plus-showcase-summary'
+      : isEaBenefit
+        ? ' benefit-showcase-ea'
+        : isUbiBenefit
+          ? ' benefit-showcase-ubi'
+          : '';
 
   function open() {
     setActiveImage(gallery[0] || null);
@@ -144,6 +168,59 @@ export default function DetailTile({ children, detail, className = '' }) {
           <div className="plus-claim-window" aria-hidden="true">
             <small>CLAIM-FENSTER</small>
             <b>BIS {plusClaimDate} BEANSPRUCHBAR</b>
+          </div>
+        ) : null}
+
+        {isEaBenefit ? (
+          <div
+            className="benefit-showcase-overlay is-ea"
+            style={detail.image ? { backgroundImage: `url("${detail.image}")` } : undefined}
+            aria-hidden="true"
+          >
+            <div className="benefit-showcase-layer">
+              <div className="benefit-topline">
+                <span className="benefit-service-badge ea">EA PLAY</span>
+                {eaTrialDate ? <span className="benefit-status-badge is-soon">TRIAL AB {eaTrialDate}</span> : null}
+              </div>
+              <div className="benefit-content">
+                <span className="benefit-kicker">AKTUELLER MEMBER-VORTEIL</span>
+                <h4>{detail.title}</h4>
+                <span className="benefit-subtitle">10-Stunden-Trial · vor Release spielen</span>
+                <div className="benefit-perks">
+                  {benefitItems.map((item) => <span key={item}>{item}</span>)}
+                </div>
+                <div className="benefit-highlight">
+                  <strong>10 %</strong>
+                  <small>Rabatt auf digitale EA-Käufe für Mitglieder</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : null}
+
+        {isUbiBenefit ? (
+          <div className="benefit-showcase-overlay is-ubi" aria-hidden="true">
+            <div className="benefit-ubi-mark">U+</div>
+            <div className="benefit-showcase-layer">
+              <div className="benefit-topline">
+                <span className="benefit-service-badge ubi">UBISOFT+</span>
+                <span className="benefit-status-badge">CLASSICS</span>
+              </div>
+              <div className="benefit-content">
+                <span className="benefit-kicker">PLAYSTATION-KATALOG</span>
+                <h4>{detail.title}</h4>
+                <span className="benefit-subtitle">Ubisoft-Klassiker auf PlayStation</span>
+                {ubiPrice ? (
+                  <div className="benefit-ubi-price"><strong>{ubiPrice}</strong><span>/ Monat</span></div>
+                ) : null}
+                <div className="benefit-perks">
+                  {benefitItems.map((item) => <span key={item}>{item}</span>)}
+                </div>
+                {(detail.bullets || []).some((item) => /PS Plus Extra|PS Plus Premium/i.test(item)) ? (
+                  <div className="benefit-ubi-plus">AUCH ÜBER PS PLUS EXTRA / PREMIUM</div>
+                ) : null}
+              </div>
+            </div>
           </div>
         ) : null}
 
