@@ -5,6 +5,7 @@ import './detail-sheet.css';
 import './release-showcase.css';
 import './store-showcase.css';
 import './plus-showcase.css';
+import './benefit-showcase.css';
 import './mobile-webview-fix.css';
 import './archive.css';
 
