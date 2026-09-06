@@ -115,13 +115,13 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-06T11:41:54.825Z",
+    "checkedAt": "2026-09-06T12:24:01.810Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-06T11:41:54.825Z"
+    "lastSuccessfulCheck": "2026-09-06T12:24:01.810Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-06T11:41:54.825Z",
+    "checkedAt": "2026-09-06T12:24:01.810Z",
     "errors": []
   },
   "gameDetails": {
@@ -133,7 +133,15 @@
       "trailerUrl": "https://www.youtube.com/watch?v=UZYxGBeGOzY",
       "publisher": "CE EUROPE LIMITED",
       "release": "04.09.2026",
-      "platform": "PS5"
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/6f451f9fcef025e8913d863041514efb8cf24dc0b6d7ab01.png?w=54&thumb=true",
+        "https://i.ytimg.com/vi_webp/W9Ct29FeMak/maxresdefault.webp",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1500/78f4d34e61e0f24e6708ac380909fb71c010696c5c751412.png?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/e0378f1a844ede8537afefe74bd255af144b2f43871adc75.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1506/e5fbe90c88b01ff09d12bab098944090820f4d228e393535.jpg?w=54&thumb=true"
+      ]
     },
     "NBA 2K27": {
       "pageUrl": "https://www.playstation.com/de-de/games/nba-2k/",
@@ -143,7 +151,15 @@
       "trailerUrl": "https://www.youtube.com/watch?v=5l-a3U3Y8aA",
       "publisher": "Take-Two",
       "release": "04.09.2026",
-      "platform": "PS5"
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/2913/4a31f711e2ff460cd44ad646983f36533278cea61f639be9.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-hero-desktop-03-en-16jul26?$100px$",
+        "https://i.ytimg.com/vi_webp/5l-a3U3Y8aA/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/x3VbMlmerXg/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/YUbJfNJSG-M/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-screenshot-05-en-16jul26"
+      ]
     },
     "The Blood of Dawnwalker": {
       "pageUrl": "https://www.playstation.com/de-de/games/the-blood-of-dawnwalker/",
@@ -152,7 +168,15 @@
       "description": "Düsteres Open-World-Action-RPG, in dem ein zwischen Mensch und Vampir gefangener Protagonist in einer mittelalterlichen Welt um Zeit, Macht und Überleben kämpft.",
       "publisher": "BANDAI NAMCO ENTERTAINMENT EUROPE",
       "release": "03.09.2026",
-      "platform": "PS5"
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202603/3009/4bf61f8869f55ee0a930f3d1f00992559c1d4a2d52e00408.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202512/1814/fd8c64ffef89f338da778a59a8e23fd4eb8e793bd6d94a2f.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/Blood-of-Dawnwalker-hero-desktop-01-en-04feb26?$100px$",
+        "https://i.ytimg.com/vi_webp/YxEUwi2EtnY/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/UEquupEcYt8/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/0JtpOX0CxDo/maxresdefault.webp"
+      ]
     },
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
@@ -162,7 +186,15 @@
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "REBELLION INTERACTIVE",
       "release": "30.1.2025",
-      "platform": "PS4 · PS5"
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/b026676dfa9d7639fef041a9f0ed4c6d076e2ad3647eae1c.png?w=54&thumb=true",
+        "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202411/1909/8aafcc75d67ed0a3c4bb8410cd57ff437ae3a726da42177f.png?w=54&thumb=true"
+      ]
     },
     "MLB The Show 26": {
       "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
@@ -172,7 +204,15 @@
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "Sony Interactive Entertainment",
       "release": "17.3.2026",
-      "platform": "PS5"
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/791b0f1880e27c1d8f52187daea36abfe5fd3b0ff1144007.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26?$100px$",
+        "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
+      ]
     },
     "Wobbly Life": {
       "storeUrl": "https://store.playstation.com/de-de/concept/10004896",
@@ -182,7 +222,15 @@
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "RUBBERBANDGAMES LTD",
       "release": "18.9.2025",
-      "platform": "PS4 · PS5"
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/l2VMZjLR9en9orx3nHGCaj8U.png?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/3650ac7e207de17c9aa1e057339b9e5b405c97a427af26de.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/b44f53cd0e854a7e1663d3ea5908708161c3a8972d1c95c5.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/6d5fc87bf96131851634a38b4e50c1d18b1697b9f5054891.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/4a6dcb161d41908a172df2bc0b2e435d79c454198de1c08f.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/9a3b72705f0abf31b9997bddf3e54b88883dfefcee8af8a5.jpg?w=54&thumb=true"
+      ]
     },
     "Chained Echoes": {
       "pageUrl": "https://www.playstation.com/de-de/games/chained-echoes/",
@@ -192,7 +240,15 @@
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "DECK13 INTERACTIVE",
       "release": "7.12.2022",
-      "platform": "PS4"
+      "platform": "PS4",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/2dmcrpRqwwcV89IGO9TqQsNd.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202507/0913/3bfc69e8efb69db85ffef2b61280c9a9df6491d6af7b947e.png?w=54&thumb=true",
+        "https://gmedia.playstation.com/is/image/SIEPDC/this-month-on-playstation-cross-sell-background-block-desktop-01-en-04oct22?$100px$",
+        "https://gmedia.playstation.com/is/image/SIEPDC/best-jrpgs-keyart-02-en-30aug22",
+        "https://gmedia.playstation.com/is/image/SIEPDC/loader-spinner-dark?$native--t$"
+      ]
     },
     "Hogwarts Legacy": {
       "pageUrl": "https://www.playstation.com/de-de/games/hogwarts-legacy/",
@@ -203,7 +259,15 @@
       "release": "9.2.2023",
       "platform": "PS5",
       "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
-      "storeUrl": "https://store.playstation.com/de-de/product/EP1018-PPSA01603_00-HOGWARTSLEGACY01/"
+      "storeUrl": "https://store.playstation.com/de-de/product/EP1018-PPSA01603_00-HOGWARTSLEGACY01/",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202503/2716/ce2e7f5896365b4e35a192b1f7592b590fee98827644ddb4.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-hero-banner-desktop-01-en-24jan22?$100px$",
+        "https://i.ytimg.com/vi_webp/NTnok1LvKUk/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/2AZmuZNu5LA/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-01-ps5-en-02oct20",
+        "https://gmedia.playstation.com/is/image/SIEPDC/hogwarts-legacy-screen-02-ps5-en-02oct20"
+      ]
     },
     "Star Wars Outlaws": {
       "pageUrl": "https://www.playstation.com/de-de/games/star-wars-outlaws/",
@@ -214,7 +278,15 @@
       "publisher": "Ubisoft",
       "release": "29.8.2024",
       "platform": "PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA08260_00-GAME000000000000"
+      "storeUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA08260_00-GAME000000000000",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202306/3020/bca42b94af09b7a7ffd27fcb76a7bb1e46b60ed0c5f99322.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-hero-banner-desktop-01-en-17jul23?$100px$",
+        "https://i.ytimg.com/vi_webp/XNf5MdFw5cU/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/gjhsh-WHs6E/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-screenshot-08-en-01nov23",
+        "https://gmedia.playstation.com/is/image/SIEPDC/star-wars-outlaws-screenshot-07-en-27oct23"
+      ]
     },
     "Red Dead Redemption": {
       "pageUrl": "https://www.playstation.com/de-de/games/red-dead-redemption/",
@@ -223,7 +295,15 @@
       "publisher": "Rockstar Games",
       "release": "1.12.2025",
       "platform": "PS4 · PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/EP1004-PPSA30523_00-REDEMPTION000001"
+      "storeUrl": "https://store.playstation.com/de-de/product/EP1004-PPSA30523_00-REDEMPTION000001",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202511/1414/84fc4c00ab4df9b0fa85c42f30e718bacd0273ca4bb9742f.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202307/3122/4a4c8caf534b020c8a4ac093c61d3715505d4feaea666cab.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-cover-01-en-9aug23?$100px$",
+        "https://i.ytimg.com/vi_webp/Xu81znuI8tw/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-screenshot-04-en-24nov25",
+        "https://gmedia.playstation.com/is/image/SIEPDC/red-dead-redemption-screenshot-06-en-24nov25"
+      ]
     },
     "Mewgenics": {
       "description": "Rundenbasiertes Taktik-Roguelike mit Katzenzucht, vererbten Merkmalen, Mutationen, Klassen und umfangreichen Item-Synergien.",
@@ -231,7 +311,15 @@
       "release": "08.09.2026",
       "platform": "PS5 · PS4",
       "storeUrl": "https://store.playstation.com/de-de/concept/10019219",
-      "genre": "Strategie · Taktik-Roguelike"
+      "genre": "Strategie · Taktik-Roguelike",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202608/2019/da4d679cbe3193e14bbb96cc8537858031267c059f43a7cd.png?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/a62d6e61b6fd5b958d55b65aa236eb98f8fe38ea6f9dd896.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/7f5b03eee41e16c860ab6bc5ec48974de1fa90bc85c56033.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/f1509c74d8003b0fc1cafe84c6774f0b5fc36534524fe7f5.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/c20afa88e70844136021a3a63248acc44b935ca90e351168.jpg?w=54&thumb=true",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/7c12deeea7654f8b05fd4df3bfc3d969d10a4a7a4d7ad4dc.jpg?w=54&thumb=true"
+      ]
     },
     "Marvel’s Wolverine": {
       "description": "Storybasiertes Singleplayer-Action-Adventure mit Insomniac Games' eigener Interpretation von Logan und seinen Adamantium-Klauen.",
@@ -240,7 +328,15 @@
       "platform": "PS5",
       "pageUrl": "https://www.playstation.com/de-de/games/marvels-wolverine/",
       "developer": "Insomniac Games",
-      "genre": "Action-Adventure"
+      "genre": "Action-Adventure",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2215/a69481c5fa50fe19f42896d84fb7cbf37ab8646801a93322.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202510/0721/e54995d925972b21f0092d0f27a4884f2c883c439514dede.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-hero-desktop-01-en-30sep25?$100px$",
+        "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-carousel-background-desktop-01-en-14aug26?$100px$",
+        "https://i.ytimg.com/vi_webp/sm3uf92SVvA/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/3Z42tBfBLJY/maxresdefault.webp"
+      ]
     },
     "Aniimo": {
       "description": "Free-to-play Open-World-RPG mit Kreaturensammlung, Erkundung, Kämpfen und unterschiedlichen Fähigkeiten der Aniimo.",
@@ -248,7 +344,15 @@
       "release": "16.09.2026",
       "platform": "PS5",
       "pageUrl": "https://www.playstation.com/de-de/games/aniimo/",
-      "genre": "Open-World-Kreaturensammlung-RPG · Action · Adventure"
+      "genre": "Open-World-Kreaturensammlung-RPG · Action · Adventure",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202608/1003/b219d5d981f2c3d7582b8639e7d2fa06e94cb52e0f98439c.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202608/0611/6b4665ec8a17fe98f263ecde37cc3f2968451f2a441245c1.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202608/0608/864099db635c002f9000618510badf69bbba04be82b7e49d.png?w=54&thumb=true",
+        "https://i.ytimg.com/vi_webp/mK824CBh1E0/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/Y0qvtl4EzUc/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/LYbphU-J2j8/maxresdefault.webp"
+      ]
     },
     "Control Resonant": {
       "description": "Nachfolger von CONTROL mit Dylan Faden in einem paranormal verzerrten Manhattan, neuen Kräften und großflächigen Zonen.",
@@ -258,7 +362,15 @@
       "pageUrl": "https://www.playstation.com/de-de/games/control-resonant/",
       "developer": "Remedy Entertainment",
       "genre": "Action-Adventure-RPG",
-      "trailerUrl": "https://blog.de.playstation.com/2026/06/03/control-resonant-erscheint-am-24-september-fuer-ps5/"
+      "trailerUrl": "https://blog.de.playstation.com/2026/06/03/control-resonant-erscheint-am-24-september-fuer-ps5/",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2212/9fedf57ea1649249a0e3ac24770ea9afa6f4bfa795b5fd05.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/control-resonant-hero-02-en-02jul26?$100px$",
+        "https://i.ytimg.com/vi_webp/TAzxTMaA6j4/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/SXRxroxfPJ8/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/IA71hdzim0M/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/j7hAH11mtDk/maxresdefault.webp"
+      ]
     },
     "Silent Hill: Townfall": {
       "description": "Psychologisches First-Person-Horrorspiel, in dem Simon Ordell nach St. Amelia zurückkehrt und das Geheimnis hinter einem rätselhaften Rauschen untersucht.",
@@ -266,7 +378,15 @@
       "release": "24.09.2026",
       "platform": "PS5",
       "pageUrl": "https://www.playstation.com/de-de/games/silent-hill-townfall/",
-      "genre": "Psychologischer First-Person-Horror"
+      "genre": "Psychologischer First-Person-Horror",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1407/420dcf45979ace1b7c97122a2dc0eb479428590ecab89c2b.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/Silent-Hill-Townfall-hero-desktop-02-en-05jun26?$100px$",
+        "https://i.ytimg.com/vi_webp/eXLfSEipn7I/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/CvN3dP92wxU/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/Silent-Hill-Townfall-screenshot-03-en-05jun26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/Silent-Hill-Townfall-screenshot-06-en-05jun26"
+      ]
     },
     "EA SPORTS FC 27": {
       "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
@@ -275,11 +395,19 @@
       "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
       "publisher": "EA Swiss Sarl",
       "release": "17.9.2026",
-      "platform": "PS5"
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26?$100px$",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-02-en-13jul26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-01-en-13jul26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-FUT-04-en-13jul26"
+      ]
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-06T11:42:02.908Z",
+    "checkedAt": "2026-09-06T12:24:08.766Z",
     "titles": 16,
     "fetched": 16,
     "enriched": 16,
