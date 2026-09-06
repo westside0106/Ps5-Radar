@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T18:31:26.305Z",
+  "updatedAt": "2026-09-06T20:26:36.763Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -19,7 +19,23 @@
       ],
       "title": "Hogwarts Legacy",
       "platform": "PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/EP1018-PPSA01603_00-HOGWARTSLEGACY01/"
+      "storeUrl": "https://store.playstation.com/de-de/product/EP1018-PPSA01603_00-HOGWARTSLEGACY01/",
+      "signal": {
+        "version": 1,
+        "activeDeal": false,
+        "confidence": "niedrig",
+        "measurements": 2,
+        "currentPrice": null,
+        "lastObservedPrice": 11.24,
+        "lastObservedDate": "2026-09-05",
+        "radarLow": 11.24,
+        "deltaFromLowPct": 0,
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar."
+      }
     },
     "Star Wars Outlaws": {
       "currency": "EUR",
@@ -39,7 +55,23 @@
       ],
       "title": "Star Wars Outlaws",
       "platform": "PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA08260_00-GAME000000000000"
+      "storeUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA08260_00-GAME000000000000",
+      "signal": {
+        "version": 1,
+        "activeDeal": false,
+        "confidence": "niedrig",
+        "measurements": 2,
+        "currentPrice": null,
+        "lastObservedPrice": 19.99,
+        "lastObservedDate": "2026-09-05",
+        "radarLow": 19.99,
+        "deltaFromLowPct": 0,
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar."
+      }
     },
     "Red Dead Redemption": {
       "currency": "EUR",
@@ -59,7 +91,23 @@
       ],
       "title": "Red Dead Redemption",
       "platform": "PS4 · PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/EP1004-PPSA30523_00-REDEMPTION000001"
+      "storeUrl": "https://store.playstation.com/de-de/product/EP1004-PPSA30523_00-REDEMPTION000001",
+      "signal": {
+        "version": 1,
+        "activeDeal": false,
+        "confidence": "niedrig",
+        "measurements": 2,
+        "currentPrice": null,
+        "lastObservedPrice": 24.99,
+        "lastObservedDate": "2026-09-05",
+        "radarLow": 24.99,
+        "deltaFromLowPct": 0,
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar."
+      }
     },
     "Forza Horizon 5 Deluxe Edition": {
       "currency": "EUR",
@@ -73,7 +121,23 @@
       ],
       "title": "Forza Horizon 5 Deluxe Edition",
       "platform": "PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0547256477986893"
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0547256477986893",
+      "signal": {
+        "version": 1,
+        "activeDeal": true,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 35.99,
+        "lastObservedPrice": 35.99,
+        "lastObservedDate": "2026-09-06",
+        "radarLow": 35.99,
+        "deltaFromLowPct": 0,
+        "discount": 60,
+        "daysRemaining": 4,
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-60 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar."
+      }
     },
     "Battlefield™ 6": {
       "currency": "EUR",
@@ -87,7 +151,23 @@
       ],
       "title": "Battlefield™ 6",
       "platform": "PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA19534_00-SANTIAGOSTANDARD"
+      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA19534_00-SANTIAGOSTANDARD",
+      "signal": {
+        "version": 1,
+        "activeDeal": true,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 39.99,
+        "lastObservedPrice": 39.99,
+        "lastObservedDate": "2026-09-06",
+        "radarLow": 39.99,
+        "deltaFromLowPct": 0,
+        "discount": 50,
+        "daysRemaining": 4,
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-50 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar."
+      }
     },
     "WWE 2K26 Attitude Era Edition": {
       "currency": "EUR",
@@ -101,12 +181,37 @@
       ],
       "title": "WWE 2K26 Attitude Era Edition",
       "platform": "PS5",
-      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26TUDEEDITN"
+      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26TUDEEDITN",
+      "signal": {
+        "version": 1,
+        "activeDeal": true,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 71.49,
+        "lastObservedPrice": 71.49,
+        "lastObservedDate": "2026-09-06",
+        "radarLow": 71.49,
+        "deltaFromLowPct": 0,
+        "discount": 45,
+        "daysRemaining": 4,
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-45 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar."
+      }
     }
   },
   "summary": {
     "titles": 6,
     "points": 9,
-    "archiveIssuesScanned": 3
+    "archiveIssuesScanned": 3,
+    "signals": {
+      "buy": 0,
+      "watch": 3,
+      "wait": 3
+    }
+  },
+  "method": {
+    "signalVersion": 1,
+    "note": "Radar-Signal basiert ausschließlich auf den eigenen verifizierten Radar-Messpunkten, dem aktuellen Rabatt und dem aktiven Store-Zeitraum; kein externer Allzeit-Tiefpreis."
   }
 }
