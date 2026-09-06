@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T20:28:52.541Z",
+  "updatedAt": "2026-09-06T20:32:13.204Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -34,8 +34,23 @@
         "daysRemaining": null,
         "code": "wait",
         "label": "WARTEN",
-        "reason": "Kein aktuell verifizierter Store-Deal im Radar."
-      }
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "signalHistory": [
+        {
+          "date": "2026-09-06",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": null,
+          "currentPrice": null,
+          "radarLow": 11.24,
+          "discount": null,
+          "confidence": "niedrig"
+        }
+      ]
     },
     "Star Wars Outlaws": {
       "currency": "EUR",
@@ -70,8 +85,23 @@
         "daysRemaining": null,
         "code": "wait",
         "label": "WARTEN",
-        "reason": "Kein aktuell verifizierter Store-Deal im Radar."
-      }
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "signalHistory": [
+        {
+          "date": "2026-09-06",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": null,
+          "currentPrice": null,
+          "radarLow": 19.99,
+          "discount": null,
+          "confidence": "niedrig"
+        }
+      ]
     },
     "Red Dead Redemption": {
       "currency": "EUR",
@@ -106,8 +136,23 @@
         "daysRemaining": null,
         "code": "wait",
         "label": "WARTEN",
-        "reason": "Kein aktuell verifizierter Store-Deal im Radar."
-      }
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "signalHistory": [
+        {
+          "date": "2026-09-06",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": null,
+          "currentPrice": null,
+          "radarLow": 24.99,
+          "discount": null,
+          "confidence": "niedrig"
+        }
+      ]
     },
     "Forza Horizon 5 Deluxe Edition": {
       "currency": "EUR",
@@ -136,8 +181,23 @@
         "daysRemaining": 4,
         "code": "watch",
         "label": "BEOBACHTEN",
-        "reason": "-60 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar."
-      }
+        "reason": "-60 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "signalHistory": [
+        {
+          "date": "2026-09-06",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 35.99,
+          "radarLow": 35.99,
+          "discount": 60,
+          "confidence": "niedrig"
+        }
+      ]
     },
     "Battlefield™ 6": {
       "currency": "EUR",
@@ -166,8 +226,23 @@
         "daysRemaining": 4,
         "code": "watch",
         "label": "BEOBACHTEN",
-        "reason": "-50 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar."
-      }
+        "reason": "-50 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "signalHistory": [
+        {
+          "date": "2026-09-06",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 39.99,
+          "radarLow": 39.99,
+          "discount": 50,
+          "confidence": "niedrig"
+        }
+      ]
     },
     "WWE 2K26 Attitude Era Edition": {
       "currency": "EUR",
@@ -196,8 +271,23 @@
         "daysRemaining": 4,
         "code": "watch",
         "label": "BEOBACHTEN",
-        "reason": "-45 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar."
-      }
+        "reason": "-45 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "signalHistory": [
+        {
+          "date": "2026-09-06",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 71.49,
+          "radarLow": 71.49,
+          "discount": 45,
+          "confidence": "niedrig"
+        }
+      ]
     }
   },
   "summary": {
@@ -208,7 +298,9 @@
       "buy": 0,
       "watch": 3,
       "wait": 3
-    }
+    },
+    "changedSignals": 0,
+    "newBuySignals": 0
   },
   "method": {
     "signalVersion": 1,
