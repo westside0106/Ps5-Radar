@@ -115,13 +115,13 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-06T14:49:35.243Z",
+    "checkedAt": "2026-09-06T14:53:55.955Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-06T14:49:01.383Z"
+    "lastSuccessfulCheck": "2026-09-06T14:53:31.137Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-06T14:49:01.383Z",
+    "checkedAt": "2026-09-06T14:53:31.137Z",
     "errors": []
   },
   "gameDetails": {
@@ -407,7 +407,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-06T14:49:27.067Z",
+    "checkedAt": "2026-09-06T14:53:50.159Z",
     "titles": 16,
     "fetched": 16,
     "enriched": 16,
@@ -468,7 +468,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-06T14:49:12.018Z",
+    "checkedAt": "2026-09-06T14:53:36.493Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -482,7 +482,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-06T14:49:12.116Z",
+    "checkedAt": "2026-09-06T14:53:36.572Z",
     "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
     "activeCampaign": true,
     "staticLinks": 1,

@@ -7,7 +7,10 @@ import DetailTile from './DetailTile';
 
 export const dynamic = 'force-dynamic';
 
+/* RADAR_RESOLVED_SOURCES_V2 */
+
 function daysUntil(iso) {
+  if (!iso) return null;
   const ms = new Date(iso).getTime() - Date.now();
   return Math.max(0, Math.ceil(ms / 86400000));
 }
@@ -68,7 +71,7 @@ function dealStats(deal) {
   if (!discount && current !== null && old) discount = Math.round((1 - current / old) * 100);
   const saving = current !== null && old !== null && old > current ? old - current : null;
   const remaining = daysUntil(radar.storeEnd);
-  const expiry = remaining === 0 ? 'ENDET HEUTE' : remaining === 1 ? 'NOCH 1 TAG' : `NOCH ${remaining} TAGE`;
+  const expiry = remaining === null ? 'AKTUELL' : remaining === 0 ? 'ENDET HEUTE' : remaining === 1 ? 'NOCH 1 TAG' : `NOCH ${remaining} TAGE`;
   const strength = discount >= 70 ? 'MEGA-DEAL' : discount >= 50 ? 'STARK' : discount >= 30 ? 'GUT' : 'DEAL';
   const strengthClass = discount >= 70 ? 'is-mega' : discount >= 50 ? 'is-strong' : '';
   return { current, old, discount, saving, remaining, expiry, strength, strengthClass };
@@ -180,7 +183,7 @@ function storyDetail({ title, date, text, price, image, top = false }) {
       { label: 'Ausgabe', value: radar.edition },
     ]),
     links: gameLinks(title, [
-      { label: 'Radar-Quelle', url: alertUrl(title) || sources.monthlyReleases },
+      { label: 'Radar-Quelle', url: alertUrl(title) || radar.resolvedSources?.monthlyReleases || sources.monthlyReleases },
     ]),
   };
 }
@@ -198,7 +201,7 @@ function psPlusDetail(game) {
       { label: 'Zeitraum', value: radar.psplusText },
     ]),
     links: gameLinks(game.title, [
-      { label: 'PS-Plus-Ankündigung', url: sources.psPlusMonthly },
+      { label: 'PS-Plus-Ankündigung', url: radar.resolvedSources?.psPlusMonthly || sources.psPlusMonthly },
     ]),
   };
 }
@@ -206,7 +209,7 @@ function psPlusDetail(game) {
 function dealDetail(deal) {
   const info = gameInfo(deal.title);
   const stats = dealStats(deal);
-  const source = (sources.storeDeals || []).find((item) => item.title === deal.title)?.url;
+  const source = radar.resolvedSources?.storeDeals?.[deal.title] || (sources.storeDeals || []).find((item) => item.title === deal.title)?.url;
   return {
     kicker: stats.strength,
     title: deal.title,
@@ -239,7 +242,7 @@ function releaseDetail(item) {
       { label: 'Countdown', value: timing.label },
     ]),
     links: gameLinks(item.title, [
-      { label: 'Monatsübersicht', url: sources.monthlyReleases },
+      { label: 'Monatsübersicht', url: radar.resolvedSources?.monthlyReleases || sources.monthlyReleases },
     ]),
   };
 }
@@ -257,7 +260,7 @@ function eaDetail() {
     ]),
     bullets: radar.eaItems || [],
     links: gameLinks(title, [
-      { label: 'EA Play', url: sources.eaPlay },
+      { label: 'EA Play', url: radar.resolvedSources?.eaPlay || sources.eaPlay },
     ]),
   };
 }
@@ -269,7 +272,7 @@ function quickDetail(item) {
       title: item,
       summary: radar.psplusText,
       rows: [{ label: 'Paket', value: radar.psplusLabel }],
-      links: [{ label: 'PS-Plus-Ankündigung', url: sources.psPlusMonthly }],
+      links: [{ label: 'PS-Plus-Ankündigung', url: radar.resolvedSources?.psPlusMonthly || sources.psPlusMonthly }],
     };
   }
   if (item === radar.eaTitle) return eaDetail();
@@ -325,7 +328,7 @@ function DealCard({ deal }) {
   const stats = dealStats(deal);
   const plus = shortPsPlus(info.psPlusStatus);
   const meta = [deal.platform || info.platform, info.genre].filter(Boolean).slice(0, 2);
-  const endingClass = stats.remaining <= 1 ? 'is-ending' : '';
+  const endingClass = stats.remaining !== null && stats.remaining <= 1 ? 'is-ending' : '';
 
   return (
     <DetailTile detail={dealDetail(deal)} className="deal-showcase-wrap">
@@ -469,7 +472,7 @@ export default async function RadarPage() {
             title: radar.psplusTitle,
             summary: radar.psplusText,
             rows: [{ label: 'Paket', value: radar.psplusLabel }],
-            links: [{ label: 'PS-Plus-Ankündigung', url: sources.psPlusMonthly }],
+            links: [{ label: 'PS-Plus-Ankündigung', url: radar.resolvedSources?.psPlusMonthly || sources.psPlusMonthly }],
           }}>
             <div className="plus-summary compact-summary">
               <div><span>ESSENTIAL</span><h4>{radar.psplusTitle}</h4></div><p>{radar.psplusText}</p>
@@ -481,22 +484,31 @@ export default async function RadarPage() {
         </Panel>
 
         <section className="mag-focusgrid">
-          <DetailTile detail={{
-            kicker: 'ENDET BALD',
-            title: radar.leavingTitle,
-            summary: radar.leavingText,
-            rows: compactRows([
-              { label: 'Verbleibend', value: `${remaining} ${remaining === 1 ? 'Tag' : 'Tage'}` },
-              { label: 'Ende', value: displayEndFull(radar.storeEnd) },
-            ]),
-          }} className="radar-panel-clickable">
-            <Panel tone="danger" icon="⌛" title="ENDET BALD" className="compact-panel">
+          {remaining === null ? (
+            <Panel tone="store" icon="✓" title="STORE-CHECK" className="compact-panel">
               <div className="deadline-row">
-                <div><h4>{radar.leavingTitle}</h4><p>{radar.leavingText}</p></div>
-                <div className="mag-deadline">{remaining} {remaining === 1 ? 'TAG' : 'TAGE'}</div>
+                <div><h4>Keine aktive verifizierte Store-Aktion</h4><p>Der Radar veröffentlicht keine abgelaufenen Angebotsdaten.</p></div>
+                <div className="mag-deadline">—</div>
               </div>
             </Panel>
-          </DetailTile>
+          ) : (
+            <DetailTile detail={{
+              kicker: 'ENDET BALD',
+              title: radar.leavingTitle,
+              summary: radar.leavingText,
+              rows: compactRows([
+                { label: 'Verbleibend', value: `${remaining} ${remaining === 1 ? 'Tag' : 'Tage'}` },
+                { label: 'Ende', value: displayEndFull(radar.storeEnd) },
+              ]),
+            }} className="radar-panel-clickable">
+              <Panel tone="danger" icon="⌛" title="ENDET BALD" className="compact-panel">
+                <div className="deadline-row">
+                  <div><h4>{radar.leavingTitle}</h4><p>{radar.leavingText}</p></div>
+                  <div className="mag-deadline">{remaining} {remaining === 1 ? 'TAG' : 'TAGE'}</div>
+                </div>
+              </Panel>
+            </DetailTile>
+          )}
 
           <Panel tone="store" icon="◆" title={`STORE-DEALS · ${radar.deals.length}`} className="store-showcase">
             <div className="store-showcase-intro">
@@ -507,7 +519,7 @@ export default async function RadarPage() {
               <div className="store-showcase-stats">
                 <div className="store-stat"><small>BESTER DEAL</small><b>{bestDeal ? `-${bestDeal.discount}%` : '—'}</b></div>
                 <div className="store-stat"><small>Ø RABATT</small><b>{averageDiscount ? `-${averageDiscount}%` : '—'}</b></div>
-                <div className="store-stat"><small>ENDET</small><b>{remaining === 0 ? 'HEUTE' : remaining === 1 ? '1 TAG' : `${remaining} TAGE`}</b></div>
+                <div className="store-stat"><small>ENDET</small><b>{remaining === null ? '—' : remaining === 0 ? 'HEUTE' : remaining === 1 ? '1 TAG' : `${remaining} TAGE`}</b></div>
               </div>
             </div>
             <div className="deal-showcase-grid">
@@ -532,7 +544,7 @@ export default async function RadarPage() {
             title: radar.ubisoftTitle,
             summary: radar.ubisoftText,
             bullets: radar.ubisoftItems || [],
-            links: [{ label: 'Ubisoft+ auf PlayStation', url: sources.ubisoftPlus }],
+            links: [{ label: 'Ubisoft+ auf PlayStation', url: radar.resolvedSources?.ubisoftPlus || sources.ubisoftPlus }],
           }} className="radar-panel-clickable">
             <Panel tone="ubi" icon="◎" title="UBISOFT+">
               <p>{radar.ubisoftText}</p>
