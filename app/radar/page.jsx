@@ -39,6 +39,48 @@ function displayEndFull(iso) {
   }).format(new Date(iso))} Uhr`;
 }
 
+function euroNumber(value) {
+  if (!value) return null;
+  const normalized = String(value)
+    .replace(/\s/g, '')
+    .replace(/€/g, '')
+    .replace(/\./g, '')
+    .replace(',', '.')
+    .replace(/[^0-9.-]/g, '');
+  const parsed = Number(normalized);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function formatEuro(value) {
+  if (value === null || value === undefined || !Number.isFinite(value)) return null;
+  return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(value);
+}
+
+function discountNumber(value) {
+  const parsed = Number(String(value || '').replace(/[^0-9]/g, ''));
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function dealStats(deal) {
+  const current = euroNumber(deal.price);
+  const old = euroNumber(deal.oldPrice);
+  let discount = discountNumber(deal.discount);
+  if (!discount && current !== null && old) discount = Math.round((1 - current / old) * 100);
+  const saving = current !== null && old !== null && old > current ? old - current : null;
+  const remaining = daysUntil(radar.storeEnd);
+  const expiry = remaining === 0 ? 'ENDET HEUTE' : remaining === 1 ? 'NOCH 1 TAG' : `NOCH ${remaining} TAGE`;
+  const strength = discount >= 70 ? 'MEGA-DEAL' : discount >= 50 ? 'STARK' : discount >= 30 ? 'GUT' : 'DEAL';
+  const strengthClass = discount >= 70 ? 'is-mega' : discount >= 50 ? 'is-strong' : '';
+  return { current, old, discount, saving, remaining, expiry, strength, strengthClass };
+}
+
+function shortPsPlus(value) {
+  if (!value) return null;
+  if (/extra/i.test(value)) return 'PS PLUS EXTRA';
+  if (/premium/i.test(value)) return 'PS PLUS PREMIUM';
+  return 'IN PS PLUS';
+}
+
 function issueDateParts() {
   const [day, month, year] = String(radar.date || '').split('.').map(Number);
   return { day, month, year };
@@ -163,9 +205,10 @@ function psPlusDetail(game) {
 
 function dealDetail(deal) {
   const info = gameInfo(deal.title);
+  const stats = dealStats(deal);
   const source = (sources.storeDeals || []).find((item) => item.title === deal.title)?.url;
   return {
-    kicker: 'PLAYSTATION STORE',
+    kicker: stats.strength,
     title: deal.title,
     ...gameMedia(deal.title, deal.image),
     summary: info.description || radar.storeText,
@@ -174,6 +217,9 @@ function dealDetail(deal) {
       { label: 'Aktuell', value: deal.price },
       { label: 'Vorher', value: deal.oldPrice },
       { label: 'Rabatt', value: deal.discount },
+      { label: 'Ersparnis', value: formatEuro(stats.saving) },
+      { label: 'Deal-Stärke', value: stats.strength },
+      { label: 'Restzeit', value: stats.expiry },
       { label: 'Ende', value: displayEndFull(radar.storeEnd) },
     ]),
     links: gameLinks(deal.title, source ? [{ label: 'Store-Angebot', url: source }] : []),
@@ -274,15 +320,37 @@ function PlusCover({ game, label }) {
 }
 
 function DealCard({ deal }) {
+  const info = gameInfo(deal.title);
+  const media = gameMedia(deal.title, deal.image);
+  const stats = dealStats(deal);
+  const plus = shortPsPlus(info.psPlusStatus);
+  const meta = [deal.platform || info.platform, info.genre].filter(Boolean).slice(0, 2);
+  const endingClass = stats.remaining <= 1 ? 'is-ending' : '';
+
   return (
-    <DetailTile detail={dealDetail(deal)}>
-      <article className="deal-card">
-        <div className="deal-cover-art" style={{ backgroundImage: `url("${deal.image}")` }}>
-          <span className="deal-discount">{deal.discount}</span>
+    <DetailTile detail={dealDetail(deal)} className="deal-showcase-wrap">
+      <article
+        className="deal-showcase-card"
+        style={{ backgroundImage: `url("${media.image || deal.image}")` }}
+      >
+        <div className="deal-showcase-top">
+          <span className={`deal-strength ${stats.strengthClass}`.trim()}>{stats.strength} · -{stats.discount}%</span>
+          <span className={`deal-expiry ${endingClass}`.trim()}>{stats.expiry}</span>
         </div>
-        <div className="deal-info">
-          <strong>{deal.title}</strong><small>{deal.platform}</small>
-          <div className="deal-copy"><del>{deal.oldPrice}</del><b>{deal.price}</b></div>
+        <div className="deal-showcase-copy">
+          {plus ? <span className="deal-plus-badge">{plus}</span> : null}
+          <h4>{deal.title}</h4>
+          {meta.length ? (
+            <div className="deal-showcase-meta">
+              {meta.map((value) => <span key={value}>{value}</span>)}
+            </div>
+          ) : null}
+          <div className="deal-showcase-price">
+            <del>{deal.oldPrice}</del>
+            <strong>{deal.price}</strong>
+            {stats.saving !== null ? <span className="deal-showcase-saving">Du sparst<br />{formatEuro(stats.saving)}</span> : null}
+          </div>
+          {info.psPlusStatus ? <div className="deal-showcase-psplus-note">{info.psPlusStatus}</div> : null}
         </div>
       </article>
     </DetailTile>
@@ -329,6 +397,11 @@ export default async function RadarPage() {
   const storeEnd = displayEnd(radar.storeEnd);
   const nextRelease = radar.releases?.[0] || null;
   const nextTiming = nextRelease ? releaseTiming(nextRelease.date) : null;
+  const dealMetrics = (radar.deals || []).map((deal) => ({ deal, ...dealStats(deal) }));
+  const bestDeal = [...dealMetrics].sort((a, b) => b.discount - a.discount)[0] || null;
+  const averageDiscount = dealMetrics.length
+    ? Math.round(dealMetrics.reduce((sum, item) => sum + item.discount, 0) / dealMetrics.length)
+    : 0;
 
   const leadDetail = storyDetail({
     title: radar.leadTitle, date: radar.leadDate, text: radar.leadMeta, price: radar.leadPrice, image: radar.leadImage, top: true,
@@ -425,12 +498,25 @@ export default async function RadarPage() {
             </Panel>
           </DetailTile>
 
-          <Panel tone="store" icon="◆" title="STORE-DEALS">
-            <div className="store-intro">
-              <div><h4>{radar.storeTitle}</h4><p>{radar.storeText}</p></div>
+          <Panel tone="store" icon="◆" title={`STORE-DEALS · ${radar.deals.length}`} className="store-showcase">
+            <div className="store-showcase-intro">
+              <div>
+                <h4>{radar.storeTitle}</h4>
+                <p>{radar.storeText}</p>
+              </div>
+              <div className="store-showcase-stats">
+                <div className="store-stat"><small>BESTER DEAL</small><b>{bestDeal ? `-${bestDeal.discount}%` : '—'}</b></div>
+                <div className="store-stat"><small>Ø RABATT</small><b>{averageDiscount ? `-${averageDiscount}%` : '—'}</b></div>
+                <div className="store-stat"><small>ENDET</small><b>{remaining === 0 ? 'HEUTE' : remaining === 1 ? '1 TAG' : `${remaining} TAGE`}</b></div>
+              </div>
+            </div>
+            <div className="deal-showcase-grid">
+              {radar.deals.map((deal) => <DealCard key={deal.title} deal={deal} />)}
+            </div>
+            <div className="store-intro" style={{ marginTop: 9, marginBottom: 0 }}>
+              <div><p>Preise und Rabatte aus dem deutschen PlayStation Store.</p></div>
               <span>{storeEnd ? `bis ${storeEnd}` : 'aktuell'}</span>
             </div>
-            <div className="deal-grid">{radar.deals.map((deal) => <DealCard key={deal.title} deal={deal} />)}</div>
           </Panel>
         </section>
 
