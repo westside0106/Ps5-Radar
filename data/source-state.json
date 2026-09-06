@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-06T14:53:31.137Z",
+  "checkedAt": "2026-09-06T16:56:36.964Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -58,49 +58,58 @@
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211789,
+    "bytes": 211740,
     "schedule": [
       {
         "date": "03.09.",
-        "title": "Onimusha: Way of the Sword"
-      },
-      {
-        "date": "03.09.",
-        "title": "NBA 2K27"
-      },
-      {
-        "date": "03.09.",
-        "title": "Mewgenics"
-      },
-      {
-        "date": "03.09.",
-        "title": "Marvel’s Wolverine"
-      },
-      {
-        "date": "03.09.",
-        "title": "Aniimo"
+        "title": "The Blood of Dawnwalker",
+        "year": 2026
       },
       {
         "date": "04.09.",
-        "title": "Control Resonant"
+        "title": "Onimusha: Way of the Sword",
+        "year": 2026
       },
       {
         "date": "04.09.",
-        "title": "Silent Hill: Townfall"
+        "title": "NBA 2K27",
+        "year": 2026
       },
       {
-        "date": "20.09.",
-        "title": "The Blood of Dawnwalker"
+        "date": "08.09.",
+        "title": "Mewgenics",
+        "year": 2026
       },
       {
-        "date": "20.09.",
-        "title": "EA Sports FC 27"
+        "date": "15.09.",
+        "title": "Marvel’s Wolverine",
+        "year": 2026
+      },
+      {
+        "date": "16.09.",
+        "title": "Aniimo",
+        "year": 2026
+      },
+      {
+        "date": "24.09.",
+        "title": "Control Resonant",
+        "year": 2026
+      },
+      {
+        "date": "24.09.",
+        "title": "Silent Hill: Townfall",
+        "year": 2026
+      },
+      {
+        "date": "25.09.",
+        "title": "EA Sports FC 27",
+        "year": 2026
       }
     ]
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178380,
+    "bytes": 178331,
     "updated": true,
     "parsed": {
       "games": [
@@ -135,6 +144,7 @@
   },
   "eaPlay": {
     "ok": true,
+    "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
     "bytes": 242070,
     "updated": true,
     "parsed": {
@@ -180,7 +190,8 @@
       "parsed": {
         "prices": [
           "79,99 €",
-          "19,99 €"
+          "19,99 €",
+          "99 €"
         ],
         "discounts": [
           "-75 %"

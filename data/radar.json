@@ -92,12 +92,12 @@
   ],
   "quickItems": [
     "September-Spiele sind live",
-    "FC 27 · 10h Trial ab 18.09."
+    "FC™ 27 · 10h Trial ab 18.09."
   ],
   "leavingTitle": "gamescom-Rabatte laufen aus",
   "leavingText": "Aktuelle Store-Aktion endet am 10.09., 00:59 Uhr.",
-  "eaTitle": "FC 27 · 10h Trial ab 18.09.",
-  "benefitsText": "EA Play: FC 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
+  "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
+  "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
   "eaItems": [
     "10 % auf digitale EA-Käufe",
     "Monatliche Mitgliederbelohnungen",
@@ -110,19 +110,59 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 06.09.2026 · 6 Quellen erfolgreich geprüft",
+  "radarCheck": "Stand 06.09.2026 · 9/9 Quellen erfolgreich geprüft",
   "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-06T14:53:55.955Z",
-    "okSources": 6,
+    "checkedAt": "2026-09-06T16:57:06.846Z",
+    "okSources": 9,
+    "totalSources": 9,
+    "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-06T14:53:31.137Z"
+    "lastSuccessfulCheck": "2026-09-06T16:56:36.964Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-06T14:53:31.137Z",
-    "errors": []
+    "checkedAt": "2026-09-06T16:56:36.964Z",
+    "errors": [],
+    "sources": [
+      {
+        "name": "PlayStation Blog",
+        "ok": true
+      },
+      {
+        "name": "Monats-Releases",
+        "ok": true
+      },
+      {
+        "name": "PS Plus monatlich",
+        "ok": true
+      },
+      {
+        "name": "PS Plus aktuell",
+        "ok": true
+      },
+      {
+        "name": "EA Play",
+        "ok": true
+      },
+      {
+        "name": "Ubisoft+",
+        "ok": true
+      },
+      {
+        "name": "Store: Hogwarts Legacy",
+        "ok": true
+      },
+      {
+        "name": "Store: Star Wars Outlaws",
+        "ok": true
+      },
+      {
+        "name": "Store: Red Dead Redemption",
+        "ok": true
+      }
+    ]
   },
   "gameDetails": {
     "Onimusha: Way of the Sword": {
@@ -407,7 +447,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-06T14:53:50.159Z",
+    "checkedAt": "2026-09-06T16:57:00.432Z",
     "titles": 16,
     "fetched": 16,
     "enriched": 16,
@@ -444,7 +484,7 @@
     }
   },
   "eaPlay": {
-    "title": "FC 27 · 10h Trial ab 18.09.",
+    "title": "FC™ 27 · 10h Trial ab 18.09.",
     "trial": {
       "hours": 10,
       "date": "18.09."
@@ -468,7 +508,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-06T14:53:36.493Z",
+    "checkedAt": "2026-09-06T16:56:45.237Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -482,7 +522,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-06T14:53:36.572Z",
+    "checkedAt": "2026-09-06T16:56:45.329Z",
     "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
     "activeCampaign": true,
     "staticLinks": 1,
