@@ -115,13 +115,13 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-06T14:13:29.956Z",
+    "checkedAt": "2026-09-06T14:18:13.921Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-06T14:13:08.618Z"
+    "lastSuccessfulCheck": "2026-09-06T14:17:56.499Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-06T14:13:08.618Z",
+    "checkedAt": "2026-09-06T14:17:56.499Z",
     "errors": []
   },
   "gameDetails": {
@@ -417,7 +417,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-06T14:13:17.708Z",
+    "checkedAt": "2026-09-06T14:18:06.880Z",
     "titles": 16,
     "fetched": 16,
     "enriched": 16,
@@ -444,7 +444,14 @@
       "EA Sports FC 27": "https://store.playstation.com/product/UP0006-PPSA34015_00-27STANDARDBUNDLE"
     },
     "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
+    "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
+    "storeCampaign": "https://blog.de.playstation.com/2026/08/28/die-gamescom-rabatte-sind-im-playstation-store-gelandet/",
+    "storeCollection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
+    "storeDeals": {
+      "Hogwarts Legacy": "https://store.playstation.com/de-de/product/EP1018-PPSA01603_00-HOGWARTSLEGACY01/",
+      "Star Wars Outlaws": "https://store.playstation.com/de-de/product/EP0001-PPSA08260_00-GAME000000000000",
+      "Red Dead Redemption": "https://store.playstation.com/de-de/product/EP1004-PPSA30523_00-REDEMPTION000001"
+    }
   },
   "eaPlay": {
     "title": "FC 27 · 10h Trial ab 18.09.",
@@ -471,9 +478,14 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-06T14:13:17.115Z",
+    "checkedAt": "2026-09-06T14:18:05.535Z",
     "month": "September",
     "year": 2026,
-    "notes": []
+    "notes": [],
+    "resolved": {
+      "storeCampaign": "https://blog.de.playstation.com/2026/08/28/die-gamescom-rabatte-sind-im-playstation-store-gelandet/",
+      "storeCollection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
+      "storeDeals": 3
+    }
   }
 }
