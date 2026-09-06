@@ -105,7 +105,23 @@ function normalizeImageUrl(value = '') {
   if (!/(playstation|gmedia|image\.api|sie|tachyon|wp-content|ytimg)/i.test(lower)) return null;
   if (/(?:logo|icon|favicon|avatar|rating|pegi|esrb|sprite|cookie|qrcode|qr-code|badge)/i.test(lower)) return null;
   if (!(/\.(?:jpg|jpeg|png|webp)(?:[?#]|$)/i.test(url) || /\/is\/image\//i.test(url))) return null;
+
+  try {
+    const parsed = new URL(url);
+    if (/image\.api\.playstation\.com$/i.test(parsed.hostname)) parsed.search = '';
+    if (/gmedia\.playstation\.com$/i.test(parsed.hostname) && /\/is\/image\//i.test(parsed.pathname)) parsed.search = '';
+    url = parsed.toString();
+  } catch {}
+
   return url;
+}
+
+function trailerFromHtml(html) {
+  const decoded = decodeEntities(String(html))
+    .replace(/\\u0026/g, '&')
+    .replace(/\\\//g, '/');
+  const match = decoded.match(/(?:youtube\.com\/(?:watch\?[^"'<>\s]*?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{6,20})/i);
+  return match?.[1] ? `https://www.youtube.com/watch?v=${match[1]}` : null;
 }
 
 function galleryFromHtml(html) {
@@ -148,6 +164,7 @@ function parsePage(html, title, seed) {
     platform: platformFromText(text),
     psPlusStatus: psPlusStatus(text, seed.psPlusStatus),
     gallery: galleryFromHtml(html),
+    trailerUrl: trailerFromHtml(html),
   };
   return Object.fromEntries(Object.entries(parsed).filter(([, value]) => Array.isArray(value) ? value.length : value));
 }
@@ -227,7 +244,7 @@ for (const title of titles) {
     ...seed,
     pageUrl: seed.pageUrl || previous.pageUrl || (pageUrl && !pageUrl.includes('store.playstation.com') ? pageUrl : null),
     storeUrl: storeUrlFor(title) || seed.storeUrl || previous.storeUrl || (pageUrl?.includes('store.playstation.com') ? pageUrl : null),
-    trailerUrl: seed.trailerUrl || previous.trailerUrl || null,
+    trailerUrl: seed.trailerUrl || parsed.trailerUrl || previous.trailerUrl || null,
     developer: seed.developer || previous.developer || null,
     description: seed.description || parsed.description || previous.description || null,
     genre: seed.genre || parsed.genre || previous.genre || null,
