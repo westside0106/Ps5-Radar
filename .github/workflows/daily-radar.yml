@@ -40,17 +40,18 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
-          package-manager-cache: false
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
       - name: Cache Playwright browser
         uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ hashFiles('package.json') }}
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             playwright-${{ runner.os }}-
       - name: Prepare browser runtime
         run: |
-          npm install --no-audit --no-fund
+          npm ci --no-audit --no-fund
           npx playwright install chromium
       - name: Check official sources and update Radar
         run: node scripts/update-radar.mjs
