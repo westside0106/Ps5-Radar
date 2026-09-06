@@ -115,13 +115,13 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-06T14:18:13.921Z",
+    "checkedAt": "2026-09-06T14:35:46.432Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-06T14:17:56.499Z"
+    "lastSuccessfulCheck": "2026-09-06T14:35:27.851Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-06T14:17:56.499Z",
+    "checkedAt": "2026-09-06T14:35:27.851Z",
     "errors": []
   },
   "gameDetails": {
@@ -417,7 +417,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-06T14:18:06.880Z",
+    "checkedAt": "2026-09-06T14:35:36.741Z",
     "titles": 16,
     "fetched": 16,
     "enriched": 16,
@@ -478,14 +478,28 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-06T14:18:05.535Z",
+    "checkedAt": "2026-09-06T14:35:35.108Z",
     "month": "September",
     "year": 2026,
     "notes": [],
     "resolved": {
-      "storeCampaign": "https://blog.de.playstation.com/2026/08/28/die-gamescom-rabatte-sind-im-playstation-store-gelandet/",
-      "storeCollection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
-      "storeDeals": 3
+      "storeDiscoveryMode": "insufficient-verified-products",
+      "storeDiscoveryLinks": 1,
+      "storeDiscoveryVerified": 0,
+      "storeDiscoverySelected": 0
     }
+  },
+  "storeDiscovery": {
+    "checkedAt": "2026-09-06T14:35:35.172Z",
+    "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
+    "activeCampaign": true,
+    "links": 1,
+    "fetched": 1,
+    "verified": 0,
+    "selected": 0,
+    "mode": "insufficient-verified-products",
+    "warnings": [
+      "Nur 0 verifizierbare Deal-Produkte entdeckt; bestehende verifizierte Auswahl bleibt erhalten."
+    ]
   }
 }
