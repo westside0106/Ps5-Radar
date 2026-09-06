@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-06T09:42:34.826Z",
+  "checkedAt": "2026-09-06T09:44:24.238Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -58,7 +58,7 @@
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211760,
+    "bytes": 211810,
     "schedule": [
       {
         "date": "03.09.",
@@ -100,7 +100,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178351,
+    "bytes": 178401,
     "updated": true,
     "parsed": {
       "games": [
@@ -131,11 +131,11 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 589544
+    "bytes": 589298
   },
   "eaPlay": {
     "ok": true,
-    "bytes": 242071,
+    "bytes": 242070,
     "updated": true,
     "parsed": {
       "trial": true,
