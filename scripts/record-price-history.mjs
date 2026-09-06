@@ -195,14 +195,64 @@ try {
 pointWrites += ingestIssue(history, radar, sourceUrls);
 
 const now = new Date();
+const radarDate = isoDate(radar.date) || now.toISOString().slice(0, 10);
 const currentDeals = new Map((radar.deals || []).map((deal) => [deal.title, deal]));
 const signalCounts = { buy: 0, watch: 0, wait: 0 };
+let newBuySignals = 0;
+let changedSignals = 0;
+
 for (const [title, game] of Object.entries(history.games)) {
+  const previousCode = game.signal?.code || null;
   const signal = signalFor(game, currentDeals.get(title), radar.storeEnd, now);
-  if (signal) {
-    game.signal = signal;
-    if (signalCounts[signal.code] !== undefined) signalCounts[signal.code] += 1;
+  if (!signal) continue;
+
+  const signalHistory = Array.isArray(game.signalHistory) ? [...game.signalHistory] : [];
+  const lastChange = signalHistory.at(-1) || null;
+  const hasPreviousBaseline = Boolean(previousCode || lastChange?.code);
+  const effectivePreviousCode = previousCode || lastChange?.code || null;
+
+  if (effectivePreviousCode !== signal.code) {
+    signalHistory.push({
+      date: radarDate,
+      code: signal.code,
+      label: signal.label,
+      previousCode: effectivePreviousCode,
+      currentPrice: signal.currentPrice,
+      radarLow: signal.radarLow,
+      discount: signal.discount,
+      confidence: signal.confidence,
+    });
+  } else if (!signalHistory.length) {
+    signalHistory.push({
+      date: radarDate,
+      code: signal.code,
+      label: signal.label,
+      previousCode: null,
+      currentPrice: signal.currentPrice,
+      radarLow: signal.radarLow,
+      discount: signal.discount,
+      confidence: signal.confidence,
+    });
   }
+
+  const latestChange = signalHistory.at(-1) || null;
+  const changedToday = Boolean(
+    hasPreviousBaseline &&
+    latestChange?.date === radarDate &&
+    latestChange?.code === signal.code &&
+    latestChange?.previousCode &&
+    latestChange.previousCode !== signal.code
+  );
+
+  signal.changedToday = changedToday;
+  signal.previousCode = changedToday ? latestChange.previousCode : null;
+  signal.changedAt = changedToday ? latestChange.date : null;
+  game.signalHistory = signalHistory.slice(-60);
+  game.signal = signal;
+
+  if (signalCounts[signal.code] !== undefined) signalCounts[signal.code] += 1;
+  if (changedToday) changedSignals += 1;
+  if (changedToday && signal.code === 'buy') newBuySignals += 1;
 }
 
 history.updatedAt = now.toISOString();
@@ -215,7 +265,9 @@ history.summary = {
   points: Object.values(history.games).reduce((sum, game) => sum + (game.points?.length || 0), 0),
   archiveIssuesScanned: issueCount,
   signals: signalCounts,
+  changedSignals,
+  newBuySignals,
 };
 
 await fs.writeFile(historyPath, `${JSON.stringify(history, null, 2)}\n`);
-console.log(`Price history updated: ${history.summary.titles} titles, ${history.summary.points} points; signals buy=${signalCounts.buy}, watch=${signalCounts.watch}, wait=${signalCounts.wait}.`);
+console.log(`Price history updated: ${history.summary.titles} titles, ${history.summary.points} points; signals buy=${signalCounts.buy}, watch=${signalCounts.watch}, wait=${signalCounts.wait}; changed=${changedSignals}, newBuy=${newBuySignals}.`);
