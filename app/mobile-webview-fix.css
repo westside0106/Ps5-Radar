@@ -1,0 +1,102 @@
+/* ChatGPT/iOS in-app browsers can expose a wider CSS viewport than Safari.
+   The magazine already switches to its mobile shell at 900px, so the rich
+   modules and detail sheets must use the same breakpoint. */
+@media (max-width: 900px) {
+  .radar-dialog {
+    position: fixed;
+    inset: auto 0 0 0;
+    width: 100%;
+    max-width: none;
+    max-height: 94dvh;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .radar-sheet {
+    width: 100%;
+    max-height: 94dvh;
+    border-radius: 24px 24px 0 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .radar-sheet-handle {
+    display: block;
+    position: sticky;
+    z-index: 7;
+    top: 8px;
+    width: 48px;
+    height: 5px;
+    margin: 8px auto -13px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.42);
+  }
+
+  .radar-sheet-close { top: 14px; right: 14px; }
+  .radar-sheet-image { height: 235px; }
+  .radar-sheet-gallery { padding: 8px 10px 2px; gap: 7px; }
+  .radar-gallery-thumb { flex-basis: 104px; height: 60px; }
+  .radar-sheet-content { padding: 19px 16px calc(26px + env(safe-area-inset-bottom)); }
+  .radar-sheet h2 { font-size: 32px; }
+  .radar-sheet-summary { font-size: 13px; }
+  .radar-sheet-facts div { grid-template-columns: 105px 1fr; gap: 9px; }
+  .radar-sheet-actions { grid-template-columns: 1fr; }
+
+  .plus-covers,
+  .deal-showcase-grid,
+  .release-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 4px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .plus-covers::-webkit-scrollbar,
+  .deal-showcase-grid::-webkit-scrollbar,
+  .release-grid::-webkit-scrollbar { display: none; }
+
+  .plus-covers > .radar-clickable {
+    flex: 0 0 285px;
+    max-width: 76vw;
+    scroll-snap-align: start;
+  }
+
+  .plus-showcase-game,
+  .plus-showcase-game > .plus-cover,
+  .plus-showcase-game .plus-cover-art { min-height: 300px; }
+  .plus-showcase-copy h4 { font-size: 20px; }
+  .plus-showcase-meta span,
+  .plus-showcase-copy small { font-size: 8px; }
+
+  .deal-showcase-grid > .radar-clickable {
+    flex: 0 0 305px;
+    max-width: 80vw;
+    scroll-snap-align: start;
+  }
+  .deal-showcase-card { min-height: 235px; }
+  .deal-showcase-copy h4 { font-size: 20px; }
+  .deal-showcase-price strong { font-size: 24px; }
+
+  .release-grid > .radar-clickable {
+    flex: 0 0 285px;
+    max-width: 76vw;
+    scroll-snap-align: start;
+  }
+  .release-card { min-height: 215px; }
+  .release-card h4 { font-size: 19px; }
+  .release-card-meta span { font-size: 8px; }
+
+  .quick-showcase .quick-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .plus-covers > .radar-clickable { flex-basis: 72vw; max-width: 285px; }
+  .deal-showcase-grid > .radar-clickable { flex-basis: 80vw; max-width: 315px; }
+  .release-grid > .radar-clickable { flex-basis: 76vw; max-width: 300px; }
+}
