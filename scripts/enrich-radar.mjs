@@ -93,6 +93,51 @@ function psPlusStatus(text, seedStatus) {
   return null;
 }
 
+function normalizeImageUrl(value = '') {
+  let url = decodeEntities(String(value))
+    .replace(/\\u0026/g, '&')
+    .replace(/\\\//g, '/')
+    .trim();
+  if (url.startsWith('//')) url = `https:${url}`;
+  if (!/^https:\/\//i.test(url)) return null;
+
+  const lower = url.toLowerCase();
+  if (!/(playstation|gmedia|image\.api|sie|tachyon|wp-content|ytimg)/i.test(lower)) return null;
+  if (/(?:logo|icon|favicon|avatar|rating|pegi|esrb|sprite|cookie|qrcode|qr-code|badge)/i.test(lower)) return null;
+  if (!(/\.(?:jpg|jpeg|png|webp)(?:[?#]|$)/i.test(url) || /\/is\/image\//i.test(url))) return null;
+  return url;
+}
+
+function galleryFromHtml(html) {
+  const candidates = [];
+  const ogImage = normalizeImageUrl(metaContent(html, 'og:image') || '');
+  if (ogImage) candidates.push(ogImage);
+
+  for (const match of html.matchAll(/(?:src|data-src|data-original|content)=["']([^"']+)["']/gi)) {
+    const url = normalizeImageUrl(match[1]);
+    if (url) candidates.push(url);
+  }
+
+  for (const match of html.matchAll(/srcset=["']([^"']+)["']/gi)) {
+    for (const candidate of match[1].split(',')) {
+      const raw = candidate.trim().split(/\s+/)[0];
+      const url = normalizeImageUrl(raw);
+      if (url) candidates.push(url);
+    }
+  }
+
+  const seen = new Set();
+  const result = [];
+  for (const url of candidates) {
+    const key = url.split('?')[0].replace(/\/$/, '');
+    if (seen.has(key)) continue;
+    seen.add(key);
+    result.push(url);
+    if (result.length === 6) break;
+  }
+  return result;
+}
+
 function parsePage(html, title, seed) {
   const text = strip(html);
   const parsed = {
@@ -102,8 +147,9 @@ function parsePage(html, title, seed) {
     release: field(text, 'Veröffentlichung'),
     platform: platformFromText(text),
     psPlusStatus: psPlusStatus(text, seed.psPlusStatus),
+    gallery: galleryFromHtml(html),
   };
-  return Object.fromEntries(Object.entries(parsed).filter(([, value]) => value));
+  return Object.fromEntries(Object.entries(parsed).filter(([, value]) => Array.isArray(value) ? value.length : value));
 }
 
 async function get(url) {
@@ -121,6 +167,23 @@ async function get(url) {
 
 function storeUrlFor(title) {
   return (sources.storeDeals || []).find((item) => item.title === title)?.url || null;
+}
+
+function mergeGallery(...groups) {
+  const seen = new Set();
+  const output = [];
+  for (const group of groups) {
+    for (const value of group || []) {
+      const url = normalizeImageUrl(value) || value;
+      if (!url || typeof url !== 'string') continue;
+      const key = url.split('?')[0].replace(/\/$/, '');
+      if (seen.has(key)) continue;
+      seen.add(key);
+      output.push(url);
+      if (output.length === 6) return output;
+    }
+  }
+  return output;
 }
 
 const titles = new Set([
@@ -172,6 +235,7 @@ for (const title of titles) {
     publisher: seed.publisher || parsed.publisher || previous.publisher || null,
     release: seed.release || parsed.release || previous.release || null,
     psPlusStatus: seed.psPlusStatus || parsed.psPlusStatus || previous.psPlusStatus || null,
+    gallery: mergeGallery(seed.gallery, parsed.gallery, previous.gallery),
   };
 
   const releaseItem = (radar.releases || []).find((item) => item.title === title);
@@ -185,7 +249,7 @@ for (const title of titles) {
   }
 
   gameDetails[title] = Object.fromEntries(
-    Object.entries(merged).filter(([, value]) => value !== null && value !== undefined && value !== '')
+    Object.entries(merged).filter(([, value]) => Array.isArray(value) ? value.length : value !== null && value !== undefined && value !== '')
   );
   if (Object.keys(gameDetails[title]).length) enriched += 1;
 }
