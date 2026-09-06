@@ -24,19 +24,19 @@
   "plusGames": [
     {
       "title": "Sniper Elite: Resistance",
-      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/647b263fa902f91c5952957ae44f11ee14d70d52-scaled.jpg"
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/e9d150af57ec180f621719d22b7b826754e9e42f.jpg?resize=1088%2C612&crop_strategy=smart"
     },
     {
       "title": "MLB The Show 26",
-      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/0e750aeb538a3a762afb44ac9b8e2b3a5ae2c24a.jpg"
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/647b263fa902f91c5952957ae44f11ee14d70d52-scaled.jpg"
     },
     {
       "title": "Wobbly Life",
-      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/478ff13a49601ba96c7f2b89dfec0de1f69299fb.jpg"
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/0e750aeb538a3a762afb44ac9b8e2b3a5ae2c24a.jpg"
     },
     {
       "title": "Chained Echoes",
-      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/ea3c4d6d1b631d6797579b6c6002a1e2578348f9.jpg"
+      "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/478ff13a49601ba96c7f2b89dfec0de1f69299fb.jpg"
     }
   ],
   "storeTitle": "gamescom-Rabatte aktiv",
@@ -115,13 +115,13 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-06T12:27:00.575Z",
+    "checkedAt": "2026-09-06T14:13:29.956Z",
     "okSources": 6,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-06T12:27:00.575Z"
+    "lastSuccessfulCheck": "2026-09-06T14:13:08.618Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-06T12:27:00.575Z",
+    "checkedAt": "2026-09-06T14:13:08.618Z",
     "errors": []
   },
   "gameDetails": {
@@ -417,10 +417,63 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-06T12:27:06.552Z",
+    "checkedAt": "2026-09-06T14:13:17.708Z",
     "titles": 16,
     "fetched": 16,
     "enriched": 16,
     "warnings": []
+  },
+  "resolvedSources": {
+    "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
+    "psPlusStoreUrls": {
+      "Sniper Elite: Resistance": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "MLB The Show 26": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "Wobbly Life": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "Chained Echoes": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748"
+    },
+    "monthlyReleases": "https://blog.de.playstation.com/?p=204875",
+    "releaseStoreUrls": {
+      "The Blood of Dawnwalker": "https://store.playstation.com/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
+      "Onimusha: Way of the Sword": "https://store.playstation.com/product/UP0102-PPSA27836_00-0000000000000001",
+      "NBA 2K27": "https://store.playstation.com/product/UP1001-PPSA35889_00-NBA2K27000000000",
+      "Mewgenics": "https://store.playstation.com/concept/10019219",
+      "Marvel’s Wolverine": "https://store.playstation.com/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+      "Aniimo": "https://store.playstation.com/product/JB2238-PPSA35870_00-0588301512156043",
+      "Control Resonant": "https://store.playstation.com/product/EP5291-PPSA34547_00-0210080241603648",
+      "Silent Hill: Townfall": "https://store.playstation.com/product/JP0101-PPSA33286_00-TOWNFALLSIEJ0000",
+      "EA Sports FC 27": "https://store.playstation.com/product/UP0006-PPSA34015_00-27STANDARDBUNDLE"
+    },
+    "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
+    "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
+  },
+  "eaPlay": {
+    "title": "FC 27 · 10h Trial ab 18.09.",
+    "trial": {
+      "hours": 10,
+      "date": "18.09."
+    },
+    "items": [
+      "10 % auf digitale EA-Käufe",
+      "Monatliche Mitgliederbelohnungen",
+      "The Play List"
+    ],
+    "sourceUrl": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play"
+  },
+  "ubisoftPlus": {
+    "title": "Ubisoft+ Classics",
+    "price": "7,99 €",
+    "items": [
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
+    ],
+    "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
+  },
+  "automationV2": {
+    "version": 2,
+    "checkedAt": "2026-09-06T14:13:17.115Z",
+    "month": "September",
+    "year": 2026,
+    "notes": []
   }
 }
