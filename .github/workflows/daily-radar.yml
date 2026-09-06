@@ -10,10 +10,16 @@ on:
       - 'scripts/automation-v2.mjs'
       - 'scripts/store-campaign-fallback.mjs'
       - 'scripts/store-deal-discovery.mjs'
+      - 'scripts/record-price-history.mjs'
       - 'scripts/enrich-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
       - 'scripts/finalize-health.mjs'
       - 'scripts/screenshot-radar.mjs'
+      - 'app/radar/DetailTile.jsx'
+      - 'app/watchlist/**'
+      - 'app/WatchlistDock.jsx'
+      - 'app/watchlist.css'
+      - 'app/layout.jsx'
       - 'data/sources.json'
       - 'data/game-sources.json'
       - 'data/radar-trigger.txt'
@@ -63,6 +69,8 @@ jobs:
         run: node scripts/store-deal-discovery.mjs
       - name: Validate core prices, releases and stale labels
         run: node scripts/sanitize-radar.mjs
+      - name: Record Store price history
+        run: node scripts/record-price-history.mjs
       - name: Enrich game detail sheets
         run: node scripts/enrich-radar.mjs
       - name: Finalize validated issue and archive
@@ -91,7 +99,7 @@ jobs:
           fi
           git config user.name "playstation-radar-bot"
           git config user.email "playstation-radar-bot@users.noreply.github.com"
-          git add data/radar.json data/source-state.json data/archive/ data/daily/ app/radar/page.jsx package-lock.json
+          git add data/radar.json data/source-state.json data/price-history.json data/archive/ data/daily/ app/radar/page.jsx package-lock.json
           git commit -m "Daily Radar update $(TZ=Europe/Berlin date +%Y-%m-%d)"
           if git push; then
             exit 0
