@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/daily-radar.yml'
       - 'scripts/update-radar.mjs'
+      - 'scripts/automation-v2.mjs'
       - 'scripts/enrich-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
       - 'scripts/screenshot-radar.mjs'
@@ -37,6 +38,8 @@ jobs:
           node-version: '22'
       - name: Check official sources and update Radar
         run: node scripts/update-radar.mjs
+      - name: Resolve current month, active campaigns and dynamic sources
+        run: node scripts/automation-v2.mjs
       - name: Validate core prices, releases and stale labels
         run: node scripts/sanitize-radar.mjs
       - name: Enrich game detail sheets
