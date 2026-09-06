@@ -13,9 +13,39 @@ function linkList(detail) {
   });
 }
 
+function badgeList(detail) {
+  const priority = ['Genre', 'Plattform', 'PS Plus', 'Rabatt', 'Status'];
+  const rows = detail.rows || [];
+  const badges = [];
+  for (const label of priority) {
+    const row = rows.find((item) => item.label === label);
+    if (!row?.value) continue;
+    const value = String(row.value);
+    if (value.length > 48) continue;
+    badges.push({ label, value });
+    if (badges.length === 4) break;
+  }
+  return badges;
+}
+
+function actionKind(label = '') {
+  if (/trailer|video/i.test(label)) return 'video';
+  if (/store/i.test(label)) return 'primary';
+  if (/playstation-seite/i.test(label)) return 'playstation';
+  return 'secondary';
+}
+
+function actionGlyph(label = '') {
+  if (/trailer|video/i.test(label)) return '▶';
+  if (/store/i.test(label)) return '◆';
+  if (/playstation/i.test(label)) return 'PS';
+  return '↗';
+}
+
 export default function DetailTile({ children, detail, className = '' }) {
   const dialogRef = useRef(null);
   const links = linkList(detail);
+  const badges = badgeList(detail);
 
   function open() {
     dialogRef.current?.showModal();
@@ -39,7 +69,7 @@ export default function DetailTile({ children, detail, className = '' }) {
         onKeyDown={onKeyDown}
       >
         {children}
-        <span className="radar-more" aria-hidden="true">＋</span>
+        <span className="radar-more" aria-hidden="true">i</span>
       </div>
 
       <dialog
@@ -69,32 +99,59 @@ export default function DetailTile({ children, detail, className = '' }) {
           ) : null}
 
           <div className="radar-sheet-content">
-            {detail.kicker ? <span className="radar-sheet-kicker">{detail.kicker}</span> : null}
-            <h2>{detail.title}</h2>
+            <div className="radar-sheet-heading">
+              {detail.kicker ? <span className="radar-sheet-kicker">{detail.kicker}</span> : null}
+              <h2>{detail.title}</h2>
+              {badges.length ? (
+                <div className="radar-sheet-badges" aria-label="Schnellinfos">
+                  {badges.map((badge) => (
+                    <span className="radar-sheet-badge" key={`${badge.label}-${badge.value}`}>
+                      <small>{badge.label}</small>
+                      <b>{badge.value}</b>
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+
             {detail.summary ? <p className="radar-sheet-summary">{detail.summary}</p> : null}
 
             {detail.rows?.length ? (
-              <dl className="radar-sheet-facts">
-                {detail.rows.map((row) => (
-                  <div key={`${row.label}-${row.value}`}>
-                    <dt>{row.label}</dt>
-                    <dd>{row.value}</dd>
-                  </div>
-                ))}
-              </dl>
+              <>
+                <div className="radar-sheet-section-title">Details</div>
+                <dl className="radar-sheet-facts">
+                  {detail.rows.map((row) => (
+                    <div key={`${row.label}-${row.value}`}>
+                      <dt>{row.label}</dt>
+                      <dd>{row.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </>
             ) : null}
 
             {detail.bullets?.length ? (
-              <ul className="radar-sheet-list">
-                {detail.bullets.map((item) => <li key={item}>{item}</li>)}
-              </ul>
+              <>
+                <div className="radar-sheet-section-title">Enthalten</div>
+                <ul className="radar-sheet-list">
+                  {detail.bullets.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </>
             ) : null}
 
             {links.length ? (
-              <div className="radar-sheet-links">
+              <div className="radar-sheet-actions">
                 {links.map((item) => (
-                  <a key={`${item.label}-${item.url}`} className="radar-sheet-source" href={item.url} target="_blank" rel="noreferrer">
-                    {item.label || 'Öffnen'} ↗
+                  <a
+                    key={`${item.label}-${item.url}`}
+                    className={`radar-sheet-action action-${actionKind(item.label)}`}
+                    href={item.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span className="radar-action-icon" aria-hidden="true">{actionGlyph(item.label)}</span>
+                    <span>{item.label || 'Öffnen'}</span>
+                    <b aria-hidden="true">↗</b>
                   </a>
                 ))}
               </div>
