@@ -10,7 +10,6 @@ on:
       - 'scripts/automation-v2.mjs'
       - 'scripts/store-campaign-fallback.mjs'
       - 'scripts/store-deal-discovery.mjs'
-      - 'scripts/patch-radar-source-ui.mjs'
       - 'scripts/enrich-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
       - 'scripts/screenshot-radar.mjs'
@@ -19,8 +18,9 @@ on:
       - 'data/radar-trigger.txt'
       - 'package.json'
   schedule:
-    - cron: '0 6 * * *'
-    - cron: '0 7 * * *'
+    # Emergency fallback only. The exact 08:00 Europe/Berlin ChatGPT trigger is primary.
+    # 07:15 UTC is always after 08:00 local time: 08:15 CET / 09:15 CEST.
+    - cron: '15 7 * * *'
 
 permissions:
   contents: write
@@ -32,15 +32,23 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Cache Playwright browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package.json') }}
       - name: Prepare browser runtime
         run: |
           npm install --package-lock=false --no-audit --no-fund
-          npx playwright install --with-deps chromium
+          npx playwright install chromium
       - name: Check official sources and update Radar
         run: node scripts/update-radar.mjs
       - name: Resolve current month, active campaigns and dynamic sources
@@ -55,8 +63,6 @@ jobs:
         run: node scripts/enrich-radar.mjs
       - name: Finalize validated issue and archive
         run: node scripts/sanitize-radar.mjs
-      - name: Apply resolved-source UI migration
-        run: node scripts/patch-radar-source-ui.mjs
       - name: Render private magazine PNG
         shell: bash
         env:
