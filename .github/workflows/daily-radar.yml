@@ -12,6 +12,7 @@ on:
       - 'scripts/store-deal-discovery.mjs'
       - 'scripts/enrich-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
+      - 'scripts/finalize-health.mjs'
       - 'scripts/screenshot-radar.mjs'
       - 'data/sources.json'
       - 'data/game-sources.json'
@@ -38,11 +39,14 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Cache Playwright browser
         uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
       - name: Prepare browser runtime
         run: |
           npm install --package-lock=false --no-audit --no-fund
