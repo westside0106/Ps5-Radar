@@ -5,10 +5,13 @@ on:
     paths: [tools/goal-payload.json]
 permissions:
   contents: write
+concurrency:
+  group: radar-goal-sync
+  cancel-in-progress: false
 jobs:
   apply:
-    if: github.ref == 'refs/heads/feat/radar-mobile-catalog-goal'
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -17,36 +20,60 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - name: Apply validated source files
+      - name: Apply saved source patch
         run: |
           python3 - <<'PY'
-          import base64,json,pathlib
+          import base64,hashlib,io,json,pathlib,subprocess,tarfile
           root=pathlib.Path.cwd().resolve()
           payload=json.loads((root/'tools/goal-payload.json').read_text())
           assert payload['base']=='7b15aa43d939eae3a26856bdad3665147a39a01d'
-          allowed=('app/','lib/','scripts/','data/psplus-catalog.json','data/game-sources.json','package.json','package-lock.json','README.md')
-          for name,value in payload['files'].items():
-              assert not name.startswith('/') and '..' not in pathlib.PurePosixPath(name).parts
-              assert any(name==p or name.startswith(p) for p in allowed)
-              assert not name.startswith(('app/api/','scripts/goal-','scripts/automation-','.github/'))
-              target=(root/name).resolve()
-              assert target.is_relative_to(root)
-              target.parent.mkdir(parents=True,exist_ok=True)
-              target.write_bytes(base64.b64decode(value,validate=True))
-          for name in payload.get('delete',[]):
-              assert name in ('scripts/goal-inspect-catalog.mjs',)
-              (root/name).unlink(missing_ok=True)
-          print('Applied',len(payload['files']),'source files')
+          data=base64.b64decode(payload['archive'],validate=True)
+          assert hashlib.sha256(data).hexdigest()==payload['sha256']
+          allowed=('app/','lib/','scripts/','data/ps-plus-catalog.json','data/game-sources.json','package.json','README.md','docs/')
+          def safe(name):
+              assert name and not name.startswith('/') and '..' not in pathlib.PurePosixPath(name).parts
+              assert name in ('package.json','README.md') or any(name.startswith(p) for p in allowed if p.endswith('/')) or name in allowed
+              assert not name.startswith(('app/api/','.github/','scripts/automation-','scripts/goal-'))
+              return name
+          with tarfile.open(fileobj=io.BytesIO(data),mode='r:xz') as archive:
+              members=archive.getmembers()
+              assert all(m.isfile() and (m.name.startswith('files/') or m.name.startswith('patches/') or m.name=='goal-manifest.json') for m in members)
+              for member in members:
+                  if member.name.startswith('patches/'):
+                      name=safe(member.name[len('patches/'):].removesuffix('.patch'))
+                      patch=archive.extractfile(member).read()
+                      subprocess.run(['git','apply','--check','-'],input=patch,check=True)
+                      subprocess.run(['git','apply','-'],input=patch,check=True)
+                  elif member.name.startswith('files/'):
+                      name=safe(member.name[len('files/'):])
+                      target=root/name
+                      target.parent.mkdir(parents=True,exist_ok=True)
+                      target.write_bytes(archive.extractfile(member).read())
+          print('Saved source patch applied.')
           PY
-      - run: npm ci
+      - run: npm ci --no-audit --no-fund
       - run: npm run test:goal
       - run: npm run build
+      - name: Mobile browser acceptance
+        env:
+          RADAR_PASSWORD: radar-local
+          RADAR_SESSION_SECRET: radar-local-screenshot-secret
+        run: |
+          npx playwright install chromium --with-deps
+          npm run start -- --hostname 127.0.0.1 > /tmp/radar-goal-next.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
+          for i in {1..60}; do
+            if curl -fsS http://127.0.0.1:3000/ >/dev/null; then break; fi
+            sleep 1
+          done
+          npm run test:goal:browser
       - name: Commit validated changes to feature branch
         run: |
           git config user.name 'playstation-radar-bot'
           git config user.email 'playstation-radar-bot@users.noreply.github.com'
-          git add app lib scripts data/psplus-catalog.json data/game-sources.json package.json package-lock.json README.md
+          git add app lib scripts data/ps-plus-catalog.json data/game-sources.json package.json README.md docs
           if ! git diff --cached --quiet; then
-            git commit -m 'feat: complete mobile radar and PS Plus catalog goal'
+            git commit -m 'feat: mobile radar and PS Plus catalog foundation'
             git push origin HEAD:feat/radar-mobile-catalog-goal
           fi
