@@ -15,12 +15,19 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def safe(name):
+    path = pathlib.PurePosixPath(name)
+    assert name and not name.startswith('/') and '..' not in path.parts
+    assert name in {'package.json', 'README.md', 'data/ps-plus-catalog.json', 'data/game-sources.json'} or name.startswith(('app/', 'lib/', 'scripts/', 'docs/'))
+    assert not name.startswith(('app/api/', '.github/', 'scripts/automation-', 'scripts/goal-'))
+    return name
+
+
 parts = []
 for name, expected, size in zip(payload['parts'], payload['partSha256'], payload['partLengths'], strict=True):
     path = root / name
     raw = path.read_bytes()
     if digest(raw) != expected:
-        # Recover one accidental insertion only when the exact original hash matches.
         assert len(raw) == size + 1, f'{name}: unexpected length'
         repaired = None
         for offset in range(len(raw)):
@@ -38,17 +45,24 @@ for name, expected, size in zip(payload['parts'], payload['partSha256'], payload
 data = base64.b64decode(b''.join(parts), validate=True)
 assert digest(data) == payload['sha256'], 'Full archive checksum mismatch'
 
-allowed = ('app/', 'lib/', 'scripts/', 'docs/')
-exact = {'package.json', 'README.md', 'data/ps-plus-catalog.json', 'data/game-sources.json'}
-
-
-def safe(name):
-    path = pathlib.PurePosixPath(name)
-    assert name and not name.startswith('/') and '..' not in path.parts
-    assert name in exact or any(name.startswith(prefix) for prefix in allowed)
-    assert not name.startswith(('app/api/', '.github/', 'scripts/automation-', 'scripts/goal-'))
-    return name
-
+# The saved patch was made against four helper files that were not yet committed.
+# Restore their exact original bytes, reconstructed by reversing the saved patch.
+bootstrap = base64.b64decode((root / 'tools/goal-bootstrap.b64').read_text().strip(), validate=True)
+assert digest(bootstrap) == payload['bootstrapSha256']
+preimages = {'scripts/verify-plus-media.mjs', 'lib/ps-plus-catalog.mjs', 'lib/radar-media.mjs', 'scripts/lib/media-identity.mjs'}
+with tarfile.open(fileobj=io.BytesIO(bootstrap), mode='r:xz') as archive:
+    members = archive.getmembers()
+    assert {m.name for m in members} == preimages
+    for member in members:
+        assert member.isfile() and member.size < 100000
+        name = safe(member.name)
+        content = archive.extractfile(member).read()
+        target = root / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        if target.exists():
+            assert target.read_bytes() == content, f'Existing helper differs: {name}'
+        else:
+            target.write_bytes(content)
 
 with tarfile.open(fileobj=io.BytesIO(data), mode='r:xz') as archive:
     patches = []
