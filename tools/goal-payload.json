@@ -1,0 +1,13 @@
+{
+  "base": "7b15aa43d939eae3a26856bdad3665147a39a01d",
+  "sha256": "9d599169e1acfbb045cfdcd2b7c1e146d687a2e234824420b8bf320b377067cd",
+  "parts": [
+    "tools/goal-parts/000.b64",
+    "tools/goal-parts/001.b64",
+    "tools/goal-parts/002.b64",
+    "tools/goal-parts/003.b64",
+    "tools/goal-parts/004.b64",
+    "tools/goal-parts/005.b64",
+    "tools/goal-parts/006.b64"
+  ]
+}
