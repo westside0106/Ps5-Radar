@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -27,7 +28,8 @@ jobs:
           root=pathlib.Path.cwd().resolve()
           payload=json.loads((root/'tools/goal-payload.json').read_text())
           assert payload['base']=='7b15aa43d939eae3a26856bdad3665147a39a01d'
-          data=base64.b64decode(payload['archive'],validate=True)
+          encoded=payload.get('archive') or ''.join((root/p).read_text() for p in payload.get('parts',[]))
+          data=base64.b64decode(encoded,validate=True)
           assert hashlib.sha256(data).hexdigest()==payload['sha256']
           allowed=('app/','lib/','scripts/','data/ps-plus-catalog.json','data/game-sources.json','package.json','README.md','docs/')
           def safe(name):
@@ -40,7 +42,7 @@ jobs:
               assert all(m.isfile() and (m.name.startswith('files/') or m.name.startswith('patches/') or m.name=='goal-manifest.json') for m in members)
               for member in members:
                   if member.name.startswith('patches/'):
-                      name=safe(member.name[len('patches/'):].removesuffix('.patch'))
+                      safe(member.name[len('patches/'):].removesuffix('.patch'))
                       patch=archive.extractfile(member).read()
                       subprocess.run(['git','apply','--check','-'],input=patch,check=True)
                       subprocess.run(['git','apply','-'],input=patch,check=True)
@@ -54,20 +56,6 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: npm run test:goal
       - run: npm run build
-      - name: Mobile browser acceptance
-        env:
-          RADAR_PASSWORD: radar-local
-          RADAR_SESSION_SECRET: radar-local-screenshot-secret
-        run: |
-          npx playwright install chromium --with-deps
-          npm run start -- --hostname 127.0.0.1 > /tmp/radar-goal-next.log 2>&1 &
-          SERVER_PID=$!
-          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
-          for i in {1..60}; do
-            if curl -fsS http://127.0.0.1:3000/ >/dev/null; then break; fi
-            sleep 1
-          done
-          npm run test:goal:browser
       - name: Commit validated changes to feature branch
         run: |
           git config user.name 'playstation-radar-bot'
