@@ -1,13 +1,15 @@
 {
   "base": "7b15aa43d939eae3a26856bdad3665147a39a01d",
   "sha256": "9d599169e1acfbb045cfdcd2b7c1e146d687a2e234824420b8bf320b377067cd",
-  "parts": [
-    "tools/goal-parts/000.b64",
-    "tools/goal-parts/001.b64",
-    "tools/goal-parts/002.b64",
-    "tools/goal-parts/003.b64",
-    "tools/goal-parts/004.b64",
-    "tools/goal-parts/005.b64",
-    "tools/goal-parts/006.b64"
+  "parts": ["tools/goal-parts/000.b64", "tools/goal-parts/001.b64", "tools/goal-parts/002.b64", "tools/goal-parts/003.b64", "tools/goal-parts/004.b64", "tools/goal-parts/005.b64", "tools/goal-parts/006.b64"],
+  "partLengths": [4096, 4096, 4096, 4096, 4096, 4096, 3608],
+  "partSha256": [
+    "73768e5a2bd86b615ba22dca86ea603a0c9c4d63b484d685a014349093f66dc7",
+    "8a8f38ae8015a836af4ffefb8abf2b7729473d8e1617df68b32c02d3bd10dd8b",
+    "37ae59053459a577d59c9fea4997ec0200334e18cf42250d1147ca4a26a693ab",
+    "20c19ebb8f8d1b72a42ecdc5473274000f57d65d627dfea7608e076d98a628ae",
+    "42649a2024505e98b6b194c544f7c33224cf86a18f98e278e14797872e814829",
+    "aec86e2fd7741ac24f48fb75b6365c72648dbf0dd7d4c5cc0ff69865d36f352f",
+    "3189488fb809546a14de8203b8676e8ac1fdc2c2931d767ebba5a0cae2fb92b5"
   ]
 }
