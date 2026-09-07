@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T20:32:13.204Z",
+  "updatedAt": "2026-09-07T06:04:19.369Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -162,6 +162,12 @@
           "price": 35.99,
           "oldPrice": 89.99,
           "discount": 60
+        },
+        {
+          "date": "2026-09-07",
+          "price": 35.99,
+          "oldPrice": 89.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Deluxe Edition",
@@ -171,20 +177,20 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "niedrig",
-        "measurements": 1,
+        "measurements": 2,
         "currentPrice": 35.99,
         "lastObservedPrice": 35.99,
-        "lastObservedDate": "2026-09-06",
+        "lastObservedDate": "2026-09-07",
         "radarLow": 35.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 4,
-        "code": "watch",
-        "label": "BEOBACHTEN",
-        "reason": "-60 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
-        "changedToday": false,
-        "previousCode": null,
-        "changedAt": null
+        "daysRemaining": 3,
+        "code": "buy",
+        "label": "KAUFEN",
+        "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
+        "changedToday": true,
+        "previousCode": "watch",
+        "changedAt": "2026-09-07"
       },
       "signalHistory": [
         {
@@ -192,6 +198,16 @@
           "code": "watch",
           "label": "BEOBACHTEN",
           "previousCode": null,
+          "currentPrice": 35.99,
+          "radarLow": 35.99,
+          "discount": 60,
+          "confidence": "niedrig"
+        },
+        {
+          "date": "2026-09-07",
+          "code": "buy",
+          "label": "KAUFEN",
+          "previousCode": "watch",
           "currentPrice": 35.99,
           "radarLow": 35.99,
           "discount": 60,
@@ -207,6 +223,12 @@
           "price": 39.99,
           "oldPrice": 79.99,
           "discount": 50
+        },
+        {
+          "date": "2026-09-07",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
         }
       ],
       "title": "Battlefield™ 6",
@@ -216,20 +238,20 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "niedrig",
-        "measurements": 1,
+        "measurements": 2,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-09-06",
+        "lastObservedDate": "2026-09-07",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 4,
-        "code": "watch",
-        "label": "BEOBACHTEN",
-        "reason": "-50 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
-        "changedToday": false,
-        "previousCode": null,
-        "changedAt": null
+        "daysRemaining": 3,
+        "code": "buy",
+        "label": "KAUFEN",
+        "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
+        "changedToday": true,
+        "previousCode": "watch",
+        "changedAt": "2026-09-07"
       },
       "signalHistory": [
         {
@@ -237,6 +259,16 @@
           "code": "watch",
           "label": "BEOBACHTEN",
           "previousCode": null,
+          "currentPrice": 39.99,
+          "radarLow": 39.99,
+          "discount": 50,
+          "confidence": "niedrig"
+        },
+        {
+          "date": "2026-09-07",
+          "code": "buy",
+          "label": "KAUFEN",
+          "previousCode": "watch",
           "currentPrice": 39.99,
           "radarLow": 39.99,
           "discount": 50,
@@ -252,6 +284,12 @@
           "price": 71.49,
           "oldPrice": 129.99,
           "discount": 45
+        },
+        {
+          "date": "2026-09-07",
+          "price": 71.49,
+          "oldPrice": 129.99,
+          "discount": 45
         }
       ],
       "title": "WWE 2K26 Attitude Era Edition",
@@ -261,17 +299,17 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "niedrig",
-        "measurements": 1,
+        "measurements": 2,
         "currentPrice": 71.49,
         "lastObservedPrice": 71.49,
-        "lastObservedDate": "2026-09-06",
+        "lastObservedDate": "2026-09-07",
         "radarLow": 71.49,
         "deltaFromLowPct": 0,
         "discount": 45,
-        "daysRemaining": 4,
+        "daysRemaining": 3,
         "code": "watch",
         "label": "BEOBACHTEN",
-        "reason": "-45 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "reason": "Nur 0,0 % über dem eigenen Radar-Tief bei -45 %.",
         "changedToday": false,
         "previousCode": null,
         "changedAt": null
@@ -292,15 +330,15 @@
   },
   "summary": {
     "titles": 6,
-    "points": 9,
-    "archiveIssuesScanned": 3,
+    "points": 12,
+    "archiveIssuesScanned": 4,
     "signals": {
-      "buy": 0,
-      "watch": 3,
+      "buy": 2,
+      "watch": 1,
       "wait": 3
     },
-    "changedSignals": 0,
-    "newBuySignals": 0
+    "changedSignals": 2,
+    "newBuySignals": 2
   },
   "method": {
     "signalVersion": 1,
