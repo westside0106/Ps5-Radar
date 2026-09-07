@@ -21,47 +21,17 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-      - name: Apply saved source patch
-        run: |
-          python3 - <<'PY'
-          import base64,hashlib,io,json,pathlib,subprocess,tarfile
-          root=pathlib.Path.cwd().resolve()
-          payload=json.loads((root/'tools/goal-payload.json').read_text())
-          assert payload['base']=='7b15aa43d939eae3a26856bdad3665147a39a01d'
-          encoded=payload.get('archive') or ''.join((root/p).read_text() for p in payload.get('parts',[]))
-          data=base64.b64decode(encoded,validate=True)
-          assert hashlib.sha256(data).hexdigest()==payload['sha256']
-          allowed=('app/','lib/','scripts/','data/ps-plus-catalog.json','data/game-sources.json','package.json','README.md','docs/')
-          def safe(name):
-              assert name and not name.startswith('/') and '..' not in pathlib.PurePosixPath(name).parts
-              assert name in ('package.json','README.md') or any(name.startswith(p) for p in allowed if p.endswith('/')) or name in allowed
-              assert not name.startswith(('app/api/','.github/','scripts/automation-','scripts/goal-'))
-              return name
-          with tarfile.open(fileobj=io.BytesIO(data),mode='r:xz') as archive:
-              members=archive.getmembers()
-              assert all(m.isfile() and (m.name.startswith('files/') or m.name.startswith('patches/') or m.name=='goal-manifest.json') for m in members)
-              for member in members:
-                  if member.name.startswith('patches/'):
-                      safe(member.name[len('patches/'):].removesuffix('.patch'))
-                      patch=archive.extractfile(member).read()
-                      subprocess.run(['git','apply','--check','-'],input=patch,check=True)
-                      subprocess.run(['git','apply','-'],input=patch,check=True)
-                  elif member.name.startswith('files/'):
-                      name=safe(member.name[len('files/'):])
-                      target=root/name
-                      target.parent.mkdir(parents=True,exist_ok=True)
-                      target.write_bytes(archive.extractfile(member).read())
-          print('Saved source patch applied.')
-          PY
-      - run: npm ci --no-audit --no-fund
-      - run: npm run test:goal
-      - run: npm run build
-      - name: Commit validated changes to feature branch
+      - name: Import saved source with exact checksums
+        run: python3 tools/goal-import.py
+      - name: Save source checkpoint on feature branch
         run: |
           git config user.name 'playstation-radar-bot'
           git config user.email 'playstation-radar-bot@users.noreply.github.com'
-          git add app lib scripts data/ps-plus-catalog.json data/game-sources.json package.json README.md docs
+          git add app lib scripts data/ps-plus-catalog.json data/game-sources.json package.json README.md docs tools/goal-parts
           if ! git diff --cached --quiet; then
-            git commit -m 'feat: mobile radar and PS Plus catalog foundation'
+            git commit -m 'feat: import mobile radar and PS Plus catalog foundation'
             git push origin HEAD:feat/radar-mobile-catalog-goal
           fi
+      - run: npm ci --no-audit --no-fund
+      - run: npm run test:goal
+      - run: npm run build
