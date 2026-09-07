@@ -27,7 +27,10 @@
     "developer": "Rebellion",
     "genre": "Taktik-Shooter · Stealth · Action",
     "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
-    "psPlusStatus": "In PlayStation Plus enthalten"
+    "psPlusStatus": "In PlayStation Plus enthalten",
+    "storeUrl": "https://store.playstation.com/de-de/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+    "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/b026676dfa9d7639fef041a9f0ed4c6d076e2ad3647eae1c.png",
+    "platform": "PS4 · PS5"
   },
   "MLB The Show 26": {
     "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",

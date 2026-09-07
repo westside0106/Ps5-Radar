@@ -4,6 +4,9 @@ import radar from '../../data/radar.json';
 import sources from '../../data/sources.json';
 import { COOKIE_NAME, safeEqual, sessionToken } from '../auth';
 import DetailTile from './DetailTile';
+import catalog from '../../data/ps-plus-catalog.json';
+import gameSources from '../../data/game-sources.json';
+import { safePlusCover } from '../../lib/radar-media.mjs';
 
 export const dynamic = 'force-dynamic';
 
@@ -25,7 +28,7 @@ function ageLabel(date) {
   const get = (type) => Number(parts.find((part) => part.type === type)?.value);
   const today = Date.UTC(get('year'), get('month') - 1, get('day'));
   const diff = Math.round((today - then) / 86400000);
-  return diff <= 0 ? 'HEUTE ERSCHIENEN' : diff === 1 ? 'SEIT GESTERN' : `SEIT ${date.slice(0, 5)}.`;
+  return diff === 0 ? 'HEUTE ERSCHIENEN' : diff < 0 ? `AB ${date.slice(0, 5)}.` : diff === 1 ? 'SEIT GESTERN' : `SEIT ${date.slice(0, 5)}.`;
 }
 
 function displayEnd(iso) {
@@ -189,11 +192,14 @@ function storyDetail({ title, date, text, price, image, top = false }) {
 }
 
 function psPlusDetail(game) {
-  const info = gameInfo(game.title);
+  const info = { ...(gameSources[game.title] || {}), ...gameInfo(game.title) };
+  const cover = safePlusCover(game, radar, catalog, gameSources[game.title] || {});
   return {
     kicker: 'PLAYSTATION PLUS',
+    kind: 'game',
     title: game.title,
-    ...gameMedia(game.title, game.image),
+    image: cover,
+    gallery: cover ? [cover] : [],
     summary: info.description || 'Teil der aktuell im Radar geführten monatlichen PlayStation-Plus-Spiele.',
     rows: richRows(game.title, [
       { label: 'Paket', value: radar.psplusLabel },
@@ -312,10 +318,11 @@ function Panel({ tone, icon, title, children, className = '' }) {
 }
 
 function PlusCover({ game, label }) {
+  const cover = safePlusCover(game, radar, catalog, gameSources[game.title] || {});
   return (
     <DetailTile detail={psPlusDetail(game)}>
       <article className="plus-cover">
-        <div className="plus-cover-art" style={{ backgroundImage: `url("${game.image}")` }} />
+        <div className={`plus-cover-art ${cover ? "" : "is-missing"}`} style={cover ? { backgroundImage: `url("${cover}")` } : undefined}>{!cover ? <span>Cover nicht verifiziert</span> : null}</div>
         <div className="plus-cover-copy"><strong>{game.title}</strong><small>PS PLUS · {label || 'AKTUELL'}</small></div>
       </article>
     </DetailTile>
@@ -329,28 +336,21 @@ function DealCard({ deal }) {
   const plus = shortPsPlus(info.psPlusStatus);
   const meta = [deal.platform || info.platform, info.genre].filter(Boolean).slice(0, 2);
   const endingClass = stats.remaining !== null && stats.remaining <= 1 ? 'is-ending' : '';
-
   return (
     <DetailTile detail={dealDetail(deal)} className="deal-showcase-wrap">
-      <article
-        className="deal-showcase-card"
-        style={{ backgroundImage: `url("${media.image || deal.image}")` }}
-      >
-        <div className="deal-showcase-top">
-          <span className={`deal-strength ${stats.strengthClass}`.trim()}>{stats.strength} · -{stats.discount}%</span>
-          <span className={`deal-expiry ${endingClass}`.trim()}>{stats.expiry}</span>
+      <article className="deal-showcase-card">
+        <div className="deal-showcase-art" style={media.image ? { backgroundImage: `url("${media.image}")` } : undefined}>
+          <div className="deal-showcase-top">
+            <span className={`deal-strength ${stats.strengthClass}`.trim()}>{stats.strength} · -{stats.discount}%</span>
+            <span className={`deal-expiry ${endingClass}`.trim()}>{stats.expiry}</span>
+          </div>
         </div>
         <div className="deal-showcase-copy">
           {plus ? <span className="deal-plus-badge">{plus}</span> : null}
           <h4>{deal.title}</h4>
-          {meta.length ? (
-            <div className="deal-showcase-meta">
-              {meta.map((value) => <span key={value}>{value}</span>)}
-            </div>
-          ) : null}
+          {meta.length ? <div className="deal-showcase-meta">{meta.map(value => <span key={value}>{value}</span>)}</div> : null}
           <div className="deal-showcase-price">
-            <del>{deal.oldPrice}</del>
-            <strong>{deal.price}</strong>
+            <div className="deal-price-values"><del>{deal.oldPrice}</del><strong>{deal.price}</strong></div>
             {stats.saving !== null ? <span className="deal-showcase-saving">Du sparst<br />{formatEuro(stats.saving)}</span> : null}
           </div>
           {info.psPlusStatus ? <div className="deal-showcase-psplus-note">{info.psPlusStatus}</div> : null}
@@ -419,6 +419,8 @@ export default async function RadarPage() {
   return (
     <main className="mag-shell">
       <div className="mag-toolbar">
+<a className="logout" href="/ps-plus">PS+-Katalog</a>
+        <a className="logout" href="/preise">Preisradar</a>
         <a className="logout" href="/archive">Archiv</a>
         <a className="logout" href="/daily/latest.png">Bild</a>
         <form action="/api/logout" method="post"><button className="logout">Abmelden</button></form>
@@ -434,7 +436,7 @@ export default async function RadarPage() {
           <div className="mag-datebox"><strong>{radar.date}</strong><span>{radar.edition}</span></div>
         </header>
 
-        <div className="mag-ticker"><strong>HEUTE NEU</strong><span>{radar.newHeadline}</span><b>{radar.newCount}</b></div>
+        <div className="mag-ticker"><strong>{(radar.dailyChanges || []).some(item => item.verified === true && item.date === radar.date) ? "HEUTE NEU" : "AKTUELL"}</strong><span>{radar.newHeadline}</span><b>{radar.newCount}</b></div>
 
         <section className="mag-topgrid">
           <StoryCard
@@ -469,6 +471,7 @@ export default async function RadarPage() {
         <Panel tone="plus" icon="＋" title={`PLAYSTATION PLUS · ${radar.psplusLabel || 'AKTUELL'}`} className="mag-plus">
           <DetailTile detail={{
             kicker: 'PLAYSTATION PLUS',
+            kind: 'summary',
             title: radar.psplusTitle,
             summary: radar.psplusText,
             rows: [{ label: 'Paket', value: radar.psplusLabel }],
@@ -478,6 +481,7 @@ export default async function RadarPage() {
               <div><span>ESSENTIAL</span><h4>{radar.psplusTitle}</h4></div><p>{radar.psplusText}</p>
             </div>
           </DetailTile>
+          <div className="plus-catalog-nav"><a href="/ps-plus">Alle PS+-Spiele anzeigen <span aria-hidden="true">↗</span></a><small>Essential · Extra · Premium · Trials</small></div>
           <div className="plus-covers">
             {radar.plusGames.map((game) => <PlusCover key={game.title} game={game} label={radar.psplusLabel} />)}
           </div>

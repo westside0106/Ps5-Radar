@@ -194,8 +194,8 @@ export default function DetailTile({ children, detail, className = '' }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isWatched, setIsWatched] = useState(false);
 
-  const isPlusCard = detail.kicker === 'PLAYSTATION PLUS' && Boolean(detail.image);
-  const isPlusSummary = detail.kicker === 'PLAYSTATION PLUS' && !detail.image;
+  const isPlusCard = ['game','catalog-game'].includes(detail.kind) || (detail.kicker === 'PLAYSTATION PLUS' && Boolean(detail.image) && detail.kind !== 'summary');
+  const isPlusSummary = detail.kind === 'summary' || (detail.kicker === 'PLAYSTATION PLUS' && !detail.image && detail.kind !== 'game');
   const isEaBenefit = detail.kicker === 'EA PLAY';
   const isUbiBenefit = detail.kicker === 'UBISOFT+';
   const isDealDetail = Boolean(rowValue(detail, 'Aktuell'));
@@ -230,8 +230,15 @@ export default function DetailTile({ children, detail, className = '' }) {
   function open() {
     setActiveImage(gallery[0] || null);
     setIsOpen(true);
-    dialogRef.current?.showModal();
+    if (!dialogRef.current?.open) dialogRef.current?.showModal();
   }
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = previous; };
+  }, [isOpen]);
 
   function close() {
     setIsOpen(false);
@@ -239,6 +246,7 @@ export default function DetailTile({ children, detail, className = '' }) {
   }
 
   function onKeyDown(event) {
+    if (event.target !== event.currentTarget) return;
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
       open();
@@ -272,7 +280,7 @@ export default function DetailTile({ children, detail, className = '' }) {
         role="button"
         tabIndex={0}
         aria-label={`Mehr Informationen zu ${detail.title}`}
-        onClick={open}
+        onClick={(event) => { if (!event.target.closest('a,button,input,select,textarea')) open(); }}
         onKeyDown={onKeyDown}
       >
         {children}
@@ -354,7 +362,7 @@ export default function DetailTile({ children, detail, className = '' }) {
           </div>
         ) : null}
 
-        {signal?.activeDeal ? <span className={`radar-signal-pill signal-${signal.code}`} aria-hidden="true">{signal.label}</span> : null}
+        {signal?.activeDeal ? <div className="radar-signal-footer"><span className={`radar-signal-pill signal-${signal.code}`}>{signal.label}</span><small>Preisradar · Details ansehen ↗</small></div> : null}
         <span className="radar-more" aria-hidden="true">i</span>
       </div>
 
@@ -368,7 +376,7 @@ export default function DetailTile({ children, detail, className = '' }) {
       >
         <section className="radar-sheet" onClick={(event) => event.stopPropagation()}>
           <div className="radar-sheet-handle" aria-hidden="true" />
-          <button type="button" className="radar-sheet-close" aria-label="Schließen" onClick={close}>×</button>
+          <div className="radar-sheet-topbar"><span>{detail.kicker || 'SPIELDETAILS'}</span><button type="button" className="radar-sheet-close" aria-label="Schließen" onClick={close}>×</button></div>
 
           {activeImage ? (
             <div
@@ -422,6 +430,11 @@ export default function DetailTile({ children, detail, className = '' }) {
               ) : null}
             </div>
 
+            {links.some(item => ['primary','playstation'].includes(actionKind(item.label))) ? (
+              <div className="radar-sheet-actions radar-sheet-actions--primary">
+                {links.filter(item => ['primary','playstation'].includes(actionKind(item.label))).map(item => <a key={item.url} className={`radar-sheet-action action-${actionKind(item.label)}`} href={item.url} target="_blank" rel="noreferrer"><span className="radar-action-icon" aria-hidden="true">{actionGlyph(item.label)}</span><span>{item.label}</span><b aria-hidden="true">↗</b></a>)}
+              </div>
+            ) : null}
             {detail.summary ? <p className="radar-sheet-summary">{detail.summary}</p> : null}
 
             {isDealDetail ? <DealSignal signal={signal} /> : null}
@@ -468,7 +481,7 @@ export default function DetailTile({ children, detail, className = '' }) {
 
             {links.length ? (
               <div className="radar-sheet-actions">
-                {links.map((item) => (
+                {links.filter(item => !['primary','playstation'].includes(actionKind(item.label))).map((item) => (
                   <a
                     key={`${item.label}-${item.url}`}
                     className={`radar-sheet-action action-${actionKind(item.label)}`}

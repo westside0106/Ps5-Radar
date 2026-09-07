@@ -9,6 +9,7 @@ import './benefit-showcase.css';
 import './mobile-webview-fix.css';
 import './archive.css';
 import './watchlist.css';
+import './radar-goal.css';
 import WatchlistDock from './WatchlistDock';
 
 export const metadata = {
