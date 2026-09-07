@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-07T06:03:54.805Z",
+  "checkedAt": "2026-09-07T13:32:00.429Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "PlayStation Store: Die beliebtesten Downloads im August 2026",
+        "link": "https://blog.de.playstation.com/2026/09/07/playstation-store-die-beliebtesten-downloads-im-august-2026/",
+        "pubDate": "Mon, 07 Sep 2026 12:53:50 +0000"
+      },
       {
         "title": "State of Play & State of Play Japan: alle Ankündigungen/Trailer",
         "link": "https://blog.de.playstation.com/2026/09/03/state-of-play-state-of-play-japan-alle-ankuendigungen-trailer/",
@@ -47,14 +52,16 @@
         "title": "„Spec IV“-Aktualisierung für Gran Turismo 7 erscheint noch in diesem Jahr in zwei Teilen",
         "link": "https://blog.de.playstation.com/2026/09/03/spec-iv-aktualisierung-fuer-gran-turismo-7-erscheint-noch-in-diesem-jahr-in-zwei-teilen/",
         "pubDate": "Thu, 03 Sep 2026 15:06:11 +0000"
-      },
-      {
-        "title": "30 Jahre Spielfreude zum Selberbauen: Der erste Blick auf die LEGO® PlayStation™",
-        "link": "https://blog.de.playstation.com/2026/09/03/30-jahre-spielfreude-zum-selberbauen-der-erste-blick-auf-die-lego-playstation/",
-        "pubDate": "Thu, 03 Sep 2026 14:52:48 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "PlayStation Store: Die beliebtesten Downloads im August 2026",
+        "link": "https://blog.de.playstation.com/2026/09/07/playstation-store-die-beliebtesten-downloads-im-august-2026/",
+        "pubDate": "Mon, 07 Sep 2026 12:53:50 +0000",
+        "category": "store"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
@@ -109,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178333,
+    "bytes": 178382,
     "updated": true,
     "parsed": {
       "games": [
