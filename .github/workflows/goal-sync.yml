@@ -1,0 +1,52 @@
+name: Radar Goal Source Sync
+on:
+  push:
+    branches: [feat/radar-mobile-catalog-goal]
+    paths: [tools/goal-payload.json]
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: github.ref == 'refs/heads/feat/radar-mobile-catalog-goal'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Apply validated source files
+        run: |
+          python3 - <<'PY'
+          import base64,json,pathlib
+          root=pathlib.Path.cwd().resolve()
+          payload=json.loads((root/'tools/goal-payload.json').read_text())
+          assert payload['base']=='7b15aa43d939eae3a26856bdad3665147a39a01d'
+          allowed=('app/','lib/','scripts/','data/psplus-catalog.json','data/game-sources.json','package.json','package-lock.json','README.md')
+          for name,value in payload['files'].items():
+              assert not name.startswith('/') and '..' not in pathlib.PurePosixPath(name).parts
+              assert any(name==p or name.startswith(p) for p in allowed)
+              assert not name.startswith(('app/api/','scripts/goal-','scripts/automation-','.github/'))
+              target=(root/name).resolve()
+              assert target.is_relative_to(root)
+              target.parent.mkdir(parents=True,exist_ok=True)
+              target.write_bytes(base64.b64decode(value,validate=True))
+          for name in payload.get('delete',[]):
+              assert name in ('scripts/goal-inspect-catalog.mjs',)
+              (root/name).unlink(missing_ok=True)
+          print('Applied',len(payload['files']),'source files')
+          PY
+      - run: npm ci
+      - run: npm run test:goal
+      - run: npm run build
+      - name: Commit validated changes to feature branch
+        run: |
+          git config user.name 'playstation-radar-bot'
+          git config user.email 'playstation-radar-bot@users.noreply.github.com'
+          git add app lib scripts data/psplus-catalog.json data/game-sources.json package.json package-lock.json README.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'feat: complete mobile radar and PS Plus catalog goal'
+            git push origin HEAD:feat/radar-mobile-catalog-goal
+          fi
