@@ -1,0 +1,33 @@
+name: Radar UI Goal Check
+on:
+  push:
+    branches: [feat/radar-mobile-catalog-goal]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run test:goal --if-present
+      - run: npm run build
+      - name: Export source for isolated validation
+        if: github.event_name == 'push'
+        run: |
+          mkdir -p /tmp/radar-goal-source
+          git archive --format=tar HEAD | tar -xf - -C /tmp/radar-goal-source
+          rm -rf /tmp/radar-goal-source/.github /tmp/radar-goal-source/data/archive /tmp/radar-goal-source/data/daily
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'push'
+        with:
+          name: radar-goal-source
+          path: /tmp/radar-goal-source
+          retention-days: 1
+          if-no-files-found: error
