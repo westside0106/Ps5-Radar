@@ -18,12 +18,19 @@ jobs:
       - run: npm ci
       - run: npm run test:goal --if-present
       - run: npm run build
+      - name: Inspect official guest catalog
+        if: github.event_name == 'push'
+        continue-on-error: true
+        run: |
+          npx playwright install chromium --with-deps
+          node scripts/goal-inspect-catalog.mjs
       - name: Export source for isolated validation
         if: github.event_name == 'push'
         run: |
           mkdir -p /tmp/radar-goal-source
           git archive --format=tar HEAD | tar -xf - -C /tmp/radar-goal-source
           rm -rf /tmp/radar-goal-source/.github /tmp/radar-goal-source/data/archive /tmp/radar-goal-source/data/daily
+          if [ -d data/goal-diagnostics ]; then cp -r data/goal-diagnostics /tmp/radar-goal-source/data/; fi
       - uses: actions/upload-artifact@v4
         if: github.event_name == 'push'
         with:
