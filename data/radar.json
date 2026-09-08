@@ -1,8 +1,8 @@
 {
-  "date": "07.09.2026",
-  "edition": "AUSGABE #004",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "07.09 · LIVE",
+  "date": "08.09.2026",
+  "edition": "AUSGABE #005",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "08.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -91,7 +91,6 @@
     }
   ],
   "quickItems": [
-    "PlayStation Store: Die beliebtesten Downloads im August 2026",
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
@@ -111,26 +110,12 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 07.09.2026 · 9/9 Quellen · Store 20 geprüft · 16/16 Details",
-  "sourceAlerts": [
-    {
-      "title": "PlayStation Store: Die beliebtesten Downloads im August 2026",
-      "url": "https://blog.de.playstation.com/2026/09/07/playstation-store-die-beliebtesten-downloads-im-august-2026/",
-      "source": "PlayStation Blog DE",
-      "category": "store"
-    }
-  ],
-  "editorial": [
-    {
-      "title": "PlayStation Store: Die beliebtesten Downloads im August 2026",
-      "url": "https://blog.de.playstation.com/2026/09/07/playstation-store-die-beliebtesten-downloads-im-august-2026/",
-      "category": "store",
-      "score": 70
-    }
-  ],
+  "radarCheck": "Stand 08.09.2026 · 9/9 Quellen · Store 20 geprüft · 16/16 Details",
+  "sourceAlerts": [],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-07T13:33:15.291Z",
+    "checkedAt": "2026-09-08T06:00:07.944Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -141,10 +126,10 @@
     "enrichedTitles": 16,
     "detailTitles": 16,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-07T13:33:15.291Z"
+    "lastSuccessfulCheck": "2026-09-08T06:00:07.944Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-07T13:33:15.291Z",
+    "checkedAt": "2026-09-08T06:00:07.944Z",
     "errors": [],
     "sources": [
       {
@@ -366,16 +351,16 @@
       "description": "Rundenbasiertes Taktik-Roguelike mit Katzenzucht, vererbten Merkmalen, Mutationen, Klassen und umfangreichen Item-Synergien.",
       "publisher": "Nicalis Inc.",
       "release": "08.09.2026",
-      "platform": "PS5 · PS4",
+      "platform": "PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10019219",
       "genre": "Strategie · Taktik-Roguelike",
       "gallery": [
         "https://image.api.playstation.com/vulcan/ap/rnd/202608/2019/da4d679cbe3193e14bbb96cc8537858031267c059f43a7cd.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/a62d6e61b6fd5b958d55b65aa236eb98f8fe38ea6f9dd896.jpg",
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/7f5b03eee41e16c860ab6bc5ec48974de1fa90bc85c56033.jpg",
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/f1509c74d8003b0fc1cafe84c6774f0b5fc36534524fe7f5.jpg",
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/c20afa88e70844136021a3a63248acc44b935ca90e351168.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/7c12deeea7654f8b05fd4df3bfc3d969d10a4a7a4d7ad4dc.jpg"
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/7c12deeea7654f8b05fd4df3bfc3d969d10a4a7a4d7ad4dc.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/a62d6e61b6fd5b958d55b65aa236eb98f8fe38ea6f9dd896.jpg"
       ]
     },
     "Marvel’s Wolverine": {
@@ -391,8 +376,8 @@
         "https://image.api.playstation.com/vulcan/ap/rnd/202510/0721/e54995d925972b21f0092d0f27a4884f2c883c439514dede.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-hero-desktop-01-en-30sep25",
         "https://gmedia.playstation.com/is/image/SIEPDC/marvels-wolverine-carousel-background-desktop-01-en-14aug26",
-        "https://i.ytimg.com/vi_webp/sm3uf92SVvA/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/3Z42tBfBLJY/maxresdefault.webp"
+        "https://i.ytimg.com/vi_webp/G62QQ42Ewwg/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/DlRoO6C1rSg/maxresdefault.webp"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=Zcj9AzHv_l8"
     },
@@ -468,7 +453,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-07T13:32:25.635Z",
+    "checkedAt": "2026-09-08T05:59:57.091Z",
     "titles": 16,
     "fetched": 16,
     "enriched": 16,
@@ -529,7 +514,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-07T13:32:10.956Z",
+    "checkedAt": "2026-09-08T05:59:36.779Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -543,7 +528,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-07T13:32:11.060Z",
+    "checkedAt": "2026-09-08T05:59:36.881Z",
     "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
     "activeCampaign": true,
     "staticLinks": 1,

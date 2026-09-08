@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-07T13:32:00.429Z",
+  "checkedAt": "2026-09-08T05:59:28.961Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,18 +54,11 @@
         "pubDate": "Thu, 03 Sep 2026 15:06:11 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "PlayStation Store: Die beliebtesten Downloads im August 2026",
-        "link": "https://blog.de.playstation.com/2026/09/07/playstation-store-die-beliebtesten-downloads-im-august-2026/",
-        "pubDate": "Mon, 07 Sep 2026 12:53:50 +0000",
-        "category": "store"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211742,
+    "bytes": 211631,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178382,
+    "bytes": 178222,
     "updated": true,
     "parsed": {
       "games": [
