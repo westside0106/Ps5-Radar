@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T12:10:05.181Z",
+  "updatedAt": "2026-09-09T06:04:14.702Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -174,6 +174,12 @@
           "price": 35.99,
           "oldPrice": 89.99,
           "discount": 60
+        },
+        {
+          "date": "2026-09-09",
+          "price": 35.99,
+          "oldPrice": 89.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Deluxe Edition",
@@ -183,14 +189,14 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 35.99,
         "lastObservedPrice": 35.99,
-        "lastObservedDate": "2026-09-08",
+        "lastObservedDate": "2026-09-09",
         "radarLow": 35.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 2,
+        "daysRemaining": 1,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
@@ -241,6 +247,12 @@
           "price": 39.99,
           "oldPrice": 79.99,
           "discount": 50
+        },
+        {
+          "date": "2026-09-09",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
         }
       ],
       "title": "Battlefield™ 6",
@@ -250,14 +262,14 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-09-08",
+        "lastObservedDate": "2026-09-09",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 2,
+        "daysRemaining": 1,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
@@ -308,6 +320,12 @@
           "price": 71.49,
           "oldPrice": 129.99,
           "discount": 45
+        },
+        {
+          "date": "2026-09-09",
+          "price": 71.49,
+          "oldPrice": 129.99,
+          "discount": 45
         }
       ],
       "title": "WWE 2K26 Attitude Era Edition",
@@ -317,14 +335,14 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 71.49,
         "lastObservedPrice": 71.49,
-        "lastObservedDate": "2026-09-08",
+        "lastObservedDate": "2026-09-09",
         "radarLow": 71.49,
         "deltaFromLowPct": 0,
         "discount": 45,
-        "daysRemaining": 2,
+        "daysRemaining": 1,
         "code": "watch",
         "label": "BEOBACHTEN",
         "reason": "Nur 0,0 % über dem eigenen Radar-Tief bei -45 %.",
@@ -348,8 +366,8 @@
   },
   "summary": {
     "titles": 6,
-    "points": 15,
-    "archiveIssuesScanned": 5,
+    "points": 18,
+    "archiveIssuesScanned": 6,
     "signals": {
       "buy": 2,
       "watch": 1,

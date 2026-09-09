@@ -1,8 +1,28 @@
 {
-  "checkedAt": "2026-09-08T12:09:41.571Z",
+  "checkedAt": "2026-09-09T06:03:52.813Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Mewgenics: Katzenzucht trifft Rundentaktik vom Isaac-Macher",
+        "link": "https://blog.de.playstation.com/2026/09/08/mewgenics-release-ps5/",
+        "pubDate": "Tue, 08 Sep 2026 14:34:41 +0000"
+      },
+      {
+        "title": "NBA 2K27: The City wird Co-Ed und die Legenden rufen",
+        "link": "https://blog.de.playstation.com/2026/09/08/nba-2k27-release-ps5/",
+        "pubDate": "Tue, 08 Sep 2026 14:28:38 +0000"
+      },
+      {
+        "title": "Onimusha: Way of the Sword: Capcoms Samurai-Saga kehrt zurück",
+        "link": "https://blog.de.playstation.com/2026/09/08/onimusha-way-of-the-sword-release-ps5/",
+        "pubDate": "Tue, 08 Sep 2026 14:20:19 +0000"
+      },
+      {
+        "title": "The Blood of Dawnwalker: Neues PS5-RPG der Witcher-Macher",
+        "link": "https://blog.de.playstation.com/2026/09/08/the-blood-of-dawnwalker-release-ps5/",
+        "pubDate": "Tue, 08 Sep 2026 14:14:18 +0000"
+      },
       {
         "title": "PlayStation Store: Die beliebtesten Downloads im August 2026",
         "link": "https://blog.de.playstation.com/2026/09/07/playstation-store-die-beliebtesten-downloads-im-august-2026/",
@@ -32,33 +52,38 @@
         "title": "Lüftet die Geheimnisse von Uncanyon, einem neuen PS5-Adventure, das 2027 erscheint",
         "link": "https://blog.de.playstation.com/2026/09/03/uncanyon-ps5-adventure-2027-ankuendigung/",
         "pubDate": "Thu, 03 Sep 2026 16:12:12 +0000"
-      },
-      {
-        "title": "Hunter’s Moon, ein immersiver historischer Folk-Horror, erscheint am 26. Oktober für PS5",
-        "link": "https://blog.de.playstation.com/2026/09/03/hunters-moon-folk-horror-ps5-26-oktober/",
-        "pubDate": "Thu, 03 Sep 2026 16:01:27 +0000"
-      },
-      {
-        "title": "Final Fantasy Resonance-Demo für PS5 ab heute verfügbar, Sephiroth enthüllt",
-        "link": "https://blog.de.playstation.com/2026/09/03/final-fantasy-resonance-demo-fuer-ps5-ab-heute-verfuegbar-sephiroth-enthuellt/",
-        "pubDate": "Thu, 03 Sep 2026 15:41:07 +0000"
-      },
-      {
-        "title": "Erster Blick auf die Grand Theft Auto VI Limited-Edition DualSense Wireless-Controller",
-        "link": "https://blog.de.playstation.com/2026/09/03/erster-blick-auf-die-grand-theft-auto-vi-limited-edition-dualsense-wireless-controller/",
-        "pubDate": "Thu, 03 Sep 2026 15:23:48 +0000"
-      },
-      {
-        "title": "„Spec IV“-Aktualisierung für Gran Turismo 7 erscheint noch in diesem Jahr in zwei Teilen",
-        "link": "https://blog.de.playstation.com/2026/09/03/spec-iv-aktualisierung-fuer-gran-turismo-7-erscheint-noch-in-diesem-jahr-in-zwei-teilen/",
-        "pubDate": "Thu, 03 Sep 2026 15:06:11 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Mewgenics: Katzenzucht trifft Rundentaktik vom Isaac-Macher",
+        "link": "https://blog.de.playstation.com/2026/09/08/mewgenics-release-ps5/",
+        "pubDate": "Tue, 08 Sep 2026 14:34:41 +0000",
+        "category": "news"
+      },
+      {
+        "title": "NBA 2K27: The City wird Co-Ed und die Legenden rufen",
+        "link": "https://blog.de.playstation.com/2026/09/08/nba-2k27-release-ps5/",
+        "pubDate": "Tue, 08 Sep 2026 14:28:38 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Onimusha: Way of the Sword: Capcoms Samurai-Saga kehrt zurück",
+        "link": "https://blog.de.playstation.com/2026/09/08/onimusha-way-of-the-sword-release-ps5/",
+        "pubDate": "Tue, 08 Sep 2026 14:20:19 +0000",
+        "category": "news"
+      },
+      {
+        "title": "The Blood of Dawnwalker: Neues PS5-RPG der Witcher-Macher",
+        "link": "https://blog.de.playstation.com/2026/09/08/the-blood-of-dawnwalker-release-ps5/",
+        "pubDate": "Tue, 08 Sep 2026 14:14:18 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211631,
+    "bytes": 212983,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +134,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178222,
+    "bytes": 179574,
     "updated": true,
     "parsed": {
       "games": [
@@ -132,6 +157,10 @@
         {
           "title": "Neue It Happens on PS5-Kampagne hebt großartige Spielmomente hervor",
           "hasImage": true
+        },
+        {
+          "title": "The Blood of Dawnwalker: Neues PS5-RPG der Witcher-Macher",
+          "hasImage": true
         }
       ],
       "range": null,
@@ -140,12 +169,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 590316
+    "bytes": 589298
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242070,
+    "bytes": 242071,
     "updated": true,
     "parsed": {
       "trial": true,
@@ -158,7 +187,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 162721,
+    "bytes": 162711,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
@@ -191,7 +220,7 @@
         "prices": [
           "79,99 €",
           "19,99 €",
-          "99 €"
+          "24 €"
         ],
         "discounts": [
           "-75 %"
@@ -206,11 +235,13 @@
         "prices": [
           "24,99 €",
           "49,99 €",
+          "39,99 €",
           "99,99 €",
           "5 €"
         ],
         "discounts": [
-          "-50 %"
+          "-50 %",
+          "-60 %"
         ]
       }
     }

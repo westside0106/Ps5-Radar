@@ -1,8 +1,8 @@
 {
-  "date": "08.09.2026",
-  "edition": "AUSGABE #005",
+  "date": "09.09.2026",
+  "edition": "AUSGABE #006",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "08.09 · LIVE",
+  "newCount": "09.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -70,10 +70,6 @@
   ],
   "releases": [
     {
-      "date": "08.09.",
-      "title": "Mewgenics"
-    },
-    {
       "date": "15.09.",
       "title": "Marvel’s Wolverine"
     },
@@ -88,6 +84,10 @@
     {
       "date": "24.09.",
       "title": "Silent Hill: Townfall"
+    },
+    {
+      "date": "25.09.",
+      "title": "EA Sports FC 27"
     }
   ],
   "quickItems": [
@@ -110,12 +110,37 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 08.09.2026 · 9/9 Quellen · Store 20 geprüft · 16/16 Details",
-  "sourceAlerts": [],
+  "radarCheck": "Stand 09.09.2026 · 9/9 Quellen · Store 20 geprüft · 16/16 Details",
+  "sourceAlerts": [
+    {
+      "title": "Mewgenics: Katzenzucht trifft Rundentaktik vom Isaac-Macher",
+      "url": "https://blog.de.playstation.com/2026/09/08/mewgenics-release-ps5/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "NBA 2K27: The City wird Co-Ed und die Legenden rufen",
+      "url": "https://blog.de.playstation.com/2026/09/08/nba-2k27-release-ps5/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Onimusha: Way of the Sword: Capcoms Samurai-Saga kehrt zurück",
+      "url": "https://blog.de.playstation.com/2026/09/08/onimusha-way-of-the-sword-release-ps5/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "The Blood of Dawnwalker: Neues PS5-RPG der Witcher-Macher",
+      "url": "https://blog.de.playstation.com/2026/09/08/the-blood-of-dawnwalker-release-ps5/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    }
+  ],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-08T12:10:18.087Z",
+    "checkedAt": "2026-09-09T06:04:34.688Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -126,10 +151,10 @@
     "enrichedTitles": 16,
     "detailTitles": 16,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-08T12:10:18.087Z"
+    "lastSuccessfulCheck": "2026-09-09T06:04:34.688Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-08T12:10:18.087Z",
+    "checkedAt": "2026-09-09T06:04:34.688Z",
     "errors": [],
     "sources": [
       {
@@ -347,22 +372,6 @@
       ],
       "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26TUDEEDITN"
     },
-    "Mewgenics": {
-      "description": "Rundenbasiertes Taktik-Roguelike mit Katzenzucht, vererbten Merkmalen, Mutationen, Klassen und umfangreichen Item-Synergien.",
-      "publisher": "Nicalis Inc.",
-      "release": "08.09.2026",
-      "platform": "PS5",
-      "storeUrl": "https://store.playstation.com/de-de/concept/10019219",
-      "genre": "Strategie · Taktik-Roguelike",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/2019/da4d679cbe3193e14bbb96cc8537858031267c059f43a7cd.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/7f5b03eee41e16c860ab6bc5ec48974de1fa90bc85c56033.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/f1509c74d8003b0fc1cafe84c6774f0b5fc36534524fe7f5.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/c20afa88e70844136021a3a63248acc44b935ca90e351168.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/7c12deeea7654f8b05fd4df3bfc3d969d10a4a7a4d7ad4dc.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202607/3119/a62d6e61b6fd5b958d55b65aa236eb98f8fe38ea6f9dd896.jpg"
-      ]
-    },
     "Marvel’s Wolverine": {
       "description": "Storybasiertes Singleplayer-Action-Adventure mit Insomniac Games' eigener Interpretation von Logan und seinen Adamantium-Klauen.",
       "publisher": "Sony Interactive Entertainment",
@@ -433,6 +442,9 @@
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=CvN3dP92wxU"
     },
+    "EA Sports FC 27": {
+      "release": "25.09.2026"
+    },
     "EA SPORTS FC 27": {
       "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
       "developer": "EA SPORTS",
@@ -440,7 +452,7 @@
       "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
       "publisher": "EA Swiss Sarl",
       "release": "17.9.2026",
-      "platform": "PS5",
+      "platform": "PS4 · PS5",
       "gallery": [
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
@@ -453,9 +465,9 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-08T12:10:05.217Z",
+    "checkedAt": "2026-09-09T06:04:14.753Z",
     "titles": 16,
-    "fetched": 16,
+    "fetched": 15,
     "enriched": 16,
     "warnings": []
   },
@@ -514,7 +526,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-08T12:09:48.991Z",
+    "checkedAt": "2026-09-09T06:03:59.844Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -528,7 +540,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-08T12:09:49.249Z",
+    "checkedAt": "2026-09-09T06:03:59.936Z",
     "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
     "activeCampaign": true,
     "staticLinks": 1,
