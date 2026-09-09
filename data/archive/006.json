@@ -111,44 +111,19 @@
     "PS Plus Premium"
   ],
   "radarCheck": "Stand 09.09.2026 · 9/9 Quellen erfolgreich geprüft",
-  "sourceAlerts": [
-    {
-      "title": "Mewgenics: Katzenzucht trifft Rundentaktik vom Isaac-Macher",
-      "url": "https://blog.de.playstation.com/2026/09/08/mewgenics-release-ps5/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
-    {
-      "title": "NBA 2K27: The City wird Co-Ed und die Legenden rufen",
-      "url": "https://blog.de.playstation.com/2026/09/08/nba-2k27-release-ps5/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
-    {
-      "title": "Onimusha: Way of the Sword: Capcoms Samurai-Saga kehrt zurück",
-      "url": "https://blog.de.playstation.com/2026/09/08/onimusha-way-of-the-sword-release-ps5/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
-    {
-      "title": "The Blood of Dawnwalker: Neues PS5-RPG der Witcher-Macher",
-      "url": "https://blog.de.playstation.com/2026/09/08/the-blood-of-dawnwalker-release-ps5/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    }
-  ],
+  "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-09T06:04:30.936Z",
+    "checkedAt": "2026-09-09T12:22:38.811Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-09T06:03:52.813Z"
+    "lastSuccessfulCheck": "2026-09-09T12:21:52.720Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-09T06:03:52.813Z",
+    "checkedAt": "2026-09-09T12:21:52.720Z",
     "errors": [],
     "sources": [
       {
@@ -446,7 +421,7 @@
       "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
       "publisher": "EA Swiss Sarl",
       "release": "17.9.2026",
-      "platform": "PS4 · PS5",
+      "platform": "PS5",
       "gallery": [
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
@@ -459,7 +434,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-09T06:04:14.753Z",
+    "checkedAt": "2026-09-09T12:22:15.242Z",
     "titles": 16,
     "fetched": 15,
     "enriched": 16,
@@ -520,7 +495,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-09T06:03:59.844Z",
+    "checkedAt": "2026-09-09T12:21:59.194Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -534,7 +509,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-09T06:03:59.936Z",
+    "checkedAt": "2026-09-09T12:21:59.301Z",
     "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
     "activeCampaign": true,
     "staticLinks": 1,
