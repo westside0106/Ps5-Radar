@@ -1,8 +1,28 @@
 {
-  "checkedAt": "2026-09-09T12:21:52.720Z",
+  "checkedAt": "2026-09-10T06:01:04.651Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Call of Duty: Black Ops 7 und Warzone Saison 6 starten am 17. September mit „Der Spuk“",
+        "link": "https://blog.de.playstation.com/2026/09/09/call-of-duty-black-ops-7-und-warzone-saison-6-starten-am-17-september-mit-der-spuk/",
+        "pubDate": "Wed, 09 Sep 2026 15:35:40 +0000"
+      },
+      {
+        "title": "PlayStation Plus-Spielekatalog für September 2026",
+        "link": "https://blog.de.playstation.com/2026/09/09/playstation-plus-spielekatalog-fuer-september-2026/",
+        "pubDate": "Wed, 09 Sep 2026 15:30:00 +0000"
+      },
+      {
+        "title": "No Man’s Sky: Das Cosmos-Update ist ab heute auf PS5 live",
+        "link": "https://blog.de.playstation.com/2026/09/09/no-mans-sky-cosmos-update-ps5/",
+        "pubDate": "Wed, 09 Sep 2026 13:00:00 +0000"
+      },
+      {
+        "title": "Minato feiert ihr Debüt in DEAD OR ALIVE 6 Last Round!",
+        "link": "https://blog.de.playstation.com/2026/09/09/minato-feiert-ihr-debuet-in-dead-or-alive-6-last-round/",
+        "pubDate": "Wed, 09 Sep 2026 12:00:00 +0000"
+      },
       {
         "title": "Mewgenics: Katzenzucht trifft Rundentaktik vom Isaac-Macher",
         "link": "https://blog.de.playstation.com/2026/09/08/mewgenics-release-ps5/",
@@ -32,33 +52,38 @@
         "title": "State of Play & State of Play Japan: alle Ankündigungen/Trailer",
         "link": "https://blog.de.playstation.com/2026/09/03/state-of-play-state-of-play-japan-alle-ankuendigungen-trailer/",
         "pubDate": "Thu, 03 Sep 2026 18:13:29 +0000"
-      },
-      {
-        "title": "Fate/Extra Record erscheint am 28. Januar 2027 für PS5 und PS4",
-        "link": "https://blog.de.playstation.com/2026/09/03/fate-extra-record-launch-28-januar-2027/",
-        "pubDate": "Thu, 03 Sep 2026 17:31:33 +0000"
-      },
-      {
-        "title": "Final Fantasy VII Revelation erscheint am 8. April 2027 auf PS5",
-        "link": "https://blog.de.playstation.com/2026/09/03/final-fantasy-vii-revelation-erscheint-am-8-april-2027-auf-ps5/",
-        "pubDate": "Thu, 03 Sep 2026 16:46:30 +0000"
-      },
-      {
-        "title": "Rhapsody in Scarlet für PS5 angekündigt",
-        "link": "https://blog.de.playstation.com/2026/09/03/rhapsody-in-scarlet-fuer-ps5-angekuendigt/",
-        "pubDate": "Thu, 03 Sep 2026 16:27:14 +0000"
-      },
-      {
-        "title": "Lüftet die Geheimnisse von Uncanyon, einem neuen PS5-Adventure, das 2027 erscheint",
-        "link": "https://blog.de.playstation.com/2026/09/03/uncanyon-ps5-adventure-2027-ankuendigung/",
-        "pubDate": "Thu, 03 Sep 2026 16:12:12 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Call of Duty: Black Ops 7 und Warzone Saison 6 starten am 17. September mit „Der Spuk“",
+        "link": "https://blog.de.playstation.com/2026/09/09/call-of-duty-black-ops-7-und-warzone-saison-6-starten-am-17-september-mit-der-spuk/",
+        "pubDate": "Wed, 09 Sep 2026 15:35:40 +0000",
+        "category": "news"
+      },
+      {
+        "title": "PlayStation Plus-Spielekatalog für September 2026",
+        "link": "https://blog.de.playstation.com/2026/09/09/playstation-plus-spielekatalog-fuer-september-2026/",
+        "pubDate": "Wed, 09 Sep 2026 15:30:00 +0000",
+        "category": "psplus"
+      },
+      {
+        "title": "No Man’s Sky: Das Cosmos-Update ist ab heute auf PS5 live",
+        "link": "https://blog.de.playstation.com/2026/09/09/no-mans-sky-cosmos-update-ps5/",
+        "pubDate": "Wed, 09 Sep 2026 13:00:00 +0000",
+        "category": "release"
+      },
+      {
+        "title": "Minato feiert ihr Debüt in DEAD OR ALIVE 6 Last Round!",
+        "link": "https://blog.de.playstation.com/2026/09/09/minato-feiert-ihr-debuet-in-dead-or-alive-6-last-round/",
+        "pubDate": "Wed, 09 Sep 2026 12:00:00 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 212911,
+    "bytes": 209464,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +134,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 179502,
+    "bytes": 176055,
     "updated": true,
     "parsed": {
       "games": [
@@ -134,7 +159,7 @@
           "hasImage": true
         },
         {
-          "title": "The Blood of Dawnwalker: Neues PS5-RPG der Witcher-Macher",
+          "title": "No Man’s Sky: Das Cosmos-Update ist ab heute auf PS5 live",
           "hasImage": true
         }
       ],
@@ -162,7 +187,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 162711,
+    "bytes": 163219,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
@@ -179,11 +204,14 @@
       "parsed": {
         "prices": [
           "74,99 €",
-          "11,24 €",
           "69,99 €"
         ],
         "discounts": [
-          "-85 %"
+          "-85 %",
+          "-69 %",
+          "-16 %",
+          "-6 %",
+          "-2 %"
         ]
       }
     },
@@ -194,8 +222,9 @@
       "parsed": {
         "prices": [
           "79,99 €",
-          "19,99 €",
-          "24 €"
+          "24,99 €",
+          "99,99 €",
+          "2 €"
         ],
         "discounts": [
           "-75 %"
@@ -208,15 +237,17 @@
       "updated": false,
       "parsed": {
         "prices": [
-          "24,99 €",
           "49,99 €",
           "39,99 €",
           "99,99 €",
           "5 €"
         ],
         "discounts": [
-          "-50 %",
-          "-60 %"
+          "-60 %",
+          "-85 %",
+          "-8 %",
+          "-3 %",
+          "-1 %"
         ]
       }
     }

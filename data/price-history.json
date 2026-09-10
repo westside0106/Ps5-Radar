@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T12:22:15.190Z",
+  "updatedAt": "2026-09-10T06:01:14.816Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -187,22 +187,22 @@
       "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0547256477986893",
       "signal": {
         "version": 1,
-        "activeDeal": true,
+        "activeDeal": false,
         "confidence": "mittel",
         "measurements": 4,
-        "currentPrice": 35.99,
+        "currentPrice": null,
         "lastObservedPrice": 35.99,
         "lastObservedDate": "2026-09-09",
         "radarLow": 35.99,
         "deltaFromLowPct": 0,
-        "discount": 60,
-        "daysRemaining": 1,
-        "code": "buy",
-        "label": "KAUFEN",
-        "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
-        "changedToday": false,
-        "previousCode": null,
-        "changedAt": null
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "changedToday": true,
+        "previousCode": "buy",
+        "changedAt": "2026-09-10"
       },
       "signalHistory": [
         {
@@ -224,6 +224,16 @@
           "radarLow": 35.99,
           "discount": 60,
           "confidence": "niedrig"
+        },
+        {
+          "date": "2026-09-10",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": "buy",
+          "currentPrice": null,
+          "radarLow": 35.99,
+          "discount": null,
+          "confidence": "mittel"
         }
       ]
     },
@@ -260,22 +270,22 @@
       "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA19534_00-SANTIAGOSTANDARD",
       "signal": {
         "version": 1,
-        "activeDeal": true,
+        "activeDeal": false,
         "confidence": "mittel",
         "measurements": 4,
-        "currentPrice": 39.99,
+        "currentPrice": null,
         "lastObservedPrice": 39.99,
         "lastObservedDate": "2026-09-09",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
-        "discount": 50,
-        "daysRemaining": 1,
-        "code": "buy",
-        "label": "KAUFEN",
-        "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
-        "changedToday": false,
-        "previousCode": null,
-        "changedAt": null
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "changedToday": true,
+        "previousCode": "buy",
+        "changedAt": "2026-09-10"
       },
       "signalHistory": [
         {
@@ -297,6 +307,16 @@
           "radarLow": 39.99,
           "discount": 50,
           "confidence": "niedrig"
+        },
+        {
+          "date": "2026-09-10",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": "buy",
+          "currentPrice": null,
+          "radarLow": 39.99,
+          "discount": null,
+          "confidence": "mittel"
         }
       ]
     },
@@ -333,22 +353,22 @@
       "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26TUDEEDITN",
       "signal": {
         "version": 1,
-        "activeDeal": true,
+        "activeDeal": false,
         "confidence": "mittel",
         "measurements": 4,
-        "currentPrice": 71.49,
+        "currentPrice": null,
         "lastObservedPrice": 71.49,
         "lastObservedDate": "2026-09-09",
         "radarLow": 71.49,
         "deltaFromLowPct": 0,
-        "discount": 45,
-        "daysRemaining": 1,
-        "code": "watch",
-        "label": "BEOBACHTEN",
-        "reason": "Nur 0,0 % über dem eigenen Radar-Tief bei -45 %.",
-        "changedToday": false,
-        "previousCode": null,
-        "changedAt": null
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "changedToday": true,
+        "previousCode": "watch",
+        "changedAt": "2026-09-10"
       },
       "signalHistory": [
         {
@@ -360,6 +380,16 @@
           "radarLow": 71.49,
           "discount": 45,
           "confidence": "niedrig"
+        },
+        {
+          "date": "2026-09-10",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": "watch",
+          "currentPrice": null,
+          "radarLow": 71.49,
+          "discount": null,
+          "confidence": "mittel"
         }
       ]
     }
@@ -367,13 +397,13 @@
   "summary": {
     "titles": 6,
     "points": 18,
-    "archiveIssuesScanned": 6,
+    "archiveIssuesScanned": 7,
     "signals": {
-      "buy": 2,
-      "watch": 1,
-      "wait": 3
+      "buy": 0,
+      "watch": 0,
+      "wait": 6
     },
-    "changedSignals": 0,
+    "changedSignals": 3,
     "newBuySignals": 0
   },
   "method": {

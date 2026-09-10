@@ -1,8 +1,8 @@
 {
-  "date": "09.09.2026",
-  "edition": "AUSGABE #006",
+  "date": "10.09.2026",
+  "edition": "AUSGABE #007",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "09.09 · LIVE",
+  "newCount": "10.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -39,35 +39,10 @@
       "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/08/478ff13a49601ba96c7f2b89dfec0de1f69299fb.jpg"
     }
   ],
-  "storeTitle": "Aktuelle Store-Top-Deals",
-  "storeText": "Automatisch aus der aktuell verifizierten PlayStation-Store-Aktion ausgewählt.",
-  "storeEnd": "2026-09-10T00:59:00+02:00",
-  "deals": [
-    {
-      "title": "Forza Horizon 5 Deluxe Edition",
-      "platform": "PS5",
-      "price": "35,99 €",
-      "oldPrice": "89,99 €",
-      "discount": "-60 %",
-      "image": null
-    },
-    {
-      "title": "Battlefield™ 6",
-      "platform": "PS5",
-      "price": "39,99 €",
-      "oldPrice": "79,99 €",
-      "discount": "-50 %",
-      "image": null
-    },
-    {
-      "title": "WWE 2K26 Attitude Era Edition",
-      "platform": "PS5",
-      "price": "71,49 €",
-      "oldPrice": "129,99 €",
-      "discount": "-45 %",
-      "image": null
-    }
-  ],
+  "storeTitle": "Keine verifizierten Top-Deals",
+  "storeText": "Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.",
+  "storeEnd": null,
+  "deals": [],
   "releases": [
     {
       "date": "15.09.",
@@ -94,8 +69,8 @@
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
-  "leavingTitle": "gamescom-Rabatte laufen aus",
-  "leavingText": "Aktuelle Store-Aktion endet am 10.09., 00:59 Uhr.",
+  "leavingTitle": "Kein aktives Angebotsende",
+  "leavingText": "Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
   "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
   "eaItems": [
@@ -110,26 +85,51 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 09.09.2026 · 9/9 Quellen · Store 20 geprüft · 16/16 Details",
-  "sourceAlerts": [],
+  "radarCheck": "Stand 10.09.2026 · 9/9 Quellen · 13/13 Details",
+  "sourceAlerts": [
+    {
+      "title": "Call of Duty: Black Ops 7 und Warzone Saison 6 starten am 17. September mit „Der Spuk“",
+      "url": "https://blog.de.playstation.com/2026/09/09/call-of-duty-black-ops-7-und-warzone-saison-6-starten-am-17-september-mit-der-spuk/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "PlayStation Plus-Spielekatalog für September 2026",
+      "url": "https://blog.de.playstation.com/2026/09/09/playstation-plus-spielekatalog-fuer-september-2026/",
+      "source": "PlayStation Blog DE",
+      "category": "psplus"
+    },
+    {
+      "title": "No Man’s Sky: Das Cosmos-Update ist ab heute auf PS5 live",
+      "url": "https://blog.de.playstation.com/2026/09/09/no-mans-sky-cosmos-update-ps5/",
+      "source": "PlayStation Blog DE",
+      "category": "release"
+    },
+    {
+      "title": "Minato feiert ihr Debüt in DEAD OR ALIVE 6 Last Round!",
+      "url": "https://blog.de.playstation.com/2026/09/09/minato-feiert-ihr-debuet-in-dead-or-alive-6-last-round/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    }
+  ],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-09T12:22:42.932Z",
+    "checkedAt": "2026-09-10T06:01:23.635Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "storeDiscoveryMode": "dynamic-browser",
-    "storeProductsVerified": 20,
-    "storeDealsSelected": 3,
-    "enrichedTitles": 16,
-    "detailTitles": 16,
+    "storeDiscoveryMode": "no-active-campaign",
+    "storeProductsVerified": 0,
+    "storeDealsSelected": 0,
+    "enrichedTitles": 13,
+    "detailTitles": 13,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-09T12:22:42.932Z"
+    "lastSuccessfulCheck": "2026-09-10T06:01:23.635Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-09T12:22:42.932Z",
+    "checkedAt": "2026-09-10T06:01:23.635Z",
     "errors": [],
     "sources": [
       {
@@ -299,54 +299,6 @@
         "https://gmedia.playstation.com/is/image/SIEPDC/loader-spinner-dark"
       ]
     },
-    "Forza Horizon 5 Deluxe Edition": {
-      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
-      "publisher": "Microsoft Corporation",
-      "genre": "Rennspiele",
-      "release": "28.4.2025",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/0c5df2b67b23263d055f3b78aeb77a6ce4668bb078fced77.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0547256477986893"
-    },
-    "Battlefield™ 6": {
-      "description": "Meistere den Kampf über den Wolken im TOP GUN-Event",
-      "publisher": "EA Swiss Sarl",
-      "genre": "Shooter",
-      "release": "10.10.2025",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202507/2514/7262f0bce0e977a4eda78df1a00af04578583c15d8fb1e10.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/1416/08346aa7e2f42634c23321ab7edd7c5e8c71c89028daeb0c.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/1416/60bd8d6c9ee1f212f12af46a01a632e939f8518e92ddd6e3.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/1416/ffac87d41558bd3d792f6285ebffd8ea6182a0c452afc56e.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/1416/a2b61638af1934029dda79b85ebe9fff9173fa3731f7b2f3.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/1416/f579a3e881be8291db41ea684b5455e73693226e472af8b4.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA19534_00-SANTIAGOSTANDARD"
-    },
-    "WWE 2K26 Attitude Era Edition": {
-      "description": "Die Show endet nie",
-      "publisher": "Take-Two",
-      "genre": "Sport",
-      "release": "5.3.2026",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/1ebb61ef681f96ee53d64dac0f0f4e503219d2c91077a21b.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/7c1c1c824ad4a78e6c563156bfd05573fffc0edc2e3b729c.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/599e0926688415049fb015792ab762f0a840621161cd3f2f.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/95670d4e001ff0093e64d07ed44f258ba5d88a66778f479d.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/57440b3be19235248f3fee53047b21c9cc67641954b99032.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/ab700572fee7600b8af42c89daf723690a61803dcaf9955e.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26TUDEEDITN"
-    },
     "Marvel’s Wolverine": {
       "description": "Storybasiertes Singleplayer-Action-Adventure mit Insomniac Games' eigener Interpretation von Logan und seinen Adamantium-Klauen.",
       "publisher": "Sony Interactive Entertainment",
@@ -427,7 +379,7 @@
       "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
       "publisher": "EA Swiss Sarl",
       "release": "17.9.2026",
-      "platform": "PS5",
+      "platform": "PS4 · PS5",
       "gallery": [
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
@@ -440,10 +392,10 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-09T12:22:15.242Z",
-    "titles": 16,
-    "fetched": 15,
-    "enriched": 16,
+    "checkedAt": "2026-09-10T06:01:14.866Z",
+    "titles": 13,
+    "fetched": 12,
+    "enriched": 13,
     "warnings": []
   },
   "resolvedSources": {
@@ -470,11 +422,7 @@
     "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
     "storeCampaign": "https://blog.de.playstation.com/2026/08/28/die-gamescom-rabatte-sind-im-playstation-store-gelandet/",
     "storeCollection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
-    "storeDeals": {
-      "Forza Horizon 5 Deluxe Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0547256477986893",
-      "Battlefield™ 6": "https://store.playstation.com/de-de/product/UP0006-PPSA19534_00-SANTIAGOSTANDARD",
-      "WWE 2K26 Attitude Era Edition": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26TUDEEDITN"
-    }
+    "storeDeals": {}
   },
   "eaPlay": {
     "title": "FC™ 27 · 10h Trial ab 18.09.",
@@ -501,30 +449,22 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-09T12:21:59.194Z",
+    "checkedAt": "2026-09-10T06:01:14.324Z",
     "month": "September",
     "year": 2026,
-    "notes": [],
-    "resolved": {
-      "storeDiscoveryMode": "dynamic-browser",
-      "storeDiscoveryStaticLinks": 1,
-      "storeDiscoveryBrowserLinks": 24,
-      "storeDiscoveryLinks": 25,
-      "storeDiscoveryVerified": 20,
-      "storeDiscoverySelected": 3
-    }
+    "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-09T12:21:59.301Z",
+    "checkedAt": "2026-09-10T06:01:14.432Z",
     "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
-    "activeCampaign": true,
-    "staticLinks": 1,
-    "browserLinks": 24,
-    "links": 25,
-    "fetched": 25,
-    "verified": 20,
-    "selected": 3,
-    "mode": "dynamic-browser",
+    "activeCampaign": false,
+    "staticLinks": 0,
+    "browserLinks": 0,
+    "links": 0,
+    "fetched": 0,
+    "verified": 0,
+    "selected": 0,
+    "mode": "no-active-campaign",
     "warnings": []
   }
 }
