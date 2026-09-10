@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-10T06:01:04.651Z",
+  "checkedAt": "2026-09-10T12:15:23.369Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,32 +54,7 @@
         "pubDate": "Thu, 03 Sep 2026 18:13:29 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Call of Duty: Black Ops 7 und Warzone Saison 6 starten am 17. September mit „Der Spuk“",
-        "link": "https://blog.de.playstation.com/2026/09/09/call-of-duty-black-ops-7-und-warzone-saison-6-starten-am-17-september-mit-der-spuk/",
-        "pubDate": "Wed, 09 Sep 2026 15:35:40 +0000",
-        "category": "news"
-      },
-      {
-        "title": "PlayStation Plus-Spielekatalog für September 2026",
-        "link": "https://blog.de.playstation.com/2026/09/09/playstation-plus-spielekatalog-fuer-september-2026/",
-        "pubDate": "Wed, 09 Sep 2026 15:30:00 +0000",
-        "category": "psplus"
-      },
-      {
-        "title": "No Man’s Sky: Das Cosmos-Update ist ab heute auf PS5 live",
-        "link": "https://blog.de.playstation.com/2026/09/09/no-mans-sky-cosmos-update-ps5/",
-        "pubDate": "Wed, 09 Sep 2026 13:00:00 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Minato feiert ihr Debüt in DEAD OR ALIVE 6 Last Round!",
-        "link": "https://blog.de.playstation.com/2026/09/09/minato-feiert-ihr-debuet-in-dead-or-alive-6-last-round/",
-        "pubDate": "Wed, 09 Sep 2026 12:00:00 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
@@ -174,7 +149,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242071,
+    "bytes": 241947,
     "updated": true,
     "parsed": {
       "trial": true,

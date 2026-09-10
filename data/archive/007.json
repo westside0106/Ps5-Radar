@@ -86,44 +86,19 @@
     "PS Plus Premium"
   ],
   "radarCheck": "Stand 10.09.2026 · 9/9 Quellen erfolgreich geprüft",
-  "sourceAlerts": [
-    {
-      "title": "Call of Duty: Black Ops 7 und Warzone Saison 6 starten am 17. September mit „Der Spuk“",
-      "url": "https://blog.de.playstation.com/2026/09/09/call-of-duty-black-ops-7-und-warzone-saison-6-starten-am-17-september-mit-der-spuk/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
-    {
-      "title": "PlayStation Plus-Spielekatalog für September 2026",
-      "url": "https://blog.de.playstation.com/2026/09/09/playstation-plus-spielekatalog-fuer-september-2026/",
-      "source": "PlayStation Blog DE",
-      "category": "psplus"
-    },
-    {
-      "title": "No Man’s Sky: Das Cosmos-Update ist ab heute auf PS5 live",
-      "url": "https://blog.de.playstation.com/2026/09/09/no-mans-sky-cosmos-update-ps5/",
-      "source": "PlayStation Blog DE",
-      "category": "release"
-    },
-    {
-      "title": "Minato feiert ihr Debüt in DEAD OR ALIVE 6 Last Round!",
-      "url": "https://blog.de.playstation.com/2026/09/09/minato-feiert-ihr-debuet-in-dead-or-alive-6-last-round/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    }
-  ],
+  "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-10T06:01:19.876Z",
+    "checkedAt": "2026-09-10T12:15:46.307Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-10T06:01:04.651Z"
+    "lastSuccessfulCheck": "2026-09-10T12:15:23.369Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-10T06:01:04.651Z",
+    "checkedAt": "2026-09-10T12:15:23.369Z",
     "errors": [],
     "sources": [
       {
@@ -386,7 +361,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-10T06:01:14.866Z",
+    "checkedAt": "2026-09-10T12:15:33.809Z",
     "titles": 13,
     "fetched": 12,
     "enriched": 13,
@@ -443,13 +418,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-10T06:01:14.324Z",
+    "checkedAt": "2026-09-10T12:15:33.272Z",
     "month": "September",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-10T06:01:14.432Z",
+    "checkedAt": "2026-09-10T12:15:33.379Z",
     "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
     "activeCampaign": false,
     "staticLinks": 0,
