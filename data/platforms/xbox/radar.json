@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-09-11T08:56:56.735Z",
+  "checkedAt": "2026-09-11T09:36:48.785Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1516,
+    "count": 1527,
     "views": {
       "deals": {
-        "expected": 829,
-        "observed": 829,
-        "count": 829,
+        "expected": 845,
+        "observed": 845,
+        "count": 845,
         "complete": true
       },
       "gamepass-console": {
@@ -51,7 +51,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-11T08:56:56.735Z",
+      "observedAt": "2026-09-11T09:36:48.785Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -62,7 +62,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-11T08:56:56.735Z",
+      "observedAt": "2026-09-11T09:36:48.785Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass für Konsole, Ziel xbox-series"
@@ -73,7 +73,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-11T08:56:56.735Z",
+      "observedAt": "2026-09-11T09:36:48.785Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -84,7 +84,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-11T08:56:56.735Z",
+      "observedAt": "2026-09-11T09:36:48.785Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = EA Play, Ziel xbox-series"
@@ -95,7 +95,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-11T08:56:56.735Z",
+      "observedAt": "2026-09-11T09:36:48.785Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -400,9 +400,12 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 2499,
-      "regularPriceMinor": null,
-      "genres": [],
+      "priceMinor": 1874,
+      "regularPriceMinor": 2499,
+      "genres": [
+        "Action & Abenteuer",
+        "Kampfspiele"
+      ],
       "services": [
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
@@ -417,9 +420,11 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 2499,
-      "regularPriceMinor": null,
-      "genres": [],
+      "priceMinor": 1499,
+      "regularPriceMinor": 2499,
+      "genres": [
+        "Shooter"
+      ],
       "services": [
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
@@ -2953,6 +2958,23 @@
       ]
     },
     {
+      "key": "xbox:product:9n5p2152rbpm",
+      "id": "9n5p2152rbpm",
+      "title": "Blazing Chrome",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/blazing-chrome/9n5p2152rbpm",
+      "cover": "https://store-images.s-microsoft.com/image/apps.18469.14029834522920542.d87b24a5-f848-4df0-85b8-f4f56bd5e712.51799296-f96a-47bb-88f7-dfca80ca5cb6?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 424,
+      "regularPriceMinor": 1699,
+      "genres": [
+        "Action & Abenteuer",
+        "Shooter"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9nx6xgvj0j3d",
       "id": "9nx6xgvj0j3d",
       "title": "Bleeding Edge",
@@ -4367,6 +4389,24 @@
       "regularPriceMinor": 599,
       "genres": [
         "Sport"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9ppmq5r4f6wb",
+      "id": "9ppmq5r4f6wb",
+      "title": "CATAN® - Konsolenedition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/catan-konsolenedition/9ppmq5r4f6wb",
+      "cover": "https://store-images.s-microsoft.com/image/apps.60225.14321522258952035.0bdbf2e3-3d9e-4997-92d8-7874c1432866.3e0fbdf5-0e61-422b-b254-7c0e06f79f17?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 319,
+      "regularPriceMinor": 1599,
+      "genres": [
+        "Familie & Kinder",
+        "Karte & Brett",
+        "Strategiespiele"
       ],
       "services": []
     },
@@ -6836,6 +6876,23 @@
       "services": []
     },
     {
+      "key": "xbox:product:c5828hs8k39d",
+      "id": "c5828hs8k39d",
+      "title": "Dovetail Games Euro Fishing",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/dovetail-games-euro-fishing/c5828hs8k39d",
+      "cover": "https://store-images.s-microsoft.com/image/apps.2878.67073149647456953.a76348fa-961c-45e7-b37b-19a0044d1494.92f272c1-961f-4dd3-8121-35c43ab684da?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 369,
+      "regularPriceMinor": 1849,
+      "genres": [
+        "Simulation",
+        "Strategiespiele"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:bs9sx4q6xjrf",
       "id": "bs9sx4q6xjrf",
       "title": "Dragon Age: Origins",
@@ -7175,9 +7232,14 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 2299,
-      "regularPriceMinor": null,
-      "genres": [],
+      "priceMinor": 1379,
+      "regularPriceMinor": 2299,
+      "genres": [
+        "Familie & Kinder",
+        "Karte & Brett",
+        "Rätsel & Wissen",
+        "Strategiespiele"
+      ],
       "services": [
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
@@ -11918,6 +11980,23 @@
       "services": []
     },
     {
+      "key": "xbox:product:9nk7hncg0r8d",
+      "id": "9nk7hncg0r8d",
+      "title": "Infernax",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/infernax/9nk7hncg0r8d",
+      "cover": "https://store-images.s-microsoft.com/image/apps.38667.13661753595194559.37056c31-572e-4912-b04b-79963d45181e.ca4bdcea-bda3-476a-bb67-811b8040e0de?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 999,
+      "regularPriceMinor": 1999,
+      "genres": [
+        "Action & Abenteuer",
+        "Platformer"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9nfp2nrqw050",
       "id": "9nfp2nrqw050",
       "title": "Infinity Strash: DRAGON QUEST The Adventure of Dai",
@@ -13733,7 +13812,10 @@
       ],
       "priceMinor": 2999,
       "regularPriceMinor": null,
-      "genres": [],
+      "genres": [
+        "Action & Abenteuer",
+        "Kampfspiele"
+      ],
       "services": [
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
@@ -14183,6 +14265,25 @@
       "genres": [
         "Action & Abenteuer",
         "Musik"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9ngnzp1j1jn7",
+      "id": "9ngnzp1j1jn7",
+      "title": "Metal Slug Tactics",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/metal-slug-tactics/9ngnzp1j1jn7",
+      "cover": "https://store-images.s-microsoft.com/image/apps.37681.13646304231559376.0397570c-fcf7-4ee9-a581-d728135dc834.ba817a82-49d5-4d55-9b5b-7d0915104b12?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 2499,
+      "regularPriceMinor": null,
+      "genres": [
+        "Action & Abenteuer",
+        "Andere",
+        "Rollenspiele",
+        "Strategiespiele"
       ],
       "services": []
     },
@@ -15802,7 +15903,11 @@
       ],
       "priceMinor": 2499,
       "regularPriceMinor": null,
-      "genres": [],
+      "genres": [
+        "Action & Abenteuer",
+        "Klassiker",
+        "Platformer"
+      ],
       "services": [
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
@@ -20868,6 +20973,24 @@
       "services": []
     },
     {
+      "key": "xbox:product:9n7h54kncb9n",
+      "id": "9n7h54kncb9n",
+      "title": "Streets of Rage 4",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/streets-of-rage-4/9n7h54kncb9n",
+      "cover": "https://store-images.s-microsoft.com/image/apps.5301.14069309968707701.a188f5d6-70d3-461d-9589-070aaa69ac0b.a976604e-a7b8-456f-9d84-f668384bde26?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 624,
+      "regularPriceMinor": 2499,
+      "genres": [
+        "Action & Abenteuer",
+        "Kampfspiele",
+        "Klassiker"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9p14h26bq9fh",
       "id": "9p14h26bq9fh",
       "title": "Stunt Paradise",
@@ -21743,6 +21866,23 @@
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9p7nh82hzcdf",
+      "id": "9p7nh82hzcdf",
+      "title": "The Catch: Carp & Coarse Fishing",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-catch-carp-coarse-fishing/9p7nh82hzcdf",
+      "cover": "https://store-images.s-microsoft.com/image/apps.11200.14108602395267726.673cd51e-e5a8-4010-ba42-fec7a1725f8b.9c440089-da3b-4894-a425-91b6e8cf8d97?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 499,
+      "regularPriceMinor": 2499,
+      "genres": [
+        "Simulation",
+        "Sport"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:btbwbgkpks97",
@@ -23010,6 +23150,40 @@
       "genres": [
         "Action & Abenteuer",
         "Andere"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9nzcw04mdfp0",
+      "id": "9nzcw04mdfp0",
+      "title": "Thomas & Friends™: Wonders of Sodor",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/thomas-friends-wonders-of-sodor/9nzcw04mdfp0",
+      "cover": "https://store-images.s-microsoft.com/image/apps.34490.14482579305718941.9f76f43c-92c3-4536-ab39-2818799077cc.b77123a9-a3da-455b-8549-ad60d5a87321?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 2449,
+      "regularPriceMinor": 3499,
+      "genres": [
+        "Andere",
+        "Simulation"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9p383j58qd7h",
+      "id": "9p383j58qd7h",
+      "title": "Thomas & Friends™: Wonders of Sodor - Deluxe Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/thomas-friends-wonders-of-sodor-deluxe-edition/9p383j58qd7h",
+      "cover": "https://store-images.s-microsoft.com/image/apps.36244.14547306943033510.94d5ffb8-2450-4610-a872-6c8ced3df8b8.14f3be6d-6390-4ba0-b519-28135997cca2?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 3374,
+      "regularPriceMinor": 4499,
+      "genres": [
+        "Andere",
+        "Simulation"
       ],
       "services": []
     },
@@ -25129,6 +25303,23 @@
       ]
     },
     {
+      "key": "xbox:product:9n232rbcfr2g",
+      "id": "9n232rbcfr2g",
+      "title": "Windjammers 2",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/windjammers-2/9n232rbcfr2g",
+      "cover": "https://store-images.s-microsoft.com/image/apps.23620.13960214545711625.430c5652-1978-4e19-92b1-8e901cdd420c.3dffa413-653f-4895-9baf-693821a21ac5?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 499,
+      "regularPriceMinor": 1999,
+      "genres": [
+        "Andere",
+        "Sport"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9p1zw5k4s44v",
       "id": "9p1zw5k4s44v",
       "title": "Winds of Arcana: Ruination",
@@ -25713,6 +25904,24 @@
         "Action & Abenteuer",
         "Musik",
         "Platformer"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9pmm5t8c0cn6",
+      "id": "9pmm5t8c0cn6",
+      "title": "Young Souls",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/young-souls/9pmm5t8c0cn6",
+      "cover": "https://store-images.s-microsoft.com/image/apps.56680.14291150913821725.3d8057b5-357a-4911-a453-96660fa5c913.b9598d6a-327c-4ea7-b1bc-e3886f94dfe8?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 2499,
+      "regularPriceMinor": null,
+      "genres": [
+        "Action & Abenteuer",
+        "Andere",
+        "Rollenspiele"
       ],
       "services": []
     },
