@@ -203,6 +203,10 @@ export default function DetailTile({ children, detail, className = '' }) {
   const isEaBenefit = detail.kicker === 'EA PLAY';
   const isUbiBenefit = detail.kicker === 'UBISOFT+';
   const isDealDetail = Boolean(rowValue(detail, 'Aktuell'));
+  // Die Watchlist beobachtet Preise. Eine Kurzmeldung oder Monatsuebersicht hat
+  // kein Store-Produkt und gehoert deshalb nicht auf die Merkliste.
+  const canWatch = ['game', 'catalog-game', 'price'].includes(detail.kind)
+    || (detail.links || []).some((item) => /store\.playstation\.com/.test(item.url || ''));
   const signal = isDealDetail ? dealSignal(detail.title) : null;
   const plusGenre = rowValue(detail, 'Genre');
   const plusPlatform = rowValue(detail, 'Plattform');
@@ -412,15 +416,17 @@ export default function DetailTile({ children, detail, className = '' }) {
               {detail.kicker ? <span className="radar-sheet-kicker">{detail.kicker}</span> : null}
               <div className="radar-sheet-title-row">
                 <h2>{detail.title}</h2>
-                <button
-                  type="button"
-                  className={`radar-watch-button ${isWatched ? 'is-active' : ''}`}
-                  onClick={toggleWatchlist}
-                  aria-pressed={isWatched}
-                >
-                  <span aria-hidden="true">{isWatched ? '★' : '☆'}</span>
-                  {isWatched ? 'Gemerkt' : 'Watchlist'}
-                </button>
+                {canWatch ? (
+                  <button
+                    type="button"
+                    className={`radar-watch-button ${isWatched ? 'is-active' : ''}`}
+                    onClick={toggleWatchlist}
+                    aria-pressed={isWatched}
+                  >
+                    <span aria-hidden="true">{isWatched ? '★' : '☆'}</span>
+                    {isWatched ? 'Gemerkt' : 'Watchlist'}
+                  </button>
+                ) : null}
               </div>
               {badges.length ? (
                 <div className="radar-sheet-badges" aria-label="Schnellinfos">

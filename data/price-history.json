@@ -50,7 +50,8 @@
           "discount": null,
           "confidence": "niedrig"
         }
-      ]
+      ],
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2716/ce2e7f5896365b4e35a192b1f7592b590fee98827644ddb4.png"
     },
     "Star Wars Outlaws": {
       "currency": "EUR",
@@ -101,7 +102,8 @@
           "discount": null,
           "confidence": "niedrig"
         }
-      ]
+      ],
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/3020/bca42b94af09b7a7ffd27fcb76a7bb1e46b60ed0c5f99322.png"
     },
     "Red Dead Redemption": {
       "currency": "EUR",
@@ -152,7 +154,8 @@
           "discount": null,
           "confidence": "niedrig"
         }
-      ]
+      ],
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202511/1414/84fc4c00ab4df9b0fa85c42f30e718bacd0273ca4bb9742f.png"
     },
     "Forza Horizon 5 Deluxe Edition": {
       "currency": "EUR",
@@ -235,7 +238,8 @@
           "discount": null,
           "confidence": "mittel"
         }
-      ]
+      ],
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0323/dd48c217bdc1f833c68a2b02a1df330372f664faa860d762.png"
     },
     "Battlefield™ 6": {
       "currency": "EUR",
@@ -318,7 +322,8 @@
           "discount": null,
           "confidence": "mittel"
         }
-      ]
+      ],
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202507/2514/606363ddf40fc2a7ec23f78f5310de1d41008d316dc2c98d.png"
     },
     "WWE 2K26 Attitude Era Edition": {
       "currency": "EUR",
@@ -391,7 +396,8 @@
           "discount": null,
           "confidence": "mittel"
         }
-      ]
+      ],
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/00c98668e573cb0c1109b91a7378779f2374d4924e71dd8b.png"
     }
   },
   "summary": {
