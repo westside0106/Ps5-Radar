@@ -56,6 +56,22 @@ test('source-side duplicates do not make a fully paginated section incomplete',(
  const partial=normalizeCatalog({results:{extra:{expected:3,observed:2,complete:true,entries:[a,b]}}});
  assert.equal(partial.sections.extra.complete,false);
 });
+test('catalog tiles bring their own copy and never get the magazine overlay',async()=>{
+ const detail=await fs.readFile(new URL('../app/radar/DetailTile.jsx',import.meta.url),'utf8');
+ const client=await fs.readFile(new URL('../app/ps-plus/CatalogClient.jsx',import.meta.url),'utf8');
+ // Das Overlay rendert einen zweiten Titel und ein fest verdrahtetes
+ // "PS PLUS ESSENTIAL"; auf einer Katalogkachel ueberlagert das die eigene Kopie.
+ // Geprueft wird die Bedingung selbst, nicht ihr Wortlaut.
+ const expression=detail.match(/const isPlusCard = ([^;]+);/)[1];
+ const isPlusCard=value=>new Function('detail',`return ${expression};`)(value);
+ assert.equal(isPlusCard({kind:'catalog-game',kicker:'EXTRA',image:'cover.png'}),false);
+ assert.equal(isPlusCard({kind:'catalog-game',kicker:'PLAYSTATION PLUS',image:'cover.png'}),false);
+ assert.equal(isPlusCard({kind:'game',kicker:'PLAYSTATION PLUS',image:'cover.png'}),true);
+ assert.match(client,/kind: 'catalog-game'/);
+ // Unbekannte Plattform darf nicht als Dauertext auf jeder Kachel stehen.
+ assert.ok(!/Plattform nicht angegeben/.test(client),'Platzhaltertext darf nicht mehr vorkommen');
+ assert.match(client,/\{platforms \? <p>\{platforms\}<\/p> : null\}/);
+});
 test('catalog membership is not confused with a monthly claim',()=>{
  const c=fixture();const radar={plusGames:[{title:'Testspiel',storeUrl:store}],psplusText:'01.09.–05.10.2026'};
  const view=prepareCatalog(c,radar,new Date('2026-09-07T12:00:00Z'));

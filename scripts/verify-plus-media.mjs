@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import { applyVerifiedPlusCovers, verifiedStoreCover } from './lib/media-identity.mjs';
 import { emptyCatalog, storeIdentity } from '../lib/ps-plus-catalog.mjs';
 const radarPath = new URL('../data/radar.json', import.meta.url);
+const historyPath = new URL('../data/price-history.json', import.meta.url);
 const catalogPath = new URL('../data/ps-plus-catalog.json', import.meta.url);
 const sourcesPath = new URL('../data/game-sources.json', import.meta.url);
 const radar = JSON.parse(await fs.readFile(radarPath, 'utf8'));
@@ -27,3 +28,25 @@ radar.mediaValidation = { checkedAt: new Date().toISOString(), verified: radar.p
 await fs.writeFile(radarPath, JSON.stringify(radar, null, 2) + '\n');
 for (const warning of warnings) console.log(`::warning::PS-Plus-Cover ${warning}`);
 console.log(`PS Plus covers: ${radar.mediaValidation.verified}/${radar.plusGames.length} verified`);
+
+// Die Preisradar-Titel stammen aus Store-Deals und stehen nicht in gameDetails;
+// ohne eigene Aufloesung bleiben ihre Kacheln bildlos. Dieselbe sku-gebundene
+// Pruefung, keine Uebernahme fremder Bilder.
+const history = await fs.readFile(historyPath, 'utf8').then(JSON.parse).catch(() => null);
+if (history?.games) {
+  let resolved = 0, total = 0;
+  for (const game of Object.values(history.games)) {
+    if (!storeIdentity(game.storeUrl)) continue;
+    total += 1;
+    if (game.image) { resolved += 1; continue; }
+    try {
+      const response = await fetch(game.storeUrl, { headers: { 'accept-language': 'de-DE,de;q=0.9' }, signal: AbortSignal.timeout(15000) });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const image = verifiedStoreCover({ title: game.title, storeUrl: game.storeUrl, html: await response.text() });
+      if (image) { game.image = image; resolved += 1; }
+      else console.log(`::warning::Preisradar-Cover ${game.title}: Produktidentitaet oder Cover nicht bestaetigt`);
+    } catch (error) { console.log(`::warning::Preisradar-Cover ${game.title}: ${error.message}`); }
+  }
+  await fs.writeFile(historyPath, JSON.stringify(history, null, 2) + '\n');
+  console.log(`Price radar covers: ${resolved}/${total} verified`);
+}

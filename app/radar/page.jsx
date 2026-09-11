@@ -273,12 +273,19 @@ function eaDetail() {
 
 function quickDetail(item) {
   if (item === radar.psplusTitle) {
+    const titles = (radar.plusGames || []).map((game) => game.title);
     return {
       kicker: 'PS PLUS',
       title: item,
-      summary: radar.psplusText,
-      rows: [{ label: 'Paket', value: radar.psplusLabel }],
-      links: [{ label: 'PS-Plus-Ankündigung', url: radar.resolvedSources?.psPlusMonthly || sources.psPlusMonthly }],
+      summary: `${radar.psplusText} Diese Monatsspiele müssen innerhalb des Zeitraums zur Bibliothek hinzugefügt werden; danach bleiben sie mit aktivem Abonnement spielbar.`,
+      rows: [
+        { label: 'Paket', value: radar.psplusLabel },
+        { label: 'Spiele', value: titles.length ? String(titles.length) : null },
+        ...titles.map((title, index) => ({ label: `Titel ${index + 1}`, value: title })),
+      ].filter((row) => row.value != null && row.value !== ''),
+      links: [
+        { label: 'PS-Plus-Ankündigung', url: radar.resolvedSources?.psPlusMonthly || sources.psPlusMonthly },
+      ],
     };
   }
   if (item === radar.eaTitle) return eaDetail();
@@ -491,7 +498,12 @@ export default async function RadarPage() {
           {remaining === null ? (
             <Panel tone="store" icon="✓" title="STORE-CHECK" className="compact-panel">
               <div className="deadline-row">
-                <div><h4>Keine aktive verifizierte Store-Aktion</h4><p>Der Radar veröffentlicht keine abgelaufenen Angebotsdaten.</p></div>
+                <div><h4>Keine aktive verifizierte Store-Aktion</h4><p>Der Radar veröffentlicht keine abgelaufenen Angebotsdaten.</p>
+                  <details className="radar-help">
+                    <summary>Was heißt das?</summary>
+                    <p>Gemeint ist eine <b>zeitlich begrenzte Aktion des PlayStation Store</b> – etwa ein Sale mit eigener Kategorieseite. Eine solche läuft gerade nicht, deshalb steht hier kein Countdown. Das heißt <b>nicht</b>, dass es keine reduzierten Spiele gibt: Einzelangebote und ihr Verlauf stehen im <a href="/preise">Preisradar</a>. Dort gezeigte Preise sind eigene Messwerte – ein Titel ohne aktuelles Angebot wird als „zuletzt gemessen“ ausgewiesen, nicht als laufender Deal.</p>
+                  </details>
+                </div>
                 <div className="mag-deadline">—</div>
               </div>
             </Panel>

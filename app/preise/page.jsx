@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import radar from '../../data/radar.json';
 import priceHistory from '../../data/price-history.json';
 import { COOKIE_NAME, safeEqual, sessionToken } from '../auth';
+import DetailTile from '../radar/DetailTile';
 
 export const dynamic = 'force-dynamic';
 
@@ -38,7 +39,7 @@ export default async function PriceRadarPage() {
       latest,
       activeDeal: Boolean(deal),
       currentPrice: signal?.activeDeal ? signal.currentPrice : null,
-      image: deal?.image || info.gallery?.[0] || null,
+      image: deal?.image || info.gallery?.[0] || game.image || null,
       platform: deal?.platform || info.platform || game.platform || null,
       genre: info.genre || null,
       discount: deal?.discount || (signal?.discount ? `-${signal.discount} %` : null),
@@ -58,17 +59,48 @@ export default async function PriceRadarPage() {
             <p>
               {items.length} beobachtete Titel · {priceHistory.summary?.points || 0} Messpunkte · {counts.buy || 0} Kaufen · {counts.watch || 0} Beobachten · {counts.wait || 0} Warten. Signale beziehen sich ausschließlich auf den eigenen Radar-Verlauf, nicht auf externe Allzeit-Tiefpreise.
             </p>
+            <details className="radar-help">
+              <summary aria-label="Erklärung der Begriffe">Was bedeuten diese Angaben?</summary>
+              <p>
+                <b>Messpunkt:</b> ein Preis, den der Radar in einer Tagesausgabe tatsächlich im Store verifiziert hat – eine Messung pro Ausgabe, nicht pro Tag.
+                Bisher {priceHistory.summary?.points || 0} Messpunkte aus {priceHistory.summary?.archiveIssuesScanned || 0} ausgewerteten Ausgaben.{' '}
+                <b>Radar-Tief:</b> der niedrigste dieser eigenen Messwerte – kein Allzeit-Tiefpreis und kein Vergleich mit anderen Anbietern.{' '}
+                <b>Zuletzt gemessen:</b> das Datum der jüngsten Messung, kein Ereignis am Spiel.{' '}
+                Hier stehen nur Titel, die mindestens einmal als verifiziertes Store-Angebot im Radar waren – deshalb sind es {items.length}, nicht der ganze Katalog.{' '}
+                <b>Neu messen:</b> Messpunkte entstehen beim Lauf des Radars, nicht beim Öffnen dieser Seite. Über „Messung anstoßen“ lässt sich der Lauf jederzeit von Hand starten – dort <i>Run workflow</i> wählen. Ein Lauf am selben Tag aktualisiert die bestehende Ausgabe und erzeugt keine neue.
+              </p>
+            </details>
           </div>
           <div style={{ display:'flex', gap:'8px', flexWrap:'wrap' }}>
             <a href="/watchlist">★ Watchlist</a>
             <a href="/radar">← Zur Ausgabe</a>
+            <a href="https://github.com/westside0106/Ps5-Radar/actions/workflows/daily-radar.yml" target="_blank" rel="noreferrer">↻ Messung anstoßen ↗</a>
           </div>
         </header>
 
         <div className="watchlist-grid">
           {items.map((item) => (
-            <article className="watchlist-card" key={item.title}>
-              <div className="watchlist-card-art" style={item.image ? { backgroundImage:`url("${item.image}")` } : undefined}>
+            <DetailTile key={item.title} className="watchlist-card-wrap" detail={{
+              kind: 'price',
+              kicker: 'PREISRADAR',
+              title: item.title,
+              image: item.image || null,
+              gallery: item.image ? [item.image] : [],
+              summary: item.signal?.reason || 'Preisverlauf aus den eigenen verifizierten Radar-Messpunkten.',
+              rows: [
+                { label: 'Signal', value: item.signal?.label },
+                { label: item.activeDeal ? 'Aktueller Preis' : 'Zuletzt gemessen', value: euro(item.activeDeal ? item.currentPrice : item.latest?.price) },
+                { label: 'Radar-Tief', value: euro(item.signal?.radarLow) },
+                { label: 'Messpunkte', value: String(item.points?.length || 0) },
+                { label: 'Letzte Messung', value: shortDate(item.latest?.date) },
+                { label: 'Plattform', value: item.platform },
+                { label: 'Sicherheit', value: item.signal?.confidence },
+              ].filter((row) => row.value != null && row.value !== '' && row.value !== '—'),
+              links: item.storeUrl ? [{ label: 'PlayStation Store', url: item.storeUrl }] : [],
+            }}>
+            <article className="watchlist-card">
+              <div className={`watchlist-card-art${item.image ? '' : ' is-missing'}`} style={item.image ? { backgroundImage:`url("${item.image}")` } : undefined}>
+                {item.image ? null : <span className="watchlist-card-noart">Cover nicht verifiziert</span>}
                 <div className="watchlist-card-top">
                   <span className={item.signal ? `signal-${item.signal.code}` : ''}>{item.signal?.label || 'RADAR'}</span>
                   {item.discount ? <b>{item.discount}</b> : null}
@@ -100,13 +132,14 @@ export default async function PriceRadarPage() {
                 <div className="watchlist-price">
                   <small>{item.activeDeal ? 'AKTUELL' : 'ZULETZT GEMESSEN'}</small>
                   <strong>{item.activeDeal ? euro(item.currentPrice) : euro(item.latest?.price)}</strong>
-                  <span>Radar-Tief {euro(item.signal?.radarLow)} · zuletzt {shortDate(item.latest?.date)}</span>
+                  <span>Radar-Tief {euro(item.signal?.radarLow)} · zuletzt gemessen am {shortDate(item.latest?.date)}</span>
                 </div>
                 <div className="watchlist-card-actions">
                   {item.storeUrl ? <a href={item.storeUrl} target="_blank" rel="noreferrer">Store ↗</a> : null}
                 </div>
               </div>
             </article>
+            </DetailTile>
           ))}
         </div>
       </section>
