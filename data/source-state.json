@@ -1,8 +1,28 @@
 {
-  "checkedAt": "2026-09-10T12:15:23.369Z",
+  "checkedAt": "2026-09-11T03:55:26.710Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Die Entstehung von Woodo: Eine emotionale, greifbare Geschichte über Kindheitserinnerungen und echte Freundschaft",
+        "link": "https://blog.de.playstation.com/2026/09/10/die-entstehung-von-woodo-eine-emotionale-greifbare-geschichte-ueber-kindheitserinnerungen-und-echte-freundschaft/",
+        "pubDate": "Thu, 10 Sep 2026 14:19:51 +0000"
+      },
+      {
+        "title": "Players&#8216; Choice: Star Wars Zero Company ist das beste neue Spiel im August 2026!",
+        "link": "https://blog.de.playstation.com/2026/09/10/players-choice-stimmt-fuer-das-beste-neue-spiel-im-august-2026-ab/",
+        "pubDate": "Thu, 10 Sep 2026 13:00:29 +0000"
+      },
+      {
+        "title": "Spielt auf eure Art mit dem erweiterten Assistenz-Modus von CONTROL Resonant",
+        "link": "https://blog.de.playstation.com/2026/09/10/spielt-auf-eure-art-mit-dem-erweiterten-assistenz-modus-von-control-resonant/",
+        "pubDate": "Thu, 10 Sep 2026 12:55:36 +0000"
+      },
+      {
+        "title": "Muramasa: Revenant Blades erscheint am 4. Februar 2027",
+        "link": "https://blog.de.playstation.com/2026/09/10/muramasa-revenant-blades-release-datum/",
+        "pubDate": "Thu, 10 Sep 2026 12:43:30 +0000"
+      },
       {
         "title": "Call of Duty: Black Ops 7 und Warzone Saison 6 starten am 17. September mit „Der Spuk“",
         "link": "https://blog.de.playstation.com/2026/09/09/call-of-duty-black-ops-7-und-warzone-saison-6-starten-am-17-september-mit-der-spuk/",
@@ -32,33 +52,38 @@
         "title": "NBA 2K27: The City wird Co-Ed und die Legenden rufen",
         "link": "https://blog.de.playstation.com/2026/09/08/nba-2k27-release-ps5/",
         "pubDate": "Tue, 08 Sep 2026 14:28:38 +0000"
-      },
-      {
-        "title": "Onimusha: Way of the Sword: Capcoms Samurai-Saga kehrt zurück",
-        "link": "https://blog.de.playstation.com/2026/09/08/onimusha-way-of-the-sword-release-ps5/",
-        "pubDate": "Tue, 08 Sep 2026 14:20:19 +0000"
-      },
-      {
-        "title": "The Blood of Dawnwalker: Neues PS5-RPG der Witcher-Macher",
-        "link": "https://blog.de.playstation.com/2026/09/08/the-blood-of-dawnwalker-release-ps5/",
-        "pubDate": "Tue, 08 Sep 2026 14:14:18 +0000"
-      },
-      {
-        "title": "PlayStation Store: Die beliebtesten Downloads im August 2026",
-        "link": "https://blog.de.playstation.com/2026/09/07/playstation-store-die-beliebtesten-downloads-im-august-2026/",
-        "pubDate": "Mon, 07 Sep 2026 12:53:50 +0000"
-      },
-      {
-        "title": "State of Play & State of Play Japan: alle Ankündigungen/Trailer",
-        "link": "https://blog.de.playstation.com/2026/09/03/state-of-play-state-of-play-japan-alle-ankuendigungen-trailer/",
-        "pubDate": "Thu, 03 Sep 2026 18:13:29 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Die Entstehung von Woodo: Eine emotionale, greifbare Geschichte über Kindheitserinnerungen und echte Freundschaft",
+        "link": "https://blog.de.playstation.com/2026/09/10/die-entstehung-von-woodo-eine-emotionale-greifbare-geschichte-ueber-kindheitserinnerungen-und-echte-freundschaft/",
+        "pubDate": "Thu, 10 Sep 2026 14:19:51 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Players&#8216; Choice: Star Wars Zero Company ist das beste neue Spiel im August 2026!",
+        "link": "https://blog.de.playstation.com/2026/09/10/players-choice-stimmt-fuer-das-beste-neue-spiel-im-august-2026-ab/",
+        "pubDate": "Thu, 10 Sep 2026 13:00:29 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Spielt auf eure Art mit dem erweiterten Assistenz-Modus von CONTROL Resonant",
+        "link": "https://blog.de.playstation.com/2026/09/10/spielt-auf-eure-art-mit-dem-erweiterten-assistenz-modus-von-control-resonant/",
+        "pubDate": "Thu, 10 Sep 2026 12:55:36 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Muramasa: Revenant Blades erscheint am 4. Februar 2027",
+        "link": "https://blog.de.playstation.com/2026/09/10/muramasa-revenant-blades-release-datum/",
+        "pubDate": "Thu, 10 Sep 2026 12:43:30 +0000",
+        "category": "release"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209464,
+    "bytes": 211707,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +134,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176055,
+    "bytes": 178298,
     "updated": true,
     "parsed": {
       "games": [
@@ -149,7 +174,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241947,
+    "bytes": 242071,
     "updated": true,
     "parsed": {
       "trial": true,
@@ -162,7 +187,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163219,
+    "bytes": 163205,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

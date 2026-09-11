@@ -1,8 +1,8 @@
 {
-  "date": "10.09.2026",
-  "edition": "AUSGABE #007",
+  "date": "11.09.2026",
+  "edition": "AUSGABE #008",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "10.09 · LIVE",
+  "newCount": "11.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -93,12 +93,37 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 10.09.2026 · 9/9 Quellen · 13/13 Details",
-  "sourceAlerts": [],
+  "radarCheck": "Stand 11.09.2026 · 9/9 Quellen · 13/13 Details",
+  "sourceAlerts": [
+    {
+      "title": "Die Entstehung von Woodo: Eine emotionale, greifbare Geschichte über Kindheitserinnerungen und echte Freundschaft",
+      "url": "https://blog.de.playstation.com/2026/09/10/die-entstehung-von-woodo-eine-emotionale-greifbare-geschichte-ueber-kindheitserinnerungen-und-echte-freundschaft/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Players&#8216; Choice: Star Wars Zero Company ist das beste neue Spiel im August 2026!",
+      "url": "https://blog.de.playstation.com/2026/09/10/players-choice-stimmt-fuer-das-beste-neue-spiel-im-august-2026-ab/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Spielt auf eure Art mit dem erweiterten Assistenz-Modus von CONTROL Resonant",
+      "url": "https://blog.de.playstation.com/2026/09/10/spielt-auf-eure-art-mit-dem-erweiterten-assistenz-modus-von-control-resonant/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Muramasa: Revenant Blades erscheint am 4. Februar 2027",
+      "url": "https://blog.de.playstation.com/2026/09/10/muramasa-revenant-blades-release-datum/",
+      "source": "PlayStation Blog DE",
+      "category": "release"
+    }
+  ],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-10T12:15:50.444Z",
+    "checkedAt": "2026-09-11T03:55:46.956Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -109,10 +134,10 @@
     "enrichedTitles": 13,
     "detailTitles": 13,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-10T12:15:50.444Z"
+    "lastSuccessfulCheck": "2026-09-11T03:55:46.956Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-10T12:15:50.444Z",
+    "checkedAt": "2026-09-11T03:55:46.956Z",
     "errors": [],
     "sources": [
       {
@@ -386,7 +411,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-10T12:15:33.809Z",
+    "checkedAt": "2026-09-11T03:55:35.116Z",
     "titles": 13,
     "fetched": 12,
     "enriched": 13,
@@ -443,13 +468,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-10T12:15:33.272Z",
+    "checkedAt": "2026-09-11T03:55:34.579Z",
     "month": "September",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-10T12:15:33.379Z",
+    "checkedAt": "2026-09-11T03:55:34.686Z",
     "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -462,9 +487,11 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-11T03:11:06.229Z",
+    "checkedAt": "2026-09-11T03:55:42.800Z",
     "verified": 4,
     "missing": [],
-    "warnings": []
+    "warnings": [
+      "Chained Echoes: Produktidentitaet oder Cover nicht bestaetigt"
+    ]
   }
 }

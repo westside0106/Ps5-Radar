@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T12:15:33.758Z",
+  "updatedAt": "2026-09-11T03:55:35.053Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -200,9 +200,9 @@
         "code": "wait",
         "label": "WARTEN",
         "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
-        "changedToday": true,
-        "previousCode": "buy",
-        "changedAt": "2026-09-10"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "signalHistory": [
         {
@@ -283,9 +283,9 @@
         "code": "wait",
         "label": "WARTEN",
         "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
-        "changedToday": true,
-        "previousCode": "buy",
-        "changedAt": "2026-09-10"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "signalHistory": [
         {
@@ -366,9 +366,9 @@
         "code": "wait",
         "label": "WARTEN",
         "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-09-10"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "signalHistory": [
         {
@@ -397,13 +397,13 @@
   "summary": {
     "titles": 6,
     "points": 18,
-    "archiveIssuesScanned": 7,
+    "archiveIssuesScanned": 8,
     "signals": {
       "buy": 0,
       "watch": 0,
       "wait": 6
     },
-    "changedSignals": 3,
+    "changedSignals": 0,
     "newBuySignals": 0
   },
   "method": {
