@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "radar:screenshot": "node scripts/finalize-health.mjs && node scripts/screenshot-radar.mjs"
+    "radar:screenshot": "node scripts/finalize-health.mjs && node scripts/screenshot-radar.mjs",
+    "test:goal": "node --test scripts/test-goal.mjs",
+    "catalog:refresh": "node scripts/update-plus-catalog.mjs",
+    "test:goal:browser": "node scripts/test-goal-browser.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",
