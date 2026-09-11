@@ -66,13 +66,15 @@ export default async function PriceRadarPage() {
                 Bisher {priceHistory.summary?.points || 0} Messpunkte aus {priceHistory.summary?.archiveIssuesScanned || 0} ausgewerteten Ausgaben.{' '}
                 <b>Radar-Tief:</b> der niedrigste dieser eigenen Messwerte – kein Allzeit-Tiefpreis und kein Vergleich mit anderen Anbietern.{' '}
                 <b>Zuletzt gemessen:</b> das Datum der jüngsten Messung, kein Ereignis am Spiel.{' '}
-                Hier stehen nur Titel, die mindestens einmal als verifiziertes Store-Angebot im Radar waren – deshalb sind es {items.length}, nicht der ganze Katalog.
+                Hier stehen nur Titel, die mindestens einmal als verifiziertes Store-Angebot im Radar waren – deshalb sind es {items.length}, nicht der ganze Katalog.{' '}
+                <b>Neu messen:</b> Messpunkte entstehen beim Lauf des Radars, nicht beim Öffnen dieser Seite. Über „Messung anstoßen“ lässt sich der Lauf jederzeit von Hand starten – dort <i>Run workflow</i> wählen. Ein Lauf am selben Tag aktualisiert die bestehende Ausgabe und erzeugt keine neue.
               </p>
             </details>
           </div>
           <div style={{ display:'flex', gap:'8px', flexWrap:'wrap' }}>
             <a href="/watchlist">★ Watchlist</a>
             <a href="/radar">← Zur Ausgabe</a>
+            <a href="https://github.com/westside0106/Ps5-Radar/actions/workflows/daily-radar.yml" target="_blank" rel="noreferrer">↻ Messung anstoßen ↗</a>
           </div>
         </header>
 
