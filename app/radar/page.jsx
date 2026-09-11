@@ -426,7 +426,9 @@ export default async function RadarPage() {
   return (
     <main className="mag-shell">
       <div className="mag-toolbar">
-<a className="logout" href="/ps-plus">PS+-Katalog</a>
+<a className="logout platform-switch is-active" href="/radar" aria-current="page">PlayStation</a>
+        <a className="logout platform-switch" href="/xbox">Xbox <b>BETA</b></a>
+        <a className="logout" href="/ps-plus">PS+-Katalog</a>
         <a className="logout" href="/preise">Preisradar</a>
         <a className="logout" href="/archive">Archiv</a>
         <a className="logout" href="/daily/latest.png">Bild</a>
