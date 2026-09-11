@@ -1,9 +1,10 @@
 import fs from 'node:fs/promises';
 import { chromium } from 'playwright';
-import { CATALOG_SOURCE, CATALOG_CATEGORIES, emptyCatalog, normalizeCatalog, mergeCatalogSnapshots, storeIdentity, verifiedImage } from '../lib/ps-plus-catalog.mjs';
+import { CATALOG_SOURCE, CATALOG_CATEGORIES, CATALOG_GENRES, CATALOG_PLATFORMS, emptyCatalog, normalizeCatalog, mergeCatalogSnapshots, storeIdentity, verifiedImage } from '../lib/ps-plus-catalog.mjs';
 const output = new URL('../data/ps-plus-catalog.json', import.meta.url);
 const previous = await fs.readFile(output,'utf8').then(JSON.parse).catch(() => emptyCatalog());
 const raw = { checkedAt:new Date().toISOString(), sourceUrl:CATALOG_SOURCE, results:{}, errors:[] };
+const tags = { genres:{}, platforms:{} };
 const browser = await chromium.launch({headless:true});
 const cardSelector = '.plus-results a[class*="card_link"]';
 const countSelector = '.plus-results [class*="pagination_count"]';
@@ -17,8 +18,8 @@ async function dismissConsent(page) {
   await page.locator('.onetrust-pc-dark-filter').waitFor({state:'hidden',timeout:20000}).catch(()=>{});
 }
 function countFromText(value) { const match=String(value).match(/(\d[\d.,]*)\s+Spiele/i); return match ? Number(match[1].replace(/\D/g,'')) : null; }
-async function selectCategory(page, label) {
-  const buttons = page.locator('#select-button-category');
+async function selectOption(page, field, label) {
+  const buttons = page.locator(`#select-button-${field}`);
   for (let index = 0; index < await buttons.count(); index++) {
     const button = buttons.nth(index);
     if (!await button.isVisible().catch(() => false)) continue;
@@ -31,7 +32,7 @@ async function selectCategory(page, label) {
       return;
     } catch { await page.keyboard.press('Escape').catch(() => {}); }
   }
-  throw new Error(`Kategorie "${label}" nicht waehlbar`);
+  throw new Error(`Option "${label}" in ${field} nicht waehlbar`);
 }
 async function readCount(page) {
   const counter = page.locator(countSelector).first();
@@ -59,9 +60,9 @@ async function filteredCount(page, total) {
   }
   return null;
 }
-async function currentCategory(page) {
-  const text = (await page.locator('#select-button-category').first().innerText()).replace(/\s+/g,' ').trim();
-  return text.replace(/^Spieltyp\s*/i,'').trim();
+async function currentSelection(page, field, prefix) {
+  const text = (await page.locator(`#select-button-${field}`).first().innerText()).replace(/\s+/g,' ').trim();
+  return text.replace(new RegExp(`^${prefix}\\s*`,'i'),'').trim();
 }
 async function ensureFirstPage(page) {
   // Nach der Paginierung einer grossen Kategorie bleibt die Seitenposition
@@ -79,11 +80,19 @@ async function ensureFirstPage(page) {
     return Boolean(card) && card.getAttribute('href') !== previous;
   },[cardSelector,before],{timeout:20000}).catch(() => {});
 }
-async function capture(page, service, label, total) {
-  // Der Spieltyp-Filter ist ein Mehrfachfilter: ohne sauberen Ausgangszustand
-  // summieren sich die Kategorien und der Zaehler gilt fuer die Vereinigung.
-  await selectCategory(page, label);
-  const selected = await currentCategory(page);
+async function resetField(page, field, prefix) {
+  // Anders als der Spieltyp-Filter schalten Genre und Plattform bei erneutem
+  // Klick nicht ab; sie brauchen die neutrale Option.
+  if (await currentSelection(page, field, prefix) === 'Beliebig') return;
+  await selectOption(page, field, 'Beliebig');
+  const rest = await currentSelection(page, field, prefix);
+  if (rest !== 'Beliebig') throw new Error(`bleibt auf "${rest}"`);
+}
+async function capture(page, service, label, total, field = 'category', prefix = 'Spieltyp') {
+  // Der Filter ist ein Mehrfachfilter: ohne sauberen Ausgangszustand summieren
+  // sich die Auswahlen und der Zaehler gilt fuer die Vereinigung.
+  await selectOption(page, field, label);
+  const selected = await currentSelection(page, field, prefix);
   if (selected !== label) throw new Error(`Filter steht auf "${selected}" statt exakt auf "${label}"`);
   await page.locator(cardSelector).first().waitFor({timeout:20000});
   await ensureFirstPage(page);
@@ -143,10 +152,45 @@ try {
     catch(error) {raw.errors.push(`${service}: ${error.message}`);raw.results[service]={expected:null,complete:false,entries:[]};}
     // Auswahl wieder loesen, sonst addiert der naechste Klick eine Kategorie dazu.
     try {
-      if (await currentCategory(page) !== 'Beliebig') await selectCategory(page, label);
-      const rest = await currentCategory(page);
+      if (await currentSelection(page, 'category', 'Spieltyp') !== 'Beliebig') await selectOption(page, 'category', label);
+      const rest = await currentSelection(page, 'category', 'Spieltyp');
       if (rest !== 'Beliebig') throw new Error(`Filter bleibt auf "${rest}" haengen`);
     } catch(error) { raw.errors.push(`${service}: Zuruecksetzen fehlgeschlagen - ${error.message}`); break; }
+  }
+
+  // Genre und Plattform als eigene Durchlaeufe. Uebernommen wird nur, was der
+  // Zaehler der Quelle bestaetigt; eine unvollstaendige Runde taggt nichts.
+  for (const [field, prefix, options, key] of [
+    ['genre', 'Genre', CATALOG_GENRES, 'genres'],
+    ['device', 'Spielbar auf', CATALOG_PLATFORMS, 'platforms'],
+  ]) {
+    for (const label of options) {
+      // Ein Zaehlerwechsel waehrend der Erfassung ist meist Nachladen der
+      // Quelle, kein Datenfehler - ein zweiter Anlauf genuegt.
+      let round = null, last = null;
+      for (let attempt = 0; attempt < 2 && !round; attempt++) {
+        try { round = await capture(page, `${key}:${label}`, label, total, field, prefix); }
+        catch(error) { last = error; await resetField(page, field, prefix).catch(() => {}); }
+      }
+      if (!round) raw.errors.push(`${key} ${label}: ${last?.message}`);
+      else if (!round.complete) raw.errors.push(`${key} ${label}: ${round.observed}/${round.expected} Karten, nicht uebernommen`);
+      else for (const item of round.entries) {
+        const id = storeIdentity(item.storeUrl);
+        if (id) (tags[key][id] ||= new Set()).add(label);
+      }
+      try { await resetField(page, field, prefix); }
+      catch(error) { raw.errors.push(`${key} ${label}: Zuruecksetzen fehlgeschlagen - ${error.message}`); break; }
+    }
+  }
+
+  // Tags auf die erfassten Eintraege legen.
+  for (const section of Object.values(raw.results)) {
+    for (const item of section.entries || []) {
+      const id = storeIdentity(item.storeUrl);
+      if (!id) continue;
+      if (tags.genres[id]) item.genres = [...tags.genres[id]].sort((a,b)=>a.localeCompare(b,'de'));
+      if (tags.platforms[id]) item.platforms = [...tags.platforms[id]].sort();
+    }
   }
 } catch(error) {raw.errors.push(`Quelle: ${error.message}`);}
 finally {await browser.close();}
