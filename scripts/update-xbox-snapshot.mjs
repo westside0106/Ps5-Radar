@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { collectXboxSnapshot } from '../lib/providers/xbox/adapter.mjs';
+import { collectDealGenres } from '../lib/providers/xbox/collector.mjs';
 
 const directory = new URL('../data/platforms/xbox/', import.meta.url);
 const output = new URL('snapshot.json', directory);
@@ -24,6 +25,12 @@ const views = Object.entries(snapshot.coverage.views || {})
 console.log(`Xbox snapshot: ${snapshot.products.length} Produkte, ${snapshot.offers.length} Angebote, ${snapshot.entitlements.length} Berechtigungen`);
 console.log(`Sichten: ${views}`);
 for (const message of snapshot.coverage.errors) console.log(`::warning::Xbox ${message}`);
+
+// Genres fuer die Angebotsansicht. Ein Fehlschlag hier kostet nur den Filter,
+// nicht die Erfassung - die Spiele bleiben vollstaendig.
+const { genres, errors: genreErrors } = await collectDealGenres();
+for (const message of genreErrors) console.log(`::warning::Xbox ${message}`);
+console.log(`Genres: ${Object.keys(genres).length} Angebote zugeordnet, ${genreErrors.length} Durchlaeufe fehlgeschlagen`);
 
 // Abgeleitete Ansicht: der vollstaendige Snapshot mit Belegen je Angebot und
 // Berechtigung ist fuer die Seite zu gross. Hier bleibt pro Produkt genau das,
@@ -56,6 +63,7 @@ const view = {
       cover: product.cover, targets: product.targets,
       priceMinor: offer ? offer.priceMinor : null,
       regularPriceMinor: offer ? offer.regularPriceMinor : null,
+      genres: genres[product.id] || [],
       services: (servicesByProduct.get(product.key) || []).sort(),
     };
   }).sort((a, b) => a.title.localeCompare(b.title, 'de')),

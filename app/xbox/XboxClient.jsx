@@ -43,6 +43,7 @@ function GameTile({ game }) {
       { label: 'Preis', value: price },
       { label: 'Regulär', value: cut ? regular : null },
       { label: 'Rabatt', value: cut ? `−${cut} %` : null },
+      { label: 'Genre', value: (game.genres || []).join(' · ') || null },
       { label: 'Abo', value: game.services.map((id) => SERVICES[id] || id).join(' · ') || null },
       { label: 'Plattform', value: game.targets.includes('xbox-series') ? 'Xbox Series X|S' : game.targets.join(' · ') },
       { label: 'Store-ID', value: game.id },
@@ -69,11 +70,22 @@ export default function XboxClient({ snapshot }) {
   const [tab, setTab] = useState('deals');
   const [query, setQuery] = useState('');
   const [sort, setSort] = useState('relevanz');
+  const [genre, setGenre] = useState('all');
   const [onlyWithArt, setOnlyWithArt] = useState(false);
   const [hideFilters, setHideFilters] = useState(false);
   const [page, setPage] = useState(1);
   const active = TABS.find((item) => item.id === tab) || TABS[0];
   const coverage = snapshot.coverage.views?.[active.view] || null;
+
+  // Genres sind nur fuer die Angebotsansicht erfasst. Der Filter erscheint nur,
+  // wenn JEDER Eintrag des Bereichs eines hat - sonst wuerde er stillschweigend
+  // alles ohne Genre ausblenden. In den Abo-Bereichen tragen nur jene Titel ein
+  // Genre, die zugleich im Angebot sind.
+  const genres = useMemo(() => {
+    const inTab = snapshot.games.filter((game) => (tab === 'deals' ? discount(game) !== null : game.services.includes(tab)));
+    if (!inTab.length || inTab.some((game) => !(game.genres || []).length)) return [];
+    return [...new Set(inTab.flatMap((game) => game.genres))].sort((a, b) => a.localeCompare(b, 'de'));
+  }, [snapshot.games, tab]);
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('de');
@@ -87,13 +99,14 @@ export default function XboxClient({ snapshot }) {
       .filter((game) => (tab === 'deals' ? discount(game) !== null : game.services.includes(tab)))
       .filter((game) => !needle || game.title.toLocaleLowerCase('de').includes(needle))
       .filter((game) => !onlyWithArt || Boolean(game.cover))
+      .filter((game) => genre === 'all' || (game.genres || []).includes(genre))
       .sort((a, b) => order(a, b) || a.title.localeCompare(b.title, 'de'));
-  }, [snapshot.games, tab, query, sort, onlyWithArt]);
+  }, [snapshot.games, tab, query, sort, onlyWithArt, genre]);
 
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const current = Math.min(page, pages);
   const visible = filtered.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
-  const select = (value) => { setTab(value); setPage(1); };
+  const select = (value) => { setTab(value); setGenre('all'); setPage(1); };
   const update = (setter) => (value) => { setter(value); setPage(1); };
 
   return <div className="catalog-app is-xbox">
@@ -141,6 +154,10 @@ export default function XboxClient({ snapshot }) {
     </div>
     {!hideFilters ? <div className="catalog-filters">
       <label>Plattform<select value="xbox-series" disabled><option value="xbox-series">Xbox Series X|S</option></select></label>
+      {genres.length ? <label>Genre<select value={genre} onChange={(event) => update(setGenre)(event.target.value)}>
+        <option value="all">Alle Genres</option>
+        {genres.map((value) => <option key={value} value={value}>{value}</option>)}
+      </select></label> : null}
       <label>Sortieren<select value={sort} onChange={(event) => update(setSort)(event.target.value)}>
         <option value="relevanz">{tab === 'deals' ? 'Höchster Rabatt' : 'Titel A–Z'}</option>
         <option value="titel">Titel A–Z</option>
@@ -168,6 +185,7 @@ export default function XboxClient({ snapshot }) {
 
     <footer className="catalog-footer">
       Private Übersicht · Beta · Keine Kauf- oder Abo-Funktion · Verfügbarkeit, Preis und Berechtigung im Microsoft Store prüfen.
+      {!genres.length ? <><br />Der Genrefilter ist nur für Angebote erfasst. Über alle Abo-Bereiche hinweg wären es 105 Abrufe der Quelle – das steht in keinem Verhältnis.</> : null}
       <br />Quelle: <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">{snapshot.sourceUrl}</a>, Ziel Xbox Series X|S.
     </footer>
   </div>;
