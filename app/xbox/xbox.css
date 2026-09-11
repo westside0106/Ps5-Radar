@@ -1,0 +1,48 @@
+/* Xbox-Optik. Setzt nur die Farben des gemeinsamen Katalog-Layouts neu, damit
+   Struktur und Verhalten identisch zur PlayStation-Ansicht bleiben. */
+.catalog-app.is-xbox{
+  --cat-bg:#050c06;
+  --cat-line:rgba(94,200,94,.24);
+  --cat-ink:#e9fbe9;
+  --xb-green:#107c10;
+  --xb-bright:#5ddc5d;
+  --xb-panel:#0a1b0d;
+  --xb-panel-2:#0d2413;
+  --xb-muted:#a9c9ae;
+  background:radial-gradient(ellipse at 50% -10%,#10401a,#050c06 48%);
+}
+.is-xbox .catalog-eyebrow{color:#7ae07a}
+.is-xbox .catalog-heading p{color:var(--xb-muted)}
+.is-xbox .catalog-back a,.is-xbox .catalog-filter-toggle{background:var(--xb-panel-2);border-color:var(--cat-line)}
+.is-xbox .catalog-back a.is-active{background:#14532a;border-color:var(--xb-bright);color:#eaffea}
+.is-xbox .catalog-count{background:var(--xb-panel);border-color:var(--cat-line)}
+.is-xbox .catalog-count span{color:var(--xb-muted)}
+.is-xbox .catalog-tabs button{background:var(--xb-panel);border-color:var(--cat-line);color:#bcdcc0}
+.is-xbox .catalog-tabs button.active{background:var(--xb-green);border-color:var(--xb-bright);color:#fff}
+.is-xbox .catalog-status{background:var(--xb-panel);border-color:var(--cat-line)}
+.is-xbox .catalog-status span{color:var(--xb-muted)}
+.is-xbox .catalog-note{background:rgba(40,150,60,.12);border-color:rgba(94,200,94,.26);color:#cfe9d2}
+.is-xbox .catalog-warning{background:rgba(235,157,34,.09);border-color:rgba(239,178,65,.32);color:#f2d7a7}
+.is-xbox .catalog-warning a,.is-xbox .catalog-empty a{color:#8ce88c}
+.is-xbox .catalog-search input,.is-xbox .catalog-filters select{background:#071409;border-color:#2e5c36;color:#f0fff0}
+.is-xbox .catalog-search input::placeholder{color:#87ad8d}
+.is-xbox .catalog-filters label{color:var(--xb-muted)}
+.is-xbox .catalog-check input{accent-color:var(--xb-bright)}
+.is-xbox .catalog-results-head span{color:#9dc2a3}
+.is-xbox .catalog-tile{background:var(--xb-panel);border-color:var(--cat-line)}
+.is-xbox .catalog-tile:hover{border-color:var(--xb-bright)}
+.is-xbox .catalog-art{background:#0c2011}
+.is-xbox .catalog-no-art{color:#8fbe96}
+.is-xbox .catalog-card p{color:#b3d1b8}
+.is-xbox .catalog-card-more{color:#7ae07a}
+.is-xbox .catalog-trial{color:#8ce88c}
+.is-xbox .catalog-price-cut{color:#eafce9;font-weight:900}
+.is-xbox .catalog-price-cut s{color:#8fae95;font-weight:600;margin-right:6px}
+.is-xbox .catalog-price-badge{display:inline-block;margin-left:7px;padding:1px 6px;border-radius:5px;background:var(--xb-green);color:#fff;font-size:11px;font-weight:900}
+.is-xbox .catalog-empty{background:#08160a;border-color:#2c5533}
+.is-xbox .catalog-pagination button{background:#10331a;border-color:#2f6b3a}
+.is-xbox .catalog-pagination span{color:#b2cfb7}
+.is-xbox .catalog-footer{color:#8fae95;border-color:var(--cat-line)}
+.is-xbox .catalog-footer a{color:#8ce88c;text-decoration:underline;text-underline-offset:3px}
+.is-xbox :focus-visible{outline-color:var(--xb-bright)}
+.is-xbox .radar-sheet-kicker{color:#7ae07a}

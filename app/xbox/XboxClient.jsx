@@ -57,7 +57,7 @@ function GameTile({ game }) {
       </div>
       <div className="catalog-card-copy">
         <h3>{game.title}</h3>
-        {price ? <p>{cut ? <><s>{regular}</s> {price} · −{cut} %</> : price}</p> : null}
+        {price ? <p className={cut ? 'catalog-price-cut' : ''}>{cut ? <><s>{regular}</s>{price}<span className="catalog-price-badge">−{cut} %</span></> : price}</p> : null}
         {game.services.length ? <span className="catalog-trial">{game.services.map((id) => SERVICES[id] || id).join(' · ')}</span> : null}
         <span className="catalog-card-more">Details ansehen ↗</span>
       </div>
@@ -68,24 +68,35 @@ function GameTile({ game }) {
 export default function XboxClient({ snapshot }) {
   const [tab, setTab] = useState('deals');
   const [query, setQuery] = useState('');
+  const [sort, setSort] = useState('relevanz');
+  const [onlyWithArt, setOnlyWithArt] = useState(false);
+  const [hideFilters, setHideFilters] = useState(false);
   const [page, setPage] = useState(1);
   const active = TABS.find((item) => item.id === tab) || TABS[0];
   const coverage = snapshot.coverage.views?.[active.view] || null;
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('de');
+    const order = {
+      titel: (a, b) => a.title.localeCompare(b.title, 'de'),
+      rabatt: (a, b) => (discount(b) || 0) - (discount(a) || 0),
+      preis: (a, b) => (a.priceMinor ?? Infinity) - (b.priceMinor ?? Infinity),
+      relevanz: (a, b) => (tab === 'deals' ? (discount(b) || 0) - (discount(a) || 0) : 0),
+    }[sort] || (() => 0);
     return snapshot.games
       .filter((game) => (tab === 'deals' ? discount(game) !== null : game.services.includes(tab)))
       .filter((game) => !needle || game.title.toLocaleLowerCase('de').includes(needle))
-      .sort((a, b) => (tab === 'deals' ? (discount(b) || 0) - (discount(a) || 0) : 0) || a.title.localeCompare(b.title, 'de'));
-  }, [snapshot.games, tab, query]);
+      .filter((game) => !onlyWithArt || Boolean(game.cover))
+      .sort((a, b) => order(a, b) || a.title.localeCompare(b.title, 'de'));
+  }, [snapshot.games, tab, query, sort, onlyWithArt]);
 
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const current = Math.min(page, pages);
   const visible = filtered.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
   const select = (value) => { setTab(value); setPage(1); };
+  const update = (setter) => (value) => { setter(value); setPage(1); };
 
-  return <div className="catalog-app">
+  return <div className="catalog-app is-xbox">
     <header className="catalog-header">
       <nav className="catalog-back">
         <a href="/radar">PlayStation</a>
@@ -125,8 +136,19 @@ export default function XboxClient({ snapshot }) {
 
     <div className="catalog-filter-head">
       <label className="catalog-search"><span className="sr-only">Spiele suchen</span>
-        <input type="search" placeholder="Spiel suchen …" value={query} onChange={(event) => { setQuery(event.target.value); setPage(1); }} /></label>
+        <input type="search" placeholder="Spiel suchen …" value={query} onChange={(event) => update(setQuery)(event.target.value)} /></label>
+      <button className="catalog-filter-toggle" onClick={() => setHideFilters(!hideFilters)} aria-expanded={!hideFilters}>{hideFilters ? 'Filter anzeigen' : 'Filter'}</button>
     </div>
+    {!hideFilters ? <div className="catalog-filters">
+      <label>Plattform<select value="xbox-series" disabled><option value="xbox-series">Xbox Series X|S</option></select></label>
+      <label>Sortieren<select value={sort} onChange={(event) => update(setSort)(event.target.value)}>
+        <option value="relevanz">{tab === 'deals' ? 'Höchster Rabatt' : 'Titel A–Z'}</option>
+        <option value="titel">Titel A–Z</option>
+        <option value="rabatt">Höchster Rabatt</option>
+        <option value="preis">Günstigster Preis</option>
+      </select></label>
+      <label className="catalog-check"><input type="checkbox" checked={onlyWithArt} onChange={(event) => update(setOnlyWithArt)(event.target.checked)} /> Nur mit Bild</label>
+    </div> : null}
 
     <div className="catalog-results-head">
       <strong>{filtered.length.toLocaleString('de-DE')} {filtered.length === 1 ? 'Eintrag' : 'Einträge'}</strong>

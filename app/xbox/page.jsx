@@ -4,6 +4,7 @@ import { COOKIE_NAME, safeEqual, sessionToken } from '../auth';
 import snapshot from '../../data/platforms/xbox/radar.json';
 import XboxClient from './XboxClient';
 import '../ps-plus/catalog.css';
+import './xbox.css';
 
 // Eigene Route neben /radar. Die PlayStation-Adresse bleibt unveraendert und
 // wird nicht umgeleitet; bestehende Links und die Daily-Automation haengen daran.
