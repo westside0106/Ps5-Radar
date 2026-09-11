@@ -82,7 +82,7 @@ export default function CatalogClient({ snapshot }) {
   const total = games.length;
   return <div className="catalog-app">
     <header className="catalog-header">
-      <nav className="catalog-back"><a href="/radar">← Magazin</a><a href="/preise">Preisradar</a></nav>
+      <nav className="catalog-back"><a href="/radar">← Magazin</a><a href="/radar" className="is-active" aria-current="page">PlayStation</a><a href="/xbox">Xbox <b>BETA</b></a><a href="/preise">Preisradar</a></nav>
       <div className="catalog-heading"><div><span className="catalog-eyebrow">PLAYSTATION-RADAR · DEUTSCHLAND</span><h1>Dein PS+ Spielekatalog</h1><p>Alle erfassten Spiele durchsuchen, filtern und direkt im PlayStation Store öffnen.</p></div><div className="catalog-count"><strong>{total.toLocaleString('de-DE')}</strong><span>erfasste Spiele</span></div></div>
     </header>
     <nav className="catalog-tabs" aria-label="PS-Plus-Bereiche">{CATALOG_TABS.map(tab => <button key={tab.id} type="button" className={service===tab.id?'active':''} aria-current={service===tab.id?'page':undefined} onClick={()=>selectService(tab.id)}>{tab.label}</button>)}</nav>

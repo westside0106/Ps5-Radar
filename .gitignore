@@ -7,3 +7,6 @@ node_modules
 # Von "next dev" bei jedem Start neu erzeugt, nicht Teil des Projekts
 AGENTS.md
 CLAUDE.md
+
+# Roher Xbox-Snapshot (2,4 MB) - die abgeleitete Ansicht radar.json ist im Repo
+data/platforms/xbox/snapshot.json

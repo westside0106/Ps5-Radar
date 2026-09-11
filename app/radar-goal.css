@@ -39,3 +39,8 @@
 .radar-help>summary:focus-visible{outline:2px solid #80c4ff;outline-offset:2px}
 .radar-help p{margin:0;padding:0 12px 12px;font-size:12px;line-height:1.6;color:#bfd3e8}
 .radar-help b{color:#e3eeff}
+
+/* Plattform-Switcher. Xbox ist ausdruecklich als Beta gekennzeichnet. */
+.platform-switch b,.catalog-back b{margin-left:6px;padding:2px 6px;border-radius:5px;background:#1f7a3d;color:#eaffef;font-size:9px;letter-spacing:.08em;font-weight:950;vertical-align:middle}
+.platform-switch.is-active,.catalog-back a.is-active{border-color:#5cabff;background:#12335c;color:#eaf4ff}
+.catalog-back a.is-active{font-weight:900}
