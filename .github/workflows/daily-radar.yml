@@ -13,6 +13,9 @@ on:
       - 'scripts/record-price-history.mjs'
       - 'scripts/enrich-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
+      - 'scripts/verify-plus-media.mjs'
+      - 'scripts/lib/media-identity.mjs'
+      - 'lib/ps-plus-catalog.mjs'
       - 'scripts/finalize-health.mjs'
       - 'scripts/screenshot-radar.mjs'
       - 'app/radar/DetailTile.jsx'
@@ -73,6 +76,8 @@ jobs:
         run: node scripts/record-price-history.mjs
       - name: Enrich game detail sheets
         run: node scripts/enrich-radar.mjs
+      - name: Verify title-bound PS Plus covers
+        run: node scripts/verify-plus-media.mjs
       - name: Finalize validated issue and archive
         run: node scripts/sanitize-radar.mjs
       - name: Render private magazine PNG
@@ -109,4 +114,5 @@ jobs:
             exit 0
           fi
           git rebase --abort 2>/dev/null || true
-          exit 0
+          echo "::error::Radar-Commit konnte nicht gepusht werden. Ausgabe wurde nicht ausgeliefert."
+          exit 1

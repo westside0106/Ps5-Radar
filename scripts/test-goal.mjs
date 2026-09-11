@@ -1,9 +1,10 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import fs from 'node:fs/promises';
-import { emptyCatalog, normalizeCatalog, catalogCover, catalogFilter, mergeCatalogSnapshots, berlinDate } from '../lib/ps-plus-catalog.mjs';
+import { emptyCatalog, normalizeCatalog, catalogCover, catalogFilter, mergeCatalogSnapshots, berlinDate, titleKey } from '../lib/ps-plus-catalog.mjs';
 import { safePlusCover, dailyLabel } from '../lib/radar-media.mjs';
 import { prepareCatalog } from '../lib/radar-catalog-view.mjs';
+import { storeProduct, verifiedStoreCover } from './lib/media-identity.mjs';
 const source='https://www.playstation.com/de-de/ps-plus/games/';
 const store='https://store.playstation.com/de-de/product/EP0000-PPSA00000_00-GAME000000000000';
 const cover='https://image.api.playstation.com/vulcan/ap/rnd/202609/0101/cover.png';
@@ -21,6 +22,27 @@ test('media identity never accepts a generic announcement or unrelated edition',
  assert.equal(catalogCover(c,'Testspiel','https://store.playstation.com/de-de/product/OTHER'),null);
  assert.equal(safePlusCover({title:'Testspiel',image:'https://blog.de.playstation.com/announcement.jpg'}, {}, emptyCatalog()),null);
  assert.equal(safePlusCover({title:'Testspiel',storeUrl:store},{gameDetails:{Testspiel:{storeUrl:store,coverImage:cover}}},emptyCatalog()),cover);
+});
+test('store product identity is proven by sku, not by a matching image domain',()=>{
+ const sku='UP4363-PPSA17232_00-SNIPERELITERES00';
+ const art='https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/cover.png';
+ const page=extra=>`<html><head><script type="application/ld+json">${JSON.stringify({'@context':'http://schema.org','@type':'Product',name:'Sniper Elite: Resistance PS4™ & PS5™',sku,image:art,...extra})}</script></head></html>`;
+ const url=`https://store.playstation.com/de-de/product/${sku}`;
+ assert.deepEqual(storeProduct(page({})),{sku,name:'Sniper Elite: Resistance PS4™ & PS5™',image:art});
+ assert.equal(verifiedStoreCover({title:'Sniper Elite: Resistance',storeUrl:url,html:page({})}),art);
+ assert.equal(verifiedStoreCover({title:'Sniper Elite: Resistance',storeUrl:'https://store.playstation.com/de-de/product/EP0900-CUSA29547_00-4103461541053748',html:page({})}),null);
+ assert.equal(verifiedStoreCover({title:'Chained Echoes',storeUrl:url,html:page({})}),null);
+ assert.equal(verifiedStoreCover({title:'Sniper Elite: Resistance',storeUrl:url,html:page({image:'https://blog.de.playstation.com/announcement.jpg'})}),null);
+ assert.equal(storeProduct('<html><head></head></html>'),null);
+ assert.equal(verifiedStoreCover({title:'Sniper Elite: Resistance',storeUrl:url,html:'<html></html>'}),null);
+});
+test('trademark symbols never leak into the normalized title',()=>{
+ assert.equal(titleKey('MLB® The Show™ 26'),'mlb the show 26');
+ assert.equal(titleKey('Sniper Elite: Resistance PS4™ & PS5™'),'sniper elite resistance ps4 and ps5');
+ const sku='UP9000-PPSA30630_00-MLBTHESHOW26SHIP';
+ const art='https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/cover.png';
+ const html=`<html><head><script type="application/ld+json">${JSON.stringify({'@type':'Product',name:'MLB® The Show™ 26',sku,image:art})}</script></head></html>`;
+ assert.equal(verifiedStoreCover({title:'MLB The Show 26',storeUrl:`https://store.playstation.com/de-de/product/${sku}`,html}),art);
 });
 test('catalog membership is not confused with a monthly claim',()=>{
  const c=fixture();const radar={plusGames:[{title:'Testspiel',storeUrl:store}],psplusText:'01.09.–05.10.2026'};
