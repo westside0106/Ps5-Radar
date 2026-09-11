@@ -1,0 +1,42 @@
+{
+  "status": "discovery-only",
+  "verifiedAt": null,
+  "region": "DE",
+  "sources": [
+    {
+      "id": "xbox-wire-de",
+      "url": "https://news.xbox.com/de-de/",
+      "purpose": "official announcements"
+    },
+    {
+      "id": "xbox-games-de",
+      "url": "https://www.xbox.com/de-DE/games",
+      "purpose": "console game discovery"
+    },
+    {
+      "id": "xbox-gamepass-de",
+      "url": "https://www.xbox.com/de-DE/xbox-game-pass",
+      "purpose": "subscription tier and catalog discovery"
+    },
+    {
+      "id": "microsoft-store-de",
+      "url": "https://www.microsoft.com/de-de/store/games",
+      "purpose": "store product/edition and price discovery"
+    },
+    {
+      "id": "ea-play",
+      "url": "https://www.ea.com/ea-play",
+      "purpose": "platform-specific membership benefits"
+    },
+    {
+      "id": "ubisoft-plus",
+      "url": "https://www.ubisoft.com/de-de/game/ubisoft-plus",
+      "purpose": "platform-specific subscription benefits"
+    }
+  ],
+  "notes": [
+    "These are official discovery starting points, not verified API endpoints.",
+    "Do not infer Xbox-console availability from PC or cloud entries.",
+    "No current prices, games or plan names are asserted."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "platform": "xbox",
+  "region": "DE",
+  "checkedAt": "2026-09-08T12:00:00Z",
+  "coverage": {
+    "complete": false,
+    "expected": null,
+    "count": 1,
+    "invalid": 0,
+    "errors": [
+      "Synthetic test fixture only; not a live catalog."
+    ]
+  },
+  "products": [
+    {
+      "platform": "xbox",
+      "kind": "product",
+      "id": "SYNTHETIC0001",
+      "title": "Synthetic Test Game",
+      "gameId": null,
+      "productType": "game",
+      "targets": [
+        "xbox-series"
+      ],
+      "storeUrl": "https://www.xbox.com/de-DE/",
+      "evidenceIds": [
+        "fixture-identity"
+      ],
+      "releaseDate": null,
+      "cover": null
+    }
+  ],
+  "offers": [
+    {
+      "id": "fixture-offer",
+      "productKey": "xbox:product:SYNTHETIC0001",
+      "currency": "EUR",
+      "region": "DE",
+      "priceMinor": 1999,
+      "regularPriceMinor": 3999,
+      "observedAt": "2026-09-08T12:00:00Z",
+      "validFrom": "2026-09-08T00:00:00Z",
+      "validUntil": "2026-09-10T00:00:00Z",
+      "evidenceIds": [
+        "fixture-offer-evidence"
+      ]
+    }
+  ],
+  "entitlements": [
+    {
+      "id": "fixture-access",
+      "productKey": "xbox:product:SYNTHETIC0001",
+      "serviceId": "synthetic-service",
+      "tierId": "synthetic-tier",
+      "accessKind": "catalog",
+      "targets": [
+        "xbox-series"
+      ],
+      "region": "DE",
+      "availableFrom": "2026-09-08",
+      "availableUntil": null,
+      "trialHours": null,
+      "evidenceIds": [
+        "fixture-access-evidence"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "fixture-identity",
+      "sourceId": "synthetic",
+      "url": "https://example.com/fixture",
+      "level": "official",
+      "region": "DE",
+      "observedAt": "2026-09-08T12:00:00Z",
+      "publishedAt": null,
+      "subject": "synthetic identity"
+    },
+    {
+      "id": "fixture-offer-evidence",
+      "sourceId": "synthetic",
+      "url": "https://example.com/fixture",
+      "level": "store",
+      "region": "DE",
+      "observedAt": "2026-09-08T12:00:00Z",
+      "publishedAt": null,
+      "subject": "synthetic price"
+    },
+    {
+      "id": "fixture-access-evidence",
+      "sourceId": "synthetic",
+      "url": "https://example.com/fixture",
+      "level": "official",
+      "region": "DE",
+      "observedAt": "2026-09-08T12:00:00Z",
+      "publishedAt": null,
+      "subject": "synthetic entitlement"
+    }
+  ]
+}
