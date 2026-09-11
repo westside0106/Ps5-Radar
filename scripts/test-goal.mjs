@@ -44,6 +44,18 @@ test('trademark symbols never leak into the normalized title',()=>{
  const html=`<html><head><script type="application/ld+json">${JSON.stringify({'@type':'Product',name:'MLB® The Show™ 26',sku,image:art})}</script></head></html>`;
  assert.equal(verifiedStoreCover({title:'MLB The Show 26',storeUrl:`https://store.playstation.com/de-de/product/${sku}`,html}),art);
 });
+test('source-side duplicates do not make a fully paginated section incomplete',()=>{
+ const a={title:'Spiel A',storeUrl:'https://store.playstation.com/de-de/product/EP0000-PPSA00001_00-AAAAAAAAAAAAAAAA',image:cover,platforms:['PS5']};
+ const b={title:'Spiel B',storeUrl:'https://store.playstation.com/de-de/product/EP0000-PPSA00002_00-BBBBBBBBBBBBBBBB',image:cover,platforms:['PS5']};
+ // Die Quelle listet drei Karten, zwei davon mit derselben Store-Identitaet.
+ const c=normalizeCatalog({results:{extra:{expected:3,observed:3,complete:true,entries:[a,b,{...a}]}}});
+ assert.equal(c.sections.extra.complete,true);
+ assert.equal(c.sections.extra.count,2);
+ assert.equal(c.sections.extra.duplicates,1);
+ // Ohne vollstaendige Paginierung bleibt es unvollstaendig.
+ const partial=normalizeCatalog({results:{extra:{expected:3,observed:2,complete:true,entries:[a,b]}}});
+ assert.equal(partial.sections.extra.complete,false);
+});
 test('catalog membership is not confused with a monthly claim',()=>{
  const c=fixture();const radar={plusGames:[{title:'Testspiel',storeUrl:store}],psplusText:'01.09.–05.10.2026'};
  const view=prepareCatalog(c,radar,new Date('2026-09-07T12:00:00Z'));
