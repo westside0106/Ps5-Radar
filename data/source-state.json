@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-11T08:46:47.870Z",
+  "checkedAt": "2026-09-11T12:13:42.150Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Die Tokyo Game Show Angebote sind im PlayStation Store gelandet",
+        "link": "https://blog.de.playstation.com/2026/09/11/die-tokyo-game-show-angebote-sind-im-playstation-store-gelandet/",
+        "pubDate": "Fri, 11 Sep 2026 11:37:21 +0000"
+      },
       {
         "title": "Die Entstehung von Woodo: Eine emotionale, greifbare Geschichte über Kindheitserinnerungen und echte Freundschaft",
         "link": "https://blog.de.playstation.com/2026/09/10/die-entstehung-von-woodo-eine-emotionale-greifbare-geschichte-ueber-kindheitserinnerungen-und-echte-freundschaft/",
@@ -47,14 +52,16 @@
         "title": "Mewgenics: Katzenzucht trifft Rundentaktik vom Isaac-Macher",
         "link": "https://blog.de.playstation.com/2026/09/08/mewgenics-release-ps5/",
         "pubDate": "Tue, 08 Sep 2026 14:34:41 +0000"
-      },
-      {
-        "title": "NBA 2K27: The City wird Co-Ed und die Legenden rufen",
-        "link": "https://blog.de.playstation.com/2026/09/08/nba-2k27-release-ps5/",
-        "pubDate": "Tue, 08 Sep 2026 14:28:38 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Die Tokyo Game Show Angebote sind im PlayStation Store gelandet",
+        "link": "https://blog.de.playstation.com/2026/09/11/die-tokyo-game-show-angebote-sind-im-playstation-store-gelandet/",
+        "pubDate": "Fri, 11 Sep 2026 11:37:21 +0000",
+        "category": "store"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
@@ -149,7 +156,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241947,
+    "bytes": 242071,
     "updated": true,
     "parsed": {
       "trial": true,

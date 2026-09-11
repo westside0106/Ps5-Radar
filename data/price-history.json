@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T08:46:54.968Z",
+  "updatedAt": "2026-09-11T12:14:08.196Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -398,15 +398,153 @@
         }
       ],
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/00c98668e573cb0c1109b91a7378779f2374d4924e71dd8b.png"
+    },
+    "Forza Horizon 5 Standard Edition": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-11",
+          "price": 27.99,
+          "oldPrice": 69.99,
+          "discount": 60
+        }
+      ],
+      "title": "Forza Horizon 5 Standard Edition",
+      "platform": "PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347",
+      "signalHistory": [
+        {
+          "date": "2026-09-11",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 27.99,
+          "radarLow": 27.99,
+          "discount": 60,
+          "confidence": "niedrig"
+        }
+      ],
+      "signal": {
+        "version": 1,
+        "activeDeal": true,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 27.99,
+        "lastObservedPrice": 27.99,
+        "lastObservedDate": "2026-09-11",
+        "radarLow": 27.99,
+        "deltaFromLowPct": 0,
+        "discount": 60,
+        "daysRemaining": 13,
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-60 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/42b3ee6b1b2094212231b0b0a82824f687fc5c4dc9bde31c.png"
+    },
+    "Forza Horizon 5 Premium Edition": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-11",
+          "price": 39.99,
+          "oldPrice": 99.99,
+          "discount": 60
+        }
+      ],
+      "title": "Forza Horizon 5 Premium Edition",
+      "platform": "PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906",
+      "signalHistory": [
+        {
+          "date": "2026-09-11",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 39.99,
+          "radarLow": 39.99,
+          "discount": 60,
+          "confidence": "niedrig"
+        }
+      ],
+      "signal": {
+        "version": 1,
+        "activeDeal": true,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 39.99,
+        "lastObservedPrice": 39.99,
+        "lastObservedDate": "2026-09-11",
+        "radarLow": 39.99,
+        "deltaFromLowPct": 0,
+        "discount": 60,
+        "daysRemaining": 13,
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-60 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0323/d808653f2c2453e79433628e31f673ef3976c6771d39228a.png"
+    },
+    "Call of Duty®: Black Ops II": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-11",
+          "price": 19.99,
+          "oldPrice": 39.99,
+          "discount": 50
+        }
+      ],
+      "title": "Call of Duty®: Black Ops II",
+      "platform": "PS4 · PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP0002-PPSA34502_00-CODBO2GAME000001",
+      "signalHistory": [
+        {
+          "date": "2026-09-11",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 19.99,
+          "radarLow": 19.99,
+          "discount": 50,
+          "confidence": "niedrig"
+        }
+      ],
+      "signal": {
+        "version": 1,
+        "activeDeal": true,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 19.99,
+        "lastObservedPrice": 19.99,
+        "lastObservedDate": "2026-09-11",
+        "radarLow": 19.99,
+        "deltaFromLowPct": 0,
+        "discount": 50,
+        "daysRemaining": 13,
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-50 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/c4ce7fe379aa05dd3f6ecc11e8fa38dfea03d4b4a8bad73a.png"
     }
   },
   "summary": {
-    "titles": 6,
-    "points": 18,
+    "titles": 9,
+    "points": 21,
     "archiveIssuesScanned": 8,
     "signals": {
       "buy": 0,
-      "watch": 0,
+      "watch": 3,
       "wait": 6
     },
     "changedSignals": 0,

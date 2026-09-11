@@ -1,7 +1,7 @@
 {
   "date": "11.09.2026",
   "edition": "AUSGABE #008",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
   "newCount": "11.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
@@ -47,10 +47,35 @@
       "imageSource": "official-product"
     }
   ],
-  "storeTitle": "Keine verifizierten Top-Deals",
-  "storeText": "Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.",
-  "storeEnd": null,
-  "deals": [],
+  "storeTitle": "Aktuelle Store-Top-Deals",
+  "storeText": "Automatisch aus der aktuell verifizierten PlayStation-Store-Aktion ausgewählt.",
+  "storeEnd": "2026-09-24T00:59:00+02:00",
+  "deals": [
+    {
+      "title": "Forza Horizon 5 Standard Edition",
+      "platform": "PS5",
+      "price": "27,99 €",
+      "oldPrice": "69,99 €",
+      "discount": "-60 %",
+      "image": null
+    },
+    {
+      "title": "Forza Horizon 5 Premium Edition",
+      "platform": "PS5",
+      "price": "39,99 €",
+      "oldPrice": "99,99 €",
+      "discount": "-60 %",
+      "image": null
+    },
+    {
+      "title": "Call of Duty®: Black Ops II",
+      "platform": "PS4 · PS5",
+      "price": "19,99 €",
+      "oldPrice": "39,99 €",
+      "discount": "-50 %",
+      "image": null
+    }
+  ],
   "releases": [
     {
       "date": "15.09.",
@@ -74,11 +99,12 @@
     }
   ],
   "quickItems": [
+    "Die Tokyo Game Show Angebote sind im PlayStation Store gelandet",
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
-  "leavingTitle": "Kein aktives Angebotsende",
-  "leavingText": "Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.",
+  "leavingTitle": "Die Tokyo Game Show Angebote sind im PlayStation Store gelandet laufen aus",
+  "leavingText": "Aktuelle Store-Aktion endet am 24.09., 00:59 Uhr.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
   "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
   "eaItems": [
@@ -93,26 +119,40 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 11.09.2026 · 9/9 Quellen · 13/13 Details",
-  "sourceAlerts": [],
-  "editorial": [],
+  "radarCheck": "Stand 11.09.2026 · 9/9 Quellen · Store 19 geprüft · 16/16 Details",
+  "sourceAlerts": [
+    {
+      "title": "Die Tokyo Game Show Angebote sind im PlayStation Store gelandet",
+      "url": "https://blog.de.playstation.com/2026/09/11/die-tokyo-game-show-angebote-sind-im-playstation-store-gelandet/",
+      "source": "PlayStation Blog DE",
+      "category": "store"
+    }
+  ],
+  "editorial": [
+    {
+      "title": "Die Tokyo Game Show Angebote sind im PlayStation Store gelandet",
+      "url": "https://blog.de.playstation.com/2026/09/11/die-tokyo-game-show-angebote-sind-im-playstation-store-gelandet/",
+      "category": "store",
+      "score": 70
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-11T08:47:05.891Z",
+    "checkedAt": "2026-09-11T12:14:30.901Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "storeDiscoveryMode": "no-active-campaign",
-    "storeProductsVerified": 0,
-    "storeDealsSelected": 0,
-    "enrichedTitles": 13,
-    "detailTitles": 13,
+    "storeDiscoveryMode": "dynamic-browser",
+    "storeProductsVerified": 19,
+    "storeDealsSelected": 3,
+    "enrichedTitles": 16,
+    "detailTitles": 16,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-11T08:47:05.891Z"
+    "lastSuccessfulCheck": "2026-09-11T12:14:30.901Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-11T08:47:05.891Z",
+    "checkedAt": "2026-09-11T12:14:30.901Z",
     "errors": [],
     "sources": [
       {
@@ -293,6 +333,50 @@
       "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
       "title": "Chained Echoes"
     },
+    "Forza Horizon 5 Standard Edition": {
+      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
+      "publisher": "Microsoft Corporation",
+      "genre": "Rennspiele",
+      "release": "28.4.2025",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202503/2417/4d27754720206805d54f5beddfcc0817700af978a56ff0db.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347"
+    },
+    "Forza Horizon 5 Premium Edition": {
+      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
+      "publisher": "Microsoft Corporation",
+      "genre": "Rennspiele",
+      "release": "24.4.2025",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/0c5df2b67b23263d055f3b78aeb77a6ce4668bb078fced77.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
+    },
+    "Call of Duty®: Black Ops II": {
+      "description": "Erlebt das originale Call of Duty® Black Ops II, das 2012 erstmals veröffentlicht wurde und jetzt zum ersten Mal für PS4™ und PS5® erhältlich ist. Call of Duty® Black Ops II befördert die Spieler in die nahe Zukunft. Im Kalten Krieg des 21. Jahrhunderts bringen Technologie und Waffen eine neue Generation der Kriegsführung hervor.",
+      "publisher": "ACTIVISION BLIZZARD",
+      "release": "9.7.2026",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1922/9c953e771b77e507dfb3a3cf079dfed4c73557ee05537981.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/e52d5dc2aebdd845acb04594a4e1f64044a8fcd1144381cf.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/c6e366fdc23b26ea31cff6727b883ce43a957e5e936e6604.png"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP0002-PPSA34502_00-CODBO2GAME000001"
+    },
     "Marvel’s Wolverine": {
       "description": "Storybasiertes Singleplayer-Action-Adventure mit Insomniac Games' eigener Interpretation von Logan und seinen Adamantium-Klauen.",
       "publisher": "Sony Interactive Entertainment",
@@ -386,10 +470,10 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-11T08:46:55.023Z",
-    "titles": 13,
-    "fetched": 12,
-    "enriched": 13,
+    "checkedAt": "2026-09-11T12:14:08.253Z",
+    "titles": 16,
+    "fetched": 15,
+    "enriched": 16,
     "warnings": []
   },
   "resolvedSources": {
@@ -414,9 +498,13 @@
     },
     "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
     "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
-    "storeCampaign": "https://blog.de.playstation.com/2026/08/28/die-gamescom-rabatte-sind-im-playstation-store-gelandet/",
-    "storeCollection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
-    "storeDeals": {}
+    "storeCampaign": "https://blog.de.playstation.com/2026/09/11/die-tokyo-game-show-angebote-sind-im-playstation-store-gelandet/",
+    "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "storeDeals": {
+      "Forza Horizon 5 Standard Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347",
+      "Forza Horizon 5 Premium Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906",
+      "Call of Duty®: Black Ops II": "https://store.playstation.com/de-de/product/UP0002-PPSA34502_00-CODBO2GAME000001"
+    }
   },
   "eaPlay": {
     "title": "FC™ 27 · 10h Trial ab 18.09.",
@@ -443,26 +531,34 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-11T08:46:54.513Z",
+    "checkedAt": "2026-09-11T12:13:54.126Z",
     "month": "September",
     "year": 2026,
-    "notes": []
+    "notes": [],
+    "resolved": {
+      "storeDiscoveryMode": "dynamic-browser",
+      "storeDiscoveryStaticLinks": 1,
+      "storeDiscoveryBrowserLinks": 24,
+      "storeDiscoveryLinks": 25,
+      "storeDiscoveryVerified": 19,
+      "storeDiscoverySelected": 3
+    }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-11T08:46:54.618Z",
-    "collection": "https://store.playstation.com/category/a7a59912-fefa-4f29-957c-3757dadc1798",
-    "activeCampaign": false,
-    "staticLinks": 0,
-    "browserLinks": 0,
-    "links": 0,
-    "fetched": 0,
-    "verified": 0,
-    "selected": 0,
-    "mode": "no-active-campaign",
+    "checkedAt": "2026-09-11T12:13:54.240Z",
+    "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "activeCampaign": true,
+    "staticLinks": 1,
+    "browserLinks": 24,
+    "links": 25,
+    "fetched": 25,
+    "verified": 19,
+    "selected": 3,
+    "mode": "dynamic-browser",
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-11T08:47:01.978Z",
+    "checkedAt": "2026-09-11T12:14:26.332Z",
     "verified": 4,
     "missing": [],
     "warnings": [
