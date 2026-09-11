@@ -33,31 +33,51 @@ async function selectCategory(page, label) {
   }
   throw new Error(`Kategorie "${label}" nicht waehlbar`);
 }
-async function stableCount(page) {
-  // Nach einem Kategoriewechsel rendert die Seite asynchron neu; ein zu frueh
-  // gelesener Zaehler gehoert noch zur vorherigen Kategorie.
+async function readCount(page) {
+  const counter = page.locator(countSelector).first();
+  await counter.waitFor({state:'visible',timeout:20000}).catch(() => {});
+  return countFromText(await counter.innerText().catch(() => ''));
+}
+async function baselineCount(page) {
+  // Nach dem Abwaehlen springt der Zaehler verzoegert auf die Gesamtzahl zurueck.
+  // Ein zu frueh gelesener Ausgangswert laesst spaeter den ungefilterten Wert
+  // faelschlich als "geaendert" durchgehen.
   let previous = null;
   for (let attempt = 0; attempt < 24; attempt++) {
-    const value = countFromText(await page.locator(countSelector).first().innerText().catch(() => ''));
+    const value = await readCount(page);
     if (Number.isInteger(value) && value === previous) return value;
     previous = value;
     await page.waitForTimeout(500);
   }
   return previous;
 }
-async function assertSingleCategory(page, label) {
-  // Der Spieltyp-Filter ist ein Mehrfachfilter: ohne sauberen Ausgangszustand
-  // summieren sich die Kategorien und der Zaehler gilt fuer die Vereinigung.
+async function settledCount(page, before) {
+  // Der Zaehler haengt dem Filterwechsel nach: erst muss er sich vom Wert vor
+  // der Auswahl loesen, danach ueber zwei Messungen stabil bleiben. Ohne den
+  // ersten Schritt gilt der alte Wert faelschlich als stabil.
+  let previous = null, changed = before === null;
+  for (let attempt = 0; attempt < 40; attempt++) {
+    const value = await readCount(page);
+    if (!changed) { if (Number.isInteger(value) && value !== before) changed = true; }
+    else if (Number.isInteger(value) && value === previous) return value;
+    previous = value;
+    await page.waitForTimeout(500);
+  }
+  return changed ? previous : null;
+}
+async function currentCategory(page) {
   const text = (await page.locator('#select-button-category').first().innerText()).replace(/\s+/g,' ').trim();
-  const selected = text.replace(/^Spieltyp\s*/i,'').trim();
-  if (selected !== label) throw new Error(`Filter steht auf "${selected}" statt exakt auf "${label}"`);
+  return text.replace(/^Spieltyp\s*/i,'').trim();
 }
 async function capture(page, service, label) {
+  // Der Spieltyp-Filter ist ein Mehrfachfilter: ohne sauberen Ausgangszustand
+  // summieren sich die Kategorien und der Zaehler gilt fuer die Vereinigung.
+  const before = await baselineCount(page);
   await selectCategory(page, label);
-  await assertSingleCategory(page, label);
+  const selected = await currentCategory(page);
+  if (selected !== label) throw new Error(`Filter steht auf "${selected}" statt exakt auf "${label}"`);
   await page.locator(cardSelector).first().waitFor({timeout:20000});
-  await page.waitForLoadState('networkidle').catch(() => {});
-  const expected = await stableCount(page);
+  const expected = await settledCount(page, before);
   if (!Number.isInteger(expected)) throw new Error(`${service}: Anzahl nicht lesbar`);
   const entries = new Map();
   const maxPages = Math.max(1,Math.ceil(expected/10)+5);
@@ -86,14 +106,18 @@ async function capture(page, service, label) {
 }
 try {
   const page=await browser.newPage({viewport:{width:1280,height:900},locale:'de-DE',timezoneId:'Europe/Berlin'});
+  await page.goto(CATALOG_SOURCE,{waitUntil:'domcontentloaded',timeout:60000});
+  await dismissConsent(page);
+  await page.locator(cardSelector).first().waitFor({timeout:60000});
   for (const [service,label] of Object.entries(CATALOG_CATEGORIES)) {
-    try {
-      await page.goto(CATALOG_SOURCE,{waitUntil:'domcontentloaded',timeout:60000});
-      await dismissConsent(page);
-      await page.locator(cardSelector).first().waitFor({timeout:60000});
-      raw.results[service]=await capture(page,service,label);
-    }
+    try { raw.results[service]=await capture(page,service,label); }
     catch(error) {raw.errors.push(`${service}: ${error.message}`);raw.results[service]={expected:null,complete:false,entries:[]};}
+    // Auswahl wieder loesen, sonst addiert der naechste Klick eine Kategorie dazu.
+    try {
+      if (await currentCategory(page) !== 'Beliebig') await selectCategory(page, label);
+      const rest = await currentCategory(page);
+      if (rest !== 'Beliebig') throw new Error(`Filter bleibt auf "${rest}" haengen`);
+    } catch(error) { raw.errors.push(`${service}: Zuruecksetzen fehlgeschlagen - ${error.message}`); break; }
   }
 } catch(error) {raw.errors.push(`Quelle: ${error.message}`);}
 finally {await browser.close();}
