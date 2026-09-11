@@ -17,7 +17,7 @@ function dateLabel(value) {
 }
 
 function CatalogCard({ game, service }) {
-  const platforms = game.platforms?.length ? game.platforms.join(' · ') : 'Plattform nicht angegeben';
+  const platforms = game.platforms?.length ? game.platforms.join(' · ') : null;
   const membership = service === 'leaving' ? (game.services.includes('premium') ? 'Premium · Klassiker' : 'Extra') : serviceNames[service] || 'PlayStation Plus';
   const rows = [
     { label: 'Mitgliedschaft', value: membership },
@@ -49,7 +49,7 @@ function CatalogCard({ game, service }) {
       </div>
       <div className="catalog-card-copy">
         <h3>{game.title}</h3>
-        <p>{platforms}</p>
+        {platforms ? <p>{platforms}</p> : null}
         {game.leavingAt ? <span className="catalog-expiry">Verlässt am {dateLabel(game.leavingAt)}</span> : null}
         {service === 'trials' && game.trialHours ? <span className="catalog-trial">{game.trialHours} Stunden testen</span> : null}
         <span className="catalog-card-more">Details ansehen ↗</span>
@@ -71,6 +71,7 @@ export default function CatalogClient({ snapshot }) {
   const [hideFilters, setHideFilters] = useState(false);
   const status = snapshot.sections[service] || {};
   const games = snapshot.games || [];
+  const hasPlatforms = useMemo(() => games.some(game => game.platforms?.length), [games]);
   const genres = useMemo(() => [...new Set(games.filter(g => g.services?.includes(service)).flatMap(g => g.genres || []))].sort((a,b) => a.localeCompare(b,'de')), [games,service]);
   const filtered = useMemo(() => catalogFilter(games, { service, query: deferredQuery, platform, genre, sort }).filter(g => !onlyVerifiedArt || Boolean(g.image)), [games,service,deferredQuery,platform,genre,sort,onlyVerifiedArt]);
   const pages = Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
@@ -93,10 +94,10 @@ export default function CatalogClient({ snapshot }) {
     {service==='trials' ? <p className="catalog-note">Testversionen sind kein vollständiger Spielezugang. Die verfügbare Testdauer wird nur angezeigt, wenn sie konkret verifiziert wurde.</p> : null}
     {service==='leaving' ? <p className="catalog-note">Nur Spiele mit bestätigtem Entfernungstermin werden angezeigt. Fehlende Termine werden nicht geschätzt.</p> : null}
     <div className="catalog-filter-head"><label className="catalog-search"><span className="sr-only">Spiele suchen</span><input type="search" placeholder="Spiel suchen …" value={query} onChange={e=>update(setQuery)(e.target.value)} /></label><button className="catalog-filter-toggle" onClick={()=>setHideFilters(!hideFilters)} aria-expanded={!hideFilters}>{hideFilters?'Filter anzeigen':'Filter'}</button></div>
-    {!hideFilters ? <div className="catalog-filters"><label>Plattform<select value={platform} onChange={e=>update(setPlatform)(e.target.value)}><option value="all">Alle Plattformen</option><option value="PS5">PS5</option><option value="PS4">PS4</option></select></label><label>Genre<select value={genre} onChange={e=>update(setGenre)(e.target.value)}><option value="all">Alle Genres</option>{genres.map(g=><option key={g} value={g}>{g}</option>)}</select></label><label>Sortieren<select value={sort} onChange={e=>update(setSort)(e.target.value)}><option value="title">Titel A–Z</option><option value="recent">Zuletzt hinzugefügt</option><option value="leaving">Entfernungstermin</option></select></label><label className="catalog-check"><input type="checkbox" checked={onlyVerifiedArt} onChange={e=>update(setOnlyVerifiedArt)(e.target.checked)}/> Nur mit Cover</label></div> : null}
+    {!hideFilters ? <div className="catalog-filters">{hasPlatforms ? <label>Plattform<select value={platform} onChange={e=>update(setPlatform)(e.target.value)}><option value="all">Alle Plattformen</option><option value="PS5">PS5</option><option value="PS4">PS4</option></select></label> : null}{genres.length ? <label>Genre<select value={genre} onChange={e=>update(setGenre)(e.target.value)}><option value="all">Alle Genres</option>{genres.map(g=><option key={g} value={g}>{g}</option>)}</select></label> : null}<label>Sortieren<select value={sort} onChange={e=>update(setSort)(e.target.value)}><option value="title">Titel A–Z</option><option value="recent">Zuletzt hinzugefügt</option><option value="leaving">Entfernungstermin</option></select></label><label className="catalog-check"><input type="checkbox" checked={onlyVerifiedArt} onChange={e=>update(setOnlyVerifiedArt)(e.target.checked)}/> Nur mit Cover</label></div> : null}
     <div className="catalog-results-head"><strong>{filtered.length.toLocaleString('de-DE')} {filtered.length===1?'Spiel':'Spiele'}</strong><span>{filtered.length?`${(Math.min(page,pages)-1)*PAGE_SIZE+1}–${Math.min(Math.min(page,pages)*PAGE_SIZE,filtered.length)}`:'Keine Treffer'}</span></div>
     {visible.length ? <div className="catalog-grid">{visible.map(game=><CatalogCard key={game.id} game={game} service={service}/>)}</div> : <div className="catalog-empty"><h2>Keine passenden Einträge</h2><p>{status.complete?'Versuche andere Suchbegriffe oder Filter.':'Der Bereich ist noch nicht vollständig erfasst. Es werden keine Spiele erfunden oder aus anderen Abos ergänzt.'}</p><a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Offiziellen Spielefinder öffnen ↗</a></div>}
     {pages>1 ? <nav className="catalog-pagination" aria-label="Ergebnisseiten"><button disabled={page<=1} onClick={()=>setPage(p=>p-1)}>← Zurück</button><span>Seite {Math.min(page,pages)} von {pages}</span><button disabled={page>=pages} onClick={()=>setPage(p=>p+1)}>Weiter →</button></nav> : null}
-    <footer className="catalog-footer">Private Spieleübersicht · Keine Kauf- oder Abo-Funktion · Verfügbarkeit und Berechtigung im offiziellen Store prüfen.</footer>
+    <footer className="catalog-footer">Private Spieleübersicht · Keine Kauf- oder Abo-Funktion · Verfügbarkeit und Berechtigung im offiziellen Store prüfen.{!hasPlatforms || !genres.length ? <><br/>Plattform- und Genrefilter erscheinen, sobald die offizielle Katalogseite diese Angaben maschinenlesbar ausgibt. Derzeit stehen sie dort nur als Symbol ohne Textbeschriftung.</> : null}</footer>
   </div>;
 }
