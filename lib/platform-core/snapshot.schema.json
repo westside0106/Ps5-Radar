@@ -1,0 +1,372 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://radar.local/schemas/platform-snapshot-v1.json",
+  "title": "Radar platform snapshot v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "platform",
+    "region",
+    "checkedAt",
+    "coverage",
+    "products",
+    "offers",
+    "entitlements",
+    "evidence"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "platform": {
+      "enum": [
+        "ps",
+        "xbox"
+      ]
+    },
+    "region": {
+      "const": "DE"
+    },
+    "checkedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "complete",
+        "expected",
+        "count",
+        "invalid",
+        "errors"
+      ],
+      "properties": {
+        "complete": {
+          "type": "boolean"
+        },
+        "expected": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "invalid": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/product"
+      }
+    },
+    "offers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/offer"
+      }
+    },
+    "entitlements": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entitlement"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": [
+        "id",
+        "sourceId",
+        "url",
+        "level",
+        "region",
+        "observedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "sourceId": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "level": {
+          "enum": [
+            "official",
+            "store",
+            "secondary"
+          ]
+        },
+        "region": {
+          "type": "string"
+        },
+        "observedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "publishedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "subject": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "product": {
+      "type": "object",
+      "required": [
+        "platform",
+        "kind",
+        "id",
+        "title",
+        "productType",
+        "targets",
+        "storeUrl",
+        "evidenceIds"
+      ],
+      "properties": {
+        "platform": {
+          "enum": [
+            "ps",
+            "xbox"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "product",
+            "concept",
+            "sku",
+            "bundle"
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "gameId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "productType": {
+          "enum": [
+            "game",
+            "edition",
+            "bundle",
+            "dlc",
+            "trial"
+          ]
+        },
+        "targets": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "storeUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "evidenceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "releaseDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "cover": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "offer": {
+      "type": "object",
+      "required": [
+        "id",
+        "productKey",
+        "currency",
+        "region",
+        "priceMinor",
+        "observedAt",
+        "evidenceIds"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "productKey": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "priceMinor": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "regularPriceMinor": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "observedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "validFrom": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "validUntil": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "evidenceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "entitlement": {
+      "type": "object",
+      "required": [
+        "id",
+        "productKey",
+        "serviceId",
+        "tierId",
+        "accessKind",
+        "targets",
+        "region",
+        "evidenceIds"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "productKey": {
+          "type": "string"
+        },
+        "serviceId": {
+          "type": "string"
+        },
+        "tierId": {
+          "type": "string"
+        },
+        "accessKind": {
+          "enum": [
+            "claim",
+            "catalog",
+            "trial",
+            "owned",
+            "free"
+          ]
+        },
+        "targets": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "region": {
+          "type": "string"
+        },
+        "availableFrom": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "availableUntil": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "trialHours": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0
+        },
+        "evidenceIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
