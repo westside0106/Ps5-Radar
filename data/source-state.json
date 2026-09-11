@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-11T03:55:26.710Z",
+  "checkedAt": "2026-09-11T04:44:16.560Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,32 +54,7 @@
         "pubDate": "Tue, 08 Sep 2026 14:28:38 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Die Entstehung von Woodo: Eine emotionale, greifbare Geschichte über Kindheitserinnerungen und echte Freundschaft",
-        "link": "https://blog.de.playstation.com/2026/09/10/die-entstehung-von-woodo-eine-emotionale-greifbare-geschichte-ueber-kindheitserinnerungen-und-echte-freundschaft/",
-        "pubDate": "Thu, 10 Sep 2026 14:19:51 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Players&#8216; Choice: Star Wars Zero Company ist das beste neue Spiel im August 2026!",
-        "link": "https://blog.de.playstation.com/2026/09/10/players-choice-stimmt-fuer-das-beste-neue-spiel-im-august-2026-ab/",
-        "pubDate": "Thu, 10 Sep 2026 13:00:29 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Spielt auf eure Art mit dem erweiterten Assistenz-Modus von CONTROL Resonant",
-        "link": "https://blog.de.playstation.com/2026/09/10/spielt-auf-eure-art-mit-dem-erweiterten-assistenz-modus-von-control-resonant/",
-        "pubDate": "Thu, 10 Sep 2026 12:55:36 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Muramasa: Revenant Blades erscheint am 4. Februar 2027",
-        "link": "https://blog.de.playstation.com/2026/09/10/muramasa-revenant-blades-release-datum/",
-        "pubDate": "Thu, 10 Sep 2026 12:43:30 +0000",
-        "category": "release"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
@@ -134,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178298,
+    "bytes": 178347,
     "updated": true,
     "parsed": {
       "games": [
@@ -187,7 +162,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163205,
+    "bytes": 163193,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
