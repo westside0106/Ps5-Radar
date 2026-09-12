@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-11T12:13:42.150Z",
+  "checkedAt": "2026-09-12T05:58:54.303Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,18 +54,11 @@
         "pubDate": "Tue, 08 Sep 2026 14:34:41 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Die Tokyo Game Show Angebote sind im PlayStation Store gelandet",
-        "link": "https://blog.de.playstation.com/2026/09/11/die-tokyo-game-show-angebote-sind-im-playstation-store-gelandet/",
-        "pubDate": "Fri, 11 Sep 2026 11:37:21 +0000",
-        "category": "store"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211707,
+    "bytes": 211782,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178298,
+    "bytes": 178373,
     "updated": true,
     "parsed": {
       "games": [
@@ -156,7 +149,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242071,
+    "bytes": 241947,
     "updated": true,
     "parsed": {
       "trial": true,
@@ -169,7 +162,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163205,
+    "bytes": 163207,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
@@ -206,7 +199,7 @@
           "79,99 €",
           "24,99 €",
           "99,99 €",
-          "2 €"
+          "9 €"
         ],
         "discounts": [
           "-75 %"
