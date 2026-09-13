@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-09-12T11:39:12.394Z",
+  "checkedAt": "2026-09-13T12:46:03.792Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1470,
+    "count": 1469,
     "views": {
       "deals": {
-        "expected": 785,
-        "observed": 785,
-        "count": 785,
+        "expected": 784,
+        "observed": 784,
+        "count": 784,
         "complete": true
       },
       "gamepass-console": {
@@ -51,7 +51,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-12T11:39:12.394Z",
+      "observedAt": "2026-09-13T12:46:03.792Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -62,7 +62,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-12T11:39:12.394Z",
+      "observedAt": "2026-09-13T12:46:03.792Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass für Konsole, Ziel xbox-series"
@@ -73,7 +73,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-12T11:39:12.394Z",
+      "observedAt": "2026-09-13T12:46:03.792Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -84,7 +84,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-12T11:39:12.394Z",
+      "observedAt": "2026-09-13T12:46:03.792Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = EA Play, Ziel xbox-series"
@@ -95,7 +95,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-12T11:39:12.394Z",
+      "observedAt": "2026-09-13T12:46:03.792Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -25134,22 +25134,6 @@
         "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nwlgxw8w4hw",
-      "id": "9nwlgxw8w4hw",
-      "title": "不確定世界の探偵紳士～悪行双麻の事件ファイル～",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/5lin56k65a6a5liw55wm44gu5o6i5yg157sz5aor772e5okq6kgm5ym6bq744gu5lql5lu244ov44kh44kk44or772e/9nwlgxw8w4hw",
-      "cover": "https://store-images.s-microsoft.com/image/apps.20066.14447557688531922.f1d78d5e-135f-42b3-97cd-4cb850f53434.09dee885-4e78-4443-988f-fd5b8ec509d8?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1707,
-      "regularPriceMinor": 2549,
-      "genres": [
-        "Andere"
-      ],
-      "services": []
     }
   ]
 }
