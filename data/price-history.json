@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T11:38:48.990Z",
+  "updatedAt": "2026-09-13T06:03:05.792Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -413,6 +413,12 @@
           "price": 27.99,
           "oldPrice": 69.99,
           "discount": 60
+        },
+        {
+          "date": "2026-09-13",
+          "price": 27.99,
+          "oldPrice": 69.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Standard Edition",
@@ -443,21 +449,21 @@
       "signal": {
         "version": 1,
         "activeDeal": true,
-        "confidence": "niedrig",
-        "measurements": 2,
+        "confidence": "mittel",
+        "measurements": 3,
         "currentPrice": 27.99,
         "lastObservedPrice": 27.99,
-        "lastObservedDate": "2026-09-12",
+        "lastObservedDate": "2026-09-13",
         "radarLow": 27.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 12,
+        "daysRemaining": 11,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-09-12"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/42b3ee6b1b2094212231b0b0a82824f687fc5c4dc9bde31c.png"
     },
@@ -472,6 +478,12 @@
         },
         {
           "date": "2026-09-12",
+          "price": 39.99,
+          "oldPrice": 99.99,
+          "discount": 60
+        },
+        {
+          "date": "2026-09-13",
           "price": 39.99,
           "oldPrice": 99.99,
           "discount": 60
@@ -505,21 +517,21 @@
       "signal": {
         "version": 1,
         "activeDeal": true,
-        "confidence": "niedrig",
-        "measurements": 2,
+        "confidence": "mittel",
+        "measurements": 3,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-09-12",
+        "lastObservedDate": "2026-09-13",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 12,
+        "daysRemaining": 11,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-09-12"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0323/d808653f2c2453e79433628e31f673ef3976c6771d39228a.png"
     },
@@ -534,6 +546,12 @@
         },
         {
           "date": "2026-09-12",
+          "price": 19.99,
+          "oldPrice": 39.99,
+          "discount": 50
+        },
+        {
+          "date": "2026-09-13",
           "price": 19.99,
           "oldPrice": 39.99,
           "discount": 50
@@ -567,36 +585,36 @@
       "signal": {
         "version": 1,
         "activeDeal": true,
-        "confidence": "niedrig",
-        "measurements": 2,
+        "confidence": "mittel",
+        "measurements": 3,
         "currentPrice": 19.99,
         "lastObservedPrice": 19.99,
-        "lastObservedDate": "2026-09-12",
+        "lastObservedDate": "2026-09-13",
         "radarLow": 19.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 12,
+        "daysRemaining": 11,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-09-12"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/c4ce7fe379aa05dd3f6ecc11e8fa38dfea03d4b4a8bad73a.png"
     }
   },
   "summary": {
     "titles": 9,
-    "points": 24,
-    "archiveIssuesScanned": 9,
+    "points": 27,
+    "archiveIssuesScanned": 10,
     "signals": {
       "buy": 3,
       "watch": 0,
       "wait": 6
     },
-    "changedSignals": 3,
-    "newBuySignals": 3
+    "changedSignals": 0,
+    "newBuySignals": 0
   },
   "method": {
     "signalVersion": 1,
