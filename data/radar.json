@@ -118,26 +118,26 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 14.09.2026 · 9/9 Quellen · Store 19 geprüft · 16/16 Details",
+  "radarCheck": "Stand 14.09.2026 · 9/9 Quellen · Store 18 geprüft · 16/16 Details",
   "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-14T06:04:19.685Z",
+    "checkedAt": "2026-09-14T13:43:48.035Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
     "storeDiscoveryMode": "dynamic-browser",
-    "storeProductsVerified": 19,
+    "storeProductsVerified": 18,
     "storeDealsSelected": 3,
     "enrichedTitles": 16,
     "detailTitles": 16,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-14T06:04:19.685Z"
+    "lastSuccessfulCheck": "2026-09-14T13:43:48.035Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-14T06:04:19.685Z",
+    "checkedAt": "2026-09-14T13:43:48.035Z",
     "errors": [],
     "sources": [
       {
@@ -455,7 +455,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-14T06:03:55.152Z",
+    "checkedAt": "2026-09-14T13:43:05.095Z",
     "titles": 16,
     "fetched": 15,
     "enriched": 16,
@@ -516,7 +516,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-14T06:03:38.381Z",
+    "checkedAt": "2026-09-14T13:42:46.717Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -525,25 +525,25 @@
       "storeDiscoveryStaticLinks": 1,
       "storeDiscoveryBrowserLinks": 24,
       "storeDiscoveryLinks": 25,
-      "storeDiscoveryVerified": 19,
+      "storeDiscoveryVerified": 18,
       "storeDiscoverySelected": 3
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-14T06:03:38.489Z",
+    "checkedAt": "2026-09-14T13:42:46.817Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
     "browserLinks": 24,
     "links": 25,
     "fetched": 25,
-    "verified": 19,
+    "verified": 18,
     "selected": 3,
     "mode": "dynamic-browser",
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-14T06:04:15.120Z",
+    "checkedAt": "2026-09-14T13:43:43.153Z",
     "verified": 4,
     "missing": [],
     "warnings": [
