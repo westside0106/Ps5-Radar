@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T12:45:30.151Z",
+  "updatedAt": "2026-09-14T06:03:55.102Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -419,6 +419,12 @@
           "price": 27.99,
           "oldPrice": 69.99,
           "discount": 60
+        },
+        {
+          "date": "2026-09-14",
+          "price": 27.99,
+          "oldPrice": 69.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Standard Edition",
@@ -450,14 +456,14 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 27.99,
         "lastObservedPrice": 27.99,
-        "lastObservedDate": "2026-09-13",
+        "lastObservedDate": "2026-09-14",
         "radarLow": 27.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 11,
+        "daysRemaining": 10,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
@@ -484,6 +490,12 @@
         },
         {
           "date": "2026-09-13",
+          "price": 39.99,
+          "oldPrice": 99.99,
+          "discount": 60
+        },
+        {
+          "date": "2026-09-14",
           "price": 39.99,
           "oldPrice": 99.99,
           "discount": 60
@@ -518,14 +530,14 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-09-13",
+        "lastObservedDate": "2026-09-14",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 11,
+        "daysRemaining": 10,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
@@ -552,6 +564,12 @@
         },
         {
           "date": "2026-09-13",
+          "price": 19.99,
+          "oldPrice": 39.99,
+          "discount": 50
+        },
+        {
+          "date": "2026-09-14",
           "price": 19.99,
           "oldPrice": 39.99,
           "discount": 50
@@ -586,14 +604,14 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 19.99,
         "lastObservedPrice": 19.99,
-        "lastObservedDate": "2026-09-13",
+        "lastObservedDate": "2026-09-14",
         "radarLow": 19.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 11,
+        "daysRemaining": 10,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
@@ -606,8 +624,8 @@
   },
   "summary": {
     "titles": 9,
-    "points": 27,
-    "archiveIssuesScanned": 10,
+    "points": 30,
+    "archiveIssuesScanned": 11,
     "signals": {
       "buy": 3,
       "watch": 0,

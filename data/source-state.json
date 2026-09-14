@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-13T12:44:59.919Z",
+  "checkedAt": "2026-09-14T06:03:30.366Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -58,7 +58,7 @@
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 212747,
+    "bytes": 212748,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 179338,
+    "bytes": 179339,
     "updated": true,
     "parsed": {
       "games": [
@@ -162,7 +162,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163196,
+    "bytes": 163216,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
