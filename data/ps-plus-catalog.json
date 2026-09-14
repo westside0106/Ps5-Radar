@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-09-11T07:45:47.475Z",
+  "checkedAt": "2026-09-14T13:19:22.041Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 4,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-09-11T07:45:47.475Z"
+      "checkedAt": "2026-09-14T13:19:22.041Z"
     },
     "extra": {
       "complete": true,
@@ -1187,12 +1187,8 @@
       "title": "Chained Echoes",
       "storeUrl": "https://store.playstation.com/de-de/concept/10003362",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Rollenspiel (RPG)"
-      ],
+      "platforms": [],
+      "genres": [],
       "services": [
         "essential"
       ],
@@ -3986,12 +3982,8 @@
       "title": "MLB® The Show™ 26",
       "storeUrl": "https://store.playstation.com/de-de/concept/10015430",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/791b0f1880e27c1d8f52187daea36abfe5fd3b0ff1144007.png",
-      "platforms": [
-        "PS5"
-      ],
-      "genres": [
-        "Sportspiele"
-      ],
+      "platforms": [],
+      "genres": [],
       "services": [
         "essential"
       ],
@@ -5549,14 +5541,8 @@
       "title": "Sniper Elite: Resistance PS4™ & PS5™",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008716",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
-      "platforms": [
-        "PS4",
-        "PS5"
-      ],
-      "genres": [
-        "Action",
-        "Shooter"
-      ],
+      "platforms": [],
+      "genres": [],
       "services": [
         "essential"
       ],
@@ -7375,14 +7361,8 @@
       "title": "Wobbly Life",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004896",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
-      "platforms": [
-        "PS4",
-        "PS5"
-      ],
-      "genres": [
-        "Adventure",
-        "Familie"
-      ],
+      "platforms": [],
+      "genres": [],
       "services": [
         "essential"
       ],
@@ -10514,6 +10494,25 @@
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
     }
   ],
-  "errors": [],
-  "lastAttemptAt": "2026-09-11T07:45:47.475Z"
+  "errors": [
+    "essential: Zuruecksetzen fehlgeschlagen - Option \"Monatliche Spiele\" in category nicht waehlbar",
+    "genres Action: Filter steht auf \"Beliebig\" statt exakt auf \"Action\"",
+    "genres Adventure: Anzahl wechselte waehrend der Erfassung von 4 auf 1",
+    "genres Arcade: Anzahl wechselte waehrend der Erfassung von 4 auf 0",
+    "genres Familie: Anzahl wechselte waehrend der Erfassung von 4 auf 1",
+    "genres Horror: Anzahl wechselte waehrend der Erfassung von 4 auf 0",
+    "genres Kampfspiel: Anzahl wechselte waehrend der Erfassung von 4 auf 0",
+    "genres Pädagogisch: Anzahl wechselte waehrend der Erfassung von 4 auf 0",
+    "genres Party: Anzahl wechselte waehrend der Erfassung von 4 auf 0",
+    "genres Puzzle: Anzahl wechselte waehrend der Erfassung von 4 auf 0",
+    "genres Rennspiele: Anzahl wechselte waehrend der Erfassung von 4 auf 0",
+    "genres Rollenspiel (RPG): Anzahl wechselte waehrend der Erfassung von 4 auf 1",
+    "genres Shooter: Anzahl wechselte waehrend der Erfassung von 4 auf 1",
+    "genres Simulation: Anzahl wechselte waehrend der Erfassung von 4 auf 0",
+    "genres Sportspiele: Anzahl wechselte waehrend der Erfassung von 4 auf 1",
+    "genres Strategiespiele: Anzahl wechselte waehrend der Erfassung von 4 auf 0",
+    "platforms PS5: Anzahl wechselte waehrend der Erfassung von 4 auf 3",
+    "platforms PS4: Anzahl wechselte waehrend der Erfassung von 4 auf 3"
+  ],
+  "lastAttemptAt": "2026-09-14T13:19:22.041Z"
 }
