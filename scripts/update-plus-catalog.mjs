@@ -155,7 +155,16 @@ try {
       if (await currentSelection(page, 'category', 'Spieltyp') !== 'Beliebig') await selectOption(page, 'category', label);
       const rest = await currentSelection(page, 'category', 'Spieltyp');
       if (rest !== 'Beliebig') throw new Error(`Filter bleibt auf "${rest}" haengen`);
-    } catch(error) { raw.errors.push(`${service}: Zuruecksetzen fehlgeschlagen - ${error.message}`); break; }
+    } catch(error) {
+      // Frisch laden statt abzubrechen: bleibt der Filter haengen, laufen sonst
+      // alle folgenden Durchlaeufe gegen die falsche Auswahl und scheitern.
+      raw.errors.push(`${service}: Zuruecksetzen fehlgeschlagen, Seite neu geladen - ${error.message}`);
+      try {
+        await page.goto(CATALOG_SOURCE,{waitUntil:'domcontentloaded',timeout:60000});
+        await dismissConsent(page);
+        await page.locator(cardSelector).first().waitFor({timeout:60000});
+      } catch(reload) { raw.errors.push(`${service}: Neuladen fehlgeschlagen - ${reload.message}`); break; }
+    }
   }
 
   // Genre und Plattform als eigene Durchlaeufe. Uebernommen wird nur, was der
@@ -165,6 +174,9 @@ try {
     ['device', 'Spielbar auf', CATALOG_PLATFORMS, 'platforms'],
   ]) {
     for (const label of options) {
+      // Die Quelle drosselt nach vielen Abrufen in Folge; eine kurze Pause je
+      // Durchlauf kostet wenig und verhindert, dass spaetere Runden auflaufen.
+      await page.waitForTimeout(1500);
       // Ein Zaehlerwechsel waehrend der Erfassung ist meist Nachladen der
       // Quelle, kein Datenfehler - ein zweiter Anlauf genuegt.
       let round = null, last = null;
@@ -179,7 +191,14 @@ try {
         if (id) (tags[key][id] ||= new Set()).add(label);
       }
       try { await resetField(page, field, prefix); }
-      catch(error) { raw.errors.push(`${key} ${label}: Zuruecksetzen fehlgeschlagen - ${error.message}`); break; }
+      catch(error) {
+        raw.errors.push(`${key} ${label}: Zuruecksetzen fehlgeschlagen, Seite neu geladen - ${error.message}`);
+        try {
+          await page.goto(CATALOG_SOURCE,{waitUntil:'domcontentloaded',timeout:60000});
+          await dismissConsent(page);
+          await page.locator(cardSelector).first().waitFor({timeout:60000});
+        } catch(reload) { raw.errors.push(`${key} ${label}: Neuladen fehlgeschlagen - ${reload.message}`); break; }
+      }
     }
   }
 
@@ -198,5 +217,15 @@ const candidate=normalizeCatalog(raw);
 const snapshot=mergeCatalogSnapshots(previous,candidate);
 await fs.writeFile(output,JSON.stringify(snapshot,null,2)+'\n');
 console.log('PS+ catalog:',Object.entries(snapshot.sections).map(([k,v])=>`${k} ${v.count}/${v.expected??'?'}${v.complete?' ✓':''}`).join(', '));
-if (raw.errors.length) console.warn(raw.errors.join('\n'));
+for (const message of raw.errors) console.log(`::warning::Katalog ${message}`);
+
+// Die vier Kategorien sind der eigentliche Auftrag. Wurde eine davon in diesem
+// Lauf nicht erfasst, ist der Lauf gescheitert - auch wenn der bewahrte
+// Vorstand die Sektion weiterhin als vollstaendig ausweist. Fehlende Genre-
+// oder Plattform-Zuordnungen kosten nur einen Filter und bleiben eine Warnung.
+const missed = Object.keys(CATALOG_CATEGORIES).filter(service => raw.results[service]?.complete !== true);
+if (missed.length) {
+  console.log(`::error::Katalog nicht erfasst: ${missed.join(', ')}. Der bewahrte Vorstand bleibt erhalten und wird als veraltet ausgewiesen.`);
+  process.exit(1);
+}
 // The independent catalog refresh never fabricates results or changes the Daily Radar.
