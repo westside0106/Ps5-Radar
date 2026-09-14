@@ -72,6 +72,22 @@ test('catalog tiles bring their own copy and never get the magazine overlay',asy
  assert.ok(!/Plattform nicht angegeben/.test(client),'Platzhaltertext darf nicht mehr vorkommen');
  assert.match(client,/\{platforms \? <p>\{platforms\}<\/p> : null\}/);
 });
+test('a partial run never erases genres or platforms captured earlier',()=>{
+ const url='https://store.playstation.com/de-de/product/EP0000-PPSA00000_00-GAME000000000000';
+ const withTags={title:'Testspiel',storeUrl:url,image:cover,platforms:['PS5'],genres:['Action']};
+ const withoutTags={title:'Testspiel',storeUrl:url,image:cover};
+ const full=normalizeCatalog({checkedAt:'2026-09-11T08:00:00Z',results:{extra:{expected:1,observed:1,complete:true,entries:[withTags]}}});
+ // Ein spaeterer Lauf erfasst dieselben Spiele, aber die Tag-Durchlaeufe
+ // scheitern - die frueheren Zuordnungen muessen erhalten bleiben.
+ const partial=normalizeCatalog({checkedAt:'2026-09-14T08:00:00Z',results:{extra:{expected:1,observed:1,complete:true,entries:[withoutTags]}}});
+ const merged=mergeCatalogSnapshots(full,partial);
+ assert.deepEqual(merged.games[0].platforms,['PS5'],'Plattform darf nicht verlorengehen');
+ assert.deepEqual(merged.games[0].genres,['Action'],'Genre darf nicht verlorengehen');
+ // Neue Zuordnungen gewinnen dagegen.
+ const better={title:'Testspiel',storeUrl:url,image:cover,platforms:['PS4','PS5'],genres:['Action','Puzzle']};
+ const neu=normalizeCatalog({checkedAt:'2026-09-14T08:00:00Z',results:{extra:{expected:1,observed:1,complete:true,entries:[better]}}});
+ assert.deepEqual(mergeCatalogSnapshots(full,neu).games[0].genres,['Action','Puzzle']);
+});
 test('catalog membership is not confused with a monthly claim',()=>{
  const c=fixture();const radar={plusGames:[{title:'Testspiel',storeUrl:store}],psplusText:'01.09.–05.10.2026'};
  const view=prepareCatalog(c,radar,new Date('2026-09-07T12:00:00Z'));
