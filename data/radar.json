@@ -1,8 +1,8 @@
 {
-  "date": "14.09.2026",
-  "edition": "AUSGABE #011",
+  "date": "15.09.2026",
+  "edition": "AUSGABE #012",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "14.09 · LIVE",
+  "newCount": "15.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -118,12 +118,25 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 14.09.2026 · 9/9 Quellen · Store 19 geprüft · 16/16 Details",
-  "sourceAlerts": [],
+  "radarCheck": "Stand 15.09.2026 · 9/9 Quellen · Store 19 geprüft · 16/16 Details",
+  "sourceAlerts": [
+    {
+      "title": "Die Entwickler von Marvel‘s Wolverine sprechen darüber, wie sie das Wesen von Logan eingefangen haben",
+      "url": "https://blog.de.playstation.com/2026/09/14/die-entwickler-von-marvels-wolverine-sprechen-darueber-wie-sie-das-wesen-von-logan-eingefangen-haben/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "ACE COMBAT 8: WINGS OF THEVE: Story-Trailer und Mission 7",
+      "url": "https://blog.de.playstation.com/2026/09/14/ace-combat-8-wings-of-theve-story-trailer-und-mission-7/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    }
+  ],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-14T14:09:04.466Z",
+    "checkedAt": "2026-09-15T06:00:10.925Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -134,10 +147,10 @@
     "enrichedTitles": 16,
     "detailTitles": 16,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-14T14:09:04.466Z"
+    "lastSuccessfulCheck": "2026-09-15T06:00:10.925Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-14T14:09:04.466Z",
+    "checkedAt": "2026-09-15T06:00:10.925Z",
     "errors": [],
     "sources": [
       {
@@ -455,7 +468,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-14T14:08:42.357Z",
+    "checkedAt": "2026-09-15T05:59:49.927Z",
     "titles": 16,
     "fetched": 15,
     "enriched": 16,
@@ -516,7 +529,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-14T14:08:29.402Z",
+    "checkedAt": "2026-09-15T05:59:33.800Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -530,7 +543,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-14T14:08:29.477Z",
+    "checkedAt": "2026-09-15T05:59:33.901Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -543,7 +556,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-14T14:09:01.002Z",
+    "checkedAt": "2026-09-15T06:00:05.186Z",
     "verified": 4,
     "missing": [],
     "warnings": [

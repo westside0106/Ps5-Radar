@@ -1,8 +1,18 @@
 {
-  "checkedAt": "2026-09-14T14:08:13.220Z",
+  "checkedAt": "2026-09-15T05:59:19.818Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Die Entwickler von Marvel‘s Wolverine sprechen darüber, wie sie das Wesen von Logan eingefangen haben",
+        "link": "https://blog.de.playstation.com/2026/09/14/die-entwickler-von-marvels-wolverine-sprechen-darueber-wie-sie-das-wesen-von-logan-eingefangen-haben/",
+        "pubDate": "Mon, 14 Sep 2026 15:00:00 +0000"
+      },
+      {
+        "title": "ACE COMBAT 8: WINGS OF THEVE: Story-Trailer und Mission 7",
+        "link": "https://blog.de.playstation.com/2026/09/14/ace-combat-8-wings-of-theve-story-trailer-und-mission-7/",
+        "pubDate": "Mon, 14 Sep 2026 14:12:27 +0000"
+      },
       {
         "title": "Die Tokyo Game Show Angebote sind im PlayStation Store gelandet",
         "link": "https://blog.de.playstation.com/2026/09/11/die-tokyo-game-show-angebote-sind-im-playstation-store-gelandet/",
@@ -42,23 +52,26 @@
         "title": "No Man’s Sky: Das Cosmos-Update ist ab heute auf PS5 live",
         "link": "https://blog.de.playstation.com/2026/09/09/no-mans-sky-cosmos-update-ps5/",
         "pubDate": "Wed, 09 Sep 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Minato feiert ihr Debüt in DEAD OR ALIVE 6 Last Round!",
-        "link": "https://blog.de.playstation.com/2026/09/09/minato-feiert-ihr-debuet-in-dead-or-alive-6-last-round/",
-        "pubDate": "Wed, 09 Sep 2026 12:00:00 +0000"
-      },
-      {
-        "title": "Mewgenics: Katzenzucht trifft Rundentaktik vom Isaac-Macher",
-        "link": "https://blog.de.playstation.com/2026/09/08/mewgenics-release-ps5/",
-        "pubDate": "Tue, 08 Sep 2026 14:34:41 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Die Entwickler von Marvel‘s Wolverine sprechen darüber, wie sie das Wesen von Logan eingefangen haben",
+        "link": "https://blog.de.playstation.com/2026/09/14/die-entwickler-von-marvels-wolverine-sprechen-darueber-wie-sie-das-wesen-von-logan-eingefangen-haben/",
+        "pubDate": "Mon, 14 Sep 2026 15:00:00 +0000",
+        "category": "news"
+      },
+      {
+        "title": "ACE COMBAT 8: WINGS OF THEVE: Story-Trailer und Mission 7",
+        "link": "https://blog.de.playstation.com/2026/09/14/ace-combat-8-wings-of-theve-story-trailer-und-mission-7/",
+        "pubDate": "Mon, 14 Sep 2026 14:12:27 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 212748,
+    "bytes": 210743,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +122,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 179339,
+    "bytes": 177334,
     "updated": true,
     "parsed": {
       "games": [
@@ -144,12 +157,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 589064
+    "bytes": 590084
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242070,
+    "bytes": 241947,
     "updated": true,
     "parsed": {
       "trial": true,
@@ -162,7 +175,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163216,
+    "bytes": 163202,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
