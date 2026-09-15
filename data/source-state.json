@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-15T05:59:19.818Z",
+  "checkedAt": "2026-09-15T12:42:59.682Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,20 +54,7 @@
         "pubDate": "Wed, 09 Sep 2026 13:00:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Die Entwickler von Marvel‘s Wolverine sprechen darüber, wie sie das Wesen von Logan eingefangen haben",
-        "link": "https://blog.de.playstation.com/2026/09/14/die-entwickler-von-marvels-wolverine-sprechen-darueber-wie-sie-das-wesen-von-logan-eingefangen-haben/",
-        "pubDate": "Mon, 14 Sep 2026 15:00:00 +0000",
-        "category": "news"
-      },
-      {
-        "title": "ACE COMBAT 8: WINGS OF THEVE: Story-Trailer und Mission 7",
-        "link": "https://blog.de.playstation.com/2026/09/14/ace-combat-8-wings-of-theve-story-trailer-und-mission-7/",
-        "pubDate": "Mon, 14 Sep 2026 14:12:27 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
@@ -157,7 +144,7 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 590084
+    "bytes": 589064
   },
   "eaPlay": {
     "ok": true,
@@ -175,7 +162,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163202,
+    "bytes": 163190,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
