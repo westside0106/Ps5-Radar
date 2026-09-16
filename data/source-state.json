@@ -1,8 +1,18 @@
 {
-  "checkedAt": "2026-09-15T12:42:59.682Z",
+  "checkedAt": "2026-09-16T05:59:16.554Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Control Resonant hat auf PS5 und PS5 Pro großes vor: Grafikmodi, DualSense-Features und Spielzeit im Detail",
+        "link": "https://blog.de.playstation.com/2026/09/15/control-resonant-hat-auf-ps5-und-ps5-pro-grosses-vor-grafikmodi-dualsense-features-und-spielzeit-im-detail/",
+        "pubDate": "Tue, 15 Sep 2026 14:00:00 +0000"
+      },
+      {
+        "title": "Helldivers 2: Die „Eiserne Demokratie“-Kriegsanleihe erscheint am 22. September",
+        "link": "https://blog.de.playstation.com/2026/09/15/helldivers-2-die-eiserne-demokratie-kriegsanleihe-erscheint-am-22-september/",
+        "pubDate": "Tue, 15 Sep 2026 13:00:00 +0000"
+      },
       {
         "title": "Die Entwickler von Marvel‘s Wolverine sprechen darüber, wie sie das Wesen von Logan eingefangen haben",
         "link": "https://blog.de.playstation.com/2026/09/14/die-entwickler-von-marvels-wolverine-sprechen-darueber-wie-sie-das-wesen-von-logan-eingefangen-haben/",
@@ -42,23 +52,26 @@
         "title": "Call of Duty: Black Ops 7 und Warzone Saison 6 starten am 17. September mit „Der Spuk“",
         "link": "https://blog.de.playstation.com/2026/09/09/call-of-duty-black-ops-7-und-warzone-saison-6-starten-am-17-september-mit-der-spuk/",
         "pubDate": "Wed, 09 Sep 2026 15:35:40 +0000"
-      },
-      {
-        "title": "PlayStation Plus-Spielekatalog für September 2026",
-        "link": "https://blog.de.playstation.com/2026/09/09/playstation-plus-spielekatalog-fuer-september-2026/",
-        "pubDate": "Wed, 09 Sep 2026 15:30:00 +0000"
-      },
-      {
-        "title": "No Man’s Sky: Das Cosmos-Update ist ab heute auf PS5 live",
-        "link": "https://blog.de.playstation.com/2026/09/09/no-mans-sky-cosmos-update-ps5/",
-        "pubDate": "Wed, 09 Sep 2026 13:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Control Resonant hat auf PS5 und PS5 Pro großes vor: Grafikmodi, DualSense-Features und Spielzeit im Detail",
+        "link": "https://blog.de.playstation.com/2026/09/15/control-resonant-hat-auf-ps5-und-ps5-pro-grosses-vor-grafikmodi-dualsense-features-und-spielzeit-im-detail/",
+        "pubDate": "Tue, 15 Sep 2026 14:00:00 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Helldivers 2: Die „Eiserne Demokratie“-Kriegsanleihe erscheint am 22. September",
+        "link": "https://blog.de.playstation.com/2026/09/15/helldivers-2-die-eiserne-demokratie-kriegsanleihe-erscheint-am-22-september/",
+        "pubDate": "Tue, 15 Sep 2026 13:00:00 +0000",
+        "category": "release"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 210743,
+    "bytes": 211841,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +122,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 177334,
+    "bytes": 178432,
     "updated": true,
     "parsed": {
       "games": [
@@ -132,10 +145,6 @@
         {
           "title": "Neue It Happens on PS5-Kampagne hebt großartige Spielmomente hervor",
           "hasImage": true
-        },
-        {
-          "title": "No Man’s Sky: Das Cosmos-Update ist ab heute auf PS5 live",
-          "hasImage": true
         }
       ],
       "range": null,
@@ -144,12 +153,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 589064
+    "bytes": 587271
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241947,
+    "bytes": 242071,
     "updated": true,
     "parsed": {
       "trial": true,
@@ -162,7 +171,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163190,
+    "bytes": 163210,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
