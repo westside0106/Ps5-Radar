@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-16T05:59:16.554Z",
+  "checkedAt": "2026-09-16T12:37:58.622Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
+        "link": "https://blog.de.playstation.com/2026/09/16/wir-stellen-die-naechste-generation-der-ps5-audio-produkte-vor-die-playstation-pulse-und-pulse-edge-wireless-headsets/",
+        "pubDate": "Wed, 16 Sep 2026 08:05:34 +0000"
+      },
       {
         "title": "Control Resonant hat auf PS5 und PS5 Pro großes vor: Grafikmodi, DualSense-Features und Spielzeit im Detail",
         "link": "https://blog.de.playstation.com/2026/09/15/control-resonant-hat-auf-ps5-und-ps5-pro-grosses-vor-grafikmodi-dualsense-features-und-spielzeit-im-detail/",
@@ -47,31 +52,20 @@
         "title": "Muramasa: Revenant Blades erscheint am 4. Februar 2027",
         "link": "https://blog.de.playstation.com/2026/09/10/muramasa-revenant-blades-release-datum/",
         "pubDate": "Thu, 10 Sep 2026 12:43:30 +0000"
-      },
-      {
-        "title": "Call of Duty: Black Ops 7 und Warzone Saison 6 starten am 17. September mit „Der Spuk“",
-        "link": "https://blog.de.playstation.com/2026/09/09/call-of-duty-black-ops-7-und-warzone-saison-6-starten-am-17-september-mit-der-spuk/",
-        "pubDate": "Wed, 09 Sep 2026 15:35:40 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Control Resonant hat auf PS5 und PS5 Pro großes vor: Grafikmodi, DualSense-Features und Spielzeit im Detail",
-        "link": "https://blog.de.playstation.com/2026/09/15/control-resonant-hat-auf-ps5-und-ps5-pro-grosses-vor-grafikmodi-dualsense-features-und-spielzeit-im-detail/",
-        "pubDate": "Tue, 15 Sep 2026 14:00:00 +0000",
+        "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
+        "link": "https://blog.de.playstation.com/2026/09/16/wir-stellen-die-naechste-generation-der-ps5-audio-produkte-vor-die-playstation-pulse-und-pulse-edge-wireless-headsets/",
+        "pubDate": "Wed, 16 Sep 2026 08:05:34 +0000",
         "category": "news"
-      },
-      {
-        "title": "Helldivers 2: Die „Eiserne Demokratie“-Kriegsanleihe erscheint am 22. September",
-        "link": "https://blog.de.playstation.com/2026/09/15/helldivers-2-die-eiserne-demokratie-kriegsanleihe-erscheint-am-22-september/",
-        "pubDate": "Tue, 15 Sep 2026 13:00:00 +0000",
-        "category": "release"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211841,
+    "bytes": 211497,
     "schedule": [
       {
         "date": "03.09.",
@@ -122,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178432,
+    "bytes": 178169,
     "updated": true,
     "parsed": {
       "games": [
@@ -153,7 +147,7 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587271
+    "bytes": 587239
   },
   "eaPlay": {
     "ok": true,

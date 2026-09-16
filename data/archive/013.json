@@ -1,7 +1,7 @@
 {
   "date": "16.09.2026",
   "edition": "AUSGABE #013",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
   "newCount": "16.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
@@ -95,6 +95,7 @@
     }
   ],
   "quickItems": [
+    "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
@@ -117,30 +118,31 @@
   "radarCheck": "Stand 16.09.2026 · 9/9 Quellen erfolgreich geprüft",
   "sourceAlerts": [
     {
-      "title": "Control Resonant hat auf PS5 und PS5 Pro großes vor: Grafikmodi, DualSense-Features und Spielzeit im Detail",
-      "url": "https://blog.de.playstation.com/2026/09/15/control-resonant-hat-auf-ps5-und-ps5-pro-grosses-vor-grafikmodi-dualsense-features-und-spielzeit-im-detail/",
+      "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
+      "url": "https://blog.de.playstation.com/2026/09/16/wir-stellen-die-naechste-generation-der-ps5-audio-produkte-vor-die-playstation-pulse-und-pulse-edge-wireless-headsets/",
       "source": "PlayStation Blog DE",
       "category": "news"
-    },
-    {
-      "title": "Helldivers 2: Die „Eiserne Demokratie“-Kriegsanleihe erscheint am 22. September",
-      "url": "https://blog.de.playstation.com/2026/09/15/helldivers-2-die-eiserne-demokratie-kriegsanleihe-erscheint-am-22-september/",
-      "source": "PlayStation Blog DE",
-      "category": "release"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
+      "url": "https://blog.de.playstation.com/2026/09/16/wir-stellen-die-naechste-generation-der-ps5-audio-produkte-vor-die-playstation-pulse-und-pulse-edge-wireless-headsets/",
+      "category": "news",
+      "score": 65
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-16T05:59:50.797Z",
+    "checkedAt": "2026-09-16T12:39:04.244Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-16T05:59:16.554Z"
+    "lastSuccessfulCheck": "2026-09-16T12:37:58.622Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-16T05:59:16.554Z",
+    "checkedAt": "2026-09-16T12:37:58.622Z",
     "errors": [],
     "sources": [
       {
@@ -373,12 +375,12 @@
       "pageUrl": "https://www.playstation.com/de-de/games/aniimo/",
       "genre": "Open-World-Kreaturensammlung-RPG · Action · Adventure",
       "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/1003/b219d5d981f2c3d7582b8639e7d2fa06e94cb52e0f98439c.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202608/0611/6b4665ec8a17fe98f263ecde37cc3f2968451f2a441245c1.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202608/0608/864099db635c002f9000618510badf69bbba04be82b7e49d.png",
         "https://i.ytimg.com/vi_webp/mK824CBh1E0/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/Y0qvtl4EzUc/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/LYbphU-J2j8/maxresdefault.webp"
+        "https://i.ytimg.com/vi_webp/LYbphU-J2j8/maxresdefault.webp",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202608/1514/84596f8e17f5f9dd660909544a6fbda6e7b44b12794c12a6.png"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=mK824CBh1E0"
     },
@@ -440,7 +442,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-16T05:59:43.014Z",
+    "checkedAt": "2026-09-16T12:38:24.644Z",
     "titles": 15,
     "fetched": 14,
     "enriched": 15,
@@ -501,7 +503,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-16T05:59:26.275Z",
+    "checkedAt": "2026-09-16T12:38:09.546Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -515,7 +517,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-16T05:59:26.369Z",
+    "checkedAt": "2026-09-16T12:38:09.649Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -528,7 +530,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-16T05:59:50.276Z",
+    "checkedAt": "2026-09-16T12:39:03.151Z",
     "verified": 4,
     "missing": [],
     "warnings": [
