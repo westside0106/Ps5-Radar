@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T12:37:53.188Z",
+  "updatedAt": "2026-09-17T15:16:23.892Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -662,25 +662,35 @@
           "radarLow": 19.99,
           "discount": null,
           "confidence": "hoch"
+        },
+        {
+          "date": "2026-09-17",
+          "code": "buy",
+          "label": "KAUFEN",
+          "previousCode": "wait",
+          "currentPrice": 19.99,
+          "radarLow": 19.99,
+          "discount": 50,
+          "confidence": "hoch"
         }
       ],
       "signal": {
         "version": 1,
-        "activeDeal": false,
+        "activeDeal": true,
         "confidence": "hoch",
         "measurements": 7,
-        "currentPrice": null,
+        "currentPrice": 19.99,
         "lastObservedPrice": 19.99,
         "lastObservedDate": "2026-09-17",
         "radarLow": 19.99,
         "deltaFromLowPct": 0,
-        "discount": null,
-        "daysRemaining": null,
-        "code": "wait",
-        "label": "WARTEN",
-        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "discount": 50,
+        "daysRemaining": 7,
+        "code": "buy",
+        "label": "KAUFEN",
+        "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
         "changedToday": true,
-        "previousCode": "buy",
+        "previousCode": "wait",
         "changedAt": "2026-09-17"
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/c4ce7fe379aa05dd3f6ecc11e8fa38dfea03d4b4a8bad73a.png"
@@ -708,26 +718,36 @@
           "radarLow": 39.99,
           "discount": 50,
           "confidence": "niedrig"
+        },
+        {
+          "date": "2026-09-17",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": "watch",
+          "currentPrice": null,
+          "radarLow": 39.99,
+          "discount": null,
+          "confidence": "niedrig"
         }
       ],
       "signal": {
         "version": 1,
-        "activeDeal": true,
+        "activeDeal": false,
         "confidence": "niedrig",
         "measurements": 1,
-        "currentPrice": 39.99,
+        "currentPrice": null,
         "lastObservedPrice": 39.99,
         "lastObservedDate": "2026-09-17",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
-        "discount": 50,
-        "daysRemaining": 7,
-        "code": "watch",
-        "label": "BEOBACHTEN",
-        "reason": "-50 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
-        "changedToday": false,
-        "previousCode": null,
-        "changedAt": null
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "changedToday": true,
+        "previousCode": "watch",
+        "changedAt": "2026-09-17"
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2716/a1a698c1912cbafeaec1744f804491492af00a1c359d5806.png"
     }
@@ -737,12 +757,12 @@
     "points": 40,
     "archiveIssuesScanned": 14,
     "signals": {
-      "buy": 2,
-      "watch": 1,
+      "buy": 3,
+      "watch": 0,
       "wait": 7
     },
-    "changedSignals": 1,
-    "newBuySignals": 0
+    "changedSignals": 2,
+    "newBuySignals": 1
   },
   "method": {
     "signalVersion": 1,

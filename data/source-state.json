@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-17T12:37:24.839Z",
+  "checkedAt": "2026-09-17T15:15:54.056Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,38 +54,7 @@
         "pubDate": "Tue, 15 Sep 2026 14:00:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
-        "link": "https://blog.de.playstation.com/2026/09/17/dune-awakening-erlebt-den-hitzigen-ueberlebenskampf-endlich-auf-ps5/",
-        "pubDate": "Thu, 17 Sep 2026 12:21:44 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
-        "link": "https://blog.de.playstation.com/2026/09/17/koop-roguelite-shape-of-dreams-erscheint-heute-auf-ps5/",
-        "pubDate": "Thu, 17 Sep 2026 12:09:31 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Final Fantasy VII Revelation: Hands-on im Whirlwind Maze",
-        "link": "https://blog.de.playstation.com/2026/09/17/final-fantasy-vii-revelation-hands-on-im-whirlwind-maze/",
-        "pubDate": "Thu, 17 Sep 2026 11:33:56 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Monster Hunter Wilds: Ascendance: Hands-on mit Araketa",
-        "link": "https://blog.de.playstation.com/2026/09/17/monster-hunter-wilds-ascendance-hands-on-mit-araketa/",
-        "pubDate": "Thu, 17 Sep 2026 11:22:12 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Mega Man: Dual Override: Proto Man im Nahkampf-Fokus",
-        "link": "https://blog.de.playstation.com/2026/09/17/mega-man-dual-override-proto-man-im-nahkampf-fokus/",
-        "pubDate": "Thu, 17 Sep 2026 11:14:24 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
@@ -171,7 +140,7 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587517
+    "bytes": 587271
   },
   "eaPlay": {
     "ok": true,
