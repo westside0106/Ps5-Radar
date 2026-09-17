@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-09-17T12:38:19.988Z",
+  "checkedAt": "2026-09-17T15:19:36.893Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1580,
+    "count": 1583,
     "views": {
       "deals": {
-        "expected": 902,
-        "observed": 902,
-        "count": 902,
+        "expected": 906,
+        "observed": 906,
+        "count": 906,
         "complete": true
       },
       "gamepass-console": {
@@ -35,13 +35,13 @@
       },
       "ubisoft-plus": {
         "expected": 118,
-        "observed": 114,
-        "count": 114,
+        "observed": 113,
+        "count": 113,
         "complete": false
       }
     },
     "errors": [
-      "ubisoft-plus: 114/118 Karten gesehen"
+      "ubisoft-plus: 113/118 Karten gesehen"
     ]
   },
   "evidence": [
@@ -51,7 +51,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-17T12:38:19.988Z",
+      "observedAt": "2026-09-17T15:19:36.893Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -62,7 +62,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-17T12:38:19.988Z",
+      "observedAt": "2026-09-17T15:19:36.893Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass für Konsole, Ziel xbox-series"
@@ -73,7 +73,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-17T12:38:19.988Z",
+      "observedAt": "2026-09-17T15:19:36.893Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -84,7 +84,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-17T12:38:19.988Z",
+      "observedAt": "2026-09-17T15:19:36.893Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = EA Play, Ziel xbox-series"
@@ -95,7 +95,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-17T12:38:19.988Z",
+      "observedAt": "2026-09-17T15:19:36.893Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -1752,6 +1752,22 @@
       "genres": [
         "Action & Abenteuer",
         "Shooter"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9pcqgh15713f",
+      "id": "9pcqgh15713f",
+      "title": "Au Revoir",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/au-revoir/9pcqgh15713f",
+      "cover": "https://store-images.s-microsoft.com/image/apps.53022.14169381362587716.6512fed4-dfc4-4c31-acbb-dc87f162c90a.82952e0b-5c74-4e81-b3a8-4998a16b08ed?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 449,
+      "regularPriceMinor": 499,
+      "genres": [
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -7553,7 +7569,7 @@
       "id": "9p7zg9mqkkln",
       "title": "Dying Light: The Beast",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/dying-light-the-beast/9p7zg9mqkkln",
-      "cover": "https://store-images.s-microsoft.com/image/apps.21999.14102787083896651.ea3348c6-a4e1-4aea-a11d-d22d013e3779.e27dea73-d37e-45c6-92e9-e957dd52e581?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.15237.14102787083896651.7a569fcf-9b62-469e-b6f8-9c09ac3f079e.75dd9484-375b-48d8-8933-daaccc33e332?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
@@ -7569,7 +7585,7 @@
       "id": "9n9gc3fxkllx",
       "title": "Dying Light: The Beast RL Definitive Edition",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/dying-light-the-beast-rl-definitive-edition/9n9gc3fxkllx",
-      "cover": "https://store-images.s-microsoft.com/image/apps.52769.13533523576817343.6d620dd0-161f-4c08-a76a-29dd58b8ca61.e1d1c2d5-7434-4685-8cba-cccaf9d28e47?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.45025.13533523576817343.9ab1ff24-ff43-46ec-8c73-deca11d42802.3f1dffde-a249-4a12-a086-3f05da9312f6?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
@@ -8768,22 +8784,6 @@
       ]
     },
     {
-      "key": "xbox:product:9msmgtkdm41v",
-      "id": "9msmgtkdm41v",
-      "title": "FARCRY 6 Game of the Year Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/farcry-6-game-of-the-year-edition/9msmgtkdm41v",
-      "cover": "https://store-images.s-microsoft.com/image/apps.26027.13825062722038903.94daf739-8cfd-4e49-8a65-231865b3a532.6fc73a02-41f0-4d6e-8402-da7ce3ef37c1?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 11999,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "ubisoft-plus:ubisoft-plus"
-      ]
-    },
-    {
       "key": "xbox:product:9nt2tqpst9s0",
       "id": "9nt2tqpst9s0",
       "title": "FARCRY 6 Gold Edition",
@@ -9465,6 +9465,23 @@
       ]
     },
     {
+      "key": "xbox:product:9n007z5m8k0p",
+      "id": "9n007z5m8k0p",
+      "title": "Flamecraft",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/flamecraft/9n007z5m8k0p",
+      "cover": "https://store-images.s-microsoft.com/image/apps.11793.13574623204640841.5eb0aa3c-0759-4365-85e0-9af6a7632a85.982b0d68-9e56-4cce-870b-a79be2fe6242?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1799,
+      "regularPriceMinor": 1999,
+      "genres": [
+        "Karte & Brett",
+        "Strategiespiele"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:bpx2dbjs60sq",
       "id": "bpx2dbjs60sq",
       "title": "FLOTTENMANÖVER",
@@ -9493,6 +9510,38 @@
       "regularPriceMinor": 999,
       "genres": [
         "Action & Abenteuer"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9pp9zhfdsz2s",
+      "id": "9pp9zhfdsz2s",
+      "title": "Flughafen-Gepäck-Simulator",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/flughafen-gepack-simulator/9pp9zhfdsz2s",
+      "cover": "https://store-images.s-microsoft.com/image/apps.25294.14332594941239183.01442a9a-73f0-46c9-b21c-f2f4b829c4d9.74d97697-1db3-46da-b2dd-4e16053f6fe8?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1599,
+      "regularPriceMinor": 1999,
+      "genres": [
+        "Simulation"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9pg1rq45461z",
+      "id": "9pg1rq45461z",
+      "title": "Flughafen-Gepäck-Simulator - Deluxe Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/flughafen-gepack-simulator-deluxe-edition/9pg1rq45461z",
+      "cover": "https://store-images.s-microsoft.com/image/apps.5389.14189569794885476.f8df8ace-28cd-46d4-bbd0-dcd5b67aabb5.f7eafbd9-f0a8-4f0f-9549-50713124d272?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1999,
+      "regularPriceMinor": 2499,
+      "genres": [
+        "Simulation"
       ],
       "services": []
     },
