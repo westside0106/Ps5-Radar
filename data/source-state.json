@@ -1,10 +1,25 @@
 {
-  "checkedAt": "2026-09-16T12:37:58.622Z",
+  "checkedAt": "2026-09-17T05:59:34.481Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
       {
-        "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
+        "title": "Mumintroll: Die Wärme des Winters erscheint am 18. September 2026",
+        "link": "https://blog.de.playstation.com/2026/09/16/mumintroll-die-waerme-des-winters-erscheint-am-18-september-2026/",
+        "pubDate": "Wed, 16 Sep 2026 17:00:00 +0000"
+      },
+      {
+        "title": "Wo Long 2: Wings of Ember erscheint am 4. März 2027, die Alpha-Demo ist ab heute auf PS5 spielbar",
+        "link": "https://blog.de.playstation.com/2026/09/16/wo-long-2-wings-of-ember-erscheint-am-4-maerz-2027-die-alpha-demo-ist-ab-heute-auf-ps5-spielbar/",
+        "pubDate": "Wed, 16 Sep 2026 14:35:36 +0000"
+      },
+      {
+        "title": "„Silent Hill: Townfall“: So erschafft PS5 den Horror",
+        "link": "https://blog.de.playstation.com/2026/09/16/silent-hill-townfall-so-erschafft-ps5-den-horror/",
+        "pubDate": "Wed, 16 Sep 2026 14:21:11 +0000"
+      },
+      {
+        "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation PULSE und PULSE Edge Wireless-Headsets",
         "link": "https://blog.de.playstation.com/2026/09/16/wir-stellen-die-naechste-generation-der-ps5-audio-produkte-vor-die-playstation-pulse-und-pulse-edge-wireless-headsets/",
         "pubDate": "Wed, 16 Sep 2026 08:05:34 +0000"
       },
@@ -37,35 +52,32 @@
         "title": "Die Entstehung von Woodo: Eine emotionale, greifbare Geschichte über Kindheitserinnerungen und echte Freundschaft",
         "link": "https://blog.de.playstation.com/2026/09/10/die-entstehung-von-woodo-eine-emotionale-greifbare-geschichte-ueber-kindheitserinnerungen-und-echte-freundschaft/",
         "pubDate": "Thu, 10 Sep 2026 14:19:51 +0000"
-      },
-      {
-        "title": "Players&#8216; Choice: Star Wars Zero Company ist das beste neue Spiel im August 2026!",
-        "link": "https://blog.de.playstation.com/2026/09/10/players-choice-stimmt-fuer-das-beste-neue-spiel-im-august-2026-ab/",
-        "pubDate": "Thu, 10 Sep 2026 13:00:29 +0000"
-      },
-      {
-        "title": "Spielt auf eure Art mit dem erweiterten Assistenz-Modus von CONTROL Resonant",
-        "link": "https://blog.de.playstation.com/2026/09/10/spielt-auf-eure-art-mit-dem-erweiterten-assistenz-modus-von-control-resonant/",
-        "pubDate": "Thu, 10 Sep 2026 12:55:36 +0000"
-      },
-      {
-        "title": "Muramasa: Revenant Blades erscheint am 4. Februar 2027",
-        "link": "https://blog.de.playstation.com/2026/09/10/muramasa-revenant-blades-release-datum/",
-        "pubDate": "Thu, 10 Sep 2026 12:43:30 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
-        "link": "https://blog.de.playstation.com/2026/09/16/wir-stellen-die-naechste-generation-der-ps5-audio-produkte-vor-die-playstation-pulse-und-pulse-edge-wireless-headsets/",
-        "pubDate": "Wed, 16 Sep 2026 08:05:34 +0000",
+        "title": "Mumintroll: Die Wärme des Winters erscheint am 18. September 2026",
+        "link": "https://blog.de.playstation.com/2026/09/16/mumintroll-die-waerme-des-winters-erscheint-am-18-september-2026/",
+        "pubDate": "Wed, 16 Sep 2026 17:00:00 +0000",
+        "category": "release"
+      },
+      {
+        "title": "Wo Long 2: Wings of Ember erscheint am 4. März 2027, die Alpha-Demo ist ab heute auf PS5 spielbar",
+        "link": "https://blog.de.playstation.com/2026/09/16/wo-long-2-wings-of-ember-erscheint-am-4-maerz-2027-die-alpha-demo-ist-ab-heute-auf-ps5-spielbar/",
+        "pubDate": "Wed, 16 Sep 2026 14:35:36 +0000",
+        "category": "release"
+      },
+      {
+        "title": "„Silent Hill: Townfall“: So erschafft PS5 den Horror",
+        "link": "https://blog.de.playstation.com/2026/09/16/silent-hill-townfall-so-erschafft-ps5-den-horror/",
+        "pubDate": "Wed, 16 Sep 2026 14:21:11 +0000",
         "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211497,
+    "bytes": 210565,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +128,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 178169,
+    "bytes": 177156,
     "updated": true,
     "parsed": {
       "games": [
@@ -139,6 +151,10 @@
         {
           "title": "Neue It Happens on PS5-Kampagne hebt großartige Spielmomente hervor",
           "hasImage": true
+        },
+        {
+          "title": "„Silent Hill: Townfall“: So erschafft PS5 den Horror",
+          "hasImage": true
         }
       ],
       "range": null,
@@ -147,7 +163,7 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587239
+    "bytes": 587271
   },
   "eaPlay": {
     "ok": true,
@@ -165,7 +181,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163210,
+    "bytes": 163204,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T12:38:24.597Z",
+  "updatedAt": "2026-09-17T05:59:58.776Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -437,6 +437,12 @@
           "price": 27.99,
           "oldPrice": 69.99,
           "discount": 60
+        },
+        {
+          "date": "2026-09-17",
+          "price": 27.99,
+          "oldPrice": 69.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Standard Edition",
@@ -467,15 +473,15 @@
       "signal": {
         "version": 1,
         "activeDeal": true,
-        "confidence": "mittel",
-        "measurements": 6,
+        "confidence": "hoch",
+        "measurements": 7,
         "currentPrice": 27.99,
         "lastObservedPrice": 27.99,
-        "lastObservedDate": "2026-09-16",
+        "lastObservedDate": "2026-09-17",
         "radarLow": 27.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 8,
+        "daysRemaining": 7,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
@@ -523,6 +529,12 @@
           "price": 39.99,
           "oldPrice": 99.99,
           "discount": 60
+        },
+        {
+          "date": "2026-09-17",
+          "price": 39.99,
+          "oldPrice": 99.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Premium Edition",
@@ -553,15 +565,15 @@
       "signal": {
         "version": 1,
         "activeDeal": true,
-        "confidence": "mittel",
-        "measurements": 6,
+        "confidence": "hoch",
+        "measurements": 7,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-09-16",
+        "lastObservedDate": "2026-09-17",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 8,
+        "daysRemaining": 7,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
@@ -609,6 +621,12 @@
           "price": 19.99,
           "oldPrice": 39.99,
           "discount": 50
+        },
+        {
+          "date": "2026-09-17",
+          "price": 19.99,
+          "oldPrice": 39.99,
+          "discount": 50
         }
       ],
       "title": "Call of Duty®: Black Ops II",
@@ -639,15 +657,15 @@
       "signal": {
         "version": 1,
         "activeDeal": true,
-        "confidence": "mittel",
-        "measurements": 6,
+        "confidence": "hoch",
+        "measurements": 7,
         "currentPrice": 19.99,
         "lastObservedPrice": 19.99,
-        "lastObservedDate": "2026-09-16",
+        "lastObservedDate": "2026-09-17",
         "radarLow": 19.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 8,
+        "daysRemaining": 7,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
@@ -660,8 +678,8 @@
   },
   "summary": {
     "titles": 9,
-    "points": 36,
-    "archiveIssuesScanned": 13,
+    "points": 39,
+    "archiveIssuesScanned": 14,
     "signals": {
       "buy": 3,
       "watch": 0,

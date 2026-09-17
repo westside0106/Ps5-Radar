@@ -1,8 +1,8 @@
 {
-  "date": "16.09.2026",
-  "edition": "AUSGABE #013",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "16.09 · LIVE",
+  "date": "17.09.2026",
+  "edition": "AUSGABE #014",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "17.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -78,10 +78,6 @@
   ],
   "releases": [
     {
-      "date": "16.09.",
-      "title": "Aniimo"
-    },
-    {
       "date": "24.09.",
       "title": "Control Resonant"
     },
@@ -95,7 +91,6 @@
     }
   ],
   "quickItems": [
-    "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
@@ -115,26 +110,31 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 16.09.2026 · 9/9 Quellen · Store 19 geprüft · 15/15 Details",
+  "radarCheck": "Stand 17.09.2026 · 9/9 Quellen · Store 19 geprüft · 14/14 Details",
   "sourceAlerts": [
     {
-      "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
-      "url": "https://blog.de.playstation.com/2026/09/16/wir-stellen-die-naechste-generation-der-ps5-audio-produkte-vor-die-playstation-pulse-und-pulse-edge-wireless-headsets/",
+      "title": "Mumintroll: Die Wärme des Winters erscheint am 18. September 2026",
+      "url": "https://blog.de.playstation.com/2026/09/16/mumintroll-die-waerme-des-winters-erscheint-am-18-september-2026/",
+      "source": "PlayStation Blog DE",
+      "category": "release"
+    },
+    {
+      "title": "Wo Long 2: Wings of Ember erscheint am 4. März 2027, die Alpha-Demo ist ab heute auf PS5 spielbar",
+      "url": "https://blog.de.playstation.com/2026/09/16/wo-long-2-wings-of-ember-erscheint-am-4-maerz-2027-die-alpha-demo-ist-ab-heute-auf-ps5-spielbar/",
+      "source": "PlayStation Blog DE",
+      "category": "release"
+    },
+    {
+      "title": "„Silent Hill: Townfall“: So erschafft PS5 den Horror",
+      "url": "https://blog.de.playstation.com/2026/09/16/silent-hill-townfall-so-erschafft-ps5-den-horror/",
       "source": "PlayStation Blog DE",
       "category": "news"
     }
   ],
-  "editorial": [
-    {
-      "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation Pulse und Pulse Edge Wireless-Headsets",
-      "url": "https://blog.de.playstation.com/2026/09/16/wir-stellen-die-naechste-generation-der-ps5-audio-produkte-vor-die-playstation-pulse-und-pulse-edge-wireless-headsets/",
-      "category": "news",
-      "score": 65
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-16T12:39:08.023Z",
+    "checkedAt": "2026-09-17T06:00:20.013Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -142,13 +142,13 @@
     "storeDiscoveryMode": "dynamic-browser",
     "storeProductsVerified": 19,
     "storeDealsSelected": 3,
-    "enrichedTitles": 15,
-    "detailTitles": 15,
+    "enrichedTitles": 14,
+    "detailTitles": 14,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-16T12:39:08.023Z"
+    "lastSuccessfulCheck": "2026-09-17T06:00:20.013Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-16T12:39:08.023Z",
+    "checkedAt": "2026-09-17T06:00:20.013Z",
     "errors": [],
     "sources": [
       {
@@ -373,23 +373,6 @@
       ],
       "storeUrl": "https://store.playstation.com/de-de/product/UP0002-PPSA34502_00-CODBO2GAME000001"
     },
-    "Aniimo": {
-      "description": "Free-to-play Open-World-RPG mit Kreaturensammlung, Erkundung, Kämpfen und unterschiedlichen Fähigkeiten der Aniimo.",
-      "publisher": "PAWPRINT INTERACTIVE ENTERTAINMENT PTE. LTD.",
-      "release": "16.09.2026",
-      "platform": "PS5",
-      "pageUrl": "https://www.playstation.com/de-de/games/aniimo/",
-      "genre": "Open-World-Kreaturensammlung-RPG · Action · Adventure",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/0611/6b4665ec8a17fe98f263ecde37cc3f2968451f2a441245c1.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/0608/864099db635c002f9000618510badf69bbba04be82b7e49d.png",
-        "https://i.ytimg.com/vi_webp/mK824CBh1E0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/Y0qvtl4EzUc/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/LYbphU-J2j8/maxresdefault.webp",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202608/1514/84596f8e17f5f9dd660909544a6fbda6e7b44b12794c12a6.png"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=mK824CBh1E0"
-    },
     "Control Resonant": {
       "description": "Nachfolger von CONTROL mit Dylan Faden in einem paranormal verzerrten Manhattan, neuen Kräften und großflächigen Zonen.",
       "publisher": "REMEDY ENTERTAINMENT LTD.",
@@ -448,10 +431,10 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-16T12:38:24.644Z",
-    "titles": 15,
-    "fetched": 14,
-    "enriched": 15,
+    "checkedAt": "2026-09-17T05:59:58.811Z",
+    "titles": 14,
+    "fetched": 13,
+    "enriched": 14,
     "warnings": []
   },
   "resolvedSources": {
@@ -509,7 +492,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-16T12:38:09.546Z",
+    "checkedAt": "2026-09-17T05:59:43.465Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -523,7 +506,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-16T12:38:09.649Z",
+    "checkedAt": "2026-09-17T05:59:43.550Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -536,7 +519,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-16T12:39:03.151Z",
+    "checkedAt": "2026-09-17T06:00:14.701Z",
     "verified": 4,
     "missing": [],
     "warnings": [
