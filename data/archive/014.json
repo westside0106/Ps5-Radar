@@ -1,7 +1,7 @@
 {
   "date": "17.09.2026",
   "edition": "AUSGABE #014",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 RELEASE HEUTE",
   "newCount": "17.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
@@ -68,10 +68,10 @@
       "image": null
     },
     {
-      "title": "Call of Duty®: Black Ops II",
-      "platform": "PS4 · PS5",
-      "price": "19,99 €",
-      "oldPrice": "39,99 €",
+      "title": "WWE 2K26 Standard Edition",
+      "platform": "PS5",
+      "price": "39,99 €",
+      "oldPrice": "79,99 €",
       "discount": "-50 %",
       "image": null
     }
@@ -91,6 +91,8 @@
     }
   ],
   "quickItems": [
+    "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
+    "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
@@ -113,36 +115,79 @@
   "radarCheck": "Stand 17.09.2026 · 9/9 Quellen erfolgreich geprüft",
   "sourceAlerts": [
     {
-      "title": "Mumintroll: Die Wärme des Winters erscheint am 18. September 2026",
-      "url": "https://blog.de.playstation.com/2026/09/16/mumintroll-die-waerme-des-winters-erscheint-am-18-september-2026/",
+      "title": "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
+      "url": "https://blog.de.playstation.com/2026/09/17/dune-awakening-erlebt-den-hitzigen-ueberlebenskampf-endlich-auf-ps5/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
+      "url": "https://blog.de.playstation.com/2026/09/17/koop-roguelite-shape-of-dreams-erscheint-heute-auf-ps5/",
       "source": "PlayStation Blog DE",
       "category": "release"
     },
     {
-      "title": "Wo Long 2: Wings of Ember erscheint am 4. März 2027, die Alpha-Demo ist ab heute auf PS5 spielbar",
-      "url": "https://blog.de.playstation.com/2026/09/16/wo-long-2-wings-of-ember-erscheint-am-4-maerz-2027-die-alpha-demo-ist-ab-heute-auf-ps5-spielbar/",
+      "title": "Final Fantasy VII Revelation: Hands-on im Whirlwind Maze",
+      "url": "https://blog.de.playstation.com/2026/09/17/final-fantasy-vii-revelation-hands-on-im-whirlwind-maze/",
       "source": "PlayStation Blog DE",
-      "category": "release"
+      "category": "news"
     },
     {
-      "title": "„Silent Hill: Townfall“: So erschafft PS5 den Horror",
-      "url": "https://blog.de.playstation.com/2026/09/16/silent-hill-townfall-so-erschafft-ps5-den-horror/",
+      "title": "Monster Hunter Wilds: Ascendance: Hands-on mit Araketa",
+      "url": "https://blog.de.playstation.com/2026/09/17/monster-hunter-wilds-ascendance-hands-on-mit-araketa/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Mega Man: Dual Override: Proto Man im Nahkampf-Fokus",
+      "url": "https://blog.de.playstation.com/2026/09/17/mega-man-dual-override-proto-man-im-nahkampf-fokus/",
       "source": "PlayStation Blog DE",
       "category": "news"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
+      "url": "https://blog.de.playstation.com/2026/09/17/koop-roguelite-shape-of-dreams-erscheint-heute-auf-ps5/",
+      "category": "release",
+      "score": 115
+    },
+    {
+      "title": "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
+      "url": "https://blog.de.playstation.com/2026/09/17/dune-awakening-erlebt-den-hitzigen-ueberlebenskampf-endlich-auf-ps5/",
+      "category": "news",
+      "score": 65
+    },
+    {
+      "title": "Final Fantasy VII Revelation: Hands-on im Whirlwind Maze",
+      "url": "https://blog.de.playstation.com/2026/09/17/final-fantasy-vii-revelation-hands-on-im-whirlwind-maze/",
+      "category": "news",
+      "score": 50
+    },
+    {
+      "title": "Monster Hunter Wilds: Ascendance: Hands-on mit Araketa",
+      "url": "https://blog.de.playstation.com/2026/09/17/monster-hunter-wilds-ascendance-hands-on-mit-araketa/",
+      "category": "news",
+      "score": 50
+    },
+    {
+      "title": "Mega Man: Dual Override: Proto Man im Nahkampf-Fokus",
+      "url": "https://blog.de.playstation.com/2026/09/17/mega-man-dual-override-proto-man-im-nahkampf-fokus/",
+      "category": "news",
+      "score": 50
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-17T06:00:15.351Z",
+    "checkedAt": "2026-09-17T12:38:11.688Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-17T05:59:34.481Z"
+    "lastSuccessfulCheck": "2026-09-17T12:37:24.839Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-17T05:59:34.481Z",
+    "checkedAt": "2026-09-17T12:37:24.839Z",
     "errors": [],
     "sources": [
       {
@@ -355,17 +400,22 @@
       ],
       "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
     },
-    "Call of Duty®: Black Ops II": {
-      "description": "Erlebt das originale Call of Duty® Black Ops II, das 2012 erstmals veröffentlicht wurde und jetzt zum ersten Mal für PS4™ und PS5® erhältlich ist. Call of Duty® Black Ops II befördert die Spieler in die nahe Zukunft. Im Kalten Krieg des 21. Jahrhunderts bringen Technologie und Waffen eine neue Generation der Kriegsführung hervor.",
-      "publisher": "ACTIVISION BLIZZARD",
-      "release": "9.7.2026",
-      "platform": "PS4 · PS5",
+    "WWE 2K26 Standard Edition": {
+      "description": "Die Show endet nie",
+      "publisher": "Take-Two",
+      "genre": "Sport",
+      "release": "12.3.2026",
+      "platform": "PS5",
+      "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
       "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1922/9c953e771b77e507dfb3a3cf079dfed4c73557ee05537981.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/e52d5dc2aebdd845acb04594a4e1f64044a8fcd1144381cf.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/c6e366fdc23b26ea31cff6727b883ce43a957e5e936e6604.png"
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/1209/71bc53b949514603757703a1767b6c20a364f90241e5cb52.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/7c1c1c824ad4a78e6c563156bfd05573fffc0edc2e3b729c.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/599e0926688415049fb015792ab762f0a840621161cd3f2f.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/95670d4e001ff0093e64d07ed44f258ba5d88a66778f479d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/57440b3be19235248f3fee53047b21c9cc67641954b99032.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/ab700572fee7600b8af42c89daf723690a61803dcaf9955e.jpg"
       ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP0002-PPSA34502_00-CODBO2GAME000001"
+      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
     },
     "Control Resonant": {
       "description": "Nachfolger von CONTROL mit Dylan Faden in einem paranormal verzerrten Manhattan, neuen Kräften und großflächigen Zonen.",
@@ -425,7 +475,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-17T05:59:58.811Z",
+    "checkedAt": "2026-09-17T12:37:53.238Z",
     "titles": 14,
     "fetched": 13,
     "enriched": 14,
@@ -458,7 +508,7 @@
     "storeDeals": {
       "Forza Horizon 5 Standard Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347",
       "Forza Horizon 5 Premium Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906",
-      "Call of Duty®: Black Ops II": "https://store.playstation.com/de-de/product/UP0002-PPSA34502_00-CODBO2GAME000001"
+      "WWE 2K26 Standard Edition": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
     }
   },
   "eaPlay": {
@@ -486,7 +536,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-17T05:59:43.465Z",
+    "checkedAt": "2026-09-17T12:37:35.688Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -495,25 +545,25 @@
       "storeDiscoveryStaticLinks": 1,
       "storeDiscoveryBrowserLinks": 24,
       "storeDiscoveryLinks": 25,
-      "storeDiscoveryVerified": 19,
+      "storeDiscoveryVerified": 18,
       "storeDiscoverySelected": 3
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-17T05:59:43.550Z",
+    "checkedAt": "2026-09-17T12:37:35.789Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
     "browserLinks": 24,
     "links": 25,
     "fetched": 25,
-    "verified": 19,
+    "verified": 18,
     "selected": 3,
     "mode": "dynamic-browser",
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-17T06:00:14.701Z",
+    "checkedAt": "2026-09-17T12:38:11.071Z",
     "verified": 4,
     "missing": [],
     "warnings": [

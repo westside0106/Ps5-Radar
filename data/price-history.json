@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T05:59:58.776Z",
+  "updatedAt": "2026-09-17T12:37:53.188Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -652,40 +652,96 @@
           "radarLow": 19.99,
           "discount": 50,
           "confidence": "niedrig"
+        },
+        {
+          "date": "2026-09-17",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": "buy",
+          "currentPrice": null,
+          "radarLow": 19.99,
+          "discount": null,
+          "confidence": "hoch"
+        }
+      ],
+      "signal": {
+        "version": 1,
+        "activeDeal": false,
+        "confidence": "hoch",
+        "measurements": 7,
+        "currentPrice": null,
+        "lastObservedPrice": 19.99,
+        "lastObservedDate": "2026-09-17",
+        "radarLow": 19.99,
+        "deltaFromLowPct": 0,
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "changedToday": true,
+        "previousCode": "buy",
+        "changedAt": "2026-09-17"
+      },
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/c4ce7fe379aa05dd3f6ecc11e8fa38dfea03d4b4a8bad73a.png"
+    },
+    "WWE 2K26 Standard Edition": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-09-17",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
+        }
+      ],
+      "title": "WWE 2K26 Standard Edition",
+      "platform": "PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000",
+      "signalHistory": [
+        {
+          "date": "2026-09-17",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 39.99,
+          "radarLow": 39.99,
+          "discount": 50,
+          "confidence": "niedrig"
         }
       ],
       "signal": {
         "version": 1,
         "activeDeal": true,
-        "confidence": "hoch",
-        "measurements": 7,
-        "currentPrice": 19.99,
-        "lastObservedPrice": 19.99,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 39.99,
+        "lastObservedPrice": 39.99,
         "lastObservedDate": "2026-09-17",
-        "radarLow": 19.99,
+        "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 50,
         "daysRemaining": 7,
-        "code": "buy",
-        "label": "KAUFEN",
-        "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-50 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
         "changedToday": false,
         "previousCode": null,
         "changedAt": null
       },
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/c4ce7fe379aa05dd3f6ecc11e8fa38dfea03d4b4a8bad73a.png"
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2716/a1a698c1912cbafeaec1744f804491492af00a1c359d5806.png"
     }
   },
   "summary": {
-    "titles": 9,
-    "points": 39,
+    "titles": 10,
+    "points": 40,
     "archiveIssuesScanned": 14,
     "signals": {
-      "buy": 3,
-      "watch": 0,
-      "wait": 6
+      "buy": 2,
+      "watch": 1,
+      "wait": 7
     },
-    "changedSignals": 0,
+    "changedSignals": 1,
     "newBuySignals": 0
   },
   "method": {

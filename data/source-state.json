@@ -1,8 +1,33 @@
 {
-  "checkedAt": "2026-09-17T05:59:34.481Z",
+  "checkedAt": "2026-09-17T12:37:24.839Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
+        "link": "https://blog.de.playstation.com/2026/09/17/dune-awakening-erlebt-den-hitzigen-ueberlebenskampf-endlich-auf-ps5/",
+        "pubDate": "Thu, 17 Sep 2026 12:21:44 +0000"
+      },
+      {
+        "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
+        "link": "https://blog.de.playstation.com/2026/09/17/koop-roguelite-shape-of-dreams-erscheint-heute-auf-ps5/",
+        "pubDate": "Thu, 17 Sep 2026 12:09:31 +0000"
+      },
+      {
+        "title": "Final Fantasy VII Revelation: Hands-on im Whirlwind Maze",
+        "link": "https://blog.de.playstation.com/2026/09/17/final-fantasy-vii-revelation-hands-on-im-whirlwind-maze/",
+        "pubDate": "Thu, 17 Sep 2026 11:33:56 +0000"
+      },
+      {
+        "title": "Monster Hunter Wilds: Ascendance: Hands-on mit Araketa",
+        "link": "https://blog.de.playstation.com/2026/09/17/monster-hunter-wilds-ascendance-hands-on-mit-araketa/",
+        "pubDate": "Thu, 17 Sep 2026 11:22:12 +0000"
+      },
+      {
+        "title": "Mega Man: Dual Override: Proto Man im Nahkampf-Fokus",
+        "link": "https://blog.de.playstation.com/2026/09/17/mega-man-dual-override-proto-man-im-nahkampf-fokus/",
+        "pubDate": "Thu, 17 Sep 2026 11:14:24 +0000"
+      },
       {
         "title": "Mumintroll: Die Wärme des Winters erscheint am 18. September 2026",
         "link": "https://blog.de.playstation.com/2026/09/16/mumintroll-die-waerme-des-winters-erscheint-am-18-september-2026/",
@@ -27,57 +52,44 @@
         "title": "Control Resonant hat auf PS5 und PS5 Pro großes vor: Grafikmodi, DualSense-Features und Spielzeit im Detail",
         "link": "https://blog.de.playstation.com/2026/09/15/control-resonant-hat-auf-ps5-und-ps5-pro-grosses-vor-grafikmodi-dualsense-features-und-spielzeit-im-detail/",
         "pubDate": "Tue, 15 Sep 2026 14:00:00 +0000"
-      },
-      {
-        "title": "Helldivers 2: Die „Eiserne Demokratie“-Kriegsanleihe erscheint am 22. September",
-        "link": "https://blog.de.playstation.com/2026/09/15/helldivers-2-die-eiserne-demokratie-kriegsanleihe-erscheint-am-22-september/",
-        "pubDate": "Tue, 15 Sep 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Die Entwickler von Marvel‘s Wolverine sprechen darüber, wie sie das Wesen von Logan eingefangen haben",
-        "link": "https://blog.de.playstation.com/2026/09/14/die-entwickler-von-marvels-wolverine-sprechen-darueber-wie-sie-das-wesen-von-logan-eingefangen-haben/",
-        "pubDate": "Mon, 14 Sep 2026 15:00:00 +0000"
-      },
-      {
-        "title": "ACE COMBAT 8: WINGS OF THEVE: Story-Trailer und Mission 7",
-        "link": "https://blog.de.playstation.com/2026/09/14/ace-combat-8-wings-of-theve-story-trailer-und-mission-7/",
-        "pubDate": "Mon, 14 Sep 2026 14:12:27 +0000"
-      },
-      {
-        "title": "Die Tokyo Game Show Angebote sind im PlayStation Store gelandet",
-        "link": "https://blog.de.playstation.com/2026/09/11/die-tokyo-game-show-angebote-sind-im-playstation-store-gelandet/",
-        "pubDate": "Fri, 11 Sep 2026 11:37:21 +0000"
-      },
-      {
-        "title": "Die Entstehung von Woodo: Eine emotionale, greifbare Geschichte über Kindheitserinnerungen und echte Freundschaft",
-        "link": "https://blog.de.playstation.com/2026/09/10/die-entstehung-von-woodo-eine-emotionale-greifbare-geschichte-ueber-kindheitserinnerungen-und-echte-freundschaft/",
-        "pubDate": "Thu, 10 Sep 2026 14:19:51 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Mumintroll: Die Wärme des Winters erscheint am 18. September 2026",
-        "link": "https://blog.de.playstation.com/2026/09/16/mumintroll-die-waerme-des-winters-erscheint-am-18-september-2026/",
-        "pubDate": "Wed, 16 Sep 2026 17:00:00 +0000",
+        "title": "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
+        "link": "https://blog.de.playstation.com/2026/09/17/dune-awakening-erlebt-den-hitzigen-ueberlebenskampf-endlich-auf-ps5/",
+        "pubDate": "Thu, 17 Sep 2026 12:21:44 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
+        "link": "https://blog.de.playstation.com/2026/09/17/koop-roguelite-shape-of-dreams-erscheint-heute-auf-ps5/",
+        "pubDate": "Thu, 17 Sep 2026 12:09:31 +0000",
         "category": "release"
       },
       {
-        "title": "Wo Long 2: Wings of Ember erscheint am 4. März 2027, die Alpha-Demo ist ab heute auf PS5 spielbar",
-        "link": "https://blog.de.playstation.com/2026/09/16/wo-long-2-wings-of-ember-erscheint-am-4-maerz-2027-die-alpha-demo-ist-ab-heute-auf-ps5-spielbar/",
-        "pubDate": "Wed, 16 Sep 2026 14:35:36 +0000",
-        "category": "release"
+        "title": "Final Fantasy VII Revelation: Hands-on im Whirlwind Maze",
+        "link": "https://blog.de.playstation.com/2026/09/17/final-fantasy-vii-revelation-hands-on-im-whirlwind-maze/",
+        "pubDate": "Thu, 17 Sep 2026 11:33:56 +0000",
+        "category": "news"
       },
       {
-        "title": "„Silent Hill: Townfall“: So erschafft PS5 den Horror",
-        "link": "https://blog.de.playstation.com/2026/09/16/silent-hill-townfall-so-erschafft-ps5-den-horror/",
-        "pubDate": "Wed, 16 Sep 2026 14:21:11 +0000",
+        "title": "Monster Hunter Wilds: Ascendance: Hands-on mit Araketa",
+        "link": "https://blog.de.playstation.com/2026/09/17/monster-hunter-wilds-ascendance-hands-on-mit-araketa/",
+        "pubDate": "Thu, 17 Sep 2026 11:22:12 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Mega Man: Dual Override: Proto Man im Nahkampf-Fokus",
+        "link": "https://blog.de.playstation.com/2026/09/17/mega-man-dual-override-proto-man-im-nahkampf-fokus/",
+        "pubDate": "Thu, 17 Sep 2026 11:14:24 +0000",
         "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 210565,
+    "bytes": 209622,
     "schedule": [
       {
         "date": "03.09.",
@@ -128,7 +140,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 177156,
+    "bytes": 176213,
     "updated": true,
     "parsed": {
       "games": [
@@ -149,10 +161,6 @@
           "hasImage": true
         },
         {
-          "title": "Neue It Happens on PS5-Kampagne hebt großartige Spielmomente hervor",
-          "hasImage": true
-        },
-        {
           "title": "„Silent Hill: Townfall“: So erschafft PS5 den Horror",
           "hasImage": true
         }
@@ -163,7 +171,7 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587271
+    "bytes": 587517
   },
   "eaPlay": {
     "ok": true,
