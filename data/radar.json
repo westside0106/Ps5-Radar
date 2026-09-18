@@ -1,8 +1,8 @@
 {
-  "date": "17.09.2026",
-  "edition": "AUSGABE #014",
+  "date": "18.09.2026",
+  "edition": "AUSGABE #015",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "17.09 · LIVE",
+  "newCount": "18.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -110,12 +110,12 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 17.09.2026 · 9/9 Quellen · Store 19 geprüft · 14/14 Details",
+  "radarCheck": "Stand 18.09.2026 · 9/9 Quellen · Store 19 geprüft · 14/14 Details",
   "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-17T15:17:05.856Z",
+    "checkedAt": "2026-09-18T06:02:41.200Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -126,10 +126,10 @@
     "enrichedTitles": 14,
     "detailTitles": 14,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-17T15:17:05.856Z"
+    "lastSuccessfulCheck": "2026-09-18T06:02:41.200Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-17T15:17:05.856Z",
+    "checkedAt": "2026-09-18T06:02:41.200Z",
     "errors": [],
     "sources": [
       {
@@ -408,11 +408,11 @@
         "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-01-en-13jul26",
         "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-FUT-04-en-13jul26"
       ],
-      "trailerUrl": "https://www.youtube.com/watch?v=r61Qt1vkFbU"
+      "trailerUrl": "https://www.youtube.com/watch?v=u_5zUU1JCHo"
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-17T15:16:23.977Z",
+    "checkedAt": "2026-09-18T06:02:21.849Z",
     "titles": 14,
     "fetched": 13,
     "enriched": 14,
@@ -473,7 +473,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-17T15:16:07.762Z",
+    "checkedAt": "2026-09-18T06:02:04.410Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -487,7 +487,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-17T15:16:07.876Z",
+    "checkedAt": "2026-09-18T06:02:04.504Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -500,7 +500,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-17T15:17:01.555Z",
+    "checkedAt": "2026-09-18T06:02:35.692Z",
     "verified": 4,
     "missing": [],
     "warnings": [

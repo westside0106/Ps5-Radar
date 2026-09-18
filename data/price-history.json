@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T15:16:23.892Z",
+  "updatedAt": "2026-09-18T06:02:21.809Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -443,6 +443,12 @@
           "price": 27.99,
           "oldPrice": 69.99,
           "discount": 60
+        },
+        {
+          "date": "2026-09-18",
+          "price": 27.99,
+          "oldPrice": 69.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Standard Edition",
@@ -474,14 +480,14 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "hoch",
-        "measurements": 7,
+        "measurements": 8,
         "currentPrice": 27.99,
         "lastObservedPrice": 27.99,
-        "lastObservedDate": "2026-09-17",
+        "lastObservedDate": "2026-09-18",
         "radarLow": 27.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 7,
+        "daysRemaining": 6,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
@@ -535,6 +541,12 @@
           "price": 39.99,
           "oldPrice": 99.99,
           "discount": 60
+        },
+        {
+          "date": "2026-09-18",
+          "price": 39.99,
+          "oldPrice": 99.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Premium Edition",
@@ -566,14 +578,14 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "hoch",
-        "measurements": 7,
+        "measurements": 8,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-09-17",
+        "lastObservedDate": "2026-09-18",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 7,
+        "daysRemaining": 6,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
@@ -624,6 +636,12 @@
         },
         {
           "date": "2026-09-17",
+          "price": 19.99,
+          "oldPrice": 39.99,
+          "discount": 50
+        },
+        {
+          "date": "2026-09-18",
           "price": 19.99,
           "oldPrice": 39.99,
           "discount": 50
@@ -678,20 +696,20 @@
         "version": 1,
         "activeDeal": true,
         "confidence": "hoch",
-        "measurements": 7,
+        "measurements": 8,
         "currentPrice": 19.99,
         "lastObservedPrice": 19.99,
-        "lastObservedDate": "2026-09-17",
+        "lastObservedDate": "2026-09-18",
         "radarLow": 19.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 7,
+        "daysRemaining": 6,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
-        "changedToday": true,
-        "previousCode": "wait",
-        "changedAt": "2026-09-17"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/c4ce7fe379aa05dd3f6ecc11e8fa38dfea03d4b4a8bad73a.png"
     },
@@ -745,24 +763,24 @@
         "code": "wait",
         "label": "WARTEN",
         "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-09-17"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2716/a1a698c1912cbafeaec1744f804491492af00a1c359d5806.png"
     }
   },
   "summary": {
     "titles": 10,
-    "points": 40,
-    "archiveIssuesScanned": 14,
+    "points": 43,
+    "archiveIssuesScanned": 15,
     "signals": {
       "buy": 3,
       "watch": 0,
       "wait": 7
     },
-    "changedSignals": 2,
-    "newBuySignals": 1
+    "changedSignals": 0,
+    "newBuySignals": 0
   },
   "method": {
     "signalVersion": 1,
