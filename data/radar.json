@@ -1,8 +1,8 @@
 {
-  "date": "18.09.2026",
-  "edition": "AUSGABE #015",
+  "date": "19.09.2026",
+  "edition": "AUSGABE #016",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "18.09 · LIVE",
+  "newCount": "19.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -110,12 +110,19 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 18.09.2026 · 9/9 Quellen · Store 19 geprüft · 14/14 Details",
-  "sourceAlerts": [],
+  "radarCheck": "Stand 19.09.2026 · 9/9 Quellen · Store 19 geprüft · 14/14 Details",
+  "sourceAlerts": [
+    {
+      "title": "Control Resonant im Hands-on: Wie Remedy seinen paranatürlichen Horror-Nachfolger größer und seltsamer macht",
+      "url": "https://blog.de.playstation.com/2026/09/18/control-resonant-im-hands-on-wie-remedy-seinen-paranatuerlichen-horror-nachfolger-groesser-und-seltsamer-macht/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    }
+  ],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-18T12:16:33.220Z",
+    "checkedAt": "2026-09-19T06:03:46.867Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -126,10 +133,10 @@
     "enrichedTitles": 14,
     "detailTitles": 14,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-18T12:16:33.220Z"
+    "lastSuccessfulCheck": "2026-09-19T06:03:46.867Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-18T12:16:33.220Z",
+    "checkedAt": "2026-09-19T06:03:46.867Z",
     "errors": [],
     "sources": [
       {
@@ -412,7 +419,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-18T12:16:05.990Z",
+    "checkedAt": "2026-09-19T06:03:34.098Z",
     "titles": 14,
     "fetched": 13,
     "enriched": 14,
@@ -450,10 +457,7 @@
   },
   "eaPlay": {
     "title": "FC™ 27 · 10h Trial ab 18.09.",
-    "trial": {
-      "hours": 10,
-      "date": "18.09."
-    },
+    "trial": null,
     "items": [
       "10 % auf digitale EA-Käufe",
       "Monatliche Mitgliederbelohnungen",
@@ -473,7 +477,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-18T12:15:47.141Z",
+    "checkedAt": "2026-09-19T06:03:18.763Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -487,7 +491,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-18T12:15:48.239Z",
+    "checkedAt": "2026-09-19T06:03:18.867Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -500,7 +504,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-18T12:16:29.538Z",
+    "checkedAt": "2026-09-19T06:03:42.344Z",
     "verified": 4,
     "missing": [],
     "warnings": [

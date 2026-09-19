@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-18T12:15:40.282Z",
+  "checkedAt": "2026-09-19T06:03:10.378Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Control Resonant im Hands-on: Wie Remedy seinen paranatürlichen Horror-Nachfolger größer und seltsamer macht",
+        "link": "https://blog.de.playstation.com/2026/09/18/control-resonant-im-hands-on-wie-remedy-seinen-paranatuerlichen-horror-nachfolger-groesser-und-seltsamer-macht/",
+        "pubDate": "Fri, 18 Sep 2026 13:00:00 +0000"
+      },
       {
         "title": "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
         "link": "https://blog.de.playstation.com/2026/09/17/dune-awakening-erlebt-den-hitzigen-ueberlebenskampf-endlich-auf-ps5/",
@@ -47,18 +52,20 @@
         "title": "Nächste Generation der PS5-Audio-Produkte: Die PlayStation PULSE und PULSE Edge Wireless-Headsets",
         "link": "https://blog.de.playstation.com/2026/09/16/wir-stellen-die-naechste-generation-der-ps5-audio-produkte-vor-die-playstation-pulse-und-pulse-edge-wireless-headsets/",
         "pubDate": "Wed, 16 Sep 2026 08:05:34 +0000"
-      },
-      {
-        "title": "Control Resonant hat auf PS5 und PS5 Pro großes vor: Grafikmodi, DualSense-Features und Spielzeit im Detail",
-        "link": "https://blog.de.playstation.com/2026/09/15/control-resonant-hat-auf-ps5-und-ps5-pro-grosses-vor-grafikmodi-dualsense-features-und-spielzeit-im-detail/",
-        "pubDate": "Tue, 15 Sep 2026 14:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Control Resonant im Hands-on: Wie Remedy seinen paranatürlichen Horror-Nachfolger größer und seltsamer macht",
+        "link": "https://blog.de.playstation.com/2026/09/18/control-resonant-im-hands-on-wie-remedy-seinen-paranatuerlichen-horror-nachfolger-groesser-und-seltsamer-macht/",
+        "pubDate": "Fri, 18 Sep 2026 13:00:00 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 207420,
+    "bytes": 208096,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 174011,
+    "bytes": 174687,
     "updated": true,
     "parsed": {
       "games": [
@@ -144,15 +151,15 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587271
+    "bytes": 587279
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242070,
+    "bytes": 241899,
     "updated": true,
     "parsed": {
-      "trial": true,
+      "trial": false,
       "items": [
         "10 % auf digitale EA-Käufe",
         "Monatliche Mitgliederbelohnungen",
@@ -162,7 +169,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163210,
+    "bytes": 163234,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
