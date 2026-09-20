@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-09-19T11:58:27.666Z",
+  "checkedAt": "2026-09-20T12:22:42.453Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1546,
+    "count": 1545,
     "views": {
       "deals": {
-        "expected": 867,
-        "observed": 867,
-        "count": 867,
+        "expected": 866,
+        "observed": 866,
+        "count": 866,
         "complete": true
       },
       "gamepass-console": {
@@ -35,13 +35,13 @@
       },
       "ubisoft-plus": {
         "expected": 116,
-        "observed": 111,
-        "count": 111,
+        "observed": 112,
+        "count": 112,
         "complete": false
       }
     },
     "errors": [
-      "ubisoft-plus: 111/116 Karten gesehen"
+      "ubisoft-plus: 112/116 Karten gesehen"
     ]
   },
   "evidence": [
@@ -51,7 +51,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-19T11:58:27.666Z",
+      "observedAt": "2026-09-20T12:22:42.453Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -62,7 +62,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-19T11:58:27.666Z",
+      "observedAt": "2026-09-20T12:22:42.453Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass für Konsole, Ziel xbox-series"
@@ -73,7 +73,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-19T11:58:27.666Z",
+      "observedAt": "2026-09-20T12:22:42.453Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -84,7 +84,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-19T11:58:27.666Z",
+      "observedAt": "2026-09-20T12:22:42.453Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = EA Play, Ziel xbox-series"
@@ -95,7 +95,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-19T11:58:27.666Z",
+      "observedAt": "2026-09-20T12:22:42.453Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -9661,7 +9661,7 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 629,
+      "priceMinor": 729,
       "regularPriceMinor": 1299,
       "genres": [
         "Rennen & Fliegen",
@@ -17697,6 +17697,7 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
+        "ubisoft-plus:ubisoft-plus",
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
@@ -22925,25 +22926,6 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9p55wv3vpzlz",
-      "id": "9p55wv3vpzlz",
-      "title": "The Mystery of Eldham",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-mystery-of-eldham/9p55wv3vpzlz",
-      "cover": "https://store-images.s-microsoft.com/image/apps.22060.14575347821267746.0ee9989b-6d73-44c8-b287-d25c12c21e8b.8b694982-7aea-4f5a-a414-5d50201f8bb7?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 318,
-      "regularPriceMinor": 909,
-      "genres": [
-        "Action & Abenteuer",
-        "Andere",
-        "Familie & Kinder",
-        "Rollenspiele"
       ],
       "services": []
     },
