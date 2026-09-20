@@ -115,15 +115,15 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-20T06:03:32.951Z",
+    "checkedAt": "2026-09-20T12:26:18.337Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-20T06:02:43.509Z"
+    "lastSuccessfulCheck": "2026-09-20T12:25:44.577Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-20T06:02:43.509Z",
+    "checkedAt": "2026-09-20T12:25:44.577Z",
     "errors": [],
     "sources": [
       {
@@ -406,7 +406,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-20T06:03:19.871Z",
+    "checkedAt": "2026-09-20T12:26:09.585Z",
     "titles": 14,
     "fetched": 13,
     "enriched": 14,
@@ -464,7 +464,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-20T06:03:00.463Z",
+    "checkedAt": "2026-09-20T12:25:52.401Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -478,7 +478,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-20T06:03:00.560Z",
+    "checkedAt": "2026-09-20T12:25:53.030Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -491,7 +491,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-20T06:03:32.561Z",
+    "checkedAt": "2026-09-20T12:26:17.611Z",
     "verified": 4,
     "missing": [],
     "warnings": [
