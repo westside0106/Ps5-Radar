@@ -1,7 +1,7 @@
 {
   "date": "21.09.2026",
   "edition": "AUSGABE #018",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 RELEASE HEUTE",
   "newCount": "21.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
@@ -91,6 +91,8 @@
     }
   ],
   "quickItems": [
+    "Lisa x PlayStation erscheint diesen Oktober: Erster Blick auf den DualSense Wireless-Controller – Lisa Limited Edition",
+    "EA Sports NHL 27: Jedes Team bekommt seine eigene Identität zurück",
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
@@ -104,26 +106,74 @@
     "The Play List"
   ],
   "ubisoftTitle": "Ubisoft+ Classics",
-  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat.",
   "ubisoftItems": [
-    "Ubisoft+ Classics",
-    "PS Plus Extra",
-    "PS Plus Premium"
+    "Ubisoft+ Classics"
   ],
-  "radarCheck": "Stand 21.09.2026 · 9/9 Quellen erfolgreich geprüft",
-  "sourceAlerts": [],
-  "editorial": [],
+  "radarCheck": "Stand 21.09.2026 · 8/9 Quellen · 1 Warnung(en)",
+  "sourceAlerts": [
+    {
+      "title": "EA Sports NHL 27: Jedes Team bekommt seine eigene Identität zurück",
+      "url": "https://blog.de.playstation.com/2026/09/21/ea-sports-nhl-27-jedes-team-bekommt-seine-eigene-identitaet-zurueck/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Bus Simulator 27: Erstmals mit Reisebussen quer durch Felicia Bay",
+      "url": "https://blog.de.playstation.com/2026/09/21/bus-simulator-27-erstmals-mit-reisebussen-quer-durch-felicia-bay/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Lisa x PlayStation erscheint diesen Oktober: Erster Blick auf den DualSense Wireless-Controller – Lisa Limited Edition",
+      "url": "https://blog.de.playstation.com/2026/09/21/lisa-x-playstation-erscheint-diesen-oktober-erster-blick-auf-den-dualsense-wireless-controller-lisa-limited-edition/",
+      "source": "PlayStation Blog DE",
+      "category": "release"
+    },
+    {
+      "title": "Silent Hill: Townfall – 9 Aspekte, die sich durch die Ego-Perspektive an der klassischen Horrorformel ändern",
+      "url": "https://blog.de.playstation.com/2026/09/21/silent-hill-townfall-9-aspekte-die-sich-durch-die-ego-perspektive-an-der-klassischen-horrorformel-aendern/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    }
+  ],
+  "editorial": [
+    {
+      "title": "Lisa x PlayStation erscheint diesen Oktober: Erster Blick auf den DualSense Wireless-Controller – Lisa Limited Edition",
+      "url": "https://blog.de.playstation.com/2026/09/21/lisa-x-playstation-erscheint-diesen-oktober-erster-blick-auf-den-dualsense-wireless-controller-lisa-limited-edition/",
+      "category": "release",
+      "score": 100
+    },
+    {
+      "title": "EA Sports NHL 27: Jedes Team bekommt seine eigene Identität zurück",
+      "url": "https://blog.de.playstation.com/2026/09/21/ea-sports-nhl-27-jedes-team-bekommt-seine-eigene-identitaet-zurueck/",
+      "category": "news",
+      "score": 50
+    },
+    {
+      "title": "Bus Simulator 27: Erstmals mit Reisebussen quer durch Felicia Bay",
+      "url": "https://blog.de.playstation.com/2026/09/21/bus-simulator-27-erstmals-mit-reisebussen-quer-durch-felicia-bay/",
+      "category": "news",
+      "score": 50
+    },
+    {
+      "title": "Silent Hill: Townfall – 9 Aspekte, die sich durch die Ego-Perspektive an der klassischen Horrorformel ändern",
+      "url": "https://blog.de.playstation.com/2026/09/21/silent-hill-townfall-9-aspekte-die-sich-durch-die-ego-perspektive-an-der-klassischen-horrorformel-aendern/",
+      "category": "news",
+      "score": 50
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-21T06:03:39.993Z",
-    "okSources": 9,
+    "checkedAt": "2026-09-21T14:14:53.006Z",
+    "okSources": 8,
     "totalSources": 9,
-    "failedSources": 0,
+    "failedSources": 1,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-21T06:02:53.336Z"
+    "lastSuccessfulCheck": "2026-09-21T06:03:42.426Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-21T06:02:53.336Z",
+    "checkedAt": "2026-09-21T14:14:18.879Z",
     "errors": [],
     "sources": [
       {
@@ -140,7 +190,7 @@
       },
       {
         "name": "PS Plus aktuell",
-        "ok": true
+        "ok": false
       },
       {
         "name": "EA Play",
@@ -406,11 +456,21 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-21T06:03:16.889Z",
+    "checkedAt": "2026-09-21T14:14:45.547Z",
     "titles": 14,
-    "fetched": 13,
+    "fetched": 4,
     "enriched": 14,
-    "warnings": []
+    "warnings": [
+      "Onimusha: Way of the Sword: 403 https://www.playstation.com/de-de/games/onimusha-way-of-the-sword/",
+      "NBA 2K27: 403 https://www.playstation.com/de-de/games/nba-2k/",
+      "The Blood of Dawnwalker: 403 https://www.playstation.com/de-de/games/the-blood-of-dawnwalker/",
+      "Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
+      "MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
+      "Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
+      "Control Resonant: 403 https://www.playstation.com/de-de/games/control-resonant/",
+      "Silent Hill: Townfall: 403 https://www.playstation.com/de-de/games/silent-hill-townfall/",
+      "EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
+    ]
   },
   "resolvedSources": {
     "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
@@ -456,15 +516,13 @@
     "title": "Ubisoft+ Classics",
     "price": "7,99 €",
     "items": [
-      "Ubisoft+ Classics",
-      "PS Plus Extra",
-      "PS Plus Premium"
+      "Ubisoft+ Classics"
     ],
     "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-21T06:03:02.089Z",
+    "checkedAt": "2026-09-21T14:14:26.459Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -478,7 +536,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-21T06:03:02.161Z",
+    "checkedAt": "2026-09-21T14:14:26.633Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -491,7 +549,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-21T06:03:39.377Z",
+    "checkedAt": "2026-09-21T14:14:52.315Z",
     "verified": 4,
     "missing": [],
     "warnings": [
