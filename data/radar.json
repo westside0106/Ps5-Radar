@@ -1,8 +1,8 @@
 {
-  "date": "20.09.2026",
-  "edition": "AUSGABE #017",
+  "date": "21.09.2026",
+  "edition": "AUSGABE #018",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "20.09 · LIVE",
+  "newCount": "21.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -110,12 +110,12 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 20.09.2026 · 9/9 Quellen · Store 19 geprüft · 14/14 Details",
+  "radarCheck": "Stand 21.09.2026 · 9/9 Quellen · Store 19 geprüft · 14/14 Details",
   "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-20T12:26:21.071Z",
+    "checkedAt": "2026-09-21T06:03:42.426Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -126,10 +126,10 @@
     "enrichedTitles": 14,
     "detailTitles": 14,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-20T12:26:21.071Z"
+    "lastSuccessfulCheck": "2026-09-21T06:03:42.426Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-20T12:26:21.071Z",
+    "checkedAt": "2026-09-21T06:03:42.426Z",
     "errors": [],
     "sources": [
       {
@@ -412,7 +412,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-20T12:26:09.585Z",
+    "checkedAt": "2026-09-21T06:03:16.889Z",
     "titles": 14,
     "fetched": 13,
     "enriched": 14,
@@ -470,7 +470,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-20T12:25:52.401Z",
+    "checkedAt": "2026-09-21T06:03:02.089Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -484,7 +484,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-20T12:25:53.030Z",
+    "checkedAt": "2026-09-21T06:03:02.161Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -497,7 +497,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-20T12:26:17.611Z",
+    "checkedAt": "2026-09-21T06:03:39.377Z",
     "verified": 4,
     "missing": [],
     "warnings": [
