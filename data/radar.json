@@ -1,8 +1,8 @@
 {
-  "date": "22.09.2026",
-  "edition": "AUSGABE #019",
+  "date": "23.09.2026",
+  "edition": "AUSGABE #020",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "22.09 · LIVE",
+  "newCount": "23.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -110,12 +110,19 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 22.09.2026 · 9/9 Quellen · Store 19 geprüft · 14/14 Details",
-  "sourceAlerts": [],
+  "radarCheck": "Stand 23.09.2026 · 9/9 Quellen · Store 19 geprüft · 14/14 Details",
+  "sourceAlerts": [
+    {
+      "title": "Fading Echo taucht heute auf PS5 ab",
+      "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    }
+  ],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-22T12:39:30.464Z",
+    "checkedAt": "2026-09-23T06:03:50.613Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -126,10 +133,10 @@
     "enrichedTitles": 14,
     "detailTitles": 14,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-22T12:39:30.464Z"
+    "lastSuccessfulCheck": "2026-09-23T06:03:50.613Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-22T12:39:30.464Z",
+    "checkedAt": "2026-09-23T06:03:50.613Z",
     "errors": [],
     "sources": [
       {
@@ -412,7 +419,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-22T12:39:17.637Z",
+    "checkedAt": "2026-09-23T06:03:30.984Z",
     "titles": 14,
     "fetched": 13,
     "enriched": 14,
@@ -470,7 +477,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-22T12:39:02.931Z",
+    "checkedAt": "2026-09-23T06:03:16.106Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -484,7 +491,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-22T12:39:03.028Z",
+    "checkedAt": "2026-09-23T06:03:16.201Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -497,7 +504,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-22T12:39:26.234Z",
+    "checkedAt": "2026-09-23T06:03:45.996Z",
     "verified": 4,
     "missing": [],
     "warnings": [

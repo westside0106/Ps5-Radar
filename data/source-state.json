@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-22T12:38:54.937Z",
+  "checkedAt": "2026-09-23T06:02:55.199Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Fading Echo taucht heute auf PS5 ab",
+        "link": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
+        "pubDate": "Tue, 22 Sep 2026 15:00:00 +0000"
+      },
       {
         "title": "EA Sports NHL 27: Jedes Team bekommt seine eigene Identität zurück",
         "link": "https://blog.de.playstation.com/2026/09/21/ea-sports-nhl-27-jedes-team-bekommt-seine-eigene-identitaet-zurueck/",
@@ -47,18 +52,20 @@
         "title": "Monster Hunter Wilds: Ascendance: Hands-on mit Araketa",
         "link": "https://blog.de.playstation.com/2026/09/17/monster-hunter-wilds-ascendance-hands-on-mit-araketa/",
         "pubDate": "Thu, 17 Sep 2026 11:22:12 +0000"
-      },
-      {
-        "title": "Mega Man: Dual Override: Proto Man im Nahkampf-Fokus",
-        "link": "https://blog.de.playstation.com/2026/09/17/mega-man-dual-override-proto-man-im-nahkampf-fokus/",
-        "pubDate": "Thu, 17 Sep 2026 11:14:24 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Fading Echo taucht heute auf PS5 ab",
+        "link": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
+        "pubDate": "Tue, 22 Sep 2026 15:00:00 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 210725,
+    "bytes": 211090,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 177316,
+    "bytes": 177681,
     "updated": true,
     "parsed": {
       "games": [
@@ -130,11 +137,11 @@
           "hasImage": true
         },
         {
-          "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
+          "title": "Fading Echo taucht heute auf PS5 ab",
           "hasImage": true
         },
         {
-          "title": "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
+          "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
           "hasImage": true
         }
       ],
@@ -149,7 +156,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242021,
+    "bytes": 242018,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -162,7 +169,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163253,
+    "bytes": 163239,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
