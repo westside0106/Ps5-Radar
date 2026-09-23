@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-23T06:02:55.199Z",
+  "checkedAt": "2026-09-23T12:46:49.000Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,18 +54,11 @@
         "pubDate": "Thu, 17 Sep 2026 11:22:12 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Fading Echo taucht heute auf PS5 ab",
-        "link": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
-        "pubDate": "Tue, 22 Sep 2026 15:00:00 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211090,
+    "bytes": 211110,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 177681,
+    "bytes": 177701,
     "updated": true,
     "parsed": {
       "games": [
@@ -156,7 +149,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242018,
+    "bytes": 241899,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -169,7 +162,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163239,
+    "bytes": 163231,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
