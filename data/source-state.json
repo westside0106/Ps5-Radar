@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-24T05:58:13.433Z",
+  "checkedAt": "2026-09-24T12:45:16.982Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Silent Hill: Die Geschichte einer Horror-Legende auf PlayStation, pünktlich zum Launch von Townfall",
+        "link": "https://blog.de.playstation.com/2026/09/24/silent-hill-die-geschichte-einer-horror-legende-auf-playstation-puenktlich-zum-launch-von-townfall/",
+        "pubDate": "Thu, 24 Sep 2026 10:51:39 +0000"
+      },
       {
         "title": "Fading Echo taucht heute auf PS5 ab",
         "link": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
@@ -47,14 +52,16 @@
         "title": "Final Fantasy VII Revelation: Hands-on im Whirlwind Maze",
         "link": "https://blog.de.playstation.com/2026/09/17/final-fantasy-vii-revelation-hands-on-im-whirlwind-maze/",
         "pubDate": "Thu, 17 Sep 2026 11:33:56 +0000"
-      },
-      {
-        "title": "Monster Hunter Wilds: Ascendance: Hands-on mit Araketa",
-        "link": "https://blog.de.playstation.com/2026/09/17/monster-hunter-wilds-ascendance-hands-on-mit-araketa/",
-        "pubDate": "Thu, 17 Sep 2026 11:22:12 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Silent Hill: Die Geschichte einer Horror-Legende auf PlayStation, pünktlich zum Launch von Townfall",
+        "link": "https://blog.de.playstation.com/2026/09/24/silent-hill-die-geschichte-einer-horror-legende-auf-playstation-puenktlich-zum-launch-von-townfall/",
+        "pubDate": "Thu, 24 Sep 2026 10:51:39 +0000",
+        "category": "release"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
@@ -149,7 +156,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242022,
+    "bytes": 242021,
     "updated": true,
     "parsed": {
       "trial": false,
