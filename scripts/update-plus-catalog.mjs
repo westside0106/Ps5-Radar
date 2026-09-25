@@ -6,9 +6,9 @@ const previous = await fs.readFile(output,'utf8').then(JSON.parse).catch(() => e
 const raw = { checkedAt:new Date().toISOString(), sourceUrl:CATALOG_SOURCE, results:{}, errors:[] };
 const tags = { genres:{}, platforms:{} };
 const browser = await chromium.launch({headless:true});
+const pageOptions = {viewport:{width:1280,height:900},locale:'de-DE',timezoneId:'Europe/Berlin'};
 const cardSelector = '.plus-results a[class*="card_link"]';
 const countSelector = '.plus-results [class*="pagination_count"]';
-// Die Seite rendert Filterleiste und Zaehler doppelt (Desktop- und Mobilvariante).
 async function dismissConsent(page) {
   await page.locator('#onetrust-reject-all-handler').first().waitFor({state:'visible',timeout:20000}).catch(()=>{});
   for (const id of ['#onetrust-reject-all-handler','#onetrust-accept-btn-handler']) {
@@ -50,9 +50,6 @@ async function stableReading(page) {
   return null;
 }
 async function filteredCount(page, total) {
-  // Der Zaehler haengt dem Filterwechsel nach und laeuft dabei ueber die
-  // ungefilterte Gesamtzahl. Ein Wert gilt daher erst als Kategoriezahl, wenn
-  // er stabil ist UND sich von der Gesamtzahl unterscheidet.
   for (let attempt = 0; attempt < 12; attempt++) {
     const value = await stableReading(page);
     if (Number.isInteger(value) && value !== total) return value;
@@ -61,12 +58,16 @@ async function filteredCount(page, total) {
   return null;
 }
 async function currentSelection(page, field, prefix) {
-  const text = (await page.locator(`#select-button-${field}`).first().innerText()).replace(/\s+/g,' ').trim();
-  return text.replace(new RegExp(`^${prefix}\\s*`,'i'),'').trim();
+  const buttons=page.locator(`#select-button-${field}`);
+  for (let index=0; index<await buttons.count(); index++) {
+    const button=buttons.nth(index);
+    if (!await button.isVisible().catch(()=>false)) continue;
+    const text=(await button.innerText()).replace(/\s+/g,' ').trim();
+    return text.replace(new RegExp(`^${prefix}\\s*`,'i'),'').trim();
+  }
+  throw new Error(`Sichtbares Auswahlfeld ${field} nicht gefunden`);
 }
 async function ensureFirstPage(page) {
-  // Nach der Paginierung einer grossen Kategorie bleibt die Seitenposition
-  // stehen; die naechste Kategorie startet sonst nicht auf Seite 1.
   const current = page.locator('.plus-results [aria-current="page"]').first();
   if (!await current.count()) return;
   if ((await current.innerText().catch(() => '')).trim() === '1') return;
@@ -80,17 +81,21 @@ async function ensureFirstPage(page) {
     return Boolean(card) && card.getAttribute('href') !== previous;
   },[cardSelector,before],{timeout:20000}).catch(() => {});
 }
-async function resetField(page, field, prefix) {
-  // Anders als der Spieltyp-Filter schalten Genre und Plattform bei erneutem
-  // Klick nicht ab; sie brauchen die neutrale Option.
-  if (await currentSelection(page, field, prefix) === 'Beliebig') return;
-  await selectOption(page, field, 'Beliebig');
-  const rest = await currentSelection(page, field, prefix);
-  if (rest !== 'Beliebig') throw new Error(`bleibt auf "${rest}"`);
+async function openCleanPage() {
+  const page=await browser.newPage(pageOptions);
+  try {
+    await page.goto(CATALOG_SOURCE,{waitUntil:'domcontentloaded',timeout:60000});
+    await dismissConsent(page);
+    await page.locator(cardSelector).first().waitFor({timeout:60000});
+    const total=await stableReading(page);
+    if (!Number.isInteger(total)) throw new Error('Gesamtzahl der Spiele nicht lesbar');
+    return {page,total};
+  } catch(error) {
+    await page.close().catch(()=>{});
+    throw error;
+  }
 }
 async function capture(page, service, label, total, field = 'category', prefix = 'Spieltyp') {
-  // Der Filter ist ein Mehrfachfilter: ohne sauberen Ausgangszustand summieren
-  // sich die Auswahlen und der Zaehler gilt fuer die Vereinigung.
   await selectOption(page, field, label);
   const selected = await currentSelection(page, field, prefix);
   if (selected !== label) throw new Error(`Filter steht auf "${selected}" statt exakt auf "${label}"`);
@@ -118,8 +123,6 @@ async function capture(page, service, label, total, field = 'category', prefix =
     }
     const next=page.locator('.plus-results [aria-label="Next page"]').first();
     if (!await next.count() || await next.getAttribute('aria-disabled')==='true') break;
-    // Der Seitenindikator ist wie der Zaehler doppelt im DOM; das erste Cover
-    // der Liste ist das verlaesslichere Signal fuer einen Seitenwechsel.
     const current=await page.locator(cardSelector).first().getAttribute('href').catch(()=>null);
     await next.scrollIntoViewIfNeeded({timeout:5000}).catch(()=>{});
     await next.click({timeout:10000}).catch(()=>{});
@@ -132,77 +135,54 @@ async function capture(page, service, label, total, field = 'category', prefix =
     await page.locator(cardSelector).first().waitFor({timeout:20000});
   }
   const confirmed = await stableReading(page);
-  if (Number.isInteger(confirmed) && confirmed !== expected) {
-    throw new Error(`Anzahl wechselte waehrend der Erfassung von ${expected} auf ${confirmed}`);
-  }
-  if (entries.size !== expected) {
-    console.warn(`${service}: ${entries.size}/${expected} eindeutig, ${seen} Karten gesehen, ${seen-entries.size} doppelt`);
-  }
+  if (Number.isInteger(confirmed) && confirmed !== expected) throw new Error(`Anzahl wechselte waehrend der Erfassung von ${expected} auf ${confirmed}`);
+  if (entries.size !== expected) console.warn(`${service}: ${entries.size}/${expected} eindeutig, ${seen} Karten gesehen, ${seen-entries.size} doppelt`);
   return {expected,observed:seen,complete:seen===expected,entries:[...entries.values()]};
 }
-try {
-  const page=await browser.newPage({viewport:{width:1280,height:900},locale:'de-DE',timezoneId:'Europe/Berlin'});
-  await page.goto(CATALOG_SOURCE,{waitUntil:'domcontentloaded',timeout:60000});
-  await dismissConsent(page);
-  await page.locator(cardSelector).first().waitFor({timeout:60000});
-  const total = await stableReading(page);
-  if (!Number.isInteger(total)) throw new Error('Gesamtzahl der Spiele nicht lesbar');
-  for (const [service,label] of Object.entries(CATALOG_CATEGORIES)) {
-    try { raw.results[service]=await capture(page,service,label,total); }
-    catch(error) {raw.errors.push(`${service}: ${error.message}`);raw.results[service]={expected:null,complete:false,entries:[]};}
-    // Auswahl wieder loesen, sonst addiert der naechste Klick eine Kategorie dazu.
+async function isolatedCapture(service,label,field='category',prefix='Spieltyp',attempts=2) {
+  let last=null;
+  for (let attempt=1; attempt<=attempts; attempt++) {
+    let page=null;
     try {
-      if (await currentSelection(page, 'category', 'Spieltyp') !== 'Beliebig') await selectOption(page, 'category', label);
-      const rest = await currentSelection(page, 'category', 'Spieltyp');
-      if (rest !== 'Beliebig') throw new Error(`Filter bleibt auf "${rest}" haengen`);
+      const opened=await openCleanPage();
+      page=opened.page;
+      return await capture(page,service,label,opened.total,field,prefix);
     } catch(error) {
-      // Frisch laden statt abzubrechen: bleibt der Filter haengen, laufen sonst
-      // alle folgenden Durchlaeufe gegen die falsche Auswahl und scheitern.
-      raw.errors.push(`${service}: Zuruecksetzen fehlgeschlagen, Seite neu geladen - ${error.message}`);
-      try {
-        await page.goto(CATALOG_SOURCE,{waitUntil:'domcontentloaded',timeout:60000});
-        await dismissConsent(page);
-        await page.locator(cardSelector).first().waitFor({timeout:60000});
-      } catch(reload) { raw.errors.push(`${service}: Neuladen fehlgeschlagen - ${reload.message}`); break; }
+      last=error;
+      if (attempt<attempts) await new Promise(resolve=>setTimeout(resolve,1500));
+    } finally {
+      await page?.close().catch(()=>{});
     }
   }
+  throw last || new Error(`${service}: Erfassung fehlgeschlagen`);
+}
+try {
+  // Jede Runde beginnt auf einer frisch geladenen Seite. Damit koennen ein
+  // haengender Filter, Pagination oder ein fehlerhafter Reset niemals die
+  // folgenden Kategorien/Tags vergiften.
+  for (const [service,label] of Object.entries(CATALOG_CATEGORIES)) {
+    try { raw.results[service]=await isolatedCapture(service,label); }
+    catch(error) { raw.errors.push(`${service}: ${error.message}`); raw.results[service]={expected:null,complete:false,entries:[]}; }
+  }
 
-  // Genre und Plattform als eigene Durchlaeufe. Uebernommen wird nur, was der
-  // Zaehler der Quelle bestaetigt; eine unvollstaendige Runde taggt nichts.
   for (const [field, prefix, options, key] of [
     ['genre', 'Genre', CATALOG_GENRES, 'genres'],
     ['device', 'Spielbar auf', CATALOG_PLATFORMS, 'platforms'],
   ]) {
     for (const label of options) {
-      // Die Quelle drosselt nach vielen Abrufen in Folge; eine kurze Pause je
-      // Durchlauf kostet wenig und verhindert, dass spaetere Runden auflaufen.
-      await page.waitForTimeout(1500);
-      // Ein Zaehlerwechsel waehrend der Erfassung ist meist Nachladen der
-      // Quelle, kein Datenfehler - ein zweiter Anlauf genuegt.
-      let round = null, last = null;
-      for (let attempt = 0; attempt < 2 && !round; attempt++) {
-        try { round = await capture(page, `${key}:${label}`, label, total, field, prefix); }
-        catch(error) { last = error; await resetField(page, field, prefix).catch(() => {}); }
-      }
-      if (!round) raw.errors.push(`${key} ${label}: ${last?.message}`);
-      else if (!round.complete) raw.errors.push(`${key} ${label}: ${round.observed}/${round.expected} Karten, nicht uebernommen`);
-      else for (const item of round.entries) {
-        const id = storeIdentity(item.storeUrl);
+      await new Promise(resolve=>setTimeout(resolve,1500));
+      let round=null;
+      try { round=await isolatedCapture(`${key}:${label}`,label,field,prefix); }
+      catch(error) { raw.errors.push(`${key} ${label}: ${error.message}`); }
+      if (!round) continue;
+      if (!round.complete) { raw.errors.push(`${key} ${label}: ${round.observed}/${round.expected} Karten, nicht uebernommen`); continue; }
+      for (const item of round.entries) {
+        const id=storeIdentity(item.storeUrl);
         if (id) (tags[key][id] ||= new Set()).add(label);
-      }
-      try { await resetField(page, field, prefix); }
-      catch(error) {
-        raw.errors.push(`${key} ${label}: Zuruecksetzen fehlgeschlagen, Seite neu geladen - ${error.message}`);
-        try {
-          await page.goto(CATALOG_SOURCE,{waitUntil:'domcontentloaded',timeout:60000});
-          await dismissConsent(page);
-          await page.locator(cardSelector).first().waitFor({timeout:60000});
-        } catch(reload) { raw.errors.push(`${key} ${label}: Neuladen fehlgeschlagen - ${reload.message}`); break; }
       }
     }
   }
 
-  // Tags auf die erfassten Eintraege legen.
   for (const section of Object.values(raw.results)) {
     for (const item of section.entries || []) {
       const id = storeIdentity(item.storeUrl);
@@ -211,18 +191,13 @@ try {
       if (tags.platforms[id]) item.platforms = [...tags.platforms[id]].sort();
     }
   }
-} catch(error) {raw.errors.push(`Quelle: ${error.message}`);}
-finally {await browser.close();}
+} catch(error) { raw.errors.push(`Quelle: ${error.message}`); }
+finally { await browser.close(); }
 const candidate=normalizeCatalog(raw);
 const snapshot=mergeCatalogSnapshots(previous,candidate);
 await fs.writeFile(output,JSON.stringify(snapshot,null,2)+'\n');
 console.log('PS+ catalog:',Object.entries(snapshot.sections).map(([k,v])=>`${k} ${v.count}/${v.expected??'?'}${v.complete?' ✓':''}`).join(', '));
 for (const message of raw.errors) console.log(`::warning::Katalog ${message}`);
-
-// Die vier Kategorien sind der eigentliche Auftrag. Wurde eine davon in diesem
-// Lauf nicht erfasst, ist der Lauf gescheitert - auch wenn der bewahrte
-// Vorstand die Sektion weiterhin als vollstaendig ausweist. Fehlende Genre-
-// oder Plattform-Zuordnungen kosten nur einen Filter und bleiben eine Warnung.
 const missed = Object.keys(CATALOG_CATEGORIES).filter(service => raw.results[service]?.complete !== true);
 if (missed.length) {
   console.log(`::error::Katalog nicht erfasst: ${missed.join(', ')}. Der bewahrte Vorstand bleibt erhalten und wird als veraltet ausgewiesen.`);
