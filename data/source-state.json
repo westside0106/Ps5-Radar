@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-24T12:45:16.982Z",
+  "checkedAt": "2026-09-25T05:59:37.696Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Luma Island erscheint für PS5",
+        "link": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
+        "pubDate": "Thu, 24 Sep 2026 13:00:00 +0000"
+      },
       {
         "title": "Silent Hill: Die Geschichte einer Horror-Legende auf PlayStation, pünktlich zum Launch von Townfall",
         "link": "https://blog.de.playstation.com/2026/09/24/silent-hill-die-geschichte-einer-horror-legende-auf-playstation-puenktlich-zum-launch-von-townfall/",
@@ -47,25 +52,20 @@
         "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
         "link": "https://blog.de.playstation.com/2026/09/17/koop-roguelite-shape-of-dreams-erscheint-heute-auf-ps5/",
         "pubDate": "Thu, 17 Sep 2026 12:09:31 +0000"
-      },
-      {
-        "title": "Final Fantasy VII Revelation: Hands-on im Whirlwind Maze",
-        "link": "https://blog.de.playstation.com/2026/09/17/final-fantasy-vii-revelation-hands-on-im-whirlwind-maze/",
-        "pubDate": "Thu, 17 Sep 2026 11:33:56 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Silent Hill: Die Geschichte einer Horror-Legende auf PlayStation, pünktlich zum Launch von Townfall",
-        "link": "https://blog.de.playstation.com/2026/09/24/silent-hill-die-geschichte-einer-horror-legende-auf-playstation-puenktlich-zum-launch-von-townfall/",
-        "pubDate": "Thu, 24 Sep 2026 10:51:39 +0000",
+        "title": "Luma Island erscheint für PS5",
+        "link": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
+        "pubDate": "Thu, 24 Sep 2026 13:00:00 +0000",
         "category": "release"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 211090,
+    "bytes": 210648,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 177681,
+    "bytes": 177239,
     "updated": true,
     "parsed": {
       "games": [
@@ -137,11 +137,11 @@
           "hasImage": true
         },
         {
-          "title": "Fading Echo taucht heute auf PS5 ab",
+          "title": "Luma Island erscheint für PS5",
           "hasImage": true
         },
         {
-          "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
+          "title": "Fading Echo taucht heute auf PS5 ab",
           "hasImage": true
         }
       ],
@@ -151,7 +151,7 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587278
+    "bytes": 587279
   },
   "eaPlay": {
     "ok": true,
@@ -169,7 +169,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163247,
+    "bytes": 163233,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

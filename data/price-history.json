@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T12:45:25.687Z",
+  "updatedAt": "2026-09-25T05:59:47.835Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -531,9 +531,9 @@
         "code": "wait",
         "label": "WARTEN",
         "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
-        "changedToday": true,
-        "previousCode": "buy",
-        "changedAt": "2026-09-24"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/42b3ee6b1b2094212231b0b0a82824f687fc5c4dc9bde31c.png"
     },
@@ -669,9 +669,9 @@
         "code": "wait",
         "label": "WARTEN",
         "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
-        "changedToday": true,
-        "previousCode": "buy",
-        "changedAt": "2026-09-24"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0323/d808653f2c2453e79433628e31f673ef3976c6771d39228a.png"
     },
@@ -827,9 +827,9 @@
         "code": "wait",
         "label": "WARTEN",
         "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
-        "changedToday": true,
-        "previousCode": "buy",
-        "changedAt": "2026-09-24"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2619/c4ce7fe379aa05dd3f6ecc11e8fa38dfea03d4b4a8bad73a.png"
     },
@@ -893,13 +893,13 @@
   "summary": {
     "titles": 10,
     "points": 58,
-    "archiveIssuesScanned": 21,
+    "archiveIssuesScanned": 22,
     "signals": {
       "buy": 0,
       "watch": 0,
       "wait": 10
     },
-    "changedSignals": 3,
+    "changedSignals": 0,
     "newBuySignals": 0
   },
   "method": {

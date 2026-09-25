@@ -1,8 +1,8 @@
 {
-  "date": "24.09.2026",
-  "edition": "AUSGABE #021",
-  "newHeadline": "1 RELEASE HEUTE",
-  "newCount": "24.09 · LIVE",
+  "date": "25.09.2026",
+  "edition": "AUSGABE #022",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "25.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -53,20 +53,11 @@
   "deals": [],
   "releases": [
     {
-      "date": "24.09.",
-      "title": "Control Resonant"
-    },
-    {
-      "date": "24.09.",
-      "title": "Silent Hill: Townfall"
-    },
-    {
       "date": "25.09.",
       "title": "EA Sports FC 27"
     }
   ],
   "quickItems": [
-    "Silent Hill: Die Geschichte einer Horror-Legende auf PlayStation, pünktlich zum Launch von Townfall",
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
@@ -86,26 +77,19 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 24.09.2026 · 9/9 Quellen · 11/11 Details",
+  "radarCheck": "Stand 25.09.2026 · 9/9 Quellen · 9/9 Details",
   "sourceAlerts": [
     {
-      "title": "Silent Hill: Die Geschichte einer Horror-Legende auf PlayStation, pünktlich zum Launch von Townfall",
-      "url": "https://blog.de.playstation.com/2026/09/24/silent-hill-die-geschichte-einer-horror-legende-auf-playstation-puenktlich-zum-launch-von-townfall/",
+      "title": "Luma Island erscheint für PS5",
+      "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
       "source": "PlayStation Blog DE",
       "category": "release"
     }
   ],
-  "editorial": [
-    {
-      "title": "Silent Hill: Die Geschichte einer Horror-Legende auf PlayStation, pünktlich zum Launch von Townfall",
-      "url": "https://blog.de.playstation.com/2026/09/24/silent-hill-die-geschichte-einer-horror-legende-auf-playstation-puenktlich-zum-launch-von-townfall/",
-      "category": "release",
-      "score": 100
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-24T12:45:53.079Z",
+    "checkedAt": "2026-09-25T06:00:05.433Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -113,13 +97,13 @@
     "storeDiscoveryMode": "no-active-campaign",
     "storeProductsVerified": 0,
     "storeDealsSelected": 0,
-    "enrichedTitles": 11,
-    "detailTitles": 11,
+    "enrichedTitles": 9,
+    "detailTitles": 9,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-24T12:45:53.079Z"
+    "lastSuccessfulCheck": "2026-09-25T06:00:05.433Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-24T12:45:53.079Z",
+    "checkedAt": "2026-09-25T06:00:05.433Z",
     "errors": [],
     "sources": [
       {
@@ -300,41 +284,6 @@
       "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
       "title": "Chained Echoes"
     },
-    "Control Resonant": {
-      "description": "Nachfolger von CONTROL mit Dylan Faden in einem paranormal verzerrten Manhattan, neuen Kräften und großflächigen Zonen.",
-      "publisher": "REMEDY ENTERTAINMENT LTD.",
-      "release": "24.09.2026",
-      "platform": "PS5",
-      "pageUrl": "https://www.playstation.com/de-de/games/control-resonant/",
-      "developer": "Remedy Entertainment",
-      "genre": "Action-Adventure-RPG",
-      "trailerUrl": "https://blog.de.playstation.com/2026/06/03/control-resonant-erscheint-am-24-september-fuer-ps5/",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2212/9fedf57ea1649249a0e3ac24770ea9afa6f4bfa795b5fd05.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/control-resonant-hero-02-en-02jul26",
-        "https://i.ytimg.com/vi_webp/TAzxTMaA6j4/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/SXRxroxfPJ8/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/IA71hdzim0M/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/j7hAH11mtDk/maxresdefault.webp"
-      ]
-    },
-    "Silent Hill: Townfall": {
-      "description": "Psychologisches First-Person-Horrorspiel, in dem Simon Ordell nach St. Amelia zurückkehrt und das Geheimnis hinter einem rätselhaften Rauschen untersucht.",
-      "publisher": "KONAMI",
-      "release": "24.09.2026",
-      "platform": "PS5",
-      "pageUrl": "https://www.playstation.com/de-de/games/silent-hill-townfall/",
-      "genre": "Psychologischer First-Person-Horror",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1407/420dcf45979ace1b7c97122a2dc0eb479428590ecab89c2b.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/Silent-Hill-Townfall-hero-desktop-02-en-05jun26",
-        "https://i.ytimg.com/vi_webp/RALnTmNg_ss/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/JBo1W0sjt9M/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/ueCeXnq4HOQ/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/eXLfSEipn7I/maxresdefault.webp"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=RALnTmNg_ss"
-    },
     "EA Sports FC 27": {
       "release": "25.09.2026"
     },
@@ -344,24 +293,24 @@
       "genre": "Sport · Fußball",
       "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
       "publisher": "EA Swiss Sarl",
-      "release": "17.9.2026",
+      "release": "18.9.2026",
       "platform": "PS4 · PS5",
       "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
         "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-02-en-13jul26",
         "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26",
-        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-01-en-13jul26",
-        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-FUT-04-en-13jul26"
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-01-en-13jul26"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=u_5zUU1JCHo"
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-24T12:45:25.770Z",
-    "titles": 11,
-    "fetched": 10,
-    "enriched": 11,
+    "checkedAt": "2026-09-25T05:59:47.885Z",
+    "titles": 9,
+    "fetched": 8,
+    "enriched": 9,
     "warnings": []
   },
   "resolvedSources": {
@@ -412,13 +361,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-24T12:45:25.160Z",
+    "checkedAt": "2026-09-25T05:59:46.475Z",
     "month": "September",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-24T12:45:25.267Z",
+    "checkedAt": "2026-09-25T05:59:47.203Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -431,7 +380,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-24T12:45:48.915Z",
+    "checkedAt": "2026-09-25T06:00:02.688Z",
     "verified": 4,
     "missing": [],
     "warnings": [
