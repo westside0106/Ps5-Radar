@@ -1,7 +1,7 @@
 {
   "date": "25.09.2026",
   "edition": "AUSGABE #022",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
   "newCount": "25.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
@@ -48,8 +48,8 @@
     }
   ],
   "storeTitle": "Keine verifizierten Top-Deals",
-  "storeText": "Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.",
-  "storeEnd": null,
+  "storeText": "Die aktive Store-Aktion wurde erkannt, aber aktuell konnte kein Deal sicher gegen eine Produktseite validiert werden.",
+  "storeEnd": "2026-10-08T00:59:00+02:00",
   "deals": [],
   "releases": [
     {
@@ -58,11 +58,12 @@
     }
   ],
   "quickItems": [
+    "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
-  "leavingTitle": "Kein aktives Angebotsende",
-  "leavingText": "Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.",
+  "leavingTitle": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet laufen aus",
+  "leavingText": "Aktuelle Store-Aktion endet am 08.10., 00:59 Uhr.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
   "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
   "eaItems": [
@@ -80,24 +81,31 @@
   "radarCheck": "Stand 25.09.2026 · 9/9 Quellen erfolgreich geprüft",
   "sourceAlerts": [
     {
-      "title": "Luma Island erscheint für PS5",
-      "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
+      "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
+      "url": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
       "source": "PlayStation Blog DE",
-      "category": "release"
+      "category": "store"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
+      "url": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
+      "category": "store",
+      "score": 70
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-25T06:00:02.838Z",
+    "checkedAt": "2026-09-25T12:49:13.899Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-25T05:59:37.696Z"
+    "lastSuccessfulCheck": "2026-09-25T12:48:25.407Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-25T05:59:37.696Z",
+    "checkedAt": "2026-09-25T12:48:25.407Z",
     "errors": [],
     "sources": [
       {
@@ -301,7 +309,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-25T05:59:47.885Z",
+    "checkedAt": "2026-09-25T12:48:53.751Z",
     "titles": 9,
     "fetched": 8,
     "enriched": 9,
@@ -329,7 +337,7 @@
     },
     "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
     "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
-    "storeCampaign": "https://blog.de.playstation.com/2026/09/11/die-tokyo-game-show-angebote-sind-im-playstation-store-gelandet/",
+    "storeCampaign": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
     "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "storeDeals": {}
   },
@@ -355,26 +363,36 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-25T05:59:46.475Z",
+    "checkedAt": "2026-09-25T12:48:36.062Z",
     "month": "September",
     "year": 2026,
-    "notes": []
+    "notes": [],
+    "resolved": {
+      "storeDiscoveryMode": "insufficient-verified-products",
+      "storeDiscoveryStaticLinks": 1,
+      "storeDiscoveryBrowserLinks": 24,
+      "storeDiscoveryLinks": 25,
+      "storeDiscoveryVerified": 2,
+      "storeDiscoverySelected": 0
+    }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-25T05:59:47.203Z",
+    "checkedAt": "2026-09-25T12:48:36.189Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
-    "activeCampaign": false,
-    "staticLinks": 0,
-    "browserLinks": 0,
-    "links": 0,
-    "fetched": 0,
-    "verified": 0,
+    "activeCampaign": true,
+    "staticLinks": 1,
+    "browserLinks": 24,
+    "links": 25,
+    "fetched": 25,
+    "verified": 2,
     "selected": 0,
-    "mode": "no-active-campaign",
-    "warnings": []
+    "mode": "insufficient-verified-products",
+    "warnings": [
+      "Nur 2 verifizierbare Deal-Produkte entdeckt; bestehende verifizierte Auswahl bleibt erhalten."
+    ]
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-25T06:00:02.688Z",
+    "checkedAt": "2026-09-25T12:49:13.619Z",
     "verified": 4,
     "missing": [],
     "warnings": [

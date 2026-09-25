@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-25T05:59:37.696Z",
+  "checkedAt": "2026-09-25T12:48:25.407Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
+        "link": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
+        "pubDate": "Fri, 25 Sep 2026 09:34:43 +0000"
+      },
       {
         "title": "Luma Island erscheint für PS5",
         "link": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
@@ -47,25 +52,20 @@
         "title": "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
         "link": "https://blog.de.playstation.com/2026/09/17/dune-awakening-erlebt-den-hitzigen-ueberlebenskampf-endlich-auf-ps5/",
         "pubDate": "Thu, 17 Sep 2026 12:21:44 +0000"
-      },
-      {
-        "title": "Koop-Roguelite Shape of Dreams erscheint heute auf PS5",
-        "link": "https://blog.de.playstation.com/2026/09/17/koop-roguelite-shape-of-dreams-erscheint-heute-auf-ps5/",
-        "pubDate": "Thu, 17 Sep 2026 12:09:31 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Luma Island erscheint für PS5",
-        "link": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
-        "pubDate": "Thu, 24 Sep 2026 13:00:00 +0000",
-        "category": "release"
+        "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
+        "link": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
+        "pubDate": "Fri, 25 Sep 2026 09:34:43 +0000",
+        "category": "store"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 210648,
+    "bytes": 208976,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 177239,
+    "bytes": 175567,
     "updated": true,
     "parsed": {
       "games": [
@@ -156,7 +156,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242021,
+    "bytes": 242022,
     "updated": true,
     "parsed": {
       "trial": false,
