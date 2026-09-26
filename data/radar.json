@@ -68,12 +68,7 @@
       "image": null
     }
   ],
-  "releases": [
-    {
-      "date": "25.09.",
-      "title": "EA Sports FC 27"
-    }
-  ],
+  "releases": [],
   "quickItems": [
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
@@ -94,29 +89,27 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 26.09.2026 · 9/9 Quellen · 1 Warnung(en)",
+  "radarCheck": "Stand 26.09.2026 · 9/9 Quellen · Store 2 geprüft · 10/10 Details",
   "sourceAlerts": [],
   "editorial": [],
   "health": {
-    "status": "warning",
-    "checkedAt": "2026-09-26T06:25:15.579Z",
+    "status": "ok",
+    "checkedAt": "2026-09-26T12:06:02.215Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
-    "warnings": 1,
+    "warnings": 0,
     "storeDiscoveryMode": "dynamic-browser",
     "storeProductsVerified": 2,
     "storeDealsSelected": 2,
-    "enrichedTitles": 11,
-    "detailTitles": 11,
+    "enrichedTitles": 10,
+    "detailTitles": 10,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-26T06:24:30.458Z"
+    "lastSuccessfulCheck": "2026-09-26T12:06:02.215Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-26T06:25:15.579Z",
-    "errors": [
-      "Releases: keine zukünftigen Termine mehr im aktuellen Monatsartikel"
-    ],
+    "checkedAt": "2026-09-26T12:06:02.215Z",
+    "errors": [],
     "sources": [
       {
         "name": "PlayStation Blog",
@@ -328,9 +321,6 @@
       ],
       "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA24662_00-2026SEASONEDITIO"
     },
-    "EA Sports FC 27": {
-      "release": "25.09.2026"
-    },
     "EA SPORTS FC 27": {
       "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
       "developer": "EA SPORTS",
@@ -351,10 +341,10 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-26T06:24:54.601Z",
-    "titles": 11,
+    "checkedAt": "2026-09-26T12:05:46.930Z",
+    "titles": 10,
     "fetched": 10,
-    "enriched": 11,
+    "enriched": 10,
     "warnings": []
   },
   "resolvedSources": {
@@ -408,7 +398,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-26T06:24:37.804Z",
+    "checkedAt": "2026-09-26T12:05:32.831Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -422,7 +412,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-26T06:24:37.910Z",
+    "checkedAt": "2026-09-26T12:05:32.923Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -435,7 +425,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-26T06:25:11.236Z",
+    "checkedAt": "2026-09-26T12:05:59.303Z",
     "verified": 4,
     "missing": [],
     "warnings": [
