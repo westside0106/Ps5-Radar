@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-25T12:48:25.407Z",
+  "checkedAt": "2026-09-26T06:03:15.074Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
+        "link": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
+        "pubDate": "Fri, 25 Sep 2026 14:00:00 +0000"
+      },
       {
         "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
         "link": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
@@ -47,25 +52,20 @@
         "title": "Control Resonant im Hands-on: Wie Remedy seinen paranatürlichen Horror-Nachfolger größer und seltsamer macht",
         "link": "https://blog.de.playstation.com/2026/09/18/control-resonant-im-hands-on-wie-remedy-seinen-paranatuerlichen-horror-nachfolger-groesser-und-seltsamer-macht/",
         "pubDate": "Fri, 18 Sep 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Dune: Awakening – Erlebt den hitzigen Überlebenskampf endlich auf PS5!",
-        "link": "https://blog.de.playstation.com/2026/09/17/dune-awakening-erlebt-den-hitzigen-ueberlebenskampf-endlich-auf-ps5/",
-        "pubDate": "Thu, 17 Sep 2026 12:21:44 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
-        "link": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
-        "pubDate": "Fri, 25 Sep 2026 09:34:43 +0000",
-        "category": "store"
+        "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
+        "link": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
+        "pubDate": "Fri, 25 Sep 2026 14:00:00 +0000",
+        "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 208976,
+    "bytes": 209319,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175567,
+    "bytes": 175910,
     "updated": true,
     "parsed": {
       "games": [
@@ -151,12 +151,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587279
+    "bytes": 587286
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242022,
+    "bytes": 241887,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -169,7 +169,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163233,
+    "bytes": 163241,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

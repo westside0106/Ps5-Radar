@@ -1,8 +1,8 @@
 {
-  "date": "25.09.2026",
-  "edition": "AUSGABE #022",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "25.09 · LIVE",
+  "date": "26.09.2026",
+  "edition": "AUSGABE #023",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "26.09 · LIVE",
   "leadTitle": "Onimusha: Way of the Sword",
   "leadDate": "04.09.2026",
   "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
@@ -58,7 +58,6 @@
     }
   ],
   "quickItems": [
-    "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
     "September-Spiele sind live",
     "FC™ 27 · 10h Trial ab 18.09."
   ],
@@ -78,42 +77,36 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 25.09.2026 · 9/9 Quellen · 1 Warnung(en)",
+  "radarCheck": "Stand 26.09.2026 · 9/9 Quellen · 2 Warnung(en)",
   "sourceAlerts": [
     {
-      "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
-      "url": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
+      "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
+      "url": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
       "source": "PlayStation Blog DE",
-      "category": "store"
+      "category": "news"
     }
   ],
-  "editorial": [
-    {
-      "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
-      "url": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
-      "category": "store",
-      "score": 70
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "warning",
-    "checkedAt": "2026-09-25T12:49:17.588Z",
+    "checkedAt": "2026-09-26T06:04:03.447Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
-    "warnings": 1,
+    "warnings": 2,
     "storeDiscoveryMode": "insufficient-verified-products",
     "storeProductsVerified": 2,
     "storeDealsSelected": 0,
     "enrichedTitles": 9,
     "detailTitles": 9,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-25T12:48:25.407Z"
+    "lastSuccessfulCheck": "2026-09-26T06:03:15.074Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-25T12:49:17.588Z",
+    "checkedAt": "2026-09-26T06:04:03.447Z",
     "errors": [
-      "Store-Discovery: Nur 2 verifizierbare Deal-Produkte entdeckt; bestehende verifizierte Auswahl bleibt erhalten."
+      "Store-Discovery: Nur 2 verifizierbare Deal-Produkte entdeckt; bestehende verifizierte Auswahl bleibt erhalten.",
+      "Releases: keine zukünftigen Termine mehr im aktuellen Monatsartikel"
     ],
     "sources": [
       {
@@ -309,15 +302,15 @@
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
+        "https://i.ytimg.com/vi_webp/LoqWKZ1kjio/maxresdefault.webp",
         "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-02-en-13jul26",
-        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26",
-        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-01-en-13jul26"
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26"
       ],
-      "trailerUrl": "https://www.youtube.com/watch?v=u_5zUU1JCHo"
+      "trailerUrl": "https://www.youtube.com/watch?v=LoqWKZ1kjio"
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-25T12:48:53.751Z",
+    "checkedAt": "2026-09-26T06:03:47.307Z",
     "titles": 9,
     "fetched": 8,
     "enriched": 9,
@@ -371,7 +364,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-25T12:48:36.062Z",
+    "checkedAt": "2026-09-26T06:03:27.610Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -385,7 +378,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-25T12:48:36.189Z",
+    "checkedAt": "2026-09-26T06:03:27.718Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -400,7 +393,7 @@
     ]
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-25T12:49:13.619Z",
+    "checkedAt": "2026-09-26T06:03:59.439Z",
     "verified": 4,
     "missing": [],
     "warnings": [

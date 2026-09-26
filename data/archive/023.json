@@ -1,0 +1,396 @@
+{
+  "date": "26.09.2026",
+  "edition": "AUSGABE #023",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "26.09 · LIVE",
+  "leadTitle": "Onimusha: Way of the Sword",
+  "leadDate": "04.09.2026",
+  "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
+  "leadPrice": "79,99 €",
+  "leadImage": "https://i.ytimg.com/vi/UZYxGBeGOzY/maxresdefault.jpg",
+  "secondary1Title": "NBA 2K27",
+  "secondary1Date": "04.09.2026",
+  "secondary1Meta": "PS5 · Basketball · The City erstmals Co-Ed",
+  "secondary1Price": "79,99 €",
+  "secondary1Image": "https://i.ytimg.com/vi/5l-a3U3Y8aA/maxresdefault.jpg",
+  "secondary2Title": "The Blood of Dawnwalker",
+  "secondary2Date": "03.09.2026",
+  "secondary2Meta": "PS5 · Dark-Fantasy Open-World-RPG",
+  "secondary2Price": "69,99 €",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/07/174ccb5bb7aba84e2ebd620623f858b3bea0b628.jpg?crop_strategy=smart&resize=1088%2C612",
+  "psplusLabel": "SEPTEMBER 2026",
+  "psplusTitle": "September-Spiele sind live",
+  "psplusText": "Verfügbar bis 05.10.",
+  "plusGames": [
+    {
+      "title": "Sniper Elite: Resistance",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "imageSource": "official-product"
+    },
+    {
+      "title": "MLB The Show 26",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/791b0f1880e27c1d8f52187daea36abfe5fd3b0ff1144007.png",
+      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "imageSource": "official-product"
+    },
+    {
+      "title": "Wobbly Life",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
+      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "imageSource": "official-product"
+    },
+    {
+      "title": "Chained Echoes",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
+      "storeUrl": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748",
+      "imageSource": "official-product"
+    }
+  ],
+  "storeTitle": "Keine verifizierten Top-Deals",
+  "storeText": "Die aktive Store-Aktion wurde erkannt, aber aktuell konnte kein Deal sicher gegen eine Produktseite validiert werden.",
+  "storeEnd": "2026-10-08T00:59:00+02:00",
+  "deals": [],
+  "releases": [
+    {
+      "date": "25.09.",
+      "title": "EA Sports FC 27"
+    }
+  ],
+  "quickItems": [
+    "September-Spiele sind live",
+    "FC™ 27 · 10h Trial ab 18.09."
+  ],
+  "leavingTitle": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet laufen aus",
+  "leavingText": "Aktuelle Store-Aktion endet am 08.10., 00:59 Uhr.",
+  "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
+  "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
+  "eaItems": [
+    "10 % auf digitale EA-Käufe",
+    "Monatliche Mitgliederbelohnungen",
+    "The Play List"
+  ],
+  "ubisoftTitle": "Ubisoft+ Classics",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftItems": [
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
+  ],
+  "radarCheck": "Stand 26.09.2026 · 9/9 Quellen erfolgreich geprüft",
+  "sourceAlerts": [
+    {
+      "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
+      "url": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    }
+  ],
+  "editorial": [],
+  "health": {
+    "status": "warning",
+    "checkedAt": "2026-09-26T06:03:59.689Z",
+    "okSources": 9,
+    "totalSources": 9,
+    "failedSources": 0,
+    "warnings": 1,
+    "lastSuccessfulCheck": "2026-09-26T06:03:15.074Z"
+  },
+  "sourceCheck": {
+    "checkedAt": "2026-09-26T06:03:15.074Z",
+    "errors": [
+      "Releases: keine zukünftigen Termine mehr im aktuellen Monatsartikel"
+    ],
+    "sources": [
+      {
+        "name": "PlayStation Blog",
+        "ok": true
+      },
+      {
+        "name": "Monats-Releases",
+        "ok": true
+      },
+      {
+        "name": "PS Plus monatlich",
+        "ok": true
+      },
+      {
+        "name": "PS Plus aktuell",
+        "ok": true
+      },
+      {
+        "name": "EA Play",
+        "ok": true
+      },
+      {
+        "name": "Ubisoft+",
+        "ok": true
+      },
+      {
+        "name": "Store: Hogwarts Legacy",
+        "ok": true
+      },
+      {
+        "name": "Store: Star Wars Outlaws",
+        "ok": true
+      },
+      {
+        "name": "Store: Red Dead Redemption",
+        "ok": true
+      }
+    ]
+  },
+  "gameDetails": {
+    "Onimusha: Way of the Sword": {
+      "pageUrl": "https://www.playstation.com/de-de/games/onimusha-way-of-the-sword/",
+      "developer": "Capcom",
+      "genre": "Action · Samurai",
+      "description": "Düsteres Samurai-Actionspiel im historischen Kyoto. Im Mittelpunkt stehen präziser Schwertkampf, Genma-Gegner und eine übernatürliche Geschichte.",
+      "trailerUrl": "https://www.youtube.com/watch?v=UZYxGBeGOzY",
+      "publisher": "CE EUROPE LIMITED",
+      "release": "04.09.2026",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/6f451f9fcef025e8913d863041514efb8cf24dc0b6d7ab01.png",
+        "https://i.ytimg.com/vi_webp/W9Ct29FeMak/maxresdefault.webp",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1500/78f4d34e61e0f24e6708ac380909fb71c010696c5c751412.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/e0378f1a844ede8537afefe74bd255af144b2f43871adc75.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1506/e5fbe90c88b01ff09d12bab098944090820f4d228e393535.jpg"
+      ]
+    },
+    "NBA 2K27": {
+      "pageUrl": "https://www.playstation.com/de-de/games/nba-2k/",
+      "developer": "Visual Concepts",
+      "genre": "Sport · Basketball",
+      "description": "Basketball-Simulation von 2K mit MyCAREER, MyTEAM, The City und Online-Modi auf PS5.",
+      "trailerUrl": "https://www.youtube.com/watch?v=5l-a3U3Y8aA",
+      "publisher": "Take-Two",
+      "release": "04.09.2026",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/2913/4a31f711e2ff460cd44ad646983f36533278cea61f639be9.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-hero-desktop-03-en-16jul26",
+        "https://i.ytimg.com/vi_webp/5l-a3U3Y8aA/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/x3VbMlmerXg/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/YUbJfNJSG-M/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-screenshot-05-en-16jul26"
+      ]
+    },
+    "The Blood of Dawnwalker": {
+      "pageUrl": "https://www.playstation.com/de-de/games/the-blood-of-dawnwalker/",
+      "developer": "Rebel Wolves",
+      "genre": "Open-World-Action-RPG · Dark Fantasy",
+      "description": "Düsteres Open-World-Action-RPG, in dem ein zwischen Mensch und Vampir gefangener Protagonist in einer mittelalterlichen Welt um Zeit, Macht und Überleben kämpft.",
+      "publisher": "BANDAI NAMCO ENTERTAINMENT EUROPE",
+      "release": "03.09.2026",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202603/3009/4bf61f8869f55ee0a930f3d1f00992559c1d4a2d52e00408.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202512/1814/fd8c64ffef89f338da778a59a8e23fd4eb8e793bd6d94a2f.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/Blood-of-Dawnwalker-hero-desktop-01-en-04feb26",
+        "https://i.ytimg.com/vi_webp/YxEUwi2EtnY/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/UEquupEcYt8/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/0JtpOX0CxDo/maxresdefault.webp"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=0JtpOX0CxDo"
+    },
+    "Sniper Elite: Resistance": {
+      "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
+      "developer": "Rebellion",
+      "genre": "Taktik-Shooter · Stealth · Action",
+      "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "REBELLION INTERACTIVE",
+      "release": "30.1.2025",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/b026676dfa9d7639fef041a9f0ed4c6d076e2ad3647eae1c.png",
+        "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202411/1909/8aafcc75d67ed0a3c4bb8410cd57ff437ae3a726da42177f.png"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=wPH9TFf6yfE",
+      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+      "title": "Sniper Elite: Resistance"
+    },
+    "MLB The Show 26": {
+      "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
+      "developer": "San Diego Studio",
+      "genre": "Sport · Baseball",
+      "description": "Baseball-Simulation von San Diego Studio mit Road to the Show, Diamond Dynasty und weiteren Einzelspieler- und Online-Modi.",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "Sony Interactive Entertainment",
+      "release": "17.3.2026",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/791b0f1880e27c1d8f52187daea36abfe5fd3b0ff1144007.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
+        "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
+      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/791b0f1880e27c1d8f52187daea36abfe5fd3b0ff1144007.png",
+      "title": "MLB The Show 26"
+    },
+    "Wobbly Life": {
+      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "developer": "RubberBandGames",
+      "genre": "Sandbox · Adventure · Familie",
+      "description": "Offene Physik-Sandbox mit Jobs, Missionen, Fahrzeugen, Häusern und Koop für bis zu vier Spieler.",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "RUBBERBANDGAMES LTD",
+      "release": "18.9.2025",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/l2VMZjLR9en9orx3nHGCaj8U.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/3650ac7e207de17c9aa1e057339b9e5b405c97a427af26de.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/b44f53cd0e854a7e1663d3ea5908708161c3a8972d1c95c5.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/6d5fc87bf96131851634a38b4e50c1d18b1697b9f5054891.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/4a6dcb161d41908a172df2bc0b2e435d79c454198de1c08f.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/9a3b72705f0abf31b9997bddf3e54b88883dfefcee8af8a5.jpg"
+      ],
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
+      "title": "Wobbly Life"
+    },
+    "Chained Echoes": {
+      "pageUrl": "https://www.playstation.com/de-de/games/chained-echoes/",
+      "developer": "Matthias Linda",
+      "genre": "Rollenspiel · JRPG-inspiriert",
+      "description": "Storyfokussiertes 16-Bit-Rollenspiel mit rundenbasierten Kämpfen, Fantasywelt, Mechs und einer Reise durch den Kontinent Valandis.",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "DECK13 INTERACTIVE",
+      "release": "7.12.2022",
+      "platform": "PS4",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/2dmcrpRqwwcV89IGO9TqQsNd.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202507/0913/3bfc69e8efb69db85ffef2b61280c9a9df6491d6af7b947e.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/this-month-on-playstation-cross-sell-background-block-desktop-01-en-04oct22",
+        "https://gmedia.playstation.com/is/image/SIEPDC/best-jrpgs-keyart-02-en-30aug22",
+        "https://gmedia.playstation.com/is/image/SIEPDC/loader-spinner-dark"
+      ],
+      "storeUrl": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
+      "title": "Chained Echoes"
+    },
+    "EA Sports FC 27": {
+      "release": "25.09.2026"
+    },
+    "EA SPORTS FC 27": {
+      "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
+      "developer": "EA SPORTS",
+      "genre": "Sport · Fußball",
+      "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
+      "publisher": "EA Swiss Sarl",
+      "release": "18.9.2026",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
+        "https://i.ytimg.com/vi_webp/LoqWKZ1kjio/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-02-en-13jul26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=LoqWKZ1kjio"
+    }
+  },
+  "enrichment": {
+    "checkedAt": "2026-09-26T06:03:47.307Z",
+    "titles": 9,
+    "fetched": 8,
+    "enriched": 9,
+    "warnings": []
+  },
+  "resolvedSources": {
+    "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
+    "psPlusStoreUrls": {
+      "Sniper Elite: Resistance": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "MLB The Show 26": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "Wobbly Life": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "Chained Echoes": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748"
+    },
+    "monthlyReleases": "https://blog.de.playstation.com/?p=204875",
+    "releaseStoreUrls": {
+      "The Blood of Dawnwalker": "https://store.playstation.com/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
+      "Onimusha: Way of the Sword": "https://store.playstation.com/product/UP0102-PPSA27836_00-0000000000000001",
+      "NBA 2K27": "https://store.playstation.com/product/UP1001-PPSA35889_00-NBA2K27000000000",
+      "Mewgenics": "https://store.playstation.com/concept/10019219",
+      "Marvel’s Wolverine": "https://store.playstation.com/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+      "Aniimo": "https://store.playstation.com/product/JB2238-PPSA35870_00-0588301512156043",
+      "Control Resonant": "https://store.playstation.com/product/EP5291-PPSA34547_00-0210080241603648",
+      "Silent Hill: Townfall": "https://store.playstation.com/product/JP0101-PPSA33286_00-TOWNFALLSIEJ0000",
+      "EA Sports FC 27": "https://store.playstation.com/product/UP0006-PPSA34015_00-27STANDARDBUNDLE"
+    },
+    "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
+    "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
+    "storeCampaign": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
+    "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "storeDeals": {}
+  },
+  "eaPlay": {
+    "title": "FC™ 27 · 10h Trial ab 18.09.",
+    "trial": null,
+    "items": [
+      "10 % auf digitale EA-Käufe",
+      "Monatliche Mitgliederbelohnungen",
+      "The Play List"
+    ],
+    "sourceUrl": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play"
+  },
+  "ubisoftPlus": {
+    "title": "Ubisoft+ Classics",
+    "price": "7,99 €",
+    "items": [
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
+    ],
+    "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
+  },
+  "automationV2": {
+    "version": 2,
+    "checkedAt": "2026-09-26T06:03:27.610Z",
+    "month": "September",
+    "year": 2026,
+    "notes": [],
+    "resolved": {
+      "storeDiscoveryMode": "insufficient-verified-products",
+      "storeDiscoveryStaticLinks": 1,
+      "storeDiscoveryBrowserLinks": 24,
+      "storeDiscoveryLinks": 25,
+      "storeDiscoveryVerified": 2,
+      "storeDiscoverySelected": 0
+    }
+  },
+  "storeDiscovery": {
+    "checkedAt": "2026-09-26T06:03:27.718Z",
+    "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "activeCampaign": true,
+    "staticLinks": 1,
+    "browserLinks": 24,
+    "links": 25,
+    "fetched": 25,
+    "verified": 2,
+    "selected": 0,
+    "mode": "insufficient-verified-products",
+    "warnings": [
+      "Nur 2 verifizierbare Deal-Produkte entdeckt; bestehende verifizierte Auswahl bleibt erhalten."
+    ]
+  },
+  "mediaValidation": {
+    "checkedAt": "2026-09-26T06:03:59.439Z",
+    "verified": 4,
+    "missing": [],
+    "warnings": [
+      "Chained Echoes: Produktidentitaet oder Cover nicht bestaetigt"
+    ]
+  }
+}
