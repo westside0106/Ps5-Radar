@@ -47,10 +47,27 @@
       "imageSource": "official-product"
     }
   ],
-  "storeTitle": "Keine verifizierten Top-Deals",
-  "storeText": "Die aktive Store-Aktion wurde erkannt, aber aktuell konnte kein Deal sicher gegen eine Produktseite validiert werden.",
+  "storeTitle": "Aktuelle Store-Top-Deals",
+  "storeText": "Automatisch aus der aktuell verifizierten PlayStation-Store-Aktion ausgewählt.",
   "storeEnd": "2026-10-08T00:59:00+02:00",
-  "deals": [],
+  "deals": [
+    {
+      "title": "Starfield Premium Edition",
+      "platform": "PS5",
+      "price": "29,99 €",
+      "oldPrice": "49,99 €",
+      "discount": "-40 %",
+      "image": null
+    },
+    {
+      "title": "F1® 25: 2026 Saison Edition",
+      "platform": "PS5",
+      "price": "53,99 €",
+      "oldPrice": "59,99 €",
+      "discount": "-10 %",
+      "image": null
+    }
+  ],
   "releases": [
     {
       "date": "25.09.",
@@ -78,26 +95,19 @@
     "PS Plus Premium"
   ],
   "radarCheck": "Stand 26.09.2026 · 9/9 Quellen erfolgreich geprüft",
-  "sourceAlerts": [
-    {
-      "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
-      "url": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    }
-  ],
+  "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "warning",
-    "checkedAt": "2026-09-26T06:03:59.689Z",
+    "checkedAt": "2026-09-26T06:25:11.674Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 1,
-    "lastSuccessfulCheck": "2026-09-26T06:03:15.074Z"
+    "lastSuccessfulCheck": "2026-09-26T06:24:30.458Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-26T06:03:15.074Z",
+    "checkedAt": "2026-09-26T06:24:30.458Z",
     "errors": [
       "Releases: keine zukünftigen Termine mehr im aktuellen Monatsartikel"
     ],
@@ -280,6 +290,38 @@
       "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
       "title": "Chained Echoes"
     },
+    "Starfield Premium Edition": {
+      "description": "ZUSAMMEN INS STERNENMEER",
+      "publisher": "Bethesda",
+      "genre": "Rollenspiele",
+      "release": "7.4.2026",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/79a18f39494627fd6bfc30841c8f0e5097d66453624893ee.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/60a7c27341cb4b03538a1b99201b046c2d297af3797fa78f.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/f66067fba9c76d09676ddd568cb71f2a123a8faca5bac793.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/fd52c8160c772c22c70f79d1a5a92b94b42088092f96d1c1.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/893327025799cb53f2892158eac7c9f123096a8731374bb0.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/e36e904299d8d0dfe0af35aee01b611f8a3edb543c8d338e.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP1003-PPSA24884_00-PREMIUMBUNDLE000"
+    },
+    "F1® 25: 2026 Saison Edition": {
+      "description": "2026 Saison Edition – jetzt kaufen",
+      "publisher": "EA Swiss Sarl",
+      "genre": "Rennspiele",
+      "release": "3.6.2026",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1911/5f33cc6cc38f649afb696dd3c8f385267401effb1eace1cd.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/e06cd2d2ac4c303652af5bc135b1f66a84c153116a27ef51.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/945fca903ab8fa5ef5a5fc9f270c8a0b027686b2f0d7949f.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/5bd42633a7248911c0d8b03f6506529088be6a013d0e40eb.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/5ff4f3675edb00ee7a2c84bd4903635c01108b8946f56826.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/a22ec0cd294912dc8a4c62f6a9bfad9a7c44a9e546dd70c1.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA24662_00-2026SEASONEDITIO"
+    },
     "EA Sports FC 27": {
       "release": "25.09.2026"
     },
@@ -303,10 +345,10 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-26T06:03:47.307Z",
-    "titles": 9,
-    "fetched": 8,
-    "enriched": 9,
+    "checkedAt": "2026-09-26T06:24:54.601Z",
+    "titles": 11,
+    "fetched": 10,
+    "enriched": 11,
     "warnings": []
   },
   "resolvedSources": {
@@ -333,7 +375,10 @@
     "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
     "storeCampaign": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
     "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
-    "storeDeals": {}
+    "storeDeals": {
+      "Starfield Premium Edition": "https://store.playstation.com/de-de/product/UP1003-PPSA24884_00-PREMIUMBUNDLE000",
+      "F1® 25: 2026 Saison Edition": "https://store.playstation.com/de-de/product/UP0006-PPSA24662_00-2026SEASONEDITIO"
+    }
   },
   "eaPlay": {
     "title": "FC™ 27 · 10h Trial ab 18.09.",
@@ -357,21 +402,21 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-26T06:03:27.610Z",
+    "checkedAt": "2026-09-26T06:24:37.804Z",
     "month": "September",
     "year": 2026,
     "notes": [],
     "resolved": {
-      "storeDiscoveryMode": "insufficient-verified-products",
+      "storeDiscoveryMode": "dynamic-browser",
       "storeDiscoveryStaticLinks": 1,
       "storeDiscoveryBrowserLinks": 24,
       "storeDiscoveryLinks": 25,
       "storeDiscoveryVerified": 2,
-      "storeDiscoverySelected": 0
+      "storeDiscoverySelected": 2
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-26T06:03:27.718Z",
+    "checkedAt": "2026-09-26T06:24:37.910Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -379,14 +424,12 @@
     "links": 25,
     "fetched": 25,
     "verified": 2,
-    "selected": 0,
-    "mode": "insufficient-verified-products",
-    "warnings": [
-      "Nur 2 verifizierbare Deal-Produkte entdeckt; bestehende verifizierte Auswahl bleibt erhalten."
-    ]
+    "selected": 2,
+    "mode": "dynamic-browser",
+    "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-26T06:03:59.439Z",
+    "checkedAt": "2026-09-26T06:25:11.236Z",
     "verified": 4,
     "missing": [],
     "warnings": [
