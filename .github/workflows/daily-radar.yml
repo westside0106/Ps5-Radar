@@ -62,6 +62,11 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
           npx playwright install chromium
+      - name: Sync latest main before generation
+        shell: bash
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
       - name: Check official sources and update Radar
         run: node scripts/update-radar.mjs
       - name: Resolve current month, active campaigns and dynamic sources
@@ -109,10 +114,20 @@ jobs:
           if git push; then
             exit 0
           fi
+          echo "Remote main changed during this run; regenerate from the new tip instead of merging generated artifacts."
+          git reset --hard HEAD^
           git fetch origin main
-          if git rebase origin/main && git push; then
-            exit 0
-          fi
-          git rebase --abort 2>/dev/null || true
-          echo "::error::Radar-Commit konnte nicht gepusht werden. Ausgabe wurde nicht ausgeliefert."
-          exit 1
+          git reset --hard origin/main
+          node scripts/update-radar.mjs
+          node scripts/automation-v2.mjs
+          node scripts/store-campaign-fallback.mjs
+          node scripts/store-deal-discovery.mjs
+          node scripts/sanitize-radar.mjs
+          node scripts/record-price-history.mjs
+          node scripts/enrich-radar.mjs
+          node scripts/verify-plus-media.mjs
+          node scripts/sanitize-radar.mjs
+          node scripts/finalize-health.mjs
+          git add data/radar.json data/source-state.json data/price-history.json data/archive/ app/radar/page.jsx package-lock.json
+          git commit -m "Daily Radar update $(TZ=Europe/Berlin date +%Y-%m-%d)"
+          git push
