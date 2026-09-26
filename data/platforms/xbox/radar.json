@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-09-25T12:47:59.536Z",
+  "checkedAt": "2026-09-26T12:16:08.557Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1204,
+    "count": 1203,
     "views": {
       "deals": {
-        "expected": 593,
-        "observed": 593,
-        "count": 593,
+        "expected": 592,
+        "observed": 592,
+        "count": 592,
         "complete": true
       },
       "gamepass-console": {
@@ -35,13 +35,13 @@
       },
       "ubisoft-plus": {
         "expected": 116,
-        "observed": 111,
-        "count": 111,
+        "observed": 112,
+        "count": 112,
         "complete": false
       }
     },
     "errors": [
-      "ubisoft-plus: 111/116 Karten gesehen"
+      "ubisoft-plus: 112/116 Karten gesehen"
     ]
   },
   "evidence": [
@@ -51,7 +51,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-25T12:47:59.536Z",
+      "observedAt": "2026-09-26T12:16:08.557Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -62,7 +62,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-25T12:47:59.536Z",
+      "observedAt": "2026-09-26T12:16:08.557Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass für Konsole, Ziel xbox-series"
@@ -73,7 +73,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-25T12:47:59.536Z",
+      "observedAt": "2026-09-26T12:16:08.557Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -84,7 +84,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-25T12:47:59.536Z",
+      "observedAt": "2026-09-26T12:16:08.557Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = EA Play, Ziel xbox-series"
@@ -95,7 +95,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-09-25T12:47:59.536Z",
+      "observedAt": "2026-09-26T12:16:08.557Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -5191,23 +5191,6 @@
       "priceMinor": 1749,
       "regularPriceMinor": 2499,
       "genres": [
-        "Platformer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9p44070z1345",
-      "id": "9p44070z1345",
-      "title": "Dino Odyssey",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/dino-odyssey/9p44070z1345",
-      "cover": "https://store-images.s-microsoft.com/image/apps.56892.14600415554638198.1e657715-0917-4129-96d1-33f082f933ae.ee249535-0a22-4619-9fe6-b904498fbf03?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Action & Abenteuer",
         "Platformer"
       ],
       "services": []
@@ -16420,7 +16403,9 @@
       "genres": [
         "Sport"
       ],
-      "services": []
+      "services": [
+        "ubisoft-plus:ubisoft-plus"
+      ]
     },
     {
       "key": "xbox:product:9nz9pgppbb28",
@@ -16608,6 +16593,24 @@
         "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9n33spbxbpc7",
+      "id": "9n33spbxbpc7",
+      "title": "Super Pixel Kid 2",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/super-pixel-kid-2/9n33spbxbpc7",
+      "cover": "https://store-images.s-microsoft.com/image/apps.30001.13944106307604978.e4105757-3028-41bc-91ce-3075355a36d5.25fadfbf-df2a-47f6-a88c-8b85eb8f8c56?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 99,
+      "regularPriceMinor": 419,
+      "genres": [
+        "Action & Abenteuer",
+        "Klassiker",
+        "Platformer"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:9n4m72l6kgc8",
@@ -18322,24 +18325,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9ntntc2v151g",
-      "id": "9ntntc2v151g",
-      "title": "Together: Moon Escape",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/together-moon-escape/9ntntc2v151g",
-      "cover": "https://store-images.s-microsoft.com/image/apps.37489.14414671424589247.caf42b39-8c4e-4e47-b03d-94564f742a5d.8e2f8c6b-23b2-4f61-9387-2013e1f17ceb?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 849,
-      "regularPriceMinor": 999,
-      "genres": [
-        "Action & Abenteuer",
-        "Platformer",
-        "Rätsel & Wissen"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:c0d7vlq3vddd",
       "id": "c0d7vlq3vddd",
       "title": "Tom Clancy’s Ghost Recon Advanced Warfighter",
@@ -19605,23 +19590,6 @@
       ]
     },
     {
-      "key": "xbox:product:bw9tffj50mkv",
-      "id": "bw9tffj50mkv",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": null,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:console",
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bsxsl6wbj0v7",
       "id": "bsxsl6wbj0v7",
       "title": "Viva Piñata",
@@ -19631,6 +19599,23 @@
         "xbox-series"
       ],
       "priceMinor": 1499,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:console",
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bw9tffj50mkv",
+      "id": "bw9tffj50mkv",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
+      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": null,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
@@ -20240,7 +20225,7 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 2899,
+      "priceMinor": 999,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
