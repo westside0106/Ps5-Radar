@@ -2,10 +2,13 @@ import fs from 'node:fs/promises';
 
 const radarPath = new URL('../data/radar.json', import.meta.url);
 const statePath = new URL('../data/source-state.json', import.meta.url);
+const catalogPath = new URL('../data/ps-plus-catalog.json', import.meta.url);
 
 const radar = JSON.parse(await fs.readFile(radarPath, 'utf8'));
 let state = {};
 try { state = JSON.parse(await fs.readFile(statePath, 'utf8')); } catch {}
+let catalog = {};
+try { catalog = JSON.parse(await fs.readFile(catalogPath, 'utf8')); } catch {}
 
 const now = new Date();
 const berlinDate = radar.date || new Intl.DateTimeFormat('de-DE', {
@@ -34,6 +37,10 @@ for (const note of radar.automationV2?.notes || []) issues.push(`Automation: ${n
 for (const warning of radar.storeDiscovery?.warnings || []) issues.push(`Store-Discovery: ${warning}`);
 for (const warning of radar.enrichment?.warnings || []) issues.push(`Detail-Enrichment: ${warning}`);
 for (const error of radar.sourceCheck?.errors || []) issues.push(error);
+if (radar.editorialFreshness?.status !== 'ok') issues.push('Top-News: Editorial-Freshness nicht bestätigt');
+const catalogCheckedAt = catalog.checkedAt ? new Date(catalog.checkedAt) : null;
+const catalogAgeHours = catalogCheckedAt && !Number.isNaN(catalogCheckedAt.getTime()) ? (now - catalogCheckedAt) / 3600000 : null;
+if (catalogAgeHours === null || catalogAgeHours > 48) issues.push('PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden');
 
 const uniqueIssues = [...new Set(issues.filter(Boolean))];
 const storeVerified = Number(radar.storeDiscovery?.verified || 0);
@@ -55,6 +62,8 @@ radar.health = {
   enrichedTitles: enriched,
   detailTitles,
   automationNotes: (radar.automationV2?.notes || []).length,
+  editorialFreshness: radar.editorialFreshness?.status || 'missing',
+  catalogFreshness: catalogAgeHours !== null && catalogAgeHours <= 48 ? 'ok' : 'stale',
   lastSuccessfulCheck: status === 'ok' ? now.toISOString() : (radar.health?.lastSuccessfulCheck || null)
 };
 

@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 
 const radarPath = new URL('../data/radar.json', import.meta.url);
 const sourcesPath = new URL('../data/sources.json', import.meta.url);
+const catalogPath = new URL('../data/ps-plus-catalog.json', import.meta.url);
 const historyPath = new URL('../data/price-history.json', import.meta.url);
 const archiveDir = new URL('../data/archive/', import.meta.url);
 
@@ -79,7 +80,7 @@ function confidenceFor(points) {
   return 'niedrig';
 }
 
-function signalFor(game, deal, storeEnd, now) {
+function signalFor(game, deal, storeEnd, now, membership = null) {
   const points = (game.points || []).filter((point) => Number.isFinite(point.price));
   if (!points.length) return null;
 
@@ -99,6 +100,8 @@ function signalFor(game, deal, storeEnd, now) {
   const base = {
     version: 1,
     activeDeal,
+    subscriptionIncluded: Boolean(membership),
+    subscriptionLabel: membership || null,
     confidence,
     measurements: points.length,
     currentPrice: activeDeal ? currentDealPrice : null,
@@ -109,6 +112,15 @@ function signalFor(game, deal, storeEnd, now) {
     discount: activeDeal ? currentDiscount : null,
     daysRemaining,
   };
+
+  if (membership) {
+    return {
+      ...base,
+      code: 'wait',
+      label: 'ABO NUTZEN',
+      reason: `Im erfassten ${membership}-Katalog enthalten. Ein Kauf ist bei passender aktiver Mitgliedschaft nicht nötig; der Storepreis bleibt nur als Marktpreis sichtbar.`,
+    };
+  }
 
   if (!activeDeal) {
     return {
@@ -174,6 +186,17 @@ function signalFor(game, deal, storeEnd, now) {
 
 const radar = await readJson(radarPath, {});
 const sources = await readJson(sourcesPath, {});
+const catalog = await readJson(catalogPath, { games: [] });
+function catalogKey(title) {
+  return String(title || '').toLowerCase().replace(/[®™©]/g, '').replace(/standard\s*edition$/i, '').replace(/[^a-z0-9]+/g, '');
+}
+const normalizedCatalog = new Map((catalog.games || []).map((item) => [catalogKey(item.title), item]));
+function membershipFor(title) {
+  const item = normalizedCatalog.get(catalogKey(title));
+  if (!item) return null;
+  const labels = (item.services || []).map((service) => ({ essential:'PS Plus Essential', extra:'PS Plus Extra', premium:'PS Plus Premium', ubisoft:'Ubisoft+ Classics' }[service] || null)).filter(Boolean);
+  return labels.join(' / ') || null;
+}
 const sourceUrls = Object.fromEntries((sources.storeDeals || []).map((item) => [item.title, item.url]));
 const history = await readJson(historyPath, { updatedAt: null, games: {} });
 history.games ||= {};
@@ -203,7 +226,7 @@ let changedSignals = 0;
 
 for (const [title, game] of Object.entries(history.games)) {
   const previousCode = game.signal?.code || null;
-  const signal = signalFor(game, currentDeals.get(title), radar.storeEnd, now);
+  const signal = signalFor(game, currentDeals.get(title), radar.storeEnd, now, membershipFor(title));
   if (!signal) continue;
 
   const signalHistory = Array.isArray(game.signalHistory) ? [...game.signalHistory] : [];
