@@ -187,9 +187,12 @@ function signalFor(game, deal, storeEnd, now, membership = null) {
 const radar = await readJson(radarPath, {});
 const sources = await readJson(sourcesPath, {});
 const catalog = await readJson(catalogPath, { games: [] });
-const normalizedCatalog = new Map((catalog.games || []).map((item) => [String(item.title || '').toLowerCase().replace(/[^a-z0-9]+/g, ''), item]));
+function catalogKey(title) {
+  return String(title || '').toLowerCase().replace(/[®™©]/g, '').replace(/standard\s*edition$/i, '').replace(/[^a-z0-9]+/g, '');
+}
+const normalizedCatalog = new Map((catalog.games || []).map((item) => [catalogKey(item.title), item]));
 function membershipFor(title) {
-  const item = normalizedCatalog.get(String(title || '').toLowerCase().replace(/[^a-z0-9]+/g, ''));
+  const item = normalizedCatalog.get(catalogKey(title));
   if (!item) return null;
   const labels = (item.services || []).map((service) => ({ essential:'PS Plus Essential', extra:'PS Plus Extra', premium:'PS Plus Premium', ubisoft:'Ubisoft+ Classics' }[service] || null)).filter(Boolean);
   return labels.join(' / ') || null;
