@@ -20,9 +20,14 @@
 .quick-showcase .mag-panel-body{min-height:0}
 .quick-list{align-content:start}
 
+/* The magazine shortcut must describe the same four useful catalog sections as /ps-plus. */
+.plus-catalog-nav small{font-size:0}
+.plus-catalog-nav small::after{content:"Essential · Extra · Premium · Ubisoft+ Classics";font-size:11px}
+
 @media(max-width:900px){
   /* Mobile remains a horizontal browse rail; deal-count desktop rules must not fight it. */
   .deal-showcase-grid:has(> :only-child),
   .deal-showcase-grid:has(> :nth-child(2):last-child){display:flex}
   .deal-showcase-meta span,.deal-showcase-facts,.deal-showcase-psplus-note{font-size:11px}
+  .plus-catalog-nav small::after{font-size:12px}
 }
