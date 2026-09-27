@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-27T06:02:58.494Z",
+  "checkedAt": "2026-09-27T13:05:49.795Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -58,7 +58,7 @@
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209319,
+    "bytes": 209320,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175910,
+    "bytes": 175911,
     "updated": true,
     "parsed": {
       "games": [
@@ -149,7 +149,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241887,
+    "bytes": 242010,
     "updated": true,
     "parsed": {
       "trial": false,
