@@ -141,6 +141,7 @@ jobs:
           npm run build
           npm run start -- --hostname 127.0.0.1 > /tmp/radar-next-retry.log 2>&1 &
           RETRY_SERVER_PID=$!
+          trap 'kill $RETRY_SERVER_PID 2>/dev/null || true' EXIT
           for i in {1..60}; do
             if curl -fsS http://127.0.0.1:3000/ >/dev/null; then break; fi
             sleep 1
