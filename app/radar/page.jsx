@@ -370,6 +370,7 @@ function DealCard({ deal }) {
   const membership = catalogMembership(deal.title);
   const plus = membership?.label ? shortPsPlus(membership.label) : shortPsPlus(info.psPlusStatus);
   const meta = [deal.platform || info.platform, info.genre].filter(Boolean).slice(0, 2);
+  const facts = [info.publisher, info.release ? `Release ${info.release}` : null].filter(Boolean).slice(0, 2);
   const endingClass = stats.remaining !== null && stats.remaining <= 1 ? 'is-ending' : '';
   return (
     <DetailTile detail={dealDetail(deal)} className="deal-showcase-wrap">
@@ -384,6 +385,7 @@ function DealCard({ deal }) {
           {plus ? <span className="deal-plus-badge">{plus}</span> : null}
           <h4>{deal.title}</h4>
           {meta.length ? <div className="deal-showcase-meta">{meta.map(value => <span key={value}>{value}</span>)}</div> : null}
+          {facts.length ? <div className="deal-showcase-facts">{facts.join(' · ')}</div> : null}
           <div className="deal-showcase-price">
             <div className="deal-price-values"><del>{deal.oldPrice}</del><strong>{deal.price}</strong></div>
             {stats.saving !== null ? <span className="deal-showcase-saving">Du sparst<br />{formatEuro(stats.saving)}</span> : null}
