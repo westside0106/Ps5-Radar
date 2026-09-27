@@ -652,7 +652,7 @@ export default async function RadarPage() {
           </Panel>
         </section>
 
-        <footer className="mag-footer"><span>PLAY HAS NO LIMITS.</span><small>{String(radar.radarCheck || '').replace(/(\\d+\\/\\d+) Details\\b/, '$1 Detailfelder')}</small></footer>
+        <footer className="mag-footer"><span>PLAY HAS NO LIMITS.</span><small>{String(radar.radarCheck || '').replace(/(\d+\/\d+) Details\b/, '$1 Detailfelder')}</small></footer>
       </div>
     </main>
   );
