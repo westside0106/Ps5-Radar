@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T13:06:10.876Z",
+  "updatedAt": "2026-09-27T16:53:04.249Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -23,6 +23,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "niedrig",
         "measurements": 2,
         "currentPrice": null,
@@ -75,6 +77,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": true,
+        "subscriptionLabel": "PS Plus Extra / Ubisoft+ Classics",
         "confidence": "niedrig",
         "measurements": 2,
         "currentPrice": null,
@@ -85,8 +89,8 @@
         "discount": null,
         "daysRemaining": null,
         "code": "wait",
-        "label": "WARTEN",
-        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "label": "ABO NUTZEN",
+        "reason": "Im erfassten PS Plus Extra / Ubisoft+ Classics-Katalog enthalten. Ein Kauf ist bei passender aktiver Mitgliedschaft nicht nötig; der Storepreis bleibt nur als Marktpreis sichtbar.",
         "changedToday": false,
         "previousCode": null,
         "changedAt": null
@@ -127,6 +131,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "niedrig",
         "measurements": 2,
         "currentPrice": null,
@@ -191,6 +197,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "mittel",
         "measurements": 4,
         "currentPrice": null,
@@ -275,6 +283,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "mittel",
         "measurements": 4,
         "currentPrice": null,
@@ -359,6 +369,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "mittel",
         "measurements": 4,
         "currentPrice": null,
@@ -519,6 +531,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "hoch",
         "measurements": 13,
         "currentPrice": null,
@@ -657,6 +671,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "hoch",
         "measurements": 13,
         "currentPrice": null,
@@ -815,6 +831,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "hoch",
         "measurements": 13,
         "currentPrice": null,
@@ -871,6 +889,8 @@
       "signal": {
         "version": 1,
         "activeDeal": false,
+        "subscriptionIncluded": true,
+        "subscriptionLabel": "PS Plus Extra",
         "confidence": "niedrig",
         "measurements": 1,
         "currentPrice": null,
@@ -881,8 +901,8 @@
         "discount": null,
         "daysRemaining": null,
         "code": "wait",
-        "label": "WARTEN",
-        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "label": "ABO NUTZEN",
+        "reason": "Im erfassten PS Plus Extra-Katalog enthalten. Ein Kauf ist bei passender aktiver Mitgliedschaft nicht nötig; der Storepreis bleibt nur als Marktpreis sichtbar.",
         "changedToday": false,
         "previousCode": null,
         "changedAt": null
@@ -923,6 +943,8 @@
       "signal": {
         "version": 1,
         "activeDeal": true,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "niedrig",
         "measurements": 2,
         "currentPrice": 29.99,
@@ -985,6 +1007,8 @@
       "signal": {
         "version": 1,
         "activeDeal": true,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
         "confidence": "niedrig",
         "measurements": 2,
         "currentPrice": 53.99,

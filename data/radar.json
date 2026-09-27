@@ -3,21 +3,21 @@
   "edition": "AUSGABE #024",
   "newHeadline": "RADAR-CHECK AKTUELL",
   "newCount": "27.09 · LIVE",
-  "leadTitle": "Onimusha: Way of the Sword",
-  "leadDate": "04.09.2026",
-  "leadMeta": "PS5 · Capcom · Samurai-Action in Kyoto",
-  "leadPrice": "79,99 €",
-  "leadImage": "https://i.ytimg.com/vi/UZYxGBeGOzY/maxresdefault.jpg",
-  "secondary1Title": "NBA 2K27",
-  "secondary1Date": "04.09.2026",
-  "secondary1Meta": "PS5 · Basketball · The City erstmals Co-Ed",
-  "secondary1Price": "79,99 €",
-  "secondary1Image": "https://i.ytimg.com/vi/5l-a3U3Y8aA/maxresdefault.jpg",
-  "secondary2Title": "The Blood of Dawnwalker",
-  "secondary2Date": "03.09.2026",
-  "secondary2Meta": "PS5 · Dark-Fantasy Open-World-RPG",
-  "secondary2Price": "69,99 €",
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/07/174ccb5bb7aba84e2ebd620623f858b3bea0b628.jpg?crop_strategy=smart&resize=1088%2C612",
+  "leadTitle": "Luma Island erscheint für PS5",
+  "leadDate": "24.09.2026",
+  "leadMeta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu",
+  "leadPrice": null,
+  "leadImage": "https://live.staticflickr.com/65535/55534855204_78d9021b8b_k.jpg",
+  "secondary1Title": "Fading Echo taucht heute auf PS5 ab",
+  "secondary1Date": "22.09.2026",
+  "secondary1Meta": "Beherrscht Wasser, verbiegt die Realität und kombiniert Elemente: „Fading Echo“ ist ab sofort auf PS5",
+  "secondary1Price": null,
+  "secondary1Image": "https://live.staticflickr.com/65535/55517907873_b1c2c7afda_k.jpg",
+  "secondary2Title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
+  "secondary2Date": "25.09.2026",
+  "secondary2Meta": "Mehr als sieben Jahre nach dem Release des Vorgängers erteilt Bandai Namco endlich mit Ace Combat 8: Wings of Theve einem neuen Teil der beliebten",
+  "secondary2Price": null,
+  "secondary2Image": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1502/5d51d6e19f4a3f5d41936b32e8e7e9425d40c4ae6be6e83d.png",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -89,12 +89,12 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 27.09.2026 · 9/9 Quellen · Store 2 geprüft · 10/10 Details",
+  "radarCheck": "Stand 27.09.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
   "sourceAlerts": [],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-27T13:06:23.496Z",
+    "checkedAt": "2026-09-27T16:53:18.589Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -102,13 +102,15 @@
     "storeDiscoveryMode": "dynamic-browser",
     "storeProductsVerified": 2,
     "storeDealsSelected": 2,
-    "enrichedTitles": 10,
+    "enrichedTitles": 7,
     "detailTitles": 10,
     "automationNotes": 0,
-    "lastSuccessfulCheck": "2026-09-27T13:06:23.496Z"
+    "editorialFreshness": "ok",
+    "catalogFreshness": "ok",
+    "lastSuccessfulCheck": "2026-09-27T16:53:18.589Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-27T13:06:23.496Z",
+    "checkedAt": "2026-09-27T16:53:18.589Z",
     "errors": [],
     "sources": [
       {
@@ -150,60 +152,9 @@
     ]
   },
   "gameDetails": {
-    "Onimusha: Way of the Sword": {
-      "pageUrl": "https://www.playstation.com/de-de/games/onimusha-way-of-the-sword/",
-      "developer": "Capcom",
-      "genre": "Action · Samurai",
-      "description": "Düsteres Samurai-Actionspiel im historischen Kyoto. Im Mittelpunkt stehen präziser Schwertkampf, Genma-Gegner und eine übernatürliche Geschichte.",
-      "trailerUrl": "https://www.youtube.com/watch?v=UZYxGBeGOzY",
-      "publisher": "CE EUROPE LIMITED",
-      "release": "04.09.2026",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/6f451f9fcef025e8913d863041514efb8cf24dc0b6d7ab01.png",
-        "https://i.ytimg.com/vi_webp/W9Ct29FeMak/maxresdefault.webp",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1500/78f4d34e61e0f24e6708ac380909fb71c010696c5c751412.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/e0378f1a844ede8537afefe74bd255af144b2f43871adc75.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1506/e5fbe90c88b01ff09d12bab098944090820f4d228e393535.jpg"
-      ]
-    },
-    "NBA 2K27": {
-      "pageUrl": "https://www.playstation.com/de-de/games/nba-2k/",
-      "developer": "Visual Concepts",
-      "genre": "Sport · Basketball",
-      "description": "Basketball-Simulation von 2K mit MyCAREER, MyTEAM, The City und Online-Modi auf PS5.",
-      "trailerUrl": "https://www.youtube.com/watch?v=5l-a3U3Y8aA",
-      "publisher": "Take-Two",
-      "release": "04.09.2026",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202606/2913/4a31f711e2ff460cd44ad646983f36533278cea61f639be9.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-hero-desktop-03-en-16jul26",
-        "https://i.ytimg.com/vi_webp/5l-a3U3Y8aA/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/x3VbMlmerXg/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/YUbJfNJSG-M/maxresdefault.webp",
-        "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-screenshot-05-en-16jul26"
-      ]
-    },
-    "The Blood of Dawnwalker": {
-      "pageUrl": "https://www.playstation.com/de-de/games/the-blood-of-dawnwalker/",
-      "developer": "Rebel Wolves",
-      "genre": "Open-World-Action-RPG · Dark Fantasy",
-      "description": "Düsteres Open-World-Action-RPG, in dem ein zwischen Mensch und Vampir gefangener Protagonist in einer mittelalterlichen Welt um Zeit, Macht und Überleben kämpft.",
-      "publisher": "BANDAI NAMCO ENTERTAINMENT EUROPE",
-      "release": "03.09.2026",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202603/3009/4bf61f8869f55ee0a930f3d1f00992559c1d4a2d52e00408.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202512/1814/fd8c64ffef89f338da778a59a8e23fd4eb8e793bd6d94a2f.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/Blood-of-Dawnwalker-hero-desktop-01-en-04feb26",
-        "https://i.ytimg.com/vi_webp/YxEUwi2EtnY/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/UEquupEcYt8/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/0JtpOX0CxDo/maxresdefault.webp"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=0JtpOX0CxDo"
-    },
+    "Luma Island erscheint für PS5": {},
+    "Fading Echo taucht heute auf PS5 ab": {},
+    "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -341,10 +292,10 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-27T13:06:10.930Z",
+    "checkedAt": "2026-09-27T16:53:04.426Z",
     "titles": 10,
-    "fetched": 10,
-    "enriched": 10,
+    "fetched": 7,
+    "enriched": 7,
     "warnings": []
   },
   "resolvedSources": {
@@ -398,7 +349,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-27T13:05:58.256Z",
+    "checkedAt": "2026-09-27T16:52:45.987Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -412,7 +363,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-27T13:05:58.364Z",
+    "checkedAt": "2026-09-27T16:52:46.090Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -425,11 +376,34 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-27T13:06:18.860Z",
+    "checkedAt": "2026-09-27T16:53:14.350Z",
     "verified": 4,
     "missing": [],
     "warnings": [
       "Chained Echoes: Produktidentitaet oder Cover nicht bestaetigt"
+    ]
+  },
+  "editorialFreshness": {
+    "status": "ok",
+    "checkedAt": "2026-09-27T16:52:45.119Z",
+    "date": "27.09.2026",
+    "maxAgeDays": 21,
+    "selected": [
+      {
+        "title": "Luma Island erscheint für PS5",
+        "date": "24.09.2026",
+        "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/"
+      },
+      {
+        "title": "Fading Echo taucht heute auf PS5 ab",
+        "date": "22.09.2026",
+        "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/"
+      },
+      {
+        "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
+        "date": "25.09.2026",
+        "url": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/"
+      }
     ]
   }
 }
