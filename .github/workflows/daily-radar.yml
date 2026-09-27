@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/daily-radar.yml'
       - 'scripts/update-radar.mjs'
+      - 'scripts/refresh-editorial.mjs'
       - 'scripts/automation-v2.mjs'
       - 'scripts/store-campaign-fallback.mjs'
       - 'scripts/store-deal-discovery.mjs'
@@ -69,6 +70,8 @@ jobs:
           git reset --hard origin/main
       - name: Check official sources and update Radar
         run: node scripts/update-radar.mjs
+      - name: Refresh and validate Top News
+        run: node scripts/refresh-editorial.mjs
       - name: Resolve current month, active campaigns and dynamic sources
         run: node scripts/automation-v2.mjs
       - name: Resolve configured Store campaign fallback
@@ -119,6 +122,7 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
           node scripts/update-radar.mjs
+          node scripts/refresh-editorial.mjs
           node scripts/automation-v2.mjs
           node scripts/store-campaign-fallback.mjs
           node scripts/store-deal-discovery.mjs
