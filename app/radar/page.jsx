@@ -582,7 +582,7 @@ export default async function RadarPage() {
                 <div className="store-stat"><small>ENDET</small><b>{remaining === null ? '—' : remaining === 0 ? 'HEUTE' : remaining === 1 ? '1 TAG' : `${remaining} TAGE`}</b></div>
               </div>
             </div>
-            <div className="deal-showcase-grid">
+            <div className={`deal-showcase-grid deal-count-${Math.min(radar.deals.length, 3)}`}>
               {radar.deals.map((deal) => <DealCard key={deal.title} deal={deal} />)}
             </div>
             <div className="store-intro" style={{ marginTop: 9, marginBottom: 0 }}>
@@ -652,7 +652,7 @@ export default async function RadarPage() {
           </Panel>
         </section>
 
-        <footer className="mag-footer"><span>PLAY HAS NO LIMITS.</span><small>{radar.radarCheck}</small></footer>
+        <footer className="mag-footer"><span>PLAY HAS NO LIMITS.</span><small>{String(radar.radarCheck || '').replace(/(\d+\/\d+) Details\b/, '$1 Detailfelder')}</small></footer>
       </div>
     </main>
   );

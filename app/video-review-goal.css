@@ -9,8 +9,9 @@
 .mag-bottomgrid:has(> .release-showcase .release-grid:empty):has(> .quick-showcase .quick-list:empty){display:none}
 
 /* Deal count controls the desktop grid instead of reserving an empty third slot. */
-.deal-showcase-grid:has(> :only-child){grid-template-columns:minmax(0,1fr)}
-.deal-showcase-grid:has(> :nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
+.deal-showcase-grid.deal-count-1{grid-template-columns:minmax(0,1fr)}
+.deal-showcase-grid.deal-count-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.deal-showcase-grid.deal-count-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .deal-showcase-meta span{font-size:10px}
 .deal-showcase-facts{font-size:10px;line-height:1.35}
 .deal-showcase-psplus-note{font-size:10px;line-height:1.35}
@@ -26,8 +27,28 @@
 
 @media(max-width:900px){
   /* Mobile remains a horizontal browse rail; deal-count desktop rules must not fight it. */
-  .deal-showcase-grid:has(> :only-child),
-  .deal-showcase-grid:has(> :nth-child(2):last-child){display:flex}
+  .deal-showcase-grid.deal-count-1,
+  .deal-showcase-grid.deal-count-2,
+  .deal-showcase-grid.deal-count-3{display:flex}
   .deal-showcase-meta span,.deal-showcase-facts,.deal-showcase-psplus-note{font-size:11px}
   .plus-catalog-nav small::after{font-size:12px}
+}
+
+
+/* iPhone navigation is one predictable horizontal rail, never an accidental second row. */
+@media(max-width:900px){
+  .mag-toolbar{
+    justify-content:flex-start;
+    gap:6px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    flex-wrap:nowrap;
+    padding:0 2px 5px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    overscroll-behavior-x:contain;
+  }
+  .mag-toolbar::-webkit-scrollbar{display:none}
+  .mag-toolbar>a,.mag-toolbar>form{flex:0 0 auto}
+  .mag-toolbar .logout{white-space:nowrap}
 }

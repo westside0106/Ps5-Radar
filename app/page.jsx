@@ -18,7 +18,7 @@ export default async function LoginPage({ searchParams }) {
         <p>Geschützte Daily-Intelligence-Ansicht.</p>
         {failed ? <div className="error">Passwort nicht korrekt.</div> : null}
         <form action="/api/login" method="post">
-          <input type="password" name="password" placeholder="Passwort" autoComplete="current-password" required autoFocus />
+          <input type="password" name="password" placeholder="Passwort" autoComplete="current-password" required />
           <button type="submit">Radar öffnen</button>
         </form>
       </section>

@@ -27,7 +27,16 @@ function strip(v='') { return decodeEntities(v).replace(/<[^>]*>/g,' ').replace(
 function items(xml) { return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map(m=>{const x=m[1];const image=x.match(/(?:media:content|enclosure)[^>]+url=["']([^"']+)["']/i)?.[1]||x.match(/<img[^>]+src=["']([^"']+)["']/i)?.[1]||null;return {title:strip(x.match(/<title>([\s\S]*?)<\/title>/i)?.[1]),link:strip(x.match(/<link>([\s\S]*?)<\/link>/i)?.[1]),pubDate:strip(x.match(/<pubDate>([\s\S]*?)<\/pubDate>/i)?.[1]),description:strip(x.match(/<description>([\s\S]*?)<\/description>/i)?.[1]),image:image?decodeEntities(image):null};}).filter(x=>x.title&&x.link&&x.pubDate); }
 function fmt(d){return new Intl.DateTimeFormat('de-DE',{timeZone:'Europe/Berlin',day:'2-digit',month:'2-digit',year:'numeric'}).format(d);}
 function score(x){const age=(now-new Date(x.pubDate))/864e5; const t=x.title.toLowerCase(); return 200-Math.min(age,60)*4 + (/ps5|playstation 5/.test(t)?20:0)+(/release|erscheint|jetzt erhältlich|ab heute|trailer|update|angekündigt/.test(t)?12:0)-(/gewinnspiel|community|cosplay/.test(t)?20:0);}
-function meta(x){return (x.description||'Aktuelle PlayStation-Meldung').slice(0,150).replace(/\s+\S*$/,'').trim();}
+function meta(x){
+  const text = String(x.description || 'Aktuelle PlayStation-Meldung').replace(/\s+/g,' ').trim();
+  const max = 150;
+  if (text.length <= max) return text;
+  const window = text.slice(0, max + 1);
+  const sentenceEnds = [...window.matchAll(/[.!?](?=\s|$)/g)].map(match => match.index + 1).filter(index => index >= 80);
+  if (sentenceEnds.length) return window.slice(0, sentenceEnds.at(-1)).trim();
+  const cut = window.slice(0, max).replace(/\s+\S*$/,'').replace(/[,:;\-–—]+$/,'').trim();
+  return `${cut}…`;
+}
 function pageHero(html='') {
   const candidates = [
     html.match(/<meta[^>]+property=["']og:image(?::secure_url)?["'][^>]+content=["']([^"']+)["']/i)?.[1],

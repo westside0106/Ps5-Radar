@@ -115,12 +115,30 @@ test('video review goal removes empty navigation and dead magazine space',async(
  assert.ok(!/service==='trials'|service==='leaving'/.test(client));
  assert.match(client,/eindeutige erfasste Titel/);
  assert.match(goalCss,/release-showcase:has\(\.release-grid:empty\)\{display:none\}/);
- assert.match(goalCss,/nth-child\(2\):last-child/);
+ assert.match(goalCss,/deal-count-2/);
  assert.match(sanitizer,/&#8220;\|&#8221;/);
  assert.match(sanitizer,/Aktuelle Store-Aktion endet bald/);
  assert.match(editorial,/pageHero/);
  assert.match(editorial,/type:'editorial'/);
 });
+test('iphone login and Daily PNG stay stable and clean',async()=>{
+ const login=await fs.readFile(new URL('../app/page.jsx',import.meta.url),'utf8');
+ const globals=await fs.readFile(new URL('../app/globals.css',import.meta.url),'utf8');
+ const screenshot=await fs.readFile(new URL('./screenshot-radar.mjs',import.meta.url),'utf8');
+ const workflow=await fs.readFile(new URL('../.github/workflows/daily-radar.yml',import.meta.url),'utf8');
+ const page=await fs.readFile(new URL('../app/radar/page.jsx',import.meta.url),'utf8');
+ assert.ok(!/autoFocus/.test(login),'Login darf auf iPhone nicht ungefragt fokussieren');
+ assert.match(globals,/\.login-card input\{[^}]*font-size:16px/);
+ assert.match(screenshot,/nextjs-portal/);
+ assert.match(screenshot,/watchlist-dock/);
+ assert.match(screenshot,/copyFile\(latest, numbered\)/);
+ assert.ok(!/fs\.access\(numbered\)/.test(screenshot),'Aktuelle nummerierte Ausgabe muss mit latest synchronisiert werden');
+ assert.match(workflow,/npm run build/);
+ assert.match(workflow,/npm run start -- --hostname 127\.0\.0\.1/);
+ assert.match(workflow,/git add[^\n]*data\/daily\//);
+ assert.match(page,/deal-count-\$\{Math\.min\(radar\.deals\.length, 3\)\}/);
+});
+
 test('catalog route requires the existing private session',async()=>{
  const page=await fs.readFile(new URL('../app/ps-plus/page.jsx',import.meta.url),'utf8');
  assert.match(page,/safeEqual\(jar\.get\(COOKIE_NAME\)\?\.value, expected\)/);
