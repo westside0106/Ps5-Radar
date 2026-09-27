@@ -6,8 +6,7 @@ import { CATALOG_TABS, catalogFilter } from '../../lib/radar-catalog-view.mjs';
 
 const PAGE_SIZE = 36;
 const serviceNames = {
-  essential: 'Essential', extra: 'Extra', premium: 'Premium · Klassiker',
-  trials: 'Premium · Trials', leaving: 'Verlässt bald', ubisoft: 'Ubisoft+ Classics'
+  essential: 'Essential', extra: 'Extra', premium: 'Premium · Klassiker', ubisoft: 'Ubisoft+ Classics'
 };
 
 function dateLabel(value) {
@@ -18,7 +17,7 @@ function dateLabel(value) {
 
 function CatalogCard({ game, service }) {
   const platforms = game.platforms?.length ? game.platforms.join(' · ') : null;
-  const membership = service === 'leaving' ? (game.services.includes('premium') ? 'Premium · Klassiker' : 'Extra') : serviceNames[service] || 'PlayStation Plus';
+  const membership = serviceNames[service] || 'PlayStation Plus';
   const rows = [
     { label: 'Mitgliedschaft', value: membership },
     { label: 'Plattform', value: platforms },
@@ -28,7 +27,6 @@ function CatalogCard({ game, service }) {
     { label: 'Release', value: dateLabel(game.releaseDate) },
     { label: 'Hinzugefügt', value: dateLabel(game.addedAt) },
     { label: 'Entfernung', value: dateLabel(game.leavingAt) },
-    { label: 'Testdauer', value: game.trialHours ? `${game.trialHours} Stunden` : null },
     { label: 'Beanspruchung', value: game.claimWindow },
   ].filter(row => row.value != null && row.value !== '');
   const links = [
@@ -51,7 +49,6 @@ function CatalogCard({ game, service }) {
         <h3>{game.title}</h3>
         {platforms ? <p>{platforms}</p> : null}
         {game.leavingAt ? <span className="catalog-expiry">Verlässt am {dateLabel(game.leavingAt)}</span> : null}
-        {service === 'trials' && game.trialHours ? <span className="catalog-trial">{game.trialHours} Stunden testen</span> : null}
         <span className="catalog-card-more">Details ansehen ↗</span>
       </div>
     </article>
@@ -86,21 +83,19 @@ export default function CatalogClient({ snapshot }) {
   return <div className="catalog-app">
     <header className="catalog-header">
       <nav className="catalog-back"><a href="/radar">← Magazin</a><a href="/radar" className="is-active" aria-current="page">PlayStation</a><a href="/xbox">Xbox <b>BETA</b></a><a href="/preise">Preisradar</a></nav>
-      <div className="catalog-heading"><div><span className="catalog-eyebrow">PLAYSTATION-RADAR · DEUTSCHLAND</span><h1>Dein PS+ Spielekatalog</h1><p>Alle erfassten Spiele durchsuchen, filtern und direkt im PlayStation Store öffnen.</p></div><div className="catalog-count"><strong>{total.toLocaleString('de-DE')}</strong><span>erfasste Spiele</span></div></div>
+      <div className="catalog-heading"><div><span className="catalog-eyebrow">PLAYSTATION-RADAR · DEUTSCHLAND</span><h1>Dein PS+ Spielekatalog</h1><p>Alle verlässlich erfassten Katalogbereiche durchsuchen, filtern und direkt im PlayStation Store öffnen.</p></div><div className="catalog-count"><strong>{total.toLocaleString('de-DE')}</strong><span>eindeutige erfasste Titel</span></div></div>
     </header>
-    <nav className="catalog-tabs" aria-label="PS-Plus-Bereiche">{CATALOG_TABS.map(tab => { const section=snapshot.sections[tab.id]||{}; const infoOnly=!section.complete && !(section.count>0); return <button key={tab.id} type="button" className={service===tab.id?'active':''} aria-current={service===tab.id?'page':undefined} title={infoOnly?'Der offizielle Web-Katalog liefert hierfür derzeit keine vollständige maschinenlesbare Liste.':'Erfasste Spiele anzeigen'} onClick={()=>selectService(tab.id)}>{tab.label}{infoOnly?' · Info':''}</button>; })}</nav>
+    <nav className="catalog-tabs" aria-label="PS-Plus-Bereiche">{CATALOG_TABS.map(tab => <button key={tab.id} type="button" className={service===tab.id?'active':''} aria-current={service===tab.id?'page':undefined} onClick={()=>selectService(tab.id)}>{tab.label}</button>)}</nav>
     <section className="catalog-status" aria-live="polite"><div><strong>{serviceNames[service] || 'Katalog'}</strong><span>{status.count ?? 0} erfasste Einträge{status.complete?' · Quelle vollständig geprüft':' · Abdeckung nicht vollständig bestätigt'}</span></div><span className="catalog-date">{status.stale?'Stand veraltet · ':''}{sourceDate ? `Quellenstand ${sourceDate}`:'Noch kein gültiger Snapshot'}</span></section>
     {!status.complete || status.stale ? <div className="catalog-warning" role="status">{status.stale ? <>Der letzte vollständige Quellencheck liegt mehr als 48 Stunden zurück. Die zuletzt vollständig bestätigten Einträge bleiben sichtbar, können aber inzwischen geändert worden sein. </> : <>Eine vollständige Abdeckung dieses Bereichs ist derzeit nicht bestätigt. Die angezeigten Einträge sind keine Garantie für aktuelle Verfügbarkeit. </>}<a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Offiziellen Katalog prüfen ↗</a></div> : null}
     {service==='essential' ? <p className="catalog-note">Monatliche Spiele müssen während ihres Beanspruchungszeitraums zur Bibliothek hinzugefügt werden. Sie bleiben mit aktivem PS-Plus-Abonnement spielbar.</p> : null}
     {service==='extra' ? <p className="catalog-note">Extra-Spiele sind nur während ihrer Katalogzugehörigkeit spielbar. Ein früheres Hinzufügen zur Bibliothek verlängert den Zugriff nicht. Premium enthält ebenfalls den Extra-Spielekatalog.</p> : null}
-    {service==='premium' ? <p className="catalog-note">Diese Ansicht zeigt den Klassikerkatalog. Mit Premium erhältst du zusätzlich Zugriff auf den Extra-Spielekatalog und verfügbare Spieltestversionen.</p> : null}
-    {service==='trials' ? <p className="catalog-note">Testversionen sind kein vollständiger Spielezugang. <b>Der offizielle Spielekatalog führt sie nicht als eigene Kategorie</b> – sein Spieltyp-Filter kennt nur Monatliche Spiele, Spielekatalog, Klassikerkatalog und Ubisoft+ Classics. Deshalb ist hier nichts erfasst. Testdauer und Berechtigung werden nicht geschätzt; im <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">offiziellen Spielefinder ↗</a> sind sie direkt am Spiel vermerkt.</p> : null}
-    {service==='leaving' ? <p className="catalog-note">Nur Spiele mit bestätigtem Entfernungstermin werden angezeigt. <b>Der offizielle Spielekatalog veröffentlicht keine Abgangstermine</b> und bietet dafür auch keinen Filter an. Solange kein belegter Termin vorliegt, bleibt dieser Bereich leer – geschätzt wird nichts.</p> : null}
+    {service==='premium' ? <p className="catalog-note">Diese Ansicht zeigt den Klassikerkatalog. Mit Premium erhältst du zusätzlich Zugriff auf den Extra-Spielekatalog.</p> : null}
     <div className="catalog-filter-head"><label className="catalog-search"><span className="sr-only">Spiele suchen</span><input type="search" placeholder="Spiel suchen …" value={query} onChange={e=>update(setQuery)(e.target.value)} /></label><button className="catalog-filter-toggle" onClick={()=>setHideFilters(!hideFilters)} aria-expanded={!hideFilters}>{hideFilters?'Filter anzeigen':'Filter'}</button></div>
     {!hideFilters ? <div className="catalog-filters">{hasPlatforms ? <label>Plattform<select value={platform} onChange={e=>update(setPlatform)(e.target.value)}><option value="all">Alle Plattformen</option><option value="PS5">PS5</option><option value="PS4">PS4</option></select></label> : null}{genres.length ? <label>Genre<select value={genre} onChange={e=>update(setGenre)(e.target.value)}><option value="all">Alle Genres</option>{genres.map(g=><option key={g} value={g}>{g}</option>)}</select></label> : null}{hasAddedDates || hasLeavingDates ? <label>Sortieren<select value={(sort==='recent'&&!hasAddedDates)||(sort==='leaving'&&!hasLeavingDates)?'title':sort} onChange={e=>update(setSort)(e.target.value)}><option value="title">Titel A–Z</option>{hasAddedDates?<option value="recent">Zuletzt hinzugefügt</option>:null}{hasLeavingDates?<option value="leaving">Entfernungstermin</option>:null}</select></label> : null}<label className="catalog-check"><input type="checkbox" checked={onlyVerifiedArt} onChange={e=>update(setOnlyVerifiedArt)(e.target.checked)}/> Nur mit Cover</label></div> : null}
     <div className="catalog-results-head"><strong>{filtered.length.toLocaleString('de-DE')} {filtered.length===1?'Spiel':'Spiele'}</strong><span>{filtered.length?`${(Math.min(page,pages)-1)*PAGE_SIZE+1}–${Math.min(Math.min(page,pages)*PAGE_SIZE,filtered.length)}`:'Keine Treffer'}</span></div>
-    {visible.length ? <div className="catalog-grid">{visible.map(game=><CatalogCard key={game.id} game={game} service={service}/>)}</div> : <div className="catalog-empty"><h2>Keine passenden Einträge</h2><p>{status.complete?'Versuche andere Suchbegriffe oder Filter.':'Der Bereich ist noch nicht vollständig erfasst. Es werden keine Spiele erfunden oder aus anderen Abos ergänzt.'}</p><a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Offiziellen Spielefinder öffnen ↗</a></div>}
+    {visible.length ? <div className="catalog-grid">{visible.map(game=><CatalogCard key={game.id} game={game} service={service}/>)}</div> : <div className="catalog-empty"><h2>Keine passenden Einträge</h2><p>{status.complete?'Versuche andere Suchbegriffe oder Filter.':'Für diesen Katalogbereich liegt aktuell keine vollständig bestätigte Liste vor.'}</p><a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Offiziellen Spielefinder öffnen ↗</a></div>}
     {pages>1 ? <nav className="catalog-pagination" aria-label="Ergebnisseiten"><button disabled={page<=1} onClick={()=>setPage(p=>p-1)}>← Zurück</button><span>Seite {Math.min(page,pages)} von {pages}</span><button disabled={page>=pages} onClick={()=>setPage(p=>p+1)}>Weiter →</button></nav> : null}
-    <footer className="catalog-footer">Private Spieleübersicht · Keine Kauf- oder Abo-Funktion · Verfügbarkeit und Berechtigung im offiziellen Store prüfen.{!hasPlatforms || !genres.length ? <><br/>Plattform- und Genrefilter erscheinen, sobald die offizielle Katalogseite diese Angaben maschinenlesbar ausgibt. Derzeit stehen sie dort nur als Symbol ohne Textbeschriftung.</> : null}</footer>
+    <footer className="catalog-footer">Private Spieleübersicht · Keine Kauf- oder Abo-Funktion · Verfügbarkeit und Berechtigung im offiziellen Store prüfen.{!hasPlatforms || !genres.length ? <><br/>Plattform- und Genrefilter erscheinen nur, wenn die offizielle Katalogquelle diese Angaben belastbar liefert.</> : null}</footer>
   </div>;
 }
