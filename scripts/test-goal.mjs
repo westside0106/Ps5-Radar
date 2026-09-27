@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import fs from 'node:fs/promises';
 import { emptyCatalog, normalizeCatalog, catalogCover, catalogFilter, mergeCatalogSnapshots, berlinDate, titleKey } from '../lib/ps-plus-catalog.mjs';
 import { safePlusCover, dailyLabel } from '../lib/radar-media.mjs';
-import { prepareCatalog } from '../lib/radar-catalog-view.mjs';
+import { CATALOG_TABS, prepareCatalog } from '../lib/radar-catalog-view.mjs';
 import { storeProduct, verifiedStoreCover } from './lib/media-identity.mjs';
 const source='https://www.playstation.com/de-de/ps-plus/games/';
 const store='https://store.playstation.com/de-de/product/EP0000-PPSA00000_00-GAME000000000000';
@@ -47,28 +47,20 @@ test('trademark symbols never leak into the normalized title',()=>{
 test('source-side duplicates do not make a fully paginated section incomplete',()=>{
  const a={title:'Spiel A',storeUrl:'https://store.playstation.com/de-de/product/EP0000-PPSA00001_00-AAAAAAAAAAAAAAAA',image:cover,platforms:['PS5']};
  const b={title:'Spiel B',storeUrl:'https://store.playstation.com/de-de/product/EP0000-PPSA00002_00-BBBBBBBBBBBBBBBB',image:cover,platforms:['PS5']};
- // Die Quelle listet drei Karten, zwei davon mit derselben Store-Identitaet.
  const c=normalizeCatalog({results:{extra:{expected:3,observed:3,complete:true,entries:[a,b,{...a}]}}});
- assert.equal(c.sections.extra.complete,true);
- assert.equal(c.sections.extra.count,2);
- assert.equal(c.sections.extra.duplicates,1);
- // Ohne vollstaendige Paginierung bleibt es unvollstaendig.
+ assert.equal(c.sections.extra.complete,true);assert.equal(c.sections.extra.count,2);assert.equal(c.sections.extra.duplicates,1);
  const partial=normalizeCatalog({results:{extra:{expected:3,observed:2,complete:true,entries:[a,b]}}});
  assert.equal(partial.sections.extra.complete,false);
 });
 test('catalog tiles bring their own copy and never get the magazine overlay',async()=>{
  const detail=await fs.readFile(new URL('../app/radar/DetailTile.jsx',import.meta.url),'utf8');
  const client=await fs.readFile(new URL('../app/ps-plus/CatalogClient.jsx',import.meta.url),'utf8');
- // Das Overlay rendert einen zweiten Titel und ein fest verdrahtetes
- // "PS PLUS ESSENTIAL"; auf einer Katalogkachel ueberlagert das die eigene Kopie.
- // Geprueft wird die Bedingung selbst, nicht ihr Wortlaut.
  const expression=detail.match(/const isPlusCard = ([^;]+);/)[1];
  const isPlusCard=value=>new Function('detail',`return ${expression};`)(value);
  assert.equal(isPlusCard({kind:'catalog-game',kicker:'EXTRA',image:'cover.png'}),false);
  assert.equal(isPlusCard({kind:'catalog-game',kicker:'PLAYSTATION PLUS',image:'cover.png'}),false);
  assert.equal(isPlusCard({kind:'game',kicker:'PLAYSTATION PLUS',image:'cover.png'}),true);
  assert.match(client,/kind: 'catalog-game'/);
- // Unbekannte Plattform darf nicht als Dauertext auf jeder Kachel stehen.
  assert.ok(!/Plattform nicht angegeben/.test(client),'Platzhaltertext darf nicht mehr vorkommen');
  assert.match(client,/\{platforms \? <p>\{platforms\}<\/p> : null\}/);
 });
@@ -77,13 +69,10 @@ test('a partial run never erases genres or platforms captured earlier',()=>{
  const withTags={title:'Testspiel',storeUrl:url,image:cover,platforms:['PS5'],genres:['Action']};
  const withoutTags={title:'Testspiel',storeUrl:url,image:cover};
  const full=normalizeCatalog({checkedAt:'2026-09-11T08:00:00Z',results:{extra:{expected:1,observed:1,complete:true,entries:[withTags]}}});
- // Ein spaeterer Lauf erfasst dieselben Spiele, aber die Tag-Durchlaeufe
- // scheitern - die frueheren Zuordnungen muessen erhalten bleiben.
  const partial=normalizeCatalog({checkedAt:'2026-09-14T08:00:00Z',results:{extra:{expected:1,observed:1,complete:true,entries:[withoutTags]}}});
  const merged=mergeCatalogSnapshots(full,partial);
  assert.deepEqual(merged.games[0].platforms,['PS5'],'Plattform darf nicht verlorengehen');
  assert.deepEqual(merged.games[0].genres,['Action'],'Genre darf nicht verlorengehen');
- // Neue Zuordnungen gewinnen dagegen.
  const better={title:'Testspiel',storeUrl:url,image:cover,platforms:['PS4','PS5'],genres:['Action','Puzzle']};
  const neu=normalizeCatalog({checkedAt:'2026-09-14T08:00:00Z',results:{extra:{expected:1,observed:1,complete:true,entries:[better]}}});
  assert.deepEqual(mergeCatalogSnapshots(full,neu).games[0].genres,['Action','Puzzle']);
@@ -92,7 +81,9 @@ test('catalog membership is not confused with a monthly claim',()=>{
  const c=fixture();const radar={plusGames:[{title:'Testspiel',storeUrl:store}],psplusText:'01.09.–05.10.2026'};
  const view=prepareCatalog(c,radar,new Date('2026-09-07T12:00:00Z'));
  assert.equal(view.games.length,1);assert.deepEqual(view.games[0].services,['extra']);
- assert.equal(view.sections.extra.complete,true);assert.equal(view.sections.trials.complete,false);
+ assert.equal(view.sections.extra.complete,true);
+ assert.deepEqual(CATALOG_TABS.map(tab=>tab.id),['essential','extra','premium','ubisoft']);
+ assert.equal(view.sections.trials,undefined);assert.equal(view.sections.leaving,undefined);
 });
 test('failed refresh preserves last valid snapshot and does not invent games',()=>{
  const old=fixture();const next=normalizeCatalog({checkedAt:'2026-09-08T08:00:00Z',results:{extra:{expected:5,complete:false,entries:[]}}});
@@ -103,7 +94,7 @@ test('Berlin calendar date and today labels are exact',()=>{
  assert.equal(dailyLabel('06.09.2026','07.09.2026'),'SEIT 06.09.');
  assert.equal(dailyLabel('07.09.2026','07.09.2026'),'HEUTE NEU');
 });
-test('leaving filter only contains confirmed future dates',()=>{
+test('internal leaving filter still requires confirmed future dates',()=>{
  const games=[{id:'1',title:'A',services:['extra'],leavingAt:'2026-09-08'},{id:'2',title:'B',services:['extra']},{id:'3',title:'C',services:['extra'],leavingAt:'2026-09-06'}];
  assert.deepEqual(catalogFilter(games,{service:'leaving',now:new Date('2026-09-07T12:00:00Z')}).map(g=>g.id),['1']);
 });
@@ -114,6 +105,21 @@ test('prices and signals occupy separate DOM and layout regions',async()=>{
  assert.match(page,/className="deal-price-values"/);assert.match(detail,/className="radar-signal-footer"/);
  assert.match(css,/\.radar-signal-footer\s*\{[^}]*position:relative/);assert.match(css,/\.deal-showcase-price\s*\{[^}]*display:flex/);
  assert.match(page,/Alle PS\+-Spiele anzeigen/);
+});
+test('video review goal removes empty navigation and dead magazine space',async()=>{
+ const client=await fs.readFile(new URL('../app/ps-plus/CatalogClient.jsx',import.meta.url),'utf8');
+ const goalCss=await fs.readFile(new URL('../app/video-review-goal.css',import.meta.url),'utf8');
+ const sanitizer=await fs.readFile(new URL('./sanitize-radar.mjs',import.meta.url),'utf8');
+ const editorial=await fs.readFile(new URL('./refresh-editorial.mjs',import.meta.url),'utf8');
+ assert.ok(!CATALOG_TABS.some(tab=>['trials','leaving'].includes(tab.id)));
+ assert.ok(!/service==='trials'|service==='leaving'/.test(client));
+ assert.match(client,/eindeutige erfasste Titel/);
+ assert.match(goalCss,/release-showcase:has\(\.release-grid:empty\)\{display:none\}/);
+ assert.match(goalCss,/nth-child\(2\):last-child/);
+ assert.match(sanitizer,/&#8220;\|&#8221;/);
+ assert.match(sanitizer,/Aktuelle Store-Aktion endet bald/);
+ assert.match(editorial,/pageHero/);
+ assert.match(editorial,/type:'editorial'/);
 });
 test('catalog route requires the existing private session',async()=>{
  const page=await fs.readFile(new URL('../app/ps-plus/page.jsx',import.meta.url),'utf8');
