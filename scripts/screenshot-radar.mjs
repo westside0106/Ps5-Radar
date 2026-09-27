@@ -27,13 +27,19 @@ try {
   const page = await context.newPage();
   await page.goto(`${baseUrl}/radar`, { waitUntil: 'domcontentloaded' });
   await page.locator('.magazine').waitFor({ state: 'visible', timeout: 20000 });
+  await page.addStyleTag({ content: `
+    .watchlist-dock,
+    nextjs-portal,
+    [data-next-badge-root],
+    [data-nextjs-toast],
+    #nextjs__container_errors { display: none !important; visibility: hidden !important; }
+  ` });
+  await page.evaluate(async () => {
+    if (document.fonts?.ready) await document.fonts.ready;
+  });
   await page.waitForTimeout(2500);
   await page.locator('.magazine').screenshot({ path: latest, type: 'png' });
-  try {
-    await fs.access(numbered);
-  } catch {
-    await fs.copyFile(latest, numbered);
-  }
+  await fs.copyFile(latest, numbered);
   console.log(`Rendered Radar ${radar.edition} -> data/daily/latest.png and ${id}.png`);
 } finally {
   await browser.close();
