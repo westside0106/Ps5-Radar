@@ -20,6 +20,9 @@ on:
       - 'scripts/finalize-health.mjs'
       - 'scripts/screenshot-radar.mjs'
       - 'app/radar/DetailTile.jsx'
+      - 'app/radar/page.jsx'
+      - 'app/page.jsx'
+      - 'app/**/*.css'
       - 'app/watchlist/**'
       - 'app/WatchlistDock.jsx'
       - 'app/watchlist.css'
@@ -97,7 +100,8 @@ jobs:
           RADAR_SESSION_SECRET: radar-local-screenshot-secret
           RADAR_SCREENSHOT_PASSWORD: radar-local
         run: |
-          npm run dev -- --hostname 127.0.0.1 > /tmp/radar-next.log 2>&1 &
+          npm run build
+          npm run start -- --hostname 127.0.0.1 > /tmp/radar-next.log 2>&1 &
           SERVER_PID=$!
           trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
           for i in {1..60}; do
@@ -134,6 +138,15 @@ jobs:
           node scripts/verify-plus-media.mjs
           node scripts/sanitize-radar.mjs
           node scripts/finalize-health.mjs
-          git add data/radar.json data/source-state.json data/price-history.json data/archive/ app/radar/page.jsx package-lock.json
+          npm run build
+          npm run start -- --hostname 127.0.0.1 > /tmp/radar-next-retry.log 2>&1 &
+          RETRY_SERVER_PID=$!
+          for i in {1..60}; do
+            if curl -fsS http://127.0.0.1:3000/ >/dev/null; then break; fi
+            sleep 1
+          done
+          npm run radar:screenshot
+          kill $RETRY_SERVER_PID 2>/dev/null || true
+          git add data/radar.json data/source-state.json data/price-history.json data/archive/ data/daily/ app/radar/page.jsx package-lock.json
           git commit -m "Daily Radar update $(TZ=Europe/Berlin date +%Y-%m-%d)"
           git push
