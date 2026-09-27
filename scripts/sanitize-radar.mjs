@@ -18,8 +18,22 @@ async function get(url) {
   if (!res.ok) throw new Error(`${res.status} ${url}`);
   return res.text();
 }
-function decode(s='') { return s.replace(/&amp;|&#038;/g,'&').replace(/&quot;/g,'"').replace(/&#8217;|&#39;/g,'’').replace(/&#8211;/g,'–').replace(/&nbsp;/g,' ').replace(/&euro;|&#8364;/g,'€'); }
+function decode(s='') {
+  return String(s)
+    .replace(/&amp;|&#038;/gi,'&')
+    .replace(/&quot;|&#34;/gi,'"')
+    .replace(/&apos;|&#39;/gi,'’')
+    .replace(/&#8216;|&#8217;/g,'’')
+    .replace(/&#8220;|&#8221;/g,'"')
+    .replace(/&#8211;/g,'–')
+    .replace(/&#8212;/g,'—')
+    .replace(/&nbsp;|&#160;/gi,' ')
+    .replace(/&euro;|&#8364;/gi,'€')
+    .replace(/&#x([0-9a-f]+);/gi,(_,hex)=>String.fromCodePoint(Number.parseInt(hex,16)))
+    .replace(/&#(\d+);/g,(_,num)=>String.fromCodePoint(Number(num)));
+}
 function strip(s='') { return decode(s).replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim(); }
+function cleanCopy(value) { return typeof value === 'string' ? decode(value).replace(/\s+/g,' ').trim() : value; }
 function monthNumber(name) { return MONTH_INDEX[String(name || '').toLowerCase()] || null; }
 function parseReleaseSchedule(html) {
   const out=[]; const headings=[...html.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)]; const monthRe=MONTHS.join('|');
@@ -46,6 +60,29 @@ function parsePrimarySale(html,title='') {
   return {price:money(m[1]),oldPrice:money(m[2]),discount:`-${pct} %`};
 }
 function normalizeMeta(dateKey,metaKey) { if (!radar[dateKey]||radar[dateKey]===berlinDate||!radar[metaKey]) return; radar[metaKey]=radar[metaKey].replace(/^Heute neu auf PS5\s*·\s*/i,'PS5 · ').replace(/^Seit\s+\d{2}\.\d{2}\.\s+auf PS5\s*·\s*/i,'PS5 · '); }
+function normalizeVisibleCopy() {
+  for (const key of ['newHeadline','leadTitle','leadMeta','secondary1Title','secondary1Meta','secondary2Title','secondary2Meta','psplusLabel','psplusTitle','psplusText','storeTitle','storeText','leavingTitle','leavingText','benefitsText','eaTitle','ubisoftTitle','ubisoftText','radarCheck']) {
+    if (radar[key] != null) radar[key]=cleanCopy(radar[key]);
+  }
+  radar.quickItems=(radar.quickItems||[]).map(cleanCopy);
+  radar.eaItems=(radar.eaItems||[]).map(cleanCopy);
+  radar.ubisoftItems=(radar.ubisoftItems||[]).map(cleanCopy);
+  radar.plusGames=(radar.plusGames||[]).map(game=>({...game,title:cleanCopy(game.title)}));
+  radar.deals=(radar.deals||[]).map(deal=>({...deal,title:cleanCopy(deal.title)}));
+  radar.releases=(radar.releases||[]).map(item=>({...item,title:cleanCopy(item.title)}));
+  radar.sourceAlerts=(radar.sourceAlerts||[]).map(item=>({...item,title:cleanCopy(item.title)}));
+}
+function dedupeQuickItems() {
+  const prominent=[radar.psplusTitle,radar.eaTitle,radar.ubisoftTitle,radar.storeTitle,radar.leadTitle,radar.secondary1Title,radar.secondary2Title]
+    .filter(Boolean).map(value=>String(value).toLocaleLowerCase('de'));
+  const seen=new Set();
+  radar.quickItems=(radar.quickItems||[]).filter(item=>{
+    const key=String(item||'').toLocaleLowerCase('de');
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return !prominent.some(title=>title===key || title.includes(key) || key.includes(title));
+  });
+}
 async function writeValidatedArchive() {
   await fs.mkdir(archiveDir,{recursive:true}); let index=[]; try { index=JSON.parse(await fs.readFile(archiveIndexPath,'utf8')); } catch {}
   const match=String(radar.edition||'').match(/#(\d+)/); if (!match) throw new Error('Ausgabennummer fehlt'); const id=String(Number(match[1])).padStart(3,'0'); const file=`${id}.json`;
@@ -55,15 +92,12 @@ async function writeValidatedArchive() {
 }
 
 const fatal=[]; const warnings=[];
+normalizeVisibleCopy();
 try {
   const releaseUrl=radar.resolvedSources?.monthlyReleases||sources.monthlyReleases; if (!releaseUrl) throw new Error('keine Monatsquelle aufgelöst');
   const html=await get(releaseUrl); const schedule=parseReleaseSchedule(html); if (schedule.length<3) throw new Error(`nur ${schedule.length} Release-Einträge erkannt`);
   const todayKey=todayYear*10000+todayMonth*100+todayDay;
   const future=schedule.filter((x)=>(x.year*10000+Number(x.date.slice(3,5))*100+Number(x.date.slice(0,2)))>=todayKey).slice(0,5);
-  // Ein vollstaendig abgelaufener Monatsplan ist kein Quellenfehler. Wichtig
-  // ist, dass die Quelle erfolgreich gelesen und als plausibler Plan erkannt
-  // wurde. Alte Termine duerfen dann nicht als scheinbar aktuelle Releases
-  // stehen bleiben.
   radar.releases=future.map(({date,title})=>({date,title}));
 } catch(e) { fatal.push(`Releases: ${e.message}`); }
 
@@ -71,7 +105,7 @@ const storeEnd=radar.storeEnd?new Date(radar.storeEnd):null; const storeActive=B
 if (!storeActive) {
   if ((radar.deals||[]).length) warnings.push('Store: abgelaufene oder fehlende Kampagne erkannt; Deals wurden entfernt');
   radar.deals=[];
-  if (!radar.storeEnd||(storeEnd&&storeEnd.getTime()<=now.getTime())) { radar.storeTitle='Keine verifizierten Top-Deals'; radar.storeText='Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.'; radar.storeEnd=null; }
+  if (!radar.storeEnd||(storeEnd&&storeEnd.getTime()<=now.getTime())) { radar.storeTitle='Keine verifizierten Top-Deals'; radar.storeText='Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.'; radar.storeEnd=null; radar.leavingTitle='Kein aktives Angebotsende'; radar.leavingText='Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.'; }
 } else {
   const urls=radar.resolvedSources?.storeDeals||{}; const valid=[];
   for (const deal of radar.deals||[]) {
@@ -80,6 +114,7 @@ if (!storeActive) {
     try { const html=await get(url); const parsed=parsePrimarySale(html,deal.title); valid.push({...deal,...parsed}); } catch(e) { warnings.push(`Store ${deal.title}: ${e.message}`); }
   }
   radar.deals=valid;
+  radar.leavingTitle='Aktuelle Store-Aktion endet bald';
   if (!valid.length) { radar.storeTitle='Keine verifizierten Top-Deals'; radar.storeText='Die aktive Store-Aktion wurde erkannt, aber aktuell konnte kein Deal sicher gegen eine Produktseite validiert werden.'; }
 }
 
@@ -89,6 +124,7 @@ try {
   const labelMonth=monthNumber(labelMatch[1]); const labelYear=Number(labelMatch[2]); const monthDistance=(todayYear-labelYear)*12+(todayMonth-labelMonth); if (monthDistance>1) throw new Error(`veralteter Monat ${radar.psplusLabel}`);
 } catch(e) { fatal.push(`PS Plus: ${e.message}`); }
 normalizeMeta('leadDate','leadMeta'); normalizeMeta('secondary1Date','secondary1Meta'); normalizeMeta('secondary2Date','secondary2Meta');
+dedupeQuickItems();
 radar.health={...(radar.health||{}),status:fatal.length?'warning':warnings.length?'warning':'ok',warnings:fatal.length+warnings.length,checkedAt:new Date().toISOString()};
 radar.sourceCheck={...(radar.sourceCheck||{}),errors:[...fatal,...warnings]};
 await fs.writeFile(radarPath,JSON.stringify(radar,null,2)+'\n');
