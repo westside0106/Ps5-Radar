@@ -14,9 +14,9 @@ function fmt(d){return new Intl.DateTimeFormat('de-DE',{timeZone:'Europe/Berlin'
 function score(x){const age=(now-new Date(x.pubDate))/864e5; const t=x.title.toLowerCase(); return 200-Math.min(age,60)*4 + (/ps5|playstation 5/.test(t)?20:0)+(/release|erscheint|jetzt erhältlich|ab heute|trailer|update|angekündigt/.test(t)?12:0)-(/gewinnspiel|community|cosplay/.test(t)?20:0);}
 function meta(x){return (x.description||'Aktuelle PlayStation-Meldung').slice(0,150).replace(/\s+\S*$/,'').trim();}
 
-const blog = sources.find(s=>/blog/i.test(s.name||'') || /blog\.de\.playstation\.com/.test(s.url||''));
-if (!blog?.url) throw new Error('Editorial freshness: PlayStation-Blog-Quelle fehlt');
-const res=await fetch(blog.url,{headers:{'user-agent':'Mozilla/5.0 PlayStation-Radar/4.0','accept-language':'de-DE,de;q=0.9'}});
+const blogUrl = sources.playstationBlogFeed;
+if (!blogUrl) throw new Error('Editorial freshness: PlayStation-Blog-Feed fehlt');
+const res=await fetch(blogUrl,{headers:{'user-agent':'Mozilla/5.0 PlayStation-Radar/4.0','accept-language':'de-DE,de;q=0.9'}});
 if(!res.ok) throw new Error(`Editorial freshness: Blog ${res.status}`);
 const candidates=items(await res.text()).filter(x=>{const d=new Date(x.pubDate);return !Number.isNaN(d)&&((now-d)/864e5)<=21;}).sort((a,b)=>score(b)-score(a));
 const chosen=[]; for(const x of candidates){if(!chosen.some(y=>y.title.toLowerCase()===x.title.toLowerCase())) chosen.push(x); if(chosen.length===3)break;}
