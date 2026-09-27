@@ -132,11 +132,16 @@ test('iphone login and Daily PNG stay stable and clean',async()=>{
  assert.match(screenshot,/nextjs-portal/);
  assert.match(screenshot,/watchlist-dock/);
  assert.match(screenshot,/copyFile\(latest, numbered\)/);
+ assert.match(screenshot,/readdir\(outDir\)/);
+ assert.match(screenshot,/fs\.rm\(path\.join\(outDir, entry\)/);
  assert.ok(!/fs\.access\(numbered\)/.test(screenshot),'Aktuelle nummerierte Ausgabe muss mit latest synchronisiert werden');
  assert.match(workflow,/npm run build/);
  assert.match(workflow,/npm run start -- --hostname 127\.0\.0\.1/);
  assert.match(workflow,/git add[^\n]*data\/daily\//);
  assert.match(page,/deal-count-\$\{Math\.min\(radar\.deals\.length, 3\)\}/);
+ const vercel=JSON.parse(await fs.readFile(new URL('../vercel.json',import.meta.url),'utf8'));
+ assert.match(vercel.ignoreCommand,/VERCEL_GIT_COMMIT_REF/);
+ assert.match(vercel.ignoreCommand,/main/);
 });
 
 test('catalog route requires the existing private session',async()=>{

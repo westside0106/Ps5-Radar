@@ -40,7 +40,12 @@ try {
   await page.waitForTimeout(2500);
   await page.locator('.magazine').screenshot({ path: latest, type: 'png' });
   await fs.copyFile(latest, numbered);
-  console.log(`Rendered Radar ${radar.edition} -> data/daily/latest.png and ${id}.png`);
+  for (const entry of await fs.readdir(outDir)) {
+    if (/^\d{3}\.png$/.test(entry) && entry !== `${id}.png`) {
+      await fs.rm(path.join(outDir, entry), { force: true });
+    }
+  }
+  console.log(`Rendered Radar ${radar.edition} -> data/daily/latest.png and ${id}.png; stale numbered PNGs removed`);
 } finally {
   await browser.close();
 }
