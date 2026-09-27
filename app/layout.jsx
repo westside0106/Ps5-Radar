@@ -10,6 +10,7 @@ import './mobile-webview-fix.css';
 import './archive.css';
 import './watchlist.css';
 import './radar-goal.css';
+import './video-review-goal.css';
 import WatchlistDock from './WatchlistDock';
 
 export const metadata = {
