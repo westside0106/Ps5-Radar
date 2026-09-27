@@ -87,10 +87,18 @@ function shortPsPlus(value) {
   return 'IN PS PLUS';
 }
 
+function catalogKey(title) {
+  return String(title || '')
+    .toLowerCase()
+    .replace(/[®™©]/g, '')
+    .replace(/standard\s*edition$/i, '')
+    .replace(/[^a-z0-9]+/g, '');
+}
+
 function catalogMembership(title) {
-  const needle = String(title || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+  const needle = catalogKey(title);
   if (!needle) return null;
-  const game = (catalog.games || []).find((item) => String(item.title || '').toLowerCase().replace(/[^a-z0-9]+/g, '') === needle);
+  const game = (catalog.games || []).find((item) => catalogKey(item.title) === needle);
   if (!game) return null;
   const labels = (game.services || []).map((service) => ({
     essential: 'PS Plus Essential',
