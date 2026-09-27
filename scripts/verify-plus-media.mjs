@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import { applyVerifiedPlusCovers, verifiedStoreCover } from './lib/media-identity.mjs';
-import { emptyCatalog, storeIdentity } from '../lib/ps-plus-catalog.mjs';
+import { emptyCatalog, storeIdentity, titleKey, verifiedImage } from '../lib/ps-plus-catalog.mjs';
 const radarPath = new URL('../data/radar.json', import.meta.url);
 const historyPath = new URL('../data/price-history.json', import.meta.url);
 const catalogPath = new URL('../data/ps-plus-catalog.json', import.meta.url);
@@ -10,10 +10,29 @@ const catalog = await fs.readFile(catalogPath, 'utf8').then(JSON.parse).catch(()
 const gameSources = await fs.readFile(sourcesPath, 'utf8').then(JSON.parse).catch(() => ({}));
 const details = radar.gameDetails || {};
 const warnings = [];
+
+// The PS Plus catalog can expose a concept URL while the monthly source exposes
+// the concrete product URL for the same title. In that case the identities are
+// intentionally different even though the catalog cover is authoritative.
+// Accept that cover only when the normalized title resolves to exactly one
+// official catalog entry; ambiguous title matches still fall through to the
+// stricter product/SKU verification below.
+function exactCatalogCover(title) {
+  const key = titleKey(title);
+  if (!key) return null;
+  const matches = (catalog?.games || []).filter(game => titleKey(game.title) === key && verifiedImage(game.image));
+  return matches.length === 1 ? verifiedImage(matches[0].image) : null;
+}
+
 for (const game of radar.plusGames || []) {
   const info = details[game.title] || {};
   const storeUrl = game.storeUrl || radar.resolvedSources?.psPlusStoreUrls?.[game.title] || info.storeUrl || gameSources[game.title]?.storeUrl;
   if (!storeIdentity(storeUrl)) { warnings.push(`${game.title}: keine gueltige Store-Produkt-URL`); continue; }
+  const catalogImage = exactCatalogCover(game.title);
+  if (catalogImage) {
+    details[game.title] = { ...info, storeUrl, coverImage: catalogImage, title: game.title };
+    continue;
+  }
   try {
     const response = await fetch(storeUrl, { headers: { 'accept-language': 'de-DE,de;q=0.9' }, signal: AbortSignal.timeout(15000) });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
