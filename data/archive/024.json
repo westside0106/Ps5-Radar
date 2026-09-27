@@ -7,17 +7,17 @@
   "leadDate": "24.09.2026",
   "leadMeta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu",
   "leadPrice": null,
-  "leadImage": "https://live.staticflickr.com/65535/55534855204_78d9021b8b_k.jpg",
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg",
   "secondary1Title": "Fading Echo taucht heute auf PS5 ab",
   "secondary1Date": "22.09.2026",
   "secondary1Meta": "Beherrscht Wasser, verbiegt die Realität und kombiniert Elemente: „Fading Echo“ ist ab sofort auf PS5",
   "secondary1Price": null,
-  "secondary1Image": "https://live.staticflickr.com/65535/55517907873_b1c2c7afda_k.jpg",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/cb8ce2ef9b5bc2c611525f3b96e1ce2687039bb1.jpg",
   "secondary2Title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
   "secondary2Date": "25.09.2026",
   "secondary2Meta": "Mehr als sieben Jahre nach dem Release des Vorgängers erteilt Bandai Namco endlich mit Ace Combat 8: Wings of Theve einem neuen Teil der beliebten",
   "secondary2Price": null,
-  "secondary2Image": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1502/5d51d6e19f4a3f5d41936b32e8e7e9425d40c4ae6be6e83d.png",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/4b2437cc2a6639e91208da9a3f92ce9284a74527-scaled.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -69,11 +69,8 @@
     }
   ],
   "releases": [],
-  "quickItems": [
-    "September-Spiele sind live",
-    "FC™ 27 · 10h Trial ab 18.09."
-  ],
-  "leavingTitle": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet laufen aus",
+  "quickItems": [],
+  "leavingTitle": "Aktuelle Store-Aktion endet bald",
   "leavingText": "Aktuelle Store-Aktion endet am 08.10., 00:59 Uhr.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
   "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
@@ -90,20 +87,36 @@
     "PS Plus Premium"
   ],
   "radarCheck": "Stand 27.09.2026 · 9/9 Quellen erfolgreich geprüft",
-  "sourceAlerts": [],
+  "sourceAlerts": [
+    {
+      "title": "Luma Island erscheint für PS5",
+      "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
+      "type": "editorial"
+    },
+    {
+      "title": "Fading Echo taucht heute auf PS5 ab",
+      "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
+      "type": "editorial"
+    },
+    {
+      "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
+      "url": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
+      "type": "editorial"
+    }
+  ],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-27T16:53:14.707Z",
+    "checkedAt": "2026-09-27T17:40:29.963Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-27T16:52:37.046Z",
+    "lastSuccessfulCheck": "2026-09-27T17:39:56.319Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-27T16:52:37.046Z",
+    "checkedAt": "2026-09-27T17:39:56.319Z",
     "errors": [],
     "sources": [
       {
@@ -285,7 +298,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-27T16:53:04.426Z",
+    "checkedAt": "2026-09-27T17:40:21.179Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -342,7 +355,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-27T16:52:45.987Z",
+    "checkedAt": "2026-09-27T17:40:05.755Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -356,7 +369,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-27T16:52:46.090Z",
+    "checkedAt": "2026-09-27T17:40:05.872Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -369,7 +382,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-27T16:53:14.350Z",
+    "checkedAt": "2026-09-27T17:40:29.572Z",
     "verified": 4,
     "missing": [],
     "warnings": [
@@ -378,24 +391,27 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-09-27T16:52:45.119Z",
+    "checkedAt": "2026-09-27T17:40:02.451Z",
     "date": "27.09.2026",
     "maxAgeDays": 21,
     "selected": [
       {
         "title": "Luma Island erscheint für PS5",
         "date": "24.09.2026",
-        "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/"
+        "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg"
       },
       {
         "title": "Fading Echo taucht heute auf PS5 ab",
         "date": "22.09.2026",
-        "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/"
+        "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/cb8ce2ef9b5bc2c611525f3b96e1ce2687039bb1.jpg"
       },
       {
         "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
         "date": "25.09.2026",
-        "url": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/"
+        "url": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/4b2437cc2a6639e91208da9a3f92ce9284a74527-scaled.jpg"
       }
     ]
   }
