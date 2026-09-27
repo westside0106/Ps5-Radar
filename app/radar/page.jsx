@@ -87,6 +87,20 @@ function shortPsPlus(value) {
   return 'IN PS PLUS';
 }
 
+function catalogMembership(title) {
+  const needle = String(title || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+  if (!needle) return null;
+  const game = (catalog.games || []).find((item) => String(item.title || '').toLowerCase().replace(/[^a-z0-9]+/g, '') === needle);
+  if (!game) return null;
+  const labels = (game.services || []).map((service) => ({
+    essential: 'PS Plus Essential',
+    extra: 'PS Plus Extra',
+    premium: 'PS Plus Premium · Klassiker',
+    ubisoft: 'Ubisoft+ Classics',
+  }[service] || service)).filter(Boolean);
+  return labels.length ? { game, label: labels.join(' · ') } : null;
+}
+
 function issueDateParts() {
   const [day, month, year] = String(radar.date || '').split('.').map(Number);
   return { day, month, year };
@@ -214,6 +228,7 @@ function psPlusDetail(game) {
 
 function dealDetail(deal) {
   const info = gameInfo(deal.title);
+  const membership = catalogMembership(deal.title);
   const stats = dealStats(deal);
   const source = radar.resolvedSources?.storeDeals?.[deal.title] || (sources.storeDeals || []).find((item) => item.title === deal.title)?.url;
   return {
@@ -230,8 +245,14 @@ function dealDetail(deal) {
       { label: 'Deal-Stärke', value: stats.strength },
       { label: 'Restzeit', value: stats.expiry },
       { label: 'Ende', value: displayEndFull(radar.storeEnd) },
+      { label: 'Abo-Zugang', value: membership?.label || info.psPlusStatus || null },
+      { label: 'Kauf nötig?', value: membership ? 'Nein, solange der passende Abo-Zugang aktiv ist' : null },
     ]),
-    links: gameLinks(deal.title, source ? [{ label: 'Store-Angebot', url: source }] : []),
+    bullets: membership ? ['Der angezeigte Storepreis ist der Kaufpreis. Der Titel ist zugleich im erfassten Abo-Katalog enthalten; bei passender Mitgliedschaft ist kein Kauf nötig.'] : [],
+    links: gameLinks(deal.title, [
+      ...(membership ? [{ label: 'Im PS+-Katalog öffnen', url: '/ps-plus' }] : []),
+      ...(source ? [{ label: 'Store-Angebot', url: source }] : []),
+    ]),
   };
 }
 
@@ -258,15 +279,21 @@ function eaDetail() {
   const info = gameInfo(title);
   return {
     kicker: 'EA PLAY',
-    title: radar.eaTitle || title,
+    title: 'EA Play auf PlayStation',
     ...gameMedia(title),
-    summary: info.description || radar.benefitsText,
+    summary: radar.benefitsText || info.description,
     rows: richRows(title, [
-      { label: 'EA-Play-Vorteil', value: radar.eaTitle },
+      { label: 'Aktuelles Highlight', value: radar.eaTitle },
+      { label: 'Spielebibliothek', value: 'The Play List' },
+      { label: 'Mitgliederrabatt', value: (radar.eaItems || []).find((item) => /10\s*%/.test(item)) || '10 % auf digitale EA-Käufe' },
+      { label: 'Mitgliederboni', value: (radar.eaItems || []).find((item) => /belohn|boni/i.test(item)) || 'Monatliche Mitgliederbelohnungen' },
     ]),
-    bullets: radar.eaItems || [],
+    bullets: [
+      ...(radar.eaItems || []),
+      'EA Play umfasst neben zeitlich begrenzten Trials auch eine wechselnde Bibliothek vollständiger Spiele.',
+    ],
     links: gameLinks(title, [
-      { label: 'EA Play', url: radar.resolvedSources?.eaPlay || sources.eaPlay },
+      { label: 'EA Play auf PlayStation', url: radar.resolvedSources?.eaPlay || sources.eaPlay },
     ]),
   };
 }
@@ -340,7 +367,8 @@ function DealCard({ deal }) {
   const info = gameInfo(deal.title);
   const media = gameMedia(deal.title, deal.image);
   const stats = dealStats(deal);
-  const plus = shortPsPlus(info.psPlusStatus);
+  const membership = catalogMembership(deal.title);
+  const plus = membership?.label ? shortPsPlus(membership.label) : shortPsPlus(info.psPlusStatus);
   const meta = [deal.platform || info.platform, info.genre].filter(Boolean).slice(0, 2);
   const endingClass = stats.remaining !== null && stats.remaining <= 1 ? 'is-ending' : '';
   return (
@@ -360,7 +388,7 @@ function DealCard({ deal }) {
             <div className="deal-price-values"><del>{deal.oldPrice}</del><strong>{deal.price}</strong></div>
             {stats.saving !== null ? <span className="deal-showcase-saving">Du sparst<br />{formatEuro(stats.saving)}</span> : null}
           </div>
-          {info.psPlusStatus ? <div className="deal-showcase-psplus-note">{info.psPlusStatus}</div> : null}
+          {membership ? <div className="deal-showcase-psplus-note">Im Abo-Katalog: {membership.label} · Kaufpreis nur relevant ohne passenden Abo-Zugang</div> : info.psPlusStatus ? <div className="deal-showcase-psplus-note">{info.psPlusStatus}</div> : null}
         </div>
       </article>
     </DetailTile>
@@ -517,7 +545,11 @@ export default async function RadarPage() {
               rows: compactRows([
                 { label: 'Verbleibend', value: `${remaining} ${remaining === 1 ? 'Tag' : 'Tage'}` },
                 { label: 'Ende', value: displayEndFull(radar.storeEnd) },
+                { label: 'Im Radar verifiziert', value: radar.deals?.length ? `${radar.deals.length} Produkte` : null },
+                ...(radar.deals || []).map((deal, index) => ({ label: `Produkt ${index + 1}`, value: deal.title })),
               ]),
+              bullets: ['Die Liste nennt die vom Radar einzeln verifizierten Produkte der aktiven Store-Aktion. Sie ist keine Behauptung, dass damit sämtliche Aktionsspiele erfasst sind.'],
+              links: [{ label: 'Verifizierte Store-Deals', url: '/preise' }],
             }} className="radar-panel-clickable">
               <Panel tone="danger" icon="⌛" title="ENDET BALD" className="compact-panel">
                 <div className="deadline-row">
@@ -561,8 +593,20 @@ export default async function RadarPage() {
             kicker: 'UBISOFT+',
             title: radar.ubisoftTitle,
             summary: radar.ubisoftText,
-            bullets: radar.ubisoftItems || [],
-            links: [{ label: 'Ubisoft+ auf PlayStation', url: radar.resolvedSources?.ubisoftPlus || sources.ubisoftPlus }],
+            rows: compactRows([
+              { label: 'Erfasste Spiele', value: catalog.sections?.ubisoft?.count != null ? String(catalog.sections.ubisoft.count) : null },
+              { label: 'Katalogstatus', value: catalog.sections?.ubisoft?.complete ? 'Quelle vollständig geprüft' : 'Abdeckung nicht vollständig bestätigt' },
+              { label: 'Direktabo', value: '7,99 €/Monat' },
+              { label: 'Enthalten über', value: 'PS Plus Extra / Premium' },
+            ]),
+            bullets: [
+              ...(radar.ubisoftItems || []),
+              'Der vollständige erfasste Ubisoft+ Classics-Katalog ist im PS+-Katalog durchsuchbar.',
+            ],
+            links: [
+              { label: 'Ubisoft+ Classics-Katalog', url: '/ps-plus?tab=ubisoft' },
+              { label: 'Ubisoft+ auf PlayStation', url: radar.resolvedSources?.ubisoftPlus || sources.ubisoftPlus },
+            ],
           }} className="radar-panel-clickable">
             <Panel tone="ubi" icon="◎" title="UBISOFT+">
               <p>{radar.ubisoftText}</p>
