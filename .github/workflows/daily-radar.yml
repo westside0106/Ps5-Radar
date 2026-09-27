@@ -88,6 +88,8 @@ jobs:
         run: node scripts/verify-plus-media.mjs
       - name: Finalize validated issue and archive
         run: node scripts/sanitize-radar.mjs
+      - name: Finalize pipeline health
+        run: node scripts/finalize-health.mjs
       - name: Render private magazine PNG
         shell: bash
         env:
