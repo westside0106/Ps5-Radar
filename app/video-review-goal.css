@@ -1,0 +1,28 @@
+/* /goal: fixes derived from the 27.09.2026 video review.
+   Keep empty/duplicate modules out of the magazine and let real content use the space. */
+
+.mag-bottomgrid{align-items:start}
+.release-showcase:has(.release-grid:empty){display:none}
+.quick-showcase:has(.quick-list:empty){display:none}
+.mag-bottomgrid:has(> .release-showcase .release-grid:empty){grid-template-columns:1fr}
+.mag-bottomgrid:has(> .quick-showcase .quick-list:empty){grid-template-columns:1fr}
+.mag-bottomgrid:has(> .release-showcase .release-grid:empty):has(> .quick-showcase .quick-list:empty){display:none}
+
+/* Deal count controls the desktop grid instead of reserving an empty third slot. */
+.deal-showcase-grid:has(> :only-child){grid-template-columns:minmax(0,1fr)}
+.deal-showcase-grid:has(> :nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
+.deal-showcase-meta span{font-size:10px}
+.deal-showcase-facts{font-size:10px;line-height:1.35}
+.deal-showcase-psplus-note{font-size:10px;line-height:1.35}
+.deal-strength,.deal-expiry{font-size:10px}
+
+/* A compact section should size to its content instead of inheriting a tall neighbour. */
+.quick-showcase .mag-panel-body{min-height:0}
+.quick-list{align-content:start}
+
+@media(max-width:900px){
+  /* Mobile remains a horizontal browse rail; deal-count desktop rules must not fight it. */
+  .deal-showcase-grid:has(> :only-child),
+  .deal-showcase-grid:has(> :nth-child(2):last-child){display:flex}
+  .deal-showcase-meta span,.deal-showcase-facts,.deal-showcase-psplus-note{font-size:11px}
+}
