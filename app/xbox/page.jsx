@@ -5,6 +5,7 @@ import snapshot from '../../data/platforms/xbox/radar.json';
 import XboxClient from './XboxClient';
 import '../ps-plus/catalog.css';
 import './xbox.css';
+import './xbox-mobile.css';
 
 // Eigene Route neben /radar. Die PlayStation-Adresse bleibt unveraendert und
 // wird nicht umgeleitet; bestehende Links und die Daily-Automation haengen daran.
