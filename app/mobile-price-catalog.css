@@ -2,6 +2,12 @@
 .price-radar-summary{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
 .price-radar-summary>span{display:inline-flex;align-items:center;gap:6px;padding:7px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.15);font-size:10px;font-weight:900}
 .price-radar-summary b{font-size:13px}
+.price-radar-summary .signal-subscription,.signal-subscription{background:#183d70!important;border-color:#4b93e5!important;color:#eef7ff!important}
+.price-radar-summary .signal-history,.signal-history{background:#263241!important;border-color:#64778c!important;color:#d8e2ec!important}
+.watchlist-card.is-history{opacity:.84}
+.watchlist-card.is-history .watchlist-card-art{filter:saturate(.72)}
+.watchlist-signal.signal-history{background:rgba(38,50,65,.72)!important;border-color:rgba(122,145,169,.34)!important;color:#d8e2ec!important}
+.watchlist-signal.signal-subscription{background:rgba(24,61,112,.78)!important;border-color:rgba(75,147,229,.4)!important;color:#eef7ff!important}
 .price-radar-actions{display:flex;gap:8px;flex-wrap:wrap}
 .price-radar-actions a{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
 .price-radar-page .radar-help{margin-top:14px;padding:0;border:1px solid rgba(103,184,255,.18);border-radius:12px;background:rgba(8,29,55,.5);overflow:hidden}
