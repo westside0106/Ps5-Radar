@@ -8,7 +8,7 @@
     "start": "next start",
     "radar:screenshot": "node scripts/finalize-health.mjs && node scripts/screenshot-radar.mjs",
     "radar:semantics": "node scripts/validate-temporal-semantics.mjs",
-    "test:goal": "node --test scripts/test-goal.mjs scripts/test-temporal-helpers.mjs",
+    "test:goal": "node --test scripts/test-goal.mjs scripts/test-temporal-helpers.mjs scripts/test-price-radar-state.mjs",
     "catalog:refresh": "node scripts/update-plus-catalog.mjs",
     "test:goal:browser": "node scripts/test-goal-browser.mjs",
     "test:platform": "node --test lib/platform-core/tests/*.test.mjs lib/providers/xbox/tests/*.test.mjs",
