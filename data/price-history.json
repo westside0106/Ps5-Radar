@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T18:44:38.574Z",
+  "updatedAt": "2026-09-28T22:04:43.321Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -929,6 +929,12 @@
           "price": 29.99,
           "oldPrice": 49.99,
           "discount": 40
+        },
+        {
+          "date": "2026-09-29",
+          "price": 29.99,
+          "oldPrice": 49.99,
+          "discount": 40
         }
       ],
       "title": "Starfield Premium Edition",
@@ -952,10 +958,10 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 29.99,
         "lastObservedPrice": 29.99,
-        "lastObservedDate": "2026-09-28",
+        "lastObservedDate": "2026-09-29",
         "radarLow": 29.99,
         "deltaFromLowPct": 0,
         "discount": 40,
@@ -986,6 +992,12 @@
         },
         {
           "date": "2026-09-28",
+          "price": 53.99,
+          "oldPrice": 59.99,
+          "discount": 10
+        },
+        {
+          "date": "2026-09-29",
           "price": 53.99,
           "oldPrice": 59.99,
           "discount": 10
@@ -1022,10 +1034,10 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 53.99,
         "lastObservedPrice": 53.99,
-        "lastObservedDate": "2026-09-28",
+        "lastObservedDate": "2026-09-29",
         "radarLow": 53.99,
         "deltaFromLowPct": 0,
         "discount": 10,
@@ -1042,8 +1054,8 @@
   },
   "summary": {
     "titles": 12,
-    "points": 64,
-    "archiveIssuesScanned": 25,
+    "points": 66,
+    "archiveIssuesScanned": 26,
     "signals": {
       "buy": 0,
       "watch": 1,
