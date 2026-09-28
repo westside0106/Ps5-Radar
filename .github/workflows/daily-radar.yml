@@ -14,6 +14,7 @@ on:
       - 'scripts/record-price-history.mjs'
       - 'scripts/enrich-radar.mjs'
       - 'scripts/sanitize-radar.mjs'
+      - 'scripts/validate-temporal-semantics.mjs'
       - 'scripts/verify-plus-media.mjs'
       - 'scripts/lib/media-identity.mjs'
       - 'lib/ps-plus-catalog.mjs'
@@ -91,6 +92,8 @@ jobs:
         run: node scripts/verify-plus-media.mjs
       - name: Finalize validated issue and archive
         run: node scripts/sanitize-radar.mjs
+      - name: Validate date semantics and relative copy
+        run: npm run radar:semantics
       - name: Finalize pipeline health
         run: node scripts/finalize-health.mjs
       - name: Render private magazine PNG
@@ -137,6 +140,7 @@ jobs:
           node scripts/enrich-radar.mjs
           node scripts/verify-plus-media.mjs
           node scripts/sanitize-radar.mjs
+          npm run radar:semantics
           node scripts/finalize-health.mjs
           npm run build
           npm run start -- --hostname 127.0.0.1 > /tmp/radar-next-retry.log 2>&1 &
