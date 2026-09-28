@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import radar from '../../data/radar.json';
 import priceHistory from '../../data/price-history.json';
+import { priceRadarRank, priceRadarState } from '../../lib/price-radar-state.mjs';
 
 const WATCHLIST_KEY = 'psradar_watchlist_v1';
 const WATCHLIST_EVENT = 'psradar-watchlist';
@@ -17,6 +18,7 @@ function readItems() {
 }
 
 function euro(value) {
+  if (!Number.isFinite(value)) return '—';
   return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(value);
 }
 
@@ -40,7 +42,9 @@ function enrichedItem(saved) {
   const prices = points.map((point) => point.price).filter(Number.isFinite);
   const lastPoint = points.at(-1) || null;
   const signal = signalFor(saved.title);
-  const current = deal?.price || null;
+  const displaySignal = priceRadarState(signal, lastPoint?.date);
+  const activeDeal = Boolean(signal?.activeDeal);
+  const current = activeDeal ? signal.currentPrice : null;
   const low = prices.length ? Math.min(...prices) : null;
   const image = deal?.image || info.gallery?.[0] || saved.image || null;
   const storeUrl = radar.resolvedSources?.storeDeals?.[saved.title] || info.storeUrl || priceHistory.games?.[saved.title]?.storeUrl || saved.storeUrl || null;
@@ -56,15 +60,12 @@ function enrichedItem(saved) {
     genre: info.genre || null,
     platform: deal?.platform || info.platform || saved.platform || null,
     psPlusStatus: info.psPlusStatus || null,
-    discount: deal?.discount || null,
-    activeDeal: Boolean(deal),
+    discount: activeDeal ? (deal?.discount || (signal?.discount ? `-${signal.discount} %` : null)) : null,
+    activeDeal,
     storeUrl,
     signal,
+    displaySignal,
   };
-}
-
-function signalRank(item) {
-  return { buy: 0, watch: 1, wait: 2 }[item.signal?.code] ?? 3;
 }
 
 export default function WatchlistClient() {
@@ -81,7 +82,7 @@ export default function WatchlistClient() {
     };
   }, []);
 
-  const items = useMemo(() => saved.map(enrichedItem).sort((a, b) => signalRank(a) - signalRank(b) || Number(b.activeDeal) - Number(a.activeDeal)), [saved]);
+  const items = useMemo(() => saved.map(enrichedItem).sort((a, b) => priceRadarRank(a.displaySignal) - priceRadarRank(b.displaySignal) || a.title.localeCompare(b.title, 'de')), [saved]);
 
   function remove(title) {
     const next = saved.filter((item) => item.title !== title);
@@ -103,54 +104,55 @@ export default function WatchlistClient() {
 
   return (
     <div className="watchlist-grid">
-      {items.map((item) => (
-        <article className="watchlist-card" key={item.title}>
-          <div className="watchlist-card-art" style={item.image ? { backgroundImage: `url("${item.image}")` } : undefined}>
-            <div className="watchlist-card-top">
-              <span className={item.signal ? `signal-${item.signal.code}` : ''}>{item.signal?.label || (item.activeDeal ? 'AKTIVER DEAL' : 'BEOBACHTET')}</span>
-              {item.discount ? <b>{item.discount}</b> : null}
-            </div>
-            <div className="watchlist-card-copy">
-              <h2>{item.title}</h2>
-              <div className="watchlist-card-meta">
-                {item.platform ? <span>{item.platform}</span> : null}
-                {item.genre ? <span>{item.genre}</span> : null}
-                {item.psPlusStatus ? <span>{item.psPlusStatus}</span> : null}
+      {items.map((item) => {
+        const shown = item.displaySignal;
+        return (
+          <article className={`watchlist-card${shown.kind === 'history' ? ' is-history' : ''}`} key={item.title}>
+            <div className="watchlist-card-art" style={item.image ? { backgroundImage: `url("${item.image}")` } : undefined}>
+              <div className="watchlist-card-top">
+                <span className={`signal-${shown.code}`}>{shown.label}</span>
+                {item.discount ? <b>{item.discount}</b> : null}
+              </div>
+              <div className="watchlist-card-copy">
+                <h2>{item.title}</h2>
+                <div className="watchlist-card-meta">
+                  {item.platform ? <span>{item.platform}</span> : null}
+                  {item.genre ? <span>{item.genre}</span> : null}
+                  {item.psPlusStatus ? <span>{item.psPlusStatus}</span> : null}
+                </div>
               </div>
             </div>
-          </div>
 
-          {item.signal ? (
-            <div className={`watchlist-signal signal-${item.signal.code}`}>
+            <div className={`watchlist-signal signal-${shown.code}`}>
               <div>
-                <small>RADAR-SIGNAL · SICHERHEIT {String(item.signal.confidence || 'niedrig').toUpperCase()}</small>
-                <strong>{item.signal.label}</strong>
+                <small>{shown.kind === 'history' ? 'HISTORISCHER PREISVERLAUF' : `RADAR-SIGNAL · SICHERHEIT ${String(item.signal?.confidence || 'niedrig').toUpperCase()}`}</small>
+                <strong>{shown.label}</strong>
               </div>
-              <p>{item.signal.reason}</p>
-              {item.signal.daysRemaining !== null && item.signal.daysRemaining !== undefined ? (
-                <span>{item.signal.daysRemaining === 0 ? 'Angebot endet heute' : item.signal.daysRemaining === 1 ? 'Noch 1 Tag' : `Noch ${item.signal.daysRemaining} Tage`}</span>
+              <p>{shown.reason}</p>
+              {shown.daysRemaining !== null && shown.daysRemaining !== undefined ? (
+                <span>{shown.daysRemaining === 0 ? 'Angebot endet heute' : shown.daysRemaining === 1 ? 'Noch 1 Tag' : `Noch ${shown.daysRemaining} Tage`}</span>
               ) : null}
             </div>
-          ) : null}
 
-          <div className="watchlist-card-foot">
-            <div className="watchlist-price">
-              <small>{item.activeDeal ? 'AKTUELL' : 'ZULETZT GEMESSEN'}</small>
-              <strong>{item.current || (item.lastObserved !== null ? euro(item.lastObserved) : '—')}</strong>
-              {item.low !== null ? (
-                <span>
-                  Radar-Tief {euro(item.low)} · {item.points} {item.points === 1 ? 'Punkt' : 'Punkte'}
-                  {!item.activeDeal && item.lastObservedDate ? ` · ${shortDate(item.lastObservedDate)}` : ''}
-                </span>
-              ) : <span>Noch kein Preisverlauf</span>}
+            <div className="watchlist-card-foot">
+              <div className="watchlist-price">
+                <small>{item.activeDeal ? 'AKTUELL' : 'ZULETZT GEMESSEN'}</small>
+                <strong>{item.activeDeal ? euro(item.current) : (item.lastObserved !== null ? euro(item.lastObserved) : '—')}</strong>
+                {item.low !== null ? (
+                  <span>
+                    Radar-Tief {euro(item.low)} · {item.points} {item.points === 1 ? 'Punkt' : 'Punkte'}
+                    {!item.activeDeal && item.lastObservedDate ? ` · ${shortDate(item.lastObservedDate)}` : ''}
+                  </span>
+                ) : <span>Noch kein Preisverlauf</span>}
+              </div>
+              <div className="watchlist-card-actions">
+                {item.storeUrl ? <a href={item.storeUrl} target="_blank" rel="noreferrer">Store ↗</a> : null}
+                <button type="button" onClick={() => remove(item.title)}>Entfernen</button>
+              </div>
             </div>
-            <div className="watchlist-card-actions">
-              {item.storeUrl ? <a href={item.storeUrl} target="_blank" rel="noreferrer">Store ↗</a> : null}
-              <button type="button" onClick={() => remove(item.title)}>Entfernen</button>
-            </div>
-          </div>
-        </article>
-      ))}
+          </article>
+        );
+      })}
     </div>
   );
 }
