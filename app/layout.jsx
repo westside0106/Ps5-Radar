@@ -8,6 +8,7 @@ import './plus-showcase.css';
 import './benefit-showcase.css';
 import './mobile-webview-fix.css';
 import './archive.css';
+import './archive-mobile.css';
 import './watchlist.css';
 import './radar-goal.css';
 import './video-review-goal.css';
