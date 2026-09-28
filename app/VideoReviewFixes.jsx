@@ -12,9 +12,23 @@ export default function VideoReviewFixes(){
       const touchPhone = navigator.maxTouchPoints > 0 && shortestSide > 0 && shortestSide <= 500;
       root.classList.toggle('is-touch-phone', touchPhone);
     };
+    const prioritizeCatalogCovers = () => {
+      // The recordings showed blank first-row cards while every cover was lazy.
+      // Promote only the first viewport batch; the remaining catalog stays lazy.
+      document.querySelectorAll('.catalog-grid .catalog-art img').forEach((image, index) => {
+        if (index >= 8) return;
+        image.loading = 'eager';
+        if (index < 4) image.fetchPriority = 'high';
+      });
+    };
     syncTouchPhone();
+    prioritizeCatalogCovers();
     window.addEventListener('orientationchange', syncTouchPhone);
     window.visualViewport?.addEventListener('resize', syncTouchPhone);
+
+    const catalogObserver = new MutationObserver(prioritizeCatalogCovers);
+    const catalog = document.querySelector('.catalog-app');
+    if (catalog) catalogObserver.observe(catalog, { childList: true, subtree: true });
 
     // Keep /daily/latest.png as the canonical raw asset for automation and direct
     // links, but do not send normal in-app navigation into Safari's raw-image
@@ -26,6 +40,7 @@ export default function VideoReviewFixes(){
     }
 
     return () => {
+      catalogObserver.disconnect();
       window.removeEventListener('orientationchange', syncTouchPhone);
       window.visualViewport?.removeEventListener('resize', syncTouchPhone);
     };
