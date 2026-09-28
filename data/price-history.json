@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T22:00:07.315Z",
+  "updatedAt": "2026-09-28T06:03:11.770Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -923,6 +923,12 @@
           "price": 29.99,
           "oldPrice": 49.99,
           "discount": 40
+        },
+        {
+          "date": "2026-09-28",
+          "price": 29.99,
+          "oldPrice": 49.99,
+          "discount": 40
         }
       ],
       "title": "Starfield Premium Edition",
@@ -945,15 +951,15 @@
         "activeDeal": true,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
-        "confidence": "niedrig",
-        "measurements": 2,
+        "confidence": "mittel",
+        "measurements": 3,
         "currentPrice": 29.99,
         "lastObservedPrice": 29.99,
-        "lastObservedDate": "2026-09-27",
+        "lastObservedDate": "2026-09-28",
         "radarLow": 29.99,
         "deltaFromLowPct": 0,
         "discount": 40,
-        "daysRemaining": 11,
+        "daysRemaining": 10,
         "code": "watch",
         "label": "BEOBACHTEN",
         "reason": "Nur 0,0 % über dem eigenen Radar-Tief bei -40 %.",
@@ -974,6 +980,12 @@
         },
         {
           "date": "2026-09-27",
+          "price": 53.99,
+          "oldPrice": 59.99,
+          "discount": 10
+        },
+        {
+          "date": "2026-09-28",
           "price": 53.99,
           "oldPrice": 59.99,
           "discount": 10
@@ -1009,35 +1021,35 @@
         "activeDeal": true,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
-        "confidence": "niedrig",
-        "measurements": 2,
+        "confidence": "mittel",
+        "measurements": 3,
         "currentPrice": 53.99,
         "lastObservedPrice": 53.99,
-        "lastObservedDate": "2026-09-27",
+        "lastObservedDate": "2026-09-28",
         "radarLow": 53.99,
         "deltaFromLowPct": 0,
         "discount": 10,
-        "daysRemaining": 11,
+        "daysRemaining": 10,
         "code": "wait",
         "label": "WARTEN",
         "reason": "Der aktuelle Rabatt reicht gegenüber dem bisherigen Radar-Verlauf noch nicht für ein Kaufsignal.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-09-27"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1911/33cf861ce2f42992ff43ca6ed494963dc3a1109ab9e0bae8.png"
     }
   },
   "summary": {
     "titles": 12,
-    "points": 62,
-    "archiveIssuesScanned": 24,
+    "points": 64,
+    "archiveIssuesScanned": 25,
     "signals": {
       "buy": 0,
       "watch": 1,
       "wait": 11
     },
-    "changedSignals": 1,
+    "changedSignals": 0,
     "newBuySignals": 0
   },
   "method": {

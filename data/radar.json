@@ -1,8 +1,8 @@
 {
-  "date": "27.09.2026",
-  "edition": "AUSGABE #024",
+  "date": "28.09.2026",
+  "edition": "AUSGABE #025",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "27.09 · LIVE",
+  "newCount": "28.09 · LIVE",
   "leadTitle": "Luma Island erscheint für PS5",
   "leadDate": "24.09.2026",
   "leadMeta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu viert.",
@@ -86,7 +86,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 27.09.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
+  "radarCheck": "Stand 28.09.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
   "sourceAlerts": [
     {
       "title": "Luma Island erscheint für PS5",
@@ -107,7 +107,7 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-27T22:00:22.571Z",
+    "checkedAt": "2026-09-28T06:03:29.357Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -120,10 +120,10 @@
     "automationNotes": 0,
     "editorialFreshness": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-09-27T22:00:22.571Z"
+    "lastSuccessfulCheck": "2026-09-28T06:03:29.357Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-27T22:00:22.571Z",
+    "checkedAt": "2026-09-28T06:03:29.357Z",
     "errors": [],
     "sources": [
       {
@@ -305,7 +305,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-27T22:00:07.354Z",
+    "checkedAt": "2026-09-28T06:03:11.832Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -362,7 +362,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-27T21:59:52.662Z",
+    "checkedAt": "2026-09-28T06:02:57.398Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -376,7 +376,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-27T21:59:52.740Z",
+    "checkedAt": "2026-09-28T06:02:57.509Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -389,15 +389,15 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-27T22:00:12.827Z",
+    "checkedAt": "2026-09-28T06:03:17.166Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-09-27T21:59:51.234Z",
-    "date": "27.09.2026",
+    "checkedAt": "2026-09-28T06:02:56.452Z",
+    "date": "28.09.2026",
     "maxAgeDays": 21,
     "selected": [
       {
