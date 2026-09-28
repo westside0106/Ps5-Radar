@@ -50,15 +50,20 @@ export default async function PriceRadarPage() {
   const counts = priceHistory.summary?.signals || { buy: 0, watch: 0, wait: 0 };
 
   return (
-    <main className="watchlist-shell">
-      <section className="watchlist-page">
-        <header className="watchlist-head">
+    <main className="watchlist-shell price-radar-shell">
+      <section className="watchlist-page price-radar-page">
+        <header className="watchlist-head price-radar-head">
           <div>
             <span>PLAYSTATION-RADAR · PREISVERLAUF</span>
             <h1>Preisradar</h1>
             <p>
-              {items.length} beobachtete Titel · {priceHistory.summary?.points || 0} Messpunkte · {counts.buy || 0} Kaufen · {counts.watch || 0} Beobachten · {counts.wait || 0} Warten. Signale beziehen sich ausschließlich auf den eigenen Radar-Verlauf, nicht auf externe Allzeit-Tiefpreise.
+              {items.length} beobachtete Titel · {priceHistory.summary?.points || 0} Messpunkte. Signale beziehen sich ausschließlich auf den eigenen Radar-Verlauf, nicht auf externe Allzeit-Tiefpreise.
             </p>
+            <div className="price-radar-summary" aria-label="Signalübersicht">
+              <span className="signal-buy"><b>{counts.buy || 0}</b> Kaufen</span>
+              <span className="signal-watch"><b>{counts.watch || 0}</b> Beobachten</span>
+              <span className="signal-wait"><b>{counts.wait || 0}</b> Warten</span>
+            </div>
             <details className="radar-help">
               <summary aria-label="Erklärung der Begriffe">Was bedeuten diese Angaben?</summary>
               <p>
@@ -71,11 +76,11 @@ export default async function PriceRadarPage() {
               </p>
             </details>
           </div>
-          <div style={{ display:'flex', gap:'8px', flexWrap:'wrap' }}>
+          <nav className="price-radar-actions" aria-label="Preisradar Navigation">
             <a href="/watchlist">★ Watchlist</a>
             <a href="/radar">← Zur Ausgabe</a>
             <a href="https://github.com/westside0106/Ps5-Radar/actions/workflows/daily-radar.yml" target="_blank" rel="noreferrer">↻ Messung anstoßen ↗</a>
-          </div>
+          </nav>
         </header>
 
         <div className="watchlist-grid">
