@@ -38,6 +38,10 @@ for (const warning of radar.storeDiscovery?.warnings || []) issues.push(`Store-D
 for (const warning of radar.enrichment?.warnings || []) issues.push(`Detail-Enrichment: ${warning}`);
 for (const error of radar.sourceCheck?.errors || []) issues.push(error);
 if (radar.editorialFreshness?.status !== 'ok') issues.push('Top-News: Editorial-Freshness nicht bestätigt');
+if (radar.temporalCheck?.status !== 'ok') {
+  const temporalErrors = radar.temporalCheck?.errors || ['Zeitsemantik nicht bestätigt'];
+  for (const error of temporalErrors) issues.push(`Zeitsemantik: ${error}`);
+}
 const catalogCheckedAt = catalog.checkedAt ? new Date(catalog.checkedAt) : null;
 const catalogAgeHours = catalogCheckedAt && !Number.isNaN(catalogCheckedAt.getTime()) ? (now - catalogCheckedAt) / 3600000 : null;
 if (catalogAgeHours === null || catalogAgeHours > 48) issues.push('PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden');
@@ -63,6 +67,7 @@ radar.health = {
   detailTitles,
   automationNotes: (radar.automationV2?.notes || []).length,
   editorialFreshness: radar.editorialFreshness?.status || 'missing',
+  temporalSemantics: radar.temporalCheck?.status || 'missing',
   catalogFreshness: catalogAgeHours !== null && catalogAgeHours <= 48 ? 'ok' : 'stale',
   lastSuccessfulCheck: status === 'ok' ? now.toISOString() : (radar.health?.lastSuccessfulCheck || null)
 };
@@ -81,4 +86,4 @@ radar.radarCheck = status === 'ok'
   : `Stand ${berlinDate} · ${okSources}/${totalSources} Quellen · ${uniqueIssues.length} Warnung(en)`;
 
 await fs.writeFile(radarPath, JSON.stringify(radar, null, 2) + '\n');
-console.log(`Pipeline health: ${status}; sources=${okSources}/${totalSources}; store=${storeVerified}; details=${enriched}/${detailTitles}; warnings=${uniqueIssues.length}.`);
+console.log(`Pipeline health: ${status}; sources=${okSources}/${totalSources}; store=${storeVerified}; details=${enriched}/${detailTitles}; temporal=${radar.temporalCheck?.status || 'missing'}; warnings=${uniqueIssues.length}.`);
