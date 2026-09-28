@@ -34,7 +34,8 @@ export default function WatchlistDock() {
     };
   }, []);
 
-  if (pathname === '/' || stats === null) return null;
+  const browseSurface = pathname?.startsWith('/ps-plus') || pathname?.startsWith('/xbox') || pathname?.startsWith('/preise') || pathname?.startsWith('/watchlist') || pathname?.startsWith('/bild');
+  if (pathname === '/' || browseSurface || stats === null) return null;
 
   const signalText = stats.buy ? `${stats.buy} Kaufsignal${stats.buy === 1 ? '' : 'e'}` : stats.watch ? `${stats.watch} beobachten` : null;
 
