@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-28T13:45:41.522Z",
+  "checkedAt": "2026-09-28T13:59:51.528Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,14 +54,7 @@
         "pubDate": "Mon, 21 Sep 2026 07:00:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
-        "link": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
-        "pubDate": "Mon, 28 Sep 2026 11:10:00 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
@@ -147,16 +140,30 @@
       ],
       "range": null,
       "label": "SEPTEMBER 2026"
+    },
+    "candidateAudit": {
+      "checkedAt": "2026-09-28T14:00:32.138Z",
+      "parsed": 6,
+      "accepted": [
+        "Sniper Elite: Resistance",
+        "MLB The Show 26",
+        "Wobbly Life",
+        "Chained Echoes"
+      ],
+      "rejected": [
+        "Luma Island erscheint für PS5",
+        "Fading Echo taucht heute auf PS5 ab"
+      ]
     }
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587286
+    "bytes": 588306
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241884,
+    "bytes": 241886,
     "updated": true,
     "parsed": {
       "trial": false,

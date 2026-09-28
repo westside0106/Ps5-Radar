@@ -1,7 +1,7 @@
 {
   "date": "28.09.2026",
   "edition": "AUSGABE #025",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
+  "newHeadline": "RADAR-CHECK AKTUELL",
   "newCount": "28.09 · LIVE",
   "leadTitle": "Luma Island erscheint für PS5",
   "leadDate": "24.09.2026",
@@ -104,26 +104,19 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
-      "url": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
-      "category": "news",
-      "score": 50
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-28T13:46:23.283Z",
+    "checkedAt": "2026-09-28T14:00:31.978Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-28T13:45:41.522Z",
+    "lastSuccessfulCheck": "2026-09-28T13:59:51.528Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-28T13:45:41.522Z",
+    "checkedAt": "2026-09-28T13:59:51.528Z",
     "errors": [],
     "sources": [
       {
@@ -305,7 +298,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-28T13:46:10.262Z",
+    "checkedAt": "2026-09-28T14:00:22.739Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -362,7 +355,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-28T13:45:54.517Z",
+    "checkedAt": "2026-09-28T14:00:07.926Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -376,7 +369,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-28T13:45:54.621Z",
+    "checkedAt": "2026-09-28T14:00:08.020Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -389,14 +382,14 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-28T13:46:22.635Z",
+    "checkedAt": "2026-09-28T14:00:31.552Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-09-28T13:45:52.538Z",
+    "checkedAt": "2026-09-28T14:00:06.346Z",
     "date": "28.09.2026",
     "maxAgeDays": 21,
     "selected": [
