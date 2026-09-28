@@ -107,6 +107,7 @@ export default function CatalogClient({ snapshot }) {
   };
   const sourceDate = dateLabel(snapshot.checkedAt);
   const total = games.length;
+  const duplicateCards = status.complete && Number.isFinite(status.expected) ? Math.max(0, status.expected - (status.count ?? 0)) : 0;
   return <div className="catalog-app">
     <header className="catalog-header">
       <nav className="catalog-back"><a href="/radar">← Magazin</a><a href="/radar" className="is-active" aria-current="page">PlayStation</a><a href="/xbox">Xbox <b>BETA</b></a><a href="/preise">Preisradar</a></nav>
@@ -116,7 +117,7 @@ export default function CatalogClient({ snapshot }) {
       const count = snapshot.sections?.[tab.id]?.count;
       return <button key={tab.id} type="button" aria-label={tab.label} className={service===tab.id?'active':''} aria-current={service===tab.id?'page':undefined} onClick={()=>selectService(tab.id)}><span>{tab.label}</span>{Number.isFinite(count) ? <small className="catalog-tab-count" aria-hidden="true">{count.toLocaleString('de-DE')}</small> : null}</button>;
     })}</nav>
-    <section className="catalog-status" aria-live="polite"><div><strong>{serviceNames[service] || 'Katalog'}</strong><span>{status.count ?? 0} erfasste Einträge{status.complete?' · Quelle vollständig geprüft':' · Abdeckung nicht vollständig bestätigt'}</span></div><span className="catalog-date">{status.stale?'Stand veraltet · ':''}{sourceDate ? `Quellenstand ${sourceDate}`:'Noch kein gültiger Snapshot'}</span></section>
+    <section className="catalog-status" aria-live="polite"><div><strong>{serviceNames[service] || 'Katalog'}</strong><span>{status.count ?? 0} eindeutige Einträge{status.complete && Number.isFinite(status.expected) ? ` aus ${status.expected} Quellkarten` : ''}{duplicateCards ? ` · ${duplicateCards} Dubletten zusammengeführt` : ''}{status.complete?' · Quelle vollständig geprüft':' · Abdeckung nicht vollständig bestätigt'}</span></div><span className="catalog-date">{status.stale?'Stand veraltet · ':''}{sourceDate ? `Quellenstand ${sourceDate}`:'Noch kein gültiger Snapshot'}</span></section>
     {!status.complete || status.stale ? <div className="catalog-warning" role="status">{status.stale ? <>Der letzte vollständige Quellencheck liegt mehr als 48 Stunden zurück. Die zuletzt vollständig bestätigten Einträge bleiben sichtbar, können aber inzwischen geändert worden sein. </> : <>Eine vollständige Abdeckung dieses Bereichs ist derzeit nicht bestätigt. Die angezeigten Einträge sind keine Garantie für aktuelle Verfügbarkeit. </>}<a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Offiziellen Katalog prüfen ↗</a></div> : null}
     {service==='essential' ? <p className="catalog-note">Monatliche Spiele müssen während ihres Beanspruchungszeitraums zur Bibliothek hinzugefügt werden. Sie bleiben mit aktivem PS-Plus-Abonnement spielbar.</p> : null}
     {service==='extra' ? <p className="catalog-note">Extra-Spiele sind nur während ihrer Katalogzugehörigkeit spielbar. Ein früheres Hinzufügen zur Bibliothek verlängert den Zugriff nicht. Premium enthält ebenfalls den Extra-Spielekatalog.</p> : null}
