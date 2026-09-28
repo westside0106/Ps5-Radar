@@ -1,0 +1,65 @@
+/* Mobile Price Radar pass */
+.price-radar-summary{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.price-radar-summary>span{display:inline-flex;align-items:center;gap:6px;padding:7px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.15);font-size:10px;font-weight:900}
+.price-radar-summary b{font-size:13px}
+.price-radar-actions{display:flex;gap:8px;flex-wrap:wrap}
+.price-radar-actions a{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+.price-radar-page .radar-help{margin-top:14px;padding:0;border:1px solid rgba(103,184,255,.18);border-radius:12px;background:rgba(8,29,55,.5);overflow:hidden}
+.price-radar-page .radar-help summary{min-height:44px;padding:11px 13px;display:flex;align-items:center;cursor:pointer;font-size:12px;font-weight:900;color:#bfe0ff}
+.price-radar-page .radar-help summary::-webkit-details-marker{display:none}
+.price-radar-page .radar-help summary::after{content:"＋";margin-left:auto;font-size:16px}
+.price-radar-page .radar-help[open] summary::after{content:"−"}
+.price-radar-page .radar-help p{margin:0;padding:0 13px 13px;color:#a9bdd2;font-size:12px;line-height:1.55}
+
+@media(max-width:620px){
+  .price-radar-shell{
+    padding-top:max(14px,env(safe-area-inset-top));
+    padding-left:max(10px,env(safe-area-inset-left));
+    padding-right:max(10px,env(safe-area-inset-right));
+  }
+  .price-radar-head{
+    display:block;
+    margin-bottom:16px;
+    padding-bottom:12px;
+  }
+  .price-radar-head h1{font-size:clamp(34px,12vw,48px)}
+  .price-radar-head p{font-size:12px;line-height:1.48}
+  .price-radar-summary{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding-bottom:2px;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+  .price-radar-summary::-webkit-scrollbar{display:none}
+  .price-radar-summary>span{flex:0 0 auto;min-height:38px}
+  .price-radar-actions{
+    position:sticky;
+    top:0;
+    z-index:24;
+    margin:14px -10px 0;
+    padding:8px 10px;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    scrollbar-width:none;
+    background:rgba(4,14,29,.95);
+    backdrop-filter:blur(14px);
+    border-top:1px solid rgba(103,184,255,.12);
+    border-bottom:1px solid rgba(103,184,255,.14);
+  }
+  .price-radar-actions::-webkit-scrollbar{display:none}
+  .price-radar-actions a{flex:0 0 auto;white-space:nowrap}
+  .price-radar-page .watchlist-grid{gap:12px}
+  .price-radar-page .watchlist-card-art{min-height:205px}
+  .price-radar-page .watchlist-card-copy h2{font-size:22px}
+  .price-radar-page .watchlist-signal{margin:10px 10px 0;padding:10px}
+  .price-radar-page .watchlist-signal p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .price-radar-page .watchlist-card-foot{padding:11px 12px 12px}
+  .price-radar-page .watchlist-card-actions{width:auto}
+  .price-radar-page .watchlist-card-actions a{min-width:96px}
+}
+@media(max-width:390px){
+  .price-radar-page .watchlist-card-art{min-height:185px}
+  .price-radar-page .watchlist-card-meta{gap:4px}
+  .price-radar-page .watchlist-card-meta span{font-size:8px}
+}
