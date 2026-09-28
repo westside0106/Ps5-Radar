@@ -1,0 +1,20 @@
+@media(max-width:650px){
+  .is-xbox .catalog-back{background:linear-gradient(180deg,rgba(5,12,6,.99),rgba(5,12,6,.92));border-bottom-color:rgba(94,200,94,.17)}
+  .is-xbox .catalog-tabs{background:rgba(5,12,6,.95);border-bottom-color:rgba(94,200,94,.15)}
+  .is-xbox .catalog-filter-head{background:rgba(5,12,6,.97);border-bottom-color:rgba(94,200,94,.14)}
+  .is-xbox .catalog-results-head{background:linear-gradient(180deg,rgba(5,12,6,.97),rgba(5,12,6,.91))}
+  .is-xbox .catalog-pagination{background:rgba(7,24,10,.95);border-color:rgba(94,200,94,.25)}
+  .is-xbox .catalog-heading p{max-width:100%;font-size:13px;line-height:1.48}
+  .is-xbox .catalog-note,.is-xbox .catalog-warning{font-size:12px;line-height:1.5}
+  .is-xbox .catalog-tabs button{scroll-snap-align:start}
+  .is-xbox .catalog-card-copy{gap:6px}
+  .is-xbox .catalog-price-cut{display:flex;align-items:center;gap:5px;flex-wrap:wrap;line-height:1.2}
+  .is-xbox .catalog-price-cut s{margin-right:0;font-size:10px}
+  .is-xbox .catalog-price-badge{margin-left:0}
+  .is-xbox .catalog-trial{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;font-size:10px;line-height:1.3}
+  .is-xbox .catalog-footer{padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+}
+@media(max-width:390px){
+  .is-xbox .catalog-heading h1{font-size:29px}
+  .is-xbox .catalog-card-more{font-size:10px}
+}
