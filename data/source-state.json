@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-28T11:26:42.170Z",
+  "checkedAt": "2026-09-28T11:30:16.271Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -58,7 +58,7 @@
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209320,
+    "bytes": 209369,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175911,
+    "bytes": 175960,
     "updated": true,
     "parsed": {
       "games": [
