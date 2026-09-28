@@ -13,6 +13,7 @@ import './radar-goal.css';
 import './video-review-goal.css';
 import './iphone-magazine-ux.css';
 import './mobile-detail-watchlist.css';
+import './mobile-price-catalog.css';
 import WatchlistDock from './WatchlistDock';
 
 export const metadata = {
