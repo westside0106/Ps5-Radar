@@ -1,0 +1,68 @@
+/* Second iPhone video pass: keep touch layouts usable even when Safari page zoom
+   expands the CSS viewport beyond the narrow-phone breakpoints. */
+@media (hover:none) and (pointer:coarse) and (max-width:900px){
+  .mag-toolbar{
+    overflow-x:auto;
+    flex-wrap:nowrap!important;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+  .mag-toolbar::-webkit-scrollbar{display:none}
+  .mag-toolbar .logout{
+    flex:0 0 auto;
+    min-height:44px;
+    padding:9px 13px;
+    font-size:13px;
+    white-space:nowrap;
+  }
+
+  /* The recordings showed four catalog cards per iPhone row at a reduced Safari
+     page zoom. Two cards remain readable without throwing away browse density. */
+  .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px}
+  .catalog-card-copy{padding:11px}
+  .catalog-card h3{font-size:15px;line-height:1.28}
+  .catalog-card p{font-size:12px}
+  .catalog-card-more{font-size:12px}
+  .catalog-price-badge,.catalog-trial,.catalog-expiry{font-size:11px}
+
+  .catalog-back{
+    position:sticky;
+    top:0;
+    z-index:30;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+    background:rgba(5,11,24,.95);
+    backdrop-filter:blur(14px);
+  }
+  .catalog-back::-webkit-scrollbar,.catalog-tabs::-webkit-scrollbar{display:none}
+  .catalog-back a{flex:0 0 auto;white-space:nowrap}
+  .catalog-tabs{overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .catalog-tabs button{min-height:44px}
+  .catalog-filter-head{gap:8px}
+  .catalog-search input,.catalog-filter-toggle,.catalog-reset,.catalog-filters select{min-height:46px}
+  .catalog-filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .catalog-check{grid-column:1/-1}
+
+  /* Price cards were still rendered as a desktop two-column grid in the same
+     iPhone recording. A single column makes signal, price and history legible. */
+  .price-radar-page .watchlist-grid{grid-template-columns:1fr!important;gap:14px}
+  .price-radar-page .watchlist-card-art{min-height:280px}
+  .price-radar-page .watchlist-card-copy h2{font-size:25px}
+  .price-radar-page .watchlist-signal p{font-size:12px;line-height:1.45}
+
+  .image-viewer-shell{padding:max(10px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}
+}
+
+@media (hover:none) and (pointer:coarse) and (max-width:520px){
+  .catalog-grid{gap:10px}
+  .catalog-card h3{font-size:14px}
+  .price-radar-page .watchlist-card-art{min-height:245px}
+}
+
+.image-viewer-shell{min-height:100dvh;background:#030914;color:#eef6ff;padding:18px}
+.image-viewer-page{width:min(1500px,100%);margin:0 auto}
+.image-viewer-head{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0 12px;background:linear-gradient(180deg,#030914 78%,rgba(3,9,20,.78));backdrop-filter:blur(12px)}
+.image-viewer-head div{min-width:0}.image-viewer-head small{display:block;color:#6dbdff;font-size:10px;font-weight:900;letter-spacing:.12em}.image-viewer-head strong{display:block;margin-top:3px;font-size:18px}.image-viewer-actions{display:flex;gap:8px;flex:0 0 auto}.image-viewer-actions a{min-height:44px;display:inline-flex;align-items:center;padding:9px 12px;border-radius:10px;border:1px solid rgba(104,184,255,.32);background:#0b2445;color:#fff;text-decoration:none;font-size:12px;font-weight:900}.image-viewer-frame{margin:0;border:1px solid rgba(104,184,255,.25);border-radius:12px;overflow:hidden;background:#071326;box-shadow:0 16px 40px rgba(0,0,0,.35)}.image-viewer-frame img{display:block;width:100%;height:auto;background:#071326}.image-viewer-note{margin:10px 2px 0;color:#8ea9c4;font-size:11px;line-height:1.45}
+@media(max-width:560px){.image-viewer-shell{padding:10px}.image-viewer-head{align-items:flex-start}.image-viewer-head strong{font-size:15px}.image-viewer-actions a{padding:8px 10px}.image-viewer-actions a:last-child{display:none}}
