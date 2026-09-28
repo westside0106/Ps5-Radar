@@ -1,23 +1,23 @@
 {
   "date": "28.09.2026",
   "edition": "AUSGABE #025",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
   "newCount": "28.09 · LIVE",
   "leadTitle": "Luma Island erscheint für PS5",
   "leadDate": "24.09.2026",
   "leadMeta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu viert.",
   "leadPrice": null,
   "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg",
-  "secondary1Title": "Fading Echo taucht heute auf PS5 ab",
-  "secondary1Date": "22.09.2026",
-  "secondary1Meta": "Beherrscht Wasser, verbiegt die Realität und kombiniert Elemente: „Fading Echo“ ist ab sofort auf PS5 erhältlich.",
+  "secondary1Title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
+  "secondary1Date": "28.09.2026",
+  "secondary1Meta": "God of War Laufey (16.02.2027, PS5): Vorbestellung ab 29. September – Editionen im Detail und Fayes neuer Schlangenbogen.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/cb8ce2ef9b5bc2c611525f3b96e1ce2687039bb1.jpg",
-  "secondary2Title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
-  "secondary2Date": "25.09.2026",
-  "secondary2Meta": "Mehr als sieben Jahre nach dem Release des Vorgängers erteilt Bandai Namco endlich mit Ace Combat 8: Wings of Theve einem neuen Teil der beliebten…",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/90ea5cb76030169d12553310c738ce23d04241fd.jpg",
+  "secondary2Title": "Fading Echo taucht heute auf PS5 ab",
+  "secondary2Date": "22.09.2026",
+  "secondary2Meta": "Beherrscht Wasser, verbiegt die Realität und kombiniert Elemente: „Fading Echo“ ist ab sofort auf PS5 erhältlich.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/4b2437cc2a6639e91208da9a3f92ce9284a74527-scaled.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/cb8ce2ef9b5bc2c611525f3b96e1ce2687039bb1.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -94,20 +94,27 @@
       "type": "editorial"
     },
     {
-      "title": "Fading Echo taucht heute auf PS5 ab",
-      "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
+      "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
+      "url": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
       "type": "editorial"
     },
     {
-      "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
-      "url": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
+      "title": "Fading Echo taucht heute auf PS5 ab",
+      "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
       "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
+      "url": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
+      "category": "news",
+      "score": 50
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-28T13:02:21.704Z",
+    "checkedAt": "2026-09-28T13:46:37.517Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -120,10 +127,10 @@
     "automationNotes": 0,
     "editorialFreshness": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-09-28T13:02:21.704Z"
+    "lastSuccessfulCheck": "2026-09-28T13:46:37.517Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-28T13:02:21.704Z",
+    "checkedAt": "2026-09-28T13:46:37.517Z",
     "errors": [],
     "sources": [
       {
@@ -166,8 +173,8 @@
   },
   "gameDetails": {
     "Luma Island erscheint für PS5": {},
+    "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen": {},
     "Fading Echo taucht heute auf PS5 ab": {},
-    "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -305,7 +312,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-28T13:02:03.676Z",
+    "checkedAt": "2026-09-28T13:46:10.262Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -362,7 +369,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-28T13:01:46.686Z",
+    "checkedAt": "2026-09-28T13:45:54.517Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -376,7 +383,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-28T13:01:46.797Z",
+    "checkedAt": "2026-09-28T13:45:54.621Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -389,14 +396,14 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-28T13:02:08.798Z",
+    "checkedAt": "2026-09-28T13:46:22.635Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-09-28T13:01:44.455Z",
+    "checkedAt": "2026-09-28T13:45:52.538Z",
     "date": "28.09.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -407,16 +414,16 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg"
       },
       {
+        "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
+        "date": "28.09.2026",
+        "url": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/90ea5cb76030169d12553310c738ce23d04241fd.jpg"
+      },
+      {
         "title": "Fading Echo taucht heute auf PS5 ab",
         "date": "22.09.2026",
         "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/cb8ce2ef9b5bc2c611525f3b96e1ce2687039bb1.jpg"
-      },
-      {
-        "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
-        "date": "25.09.2026",
-        "url": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/4b2437cc2a6639e91208da9a3f92ce9284a74527-scaled.jpg"
       }
     ]
   }

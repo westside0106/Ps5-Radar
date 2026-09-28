@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-28T13:01:34.395Z",
+  "checkedAt": "2026-09-28T13:45:41.522Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
+        "link": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
+        "pubDate": "Mon, 28 Sep 2026 11:10:00 +0000"
+      },
       {
         "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
         "link": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
@@ -47,14 +52,16 @@
         "title": "Silent Hill: Townfall – 9 Aspekte, die sich durch die Ego-Perspektive an der klassischen Horrorformel ändern",
         "link": "https://blog.de.playstation.com/2026/09/21/silent-hill-townfall-9-aspekte-die-sich-durch-die-ego-perspektive-an-der-klassischen-horrorformel-aendern/",
         "pubDate": "Mon, 21 Sep 2026 07:00:00 +0000"
-      },
-      {
-        "title": "Control Resonant im Hands-on: Wie Remedy seinen paranatürlichen Horror-Nachfolger größer und seltsamer macht",
-        "link": "https://blog.de.playstation.com/2026/09/18/control-resonant-im-hands-on-wie-remedy-seinen-paranatuerlichen-horror-nachfolger-groesser-und-seltsamer-macht/",
-        "pubDate": "Fri, 18 Sep 2026 13:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
+        "link": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
+        "pubDate": "Mon, 28 Sep 2026 11:10:00 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
@@ -149,7 +156,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242009,
+    "bytes": 241884,
     "updated": true,
     "parsed": {
       "trial": false,
