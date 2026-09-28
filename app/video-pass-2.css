@@ -62,6 +62,7 @@
 }
 
 .image-viewer-shell{min-height:100dvh;background:#030914;color:#eef6ff;padding:18px}
+.image-viewer-shell + .watchlist-dock{display:none}
 .image-viewer-page{width:min(1500px,100%);margin:0 auto}
 .image-viewer-head{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0 12px;background:linear-gradient(180deg,#030914 78%,rgba(3,9,20,.78));backdrop-filter:blur(12px)}
 .image-viewer-head div{min-width:0}.image-viewer-head small{display:block;color:#6dbdff;font-size:10px;font-weight:900;letter-spacing:.12em}.image-viewer-head strong{display:block;margin-top:3px;font-size:18px}.image-viewer-actions{display:flex;gap:8px;flex:0 0 auto}.image-viewer-actions a{min-height:44px;display:inline-flex;align-items:center;padding:9px 12px;border-radius:10px;border:1px solid rgba(104,184,255,.32);background:#0b2445;color:#fff;text-decoration:none;font-size:12px;font-weight:900}.image-viewer-frame{margin:0;border:1px solid rgba(104,184,255,.25);border-radius:12px;overflow:hidden;background:#071326;box-shadow:0 16px 40px rgba(0,0,0,.35)}.image-viewer-frame img{display:block;width:100%;height:auto;background:#071326}.image-viewer-note{margin:10px 2px 0;color:#8ea9c4;font-size:11px;line-height:1.45}
