@@ -15,7 +15,9 @@ import './video-review-goal.css';
 import './iphone-magazine-ux.css';
 import './mobile-detail-watchlist.css';
 import './mobile-price-catalog.css';
+import './video-pass-2.css';
 import WatchlistDock from './WatchlistDock';
+import VideoReviewFixes from './VideoReviewFixes';
 
 export const metadata = {
   title: 'PlayStation Radar',
@@ -30,5 +32,5 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="de"><body>{children}<WatchlistDock /></body></html>;
+  return <html lang="de"><body>{children}<WatchlistDock /><VideoReviewFixes /></body></html>;
 }
