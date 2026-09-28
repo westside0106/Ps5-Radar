@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-28T13:59:51.528Z",
+  "checkedAt": "2026-09-28T14:59:40.351Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -142,7 +142,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-09-28T14:00:32.138Z",
+      "checkedAt": "2026-09-28T15:00:12.805Z",
       "parsed": 6,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -158,12 +158,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 588306
+    "bytes": 587286
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241886,
+    "bytes": 242010,
     "updated": true,
     "parsed": {
       "trial": false,
