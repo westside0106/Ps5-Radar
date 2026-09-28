@@ -1,0 +1,116 @@
+/* iPhone magazine UX pass. Loaded last so it can normalize older mobile layers. */
+@media (max-width: 900px) {
+  .mag-shell {
+    padding-top: max(8px, env(safe-area-inset-top));
+    padding-left: max(8px, env(safe-area-inset-left));
+    padding-right: max(8px, env(safe-area-inset-right));
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+
+  /* Keep the primary destinations reachable in a long daily issue. */
+  .mag-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    margin-bottom: 8px;
+    padding: 6px 2px 7px;
+    background: linear-gradient(180deg, rgba(4, 9, 20, .98) 72%, rgba(4, 9, 20, .82));
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    scroll-padding-inline: 2px;
+  }
+
+  .mag-toolbar .logout {
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+  }
+
+  /* Horizontal card groups should feel like deliberate browse rails. */
+  .plus-covers,
+  .deal-showcase-grid,
+  .release-grid {
+    scroll-padding-inline: 2px 18px;
+    touch-action: pan-x pan-y;
+  }
+
+  .plus-covers > .radar-clickable,
+  .deal-showcase-grid > .radar-clickable,
+  .release-grid > .radar-clickable {
+    scroll-snap-stop: normal;
+  }
+
+  .radar-clickable:focus-visible,
+  .mag-toolbar a:focus-visible,
+  .mag-toolbar button:focus-visible {
+    outline: 3px solid #67c7ff;
+    outline-offset: 3px;
+  }
+
+  .mag-ticker span {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .compact-summary {
+    min-width: 0;
+  }
+
+  .compact-summary > * {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  /* Two half-width teaser stories become too narrow on an iPhone. */
+  .mag-side-stack {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .mag-side-stack .mag-story {
+    min-height: 168px;
+  }
+
+  .mag-side-stack .mag-story h2 {
+    font-size: clamp(20px, 6vw, 25px);
+  }
+
+  .mag-masthead {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .mag-brand,
+  .mag-datebox,
+  .mag-ticker span {
+    min-width: 0;
+  }
+
+  .mag-datebox strong {
+    white-space: nowrap;
+  }
+
+  .compact-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .compact-summary p {
+    text-align: left;
+  }
+
+  .deadline-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plus-covers,
+  .deal-showcase-grid,
+  .release-grid {
+    scroll-behavior: auto;
+  }
+}
