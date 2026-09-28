@@ -12,6 +12,7 @@ import './watchlist.css';
 import './radar-goal.css';
 import './video-review-goal.css';
 import './iphone-magazine-ux.css';
+import './mobile-detail-watchlist.css';
 import WatchlistDock from './WatchlistDock';
 
 export const metadata = {
