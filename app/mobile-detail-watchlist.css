@@ -1,0 +1,246 @@
+/* Mobile detail-sheet + watchlist pass: one-hand reach, safe areas and readable density. */
+
+.radar-sheet-topbar{
+  min-height:54px;
+  padding:12px 62px 10px 18px;
+  display:flex;
+  align-items:center;
+  color:#8fc9ff;
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  background:linear-gradient(180deg,rgba(7,21,44,.96),rgba(7,21,44,.82));
+  border-bottom:1px solid rgba(101,184,255,.14);
+}
+
+@media(max-width:700px){
+  .radar-dialog{
+    height:100dvh;
+    max-height:100dvh;
+  }
+
+  .radar-sheet{
+    position:absolute;
+    inset:auto 0 0;
+    width:100%;
+    max-height:calc(100dvh - max(8px,env(safe-area-inset-top)));
+    padding-bottom:env(safe-area-inset-bottom);
+    scroll-padding-bottom:calc(84px + env(safe-area-inset-bottom));
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .radar-sheet-handle{
+    position:absolute;
+    z-index:10;
+    top:7px;
+    left:50%;
+    transform:translateX(-50%);
+    margin:0;
+  }
+
+  .radar-sheet-topbar{
+    position:sticky;
+    z-index:9;
+    top:0;
+    min-height:58px;
+    padding:21px 62px 9px 16px;
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+  }
+
+  .radar-sheet-close{
+    position:fixed;
+    z-index:11;
+    top:auto;
+    right:max(14px,env(safe-area-inset-right));
+    bottom:calc(14px + env(safe-area-inset-bottom));
+    width:52px;
+    height:52px;
+    border-color:rgba(112,190,255,.55);
+    background:rgba(5,24,50,.96);
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    font-size:29px;
+  }
+
+  .radar-sheet-image{
+    height:clamp(190px,31dvh,250px);
+    background-position:center 28%;
+  }
+
+  .radar-sheet-gallery{
+    scroll-snap-type:x mandatory;
+    padding:9px 16px 5px;
+    scroll-padding-inline:16px;
+  }
+
+  .radar-gallery-thumb{
+    flex-basis:112px;
+    height:64px;
+    scroll-snap-align:start;
+  }
+
+  .radar-sheet-content{
+    padding:18px 16px calc(78px + env(safe-area-inset-bottom));
+  }
+
+  .radar-sheet-title-row{
+    gap:10px;
+  }
+
+  .radar-sheet h2{
+    font-size:clamp(28px,8.4vw,36px);
+    line-height:1;
+    text-wrap:balance;
+  }
+
+  .radar-watch-button{
+    min-height:44px;
+    padding:9px 13px;
+  }
+
+  .radar-sheet-badges{
+    gap:6px;
+    margin-top:11px;
+  }
+
+  .radar-sheet-badge{
+    padding:6px 8px;
+  }
+
+  .radar-sheet-summary{
+    margin-top:13px;
+    line-height:1.48;
+  }
+
+  .radar-sheet-facts div{
+    grid-template-columns:minmax(82px,30%) 1fr;
+    padding:10px;
+  }
+
+  .radar-sheet-facts dd{
+    overflow-wrap:anywhere;
+  }
+
+  .radar-sheet-actions{
+    position:sticky;
+    z-index:6;
+    bottom:calc(-1 * env(safe-area-inset-bottom));
+    margin:20px -16px calc(-78px - env(safe-area-inset-bottom));
+    padding:10px 80px calc(10px + env(safe-area-inset-bottom)) 16px;
+    grid-template-columns:1fr;
+    background:linear-gradient(180deg,rgba(3,8,18,0),rgba(3,8,18,.94) 22%,#030812 52%);
+  }
+
+  .radar-sheet-action{
+    min-height:48px;
+  }
+
+  .radar-price-history{
+    padding:11px 12px 9px;
+  }
+
+  .radar-price-history svg{
+    height:62px;
+  }
+
+  .radar-price-history-foot{
+    font-size:8px;
+  }
+}
+
+@media(max-width:620px){
+  .watchlist-shell{
+    padding:max(18px,env(safe-area-inset-top)) 12px calc(92px + env(safe-area-inset-bottom));
+  }
+
+  .watchlist-head{
+    gap:14px;
+    margin-bottom:16px;
+    padding-bottom:14px;
+  }
+
+  .watchlist-head h1{
+    margin-top:4px;
+    font-size:42px;
+  }
+
+  .watchlist-head p{
+    font-size:12px;
+    line-height:1.42;
+  }
+
+  .watchlist-head>div:last-child{
+    width:100%;
+    display:grid!important;
+    grid-template-columns:1fr 1fr;
+    gap:7px!important;
+  }
+
+  .watchlist-head>a,
+  .watchlist-head>div:last-child>a{
+    min-height:44px;
+    padding:10px 11px;
+    display:grid;
+    place-items:center;
+    text-align:center;
+  }
+
+  .watchlist-grid{
+    gap:11px;
+  }
+
+  .watchlist-card{
+    border-radius:15px;
+  }
+
+  .watchlist-card-art{
+    min-height:250px;
+    background-position:center 22%;
+  }
+
+  .watchlist-card-copy{
+    padding:15px;
+  }
+
+  .watchlist-card-copy h2{
+    font-size:23px;
+    text-wrap:balance;
+  }
+
+  .watchlist-signal{
+    margin:10px 11px 0;
+    padding:10px 11px;
+  }
+
+  .watchlist-card-foot{
+    padding:11px;
+    gap:10px;
+  }
+
+  .watchlist-card-actions{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .watchlist-card-actions a,
+  .watchlist-card-actions button{
+    min-height:44px;
+    display:grid;
+    place-items:center;
+  }
+
+  .watchlist-dock{
+    right:max(10px,env(safe-area-inset-right));
+    bottom:calc(10px + env(safe-area-inset-bottom));
+  }
+}
+
+@media(max-width:380px){
+  .radar-sheet-content{padding-inline:13px}
+  .radar-sheet-actions{margin-inline:-13px;padding-left:13px}
+  .radar-sheet-facts div{grid-template-columns:1fr;gap:3px}
+  .watchlist-card-art{min-height:225px}
+}
