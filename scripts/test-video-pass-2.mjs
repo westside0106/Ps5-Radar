@@ -16,7 +16,10 @@ test('iPhone video pass protects touch layouts and raw image navigation', async 
   const client = await fs.readFile(new URL('../app/VideoReviewFixes.jsx', import.meta.url), 'utf8');
   const viewer = await fs.readFile(new URL('../app/bild/page.jsx', import.meta.url), 'utf8');
   const catalog = await fs.readFile(new URL('../app/ps-plus/CatalogClient.jsx', import.meta.url), 'utf8');
-  assert.match(css, /pointer:coarse/);
+  assert.ok(!/pointer:coarse/.test(css),'Core phone layout must not depend on CSS viewport media queries');
+  assert.match(css, /html\.is-touch-phone \.catalog-grid\{grid-template-columns:repeat\(2/);
+  assert.match(client, /navigator\.maxTouchPoints > 0/);
+  assert.match(client, /shortestSide <= 500/);
   assert.match(css, /catalog-grid\{grid-template-columns:repeat\(2/);
   assert.match(css, /price-radar-page \.watchlist-grid\{grid-template-columns:1fr/);
   assert.match(client, /href="\/daily\/latest\.png"/);
