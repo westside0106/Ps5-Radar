@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T22:04:43.321Z",
+  "updatedAt": "2026-09-29T06:06:07.241Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -965,7 +965,7 @@
         "radarLow": 29.99,
         "deltaFromLowPct": 0,
         "discount": 40,
-        "daysRemaining": 10,
+        "daysRemaining": 9,
         "code": "watch",
         "label": "BEOBACHTEN",
         "reason": "Nur 0,0 % über dem eigenen Radar-Tief bei -40 %.",
@@ -1041,7 +1041,7 @@
         "radarLow": 53.99,
         "deltaFromLowPct": 0,
         "discount": 10,
-        "daysRemaining": 10,
+        "daysRemaining": 9,
         "code": "wait",
         "label": "WARTEN",
         "reason": "Der aktuelle Rabatt reicht gegenüber dem bisherigen Radar-Verlauf noch nicht für ein Kaufsignal.",
