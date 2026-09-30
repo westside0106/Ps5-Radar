@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-30T06:05:51.876Z",
+  "checkedAt": "2026-09-30T13:48:25.196Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Control Resonant: Kunst und Technik hinter den Bossen",
+        "link": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
+        "pubDate": "Wed, 30 Sep 2026 09:32:18 +0000"
+      },
       {
         "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
         "link": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
@@ -47,25 +52,20 @@
         "title": "Bus Simulator 27: Erstmals mit Reisebussen quer durch Felicia Bay",
         "link": "https://blog.de.playstation.com/2026/09/21/bus-simulator-27-erstmals-mit-reisebussen-quer-durch-felicia-bay/",
         "pubDate": "Mon, 21 Sep 2026 13:07:38 +0000"
-      },
-      {
-        "title": "Lisa x PlayStation erscheint diesen Oktober: Erster Blick auf den DualSense Wireless-Controller – Lisa Limited Edition",
-        "link": "https://blog.de.playstation.com/2026/09/21/lisa-x-playstation-erscheint-diesen-oktober-erster-blick-auf-den-dualsense-wireless-controller-lisa-limited-edition/",
-        "pubDate": "Mon, 21 Sep 2026 12:00:00 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
-        "link": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
-        "pubDate": "Tue, 29 Sep 2026 16:09:54 +0000",
-        "category": "release"
+        "title": "Control Resonant: Kunst und Technik hinter den Bossen",
+        "link": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
+        "pubDate": "Wed, 30 Sep 2026 09:32:18 +0000",
+        "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 208042,
+    "bytes": 208523,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 174633,
+    "bytes": 175114,
     "updated": true,
     "parsed": {
       "games": [
@@ -149,7 +149,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-09-30T06:06:37.504Z",
+      "checkedAt": "2026-09-30T13:48:58.325Z",
       "parsed": 6,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -165,12 +165,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 588305
+    "bytes": 587286
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241775,
+    "bytes": 241776,
     "updated": true,
     "parsed": {
       "trial": false,

@@ -1,7 +1,7 @@
 {
   "date": "30.09.2026",
   "edition": "AUSGABE #027",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
   "newCount": "30.09 · LIVE",
   "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
   "leadDate": "29.09.2026",
@@ -13,11 +13,11 @@
   "secondary1Meta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu viert.",
   "secondary1Price": null,
   "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg",
-  "secondary2Title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
-  "secondary2Date": "28.09.2026",
-  "secondary2Meta": "God of War Laufey (16.02.2027, PS5): Vorbestellung ab 29. September – Editionen im Detail und Fayes neuer Schlangenbogen.",
+  "secondary2Title": "Control Resonant: Kunst und Technik hinter den Bossen",
+  "secondary2Date": "30.09.2026",
+  "secondary2Meta": "Erfahrt im Interview, wie Remedy bei Control Resonant Charaktere, Umgebungen und Bosskämpfe für PS5 gestaltet hat.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/90ea5cb76030169d12553310c738ce23d04241fd.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/2edfa47d8cd14bc80eb8c8d0ffc9a603346d9707.png",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -99,24 +99,31 @@
       "type": "editorial"
     },
     {
-      "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
-      "url": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
+      "title": "Control Resonant: Kunst und Technik hinter den Bossen",
+      "url": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
       "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Control Resonant: Kunst und Technik hinter den Bossen",
+      "url": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
+      "category": "news",
+      "score": 50
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-30T06:06:37.324Z",
+    "checkedAt": "2026-09-30T13:48:58.136Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-09-30T06:05:51.876Z",
+    "lastSuccessfulCheck": "2026-09-30T13:48:25.196Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-30T06:05:51.876Z",
+    "checkedAt": "2026-09-30T13:48:25.196Z",
     "errors": [],
     "sources": [
       {
@@ -160,7 +167,7 @@
   "gameDetails": {
     "Suri: The Seventh Note erscheint am 30. Oktober für PS5": {},
     "Luma Island erscheint für PS5": {},
-    "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen": {},
+    "Control Resonant: Kunst und Technik hinter den Bossen": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -298,7 +305,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-30T06:06:24.902Z",
+    "checkedAt": "2026-09-30T13:48:53.570Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -355,7 +362,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-30T06:06:07.802Z",
+    "checkedAt": "2026-09-30T13:48:37.292Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -369,7 +376,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-30T06:06:08.115Z",
+    "checkedAt": "2026-09-30T13:48:37.400Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -382,14 +389,14 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-30T06:06:36.658Z",
+    "checkedAt": "2026-09-30T13:48:57.728Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-09-30T06:06:05.389Z",
+    "checkedAt": "2026-09-30T13:48:34.840Z",
     "date": "30.09.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -406,19 +413,19 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg"
       },
       {
-        "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
-        "date": "28.09.2026",
-        "url": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/90ea5cb76030169d12553310c738ce23d04241fd.jpg"
+        "title": "Control Resonant: Kunst und Technik hinter den Bossen",
+        "date": "30.09.2026",
+        "url": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/2edfa47d8cd14bc80eb8c8d0ffc9a603346d9707.png"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-09-29T14:07:08.084Z",
-    "berlinDate": "2026-09-29",
+    "checkedAt": "2026-09-30T06:06:37.504Z",
+    "berlinDate": "2026-09-30",
     "newPostsToday": 0,
-    "staleRelativeCopyFixed": 2,
+    "staleRelativeCopyFixed": 0,
     "errors": []
   }
 }
