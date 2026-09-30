@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-29T14:06:36.194Z",
+  "checkedAt": "2026-09-30T06:05:51.876Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
+        "link": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
+        "pubDate": "Tue, 29 Sep 2026 16:09:54 +0000"
+      },
       {
         "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
         "link": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
@@ -47,18 +52,20 @@
         "title": "Lisa x PlayStation erscheint diesen Oktober: Erster Blick auf den DualSense Wireless-Controller – Lisa Limited Edition",
         "link": "https://blog.de.playstation.com/2026/09/21/lisa-x-playstation-erscheint-diesen-oktober-erster-blick-auf-den-dualsense-wireless-controller-lisa-limited-edition/",
         "pubDate": "Mon, 21 Sep 2026 12:00:00 +0000"
-      },
-      {
-        "title": "Silent Hill: Townfall – 9 Aspekte, die sich durch die Ego-Perspektive an der klassischen Horrorformel ändern",
-        "link": "https://blog.de.playstation.com/2026/09/21/silent-hill-townfall-9-aspekte-die-sich-durch-die-ego-perspektive-an-der-klassischen-horrorformel-aendern/",
-        "pubDate": "Mon, 21 Sep 2026 07:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
+        "link": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
+        "pubDate": "Tue, 29 Sep 2026 16:09:54 +0000",
+        "category": "release"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 208743,
+    "bytes": 208042,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175334,
+    "bytes": 174633,
     "updated": true,
     "parsed": {
       "games": [
@@ -142,7 +149,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-09-29T14:07:08.084Z",
+      "checkedAt": "2026-09-30T06:06:37.504Z",
       "parsed": 6,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -158,12 +165,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587286
+    "bytes": 588305
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 242010,
+    "bytes": 241775,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -176,7 +183,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163225,
+    "bytes": 163245,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

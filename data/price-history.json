@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T14:07:00.633Z",
+  "updatedAt": "2026-09-30T06:06:24.829Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -935,6 +935,12 @@
           "price": 29.99,
           "oldPrice": 49.99,
           "discount": 40
+        },
+        {
+          "date": "2026-09-30",
+          "price": 29.99,
+          "oldPrice": 49.99,
+          "discount": 40
         }
       ],
       "title": "Starfield Premium Edition",
@@ -958,14 +964,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 4,
+        "measurements": 5,
         "currentPrice": 29.99,
         "lastObservedPrice": 29.99,
-        "lastObservedDate": "2026-09-29",
+        "lastObservedDate": "2026-09-30",
         "radarLow": 29.99,
         "deltaFromLowPct": 0,
         "discount": 40,
-        "daysRemaining": 9,
+        "daysRemaining": 8,
         "code": "watch",
         "label": "BEOBACHTEN",
         "reason": "Nur 0,0 % über dem eigenen Radar-Tief bei -40 %.",
@@ -998,6 +1004,12 @@
         },
         {
           "date": "2026-09-29",
+          "price": 53.99,
+          "oldPrice": 59.99,
+          "discount": 10
+        },
+        {
+          "date": "2026-09-30",
           "price": 53.99,
           "oldPrice": 59.99,
           "discount": 10
@@ -1034,14 +1046,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 4,
+        "measurements": 5,
         "currentPrice": 53.99,
         "lastObservedPrice": 53.99,
-        "lastObservedDate": "2026-09-29",
+        "lastObservedDate": "2026-09-30",
         "radarLow": 53.99,
         "deltaFromLowPct": 0,
         "discount": 10,
-        "daysRemaining": 9,
+        "daysRemaining": 8,
         "code": "wait",
         "label": "WARTEN",
         "reason": "Der aktuelle Rabatt reicht gegenüber dem bisherigen Radar-Verlauf noch nicht für ein Kaufsignal.",
@@ -1054,8 +1066,8 @@
   },
   "summary": {
     "titles": 12,
-    "points": 66,
-    "archiveIssuesScanned": 26,
+    "points": 68,
+    "archiveIssuesScanned": 27,
     "signals": {
       "buy": 0,
       "watch": 1,

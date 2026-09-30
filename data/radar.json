@@ -1,23 +1,23 @@
 {
-  "date": "29.09.2026",
-  "edition": "AUSGABE #026",
+  "date": "30.09.2026",
+  "edition": "AUSGABE #027",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "29.09 · LIVE",
-  "leadTitle": "Luma Island erscheint für PS5",
-  "leadDate": "24.09.2026",
-  "leadMeta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu viert.",
+  "newCount": "30.09 · LIVE",
+  "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
+  "leadDate": "29.09.2026",
+  "leadMeta": "Erfahrt, warum und wie Musik in „Suri: The Seventh Note“ zum zentralen Gameplay-Element wird.",
   "leadPrice": null,
-  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg",
-  "secondary1Title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
-  "secondary1Date": "28.09.2026",
-  "secondary1Meta": "God of War Laufey (16.02.2027, PS5): Vorbestellung ab 29. September – Editionen im Detail und Fayes neuer Schlangenbogen.",
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/d9560c567912446444ca989d79a7bbc8e849598d.jpg",
+  "secondary1Title": "Luma Island erscheint für PS5",
+  "secondary1Date": "24.09.2026",
+  "secondary1Meta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu viert.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/90ea5cb76030169d12553310c738ce23d04241fd.jpg",
-  "secondary2Title": "Fading Echo taucht auf PS5 ab",
-  "secondary2Date": "22.09.2026",
-  "secondary2Meta": "Beherrscht Wasser, verbiegt die Realität und kombiniert Elemente: „Fading Echo“ ist seit 22.09. auf PS5 erhältlich.",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg",
+  "secondary2Title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
+  "secondary2Date": "28.09.2026",
+  "secondary2Meta": "God of War Laufey (16.02.2027, PS5): Vorbestellung ab 29. September – Editionen im Detail und Fayes neuer Schlangenbogen.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/cb8ce2ef9b5bc2c611525f3b96e1ce2687039bb1.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/90ea5cb76030169d12553310c738ce23d04241fd.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -86,8 +86,13 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 29.09.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
+  "radarCheck": "Stand 30.09.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
   "sourceAlerts": [
+    {
+      "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
+      "url": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
+      "type": "editorial"
+    },
     {
       "title": "Luma Island erscheint für PS5",
       "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
@@ -97,17 +102,12 @@
       "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
       "url": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
       "type": "editorial"
-    },
-    {
-      "title": "Fading Echo taucht heute auf PS5 ab",
-      "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
-      "type": "editorial"
     }
   ],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-29T14:07:20.167Z",
+    "checkedAt": "2026-09-30T06:06:49.341Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -121,10 +121,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-09-29T14:07:20.167Z"
+    "lastSuccessfulCheck": "2026-09-30T06:06:49.341Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-29T14:07:20.167Z",
+    "checkedAt": "2026-09-30T06:06:49.341Z",
     "errors": [],
     "sources": [
       {
@@ -166,9 +166,9 @@
     ]
   },
   "gameDetails": {
+    "Suri: The Seventh Note erscheint am 30. Oktober für PS5": {},
     "Luma Island erscheint für PS5": {},
     "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen": {},
-    "Fading Echo taucht heute auf PS5 ab": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -201,12 +201,12 @@
       "release": "17.3.2026",
       "platform": "PS5",
       "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202609/2820/a295f655fa6a9b322949fabb319e98ef5141e3cac3da5335.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/791b0f1880e27c1d8f52187daea36abfe5fd3b0ff1144007.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
         "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
@@ -306,7 +306,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-29T14:07:00.702Z",
+    "checkedAt": "2026-09-30T06:06:24.902Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -363,7 +363,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-29T14:06:45.231Z",
+    "checkedAt": "2026-09-30T06:06:07.802Z",
     "month": "September",
     "year": 2026,
     "notes": [],
@@ -377,7 +377,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-29T14:06:45.368Z",
+    "checkedAt": "2026-09-30T06:06:08.115Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -390,17 +390,23 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-29T14:07:07.482Z",
+    "checkedAt": "2026-09-30T06:06:36.658Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-09-29T14:06:43.920Z",
-    "date": "29.09.2026",
+    "checkedAt": "2026-09-30T06:06:05.389Z",
+    "date": "30.09.2026",
     "maxAgeDays": 21,
     "selected": [
+      {
+        "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
+        "date": "29.09.2026",
+        "url": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/d9560c567912446444ca989d79a7bbc8e849598d.jpg"
+      },
       {
         "title": "Luma Island erscheint für PS5",
         "date": "24.09.2026",
@@ -412,21 +418,15 @@
         "date": "28.09.2026",
         "url": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/90ea5cb76030169d12553310c738ce23d04241fd.jpg"
-      },
-      {
-        "title": "Fading Echo taucht heute auf PS5 ab",
-        "date": "22.09.2026",
-        "url": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/cb8ce2ef9b5bc2c611525f3b96e1ce2687039bb1.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-09-29T14:07:08.084Z",
-    "berlinDate": "2026-09-29",
+    "checkedAt": "2026-09-30T06:06:37.504Z",
+    "berlinDate": "2026-09-30",
     "newPostsToday": 0,
-    "staleRelativeCopyFixed": 2,
+    "staleRelativeCopyFixed": 0,
     "errors": []
   }
 }
