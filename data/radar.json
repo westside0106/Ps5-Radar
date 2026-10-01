@@ -1,23 +1,23 @@
 {
   "date": "01.10.2026",
   "edition": "AUSGABE #028",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
   "newCount": "01.10 · LIVE",
   "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
   "leadDate": "29.09.2026",
   "leadMeta": "Erfahrt, warum und wie Musik in „Suri: The Seventh Note“ zum zentralen Gameplay-Element wird.",
   "leadPrice": null,
   "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/d9560c567912446444ca989d79a7bbc8e849598d.jpg",
-  "secondary1Title": "Luma Island erscheint für PS5",
-  "secondary1Date": "24.09.2026",
-  "secondary1Meta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu viert.",
+  "secondary1Title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
+  "secondary1Date": "01.10.2026",
+  "secondary1Meta": "Seit unserem Ankündigungstrailer im Februar arbeiten wir fleißig daran, Kena: Scars of Kosmora zu vollenden.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg",
-  "secondary2Title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
-  "secondary2Date": "30.09.2026",
-  "secondary2Meta": "Rast in F1 25 um einen Podiumsplatz, stellt euch in Hunt: Showdown 1896 Monstern und anderen Spielern und tretet in Earth Defense Force: World…",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/42156884fea9dd56a4b1405eaa1a1deb3d67e2bc-scaled.jpg",
+  "secondary2Title": "Luma Island erscheint für PS5",
+  "secondary2Date": "24.09.2026",
+  "secondary2Meta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu viert.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/f6dddca4ebd2b0a6991f3fc030ad597db83036cc-scaled.png",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -94,20 +94,27 @@
       "type": "editorial"
     },
     {
-      "title": "Luma Island erscheint für PS5",
-      "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
+      "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
+      "url": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
       "type": "editorial"
     },
     {
-      "title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
-      "url": "https://blog.de.playstation.com/2026/09/30/monatliche-playstation-plus-spiele-fuer-oktober-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
+      "title": "Luma Island erscheint für PS5",
+      "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
       "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
+      "url": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
+      "category": "release",
+      "score": 100
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-01T06:03:58.728Z",
+    "checkedAt": "2026-10-01T14:32:39.574Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -121,10 +128,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-01T06:03:58.728Z"
+    "lastSuccessfulCheck": "2026-10-01T14:32:39.574Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-01T06:03:58.728Z",
+    "checkedAt": "2026-10-01T14:32:39.574Z",
     "errors": [],
     "sources": [
       {
@@ -167,8 +174,8 @@
   },
   "gameDetails": {
     "Suri: The Seventh Note erscheint am 30. Oktober für PS5": {},
+    "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte": {},
     "Luma Island erscheint für PS5": {},
-    "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -221,7 +228,7 @@
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "RUBBERBANDGAMES LTD",
       "release": "18.9.2025",
-      "platform": "PS5 · PS4",
+      "platform": "PS4 · PS5",
       "gallery": [
         "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/l2VMZjLR9en9orx3nHGCaj8U.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/3650ac7e207de17c9aa1e057339b9e5b405c97a427af26de.jpg",
@@ -306,7 +313,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-01T06:03:32.079Z",
+    "checkedAt": "2026-10-01T14:32:10.533Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -363,7 +370,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-01T06:03:16.537Z",
+    "checkedAt": "2026-10-01T14:31:56.394Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -377,7 +384,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-01T06:03:16.636Z",
+    "checkedAt": "2026-10-01T14:31:56.483Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -390,14 +397,14 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-01T06:03:47.150Z",
+    "checkedAt": "2026-10-01T14:32:29.448Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-01T06:03:14.844Z",
+    "checkedAt": "2026-10-01T14:31:54.440Z",
     "date": "01.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -408,24 +415,24 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/d9560c567912446444ca989d79a7bbc8e849598d.jpg"
       },
       {
+        "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
+        "date": "01.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/42156884fea9dd56a4b1405eaa1a1deb3d67e2bc-scaled.jpg"
+      },
+      {
         "title": "Luma Island erscheint für PS5",
         "date": "24.09.2026",
         "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg"
-      },
-      {
-        "title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
-        "date": "30.09.2026",
-        "url": "https://blog.de.playstation.com/2026/09/30/monatliche-playstation-plus-spiele-fuer-oktober-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/f6dddca4ebd2b0a6991f3fc030ad597db83036cc-scaled.png"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-01T06:03:47.796Z",
+    "checkedAt": "2026-10-01T14:32:29.951Z",
     "berlinDate": "2026-10-01",
-    "newPostsToday": 0,
+    "newPostsToday": 1,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }

@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-10-01T06:03:05.427Z",
+  "checkedAt": "2026-10-01T14:31:46.206Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
+        "link": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
+        "pubDate": "Thu, 01 Oct 2026 12:59:44 +0000"
+      },
       {
         "title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
         "link": "https://blog.de.playstation.com/2026/09/30/monatliche-playstation-plus-spiele-fuer-oktober-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
@@ -47,25 +52,20 @@
         "title": "Fading Echo taucht heute auf PS5 ab",
         "link": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
         "pubDate": "Tue, 22 Sep 2026 15:00:00 +0000"
-      },
-      {
-        "title": "EA Sports NHL 27: Jedes Team bekommt seine eigene Identität zurück",
-        "link": "https://blog.de.playstation.com/2026/09/21/ea-sports-nhl-27-jedes-team-bekommt-seine-eigene-identitaet-zurueck/",
-        "pubDate": "Mon, 21 Sep 2026 13:23:02 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
-        "link": "https://blog.de.playstation.com/2026/09/30/monatliche-playstation-plus-spiele-fuer-oktober-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
-        "pubDate": "Wed, 30 Sep 2026 16:09:56 +0000",
-        "category": "psplus"
+        "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
+        "link": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
+        "pubDate": "Thu, 01 Oct 2026 12:59:44 +0000",
+        "category": "release"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 207389,
+    "bytes": 207390,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 173980,
+    "bytes": 173981,
     "updated": true,
     "parsed": {
       "games": [
@@ -145,7 +145,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-01T06:03:47.796Z",
+      "checkedAt": "2026-10-01T14:32:29.951Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -165,7 +165,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241898,
+    "bytes": 241899,
     "updated": true,
     "parsed": {
       "trial": false,
