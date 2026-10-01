@@ -1,8 +1,8 @@
 {
-  "date": "30.09.2026",
-  "edition": "AUSGABE #027",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "30.09 · LIVE",
+  "date": "01.10.2026",
+  "edition": "AUSGABE #028",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "01.10 · LIVE",
   "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
   "leadDate": "29.09.2026",
   "leadMeta": "Erfahrt, warum und wie Musik in „Suri: The Seventh Note“ zum zentralen Gameplay-Element wird.",
@@ -13,11 +13,11 @@
   "secondary1Meta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu viert.",
   "secondary1Price": null,
   "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg",
-  "secondary2Title": "Control Resonant: Kunst und Technik hinter den Bossen",
+  "secondary2Title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
   "secondary2Date": "30.09.2026",
-  "secondary2Meta": "Erfahrt im Interview, wie Remedy bei Control Resonant Charaktere, Umgebungen und Bosskämpfe für PS5 gestaltet hat.",
+  "secondary2Meta": "Rast in F1 25 um einen Podiumsplatz, stellt euch in Hunt: Showdown 1896 Monstern und anderen Spielern und tretet in Earth Defense Force: World…",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/2edfa47d8cd14bc80eb8c8d0ffc9a603346d9707.png",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/f6dddca4ebd2b0a6991f3fc030ad597db83036cc-scaled.png",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -86,7 +86,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 30.09.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
+  "radarCheck": "Stand 01.10.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
   "sourceAlerts": [
     {
       "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
@@ -99,22 +99,15 @@
       "type": "editorial"
     },
     {
-      "title": "Control Resonant: Kunst und Technik hinter den Bossen",
-      "url": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
+      "title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
+      "url": "https://blog.de.playstation.com/2026/09/30/monatliche-playstation-plus-spiele-fuer-oktober-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Control Resonant: Kunst und Technik hinter den Bossen",
-      "url": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
-      "category": "news",
-      "score": 50
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-09-30T13:49:14.607Z",
+    "checkedAt": "2026-10-01T06:03:58.728Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -128,10 +121,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-09-30T13:49:14.607Z"
+    "lastSuccessfulCheck": "2026-10-01T06:03:58.728Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-09-30T13:49:14.607Z",
+    "checkedAt": "2026-10-01T06:03:58.728Z",
     "errors": [],
     "sources": [
       {
@@ -175,7 +168,7 @@
   "gameDetails": {
     "Suri: The Seventh Note erscheint am 30. Oktober für PS5": {},
     "Luma Island erscheint für PS5": {},
-    "Control Resonant: Kunst und Technik hinter den Bossen": {},
+    "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -191,7 +184,7 @@
         "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
         "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202411/1909/8aafcc75d67ed0a3c4bb8410cd57ff437ae3a726da42177f.png"
+        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2709/7d14a7f5d28a0542096480e530ea7c611e45dcfd6271b64b.png"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=wPH9TFf6yfE",
       "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
@@ -209,11 +202,11 @@
       "platform": "PS5",
       "gallery": [
         "https://image.api.playstation.com/vulcan/ap/rnd/202609/2820/a295f655fa6a9b322949fabb319e98ef5141e3cac3da5335.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/791b0f1880e27c1d8f52187daea36abfe5fd3b0ff1144007.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
         "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp"
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
@@ -228,7 +221,7 @@
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "publisher": "RUBBERBANDGAMES LTD",
       "release": "18.9.2025",
-      "platform": "PS4 · PS5",
+      "platform": "PS5 · PS4",
       "gallery": [
         "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/l2VMZjLR9en9orx3nHGCaj8U.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/3650ac7e207de17c9aa1e057339b9e5b405c97a427af26de.jpg",
@@ -313,7 +306,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-09-30T13:48:53.570Z",
+    "checkedAt": "2026-10-01T06:03:32.079Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -370,8 +363,8 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-09-30T13:48:37.292Z",
-    "month": "September",
+    "checkedAt": "2026-10-01T06:03:16.537Z",
+    "month": "Oktober",
     "year": 2026,
     "notes": [],
     "resolved": {
@@ -384,7 +377,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-09-30T13:48:37.400Z",
+    "checkedAt": "2026-10-01T06:03:16.636Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -397,15 +390,15 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-09-30T13:48:57.728Z",
+    "checkedAt": "2026-10-01T06:03:47.150Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-09-30T13:48:34.840Z",
-    "date": "30.09.2026",
+    "checkedAt": "2026-10-01T06:03:14.844Z",
+    "date": "01.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -421,18 +414,18 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg"
       },
       {
-        "title": "Control Resonant: Kunst und Technik hinter den Bossen",
+        "title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
         "date": "30.09.2026",
-        "url": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/2edfa47d8cd14bc80eb8c8d0ffc9a603346d9707.png"
+        "url": "https://blog.de.playstation.com/2026/09/30/monatliche-playstation-plus-spiele-fuer-oktober-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/f6dddca4ebd2b0a6991f3fc030ad597db83036cc-scaled.png"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-09-30T13:48:58.325Z",
-    "berlinDate": "2026-09-30",
-    "newPostsToday": 1,
+    "checkedAt": "2026-10-01T06:03:47.796Z",
+    "berlinDate": "2026-10-01",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }

@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-09-30T13:48:25.196Z",
+  "checkedAt": "2026-10-01T06:03:05.427Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
+        "link": "https://blog.de.playstation.com/2026/09/30/monatliche-playstation-plus-spiele-fuer-oktober-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
+        "pubDate": "Wed, 30 Sep 2026 16:09:56 +0000"
+      },
       {
         "title": "Control Resonant: Kunst und Technik hinter den Bossen",
         "link": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
@@ -47,25 +52,20 @@
         "title": "EA Sports NHL 27: Jedes Team bekommt seine eigene Identität zurück",
         "link": "https://blog.de.playstation.com/2026/09/21/ea-sports-nhl-27-jedes-team-bekommt-seine-eigene-identitaet-zurueck/",
         "pubDate": "Mon, 21 Sep 2026 13:23:02 +0000"
-      },
-      {
-        "title": "Bus Simulator 27: Erstmals mit Reisebussen quer durch Felicia Bay",
-        "link": "https://blog.de.playstation.com/2026/09/21/bus-simulator-27-erstmals-mit-reisebussen-quer-durch-felicia-bay/",
-        "pubDate": "Mon, 21 Sep 2026 13:07:38 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Control Resonant: Kunst und Technik hinter den Bossen",
-        "link": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
-        "pubDate": "Wed, 30 Sep 2026 09:32:18 +0000",
-        "category": "news"
+        "title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
+        "link": "https://blog.de.playstation.com/2026/09/30/monatliche-playstation-plus-spiele-fuer-oktober-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
+        "pubDate": "Wed, 30 Sep 2026 16:09:56 +0000",
+        "category": "psplus"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 208523,
+    "bytes": 207389,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175114,
+    "bytes": 173980,
     "updated": true,
     "parsed": {
       "games": [
@@ -139,18 +139,14 @@
         {
           "title": "Luma Island erscheint für PS5",
           "hasImage": true
-        },
-        {
-          "title": "Fading Echo taucht heute auf PS5 ab",
-          "hasImage": true
         }
       ],
       "range": null,
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-09-30T13:48:58.325Z",
-      "parsed": 6,
+      "checkedAt": "2026-10-01T06:03:47.796Z",
+      "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
         "MLB The Show 26",
@@ -158,8 +154,7 @@
         "Chained Echoes"
       ],
       "rejected": [
-        "Luma Island erscheint für PS5",
-        "Fading Echo taucht heute auf PS5 ab"
+        "Luma Island erscheint für PS5"
       ]
     }
   },
@@ -170,7 +165,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241776,
+    "bytes": 241898,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -183,7 +178,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163245,
+    "bytes": 163237,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
