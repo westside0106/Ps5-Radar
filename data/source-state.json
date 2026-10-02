@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-10-02T06:00:00.761Z",
+  "checkedAt": "2026-10-02T13:54:23.481Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
+        "link": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
+        "pubDate": "Fri, 02 Oct 2026 13:01:00 +0000"
+      },
       {
         "title": "Elta: Defy All Gods vereint Kampfkunst und Platforming",
         "link": "https://blog.de.playstation.com/2026/10/01/elta-defy-all-gods-vereint-kampfkunst-und-platforming/",
@@ -47,31 +52,14 @@
         "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
         "link": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
         "pubDate": "Fri, 25 Sep 2026 14:00:00 +0000"
-      },
-      {
-        "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
-        "link": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
-        "pubDate": "Fri, 25 Sep 2026 09:34:43 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Elta: Defy All Gods vereint Kampfkunst und Platforming",
-        "link": "https://blog.de.playstation.com/2026/10/01/elta-defy-all-gods-vereint-kampfkunst-und-platforming/",
-        "pubDate": "Thu, 01 Oct 2026 16:37:52 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
-        "link": "https://blog.de.playstation.com/2026/10/01/rueckkehr-nach-fabletown-the-wolf-among-us-remastered-erscheint-am-29-10/",
-        "pubDate": "Thu, 01 Oct 2026 16:30:03 +0000",
+        "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
+        "link": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
+        "pubDate": "Fri, 02 Oct 2026 13:01:00 +0000",
         "category": "release"
-      },
-      {
-        "title": "QSSR bringt KI-Upscaling auf die PS5",
-        "link": "https://blog.de.playstation.com/2026/10/01/qssr-bringt-ki-upscaling-auf-die-ps5/",
-        "pubDate": "Thu, 01 Oct 2026 16:20:42 +0000",
-        "category": "news"
       }
     ]
   },
@@ -157,7 +145,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-02T06:00:32.363Z",
+      "checkedAt": "2026-10-02T13:54:58.170Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -171,12 +159,13 @@
     }
   },
   "psPlusWhatsNew": {
-    "ok": false
+    "ok": true,
+    "bytes": 587286
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241776,
+    "bytes": 241773,
     "updated": true,
     "parsed": {
       "trial": false,

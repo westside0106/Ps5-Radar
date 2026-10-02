@@ -1,7 +1,7 @@
 {
   "date": "02.10.2026",
   "edition": "AUSGABE #029",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 RELEASE HEUTE",
   "newCount": "02.10 · LIVE",
   "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
   "leadDate": "29.09.2026",
@@ -13,11 +13,11 @@
   "secondary1Meta": "Das Wichtigste in Kürze Quick Spectral Super Resolution (QSSR) ist ein neues KI-Upscaling-Verfahren für die PS5, entwickelt im Rahmen von Project…",
   "secondary1Price": null,
   "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4810eb11f563b23a231d544aeb199371a582f811.jpg",
-  "secondary2Title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
-  "secondary2Date": "01.10.2026",
-  "secondary2Meta": "Erfahrt im Interview mit Telltale, wie „The Wolf Among Us Remastered“ für Fans und Neueinsteiger neu entstand.",
+  "secondary2Title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
+  "secondary2Date": "02.10.2026",
+  "secondary2Meta": "Erfahrt im Interview mit Erika Ishii, wie Atsu zurückkehrt und was die Ghost of Yōtei Complete Edition bringt.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/e107ed6426eb3461d4f78eed0e215d98580c1f3f.png",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/38e7cacebd1d6fa592555d068e0bfd62994ede57-scaled.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -80,18 +80,14 @@
     "The Play List"
   ],
   "ubisoftTitle": "Ubisoft+ Classics",
-  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat.",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
   "ubisoftItems": [
-    "Ubisoft+ Classics"
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
   ],
-  "radarCheck": "Stand 02.10.2026 · 8/9 Quellen · 1 Warnung(en)",
+  "radarCheck": "Stand 02.10.2026 · 9/9 Quellen erfolgreich geprüft",
   "sourceAlerts": [
-    {
-      "title": "Elta: Defy All Gods vereint Kampfkunst und Platforming",
-      "url": "https://blog.de.playstation.com/2026/10/01/elta-defy-all-gods-vereint-kampfkunst-und-platforming/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
     {
       "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
       "url": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
@@ -103,24 +99,31 @@
       "type": "editorial"
     },
     {
-      "title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
-      "url": "https://blog.de.playstation.com/2026/10/01/rueckkehr-nach-fabletown-the-wolf-among-us-remastered-erscheint-am-29-10/",
+      "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
+      "url": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
       "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
+      "url": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
+      "category": "release",
+      "score": 100
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-02T06:00:32.220Z",
-    "okSources": 8,
+    "checkedAt": "2026-10-02T13:54:58.057Z",
+    "okSources": 9,
     "totalSources": 9,
-    "failedSources": 1,
+    "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-10-01T14:32:39.574Z",
+    "lastSuccessfulCheck": "2026-10-02T13:54:23.481Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-02T06:00:00.761Z",
+    "checkedAt": "2026-10-02T13:54:23.481Z",
     "errors": [],
     "sources": [
       {
@@ -137,7 +140,7 @@
       },
       {
         "name": "PS Plus aktuell",
-        "ok": false
+        "ok": true
       },
       {
         "name": "EA Play",
@@ -164,7 +167,7 @@
   "gameDetails": {
     "Suri: The Seventh Note erscheint am 30. Oktober für PS5": {},
     "QSSR bringt KI-Upscaling auf die PS5": {},
-    "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.": {},
+    "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -302,16 +305,11 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-02T06:00:29.822Z",
+    "checkedAt": "2026-10-02T13:54:48.995Z",
     "titles": 10,
-    "fetched": 3,
+    "fetched": 7,
     "enriched": 7,
-    "warnings": [
-      "Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
-      "MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
-      "Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
-      "EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
-    ]
+    "warnings": []
   },
   "resolvedSources": {
     "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
@@ -356,13 +354,15 @@
     "title": "Ubisoft+ Classics",
     "price": "7,99 €",
     "items": [
-      "Ubisoft+ Classics"
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
     ],
     "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-02T06:00:15.500Z",
+    "checkedAt": "2026-10-02T13:54:34.030Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -376,7 +376,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-02T06:00:15.595Z",
+    "checkedAt": "2026-10-02T13:54:34.107Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -389,14 +389,14 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-02T06:00:31.827Z",
+    "checkedAt": "2026-10-02T13:54:57.383Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-02T06:00:13.409Z",
+    "checkedAt": "2026-10-02T13:54:32.664Z",
     "date": "02.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -413,18 +413,18 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4810eb11f563b23a231d544aeb199371a582f811.jpg"
       },
       {
-        "title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
-        "date": "01.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/01/rueckkehr-nach-fabletown-the-wolf-among-us-remastered-erscheint-am-29-10/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/e107ed6426eb3461d4f78eed0e215d98580c1f3f.png"
+        "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
+        "date": "02.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/38e7cacebd1d6fa592555d068e0bfd62994ede57-scaled.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-01T14:32:29.951Z",
-    "berlinDate": "2026-10-01",
-    "newPostsToday": 1,
+    "checkedAt": "2026-10-02T06:00:32.363Z",
+    "berlinDate": "2026-10-02",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }
