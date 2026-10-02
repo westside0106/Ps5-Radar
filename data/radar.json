@@ -1,23 +1,23 @@
 {
-  "date": "01.10.2026",
-  "edition": "AUSGABE #028",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "01.10 · LIVE",
+  "date": "02.10.2026",
+  "edition": "AUSGABE #029",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "02.10 · LIVE",
   "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
   "leadDate": "29.09.2026",
   "leadMeta": "Erfahrt, warum und wie Musik in „Suri: The Seventh Note“ zum zentralen Gameplay-Element wird.",
   "leadPrice": null,
   "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/d9560c567912446444ca989d79a7bbc8e849598d.jpg",
-  "secondary1Title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
+  "secondary1Title": "QSSR bringt KI-Upscaling auf die PS5",
   "secondary1Date": "01.10.2026",
-  "secondary1Meta": "Seit unserem Ankündigungstrailer im Februar arbeiten wir fleißig daran, Kena: Scars of Kosmora zu vollenden.",
+  "secondary1Meta": "Das Wichtigste in Kürze Quick Spectral Super Resolution (QSSR) ist ein neues KI-Upscaling-Verfahren für die PS5, entwickelt im Rahmen von Project…",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/42156884fea9dd56a4b1405eaa1a1deb3d67e2bc-scaled.jpg",
-  "secondary2Title": "Luma Island erscheint für PS5",
-  "secondary2Date": "24.09.2026",
-  "secondary2Meta": "Erlebt Luma Island auf PS5: Erkundet, baut, bewirtschaftet euren Hof und erlebt Abenteuer, allein oder zu viert.",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4810eb11f563b23a231d544aeb199371a582f811.jpg",
+  "secondary2Title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
+  "secondary2Date": "01.10.2026",
+  "secondary2Meta": "Erfahrt im Interview mit Telltale, wie „The Wolf Among Us Remastered“ für Fans und Neueinsteiger neu entstand.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/e107ed6426eb3461d4f78eed0e215d98580c1f3f.png",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -80,45 +80,42 @@
     "The Play List"
   ],
   "ubisoftTitle": "Ubisoft+ Classics",
-  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat.",
   "ubisoftItems": [
-    "Ubisoft+ Classics",
-    "PS Plus Extra",
-    "PS Plus Premium"
+    "Ubisoft+ Classics"
   ],
-  "radarCheck": "Stand 01.10.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
+  "radarCheck": "Stand 02.10.2026 · 8/9 Quellen · 5 Warnung(en)",
   "sourceAlerts": [
+    {
+      "title": "Elta: Defy All Gods vereint Kampfkunst und Platforming",
+      "url": "https://blog.de.playstation.com/2026/10/01/elta-defy-all-gods-vereint-kampfkunst-und-platforming/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
     {
       "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
       "url": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
       "type": "editorial"
     },
     {
-      "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
-      "url": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
+      "title": "QSSR bringt KI-Upscaling auf die PS5",
+      "url": "https://blog.de.playstation.com/2026/10/01/qssr-bringt-ki-upscaling-auf-die-ps5/",
       "type": "editorial"
     },
     {
-      "title": "Luma Island erscheint für PS5",
-      "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
+      "title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
+      "url": "https://blog.de.playstation.com/2026/10/01/rueckkehr-nach-fabletown-the-wolf-among-us-remastered-erscheint-am-29-10/",
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
-      "url": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
-      "category": "release",
-      "score": 100
-    }
-  ],
+  "editorial": [],
   "health": {
-    "status": "ok",
-    "checkedAt": "2026-10-01T14:32:39.574Z",
-    "okSources": 9,
+    "status": "warning",
+    "checkedAt": "2026-10-02T06:00:46.901Z",
+    "okSources": 8,
     "totalSources": 9,
-    "failedSources": 0,
-    "warnings": 0,
+    "failedSources": 1,
+    "warnings": 5,
     "storeDiscoveryMode": "dynamic-browser",
     "storeProductsVerified": 2,
     "storeDealsSelected": 2,
@@ -131,8 +128,14 @@
     "lastSuccessfulCheck": "2026-10-01T14:32:39.574Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-01T14:32:39.574Z",
-    "errors": [],
+    "checkedAt": "2026-10-02T06:00:46.901Z",
+    "errors": [
+      "PS Plus aktuell: Quellenabruf fehlgeschlagen",
+      "Detail-Enrichment: Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
+      "Detail-Enrichment: MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
+      "Detail-Enrichment: Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
+      "Detail-Enrichment: EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
+    ],
     "sources": [
       {
         "name": "PlayStation Blog",
@@ -148,7 +151,7 @@
       },
       {
         "name": "PS Plus aktuell",
-        "ok": true
+        "ok": false
       },
       {
         "name": "EA Play",
@@ -174,8 +177,8 @@
   },
   "gameDetails": {
     "Suri: The Seventh Note erscheint am 30. Oktober für PS5": {},
-    "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte": {},
-    "Luma Island erscheint für PS5": {},
+    "QSSR bringt KI-Upscaling auf die PS5": {},
+    "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -313,11 +316,16 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-01T14:32:10.533Z",
+    "checkedAt": "2026-10-02T06:00:29.822Z",
     "titles": 10,
-    "fetched": 7,
+    "fetched": 3,
     "enriched": 7,
-    "warnings": []
+    "warnings": [
+      "Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
+      "MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
+      "Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
+      "EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
+    ]
   },
   "resolvedSources": {
     "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
@@ -362,15 +370,13 @@
     "title": "Ubisoft+ Classics",
     "price": "7,99 €",
     "items": [
-      "Ubisoft+ Classics",
-      "PS Plus Extra",
-      "PS Plus Premium"
+      "Ubisoft+ Classics"
     ],
     "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-01T14:31:56.394Z",
+    "checkedAt": "2026-10-02T06:00:15.500Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -384,7 +390,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-01T14:31:56.483Z",
+    "checkedAt": "2026-10-02T06:00:15.595Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -397,15 +403,15 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-01T14:32:29.448Z",
+    "checkedAt": "2026-10-02T06:00:31.827Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-01T14:31:54.440Z",
-    "date": "01.10.2026",
+    "checkedAt": "2026-10-02T06:00:13.409Z",
+    "date": "02.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -415,24 +421,24 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/d9560c567912446444ca989d79a7bbc8e849598d.jpg"
       },
       {
-        "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
+        "title": "QSSR bringt KI-Upscaling auf die PS5",
         "date": "01.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/42156884fea9dd56a4b1405eaa1a1deb3d67e2bc-scaled.jpg"
+        "url": "https://blog.de.playstation.com/2026/10/01/qssr-bringt-ki-upscaling-auf-die-ps5/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4810eb11f563b23a231d544aeb199371a582f811.jpg"
       },
       {
-        "title": "Luma Island erscheint für PS5",
-        "date": "24.09.2026",
-        "url": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/09/362080fda567ab838fec25d58715404b64d4c7fb.jpg"
+        "title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
+        "date": "01.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/01/rueckkehr-nach-fabletown-the-wolf-among-us-remastered-erscheint-am-29-10/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/e107ed6426eb3461d4f78eed0e215d98580c1f3f.png"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-01T14:32:29.951Z",
-    "berlinDate": "2026-10-01",
-    "newPostsToday": 1,
+    "checkedAt": "2026-10-02T06:00:32.363Z",
+    "berlinDate": "2026-10-02",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }

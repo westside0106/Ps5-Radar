@@ -1,8 +1,23 @@
 {
-  "checkedAt": "2026-10-01T14:31:46.206Z",
+  "checkedAt": "2026-10-02T06:00:00.761Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Elta: Defy All Gods vereint Kampfkunst und Platforming",
+        "link": "https://blog.de.playstation.com/2026/10/01/elta-defy-all-gods-vereint-kampfkunst-und-platforming/",
+        "pubDate": "Thu, 01 Oct 2026 16:37:52 +0000"
+      },
+      {
+        "title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
+        "link": "https://blog.de.playstation.com/2026/10/01/rueckkehr-nach-fabletown-the-wolf-among-us-remastered-erscheint-am-29-10/",
+        "pubDate": "Thu, 01 Oct 2026 16:30:03 +0000"
+      },
+      {
+        "title": "QSSR bringt KI-Upscaling auf die PS5",
+        "link": "https://blog.de.playstation.com/2026/10/01/qssr-bringt-ki-upscaling-auf-die-ps5/",
+        "pubDate": "Thu, 01 Oct 2026 16:20:42 +0000"
+      },
       {
         "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
         "link": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
@@ -37,35 +52,32 @@
         "title": "Die Aktion &#8222;Herbstabenteuer&#8220; ist im PlayStation Store gelandet",
         "link": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
         "pubDate": "Fri, 25 Sep 2026 09:34:43 +0000"
-      },
-      {
-        "title": "Luma Island erscheint für PS5",
-        "link": "https://blog.de.playstation.com/2026/09/24/luma-island-erscheint-fuer-ps5/",
-        "pubDate": "Thu, 24 Sep 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Silent Hill: Die Geschichte einer Horror-Legende auf PlayStation, pünktlich zum Launch von Townfall",
-        "link": "https://blog.de.playstation.com/2026/09/24/silent-hill-die-geschichte-einer-horror-legende-auf-playstation-puenktlich-zum-launch-von-townfall/",
-        "pubDate": "Thu, 24 Sep 2026 10:51:39 +0000"
-      },
-      {
-        "title": "Fading Echo taucht heute auf PS5 ab",
-        "link": "https://blog.de.playstation.com/2026/09/22/fading-echo-taucht-heute-auf-ps5-ab/",
-        "pubDate": "Tue, 22 Sep 2026 15:00:00 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
-        "link": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
-        "pubDate": "Thu, 01 Oct 2026 12:59:44 +0000",
+        "title": "Elta: Defy All Gods vereint Kampfkunst und Platforming",
+        "link": "https://blog.de.playstation.com/2026/10/01/elta-defy-all-gods-vereint-kampfkunst-und-platforming/",
+        "pubDate": "Thu, 01 Oct 2026 16:37:52 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
+        "link": "https://blog.de.playstation.com/2026/10/01/rueckkehr-nach-fabletown-the-wolf-among-us-remastered-erscheint-am-29-10/",
+        "pubDate": "Thu, 01 Oct 2026 16:30:03 +0000",
         "category": "release"
+      },
+      {
+        "title": "QSSR bringt KI-Upscaling auf die PS5",
+        "link": "https://blog.de.playstation.com/2026/10/01/qssr-bringt-ki-upscaling-auf-die-ps5/",
+        "pubDate": "Thu, 01 Oct 2026 16:20:42 +0000",
+        "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 207390,
+    "bytes": 206605,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +128,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 173981,
+    "bytes": 173196,
     "updated": true,
     "parsed": {
       "games": [
@@ -137,7 +149,7 @@
           "hasImage": true
         },
         {
-          "title": "Luma Island erscheint für PS5",
+          "title": "QSSR bringt KI-Upscaling auf die PS5",
           "hasImage": true
         }
       ],
@@ -145,7 +157,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-01T14:32:29.951Z",
+      "checkedAt": "2026-10-02T06:00:32.363Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -154,18 +166,17 @@
         "Chained Echoes"
       ],
       "rejected": [
-        "Luma Island erscheint für PS5"
+        "QSSR bringt KI-Upscaling auf die PS5"
       ]
     }
   },
   "psPlusWhatsNew": {
-    "ok": true,
-    "bytes": 587286
+    "ok": false
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241899,
+    "bytes": 241776,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -178,7 +189,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163237,
+    "bytes": 163243,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T14:32:10.493Z",
+  "updatedAt": "2026-10-02T06:00:29.757Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -947,6 +947,12 @@
           "price": 29.99,
           "oldPrice": 49.99,
           "discount": 40
+        },
+        {
+          "date": "2026-10-02",
+          "price": 29.99,
+          "oldPrice": 49.99,
+          "discount": 40
         }
       ],
       "title": "Starfield Premium Edition",
@@ -969,15 +975,15 @@
         "activeDeal": true,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
-        "confidence": "mittel",
-        "measurements": 6,
+        "confidence": "hoch",
+        "measurements": 7,
         "currentPrice": 29.99,
         "lastObservedPrice": 29.99,
-        "lastObservedDate": "2026-10-01",
+        "lastObservedDate": "2026-10-02",
         "radarLow": 29.99,
         "deltaFromLowPct": 0,
         "discount": 40,
-        "daysRemaining": 7,
+        "daysRemaining": 6,
         "code": "watch",
         "label": "BEOBACHTEN",
         "reason": "Nur 0,0 % über dem eigenen Radar-Tief bei -40 %.",
@@ -1025,6 +1031,12 @@
           "price": 53.99,
           "oldPrice": 59.99,
           "discount": 10
+        },
+        {
+          "date": "2026-10-02",
+          "price": 53.99,
+          "oldPrice": 59.99,
+          "discount": 10
         }
       ],
       "title": "F1® 25: 2026 Saison Edition",
@@ -1057,15 +1069,15 @@
         "activeDeal": true,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
-        "confidence": "mittel",
-        "measurements": 6,
+        "confidence": "hoch",
+        "measurements": 7,
         "currentPrice": 53.99,
         "lastObservedPrice": 53.99,
-        "lastObservedDate": "2026-10-01",
+        "lastObservedDate": "2026-10-02",
         "radarLow": 53.99,
         "deltaFromLowPct": 0,
         "discount": 10,
-        "daysRemaining": 7,
+        "daysRemaining": 6,
         "code": "wait",
         "label": "WARTEN",
         "reason": "Der aktuelle Rabatt reicht gegenüber dem bisherigen Radar-Verlauf noch nicht für ein Kaufsignal.",
@@ -1078,8 +1090,8 @@
   },
   "summary": {
     "titles": 12,
-    "points": 70,
-    "archiveIssuesScanned": 28,
+    "points": 72,
+    "archiveIssuesScanned": 29,
     "signals": {
       "buy": 0,
       "watch": 1,
