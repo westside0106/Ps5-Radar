@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-02T13:52:51.385Z",
+  "checkedAt": "2026-10-03T12:32:51.156Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1130,
+    "count": 1125,
     "views": {
       "deals": {
-        "expected": 517,
-        "observed": 517,
-        "count": 517,
+        "expected": 512,
+        "observed": 512,
+        "count": 512,
         "complete": true
       },
       "gamepass-console": {
@@ -51,7 +51,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-02T13:52:51.385Z",
+      "observedAt": "2026-10-03T12:32:51.156Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -62,7 +62,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-02T13:52:51.385Z",
+      "observedAt": "2026-10-03T12:32:51.156Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass für Konsole, Ziel xbox-series"
@@ -73,7 +73,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-02T13:52:51.385Z",
+      "observedAt": "2026-10-03T12:32:51.156Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -84,7 +84,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-02T13:52:51.385Z",
+      "observedAt": "2026-10-03T12:32:51.156Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = EA Play, Ziel xbox-series"
@@ -95,7 +95,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-02T13:52:51.385Z",
+      "observedAt": "2026-10-03T12:32:51.156Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -10910,7 +10910,7 @@
       "id": "9nrlsfm01xtp",
       "title": "MLB® The Show™ 26 Standard Edition",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/mlb-the-show-26-standard-edition/9nrlsfm01xtp",
-      "cover": "https://store-images.s-microsoft.com/image/apps.27741.14385377751056556.1fe3bcd1-7004-4cd7-8cad-04f074b8fd4d.6838e001-df75-4ee4-b4a9-a46e8b876c9b?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.60342.14385377751056556.08a1d23d-a7c7-4c43-8cd8-24266096de2b.c48d881e-40c7-40b4-80cb-a5c4c3b47e59?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
@@ -11222,22 +11222,6 @@
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9mt63lsfzpdl",
-      "id": "9mt63lsfzpdl",
-      "title": "Moving Simulator",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/moving-simulator/9mt63lsfzpdl",
-      "cover": "https://store-images.s-microsoft.com/image/apps.30754.13814532656914385.135f8e7e-ea3b-4883-bcdf-c9d90ec5b01f.094a9a03-277e-4112-a7de-375e64fd887a?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 719,
-      "regularPriceMinor": 799,
-      "genres": [
-        "Simulation"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9n69hcjpgpg1",
@@ -11963,40 +11947,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9n1z3tckgcxp",
-      "id": "9n1z3tckgcxp",
-      "title": "One Button Games 5-in-1 vol. 9",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/one-button-games-5-in-1-vol-9/9n1z3tckgcxp",
-      "cover": "https://store-images.s-microsoft.com/image/apps.35223.13966834595300718.051543f8-7c7b-4b98-9d67-4efcef88645f.55e750aa-537d-4139-8772-1ca98e5650f7?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Action & Abenteuer",
-        "Familie & Kinder"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9pk03w1rklk4",
-      "id": "9pk03w1rklk4",
-      "title": "One Button Games 5-in-1 vol. 9 (Xbox One)",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/one-button-games-5-in-1-vol-9-xbox-one/9pk03w1rklk4",
-      "cover": "https://store-images.s-microsoft.com/image/apps.35223.14272690682549685.1de7f133-948e-41c9-8cb3-6d1c88d72703.1de159d4-0691-46f1-8dd0-6c3d85199cea?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Action & Abenteuer",
-        "Familie & Kinder"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9p937rkzlh9f",
@@ -13547,42 +13497,6 @@
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9n3hc41x4lmf",
-      "id": "9n3hc41x4lmf",
-      "title": "Retro Cube Slider",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/retro-cube-slider/9n3hc41x4lmf",
-      "cover": "https://store-images.s-microsoft.com/image/apps.3755.14002841032038353.9fb3b140-a9c2-4d96-9b60-763ca5ed8fb8.e0cdbbce-5c07-4571-8a36-aa95af37d012?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Action & Abenteuer",
-        "Familie & Kinder",
-        "Rätsel & Wissen"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n3k1cbj2s83",
-      "id": "9n3k1cbj2s83",
-      "title": "Retro Cube Slider (Xbox Series)",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/retro-cube-slider-xbox-series/9n3k1cbj2s83",
-      "cover": "https://store-images.s-microsoft.com/image/apps.3755.14002841032038353.9fb3b140-a9c2-4d96-9b60-763ca5ed8fb8.e0cdbbce-5c07-4571-8a36-aa95af37d012?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Action & Abenteuer",
-        "Familie & Kinder",
-        "Rätsel & Wissen"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9nncj4nz8m56",
@@ -18445,23 +18359,6 @@
       ]
     },
     {
-      "key": "xbox:product:bsxsl6wbj0v7",
-      "id": "bsxsl6wbj0v7",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bsxsl6wbj0v7",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29891.69993262899909428.0190d6b7-60eb-4d3f-bd16-b44c0e303861.a44fc632-9741-443e-863c-cd2fce2e955b?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:console",
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bw9tffj50mkv",
       "id": "bw9tffj50mkv",
       "title": "Viva Piñata",
@@ -18471,6 +18368,23 @@
         "xbox-series"
       ],
       "priceMinor": null,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:console",
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bsxsl6wbj0v7",
+      "id": "bsxsl6wbj0v7",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bsxsl6wbj0v7",
+      "cover": "https://store-images.s-microsoft.com/image/apps.29891.69993262899909428.0190d6b7-60eb-4d3f-bd16-b44c0e303861.a44fc632-9741-443e-863c-cd2fce2e955b?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1499,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
