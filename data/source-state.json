@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-02T13:54:23.481Z",
+  "checkedAt": "2026-10-03T05:58:36.031Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,18 +54,11 @@
         "pubDate": "Fri, 25 Sep 2026 14:00:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
-        "link": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
-        "pubDate": "Fri, 02 Oct 2026 13:01:00 +0000",
-        "category": "release"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 206605,
+    "bytes": 206790,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 173196,
+    "bytes": 173430,
     "updated": true,
     "parsed": {
       "games": [
@@ -145,7 +138,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-02T13:54:58.170Z",
+      "checkedAt": "2026-10-03T05:59:03.987Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -165,7 +158,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241773,
+    "bytes": 241898,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -178,7 +171,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163243,
+    "bytes": 163223,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

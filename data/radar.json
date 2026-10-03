@@ -1,8 +1,8 @@
 {
-  "date": "02.10.2026",
-  "edition": "AUSGABE #029",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "02.10 · LIVE",
+  "date": "03.10.2026",
+  "edition": "AUSGABE #030",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "03.10 · LIVE",
   "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
   "leadDate": "29.09.2026",
   "leadMeta": "Erfahrt, warum und wie Musik in „Suri: The Seventh Note“ zum zentralen Gameplay-Element wird.",
@@ -86,7 +86,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 02.10.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
+  "radarCheck": "Stand 03.10.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
   "sourceAlerts": [
     {
       "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
@@ -104,17 +104,10 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
-      "url": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
-      "category": "release",
-      "score": 100
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-02T13:55:07.047Z",
+    "checkedAt": "2026-10-03T05:59:15.959Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -128,10 +121,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-02T13:55:07.047Z"
+    "lastSuccessfulCheck": "2026-10-03T05:59:15.959Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-02T13:55:07.047Z",
+    "checkedAt": "2026-10-03T05:59:15.959Z",
     "errors": [],
     "sources": [
       {
@@ -313,7 +306,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-02T13:54:48.995Z",
+    "checkedAt": "2026-10-03T05:58:58.668Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -370,7 +363,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-02T13:54:34.030Z",
+    "checkedAt": "2026-10-03T05:58:44.434Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -384,7 +377,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-02T13:54:34.107Z",
+    "checkedAt": "2026-10-03T05:58:44.544Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -397,15 +390,15 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-02T13:54:57.383Z",
+    "checkedAt": "2026-10-03T05:59:03.350Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-02T13:54:32.664Z",
-    "date": "02.10.2026",
+    "checkedAt": "2026-10-03T05:58:43.967Z",
+    "date": "03.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -430,9 +423,9 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-02T13:54:58.170Z",
-    "berlinDate": "2026-10-02",
-    "newPostsToday": 1,
+    "checkedAt": "2026-10-03T05:59:03.987Z",
+    "berlinDate": "2026-10-03",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }
