@@ -107,7 +107,7 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-04T05:57:17.483Z",
+    "checkedAt": "2026-10-04T13:15:06.006Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -121,10 +121,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-04T05:57:17.483Z"
+    "lastSuccessfulCheck": "2026-10-04T13:15:06.006Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-04T05:57:17.483Z",
+    "checkedAt": "2026-10-04T13:15:06.006Z",
     "errors": [],
     "sources": [
       {
@@ -202,11 +202,11 @@
       "platform": "PS5",
       "gallery": [
         "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202609/2820/a295f655fa6a9b322949fabb319e98ef5141e3cac3da5335.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
         "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp"
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
@@ -306,7 +306,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-04T05:56:57.100Z",
+    "checkedAt": "2026-10-04T13:14:45.783Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -363,7 +363,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-04T05:56:42.008Z",
+    "checkedAt": "2026-10-04T13:14:30.432Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -377,7 +377,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-04T05:56:42.094Z",
+    "checkedAt": "2026-10-04T13:14:30.536Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -390,14 +390,14 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-04T05:57:05.753Z",
+    "checkedAt": "2026-10-04T13:14:50.098Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-04T05:56:40.802Z",
+    "checkedAt": "2026-10-04T13:14:29.670Z",
     "date": "04.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -423,7 +423,7 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-04T05:57:06.356Z",
+    "checkedAt": "2026-10-04T13:14:50.884Z",
     "berlinDate": "2026-10-04",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
