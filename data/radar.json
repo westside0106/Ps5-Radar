@@ -1,8 +1,8 @@
 {
-  "date": "03.10.2026",
-  "edition": "AUSGABE #030",
+  "date": "04.10.2026",
+  "edition": "AUSGABE #031",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "03.10 · LIVE",
+  "newCount": "04.10 · LIVE",
   "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
   "leadDate": "29.09.2026",
   "leadMeta": "Erfahrt, warum und wie Musik in „Suri: The Seventh Note“ zum zentralen Gameplay-Element wird.",
@@ -86,7 +86,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 03.10.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
+  "radarCheck": "Stand 04.10.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
   "sourceAlerts": [
     {
       "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
@@ -107,7 +107,7 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-03T12:36:59.270Z",
+    "checkedAt": "2026-10-04T05:57:17.483Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -121,10 +121,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-03T12:36:59.270Z"
+    "lastSuccessfulCheck": "2026-10-04T05:57:17.483Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-03T12:36:59.270Z",
+    "checkedAt": "2026-10-04T05:57:17.483Z",
     "errors": [],
     "sources": [
       {
@@ -201,12 +201,12 @@
       "release": "17.3.2026",
       "platform": "PS5",
       "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202609/2820/a295f655fa6a9b322949fabb319e98ef5141e3cac3da5335.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
         "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
@@ -306,7 +306,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-03T12:36:43.220Z",
+    "checkedAt": "2026-10-04T05:56:57.100Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -363,7 +363,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-03T12:36:21.817Z",
+    "checkedAt": "2026-10-04T05:56:42.008Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -377,7 +377,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-03T12:36:21.928Z",
+    "checkedAt": "2026-10-04T05:56:42.094Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -390,15 +390,15 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-03T12:36:46.836Z",
+    "checkedAt": "2026-10-04T05:57:05.753Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-03T12:36:20.752Z",
-    "date": "03.10.2026",
+    "checkedAt": "2026-10-04T05:56:40.802Z",
+    "date": "04.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -423,8 +423,8 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-03T12:36:47.501Z",
-    "berlinDate": "2026-10-03",
+    "checkedAt": "2026-10-04T05:57:06.356Z",
+    "berlinDate": "2026-10-04",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []

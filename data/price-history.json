@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T12:36:43.147Z",
+  "updatedAt": "2026-10-04T05:56:57.049Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -959,6 +959,12 @@
           "price": 29.99,
           "oldPrice": 49.99,
           "discount": 40
+        },
+        {
+          "date": "2026-10-04",
+          "price": 29.99,
+          "oldPrice": 49.99,
+          "discount": 40
         }
       ],
       "title": "Starfield Premium Edition",
@@ -982,14 +988,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
-        "measurements": 8,
+        "measurements": 9,
         "currentPrice": 29.99,
         "lastObservedPrice": 29.99,
-        "lastObservedDate": "2026-10-03",
+        "lastObservedDate": "2026-10-04",
         "radarLow": 29.99,
         "deltaFromLowPct": 0,
         "discount": 40,
-        "daysRemaining": 5,
+        "daysRemaining": 4,
         "code": "watch",
         "label": "BEOBACHTEN",
         "reason": "Nur 0,0 % über dem eigenen Radar-Tief bei -40 %.",
@@ -1049,6 +1055,12 @@
           "price": 53.99,
           "oldPrice": 59.99,
           "discount": 10
+        },
+        {
+          "date": "2026-10-04",
+          "price": 53.99,
+          "oldPrice": 59.99,
+          "discount": 10
         }
       ],
       "title": "F1® 25: 2026 Saison Edition",
@@ -1082,14 +1094,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
-        "measurements": 8,
+        "measurements": 9,
         "currentPrice": 53.99,
         "lastObservedPrice": 53.99,
-        "lastObservedDate": "2026-10-03",
+        "lastObservedDate": "2026-10-04",
         "radarLow": 53.99,
         "deltaFromLowPct": 0,
         "discount": 10,
-        "daysRemaining": 5,
+        "daysRemaining": 4,
         "code": "wait",
         "label": "WARTEN",
         "reason": "Der aktuelle Rabatt reicht gegenüber dem bisherigen Radar-Verlauf noch nicht für ein Kaufsignal.",
@@ -1102,8 +1114,8 @@
   },
   "summary": {
     "titles": 12,
-    "points": 74,
-    "archiveIssuesScanned": 30,
+    "points": 76,
+    "archiveIssuesScanned": 31,
     "signals": {
       "buy": 0,
       "watch": 1,
