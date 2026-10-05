@@ -1,8 +1,8 @@
 {
-  "date": "04.10.2026",
-  "edition": "AUSGABE #031",
+  "date": "05.10.2026",
+  "edition": "AUSGABE #032",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "04.10 · LIVE",
+  "newCount": "05.10 · LIVE",
   "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
   "leadDate": "29.09.2026",
   "leadMeta": "Erfahrt, warum und wie Musik in „Suri: The Seventh Note“ zum zentralen Gameplay-Element wird.",
@@ -86,7 +86,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 04.10.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
+  "radarCheck": "Stand 05.10.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
   "sourceAlerts": [
     {
       "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
@@ -107,7 +107,7 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-04T13:15:06.006Z",
+    "checkedAt": "2026-10-05T05:59:04.181Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -121,10 +121,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-04T13:15:06.006Z"
+    "lastSuccessfulCheck": "2026-10-05T05:59:04.181Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-04T13:15:06.006Z",
+    "checkedAt": "2026-10-05T05:59:04.181Z",
     "errors": [],
     "sources": [
       {
@@ -306,7 +306,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-04T13:14:45.783Z",
+    "checkedAt": "2026-10-05T05:58:42.737Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -363,7 +363,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-04T13:14:30.432Z",
+    "checkedAt": "2026-10-05T05:58:27.458Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -377,7 +377,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-04T13:14:30.536Z",
+    "checkedAt": "2026-10-05T05:58:27.562Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -390,15 +390,15 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-04T13:14:50.098Z",
+    "checkedAt": "2026-10-05T05:58:48.966Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-04T13:14:29.670Z",
-    "date": "04.10.2026",
+    "checkedAt": "2026-10-05T05:58:22.895Z",
+    "date": "05.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -423,8 +423,8 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-04T13:14:50.884Z",
-    "berlinDate": "2026-10-04",
+    "checkedAt": "2026-10-05T05:58:49.562Z",
+    "berlinDate": "2026-10-05",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []
