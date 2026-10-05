@@ -1,8 +1,18 @@
 {
-  "checkedAt": "2026-10-05T05:57:58.843Z",
+  "checkedAt": "2026-10-05T16:05:25.651Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Players&#8216; Choice: Bestes neues Spiel im September 2026",
+        "link": "https://blog.de.playstation.com/2026/10/05/players-choice-bestes-neues-spiel-im-september-2026/",
+        "pubDate": "Mon, 05 Oct 2026 14:00:00 +0000"
+      },
+      {
+        "title": "Star Wars: Galactic Racer: Podrennen ohne Macht, nur mit Mut und Nachbrenner",
+        "link": "https://blog.de.playstation.com/2026/10/05/star-wars-galactic-racer-podrennen-ohne-macht-nur-mit-mut-und-nachbrenner/",
+        "pubDate": "Mon, 05 Oct 2026 12:15:48 +0000"
+      },
       {
         "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
         "link": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
@@ -42,23 +52,26 @@
         "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
         "link": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
         "pubDate": "Tue, 29 Sep 2026 16:09:54 +0000"
-      },
-      {
-        "title": "Vorbestellung von God of War Laufey ab 29. September möglich – Details zu den Editionen",
-        "link": "https://blog.de.playstation.com/2026/09/28/vorbestellung-von-god-of-war-laufey-ab-29-september-moeglich-details-zu-den-editionen/",
-        "pubDate": "Mon, 28 Sep 2026 11:10:00 +0000"
-      },
-      {
-        "title": "Ace Combat 8: Wings of Theve – Adrenalinkick im Düsenjet",
-        "link": "https://blog.de.playstation.com/2026/09/25/ace-combat-8-wings-of-theve-adrenalinkick-im-duesenjet/",
-        "pubDate": "Fri, 25 Sep 2026 14:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Players&#8216; Choice: Bestes neues Spiel im September 2026",
+        "link": "https://blog.de.playstation.com/2026/10/05/players-choice-bestes-neues-spiel-im-september-2026/",
+        "pubDate": "Mon, 05 Oct 2026 14:00:00 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Star Wars: Galactic Racer: Podrennen ohne Macht, nur mit Mut und Nachbrenner",
+        "link": "https://blog.de.playstation.com/2026/10/05/star-wars-galactic-racer-podrennen-ohne-macht-nur-mit-mut-und-nachbrenner/",
+        "pubDate": "Mon, 05 Oct 2026 12:15:48 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 207308,
+    "bytes": 207450,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +122,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 173980,
+    "bytes": 174041,
     "updated": true,
     "parsed": {
       "games": [
@@ -138,7 +151,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-05T05:58:49.562Z",
+      "checkedAt": "2026-10-05T16:06:00.842Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -153,12 +166,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 587286
+    "bytes": 609654
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241899,
+    "bytes": 241776,
     "updated": true,
     "parsed": {
       "trial": false,

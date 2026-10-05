@@ -1,7 +1,7 @@
 {
   "date": "05.10.2026",
   "edition": "AUSGABE #032",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "2 NEUE PLAYSTATION-MELDUNGEN",
   "newCount": "05.10 · LIVE",
   "leadTitle": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
   "leadDate": "29.09.2026",
@@ -13,11 +13,11 @@
   "secondary1Meta": "Das Wichtigste in Kürze Quick Spectral Super Resolution (QSSR) ist ein neues KI-Upscaling-Verfahren für die PS5, entwickelt im Rahmen von Project…",
   "secondary1Price": null,
   "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4810eb11f563b23a231d544aeb199371a582f811.jpg",
-  "secondary2Title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
-  "secondary2Date": "02.10.2026",
-  "secondary2Meta": "Erfahrt im Interview mit Erika Ishii, wie Atsu zurückkehrt und was die Ghost of Yōtei Complete Edition bringt.",
+  "secondary2Title": "Players’ Choice: Bestes neues Spiel im September 2026",
+  "secondary2Date": "05.10.2026",
+  "secondary2Meta": "Stimmt jetzt ab: Was war das beste neue Spiel im September? Gebt eurem Favoriten unter den Nominierten eure Stimme!",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/38e7cacebd1d6fa592555d068e0bfd62994ede57-scaled.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/87892c35d6752dbf10c81f792c9a8c6dc3a3e954.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -69,7 +69,9 @@
     }
   ],
   "releases": [],
-  "quickItems": [],
+  "quickItems": [
+    "Star Wars: Galactic Racer: Podrennen ohne Macht, nur mit Mut und Nachbrenner"
+  ],
   "leavingTitle": "Aktuelle Store-Aktion endet bald",
   "leavingText": "Aktuelle Store-Aktion endet am 08.10., 00:59 Uhr.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
@@ -89,6 +91,18 @@
   "radarCheck": "Stand 05.10.2026 · 9/9 Quellen · Store 2 geprüft · 7/10 Details",
   "sourceAlerts": [
     {
+      "title": "Players’ Choice: Bestes neues Spiel im September 2026",
+      "url": "https://blog.de.playstation.com/2026/10/05/players-choice-bestes-neues-spiel-im-september-2026/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Star Wars: Galactic Racer: Podrennen ohne Macht, nur mit Mut und Nachbrenner",
+      "url": "https://blog.de.playstation.com/2026/10/05/star-wars-galactic-racer-podrennen-ohne-macht-nur-mit-mut-und-nachbrenner/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
       "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
       "url": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
       "type": "editorial"
@@ -99,15 +113,28 @@
       "type": "editorial"
     },
     {
-      "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
-      "url": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
+      "title": "Players’ Choice: Bestes neues Spiel im September 2026",
+      "url": "https://blog.de.playstation.com/2026/10/05/players-choice-bestes-neues-spiel-im-september-2026/",
       "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Players&#8216; Choice: Bestes neues Spiel im September 2026",
+      "url": "https://blog.de.playstation.com/2026/10/05/players-choice-bestes-neues-spiel-im-september-2026/",
+      "category": "news",
+      "score": 50
+    },
+    {
+      "title": "Star Wars: Galactic Racer: Podrennen ohne Macht, nur mit Mut und Nachbrenner",
+      "url": "https://blog.de.playstation.com/2026/10/05/star-wars-galactic-racer-podrennen-ohne-macht-nur-mit-mut-und-nachbrenner/",
+      "category": "news",
+      "score": 50
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-05T05:59:04.181Z",
+    "checkedAt": "2026-10-05T16:06:10.807Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -121,10 +148,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-05T05:59:04.181Z"
+    "lastSuccessfulCheck": "2026-10-05T16:06:10.807Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-05T05:59:04.181Z",
+    "checkedAt": "2026-10-05T16:06:10.807Z",
     "errors": [],
     "sources": [
       {
@@ -168,7 +195,7 @@
   "gameDetails": {
     "Suri: The Seventh Note erscheint am 30. Oktober für PS5": {},
     "QSSR bringt KI-Upscaling auf die PS5": {},
-    "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii": {},
+    "Players’ Choice: Bestes neues Spiel im September 2026": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -306,7 +333,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-05T05:58:42.737Z",
+    "checkedAt": "2026-10-05T16:05:49.661Z",
     "titles": 10,
     "fetched": 7,
     "enriched": 7,
@@ -363,7 +390,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-05T05:58:27.458Z",
+    "checkedAt": "2026-10-05T16:05:36.421Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -377,7 +404,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-05T05:58:27.562Z",
+    "checkedAt": "2026-10-05T16:05:36.515Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -390,14 +417,14 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-05T05:58:48.966Z",
+    "checkedAt": "2026-10-05T16:06:00.293Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-05T05:58:22.895Z",
+    "checkedAt": "2026-10-05T16:05:35.332Z",
     "date": "05.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -414,18 +441,18 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4810eb11f563b23a231d544aeb199371a582f811.jpg"
       },
       {
-        "title": "Ghost of Yōtei Complete Edition ist jetzt erhältlich: Interview mit Erika Ishii",
-        "date": "02.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/02/ghost-of-yotei-complete-edition-ist-jetzt-erhaeltlich-interview-mit-erika-ishii/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/38e7cacebd1d6fa592555d068e0bfd62994ede57-scaled.jpg"
+        "title": "Players’ Choice: Bestes neues Spiel im September 2026",
+        "date": "05.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/05/players-choice-bestes-neues-spiel-im-september-2026/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/87892c35d6752dbf10c81f792c9a8c6dc3a3e954.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-05T05:58:49.562Z",
+    "checkedAt": "2026-10-05T16:06:00.842Z",
     "berlinDate": "2026-10-05",
-    "newPostsToday": 0,
+    "newPostsToday": 2,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }
