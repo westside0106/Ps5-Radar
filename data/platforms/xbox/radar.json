@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-04T13:13:01.695Z",
+  "checkedAt": "2026-10-05T16:01:05.424Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1125,
+    "count": 1127,
     "views": {
       "deals": {
-        "expected": 512,
-        "observed": 512,
-        "count": 512,
+        "expected": 515,
+        "observed": 515,
+        "count": 515,
         "complete": true
       },
       "gamepass-console": {
@@ -35,13 +35,13 @@
       },
       "ubisoft-plus": {
         "expected": 117,
-        "observed": 111,
-        "count": 111,
+        "observed": 112,
+        "count": 112,
         "complete": false
       }
     },
     "errors": [
-      "ubisoft-plus: 111/117 Karten gesehen"
+      "ubisoft-plus: 112/117 Karten gesehen"
     ]
   },
   "evidence": [
@@ -51,7 +51,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-04T13:13:01.695Z",
+      "observedAt": "2026-10-05T16:01:05.424Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -62,7 +62,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-04T13:13:01.695Z",
+      "observedAt": "2026-10-05T16:01:05.424Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass für Konsole, Ziel xbox-series"
@@ -73,7 +73,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-04T13:13:01.695Z",
+      "observedAt": "2026-10-05T16:01:05.424Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -84,7 +84,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-04T13:13:01.695Z",
+      "observedAt": "2026-10-05T16:01:05.424Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = EA Play, Ziel xbox-series"
@@ -95,7 +95,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-04T13:13:01.695Z",
+      "observedAt": "2026-10-05T16:01:05.424Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -492,6 +492,26 @@
       "services": []
     },
     {
+      "key": "xbox:product:9pgcqgj2mls5",
+      "id": "9pgcqgj2mls5",
+      "title": "Amelia's Diner",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/amelias-diner/9pgcqgj2mls5",
+      "cover": "https://store-images.s-microsoft.com/image/apps.7922.14187709140339394.ae410c0e-8d89-4dae-b8db-613bf78cf5e4.1797006f-b979-4d6d-ba3b-47689ee51feb?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 419,
+      "regularPriceMinor": 839,
+      "genres": [
+        "Andere",
+        "Familie & Kinder",
+        "Klassiker",
+        "Rätsel & Wissen",
+        "Simulation"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9ng07qjnk38j",
       "id": "9ng07qjnk38j",
       "title": "Among Us",
@@ -648,7 +668,9 @@
       "genres": [
         "Strategiespiele"
       ],
-      "services": []
+      "services": [
+        "ubisoft-plus:ubisoft-plus"
+      ]
     },
     {
       "key": "xbox:product:9pcbffq1bcs5",
@@ -2353,6 +2375,24 @@
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9pc8j335qsmn",
+      "id": "9pc8j335qsmn",
+      "title": "Become the wild",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/become-the-wild/9pc8j335qsmn",
+      "cover": "https://store-images.s-microsoft.com/image/apps.33595.14178222354090697.249a5b64-404a-4e45-a8a3-08047898de90.f0fb71ae-cf9c-4a81-a62b-e472ed9a5534?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 419,
+      "regularPriceMinor": 839,
+      "genres": [
+        "Action & Abenteuer",
+        "Rollenspiele",
+        "Simulation"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:9nqjq0q58ckd",
@@ -6682,7 +6722,9 @@
         "Action & Abenteuer",
         "Shooter"
       ],
-      "services": []
+      "services": [
+        "ubisoft-plus:ubisoft-plus"
+      ]
     },
     {
       "key": "xbox:product:9nzgtx06v7md",
@@ -7558,6 +7600,24 @@
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9mzz80wcxbvf",
+      "id": "9mzz80wcxbvf",
+      "title": "Game Type DX",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/game-type-dx/9mzz80wcxbvf",
+      "cover": "https://store-images.s-microsoft.com/image/apps.19327.13865441386669270.eab74eeb-14b0-4915-b56c-0e89dfef1b50.779ad890-12d7-4b9a-9b2c-f3b3f4c46620?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 299,
+      "regularPriceMinor": 599,
+      "genres": [
+        "Action & Abenteuer",
+        "Klassiker",
+        "Shooter"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:bpqzt43fwd49",
@@ -9126,9 +9186,12 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 2099,
-      "regularPriceMinor": null,
-      "genres": [],
+      "priceMinor": 1679,
+      "regularPriceMinor": 2099,
+      "genres": [
+        "Familie & Kinder",
+        "Simulation"
+      ],
       "services": [
         "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
@@ -11889,6 +11952,24 @@
       "services": []
     },
     {
+      "key": "xbox:product:9mzw5gf01gwt",
+      "id": "9mzw5gf01gwt",
+      "title": "Object Factory",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/object-factory/9mzw5gf01gwt",
+      "cover": "https://store-images.s-microsoft.com/image/apps.56811.13866809327925556.93a0c9ff-e14f-4e20-a3a1-f35a2a6577d4.5b36159f-912c-46ff-94f4-d4cbc70bc17b?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 369,
+      "regularPriceMinor": 1049,
+      "genres": [
+        "Rätsel & Wissen",
+        "Simulation",
+        "Strategiespiele"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:c5k89tflsv19",
       "id": "c5k89tflsv19",
       "title": "Oblivion",
@@ -14461,42 +14542,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nrh1s4npwph",
-      "id": "9nrh1s4npwph",
-      "title": "Sneak Cheese (Xbox One)",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/sneak-cheese-xbox-one/9nrh1s4npwph",
-      "cover": "https://store-images.s-microsoft.com/image/apps.13178.14383066585740014.cbff2e5e-9c18-42d8-9bee-c68423ad83ef.758046cd-1e26-48e2-909d-07e7a861c930?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Familie & Kinder",
-        "Rätsel & Wissen",
-        "Strategiespiele"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n4br2vljq95",
-      "id": "9n4br2vljq95",
-      "title": "Sneak Cheese (Xbox Series)",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/sneak-cheese-xbox-series/9n4br2vljq95",
-      "cover": "https://store-images.s-microsoft.com/image/apps.13178.14383066585740014.cbff2e5e-9c18-42d8-9bee-c68423ad83ef.758046cd-1e26-48e2-909d-07e7a861c930?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Familie & Kinder",
-        "Rätsel & Wissen",
-        "Strategiespiele"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9pnrsc0j6dt8",
@@ -17684,7 +17729,6 @@
         "Andere"
       ],
       "services": [
-        "ubisoft-plus:ubisoft-plus",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18355,23 +18399,6 @@
       ]
     },
     {
-      "key": "xbox:product:bw9tffj50mkv",
-      "id": "bw9tffj50mkv",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": null,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:console",
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bsxsl6wbj0v7",
       "id": "bsxsl6wbj0v7",
       "title": "Viva Piñata",
@@ -18381,6 +18408,23 @@
         "xbox-series"
       ],
       "priceMinor": 1499,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:console",
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bw9tffj50mkv",
+      "id": "bw9tffj50mkv",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
+      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": null,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
@@ -19119,7 +19163,7 @@
       "id": "c1zt6n30l1wh",
       "title": "World of Warships: Legends",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/world-of-warships-legends/c1zt6n30l1wh",
-      "cover": "https://store-images.s-microsoft.com/image/apps.44774.65694988112101034.63b3705a-17e4-4e7b-b45a-a3aa58f7a4fc.631a7470-3bac-4ada-b00c-b9fcd9d1045b?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.47095.65694988112101034.15f749ea-0c2c-4a1d-a997-35665ae27acf.8d0ace70-1146-41a4-a25d-77cddbf98d09?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
