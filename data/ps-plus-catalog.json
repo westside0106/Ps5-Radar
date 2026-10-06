@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-05T10:52:26.210Z",
+  "checkedAt": "2026-10-06T10:47:57.961Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 5,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-05T10:52:26.210Z"
+      "checkedAt": "2026-10-06T10:47:57.961Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 443,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-05T10:52:26.210Z"
+      "checkedAt": "2026-10-06T10:47:57.961Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 169,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-05T10:52:26.210Z"
+      "checkedAt": "2026-10-06T10:47:57.961Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-05T10:52:26.210Z"
+      "checkedAt": "2026-10-06T10:47:57.961Z"
     }
   },
   "games": [
@@ -683,7 +683,7 @@
       "id": "concept:231064",
       "title": "Bad North",
       "storeUrl": "https://store.playstation.com/de-de/concept/231064",
-      "image": "https://image.api.playstation.com/cdn/EP2187/CUSA10606_00/r5YR5U3IHseGtOVh0RiRZDhGnjJtpXII.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -701,7 +701,7 @@
       "id": "concept:10006478",
       "title": "Bang-On Balls: Chronicles",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006478",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1811/5229d8907463bde18583fdccfcaaa98cd7e6be2cff107f67.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -735,7 +735,7 @@
       "id": "concept:224815",
       "title": "Battle Chasers: Nightwar",
       "storeUrl": "https://store.playstation.com/de-de/concept/224815",
-      "image": "https://image.api.playstation.com/cdn/EP4389/CUSA06673_00/Et4NTUYq7ydNfLrtm0jLgkPYPirmuvh4.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -927,7 +927,7 @@
       "id": "concept:214367",
       "title": "Bound™",
       "storeUrl": "https://store.playstation.com/de-de/concept/214367",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA04380_00/Bbr7sKYkC8mOJQEgdr3WMNdL01CDCSzQ.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -961,7 +961,7 @@
       "id": "concept:221878",
       "title": "Brawlout",
       "storeUrl": "https://store.playstation.com/de-de/concept/221878",
-      "image": "https://image.api.playstation.com/cdn/EP2196/CUSA05544_00/ppqIRtQgst8CmI2HtGxPh2jN9fgeiqkh.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -979,7 +979,7 @@
       "id": "concept:10008760",
       "title": "Broken Sword - Shadow of the Templars: Reforged",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008760",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0508/5d46ca76bc4a51d0d6333d3fcef5409ed138ec24cdc80a61.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -996,7 +996,7 @@
       "id": "concept:233251",
       "title": "Bus Simulator 21 Next Stop",
       "storeUrl": "https://store.playstation.com/de-de/concept/233251",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202303/1512/cd896945e056f0a3d988da93c56a266d19ece0042d7653cf.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1013,7 +1013,7 @@
       "id": "concept:216117",
       "title": "Call of Cthulhu®",
       "storeUrl": "https://store.playstation.com/de-de/concept/216117",
-      "image": "https://image.api.playstation.com/cdn/EP4133/CUSA04850_00/kE2xMcnZetJ1mzaigF2cP0CF4UJY28bF.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1030,7 +1030,7 @@
       "id": "concept:10000938",
       "title": "Call of The Sea",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000938",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1014/349a0153e57b5c614e3a72ef3caa9e82de422d194dc92d1f.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1048,7 +1048,7 @@
       "id": "concept:233219",
       "title": "Captain Tsubasa: Rise of New Champions",
       "storeUrl": "https://store.playstation.com/de-de/concept/233219",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202006/1608/mtQUp8wXI1nRvbieJ9zARGjp.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1064,7 +1064,7 @@
       "id": "concept:233200",
       "title": "Car Mechanic Simulator",
       "storeUrl": "https://store.playstation.com/de-de/concept/233200",
-      "image": "https://image.api.playstation.com/cdn/EP1549/CUSA14568_00/iLV4aTDyQfnLTbJPP0JlTHkqlRhWmslb.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1082,7 +1082,7 @@
       "id": "concept:222958",
       "title": "Cartoon Network: Battle Crashers",
       "storeUrl": "https://store.playstation.com/de-de/concept/222958",
-      "image": "https://image.api.playstation.com/cdn/EP0281/CUSA04751_00/MDtH1TsMJd2qNJdUOyL0z4NGZ03IwYi3.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1098,7 +1098,7 @@
       "id": "concept:229453",
       "title": "Cat Quest",
       "storeUrl": "https://store.playstation.com/de-de/concept/229453",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202509/1810/bcdd4e716fa460003bbe272cf59d769b420bd4719cacac11.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1116,7 +1116,7 @@
       "id": "concept:234578",
       "title": "Cat Quest II",
       "storeUrl": "https://store.playstation.com/de-de/concept/234578",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/113077sLo-bsYasAYbKIP5uB_DDcxTqwG562CaInRMaTqX2cXtIDLhoMs0O0OQARXBinfBy4qbqjUke1knsGL15mRygjne32.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1134,7 +1134,7 @@
       "id": "concept:10007859",
       "title": "Cat Quest III",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007859",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/3013/02b1e714b0f267f2ef62fc7f0ef934de009483f4e9335713.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1153,7 +1153,7 @@
       "id": "concept:231477",
       "title": "Celeste",
       "storeUrl": "https://store.playstation.com/de-de/concept/231477",
-      "image": "https://image.api.playstation.com/cdn/EP2120/CUSA11235_00/c439UdvQsGkHpQ04PGyPh7rwGfXwLtne.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1185,7 +1185,7 @@
       "id": "concept:10002921",
       "title": "Chernobylite Complete Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002921",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2119/150d779c1b72ec85eeb0bc7ab32a58044f9b44d36e603260.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -1201,7 +1201,7 @@
       "id": "concept:225783",
       "title": "Chess Ultra",
       "storeUrl": "https://store.playstation.com/de-de/concept/225783",
-      "image": "https://image.api.playstation.com/cdn/EP4337/CUSA06579_00/13nka1TeUdVLgWr110W6K53vCu0zhj0n.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1236,7 +1236,7 @@
       "id": "concept:231069",
       "title": "Children of Morta",
       "storeUrl": "https://store.playstation.com/de-de/concept/231069",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/113077yhP2jst_06RqAwL9pLHcZrfAy42eFUx_o5X33fXy_EmK92mn4NiIVpYdgDgoecaTUSYfswiupZCJcjydU5egYr61f6.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1253,7 +1253,7 @@
       "id": "concept:234762",
       "title": "Chivalry 2 PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/234762",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202209/2715/SWj7rvM10WcLZdsMWjH0PW30.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1271,7 +1271,7 @@
       "id": "concept:224821",
       "title": "Cities: Skylines - PlayStation®4 Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/224821",
-      "image": "https://image.api.playstation.com/cdn/EP4139/CUSA06407_00/AUGjjbhpZHp2OWTNQPMUXCvs8RToNKPO.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1405,7 +1405,7 @@
       "id": "concept:10000438",
       "title": "Construction Simulator",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000438",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2908/kH5fyiAE8Q0DBBeeM35mpcOu.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1422,7 +1422,7 @@
       "id": "concept:234544",
       "title": "CONTRA: ROGUE CORPS",
       "storeUrl": "https://store.playstation.com/de-de/concept/234544",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307U-DktwgMVLvMQvsqdp5vOWF1bZmhYyk2pluwqmnrLYcaSChvF3oDWc5AfBFqNEqYmIs9plt2rYigv_dn0xZetERK570.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1540,7 +1540,7 @@
       "id": "concept:231085",
       "title": "Dandara: Trials of Fear Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/231085",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202002/2816/KZptff7zH5A6VEJBBZ8M7FZC.png",
       "platforms": [
         "PS4"
       ],
@@ -1593,7 +1593,7 @@
       "id": "concept:227319",
       "title": "Dead by Daylight PS4® & PS5®",
       "storeUrl": "https://store.playstation.com/de-de/concept/227319",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2514/26c99fcc3c281ffcac505a75fa110c2023eea0e26f90a56d.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1611,7 +1611,7 @@
       "id": "concept:231053",
       "title": "Dead Cells (PS4® & PS5®)",
       "storeUrl": "https://store.playstation.com/de-de/concept/231053",
-      "image": "https://image.api.playstation.com/cdn/UP4016/CUSA11253_00/ZB7o35lDBOMRJ5ErVtx9OUJP88jSmC2R.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1628,7 +1628,7 @@
       "id": "concept:220997",
       "title": "DEAD OR ALIVE 5 Last Round",
       "storeUrl": "https://store.playstation.com/de-de/concept/220997",
-      "image": "https://image.api.playstation.com/cdn/EP4108/CUSA01778_00/Aoxmu8Or25uzV5YIGn4fWoXMppf8CHBg.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1644,7 +1644,7 @@
       "id": "concept:10003340",
       "title": "DEADCRAFT",
       "storeUrl": "https://store.playstation.com/de-de/concept/10003340",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/1107/T3Ij4KmLvArKMv0YYVD0Eu5W.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1662,7 +1662,7 @@
       "id": "concept:228997",
       "title": "Death end reQuest™",
       "storeUrl": "https://store.playstation.com/de-de/concept/228997",
-      "image": "https://image.api.playstation.com/cdn/EP4060/CUSA13080_00/nfeins0TLBBn4LEyAL0udm1JLhRcxJzY.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1678,7 +1678,7 @@
       "id": "concept:225086",
       "title": "Death Squared",
       "storeUrl": "https://store.playstation.com/de-de/concept/225086",
-      "image": "https://image.api.playstation.com/cdn/EP8946/CUSA06739_00/hlJa7HykLWHGqjS5vUWeCKzyALBibeka.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1696,7 +1696,7 @@
       "id": "concept:234585",
       "title": "DEATH STRANDING DIRECTOR’S CUT",
       "storeUrl": "https://store.playstation.com/de-de/concept/234585",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202106/2214/Trdth4yKbz45CVH7VGCT1INp.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1713,7 +1713,7 @@
       "id": "concept:234692",
       "title": "Deliver Us The Moon PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/234692",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202203/2216/nbNXIr7w4moRpBuFCEw1tEci.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1730,7 +1730,7 @@
       "id": "concept:10000368",
       "title": "Demon's Souls",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000368",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/1717/GemRaOZaCMhGxQ9dRhnQQyT5.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -1746,7 +1746,7 @@
       "id": "concept:231727",
       "title": "Desperados III",
       "storeUrl": "https://store.playstation.com/de-de/concept/231727",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307q0k3sbv98YWpRop-6Tcl5sHJSy9tqcFFjAAiCok8lOs90RYikGrme9PajUjVKR7lSX6WJhTzg_O7eOBHtkjO1w_BjC4.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1763,7 +1763,7 @@
       "id": "concept:221852",
       "title": "Destiny 2: Legacy Collection (2025)",
       "storeUrl": "https://store.playstation.com/de-de/concept/221852",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202506/2417/df4a3d06921b2b0546c2f195eaf5a6280d39f3408fc9b38a.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1781,7 +1781,7 @@
       "id": "concept:222727",
       "title": "Detroit: Become Human",
       "storeUrl": "https://store.playstation.com/de-de/concept/222727",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2119/wl4DB5QGzlEHAXy1KLUVgOAu.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1798,7 +1798,7 @@
       "id": "concept:200943",
       "title": "Deus Ex: Mankind Divided",
       "storeUrl": "https://store.playstation.com/de-de/concept/200943",
-      "image": "https://image.api.playstation.com/cdn/EP0082/CUSA01836_00/6JDF9vIBtjnoSwVbjcXaBmj1GrNRdqGl.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1816,7 +1816,7 @@
       "id": "concept:200972",
       "title": "DISGAEA 5: ALLIANCE OF VENGEANCE",
       "storeUrl": "https://store.playstation.com/de-de/concept/200972",
-      "image": "https://image.api.playstation.com/cdn/EP1063/CUSA02664_00/RtLGnAnvIisKEk9r1FDheH25YGyPtszR.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1982,7 +1982,7 @@
       "id": "concept:229001",
       "title": "DYNASTY WARRIORS 9",
       "storeUrl": "https://store.playstation.com/de-de/concept/229001",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307z9F24933jpiehmfwRAQD1Vw8F_o6MILQ0POjG9h7MqUgneIoIMaVA6fKyl6Ph_hEibMoHkPMqauUJNAiOtlljcbSnic.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2033,7 +2033,7 @@
       "id": "concept:222995",
       "title": "EARTH DEFENSE FORCE 5",
       "storeUrl": "https://store.playstation.com/de-de/concept/222995",
-      "image": "https://image.api.playstation.com/cdn/EP3036/CUSA12504_00/5k7kg2CqsRGE8BXLNg1zibJkswLvxoLA.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2116,7 +2116,7 @@
       "id": "concept:10002570",
       "title": "Eldest Souls",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002570",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202110/2811/aMrRgmjXzSd7kdTQmTdUY0Fh.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -2151,7 +2151,7 @@
       "id": "concept:10001730",
       "title": "Embr",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001730",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202112/1614/X4ocGo4BqaDHKNOFWeZ4RGRK.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2167,7 +2167,7 @@
       "id": "concept:235085",
       "title": "Empire of Sin",
       "storeUrl": "https://store.playstation.com/de-de/concept/235085",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/0815/3ciljCuNuycrzHNNvXZuyZOs.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2181,7 +2181,7 @@
       "id": "concept:10002162",
       "title": "ENDLESS Dungeon™ - Definitive Edition PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002162",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202505/2902/a17d8890e676ec3b457ee3d26ad304431b9d48bd98dd6d7b.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -2199,7 +2199,7 @@
       "id": "concept:10008826",
       "title": "Enotria: The Last Song Standard Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008826",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0214/b6aab4f9a6cf0940f15ecc4cdbe0de678e7d69eff632006d.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -2408,7 +2408,7 @@
       "id": "concept:10002934",
       "title": "FAR: Changing Tides PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002934",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/2813/Os6biEZBZHzt6GU8qqo5eSMT.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -2460,7 +2460,7 @@
       "id": "concept:10009612",
       "title": "Farming Simulator 25",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009612",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202406/1221/5e7b5321408d56da66ffbb45abae3d2f812b0a1dd03cee5d.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -2474,7 +2474,7 @@
       "id": "concept:10004920",
       "title": "Fate/Samurai Remnant(PS4 & PS5)",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004920",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202307/0401/a4258d2110570cdc680dad16f3979ef92b5b87b71a9bc4ab.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -2492,7 +2492,7 @@
       "id": "concept:10012303",
       "title": "FBC: Firebreak",
       "storeUrl": "https://store.playstation.com/de-de/concept/10012303",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2021/f5501077a988db7398b676beae67f1bec17d5c89883eacd6.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -2508,7 +2508,7 @@
       "id": "concept:233081",
       "title": "FIA European Truck Racing Championship",
       "storeUrl": "https://store.playstation.com/de-de/concept/233081",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307-xP1BLVG30lOK7ELGzdtiJkhvnXhvxL_q5K0sS3EaNwMHOHn95lgusLX3YFdc9X95wiq77I32dwqItYlcbFbzUG5H26.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2526,7 +2526,7 @@
       "id": "concept:228744",
       "title": "FINAL FANTASY VII REMAKE INTERGRADE",
       "storeUrl": "https://store.playstation.com/de-de/concept/228744",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202102/1515/0GxrqnoNV8rIHsGCE1hjAKSF.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -2543,7 +2543,7 @@
       "id": "concept:10002100",
       "title": "FINAL FANTASY XVI",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002100",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/3007/lgFVhRm5BfoX02pRUt3lSmLV.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -2560,7 +2560,7 @@
       "id": "concept:10008409",
       "title": "Firefighting Simulator: Ignite",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008409",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1911/44718863baaf28732bac7f9914aa06a1d7251364d3393f0d.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -2663,7 +2663,7 @@
       "id": "concept:232512",
       "title": "For The King",
       "storeUrl": "https://store.playstation.com/de-de/concept/232512",
-      "image": "https://image.api.playstation.com/cdn/EP4395/CUSA12941_00/x7ANceXfy6aRaOsOdVtrUmzjRxzNke1D.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2681,7 +2681,7 @@
       "id": "concept:233993",
       "title": "Frostpunk: Console Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/233993",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307dRNIA91BmsNlAiza66g_qnqcnn5bL2DO8xTxiQLGTCkodnDdjk43lKvKFcfwVP58sneYw4cnkgSxjkX96GdoeACAEQa.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2875,7 +2875,7 @@
       "id": "concept:201930",
       "title": "Grand Theft Auto V (PS4™ & PS5™)",
       "storeUrl": "https://store.playstation.com/de-de/concept/201930",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1409/oltI7Zc96usbdvhVVXcV1EAi.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -2910,7 +2910,7 @@
       "id": "concept:10002038",
       "title": "Green Hell PS4 + PS5 Free Upgrade",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002038",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202106/0421/64a4leQbt6zne3MHrR4n64ec.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -3067,7 +3067,7 @@
       "id": "concept:10005940",
       "title": "Hotline Miami",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005940",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202309/1318/31633b753add90ce0d9c17ba4ebad3969104e44e83e303d6.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -3084,7 +3084,7 @@
       "id": "concept:10006547",
       "title": "Hotline Miami 2: Wrong Number",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006547",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202307/1322/1ce9388532d52e419851d9fd7d66d4884ffeb6b4de2f54af.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -3260,7 +3260,7 @@
       "id": "concept:202140",
       "title": "inFAMOUS™ First Light",
       "storeUrl": "https://store.playstation.com/de-de/concept/202140",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA00897_00/xHASya7wZyIZCv8xi2Ye4kbFMgqWfWAl.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -3310,7 +3310,7 @@
       "id": "concept:10002577",
       "title": "Jurassic World Evolution 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002577",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/2708/WZhQmSMCGEJgLHhnikOcuMnu.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -3346,7 +3346,7 @@
       "id": "concept:221915",
       "title": "Killing Floor 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/221915",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1113/yMqKCbhbYRuFvXyBUKdXlA8N.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -3482,7 +3482,7 @@
       "id": "concept:202496",
       "title": "LEGO® Batman™ 3: Beyond Gotham",
       "storeUrl": "https://store.playstation.com/de-de/concept/202496",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307dBfgKGm4u0XTWe_x-xhB1mqJfZvWhlVKlyOktbb-pOQUl5adtFmSMDdH536PcfLS3MmqytebmzhUiXy6myTZ-8hJ_Tj.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -3533,7 +3533,7 @@
       "id": "concept:10007722",
       "title": "LEGO® Horizon Adventures™",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007722",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202409/2013/96a84262e4562c459c213515a9dfd53d82547603b86a2c6a.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -3937,7 +3937,7 @@
       "id": "concept:10009198",
       "title": "Mighty Morphin Power Rangers: Rita's Rewind",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009198",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202410/2821/51d6eb5a4a96c0a546c0f7e475a6477a6c4a29196c95820b.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -4104,7 +4104,7 @@
       "id": "concept:10004427",
       "title": "MORDHAU",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004427",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202302/1509/823903c5a84f386f467fbec8022f302a3cd76835f020efae.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -4222,7 +4222,7 @@
       "id": "concept:10004267",
       "title": "No More Heroes 3",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004267",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2503/pFU5XtBqeij3EwpBYJEZbcKd.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -4239,7 +4239,7 @@
       "id": "concept:225235",
       "title": "NOBUNAGA'S AMBITION: Taishi",
       "storeUrl": "https://store.playstation.com/de-de/concept/225235",
-      "image": "https://image.api.playstation.com/cdn/EP4108/CUSA12006_00/5fOCpguPpUXDSJdF8N3ZyUHxpMAIERH2.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4289,7 +4289,7 @@
       "id": "concept:203202",
       "title": "Oddworld: New 'n' Tasty (PS4™)",
       "storeUrl": "https://store.playstation.com/de-de/concept/203202",
-      "image": "https://image.api.playstation.com/cdn/EP4134/CUSA00326_00/BqGVJE6RpTchLZI5ZXCQ4YOTOzC9LC44.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4550,7 +4550,7 @@
       "id": "concept:10002771",
       "title": "Persona 5 Royal",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002771",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202209/0202/OjPcc6QP2W8kImOhWSnzojn3.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -4566,7 +4566,7 @@
       "id": "concept:234529",
       "title": "Persona 5 Royal Ultimate Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/234529",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307YAAIxp7MZ2CspnYs9t7Eh7peTJys3KSrDMBplPuTdG0xmlQGSIXvf6-4Z6PhtxTIFymdkdSCH_hRDdI9T7dh-wh_zfu.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4697,7 +4697,7 @@
       "id": "concept:10000663",
       "title": "Police Simulator: Patrol Officers",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000663",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202207/0408/fe8jiL5pHOLyF8DbRrJXOlYE.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -4869,7 +4869,7 @@
       "id": "concept:221982",
       "title": "Rain World",
       "storeUrl": "https://store.playstation.com/de-de/concept/221982",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202212/3015/8uhUduWChINJs5O8hEyfUPPL.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -4888,7 +4888,7 @@
       "id": "concept:10000875",
       "title": "Raji: An Ancient Epic",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000875",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202404/0813/3e8fb0793c66003c8cec1a334d627ac8ae96397898ade99c.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -4921,7 +4921,7 @@
       "id": "concept:203902",
       "title": "Rayman Legends",
       "storeUrl": "https://store.playstation.com/de-de/concept/203902",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307Z9XN_O53h3z8dzhLDWFmhcpl4Y45Ms7q_umAan-evdE_Iu5PV0C78dTkiFqlmh3-7rGSlUwH4mdinYtN_rxsL8WHssS.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4939,7 +4939,7 @@
       "id": "concept:234774",
       "title": "ReadySet Heroes",
       "storeUrl": "https://store.playstation.com/de-de/concept/234774",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/113076BoByByWCwE8JGqAqNC6Njam4hYENv1-0sLJdWqqkXAq8epAN5D350cxP7lypf8eHdtlupS0Y3JphOv7KdaH6oPvuSJ.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5126,7 +5126,7 @@
       "id": "concept:10001348",
       "title": "Roguebook",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001348",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202111/1813/FHhoyE3vgSQ9MZqIlxK8XMT9.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -5142,7 +5142,7 @@
       "id": "concept:10008324",
       "title": "Rugby 25",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008324",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/3115/10450f1b257f4976467007b913ec59cff520593e3abd010c.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5209,7 +5209,7 @@
       "id": "concept:229323",
       "title": "Sakuna: Of Rice and Ruin",
       "storeUrl": "https://store.playstation.com/de-de/concept/229323",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/0421/LUMjBRzWYhwYltvFWpvCr4ct.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5226,7 +5226,7 @@
       "id": "concept:10003231",
       "title": "Salt and Sacrifice",
       "storeUrl": "https://store.playstation.com/de-de/concept/10003231",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/2805/3OfHHMHNfNcPznx1fuWQXquT.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5244,7 +5244,7 @@
       "id": "concept:10001263",
       "title": "SAMURAI WARRIORS 5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001263",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202104/2602/jIRiYO758aoaUYTX77Wsx2lb.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5260,7 +5260,7 @@
       "id": "concept:10001697",
       "title": "SEASON: A letter to the future PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001697",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0319/Ap7NdK7pk3Xw3tH4LJFuM6d9.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5313,7 +5313,7 @@
       "id": "concept:204156",
       "title": "Shadow of the Beast™",
       "storeUrl": "https://store.playstation.com/de-de/concept/204156",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA00951_00/HOeVki1iQ4BASztfTLgTt2htLlogwKdu.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5347,7 +5347,7 @@
       "id": "concept:231844",
       "title": "Shadow of the Tomb Raider",
       "storeUrl": "https://store.playstation.com/de-de/concept/231844",
-      "image": "https://image.api.playstation.com/cdn/EP0082/CUSA10872_00/b9BPfFTux1rbQYxxIeJdMNgaVFhDeFG9.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5363,7 +5363,7 @@
       "id": "concept:221784",
       "title": "Shadow Warrior 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/221784",
-      "image": "https://image.api.playstation.com/cdn/EP3643/CUSA05648_00/1VnvumP5Te6IqXzM5u654oifP2GMRvMB.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5430,7 +5430,7 @@
       "id": "concept:216395",
       "title": "Sniper Elite 4",
       "storeUrl": "https://store.playstation.com/de-de/concept/216395",
-      "image": "https://image.api.playstation.com/cdn/EP4529/CUSA04099_00/gICDNHi83meNszd0q0uNfEETnjWDe1HG.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5447,7 +5447,7 @@
       "id": "concept:234363",
       "title": "Sniper Elite 5 PS4™ & PS5™",
       "storeUrl": "https://store.playstation.com/de-de/concept/234363",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2116/59jHCjMBRhuRhPUKUUy2gkNd.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5483,7 +5483,7 @@
       "id": "concept:10009300",
       "title": "Snow Bros. Wonderland",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009300",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202410/2915/7c7c2fd3c13d4e2e10353d380a1d1a790f8ef1120bb87e20.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5518,7 +5518,7 @@
       "id": "concept:10008755",
       "title": "SONIC X SHADOW GENERATIONS PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008755",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2308/1efd5c197776d8dd5d5c79261559cd5947b0d52fc23e1174.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5553,7 +5553,7 @@
       "id": "concept:10002535",
       "title": "Space Engineers PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002535",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202103/0211/e2To5dPScYHqJkRqNAXti14N.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5707,7 +5707,7 @@
       "id": "concept:10006487",
       "title": "STORY OF SEASONS: A Wonderful life",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006487",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202302/1716/a4c1797b6656f12ba22f0178886a07d178e8658a8037bc3e.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -5739,7 +5739,7 @@
       "id": "concept:10003254",
       "title": "STORY OF SEASONS: Pioneers of Olive Town + Expansion Pass Set",
       "storeUrl": "https://store.playstation.com/de-de/concept/10003254",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202206/1517/ax6NiTeCDRhVzsD9OMznyL1o.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5755,7 +5755,7 @@
       "id": "concept:232519",
       "title": "Stranded Deep",
       "storeUrl": "https://store.playstation.com/de-de/concept/232519",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202109/2216/t9XzGHGabQ2Ym0zbx4m0nEUC.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5772,7 +5772,7 @@
       "id": "concept:233784",
       "title": "Surviving the Aftermath",
       "storeUrl": "https://store.playstation.com/de-de/concept/233784",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2208/aCA7fmamlIIMLwNpcd529SQZ.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5822,7 +5822,7 @@
       "id": "concept:10002568",
       "title": "Tails Noir",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002568",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1110/e7e436091311d50c470f180371c1e721a218f1a6fa3bd9de.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5857,7 +5857,7 @@
       "id": "concept:10001023",
       "title": "Tennis World Tour 2 - Complete Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001023",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202101/2915/4Wlp0RqnU4we3KFxwe9pAzjB.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5874,7 +5874,7 @@
       "id": "concept:205080",
       "title": "Terraria – PlayStation®4 Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/205080",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307BOjhzPxIfJx2wo4rmKBLdk2e3_NqstMRxEgRVGG5zxg3bshTUekcTCOL9-ldHIEV9JPIjpMV5Qfo6Msm9KhabMfdjyy.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5991,7 +5991,7 @@
       "id": "concept:204861",
       "title": "The Elder Scrolls Online (PS5)",
       "storeUrl": "https://store.playstation.com/de-de/concept/204861",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2521/0139eed8a6364389d3d50eacd6e6d0aaefc46e815b8d8107.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -6061,7 +6061,7 @@
       "id": "concept:10002458",
       "title": "The Forgotten City",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002458",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202106/3010/Sgq7l1vKwsYclxIkaEnYyF4n.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -6078,7 +6078,7 @@
       "id": "concept:231167",
       "title": "The Gardens Between",
       "storeUrl": "https://store.playstation.com/de-de/concept/231167",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1006/yfnLy15X9en69ddxdcgAaO5C.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -6096,7 +6096,7 @@
       "id": "concept:10002666",
       "title": "The Invincible",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002666",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202310/2713/ae43dd232ad127bd49fc04140ee0642f8345398ee0164766.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -6112,7 +6112,7 @@
       "id": "concept:204826",
       "title": "The Last Guardian™",
       "storeUrl": "https://store.playstation.com/de-de/concept/204826",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2318/3jnbbEumNaIlpdlyrq7pQUXe.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6163,7 +6163,7 @@
       "id": "concept:204880",
       "title": "The LEGO® Movie Videogame",
       "storeUrl": "https://store.playstation.com/de-de/concept/204880",
-      "image": "https://image.api.playstation.com/cdn/EP1018/CUSA00563_00/BuL9vIqmhxPKlVHmFwPzx3zZoNqtwUjB.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6197,7 +6197,7 @@
       "id": "concept:10008445",
       "title": "The Lord of the Rings: Return to Moria™",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008445",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0520/d7bb0cab42052c1946d6fdcf236f059ee850819f9008843c.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -6315,7 +6315,7 @@
       "id": "concept:217462",
       "title": "The Technomancer",
       "storeUrl": "https://store.playstation.com/de-de/concept/217462",
-      "image": "https://image.api.playstation.com/cdn/EP4133/CUSA03824_00/tV6IMjiClXa5ElQOINNwK1QKi4Hq5ECX.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6349,7 +6349,7 @@
       "id": "concept:226877",
       "title": "The Witch and the Hundred Knight: Revival Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/226877",
-      "image": "https://image.api.playstation.com/cdn/EP1063/CUSA02815_00/uDYMWMj4Og079f0czhe66ZOcWHUdJQ8X.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6365,7 +6365,7 @@
       "id": "concept:228868",
       "title": "theHunter: Call of the Wild™",
       "storeUrl": "https://store.playstation.com/de-de/concept/228868",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202506/1610/26d0ff16f42eb2c053429a5e1fc5c430803e824dfbc435ed.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6382,7 +6382,7 @@
       "id": "concept:204538",
       "title": "Thief",
       "storeUrl": "https://store.playstation.com/de-de/concept/204538",
-      "image": "https://image.api.playstation.com/cdn/EP0082/CUSA00250_00/bWzdiTAx35xxQpxiQqxU12ssUSsCV7CJ.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6398,7 +6398,7 @@
       "id": "concept:10003699",
       "title": "This War of Mine: Final Cut",
       "storeUrl": "https://store.playstation.com/de-de/concept/10003699",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202203/2909/qf5JTJhYS3DYU1kybfmHkz6f.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -6430,7 +6430,7 @@
       "id": "concept:10002494",
       "title": "Tin Hearts",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002494",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202401/1010/e2ee324a5dbc72c45210b64452072da1df6e7d05146deca9.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -6745,7 +6745,7 @@
       "id": "concept:221794",
       "title": "TRON RUN/r",
       "storeUrl": "https://store.playstation.com/de-de/concept/221794",
-      "image": "https://image.api.playstation.com/cdn/EP1006/CUSA02395_00/njhfC1ELaZU4k87CUsn2mphQ6SGfC3BJ.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6778,7 +6778,7 @@
       "id": "concept:10001458",
       "title": "Two Point Campus",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001458",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202203/3011/GT1ZAtZiXW05nON8ZB6TdNA2.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -6795,7 +6795,7 @@
       "id": "concept:234969",
       "title": "Two Point Hospital™",
       "storeUrl": "https://store.playstation.com/de-de/concept/234969",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307p71284v8W0be02A6VSmSFCCMaV-cxLVeR-rne93k7Dsd7jX-lrTo4CB3OAAjsO5GXtMaIAUUqtqen96elfdpjgV6RzT.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6843,7 +6843,7 @@
       "id": "concept:205354",
       "title": "Uncharted: The Lost Legacy",
       "storeUrl": "https://store.playstation.com/de-de/concept/205354",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2813/h9Xc7ZhCEGUcS05YvpEcNT0D.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -6861,7 +6861,7 @@
       "id": "concept:10005244",
       "title": "Under The Waves",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005244",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0819/8dee0e6f68b3efd178afe3832ef42b5e40b08ba69d531b28.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -6964,7 +6964,7 @@
       "id": "concept:10007965",
       "title": "V Rising",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007965",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2212/681ee3b52f89e9f71601a36c0f313665626f679abcd551b9.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -7018,7 +7018,7 @@
       "id": "concept:205200",
       "title": "Vampyr",
       "storeUrl": "https://store.playstation.com/de-de/concept/205200",
-      "image": "https://image.api.playstation.com/cdn/EP4133/CUSA03468_00/DPDMxx9gbLmaq5oR8eQFJAVHRSOg6gvX.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -7119,7 +7119,7 @@
       "id": "concept:10012449",
       "title": "WARRIORS: Abyss",
       "storeUrl": "https://store.playstation.com/de-de/concept/10012449",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0406/6a5a37bdcf2df6cff320a5cb1739d04a19f18848a20c5944.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -7223,7 +7223,7 @@
       "id": "concept:234315",
       "title": "West of Dead",
       "storeUrl": "https://store.playstation.com/de-de/concept/234315",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202005/0507/2Qxl4co49CQWyOsqpeO8NFpC.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -7239,7 +7239,7 @@
       "id": "concept:10004448",
       "title": "Wizard with a Gun",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004448",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1318/134353dc3a941edb1087c2fa100e0df3c8918cd512abb16b.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -7256,7 +7256,7 @@
       "id": "concept:10004116",
       "title": "Wo Long: Fallen Dynasty (PS4 & PS5)",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004116",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2609/lgPM04qlLofxYamtlfMfqkHZ.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -7293,7 +7293,7 @@
       "id": "concept:205292",
       "title": "Wolfenstein: The New Order",
       "storeUrl": "https://store.playstation.com/de-de/concept/205292",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3004/ZKYzTfaw4UrsLLt6VjYGwh5r.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -7379,7 +7379,7 @@
       "id": "concept:219617",
       "title": "Worms W.M.D",
       "storeUrl": "https://store.playstation.com/de-de/concept/219617",
-      "image": "https://image.api.playstation.com/cdn/EP4064/CUSA04022_00/DAyywhQEMaRv3o98rrEE0eyIpfJo5ixg.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -7395,7 +7395,7 @@
       "id": "concept:10004982",
       "title": "WRC Generations – The FIA WRC Official Game",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004982",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202205/1214/jrPHWEkxs0V0P19tJjgu2Li8.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -7463,7 +7463,7 @@
       "id": "concept:10001817",
       "title": "You Suck at Parking®",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001817",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202303/2109/8f16f54304b3321ceb401aaaf6c1fcf3342325f77512e217.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -7480,7 +7480,7 @@
       "id": "concept:233994",
       "title": "Ys IX: Monstrum Nox",
       "storeUrl": "https://store.playstation.com/de-de/concept/233994",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/2500/jFDjjgWE7qmfuxE2Bdun1Oyl.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -7497,7 +7497,7 @@
       "id": "concept:221809",
       "title": "Ys VIII: Lacrimosa of DANA",
       "storeUrl": "https://store.playstation.com/de-de/concept/221809",
-      "image": "https://image.api.playstation.com/cdn/EP1063/CUSA08570_00/PlP88tsPekpZh5eSyqQWRZR6fJNycnnz.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -7565,7 +7565,7 @@
       "id": "concept:227868",
       "title": "LocoRoco™ Remastered",
       "storeUrl": "https://store.playstation.com/de-de/concept/227868",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA07286_00/B5gfxv1FIHzUuv79VOsod9t3DcMNSn9A.jpg",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -7615,7 +7615,7 @@
       "id": "concept:10009384",
       "title": "MediEvil 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009384",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/0915/70e51a1e7de3fb87c1ebb3efd7d335f1c7cb7ea6e767a039.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7632,7 +7632,7 @@
       "id": "concept:10005032",
       "title": "MediEvil Resurrection™",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005032",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202307/1415/0a9496462c767f1b04df1a53e7e73d64b4c37f7a9a45bbcb.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7649,7 +7649,7 @@
       "id": "concept:209608",
       "title": "Mount & Blade: Warband",
       "storeUrl": "https://store.playstation.com/de-de/concept/209608",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP1457/CUSA03263_00/D4ixQ0Cyc3t5yiemRU1AoJBuW6v2iowm.png",
       "platforms": [
         "PS4"
       ],
@@ -7667,7 +7667,7 @@
       "id": "concept:10010951",
       "title": "Mr Moskeeto",
       "storeUrl": "https://store.playstation.com/de-de/concept/10010951",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1623/484bf81e3d788bcef97b4b1af7e36900b6f0fe813b2faeda.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7684,7 +7684,7 @@
       "id": "concept:10005104",
       "title": "Mr. Driller PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005104",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2603/aIY5YhtBKxjkMnLCXsD4oVTr.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7702,7 +7702,7 @@
       "id": "concept:10008667",
       "title": "Myst (PS1)",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008667",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202505/2804/26daf61836886b568f74fc30b81a8f02305cd5492cc77470.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7720,7 +7720,7 @@
       "id": "concept:10005034",
       "title": "No Heroes Allowed!",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005034",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0322/maivYZ0txIkgxTVzEdUB72AT.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -10366,7 +10366,7 @@
       "id": "concept:10010892",
       "title": "Date Everything!",
       "storeUrl": "https://store.playstation.com/de-de/concept/10010892",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202506/1715/3441b62cd05c46b21dab1daa92e99cb44df3883fa01c84c2.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -10417,7 +10417,7 @@
       "id": "concept:202806",
       "title": "Metro Redux",
       "storeUrl": "https://store.playstation.com/de-de/concept/202806",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP4062/CUSA00593_00/74C5XBvmTgxNNjvECPxlj8tC639xS0WR.png",
       "platforms": [
         "PS4"
       ],
@@ -10434,7 +10434,7 @@
       "id": "concept:10013857",
       "title": "NINJA GAIDEN: Ragebound",
       "storeUrl": "https://store.playstation.com/de-de/concept/10013857",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202504/1616/b1a631440844715c22c91b314777a0ecacfe24f2a5e1ade3.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -10451,7 +10451,7 @@
       "id": "concept:203666",
       "title": "Rebel Galaxy",
       "storeUrl": "https://store.playstation.com/de-de/concept/203666",
-      "image": "https://image.api.playstation.com/cdn/EP0222/CUSA02586_00/vDFJ28jhIRXToQcRXZzKcbbQidrubxnA.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -10535,7 +10535,7 @@
       "id": "concept:226459",
       "title": "Metro: Last Light Redux",
       "storeUrl": "https://store.playstation.com/de-de/concept/226459",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202103/0313/xRBuhxOu8IbVAV32S8Ow9Eiv.png",
       "platforms": [
         "PS4"
       ],
@@ -10550,5 +10550,5 @@
     }
   ],
   "errors": [],
-  "lastAttemptAt": "2026-10-05T10:52:26.210Z"
+  "lastAttemptAt": "2026-10-06T10:47:57.961Z"
 }
