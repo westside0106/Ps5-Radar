@@ -1,8 +1,23 @@
 {
-  "checkedAt": "2026-10-05T16:05:25.651Z",
+  "checkedAt": "2026-10-06T14:14:10.445Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Warhammer Survivors: Release am 10. November bestätigt",
+        "link": "https://blog.de.playstation.com/2026/10/06/warhammer-survivors-release-am-10-november-bestaetigt/",
+        "pubDate": "Tue, 06 Oct 2026 14:00:00 +0000"
+      },
+      {
+        "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
+        "link": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
+        "pubDate": "Tue, 06 Oct 2026 12:00:29 +0000"
+      },
+      {
+        "title": "Call of Duty: Modern Warfare 4 – DMZ-Modus im Überblick",
+        "link": "https://blog.de.playstation.com/2026/10/05/call-of-duty-modern-warfare-4-dmz-modus-im-ueberblick/",
+        "pubDate": "Mon, 05 Oct 2026 17:15:00 +0000"
+      },
       {
         "title": "Players&#8216; Choice: Bestes neues Spiel im September 2026",
         "link": "https://blog.de.playstation.com/2026/10/05/players-choice-bestes-neues-spiel-im-september-2026/",
@@ -37,41 +52,32 @@
         "title": "Kena: Scars of Kosmora erscheint 2027; Ember Lab teilt Übersicht über die Geschichte",
         "link": "https://blog.de.playstation.com/2026/10/01/kena-scars-of-kosmora-erscheint-2027-ember-lab-teilt-uebersicht-ueber-die-geschichte/",
         "pubDate": "Thu, 01 Oct 2026 12:59:44 +0000"
-      },
-      {
-        "title": "Monatliche PlayStation Plus-Spiele für Oktober: F1 25, Hunt: Showdown 1896, Earth Defense Force: World Brothers 2",
-        "link": "https://blog.de.playstation.com/2026/09/30/monatliche-playstation-plus-spiele-fuer-oktober-f1-25-hunt-showdown-1896-earth-defense-force-world-brothers-2/",
-        "pubDate": "Wed, 30 Sep 2026 16:09:56 +0000"
-      },
-      {
-        "title": "Control Resonant: Kunst und Technik hinter den Bossen",
-        "link": "https://blog.de.playstation.com/2026/09/30/control-resonant-kunst-und-technik-hinter-den-bossen/",
-        "pubDate": "Wed, 30 Sep 2026 09:32:18 +0000"
-      },
-      {
-        "title": "Suri: The Seventh Note erscheint am 30. Oktober für PS5",
-        "link": "https://blog.de.playstation.com/2026/09/29/suri-the-seventh-note-erscheint-am-30-oktober-fuer-ps5/",
-        "pubDate": "Tue, 29 Sep 2026 16:09:54 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Players&#8216; Choice: Bestes neues Spiel im September 2026",
-        "link": "https://blog.de.playstation.com/2026/10/05/players-choice-bestes-neues-spiel-im-september-2026/",
-        "pubDate": "Mon, 05 Oct 2026 14:00:00 +0000",
-        "category": "news"
+        "title": "Warhammer Survivors: Release am 10. November bestätigt",
+        "link": "https://blog.de.playstation.com/2026/10/06/warhammer-survivors-release-am-10-november-bestaetigt/",
+        "pubDate": "Tue, 06 Oct 2026 14:00:00 +0000",
+        "category": "release"
       },
       {
-        "title": "Star Wars: Galactic Racer: Podrennen ohne Macht, nur mit Mut und Nachbrenner",
-        "link": "https://blog.de.playstation.com/2026/10/05/star-wars-galactic-racer-podrennen-ohne-macht-nur-mit-mut-und-nachbrenner/",
-        "pubDate": "Mon, 05 Oct 2026 12:15:48 +0000",
+        "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
+        "link": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
+        "pubDate": "Tue, 06 Oct 2026 12:00:29 +0000",
+        "category": "release"
+      },
+      {
+        "title": "Call of Duty: Modern Warfare 4 – DMZ-Modus im Überblick",
+        "link": "https://blog.de.playstation.com/2026/10/05/call-of-duty-modern-warfare-4-dmz-modus-im-ueberblick/",
+        "pubDate": "Mon, 05 Oct 2026 17:15:00 +0000",
         "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 207450,
+    "bytes": 209978,
     "schedule": [
       {
         "date": "03.09.",
@@ -122,7 +128,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 174041,
+    "bytes": 176569,
     "updated": true,
     "parsed": {
       "games": [
@@ -151,7 +157,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-05T16:06:00.842Z",
+      "checkedAt": "2026-10-06T14:14:36.811Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -165,13 +171,12 @@
     }
   },
   "psPlusWhatsNew": {
-    "ok": true,
-    "bytes": 609654
+    "ok": false
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241776,
+    "bytes": 241899,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -184,7 +189,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163243,
+    "bytes": 163251,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
