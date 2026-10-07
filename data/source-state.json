@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-06T14:14:10.445Z",
+  "checkedAt": "2026-10-07T06:01:46.417Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,30 +54,11 @@
         "pubDate": "Thu, 01 Oct 2026 12:59:44 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Warhammer Survivors: Release am 10. November bestätigt",
-        "link": "https://blog.de.playstation.com/2026/10/06/warhammer-survivors-release-am-10-november-bestaetigt/",
-        "pubDate": "Tue, 06 Oct 2026 14:00:00 +0000",
-        "category": "release"
-      },
-      {
-        "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
-        "link": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
-        "pubDate": "Tue, 06 Oct 2026 12:00:29 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Call of Duty: Modern Warfare 4 – DMZ-Modus im Überblick",
-        "link": "https://blog.de.playstation.com/2026/10/05/call-of-duty-modern-warfare-4-dmz-modus-im-ueberblick/",
-        "pubDate": "Mon, 05 Oct 2026 17:15:00 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209978,
+    "bytes": 209444,
     "schedule": [
       {
         "date": "03.09.",
@@ -128,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176569,
+    "bytes": 176035,
     "updated": true,
     "parsed": {
       "games": [
@@ -157,7 +138,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-06T14:14:36.811Z",
+      "checkedAt": "2026-10-07T06:02:11.104Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -171,12 +152,13 @@
     }
   },
   "psPlusWhatsNew": {
-    "ok": false
+    "ok": true,
+    "bytes": 609035
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241899,
+    "bytes": 234452,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -189,7 +171,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163251,
+    "bytes": 163237,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
@@ -206,13 +188,11 @@
       "parsed": {
         "prices": [
           "74,99 €",
+          "11,24 €",
           "69,99 €"
         ],
         "discounts": [
-          "-69 %",
-          "-16 %",
-          "-6 %",
-          "-2 %"
+          "-85 %"
         ]
       }
     },
@@ -223,14 +203,11 @@
       "parsed": {
         "prices": [
           "79,99 €",
-          "99,99 €"
+          "19,99 €",
+          "99 €"
         ],
         "discounts": [
-          "-46 %",
-          "-20 %",
-          "-10 %",
-          "-7 %",
-          "-17 %"
+          "-75 %"
         ]
       }
     },
@@ -240,15 +217,13 @@
       "updated": false,
       "parsed": {
         "prices": [
+          "24,99 €",
           "49,99 €",
           "99,99 €",
           "5 €"
         ],
         "discounts": [
-          "-85 %",
-          "-8 %",
-          "-3 %",
-          "-1 %"
+          "-50 %"
         ]
       }
     }

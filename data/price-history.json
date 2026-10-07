@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T14:14:33.781Z",
+  "updatedAt": "2026-10-07T06:02:06.650Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -491,6 +491,12 @@
           "price": 27.99,
           "oldPrice": 69.99,
           "discount": 60
+        },
+        {
+          "date": "2026-10-07",
+          "price": 35.99,
+          "oldPrice": 89.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Standard Edition",
@@ -530,21 +536,21 @@
       ],
       "signal": {
         "version": 1,
-        "activeDeal": false,
+        "activeDeal": true,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
-        "measurements": 13,
-        "currentPrice": null,
-        "lastObservedPrice": 27.99,
-        "lastObservedDate": "2026-09-23",
+        "measurements": 14,
+        "currentPrice": 35.99,
+        "lastObservedPrice": 35.99,
+        "lastObservedDate": "2026-10-07",
         "radarLow": 27.99,
-        "deltaFromLowPct": 0,
-        "discount": null,
-        "daysRemaining": null,
+        "deltaFromLowPct": 28.6,
+        "discount": 60,
+        "daysRemaining": 1,
         "code": "wait",
         "label": "WARTEN",
-        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "reason": "Der aktuelle Preis liegt 28,6 % über einem bereits gemessenen Radar-Tief.",
         "changedToday": false,
         "previousCode": null,
         "changedAt": null
@@ -631,6 +637,12 @@
           "price": 39.99,
           "oldPrice": 99.99,
           "discount": 60
+        },
+        {
+          "date": "2026-10-07",
+          "price": 35.99,
+          "oldPrice": 89.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Premium Edition",
@@ -666,28 +678,38 @@
           "radarLow": 39.99,
           "discount": null,
           "confidence": "hoch"
+        },
+        {
+          "date": "2026-10-07",
+          "code": "buy",
+          "label": "KAUFEN",
+          "previousCode": "wait",
+          "currentPrice": 35.99,
+          "radarLow": 35.99,
+          "discount": 60,
+          "confidence": "hoch"
         }
       ],
       "signal": {
         "version": 1,
-        "activeDeal": false,
+        "activeDeal": true,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
-        "measurements": 13,
-        "currentPrice": null,
-        "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-09-23",
-        "radarLow": 39.99,
+        "measurements": 14,
+        "currentPrice": 35.99,
+        "lastObservedPrice": 35.99,
+        "lastObservedDate": "2026-10-07",
+        "radarLow": 35.99,
         "deltaFromLowPct": 0,
-        "discount": null,
-        "daysRemaining": null,
-        "code": "wait",
-        "label": "WARTEN",
-        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
-        "changedToday": false,
-        "previousCode": null,
-        "changedAt": null
+        "discount": 60,
+        "daysRemaining": 1,
+        "code": "buy",
+        "label": "KAUFEN",
+        "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
+        "changedToday": true,
+        "previousCode": "wait",
+        "changedAt": "2026-10-07"
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0323/d808653f2c2453e79433628e31f673ef3976c6771d39228a.png"
     },
@@ -859,6 +881,12 @@
           "price": 39.99,
           "oldPrice": 79.99,
           "discount": 50
+        },
+        {
+          "date": "2026-10-07",
+          "price": 49.99,
+          "oldPrice": 99.99,
+          "discount": 50
         }
       ],
       "title": "WWE 2K26 Standard Edition",
@@ -888,18 +916,18 @@
       ],
       "signal": {
         "version": 1,
-        "activeDeal": false,
+        "activeDeal": true,
         "subscriptionIncluded": true,
         "subscriptionLabel": "PS Plus Extra",
         "confidence": "niedrig",
-        "measurements": 1,
-        "currentPrice": null,
-        "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-09-17",
+        "measurements": 2,
+        "currentPrice": 49.99,
+        "lastObservedPrice": 49.99,
+        "lastObservedDate": "2026-10-07",
         "radarLow": 39.99,
-        "deltaFromLowPct": 0,
-        "discount": null,
-        "daysRemaining": null,
+        "deltaFromLowPct": 25,
+        "discount": 50,
+        "daysRemaining": 1,
         "code": "wait",
         "label": "ABO NUTZEN",
         "reason": "Im erfassten PS Plus Extra-Katalog enthalten. Ein Kauf ist bei passender aktiver Mitgliedschaft nicht nötig; der Storepreis bleibt nur als Marktpreis sichtbar.",
@@ -992,28 +1020,38 @@
           "radarLow": 29.99,
           "discount": 40,
           "confidence": "niedrig"
+        },
+        {
+          "date": "2026-10-07",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": "watch",
+          "currentPrice": null,
+          "radarLow": 29.99,
+          "discount": null,
+          "confidence": "hoch"
         }
       ],
       "signal": {
         "version": 1,
-        "activeDeal": true,
+        "activeDeal": false,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
         "measurements": 11,
-        "currentPrice": 29.99,
+        "currentPrice": null,
         "lastObservedPrice": 29.99,
         "lastObservedDate": "2026-10-06",
         "radarLow": 29.99,
         "deltaFromLowPct": 0,
-        "discount": 40,
-        "daysRemaining": 2,
-        "code": "watch",
-        "label": "BEOBACHTEN",
-        "reason": "Nur 0,0 % über dem eigenen Radar-Tief bei -40 %.",
-        "changedToday": false,
-        "previousCode": null,
-        "changedAt": null
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
+        "changedToday": true,
+        "previousCode": "watch",
+        "changedAt": "2026-10-07"
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/900141a51c778ebea46b72b83fe09c4b0a0bbfbac92055e4.png"
     },
@@ -1114,21 +1152,21 @@
       ],
       "signal": {
         "version": 1,
-        "activeDeal": true,
+        "activeDeal": false,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
         "measurements": 11,
-        "currentPrice": 53.99,
+        "currentPrice": null,
         "lastObservedPrice": 53.99,
         "lastObservedDate": "2026-10-06",
         "radarLow": 53.99,
         "deltaFromLowPct": 0,
-        "discount": 10,
-        "daysRemaining": 2,
+        "discount": null,
+        "daysRemaining": null,
         "code": "wait",
         "label": "WARTEN",
-        "reason": "Der aktuelle Rabatt reicht gegenüber dem bisherigen Radar-Verlauf noch nicht für ein Kaufsignal.",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
         "changedToday": false,
         "previousCode": null,
         "changedAt": null
@@ -1138,15 +1176,15 @@
   },
   "summary": {
     "titles": 12,
-    "points": 80,
-    "archiveIssuesScanned": 33,
+    "points": 83,
+    "archiveIssuesScanned": 34,
     "signals": {
-      "buy": 0,
-      "watch": 1,
+      "buy": 1,
+      "watch": 0,
       "wait": 11
     },
-    "changedSignals": 0,
-    "newBuySignals": 0
+    "changedSignals": 2,
+    "newBuySignals": 1
   },
   "method": {
     "signalVersion": 1,

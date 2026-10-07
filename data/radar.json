@@ -1,8 +1,8 @@
 {
-  "date": "06.10.2026",
-  "edition": "AUSGABE #033",
-  "newHeadline": "2 NEUE PLAYSTATION-MELDUNGEN",
-  "newCount": "06.10 · LIVE",
+  "date": "07.10.2026",
+  "edition": "AUSGABE #034",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "07.10 · LIVE",
   "leadTitle": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
   "leadDate": "06.10.2026",
   "leadMeta": "PS5-Spiele Oktober 2026: Ghost of Yōtei, Dragon's Dogma 2: Dark Arisen, Star Wars: Galactic Racer und Call of Duty: Modern Warfare 4 erscheinen…",
@@ -52,27 +52,31 @@
   "storeEnd": "2026-10-08T00:59:00+02:00",
   "deals": [
     {
-      "title": "Starfield Premium Edition",
+      "title": "Forza Horizon 5 Standard Edition",
       "platform": "PS5",
-      "price": "29,99 €",
-      "oldPrice": "49,99 €",
-      "discount": "-40 %",
+      "price": "35,99 €",
+      "oldPrice": "89,99 €",
+      "discount": "-60 %",
       "image": null
     },
     {
-      "title": "F1® 25: 2026 Saison Edition",
+      "title": "Forza Horizon 5 Premium Edition",
       "platform": "PS5",
-      "price": "53,99 €",
-      "oldPrice": "59,99 €",
-      "discount": "-10 %",
+      "price": "35,99 €",
+      "oldPrice": "89,99 €",
+      "discount": "-60 %",
+      "image": null
+    },
+    {
+      "title": "WWE 2K26 Standard Edition",
+      "platform": "PS5",
+      "price": "49,99 €",
+      "oldPrice": "99,99 €",
+      "discount": "-50 %",
       "image": null
     }
   ],
   "releases": [
-    {
-      "date": "06.10.",
-      "title": "Star Wars: Galactic Racer"
-    },
     {
       "date": "08.10.",
       "title": "Clive Barker’s Hellraiser: Revival"
@@ -88,6 +92,10 @@
     {
       "date": "22.10.",
       "title": "Final Fantasy Resonance"
+    },
+    {
+      "date": "23.10.",
+      "title": "Call of Duty: Modern Warfare 4"
     }
   ],
   "quickItems": [],
@@ -101,18 +109,14 @@
     "The Play List"
   ],
   "ubisoftTitle": "Ubisoft+ Classics",
-  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat.",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
   "ubisoftItems": [
-    "Ubisoft+ Classics"
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
   ],
-  "radarCheck": "Stand 06.10.2026 · 8/9 Quellen · 5 Warnung(en)",
+  "radarCheck": "Stand 07.10.2026 · 9/9 Quellen · Store 9 geprüft · 13/16 Details",
   "sourceAlerts": [
-    {
-      "title": "Call of Duty: Modern Warfare 4 – DMZ-Modus im Überblick",
-      "url": "https://blog.de.playstation.com/2026/10/05/call-of-duty-modern-warfare-4-dmz-modus-im-ueberblick/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
     {
       "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
       "url": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
@@ -129,47 +133,28 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
-      "url": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
-      "category": "release",
-      "score": 115
-    },
-    {
-      "title": "Warhammer Survivors: Release am 10. November bestätigt",
-      "url": "https://blog.de.playstation.com/2026/10/06/warhammer-survivors-release-am-10-november-bestaetigt/",
-      "category": "release",
-      "score": 100
-    }
-  ],
+  "editorial": [],
   "health": {
-    "status": "warning",
-    "checkedAt": "2026-10-06T14:14:47.043Z",
-    "okSources": 8,
+    "status": "ok",
+    "checkedAt": "2026-10-07T06:02:22.760Z",
+    "okSources": 9,
     "totalSources": 9,
-    "failedSources": 1,
-    "warnings": 5,
+    "failedSources": 0,
+    "warnings": 0,
     "storeDiscoveryMode": "dynamic-browser",
-    "storeProductsVerified": 2,
-    "storeDealsSelected": 2,
-    "enrichedTitles": 12,
-    "detailTitles": 15,
+    "storeProductsVerified": 9,
+    "storeDealsSelected": 3,
+    "enrichedTitles": 13,
+    "detailTitles": 16,
     "automationNotes": 0,
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-05T16:06:10.807Z"
+    "lastSuccessfulCheck": "2026-10-07T06:02:22.760Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-06T14:14:47.043Z",
-    "errors": [
-      "PS Plus aktuell: Quellenabruf fehlgeschlagen",
-      "Detail-Enrichment: Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
-      "Detail-Enrichment: MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
-      "Detail-Enrichment: Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
-      "Detail-Enrichment: EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
-    ],
+    "checkedAt": "2026-10-07T06:02:22.760Z",
+    "errors": [],
     "sources": [
       {
         "name": "PlayStation Blog",
@@ -185,7 +170,7 @@
       },
       {
         "name": "PS Plus aktuell",
-        "ok": false
+        "ok": true
       },
       {
         "name": "EA Play",
@@ -228,7 +213,7 @@
         "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
         "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2709/7d14a7f5d28a0542096480e530ea7c611e45dcfd6271b64b.png"
+        "https://image.api.playstation.com/vulcan/ap/rnd/202411/1909/8aafcc75d67ed0a3c4bb8410cd57ff437ae3a726da42177f.png"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=wPH9TFf6yfE",
       "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
@@ -298,41 +283,54 @@
       "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
       "title": "Chained Echoes"
     },
-    "Starfield Premium Edition": {
-      "description": "ZUSAMMEN INS STERNENMEER",
-      "publisher": "Bethesda",
-      "genre": "Rollenspiele",
-      "release": "7.4.2026",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/79a18f39494627fd6bfc30841c8f0e5097d66453624893ee.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/60a7c27341cb4b03538a1b99201b046c2d297af3797fa78f.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/f66067fba9c76d09676ddd568cb71f2a123a8faca5bac793.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/fd52c8160c772c22c70f79d1a5a92b94b42088092f96d1c1.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/893327025799cb53f2892158eac7c9f123096a8731374bb0.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/e36e904299d8d0dfe0af35aee01b611f8a3edb543c8d338e.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP1003-PPSA24884_00-PREMIUMBUNDLE000"
-    },
-    "F1® 25: 2026 Saison Edition": {
-      "description": "2026 Saison Edition – jetzt kaufen",
-      "publisher": "EA Swiss Sarl",
+    "Forza Horizon 5 Standard Edition": {
+      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
+      "publisher": "Microsoft Corporation",
       "genre": "Rennspiele",
-      "release": "3.6.2026",
+      "release": "28.4.2025",
       "platform": "PS5",
       "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/1911/5f33cc6cc38f649afb696dd3c8f385267401effb1eace1cd.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/e06cd2d2ac4c303652af5bc135b1f66a84c153116a27ef51.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/945fca903ab8fa5ef5a5fc9f270c8a0b027686b2f0d7949f.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/5bd42633a7248911c0d8b03f6506529088be6a013d0e40eb.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/5ff4f3675edb00ee7a2c84bd4903635c01108b8946f56826.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202605/2016/a22ec0cd294912dc8a4c62f6a9bfad9a7c44a9e546dd70c1.jpg"
+        "https://image.api.playstation.com/vulcan/ap/rnd/202503/2417/4d27754720206805d54f5beddfcc0817700af978a56ff0db.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
       ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA24662_00-2026SEASONEDITIO",
-      "psPlusStatus": "In PlayStation Plus enthalten"
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347"
     },
-    "Star Wars: Galactic Racer": {
-      "release": "06.10.2026"
+    "Forza Horizon 5 Premium Edition": {
+      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
+      "publisher": "Microsoft Corporation",
+      "genre": "Rennspiele",
+      "release": "24.4.2025",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/0c5df2b67b23263d055f3b78aeb77a6ce4668bb078fced77.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
+    },
+    "WWE 2K26 Standard Edition": {
+      "description": "Die Show endet nie",
+      "publisher": "Take-Two",
+      "genre": "Sport",
+      "release": "12.3.2026",
+      "platform": "PS5",
+      "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/1209/71bc53b949514603757703a1767b6c20a364f90241e5cb52.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/7c1c1c824ad4a78e6c563156bfd05573fffc0edc2e3b729c.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/599e0926688415049fb015792ab762f0a840621161cd3f2f.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/95670d4e001ff0093e64d07ed44f258ba5d88a66778f479d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/57440b3be19235248f3fee53047b21c9cc67641954b99032.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/ab700572fee7600b8af42c89daf723690a61803dcaf9955e.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
     },
     "Clive Barker’s Hellraiser: Revival": {
       "release": "08.10.2026"
@@ -345,6 +343,9 @@
     },
     "Final Fantasy Resonance": {
       "release": "22.10.2026"
+    },
+    "Call of Duty: Modern Warfare 4": {
+      "release": "23.10.2026"
     },
     "EA SPORTS FC 27": {
       "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
@@ -366,16 +367,11 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-06T14:14:33.823Z",
-    "titles": 15,
-    "fetched": 3,
-    "enriched": 12,
-    "warnings": [
-      "Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
-      "MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
-      "Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
-      "EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
-    ]
+    "checkedAt": "2026-10-07T06:02:06.700Z",
+    "titles": 16,
+    "fetched": 8,
+    "enriched": 13,
+    "warnings": []
   },
   "resolvedSources": {
     "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
@@ -402,8 +398,9 @@
     "storeCampaign": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
     "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "storeDeals": {
-      "Starfield Premium Edition": "https://store.playstation.com/de-de/product/UP1003-PPSA24884_00-PREMIUMBUNDLE000",
-      "F1® 25: 2026 Saison Edition": "https://store.playstation.com/de-de/product/UP0006-PPSA24662_00-2026SEASONEDITIO"
+      "Forza Horizon 5 Standard Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347",
+      "Forza Horizon 5 Premium Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906",
+      "WWE 2K26 Standard Edition": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
     }
   },
   "eaPlay": {
@@ -420,13 +417,15 @@
     "title": "Ubisoft+ Classics",
     "price": "7,99 €",
     "items": [
-      "Ubisoft+ Classics"
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
     ],
     "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-06T14:14:19.855Z",
+    "checkedAt": "2026-10-07T06:01:52.721Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -435,33 +434,33 @@
       "storeDiscoveryStaticLinks": 1,
       "storeDiscoveryBrowserLinks": 24,
       "storeDiscoveryLinks": 25,
-      "storeDiscoveryVerified": 2,
-      "storeDiscoverySelected": 2
+      "storeDiscoveryVerified": 9,
+      "storeDiscoverySelected": 3
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-06T14:14:20.367Z",
+    "checkedAt": "2026-10-07T06:01:52.838Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
     "browserLinks": 24,
     "links": 25,
     "fetched": 25,
-    "verified": 2,
-    "selected": 2,
+    "verified": 9,
+    "selected": 3,
     "mode": "dynamic-browser",
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-06T14:14:36.281Z",
+    "checkedAt": "2026-10-07T06:02:10.381Z",
     "verified": 4,
     "missing": [],
     "warnings": []
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-06T14:14:18.585Z",
-    "date": "06.10.2026",
+    "checkedAt": "2026-10-07T06:01:52.188Z",
+    "date": "07.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -486,9 +485,9 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-06T14:14:36.811Z",
-    "berlinDate": "2026-10-06",
-    "newPostsToday": 2,
+    "checkedAt": "2026-10-07T06:02:11.104Z",
+    "berlinDate": "2026-10-07",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }
