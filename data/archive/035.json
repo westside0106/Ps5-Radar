@@ -111,16 +111,16 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-08T12:32:23.273Z",
+    "checkedAt": "2026-10-08T14:37:36.584Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-10-08T12:32:00.375Z",
+    "lastSuccessfulCheck": "2026-10-08T14:37:14.976Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-08T12:32:00.375Z",
+    "checkedAt": "2026-10-08T14:37:14.976Z",
     "errors": [],
     "sources": [
       {
@@ -180,7 +180,7 @@
         "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
         "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202505/2713/8b8900c8669e6f96aaf5d6ecb95e9d6660c6f1afccc88d19.png"
+        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2709/7d14a7f5d28a0542096480e530ea7c611e45dcfd6271b64b.png"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=wPH9TFf6yfE",
       "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
@@ -285,7 +285,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-08T12:32:07.669Z",
+    "checkedAt": "2026-10-08T14:37:29.406Z",
     "titles": 13,
     "fetched": 5,
     "enriched": 10,
@@ -339,13 +339,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-08T12:32:07.122Z",
+    "checkedAt": "2026-10-08T14:37:28.929Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-08T12:32:07.227Z",
+    "checkedAt": "2026-10-08T14:37:29.021Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -358,7 +358,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-08T12:32:23.052Z",
+    "checkedAt": "2026-10-08T14:37:36.393Z",
     "verified": 4,
     "missing": [],
     "warnings": [
@@ -367,7 +367,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-08T12:32:06.306Z",
+    "checkedAt": "2026-10-08T14:37:27.908Z",
     "date": "08.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -393,7 +393,7 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-08T12:31:09.165Z",
+    "checkedAt": "2026-10-08T12:32:23.489Z",
     "berlinDate": "2026-10-08",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
