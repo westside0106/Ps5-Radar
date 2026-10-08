@@ -1,23 +1,23 @@
 {
-  "date": "07.10.2026",
-  "edition": "AUSGABE #034",
+  "date": "08.10.2026",
+  "edition": "AUSGABE #035",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "07.10 · LIVE",
+  "newCount": "08.10 · LIVE",
   "leadTitle": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
   "leadDate": "06.10.2026",
   "leadMeta": "PS5-Spiele Oktober 2026: Ghost of Yōtei, Dragon's Dogma 2: Dark Arisen, Star Wars: Galactic Racer und Call of Duty: Modern Warfare 4 erscheinen…",
   "leadPrice": null,
   "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8a186228a34c91ac18bc1e25ea585f6ad67d52f8.png",
-  "secondary1Title": "Warhammer Survivors: Release am 10. November bestätigt",
-  "secondary1Date": "06.10.2026",
-  "secondary1Meta": "Warhammer Survivors erscheint am 10. November: Entdeckt im Trailer die neuen Champions Morvenn Vahl und Lyssa Revenya.",
+  "secondary1Title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
+  "secondary1Date": "07.10.2026",
+  "secondary1Meta": "Hallo, Leute! Ich bin Takeshi Yamanaka, Producer von MARVEL Tōkon: Fighting Souls.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6df24fa63706e5fc6fed616b4aa298b7d4f7e678.jpg",
-  "secondary2Title": "QSSR bringt KI-Upscaling auf die PS5",
-  "secondary2Date": "01.10.2026",
-  "secondary2Meta": "Das Wichtigste in Kürze Quick Spectral Super Resolution (QSSR) ist ein neues KI-Upscaling-Verfahren für die PS5, entwickelt im Rahmen von Project…",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/98097314e9d55b7d423b44f27db7f40c75413f3d.jpg",
+  "secondary2Title": "Warhammer Survivors: Release am 10. November bestätigt",
+  "secondary2Date": "06.10.2026",
+  "secondary2Meta": "Warhammer Survivors erscheint am 10. November: Entdeckt im Trailer die neuen Champions Morvenn Vahl und Lyssa Revenya.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4810eb11f563b23a231d544aeb199371a582f811.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6df24fa63706e5fc6fed616b4aa298b7d4f7e678.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -30,7 +30,7 @@
     },
     {
       "title": "MLB The Show 26",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/791b0f1880e27c1d8f52187daea36abfe5fd3b0ff1144007.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
       "imageSource": "official-product"
     },
@@ -47,35 +47,10 @@
       "imageSource": "official-product"
     }
   ],
-  "storeTitle": "Aktuelle Store-Top-Deals",
-  "storeText": "Automatisch aus der aktuell verifizierten PlayStation-Store-Aktion ausgewählt.",
-  "storeEnd": "2026-10-08T00:59:00+02:00",
-  "deals": [
-    {
-      "title": "Forza Horizon 5 Standard Edition",
-      "platform": "PS5",
-      "price": "35,99 €",
-      "oldPrice": "89,99 €",
-      "discount": "-60 %",
-      "image": null
-    },
-    {
-      "title": "Forza Horizon 5 Premium Edition",
-      "platform": "PS5",
-      "price": "35,99 €",
-      "oldPrice": "89,99 €",
-      "discount": "-60 %",
-      "image": null
-    },
-    {
-      "title": "WWE 2K26 Standard Edition",
-      "platform": "PS5",
-      "price": "49,99 €",
-      "oldPrice": "99,99 €",
-      "discount": "-50 %",
-      "image": null
-    }
-  ],
+  "storeTitle": "Keine verifizierten Top-Deals",
+  "storeText": "Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.",
+  "storeEnd": null,
+  "deals": [],
   "releases": [
     {
       "date": "08.10.",
@@ -99,8 +74,8 @@
     }
   ],
   "quickItems": [],
-  "leavingTitle": "Aktuelle Store-Aktion endet bald",
-  "leavingText": "Aktuelle Store-Aktion endet am 08.10., 00:59 Uhr.",
+  "leavingTitle": "Kein aktives Angebotsende",
+  "leavingText": "Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
   "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
   "eaItems": [
@@ -115,7 +90,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 07.10.2026 · 9/9 Quellen · Store 9 geprüft · 13/16 Details",
+  "radarCheck": "Stand 08.10.2026 · 9/9 Quellen · 1 Warnung(en)",
   "sourceAlerts": [
     {
       "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
@@ -123,38 +98,40 @@
       "type": "editorial"
     },
     {
-      "title": "Warhammer Survivors: Release am 10. November bestätigt",
-      "url": "https://blog.de.playstation.com/2026/10/06/warhammer-survivors-release-am-10-november-bestaetigt/",
+      "title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
+      "url": "https://blog.de.playstation.com/2026/10/07/phoenix-cyclops-erscheint-am-2-november-in-marvel-tokon-fighting-souls/",
       "type": "editorial"
     },
     {
-      "title": "QSSR bringt KI-Upscaling auf die PS5",
-      "url": "https://blog.de.playstation.com/2026/10/01/qssr-bringt-ki-upscaling-auf-die-ps5/",
+      "title": "Warhammer Survivors: Release am 10. November bestätigt",
+      "url": "https://blog.de.playstation.com/2026/10/06/warhammer-survivors-release-am-10-november-bestaetigt/",
       "type": "editorial"
     }
   ],
   "editorial": [],
   "health": {
-    "status": "ok",
-    "checkedAt": "2026-10-07T14:34:37.818Z",
+    "status": "warning",
+    "checkedAt": "2026-10-08T12:31:21.619Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
-    "warnings": 0,
-    "storeDiscoveryMode": "dynamic-browser",
-    "storeProductsVerified": 9,
-    "storeDealsSelected": 3,
-    "enrichedTitles": 13,
-    "detailTitles": 16,
+    "warnings": 1,
+    "storeDiscoveryMode": "no-active-campaign",
+    "storeProductsVerified": 0,
+    "storeDealsSelected": 0,
+    "enrichedTitles": 10,
+    "detailTitles": 13,
     "automationNotes": 0,
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-07T14:34:37.818Z"
+    "lastSuccessfulCheck": "2026-10-08T12:30:49.329Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-07T14:34:37.818Z",
-    "errors": [],
+    "checkedAt": "2026-10-08T12:31:21.619Z",
+    "errors": [
+      "Detail-Enrichment: MLB The Show 26: 500 https://www.playstation.com/de-de/games/mlb-the-show/"
+    ],
     "sources": [
       {
         "name": "PlayStation Blog",
@@ -196,8 +173,8 @@
   },
   "gameDetails": {
     "PS5-Spiele Oktober 2026: Diese Releases erwarten euch": {},
+    "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls": {},
     "Warhammer Survivors: Release am 10. November bestätigt": {},
-    "QSSR bringt KI-Upscaling auf die PS5": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -213,7 +190,7 @@
         "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
         "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202505/2713/8b8900c8669e6f96aaf5d6ecb95e9d6660c6f1afccc88d19.png"
+        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2709/7d14a7f5d28a0542096480e530ea7c611e45dcfd6271b64b.png"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=wPH9TFf6yfE",
       "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
@@ -239,7 +216,7 @@
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202607/0816/791b0f1880e27c1d8f52187daea36abfe5fd3b0ff1144007.png",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
       "title": "MLB The Show 26"
     },
     "Wobbly Life": {
@@ -283,55 +260,6 @@
       "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
       "title": "Chained Echoes"
     },
-    "Forza Horizon 5 Standard Edition": {
-      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
-      "publisher": "Microsoft Corporation",
-      "genre": "Rennspiele",
-      "release": "28.4.2025",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202503/2417/4d27754720206805d54f5beddfcc0817700af978a56ff0db.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347"
-    },
-    "Forza Horizon 5 Premium Edition": {
-      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
-      "publisher": "Microsoft Corporation",
-      "genre": "Rennspiele",
-      "release": "24.4.2025",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/0c5df2b67b23263d055f3b78aeb77a6ce4668bb078fced77.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
-    },
-    "WWE 2K26 Standard Edition": {
-      "description": "Die Show endet nie",
-      "publisher": "Take-Two",
-      "genre": "Sport",
-      "release": "12.3.2026",
-      "platform": "PS5",
-      "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/1209/71bc53b949514603757703a1767b6c20a364f90241e5cb52.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/7c1c1c824ad4a78e6c563156bfd05573fffc0edc2e3b729c.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/599e0926688415049fb015792ab762f0a840621161cd3f2f.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/95670d4e001ff0093e64d07ed44f258ba5d88a66778f479d.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/57440b3be19235248f3fee53047b21c9cc67641954b99032.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/ab700572fee7600b8af42c89daf723690a61803dcaf9955e.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
-    },
     "Clive Barker’s Hellraiser: Revival": {
       "release": "08.10.2026"
     },
@@ -367,11 +295,13 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-07T14:34:08.712Z",
-    "titles": 16,
-    "fetched": 8,
-    "enriched": 13,
-    "warnings": []
+    "checkedAt": "2026-10-08T12:30:59.431Z",
+    "titles": 13,
+    "fetched": 4,
+    "enriched": 10,
+    "warnings": [
+      "MLB The Show 26: 500 https://www.playstation.com/de-de/games/mlb-the-show/"
+    ]
   },
   "resolvedSources": {
     "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
@@ -397,11 +327,7 @@
     "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
     "storeCampaign": "https://blog.de.playstation.com/2026/09/25/die-aktion-herbstabenteuer-ist-im-playstation-store-gelandet/",
     "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
-    "storeDeals": {
-      "Forza Horizon 5 Standard Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347",
-      "Forza Horizon 5 Premium Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906",
-      "WWE 2K26 Standard Edition": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
-    }
+    "storeDeals": {}
   },
   "eaPlay": {
     "title": "FC™ 27 · 10h Trial ab 18.09.",
@@ -425,42 +351,36 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-07T14:33:53.028Z",
+    "checkedAt": "2026-10-08T12:30:59.012Z",
     "month": "Oktober",
     "year": 2026,
-    "notes": [],
-    "resolved": {
-      "storeDiscoveryMode": "dynamic-browser",
-      "storeDiscoveryStaticLinks": 1,
-      "storeDiscoveryBrowserLinks": 24,
-      "storeDiscoveryLinks": 25,
-      "storeDiscoveryVerified": 9,
-      "storeDiscoverySelected": 3
-    }
+    "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-07T14:33:53.137Z",
+    "checkedAt": "2026-10-08T12:30:59.102Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
-    "activeCampaign": true,
-    "staticLinks": 1,
-    "browserLinks": 24,
-    "links": 25,
-    "fetched": 25,
-    "verified": 9,
-    "selected": 3,
-    "mode": "dynamic-browser",
+    "activeCampaign": false,
+    "staticLinks": 0,
+    "browserLinks": 0,
+    "links": 0,
+    "fetched": 0,
+    "verified": 0,
+    "selected": 0,
+    "mode": "no-active-campaign",
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-07T14:34:21.632Z",
+    "checkedAt": "2026-10-08T12:31:08.765Z",
     "verified": 4,
     "missing": [],
-    "warnings": []
+    "warnings": [
+      "Chained Echoes: Produktidentitaet oder Cover nicht bestaetigt"
+    ]
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-07T14:33:51.660Z",
-    "date": "07.10.2026",
+    "checkedAt": "2026-10-08T12:30:57.763Z",
+    "date": "08.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -470,23 +390,23 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8a186228a34c91ac18bc1e25ea585f6ad67d52f8.png"
       },
       {
+        "title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
+        "date": "07.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/07/phoenix-cyclops-erscheint-am-2-november-in-marvel-tokon-fighting-souls/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/98097314e9d55b7d423b44f27db7f40c75413f3d.jpg"
+      },
+      {
         "title": "Warhammer Survivors: Release am 10. November bestätigt",
         "date": "06.10.2026",
         "url": "https://blog.de.playstation.com/2026/10/06/warhammer-survivors-release-am-10-november-bestaetigt/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6df24fa63706e5fc6fed616b4aa298b7d4f7e678.jpg"
-      },
-      {
-        "title": "QSSR bringt KI-Upscaling auf die PS5",
-        "date": "01.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/01/qssr-bringt-ki-upscaling-auf-die-ps5/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4810eb11f563b23a231d544aeb199371a582f811.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-07T14:34:22.364Z",
-    "berlinDate": "2026-10-07",
+    "checkedAt": "2026-10-08T12:31:09.165Z",
+    "berlinDate": "2026-10-08",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []

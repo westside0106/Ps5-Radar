@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T14:34:08.652Z",
+  "updatedAt": "2026-10-08T12:30:59.391Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -536,21 +536,21 @@
       ],
       "signal": {
         "version": 1,
-        "activeDeal": true,
+        "activeDeal": false,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
         "measurements": 14,
-        "currentPrice": 35.99,
+        "currentPrice": null,
         "lastObservedPrice": 35.99,
         "lastObservedDate": "2026-10-07",
         "radarLow": 27.99,
         "deltaFromLowPct": 28.6,
-        "discount": 60,
-        "daysRemaining": 1,
+        "discount": null,
+        "daysRemaining": null,
         "code": "wait",
         "label": "WARTEN",
-        "reason": "Der aktuelle Preis liegt 28,6 % über einem bereits gemessenen Radar-Tief.",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
         "changedToday": false,
         "previousCode": null,
         "changedAt": null
@@ -688,28 +688,38 @@
           "radarLow": 35.99,
           "discount": 60,
           "confidence": "hoch"
+        },
+        {
+          "date": "2026-10-08",
+          "code": "wait",
+          "label": "WARTEN",
+          "previousCode": "buy",
+          "currentPrice": null,
+          "radarLow": 35.99,
+          "discount": null,
+          "confidence": "hoch"
         }
       ],
       "signal": {
         "version": 1,
-        "activeDeal": true,
+        "activeDeal": false,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
         "measurements": 14,
-        "currentPrice": 35.99,
+        "currentPrice": null,
         "lastObservedPrice": 35.99,
         "lastObservedDate": "2026-10-07",
         "radarLow": 35.99,
         "deltaFromLowPct": 0,
-        "discount": 60,
-        "daysRemaining": 1,
-        "code": "buy",
-        "label": "KAUFEN",
-        "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
+        "discount": null,
+        "daysRemaining": null,
+        "code": "wait",
+        "label": "WARTEN",
+        "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
         "changedToday": true,
-        "previousCode": "wait",
-        "changedAt": "2026-10-07"
+        "previousCode": "buy",
+        "changedAt": "2026-10-08"
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0323/d808653f2c2453e79433628e31f673ef3976c6771d39228a.png"
     },
@@ -916,18 +926,18 @@
       ],
       "signal": {
         "version": 1,
-        "activeDeal": true,
+        "activeDeal": false,
         "subscriptionIncluded": true,
         "subscriptionLabel": "PS Plus Extra",
         "confidence": "niedrig",
         "measurements": 2,
-        "currentPrice": 49.99,
+        "currentPrice": null,
         "lastObservedPrice": 49.99,
         "lastObservedDate": "2026-10-07",
         "radarLow": 39.99,
         "deltaFromLowPct": 25,
-        "discount": 50,
-        "daysRemaining": 1,
+        "discount": null,
+        "daysRemaining": null,
         "code": "wait",
         "label": "ABO NUTZEN",
         "reason": "Im erfassten PS Plus Extra-Katalog enthalten. Ein Kauf ist bei passender aktiver Mitgliedschaft nicht nötig; der Storepreis bleibt nur als Marktpreis sichtbar.",
@@ -1049,9 +1059,9 @@
         "code": "wait",
         "label": "WARTEN",
         "reason": "Kein aktuell verifizierter Store-Deal im Radar.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-10-07"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202603/0401/900141a51c778ebea46b72b83fe09c4b0a0bbfbac92055e4.png"
     },
@@ -1177,14 +1187,14 @@
   "summary": {
     "titles": 12,
     "points": 83,
-    "archiveIssuesScanned": 34,
+    "archiveIssuesScanned": 35,
     "signals": {
-      "buy": 1,
+      "buy": 0,
       "watch": 0,
-      "wait": 11
+      "wait": 12
     },
-    "changedSignals": 2,
-    "newBuySignals": 1
+    "changedSignals": 1,
+    "newBuySignals": 0
   },
   "method": {
     "signalVersion": 1,
