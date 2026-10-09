@@ -1,0 +1,503 @@
+{
+  "date": "09.10.2026",
+  "edition": "AUSGABE #036",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
+  "newCount": "09.10 · LIVE",
+  "leadTitle": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
+  "leadDate": "06.10.2026",
+  "leadMeta": "PS5-Spiele Oktober 2026: Ghost of Yōtei, Dragon's Dogma 2: Dark Arisen, Star Wars: Galactic Racer und Call of Duty: Modern Warfare 4 erscheinen…",
+  "leadPrice": null,
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8a186228a34c91ac18bc1e25ea585f6ad67d52f8.png",
+  "secondary1Title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
+  "secondary1Date": "08.10.2026",
+  "secondary1Meta": "Freut euch auf „Rockbeasts“: Critical Role steigt ein, Release ist im Januar 2027 für PS5. Jetzt auf die Wunschliste setzen!",
+  "secondary1Price": null,
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1462d9c21007030d11a34576e65c529ff57484d9.jpg",
+  "secondary2Title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
+  "secondary2Date": "07.10.2026",
+  "secondary2Meta": "Hallo, Leute! Ich bin Takeshi Yamanaka, Producer von MARVEL Tōkon: Fighting Souls.",
+  "secondary2Price": null,
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/98097314e9d55b7d423b44f27db7f40c75413f3d.jpg",
+  "psplusLabel": "SEPTEMBER 2026",
+  "psplusTitle": "September-Spiele sind live",
+  "psplusText": "Verfügbar bis 05.10.",
+  "plusGames": [
+    {
+      "title": "Sniper Elite: Resistance",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "imageSource": "official-product"
+    },
+    {
+      "title": "MLB The Show 26",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
+      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "imageSource": "official-product"
+    },
+    {
+      "title": "Wobbly Life",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
+      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "imageSource": "official-product"
+    },
+    {
+      "title": "Chained Echoes",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
+      "storeUrl": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748",
+      "imageSource": "official-product"
+    }
+  ],
+  "storeTitle": "Aktuelle Store-Top-Deals",
+  "storeText": "Automatisch aus der aktuell verifizierten PlayStation-Store-Aktion ausgewählt.",
+  "storeEnd": "2026-10-22T00:59:00+02:00",
+  "deals": [
+    {
+      "title": "Forza Horizon 5 Standard Edition",
+      "platform": "PS5",
+      "price": "35,99 €",
+      "oldPrice": "89,99 €",
+      "discount": "-60 %",
+      "image": null
+    },
+    {
+      "title": "Forza Horizon 5 Premium Edition",
+      "platform": "PS5",
+      "price": "35,99 €",
+      "oldPrice": "89,99 €",
+      "discount": "-60 %",
+      "image": null
+    },
+    {
+      "title": "WWE 2K26 Standard Edition",
+      "platform": "PS5",
+      "price": "49,99 €",
+      "oldPrice": "99,99 €",
+      "discount": "-50 %",
+      "image": null
+    }
+  ],
+  "releases": [
+    {
+      "date": "09.10.",
+      "title": "Dragon’s Dogma 2: Dark Arisen"
+    },
+    {
+      "date": "14.10.",
+      "title": "Castlevania: Belmont’s Curse"
+    },
+    {
+      "date": "22.10.",
+      "title": "Final Fantasy Resonance"
+    },
+    {
+      "date": "23.10.",
+      "title": "Call of Duty: Modern Warfare 4"
+    },
+    {
+      "date": "29.10.",
+      "title": "Phantom Blade Zero"
+    }
+  ],
+  "quickItems": [
+    "Die Player’s Choice Angebote sind im PlayStation Store gelandet"
+  ],
+  "leavingTitle": "Aktuelle Store-Aktion endet bald",
+  "leavingText": "Aktuelle Store-Aktion endet am 22.10., 00:59 Uhr.",
+  "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
+  "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
+  "eaItems": [
+    "10 % auf digitale EA-Käufe",
+    "Monatliche Mitgliederbelohnungen",
+    "The Play List"
+  ],
+  "ubisoftTitle": "Ubisoft+ Classics",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftItems": [
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
+  ],
+  "radarCheck": "Stand 09.10.2026 · 9/9 Quellen erfolgreich geprüft",
+  "sourceAlerts": [
+    {
+      "title": "Die Player’s Choice Angebote sind im PlayStation Store gelandet",
+      "url": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
+      "source": "PlayStation Blog DE",
+      "category": "store"
+    },
+    {
+      "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
+      "url": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
+      "type": "editorial"
+    },
+    {
+      "title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
+      "url": "https://blog.de.playstation.com/2026/10/08/rockbeasts-critical-role-an-bord-release-im-januar-2027/",
+      "type": "editorial"
+    },
+    {
+      "title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
+      "url": "https://blog.de.playstation.com/2026/10/07/phoenix-cyclops-erscheint-am-2-november-in-marvel-tokon-fighting-souls/",
+      "type": "editorial"
+    }
+  ],
+  "editorial": [
+    {
+      "title": "Die Player’s Choice Angebote sind im PlayStation Store gelandet",
+      "url": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
+      "category": "store",
+      "score": 70
+    }
+  ],
+  "health": {
+    "status": "ok",
+    "checkedAt": "2026-10-09T14:24:42.837Z",
+    "okSources": 9,
+    "totalSources": 9,
+    "failedSources": 0,
+    "warnings": 0,
+    "lastSuccessfulCheck": "2026-10-09T14:24:03.265Z",
+    "editorialFreshness": "ok"
+  },
+  "sourceCheck": {
+    "checkedAt": "2026-10-09T14:24:03.265Z",
+    "errors": [],
+    "sources": [
+      {
+        "name": "PlayStation Blog",
+        "ok": true
+      },
+      {
+        "name": "Monats-Releases",
+        "ok": true
+      },
+      {
+        "name": "PS Plus monatlich",
+        "ok": true
+      },
+      {
+        "name": "PS Plus aktuell",
+        "ok": true
+      },
+      {
+        "name": "EA Play",
+        "ok": true
+      },
+      {
+        "name": "Ubisoft+",
+        "ok": true
+      },
+      {
+        "name": "Store: Hogwarts Legacy",
+        "ok": true
+      },
+      {
+        "name": "Store: Star Wars Outlaws",
+        "ok": true
+      },
+      {
+        "name": "Store: Red Dead Redemption",
+        "ok": true
+      }
+    ]
+  },
+  "gameDetails": {
+    "PS5-Spiele Oktober 2026: Diese Releases erwarten euch": {},
+    "Rockbeasts: Critical Role an Bord, Release im Januar 2027": {},
+    "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls": {},
+    "Sniper Elite: Resistance": {
+      "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
+      "developer": "Rebellion",
+      "genre": "Taktik-Shooter · Stealth · Action",
+      "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "REBELLION INTERACTIVE",
+      "release": "30.1.2025",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/b026676dfa9d7639fef041a9f0ed4c6d076e2ad3647eae1c.png",
+        "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202411/1909/8aafcc75d67ed0a3c4bb8410cd57ff437ae3a726da42177f.png"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=wPH9TFf6yfE",
+      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+      "title": "Sniper Elite: Resistance"
+    },
+    "MLB The Show 26": {
+      "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
+      "developer": "San Diego Studio",
+      "genre": "Sport · Baseball",
+      "description": "Baseball-Simulation von San Diego Studio mit Road to the Show, Diamond Dynasty und weiteren Einzelspieler- und Online-Modi.",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "Sony Interactive Entertainment",
+      "release": "17.3.2026",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
+        "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
+      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
+      "title": "MLB The Show 26"
+    },
+    "Wobbly Life": {
+      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "developer": "RubberBandGames",
+      "genre": "Sandbox · Adventure · Familie",
+      "description": "Offene Physik-Sandbox mit Jobs, Missionen, Fahrzeugen, Häusern und Koop für bis zu vier Spieler.",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "RUBBERBANDGAMES LTD",
+      "release": "18.9.2025",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/l2VMZjLR9en9orx3nHGCaj8U.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/3650ac7e207de17c9aa1e057339b9e5b405c97a427af26de.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/b44f53cd0e854a7e1663d3ea5908708161c3a8972d1c95c5.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/6d5fc87bf96131851634a38b4e50c1d18b1697b9f5054891.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/4a6dcb161d41908a172df2bc0b2e435d79c454198de1c08f.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/9a3b72705f0abf31b9997bddf3e54b88883dfefcee8af8a5.jpg"
+      ],
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
+      "title": "Wobbly Life"
+    },
+    "Chained Echoes": {
+      "pageUrl": "https://www.playstation.com/de-de/games/chained-echoes/",
+      "developer": "Matthias Linda",
+      "genre": "Rollenspiel · JRPG-inspiriert",
+      "description": "Storyfokussiertes 16-Bit-Rollenspiel mit rundenbasierten Kämpfen, Fantasywelt, Mechs und einer Reise durch den Kontinent Valandis.",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "publisher": "DECK13 INTERACTIVE",
+      "release": "7.12.2022",
+      "platform": "PS4",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/2dmcrpRqwwcV89IGO9TqQsNd.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202507/0913/3bfc69e8efb69db85ffef2b61280c9a9df6491d6af7b947e.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/this-month-on-playstation-cross-sell-background-block-desktop-01-en-04oct22",
+        "https://gmedia.playstation.com/is/image/SIEPDC/best-jrpgs-keyart-02-en-30aug22",
+        "https://gmedia.playstation.com/is/image/SIEPDC/loader-spinner-dark"
+      ],
+      "storeUrl": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
+      "title": "Chained Echoes"
+    },
+    "Forza Horizon 5 Standard Edition": {
+      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
+      "publisher": "Microsoft Corporation",
+      "genre": "Rennspiele",
+      "release": "28.4.2025",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202503/2417/4d27754720206805d54f5beddfcc0817700af978a56ff0db.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347"
+    },
+    "Forza Horizon 5 Premium Edition": {
+      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
+      "publisher": "Microsoft Corporation",
+      "genre": "Rennspiele",
+      "release": "24.4.2025",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/0c5df2b67b23263d055f3b78aeb77a6ce4668bb078fced77.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
+    },
+    "WWE 2K26 Standard Edition": {
+      "description": "Die Show endet nie",
+      "publisher": "Take-Two",
+      "genre": "Sport",
+      "release": "12.3.2026",
+      "platform": "PS5",
+      "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/1209/71bc53b949514603757703a1767b6c20a364f90241e5cb52.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/7c1c1c824ad4a78e6c563156bfd05573fffc0edc2e3b729c.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/599e0926688415049fb015792ab762f0a840621161cd3f2f.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/95670d4e001ff0093e64d07ed44f258ba5d88a66778f479d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/57440b3be19235248f3fee53047b21c9cc67641954b99032.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/ab700572fee7600b8af42c89daf723690a61803dcaf9955e.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
+    },
+    "Dragon’s Dogma 2: Dark Arisen": {
+      "release": "09.10.2026"
+    },
+    "Castlevania: Belmont’s Curse": {
+      "release": "14.10.2026"
+    },
+    "Final Fantasy Resonance": {
+      "release": "22.10.2026"
+    },
+    "Call of Duty: Modern Warfare 4": {
+      "release": "23.10.2026"
+    },
+    "Phantom Blade Zero": {
+      "release": "29.10.2026"
+    },
+    "EA SPORTS FC 27": {
+      "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
+      "developer": "EA SPORTS",
+      "genre": "Sport · Fußball",
+      "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
+      "publisher": "EA Swiss Sarl",
+      "release": "18.9.2026",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
+        "https://i.ytimg.com/vi_webp/LoqWKZ1kjio/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-02-en-13jul26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=LoqWKZ1kjio"
+    }
+  },
+  "enrichment": {
+    "checkedAt": "2026-10-09T14:24:32.146Z",
+    "titles": 16,
+    "fetched": 8,
+    "enriched": 13,
+    "warnings": []
+  },
+  "resolvedSources": {
+    "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
+    "psPlusStoreUrls": {
+      "Sniper Elite: Resistance": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "MLB The Show 26": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "Wobbly Life": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "Chained Echoes": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748"
+    },
+    "monthlyReleases": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
+    "releaseStoreUrls": {
+      "Ghost of Yōtei: Complete Edition": "https://store.playstation.com/product/UP9000-PPSA26344_00-GHOST2CE00000000",
+      "Ace Combat 8: Wings of Theve": "https://store.playstation.com/product/JP0700-PPSA24913_00-MAINGAME00000000",
+      "Star Wars: Galactic Racer": "https://store.playstation.com/product/UP8737-PPSA28416_00-SWGALACTICRACER1",
+      "Clive Barker’s Hellraiser: Revival": "https://store.playstation.com/product/EP6853-PPSA25642_00-0082868685413873",
+      "Dragon’s Dogma 2: Dark Arisen": "https://store.playstation.com/product/EP0102-PPSA09664_00-DD2DA00000000000",
+      "Castlevania: Belmont’s Curse": "https://store.playstation.com/product/JP0101-PPSA35399_00-CVBCAPP000000000",
+      "Final Fantasy Resonance": "https://store.playstation.com/product/JP0082-PPSA31544_00-FFRSSTDWW0000000",
+      "Call of Duty: Modern Warfare 4": "https://store.playstation.com/product/EP0002-PPSA07950_00-CODMW4STANDARD01",
+      "Phantom Blade Zero": "https://store.playstation.com/product/UB2134-PPSA34579_00-0622032276386943"
+    },
+    "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
+    "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
+    "storeCampaign": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
+    "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "storeDeals": {
+      "Forza Horizon 5 Standard Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347",
+      "Forza Horizon 5 Premium Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906",
+      "WWE 2K26 Standard Edition": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
+    }
+  },
+  "eaPlay": {
+    "title": "FC™ 27 · 10h Trial ab 18.09.",
+    "trial": null,
+    "items": [
+      "10 % auf digitale EA-Käufe",
+      "Monatliche Mitgliederbelohnungen",
+      "The Play List"
+    ],
+    "sourceUrl": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play"
+  },
+  "ubisoftPlus": {
+    "title": "Ubisoft+ Classics",
+    "price": "7,99 €",
+    "items": [
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
+    ],
+    "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
+  },
+  "automationV2": {
+    "version": 2,
+    "checkedAt": "2026-10-09T14:24:17.363Z",
+    "month": "Oktober",
+    "year": 2026,
+    "notes": [],
+    "resolved": {
+      "storeDiscoveryMode": "dynamic-browser",
+      "storeDiscoveryStaticLinks": 1,
+      "storeDiscoveryBrowserLinks": 24,
+      "storeDiscoveryLinks": 25,
+      "storeDiscoveryVerified": 8,
+      "storeDiscoverySelected": 3
+    }
+  },
+  "storeDiscovery": {
+    "checkedAt": "2026-10-09T14:24:17.512Z",
+    "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "activeCampaign": true,
+    "staticLinks": 1,
+    "browserLinks": 24,
+    "links": 25,
+    "fetched": 25,
+    "verified": 8,
+    "selected": 3,
+    "mode": "dynamic-browser",
+    "warnings": []
+  },
+  "mediaValidation": {
+    "checkedAt": "2026-10-09T14:24:42.279Z",
+    "verified": 4,
+    "missing": [],
+    "warnings": [
+      "Chained Echoes: Produktidentitaet oder Cover nicht bestaetigt"
+    ]
+  },
+  "editorialFreshness": {
+    "status": "ok",
+    "checkedAt": "2026-10-09T14:24:14.850Z",
+    "date": "09.10.2026",
+    "maxAgeDays": 21,
+    "selected": [
+      {
+        "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
+        "date": "06.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8a186228a34c91ac18bc1e25ea585f6ad67d52f8.png"
+      },
+      {
+        "title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
+        "date": "08.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/08/rockbeasts-critical-role-an-bord-release-im-januar-2027/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1462d9c21007030d11a34576e65c529ff57484d9.jpg"
+      },
+      {
+        "title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
+        "date": "07.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/07/phoenix-cyclops-erscheint-am-2-november-in-marvel-tokon-fighting-souls/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/98097314e9d55b7d423b44f27db7f40c75413f3d.jpg"
+      }
+    ]
+  },
+  "temporalCheck": {
+    "status": "ok",
+    "checkedAt": "2026-10-08T14:37:36.787Z",
+    "berlinDate": "2026-10-08",
+    "newPostsToday": 0,
+    "staleRelativeCopyFixed": 0,
+    "errors": []
+  }
+}

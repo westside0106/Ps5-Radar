@@ -1,8 +1,18 @@
 {
-  "checkedAt": "2026-10-08T14:37:14.976Z",
+  "checkedAt": "2026-10-09T14:24:03.265Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Die Player’s Choice Angebote sind im PlayStation Store gelandet",
+        "link": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
+        "pubDate": "Fri, 09 Oct 2026 11:20:39 +0000"
+      },
+      {
+        "title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
+        "link": "https://blog.de.playstation.com/2026/10/08/rockbeasts-critical-role-an-bord-release-im-januar-2027/",
+        "pubDate": "Thu, 08 Oct 2026 17:00:00 +0000"
+      },
       {
         "title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
         "link": "https://blog.de.playstation.com/2026/10/07/phoenix-cyclops-erscheint-am-2-november-in-marvel-tokon-fighting-souls/",
@@ -42,23 +52,26 @@
         "title": "Elta: Defy All Gods vereint Kampfkunst und Platforming",
         "link": "https://blog.de.playstation.com/2026/10/01/elta-defy-all-gods-vereint-kampfkunst-und-platforming/",
         "pubDate": "Thu, 01 Oct 2026 16:37:52 +0000"
-      },
-      {
-        "title": "Rückkehr nach Fabletown: „The Wolf Among Us Remastered“ erscheint am 29.10.",
-        "link": "https://blog.de.playstation.com/2026/10/01/rueckkehr-nach-fabletown-the-wolf-among-us-remastered-erscheint-am-29-10/",
-        "pubDate": "Thu, 01 Oct 2026 16:30:03 +0000"
-      },
-      {
-        "title": "QSSR bringt KI-Upscaling auf die PS5",
-        "link": "https://blog.de.playstation.com/2026/10/01/qssr-bringt-ki-upscaling-auf-die-ps5/",
-        "pubDate": "Thu, 01 Oct 2026 16:20:42 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Die Player’s Choice Angebote sind im PlayStation Store gelandet",
+        "link": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
+        "pubDate": "Fri, 09 Oct 2026 11:20:39 +0000",
+        "category": "store"
+      },
+      {
+        "title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
+        "link": "https://blog.de.playstation.com/2026/10/08/rockbeasts-critical-role-an-bord-release-im-januar-2027/",
+        "pubDate": "Thu, 08 Oct 2026 17:00:00 +0000",
+        "category": "release"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 208083,
+    "bytes": 208516,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +122,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 174674,
+    "bytes": 175107,
     "updated": true,
     "parsed": {
       "games": [
@@ -138,7 +151,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-08T14:37:36.787Z",
+      "checkedAt": "2026-10-09T14:24:43.010Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -171,7 +184,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163243,
+    "bytes": 163235,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
