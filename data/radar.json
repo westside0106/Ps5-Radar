@@ -1,8 +1,8 @@
 {
-  "date": "09.10.2026",
-  "edition": "AUSGABE #036",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "09.10 · LIVE",
+  "date": "10.10.2026",
+  "edition": "AUSGABE #037",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "10.10 · LIVE",
   "leadTitle": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
   "leadDate": "06.10.2026",
   "leadMeta": "PS5-Spiele Oktober 2026: Ghost of Yōtei, Dragon's Dogma 2: Dark Arisen, Star Wars: Galactic Racer und Call of Duty: Modern Warfare 4 erscheinen…",
@@ -78,10 +78,6 @@
   ],
   "releases": [
     {
-      "date": "09.10.",
-      "title": "Dragon’s Dogma 2: Dark Arisen"
-    },
-    {
       "date": "14.10.",
       "title": "Castlevania: Belmont’s Curse"
     },
@@ -98,9 +94,7 @@
       "title": "Phantom Blade Zero"
     }
   ],
-  "quickItems": [
-    "Die Player’s Choice Angebote sind im PlayStation Store gelandet"
-  ],
+  "quickItems": [],
   "leavingTitle": "Aktuelle Store-Aktion endet bald",
   "leavingText": "Aktuelle Store-Aktion endet am 22.10., 00:59 Uhr.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
@@ -117,14 +111,8 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 09.10.2026 · 9/9 Quellen · Store 8 geprüft · 13/16 Details",
+  "radarCheck": "Stand 10.10.2026 · 9/9 Quellen · Store 8 geprüft · 12/15 Details",
   "sourceAlerts": [
-    {
-      "title": "Die Player’s Choice Angebote sind im PlayStation Store gelandet",
-      "url": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
-      "source": "PlayStation Blog DE",
-      "category": "store"
-    },
     {
       "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
       "url": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
@@ -141,17 +129,10 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Die Player’s Choice Angebote sind im PlayStation Store gelandet",
-      "url": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
-      "category": "store",
-      "score": 70
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-09T14:24:55.187Z",
+    "checkedAt": "2026-10-10T06:05:54.586Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -159,16 +140,16 @@
     "storeDiscoveryMode": "dynamic-browser",
     "storeProductsVerified": 8,
     "storeDealsSelected": 3,
-    "enrichedTitles": 13,
-    "detailTitles": 16,
+    "enrichedTitles": 12,
+    "detailTitles": 15,
     "automationNotes": 0,
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-09T14:24:55.187Z"
+    "lastSuccessfulCheck": "2026-10-10T06:05:54.586Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-09T14:24:55.187Z",
+    "checkedAt": "2026-10-10T06:05:54.586Z",
     "errors": [],
     "sources": [
       {
@@ -347,9 +328,6 @@
       ],
       "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
     },
-    "Dragon’s Dogma 2: Dark Arisen": {
-      "release": "09.10.2026"
-    },
     "Castlevania: Belmont’s Curse": {
       "release": "14.10.2026"
     },
@@ -382,10 +360,10 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-09T14:24:32.146Z",
-    "titles": 16,
+    "checkedAt": "2026-10-10T06:05:32.052Z",
+    "titles": 15,
     "fetched": 8,
-    "enriched": 13,
+    "enriched": 12,
     "warnings": []
   },
   "resolvedSources": {
@@ -440,7 +418,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-09T14:24:17.363Z",
+    "checkedAt": "2026-10-10T06:05:17.307Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -454,7 +432,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-09T14:24:17.512Z",
+    "checkedAt": "2026-10-10T06:05:17.400Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -467,7 +445,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-09T14:24:42.279Z",
+    "checkedAt": "2026-10-10T06:05:42.511Z",
     "verified": 4,
     "missing": [],
     "warnings": [
@@ -476,8 +454,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-09T14:24:14.850Z",
-    "date": "09.10.2026",
+    "checkedAt": "2026-10-10T06:05:15.868Z",
+    "date": "10.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -502,9 +480,9 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-09T14:24:43.010Z",
-    "berlinDate": "2026-10-09",
-    "newPostsToday": 1,
+    "checkedAt": "2026-10-10T06:05:43.429Z",
+    "berlinDate": "2026-10-10",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }

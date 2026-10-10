@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T14:24:32.082Z",
+  "updatedAt": "2026-10-10T06:05:32.007Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -503,6 +503,12 @@
           "price": 35.99,
           "oldPrice": 89.99,
           "discount": 60
+        },
+        {
+          "date": "2026-10-10",
+          "price": 35.99,
+          "oldPrice": 89.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Standard Edition",
@@ -546,14 +552,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
-        "measurements": 15,
+        "measurements": 16,
         "currentPrice": 35.99,
         "lastObservedPrice": 35.99,
-        "lastObservedDate": "2026-10-09",
+        "lastObservedDate": "2026-10-10",
         "radarLow": 27.99,
         "deltaFromLowPct": 28.6,
         "discount": 60,
-        "daysRemaining": 13,
+        "daysRemaining": 12,
         "code": "wait",
         "label": "WARTEN",
         "reason": "Der aktuelle Preis liegt 28,6 % über einem bereits gemessenen Radar-Tief.",
@@ -655,6 +661,12 @@
           "price": 35.99,
           "oldPrice": 89.99,
           "discount": 60
+        },
+        {
+          "date": "2026-10-10",
+          "price": 35.99,
+          "oldPrice": 89.99,
+          "discount": 60
         }
       ],
       "title": "Forza Horizon 5 Premium Edition",
@@ -728,20 +740,20 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "hoch",
-        "measurements": 15,
+        "measurements": 16,
         "currentPrice": 35.99,
         "lastObservedPrice": 35.99,
-        "lastObservedDate": "2026-10-09",
+        "lastObservedDate": "2026-10-10",
         "radarLow": 35.99,
         "deltaFromLowPct": 0,
         "discount": 60,
-        "daysRemaining": 13,
+        "daysRemaining": 12,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -60 % deutlich reduziert.",
-        "changedToday": true,
-        "previousCode": "wait",
-        "changedAt": "2026-10-09"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0323/d808653f2c2453e79433628e31f673ef3976c6771d39228a.png"
     },
@@ -925,6 +937,12 @@
           "price": 49.99,
           "oldPrice": 99.99,
           "discount": 50
+        },
+        {
+          "date": "2026-10-10",
+          "price": 49.99,
+          "oldPrice": 99.99,
+          "discount": 50
         }
       ],
       "title": "WWE 2K26 Standard Edition",
@@ -958,14 +976,14 @@
         "subscriptionIncluded": true,
         "subscriptionLabel": "PS Plus Extra",
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 49.99,
         "lastObservedPrice": 49.99,
-        "lastObservedDate": "2026-10-09",
+        "lastObservedDate": "2026-10-10",
         "radarLow": 39.99,
         "deltaFromLowPct": 25,
         "discount": 50,
-        "daysRemaining": 13,
+        "daysRemaining": 12,
         "code": "wait",
         "label": "ABO NUTZEN",
         "reason": "Im erfassten PS Plus Extra-Katalog enthalten. Ein Kauf ist bei passender aktiver Mitgliedschaft nicht nötig; der Storepreis bleibt nur als Marktpreis sichtbar.",
@@ -1214,15 +1232,15 @@
   },
   "summary": {
     "titles": 12,
-    "points": 86,
-    "archiveIssuesScanned": 36,
+    "points": 89,
+    "archiveIssuesScanned": 37,
     "signals": {
       "buy": 1,
       "watch": 0,
       "wait": 11
     },
-    "changedSignals": 1,
-    "newBuySignals": 1
+    "changedSignals": 0,
+    "newBuySignals": 0
   },
   "method": {
     "signalVersion": 1,
