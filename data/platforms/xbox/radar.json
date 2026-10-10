@@ -3,35 +3,35 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-09T14:25:00.089Z",
+  "checkedAt": "2026-10-10T13:47:50.102Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 2091,
+    "count": 2068,
     "views": {
       "deals": {
-        "expected": 1453,
-        "observed": 1453,
-        "count": 1453,
+        "expected": 1430,
+        "observed": 1430,
+        "count": 1430,
         "complete": true
       },
       "gamepass-console": {
-        "expected": 525,
-        "observed": 525,
-        "count": 525,
-        "complete": true
+        "expected": null,
+        "observed": 0,
+        "count": 0,
+        "complete": false
       },
       "gamepass-ultimate": {
-        "expected": 692,
+        "expected": 693,
         "observed": 692,
         "count": 692,
-        "complete": true
+        "complete": false
       },
       "ea-play": {
-        "expected": 99,
-        "observed": 99,
-        "count": 99,
-        "complete": true
+        "expected": null,
+        "observed": 0,
+        "count": 0,
+        "complete": false
       },
       "ubisoft-plus": {
         "expected": 117,
@@ -41,6 +41,11 @@
       }
     },
     "errors": [
+      "gamepass-console: gamepass-console: Anzahl nicht von der Ausgangszahl unterscheidbar",
+      "ea-play: ea-play: Anzahl nicht von der Ausgangszahl unterscheidbar",
+      "gamepass-console: 0/? Karten gesehen",
+      "gamepass-ultimate: 692/693 Karten gesehen",
+      "ea-play: 0/? Karten gesehen",
       "ubisoft-plus: 113/117 Karten gesehen"
     ]
   },
@@ -51,21 +56,10 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-09T14:25:00.089Z",
+      "observedAt": "2026-10-10T13:47:50.102Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
-    },
-    {
-      "id": "view:gamepass-console",
-      "sourceId": "xbox-all-games-de",
-      "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
-      "level": "store",
-      "region": "DE",
-      "observedAt": "2026-10-09T14:25:00.089Z",
-      "publishedAt": null,
-      "subject": null,
-      "note": "Filter Abonnements = Game Pass für Konsole, Ziel xbox-series"
     },
     {
       "id": "view:gamepass-ultimate",
@@ -73,21 +67,10 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-09T14:25:00.089Z",
+      "observedAt": "2026-10-10T13:47:50.102Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
-    },
-    {
-      "id": "view:ea-play",
-      "sourceId": "xbox-all-games-de",
-      "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
-      "level": "store",
-      "region": "DE",
-      "observedAt": "2026-10-09T14:25:00.089Z",
-      "publishedAt": null,
-      "subject": null,
-      "note": "Filter Abonnements = EA Play, Ziel xbox-series"
     },
     {
       "id": "view:ubisoft-plus",
@@ -95,7 +78,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-09T14:25:00.089Z",
+      "observedAt": "2026-10-10T13:47:50.102Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -113,9 +96,7 @@
       ],
       "priceMinor": 3599,
       "regularPriceMinor": 5999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -130,8 +111,7 @@
       "priceMinor": 839,
       "regularPriceMinor": 2799,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -164,24 +144,6 @@
       "regularPriceMinor": 2999,
       "genres": [
         "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:bq4jlqbgjdt1",
-      "id": "bq4jlqbgjdt1",
-      "title": "#IDARB: Tightwad Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/idarb-tightwad-edition/bq4jlqbgjdt1",
-      "cover": "https://store-images.s-microsoft.com/image/apps.36948.68344574726277592.f5f3fe5c-524b-48c0-ac37-d60e210b6828.23a249eb-440c-4673-a037-9cf167bbecae?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1079,
-      "regularPriceMinor": 1799,
-      "genres": [
-        "Action & Abenteuer",
-        "Platformer",
-        "Sport"
       ],
       "services": []
     },
@@ -250,7 +212,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -267,7 +228,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -361,7 +321,6 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -381,7 +340,6 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -401,7 +359,6 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -456,7 +413,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -542,7 +498,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -559,7 +514,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -595,7 +549,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -612,7 +565,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -629,7 +581,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -730,7 +681,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -880,7 +830,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -897,7 +846,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -914,7 +862,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -931,7 +878,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1151,7 +1097,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1185,7 +1130,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1217,9 +1161,7 @@
       ],
       "priceMinor": 749,
       "regularPriceMinor": 1499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -1305,7 +1247,6 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -1342,7 +1283,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1378,23 +1318,6 @@
       "genres": [
         "Action & Abenteuer",
         "Andere"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9p46h2gwvzr7",
-      "id": "9p46h2gwvzr7",
-      "title": "Angle Of Attack",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/angle-of-attack/9p46h2gwvzr7",
-      "cover": "https://store-images.s-microsoft.com/image/apps.37747.14594379473644714.c101c264-dc3f-446d-a835-f0bebe6e3d28.954e0fc3-6bac-4e7e-b9e8-89325b41afaf?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 479,
-      "regularPriceMinor": 599,
-      "genres": [
-        "Action & Abenteuer",
-        "Shooter"
       ],
       "services": []
     },
@@ -1463,7 +1386,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1512,7 +1434,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1530,7 +1451,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1633,7 +1553,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1718,11 +1637,9 @@
       "regularPriceMinor": 4499,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1739,7 +1656,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1756,7 +1672,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1773,7 +1688,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1807,7 +1721,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1840,7 +1753,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1957,7 +1869,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1991,7 +1902,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2123,7 +2033,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2224,7 +2133,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2242,7 +2150,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2377,7 +2284,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2415,152 +2321,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:c3nd23hm1j1p",
-      "id": "c3nd23hm1j1p",
-      "title": "Atari Flashback Classics Vol. 1",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/atari-flashback-classics-vol-1/c3nd23hm1j1p",
-      "cover": "https://store-images.s-microsoft.com/image/apps.26789.66744600691072924.13440e19-53a8-402b-9ae0-5b95374fca5f.a919ce92-22a0-435f-b1ed-51afef23595e?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 599,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Action & Abenteuer",
-        "Andere",
-        "Familie & Kinder",
-        "Klassiker",
-        "Rätsel & Wissen"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:c3gvmvxvv7ps",
-      "id": "c3gvmvxvv7ps",
-      "title": "Atari Flashback Classics Vol. 2",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/atari-flashback-classics-vol-2/c3gvmvxvv7ps",
-      "cover": "https://store-images.s-microsoft.com/image/apps.41943.66008666199323421.c9db3145-c5b9-4878-9341-2f38506e9f4b.8e018371-35b7-41ac-9984-ffc3896efa06?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 599,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Klassiker"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:bqzxbczxhhmp",
-      "id": "bqzxbczxhhmp",
-      "title": "Atari Flashback Classics Vol. 3",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/atari-flashback-classics-vol-3/bqzxbczxhhmp",
-      "cover": "https://store-images.s-microsoft.com/image/apps.11086.68825642283323796.3a6ee703-1002-4146-be3c-91633c1ac9c8.95d5b7c6-a887-4247-b80b-ee50a4d73c55?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 599,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Action & Abenteuer",
-        "Andere",
-        "Familie & Kinder",
-        "Klassiker"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9mz0xf0nb5z7",
-      "id": "9mz0xf0nb5z7",
-      "title": "Atari Recharged Bundle: Asteroids + Breakout",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/atari-recharged-bundle-asteroids-breakout/9mz0xf0nb5z7",
-      "cover": "https://store-images.s-microsoft.com/image/apps.62854.13884226996828502.33ba82cf-98e8-44d6-b4df-9fe490705fa6.23ebbf9a-9879-4eba-9a18-62606167e21c?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 449,
-      "regularPriceMinor": 1799,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Rätsel & Wissen",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9p5dlbqp2525",
-      "id": "9p5dlbqp2525",
-      "title": "Atari Recharged Bundle: Berzerk + Quantum",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/atari-recharged-bundle-berzerk-quantum/9p5dlbqp2525",
-      "cover": "https://store-images.s-microsoft.com/image/apps.39459.14570792307451826.a0951737-ec6a-4df5-8e47-e8460e718508.f1dbb4ea-cd3b-4f03-b7b4-3039f19676a9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 449,
-      "regularPriceMinor": 1799,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9pgl25p5zcsj",
-      "id": "9pgl25p5zcsj",
-      "title": "Atari Recharged Bundle: Centipede + Black Widow",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/atari-recharged-bundle-centipede-black-widow/9pgl25p5zcsj",
-      "cover": "https://store-images.s-microsoft.com/image/apps.3574.14183629113583475.079d55ce-9eb4-4383-9c42-cb9b555febf6.13727365-fb1f-4b52-8a15-defb8c316908?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 449,
-      "regularPriceMinor": 1799,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9mz41r7bzr3l",
-      "id": "9mz41r7bzr3l",
-      "title": "Atari Recharged Bundle: Gravitar + Missile Command",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/atari-recharged-bundle-gravitar-missile-command/9mz41r7bzr3l",
-      "cover": "https://store-images.s-microsoft.com/image/apps.33207.13877616888033671.55b56d29-18e0-43ac-8655-e3dd19165934.284261a9-a35c-4851-ae7e-bc5145a89655?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 449,
-      "regularPriceMinor": 1799,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9njr0bz8dzpw",
-      "id": "9njr0bz8dzpw",
-      "title": "Atari Recharged Bundle: Yars + Caverns of Mars",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/atari-recharged-bundle-yars-caverns-of-mars/9njr0bz8dzpw",
-      "cover": "https://store-images.s-microsoft.com/image/apps.58495.13675877084086242.81e1f45b-3ead-4f46-871a-df9bf9aa2232.15c44b4d-42a4-40f4-84d2-812612885346?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 449,
-      "regularPriceMinor": 1799,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9p6bbfrv8qwn",
       "id": "9p6bbfrv8qwn",
       "title": "Atelier Yumia: Die Alchemistin der Erinnerungen und das erträumte Land",
@@ -2571,9 +2331,7 @@
       ],
       "priceMinor": 3499,
       "regularPriceMinor": 6999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -2587,9 +2345,7 @@
       ],
       "priceMinor": 2999,
       "regularPriceMinor": 5999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -2603,9 +2359,7 @@
       ],
       "priceMinor": 5999,
       "regularPriceMinor": 11999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -2619,9 +2373,7 @@
       ],
       "priceMinor": 5499,
       "regularPriceMinor": 10999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -2637,7 +2389,6 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -2706,7 +2457,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2740,7 +2490,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2755,11 +2504,8 @@
       ],
       "priceMinor": 2999,
       "regularPriceMinor": 4999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2825,7 +2571,6 @@
       "regularPriceMinor": 1899,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -2892,7 +2637,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2909,7 +2653,6 @@
       "regularPriceMinor": 6999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -2927,7 +2670,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2944,7 +2686,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -2996,7 +2737,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3013,7 +2753,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3030,7 +2769,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3047,7 +2785,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3064,7 +2801,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3081,7 +2817,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3098,7 +2833,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3152,7 +2886,6 @@
         "Familie & Kinder"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3203,7 +2936,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3270,7 +3002,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3287,7 +3018,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3304,7 +3034,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3321,7 +3050,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3338,7 +3066,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3355,7 +3082,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3372,7 +3098,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3393,7 +3118,6 @@
         "Platformer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3444,7 +3168,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3544,11 +3267,9 @@
       "priceMinor": 4124,
       "regularPriceMinor": 5499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3564,8 +3285,7 @@
       "priceMinor": 4761,
       "regularPriceMinor": 6349,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -3582,7 +3302,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3634,7 +3353,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3668,7 +3386,6 @@
       "regularPriceMinor": 839,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -3756,7 +3473,6 @@
         "Rätsel & Wissen"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3773,7 +3489,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3810,7 +3525,6 @@
         "Familie & Kinder"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -3866,24 +3580,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9nch4ddsvvpv",
-      "id": "9nch4ddsvvpv",
-      "title": "Berzerk: Recharged",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/berzerk-recharged/9nch4ddsvvpv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.23381.13564051124214607.e69f0fad-72e6-40e1-a980-596c78a223c5.41282d94-d9dc-44e4-9033-8cc924fd0917?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 299,
-      "regularPriceMinor": 999,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9ppfbqg81q5j",
       "id": "9ppfbqg81q5j",
       "title": "Besiege Console",
@@ -3910,9 +3606,7 @@
       ],
       "priceMinor": 599,
       "regularPriceMinor": 1999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -3927,8 +3621,7 @@
       "priceMinor": 899,
       "regularPriceMinor": 1799,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -4011,9 +3704,7 @@
       ],
       "priceMinor": 999,
       "regularPriceMinor": 3999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -4027,9 +3718,7 @@
       ],
       "priceMinor": 2659,
       "regularPriceMinor": 3799,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -4043,9 +3732,7 @@
       ],
       "priceMinor": 7699,
       "regularPriceMinor": 10999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -4059,9 +3746,7 @@
       ],
       "priceMinor": 499,
       "regularPriceMinor": 999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -4077,27 +3762,8 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nql6r3tf299",
-      "id": "9nql6r3tf299",
-      "title": "Black Widow: Recharged",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/black-widow-recharged/9nql6r3tf299",
-      "cover": "https://store-images.s-microsoft.com/image/apps.42999.13767731964887616.13c65c4b-8340-41ec-8230-dc510402f32f.0c909ef3-ac82-45e0-b59a-1a21c6a29121?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 184,
-      "regularPriceMinor": 921,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Shooter"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:btcs0lp052hl",
@@ -4112,7 +3778,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4213,8 +3878,7 @@
       "priceMinor": 949,
       "regularPriceMinor": 3799,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -4249,11 +3913,9 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Platformer",
-        "Rollenspiele"
+        "Platformer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4303,7 +3965,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4320,7 +3981,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4337,7 +3997,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4371,7 +4030,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4437,9 +4095,7 @@
       ],
       "priceMinor": 499,
       "regularPriceMinor": 1999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -4455,7 +4111,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4475,7 +4130,6 @@
         "Familie & Kinder"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4620,7 +4274,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4693,24 +4346,6 @@
       ]
     },
     {
-      "key": "xbox:product:9p0mt9154xf4",
-      "id": "9p0mt9154xf4",
-      "title": "Bread & Fred",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/bread-fred/9p0mt9154xf4",
-      "cover": "https://store-images.s-microsoft.com/image/apps.53222.14523964839100845.d9995167-7251-4a29-b27d-40706391ed23.875dcdf9-4009-4971-9552-d4c02d2beab9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 974,
-      "regularPriceMinor": 1499,
-      "genres": [
-        "Action & Abenteuer",
-        "Familie & Kinder",
-        "Platformer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9n6hwmgbw7t1",
       "id": "9n6hwmgbw7t1",
       "title": "Breakers Collection",
@@ -4724,24 +4359,6 @@
       "genres": [
         "Action & Abenteuer",
         "Kampfspiele"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9nkfrjlg0r17",
-      "id": "9nkfrjlg0r17",
-      "title": "Breakout Beyond",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/breakout-beyond/9nkfrjlg0r17",
-      "cover": "https://store-images.s-microsoft.com/image/apps.8431.13657610433890886.d75f46a2-b1e8-4fc3-b47b-6434d6da605b.5cce06e4-a319-4857-a820-ca866c017c51?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 749,
-      "regularPriceMinor": 1499,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Rätsel & Wissen"
       ],
       "services": []
     },
@@ -4774,7 +4391,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4791,7 +4407,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4825,11 +4440,9 @@
       "genres": [
         "Action & Abenteuer",
         "Kampfspiele",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4847,7 +4460,6 @@
       "genres": [
         "Action & Abenteuer",
         "Kampfspiele",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -4884,7 +4496,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4920,7 +4531,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -4969,7 +4579,6 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -5025,7 +4634,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5077,7 +4685,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5094,7 +4701,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5111,7 +4717,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5128,7 +4733,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5145,7 +4749,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5162,7 +4765,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5179,7 +4781,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5196,7 +4797,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5213,7 +4813,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5230,7 +4829,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5247,7 +4845,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5264,7 +4861,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5281,7 +4877,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5298,7 +4893,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5315,7 +4909,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5332,7 +4925,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5349,7 +4941,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5366,7 +4957,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5399,7 +4989,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5420,7 +5009,6 @@
         "Rätsel & Wissen"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5437,7 +5025,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5632,7 +5219,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5768,8 +5354,7 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Action & Abenteuer",
-        "Familie & Kinder",
-        "Rollenspiele"
+        "Familie & Kinder"
       ],
       "services": []
     },
@@ -5823,8 +5408,7 @@
       "priceMinor": 1749,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -5925,8 +5509,7 @@
       "priceMinor": 404,
       "regularPriceMinor": 2699,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -5977,7 +5560,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -5992,9 +5574,7 @@
       ],
       "priceMinor": 749,
       "regularPriceMinor": 1499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -6026,8 +5606,7 @@
       "priceMinor": 749,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -6063,7 +5642,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6080,7 +5658,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6096,8 +5673,7 @@
       "priceMinor": 599,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -6113,8 +5689,7 @@
       "priceMinor": 1249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -6130,8 +5705,7 @@
       "priceMinor": 1799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -6148,7 +5722,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6164,8 +5737,7 @@
       "priceMinor": 4724,
       "regularPriceMinor": 6299,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -6181,7 +5753,6 @@
       "priceMinor": 699,
       "regularPriceMinor": 3499,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -6199,7 +5770,6 @@
       "priceMinor": 799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -6217,7 +5787,6 @@
       "priceMinor": 999,
       "regularPriceMinor": 4999,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -6270,7 +5839,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6308,7 +5876,6 @@
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6375,8 +5942,7 @@
       "priceMinor": 5399,
       "regularPriceMinor": 8999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -6523,7 +6089,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6677,7 +6242,6 @@
       "regularPriceMinor": 2999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter",
         "Simulation"
       ],
@@ -6696,7 +6260,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6713,7 +6276,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6730,7 +6292,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6747,7 +6308,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6801,7 +6361,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6817,7 +6376,6 @@
       "priceMinor": 1799,
       "regularPriceMinor": 2999,
       "genres": [
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -6836,8 +6394,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Familie & Kinder",
-        "Rollenspiele"
+        "Familie & Kinder"
       ],
       "services": []
     },
@@ -6888,7 +6445,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6905,7 +6461,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -6994,7 +6549,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7011,7 +6565,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7028,7 +6581,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7045,7 +6597,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7062,7 +6613,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7079,7 +6629,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7100,7 +6649,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7134,7 +6682,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7217,7 +6764,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7236,7 +6782,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7272,7 +6817,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7305,7 +6849,6 @@
       "priceMinor": 499,
       "regularPriceMinor": 1999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -7322,7 +6865,6 @@
       "priceMinor": 999,
       "regularPriceMinor": 4999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -7339,7 +6881,6 @@
       "priceMinor": 5249,
       "regularPriceMinor": 7499,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -7376,7 +6917,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7393,7 +6933,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7458,7 +6997,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7628,7 +7166,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7715,8 +7252,7 @@
       "priceMinor": 1099,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -7787,7 +7323,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7853,7 +7388,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7870,7 +7404,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7935,7 +7468,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -7969,7 +7501,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8082,7 +7613,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8099,7 +7629,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8116,7 +7645,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8133,7 +7661,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8150,7 +7677,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8184,7 +7710,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8200,8 +7725,7 @@
       "priceMinor": 1644,
       "regularPriceMinor": 2349,
       "genres": [
-        "Karte & Brett",
-        "Rollenspiele"
+        "Karte & Brett"
       ],
       "services": []
     },
@@ -8250,7 +7774,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8265,9 +7788,7 @@
       ],
       "priceMinor": 1749,
       "regularPriceMinor": 2499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -8283,7 +7804,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8335,7 +7855,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8401,7 +7920,6 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Karte & Brett",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -8503,7 +8021,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8572,7 +8089,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8589,7 +8105,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8606,7 +8121,6 @@
       "regularPriceMinor": 1399,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation",
         "Sport"
       ],
@@ -8757,8 +8271,7 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Action & Abenteuer",
-        "Platformer",
-        "Rollenspiele"
+        "Platformer"
       ],
       "services": []
     },
@@ -8775,7 +8288,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8792,7 +8304,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8809,7 +8320,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8826,7 +8336,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8843,7 +8352,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8926,7 +8434,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8943,7 +8450,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8958,9 +8464,7 @@
       ],
       "priceMinor": 5999,
       "regularPriceMinor": 9999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -8976,7 +8480,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -8993,7 +8496,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9010,7 +8512,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9026,7 +8527,6 @@
       "priceMinor": 1099,
       "regularPriceMinor": 1999,
       "genres": [
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -9044,7 +8544,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9061,7 +8560,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9078,7 +8576,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9111,7 +8608,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9144,7 +8640,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9162,8 +8657,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Kampfspiele",
-        "Rollenspiele"
+        "Kampfspiele"
       ],
       "services": []
     },
@@ -9178,9 +8672,7 @@
       ],
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -9230,8 +8722,7 @@
       "priceMinor": 299,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -9248,7 +8739,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9313,7 +8803,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9330,7 +8819,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9347,7 +8835,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9364,7 +8851,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9381,7 +8867,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9398,7 +8883,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9415,7 +8899,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9432,7 +8915,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9501,7 +8983,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9518,7 +8999,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9535,7 +9015,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9552,7 +9031,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9569,7 +9047,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9658,7 +9135,6 @@
         "Platformer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9692,7 +9168,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9709,7 +9184,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9726,7 +9200,6 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Andere",
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -9745,7 +9218,6 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -9796,7 +9268,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -9829,7 +9300,6 @@
       "regularPriceMinor": 2999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -9846,8 +9316,7 @@
       "priceMinor": 1499,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -10067,7 +9536,6 @@
       "regularPriceMinor": 7999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -10101,7 +9569,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10118,7 +9585,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10135,7 +9601,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10152,7 +9617,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10169,7 +9633,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10186,7 +9649,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10203,7 +9665,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10220,7 +9681,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10237,7 +9697,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10254,7 +9713,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10271,7 +9729,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10328,7 +9785,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10345,7 +9801,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10362,7 +9817,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10378,8 +9832,7 @@
       "priceMinor": 6749,
       "regularPriceMinor": 8999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -10414,8 +9867,7 @@
       "priceMinor": 4199,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -10432,7 +9884,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10465,8 +9916,7 @@
       "priceMinor": 199,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -10483,7 +9933,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10506,7 +9955,6 @@
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10523,8 +9971,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Andere",
-        "Rollenspiele"
+        "Andere"
       ],
       "services": []
     },
@@ -10606,8 +10053,7 @@
       "regularPriceMinor": 3499,
       "genres": [
         "Action & Abenteuer",
-        "Kampfspiele",
-        "Rollenspiele"
+        "Kampfspiele"
       ],
       "services": []
     },
@@ -10690,8 +10136,7 @@
       "priceMinor": 1749,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -10712,7 +10157,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10731,7 +10175,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10765,7 +10208,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10814,7 +10256,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10929,7 +10370,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10946,7 +10386,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -10999,7 +10438,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11014,11 +10452,8 @@
       ],
       "priceMinor": 999,
       "regularPriceMinor": 1999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11039,7 +10474,6 @@
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11071,9 +10505,7 @@
       ],
       "priceMinor": 749,
       "regularPriceMinor": 1499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -11126,7 +10558,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11143,7 +10574,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11160,7 +10590,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11177,7 +10606,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11193,8 +10621,7 @@
       "priceMinor": 299,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -11313,7 +10740,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11331,7 +10757,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11365,7 +10790,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11415,7 +10839,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11495,8 +10918,7 @@
       "priceMinor": 1749,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -11516,7 +10938,6 @@
         "Shooter"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11550,7 +10971,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11583,7 +11003,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11600,7 +11019,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11616,7 +11034,6 @@
       "priceMinor": 624,
       "regularPriceMinor": 2499,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -11650,7 +11067,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11667,7 +11083,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11684,7 +11099,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11701,7 +11115,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11718,7 +11131,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11735,7 +11147,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11752,7 +11163,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11769,7 +11179,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11801,7 +11210,6 @@
       "priceMinor": 199,
       "regularPriceMinor": 999,
       "genres": [
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -11851,7 +11259,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11900,7 +11307,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11918,7 +11324,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11935,7 +11340,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11968,7 +11372,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -11987,11 +11390,9 @@
         "Action & Abenteuer",
         "Familie & Kinder",
         "Karte & Brett",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12047,7 +11448,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12096,7 +11496,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12113,7 +11512,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12130,7 +11528,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12147,7 +11544,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12164,7 +11560,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12181,7 +11576,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12231,7 +11625,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12337,7 +11730,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12420,7 +11812,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12476,7 +11867,6 @@
         "Kampfspiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12526,7 +11916,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12543,7 +11932,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12560,7 +11948,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12577,7 +11964,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12594,7 +11980,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12611,7 +11996,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12628,7 +12012,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12645,7 +12028,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12662,7 +12044,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12679,7 +12060,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12696,7 +12076,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12713,7 +12092,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12747,7 +12125,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12781,7 +12158,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12814,7 +12190,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12847,7 +12222,6 @@
       "priceMinor": 1799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -12949,7 +12323,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -12966,7 +12339,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13015,7 +12387,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13322,7 +12693,6 @@
         "Rätsel & Wissen"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13337,9 +12707,7 @@
       ],
       "priceMinor": 799,
       "regularPriceMinor": 3999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -13389,7 +12757,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13439,7 +12806,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13505,11 +12871,9 @@
       "priceMinor": 1999,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13528,7 +12892,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13634,7 +12997,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13651,7 +13013,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13667,11 +13028,9 @@
       "priceMinor": 749,
       "regularPriceMinor": 999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13687,8 +13046,7 @@
       "priceMinor": 899,
       "regularPriceMinor": 1199,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -13707,7 +13065,6 @@
         "Shooter"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13726,7 +13083,6 @@
         "Shooter"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13743,7 +13099,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13760,7 +13115,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13797,7 +13151,6 @@
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13817,7 +13170,6 @@
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13834,7 +13186,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13851,7 +13202,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13868,7 +13218,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13888,7 +13237,6 @@
         "Shooter"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -13905,7 +13253,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14086,7 +13433,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14159,7 +13505,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14288,7 +13633,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14305,7 +13649,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14325,7 +13668,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14342,7 +13684,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14375,7 +13716,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14470,7 +13810,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14491,7 +13830,6 @@
         "Shooter"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14507,11 +13845,9 @@
       "priceMinor": 1124,
       "regularPriceMinor": 7499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14527,11 +13863,9 @@
       "priceMinor": 1049,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14661,7 +13995,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14678,7 +14011,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14846,7 +14178,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -14883,7 +14214,6 @@
         "Rätsel & Wissen"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15021,7 +14351,6 @@
       "regularPriceMinor": 1199,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -15091,7 +14420,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15108,7 +14436,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15143,7 +14470,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15162,7 +14488,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15251,7 +14576,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15284,7 +14608,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15301,7 +14624,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15453,7 +14775,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15487,7 +14808,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15504,26 +14824,8 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9n0gmg1srw1w",
-      "id": "9n0gmg1srw1w",
-      "title": "Jay and Silent Bob: Chronic Blunt Punch",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/jay-and-silent-bob-chronic-blunt-punch/9n0gmg1srw1w",
-      "cover": "https://store-images.s-microsoft.com/image/apps.28244.13921286053738794.7e75e3a8-c9ff-4279-ba0c-6b2896096f6f.02849a1e-0185-4eff-a454-1d4e4c68d10c?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1299,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Action & Abenteuer",
-        "Kampfspiele"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9np89cz9cp2l",
@@ -15555,7 +14857,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15638,7 +14939,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15722,7 +15022,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15844,7 +15143,6 @@
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15930,7 +15228,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15947,7 +15244,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -15964,7 +15260,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16030,7 +15325,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16097,7 +15391,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16202,7 +15495,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16235,7 +15527,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16252,7 +15543,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16269,7 +15559,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16286,7 +15575,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16307,25 +15595,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9pbvfggxzv24",
-      "id": "9pbvfggxzv24",
-      "title": "Killing Time: Resurrected",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/killing-time-resurrected/9pbvfggxzv24",
-      "cover": "https://store-images.s-microsoft.com/image/apps.2165.14116023529329703.cdf0c92b-abe0-47d5-89cb-f3a1e4318432.5aa06f62-4dc1-4331-a591-1cba6483a6f5?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1039,
-      "regularPriceMinor": 2599,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Rätsel & Wissen",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9mw53zkzh168",
       "id": "9mw53zkzh168",
       "title": "Kiln",
@@ -16338,7 +15607,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16371,7 +15639,6 @@
       "priceMinor": 1799,
       "regularPriceMinor": 4499,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -16388,7 +15655,6 @@
       "priceMinor": 1199,
       "regularPriceMinor": 1999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -16406,8 +15672,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Kampfspiele",
-        "Rollenspiele"
+        "Kampfspiele"
       ],
       "services": []
     },
@@ -16423,7 +15688,6 @@
       "priceMinor": 599,
       "regularPriceMinor": 3999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -16439,11 +15703,8 @@
       ],
       "priceMinor": 449,
       "regularPriceMinor": 2999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16460,7 +15721,6 @@
       "regularPriceMinor": 9999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -16478,7 +15738,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16495,7 +15754,6 @@
       "regularPriceMinor": 8999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -16531,7 +15789,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16547,8 +15804,7 @@
       "priceMinor": 999,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -16650,8 +15906,7 @@
       "priceMinor": 2799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -16783,7 +16038,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16800,7 +16054,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -16816,8 +16069,7 @@
       "priceMinor": 199,
       "regularPriceMinor": 999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -16900,7 +16152,6 @@
       "priceMinor": 1124,
       "regularPriceMinor": 2499,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Sport"
       ],
@@ -16921,7 +16172,6 @@
         "Action & Abenteuer",
         "Kampfspiele",
         "Rätsel & Wissen",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -16939,7 +16189,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -17248,7 +16497,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -17363,8 +16611,7 @@
       "priceMinor": 2999,
       "regularPriceMinor": 5999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -17395,11 +16642,8 @@
       ],
       "priceMinor": 1749,
       "regularPriceMinor": 6999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -17418,7 +16662,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -17436,8 +16679,7 @@
       "genres": [
         "Action & Abenteuer",
         "Familie & Kinder",
-        "Platformer",
-        "Rollenspiele"
+        "Platformer"
       ],
       "services": []
     },
@@ -17454,7 +16696,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -17524,7 +16765,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -17560,7 +16800,6 @@
         "Platformer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -17748,7 +16987,6 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17765,8 +17003,7 @@
       "priceMinor": 989,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -17783,7 +17020,6 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Andere",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17801,7 +17037,6 @@
       "regularPriceMinor": 3449,
       "genres": [
         "Andere",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17851,7 +17086,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -17866,9 +17100,7 @@
       ],
       "priceMinor": 624,
       "regularPriceMinor": 2499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -17935,7 +17167,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18007,7 +17238,6 @@
         "Shooter"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18108,7 +17338,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18158,7 +17387,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18175,7 +17403,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18416,8 +17643,7 @@
       "priceMinor": 899,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -18434,7 +17660,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18482,7 +17707,6 @@
       "priceMinor": 1124,
       "regularPriceMinor": 7499,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -18499,7 +17723,6 @@
       "priceMinor": 1049,
       "regularPriceMinor": 6999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -18516,7 +17739,6 @@
       "priceMinor": 1999,
       "regularPriceMinor": 9999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -18533,7 +17755,6 @@
       "priceMinor": 1999,
       "regularPriceMinor": 9999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -18551,8 +17772,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18569,7 +17788,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18586,7 +17804,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18603,7 +17820,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18620,7 +17836,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18637,7 +17852,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18669,8 +17883,7 @@
       "priceMinor": 374,
       "regularPriceMinor": 1499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -18686,8 +17899,7 @@
       "priceMinor": 499,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -18704,7 +17916,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18771,7 +17982,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18788,7 +17998,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18805,7 +18014,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18822,7 +18030,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18839,7 +18046,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18856,7 +18062,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -18888,8 +18093,7 @@
       "priceMinor": 1049,
       "regularPriceMinor": 1499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -18954,7 +18158,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19121,7 +18324,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19138,7 +18340,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19155,7 +18356,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19172,7 +18372,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19278,8 +18477,7 @@
       "regularPriceMinor": 2999,
       "genres": [
         "Action & Abenteuer",
-        "Andere",
-        "Rollenspiele"
+        "Andere"
       ],
       "services": []
     },
@@ -19296,7 +18494,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19313,7 +18510,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19330,7 +18526,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19347,7 +18542,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19364,7 +18558,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19381,7 +18574,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19415,7 +18607,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19468,7 +18659,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19485,7 +18675,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19502,7 +18691,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19538,7 +18726,6 @@
       "regularPriceMinor": 999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -19573,7 +18760,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19589,8 +18775,7 @@
       "priceMinor": 1049,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19606,8 +18791,7 @@
       "priceMinor": 599,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19623,8 +18807,7 @@
       "priceMinor": 599,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19640,8 +18823,7 @@
       "priceMinor": 749,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19662,7 +18844,6 @@
         "Platformer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -19821,8 +19002,7 @@
       "priceMinor": 1749,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19838,8 +19018,7 @@
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19855,8 +19034,7 @@
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19872,8 +19050,7 @@
       "priceMinor": 6029,
       "regularPriceMinor": 8999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19889,8 +19066,7 @@
       "priceMinor": 6999,
       "regularPriceMinor": 9999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19906,8 +19082,7 @@
       "priceMinor": 2099,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19923,8 +19098,7 @@
       "priceMinor": 1649,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -19977,7 +19151,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -20011,7 +19184,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -20044,7 +19216,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -20061,7 +19232,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -20077,11 +19247,9 @@
       "priceMinor": 2099,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -20164,7 +19332,6 @@
         "Kampfspiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -20235,7 +19402,6 @@
         "Platformer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -20252,7 +19418,6 @@
       "regularPriceMinor": 4999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -20270,7 +19435,6 @@
       "regularPriceMinor": 5999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -20287,8 +19451,7 @@
       "priceMinor": 499,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -20342,7 +19505,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -20745,8 +19907,7 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
-        "Familie & Kinder",
-        "Rollenspiele"
+        "Familie & Kinder"
       ],
       "services": []
     },
@@ -21038,7 +20199,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21089,7 +20249,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21125,7 +20284,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21144,7 +20302,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21179,7 +20336,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21199,7 +20355,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21284,7 +20439,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21386,7 +20540,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21418,8 +20571,7 @@
       "priceMinor": 149,
       "regularPriceMinor": 999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -21436,8 +20588,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Familie & Kinder",
-        "Rollenspiele"
+        "Familie & Kinder"
       ],
       "services": []
     },
@@ -21454,7 +20605,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21471,7 +20621,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21488,7 +20637,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21505,7 +20653,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21522,7 +20669,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21538,8 +20684,7 @@
       "priceMinor": 659,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -21555,8 +20700,7 @@
       "priceMinor": 791,
       "regularPriceMinor": 2399,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -21573,7 +20717,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21608,7 +20751,6 @@
       "regularPriceMinor": 999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -21626,7 +20768,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21645,7 +20786,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21678,7 +20818,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21695,7 +20834,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21760,7 +20898,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21775,9 +20912,7 @@
       ],
       "priceMinor": 2399,
       "regularPriceMinor": 2999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -21793,7 +20928,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -21843,8 +20977,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Musik",
-        "Rollenspiele"
+        "Musik"
       ],
       "services": []
     },
@@ -21896,7 +21029,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22153,9 +21285,7 @@
       ],
       "priceMinor": 899,
       "regularPriceMinor": 2999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -22171,7 +21301,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22188,7 +21317,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22205,7 +21333,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22221,8 +21348,7 @@
       "priceMinor": 449,
       "regularPriceMinor": 2999,
       "genres": [
-        "Andere",
-        "Rollenspiele"
+        "Andere"
       ],
       "services": []
     },
@@ -22242,7 +21368,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22329,7 +21454,6 @@
         "Familie & Kinder"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22363,7 +21487,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22430,7 +21553,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22447,8 +21569,7 @@
       "regularPriceMinor": 6299,
       "genres": [
         "Action & Abenteuer",
-        "Rennen & Fliegen",
-        "Rollenspiele"
+        "Rennen & Fliegen"
       ],
       "services": []
     },
@@ -22465,8 +21586,7 @@
       "regularPriceMinor": 4699,
       "genres": [
         "Action & Abenteuer",
-        "Rennen & Fliegen",
-        "Rollenspiele"
+        "Rennen & Fliegen"
       ],
       "services": []
     },
@@ -22500,7 +21620,6 @@
       "regularPriceMinor": 9999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Sport"
       ],
       "services": []
@@ -22534,7 +21653,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22592,24 +21710,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9nv849pxzm1s",
-      "id": "9nv849pxzm1s",
-      "title": "Parkasaurus: Dinoluxe Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/parkasaurus-dinoluxe-edition/9nv849pxzm1s",
-      "cover": "https://store-images.s-microsoft.com/image/apps.421.14403356214701981.25e552ad-3a80-452a-8adf-7c60578a5049.0a26956d-556a-4749-9a76-ed55cc740bb7?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2639,
-      "regularPriceMinor": 3299,
-      "genres": [
-        "Familie & Kinder",
-        "Simulation",
-        "Strategiespiele"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:bphqqn22gb7l",
       "id": "bphqqn22gb7l",
       "title": "Pathfinder: Kingmaker - Definitive Edition",
@@ -22621,8 +21721,7 @@
       "priceMinor": 799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -22639,7 +21738,6 @@
       "regularPriceMinor": 3499,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -22675,7 +21773,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22692,7 +21789,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22709,7 +21805,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22745,7 +21840,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22795,7 +21889,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22812,7 +21905,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22829,7 +21921,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22861,9 +21952,7 @@
       ],
       "priceMinor": 2099,
       "regularPriceMinor": 5999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -22877,9 +21966,7 @@
       ],
       "priceMinor": 3149,
       "regularPriceMinor": 8999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -22893,11 +21980,8 @@
       ],
       "priceMinor": 1799,
       "regularPriceMinor": 5999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22914,7 +21998,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22930,7 +22013,6 @@
       "priceMinor": 1799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Sport"
       ],
@@ -22948,7 +22030,6 @@
       "priceMinor": 3149,
       "regularPriceMinor": 6999,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Sport"
       ],
@@ -22967,7 +22048,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -22984,7 +22064,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23016,11 +22095,9 @@
       "priceMinor": 1199,
       "regularPriceMinor": 2999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23036,11 +22113,9 @@
       "priceMinor": 1199,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23076,7 +22151,6 @@
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23161,7 +22235,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23178,7 +22251,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23195,7 +22267,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23212,7 +22283,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23229,7 +22299,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23332,7 +22401,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23400,7 +22468,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23417,7 +22484,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23435,7 +22501,6 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -23456,7 +22521,6 @@
         "Platformer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23473,7 +22537,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23591,7 +22654,6 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -23609,7 +22671,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23626,7 +22687,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23676,7 +22736,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23693,7 +22752,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23710,7 +22768,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23727,7 +22784,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23844,7 +22900,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23861,7 +22916,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23876,9 +22930,7 @@
       ],
       "priceMinor": 2749,
       "regularPriceMinor": 4999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -23944,7 +22996,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23961,7 +23012,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -23977,8 +23027,7 @@
       "priceMinor": 999,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -24028,7 +23077,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24160,7 +23208,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24177,7 +23224,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24210,7 +23256,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24227,7 +23272,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24280,7 +23324,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24296,8 +23339,7 @@
       "priceMinor": 1749,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -24334,7 +23376,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24367,7 +23408,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24400,7 +23440,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24433,7 +23472,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24514,7 +23552,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24531,7 +23568,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24580,7 +23616,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24597,7 +23632,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24629,9 +23663,7 @@
       ],
       "priceMinor": 999,
       "regularPriceMinor": 1999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -24647,8 +23679,7 @@
       "regularPriceMinor": 1299,
       "genres": [
         "Action & Abenteuer",
-        "Familie & Kinder",
-        "Rollenspiele"
+        "Familie & Kinder"
       ],
       "services": []
     },
@@ -24751,7 +23782,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -24769,7 +23799,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25009,7 +24038,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25028,7 +24056,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25062,11 +24089,9 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25083,7 +24108,6 @@
       "regularPriceMinor": 4999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -25101,7 +24125,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25237,7 +24260,6 @@
       "priceMinor": 749,
       "regularPriceMinor": 2999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -25322,7 +24344,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25378,38 +24399,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9n9vkf7hrsp2",
-      "id": "9n9vkf7hrsp2",
-      "title": "Runes Quest",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/runes-quest/9n9vkf7hrsp2",
-      "cover": "https://store-images.s-microsoft.com/image/apps.31204.13525169491226647.3563c448-393b-45b9-b20d-41bbc1b74ff6.c0637401-3afc-4eef-a866-6cfe64827f8e?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Rätsel & Wissen"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n113s82tg17",
-      "id": "9n113s82tg17",
-      "title": "Runes Quest (Xbox One)",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/runes-quest-xbox-one/9n113s82tg17",
-      "cover": "https://store-images.s-microsoft.com/image/apps.31204.13914906067701202.e1824ff2-0bc3-4d7d-98ba-022b28e7b4f5.e11c6224-e0f2-4a11-bfbe-d305211563df?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Rätsel & Wissen"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9p402rwr63h4",
       "id": "9p402rwr63h4",
       "title": "RuneScape: Dragonwilds",
@@ -25422,7 +24411,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25439,7 +24427,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25472,7 +24459,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25525,7 +24511,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25542,7 +24527,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25559,7 +24543,6 @@
       "regularPriceMinor": 5999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -25577,7 +24560,6 @@
       "regularPriceMinor": 2449,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -25595,7 +24577,6 @@
       "regularPriceMinor": 5449,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -25664,9 +24645,7 @@
       ],
       "priceMinor": 599,
       "regularPriceMinor": 2999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -25965,7 +24944,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -25998,7 +24976,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26013,9 +24990,7 @@
       ],
       "priceMinor": 1749,
       "regularPriceMinor": 3499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -26031,7 +25006,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26231,7 +25205,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26248,7 +25221,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26265,7 +25237,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26282,7 +25253,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26316,7 +25286,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26349,7 +25318,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26450,7 +25418,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26465,9 +25432,7 @@
       ],
       "priceMinor": 1799,
       "regularPriceMinor": 5999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -26718,9 +25683,7 @@
       ],
       "priceMinor": 749,
       "regularPriceMinor": 1499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -26773,7 +25736,6 @@
       "genres": [
         "Action & Abenteuer",
         "Kampfspiele",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -26791,7 +25753,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26808,7 +25769,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26876,7 +25836,6 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Karte & Brett",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -26898,7 +25857,6 @@
         "Sport"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -26970,7 +25928,6 @@
       "genres": [
         "Action & Abenteuer",
         "Karte & Brett",
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -27259,7 +26216,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27281,7 +26237,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27297,7 +26252,6 @@
       "priceMinor": 749,
       "regularPriceMinor": 2999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -27314,7 +26268,6 @@
       "priceMinor": 2999,
       "regularPriceMinor": 5999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -27433,7 +26386,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27467,7 +26419,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27618,7 +26569,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27650,7 +26600,6 @@
       "priceMinor": 1199,
       "regularPriceMinor": 3999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -27685,8 +26634,7 @@
       "priceMinor": 374,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -27774,7 +26722,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27844,7 +26791,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27861,7 +26807,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27878,7 +26823,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27895,7 +26839,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27912,7 +26855,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27929,7 +26871,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27946,7 +26887,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27963,7 +26903,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -27981,7 +26920,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28014,7 +26952,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28031,7 +26968,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28082,7 +27018,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28099,7 +27034,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28116,7 +27050,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28182,7 +27115,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28199,7 +27131,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28233,7 +27164,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28250,7 +27180,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28285,7 +27214,6 @@
       "regularPriceMinor": 4749,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -28353,7 +27281,6 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Wort- und Sprachspiele"
       ],
       "services": []
@@ -28420,7 +27347,6 @@
       "priceMinor": 799,
       "regularPriceMinor": 1999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -28587,8 +27513,7 @@
       "priceMinor": 1599,
       "regularPriceMinor": 3999,
       "genres": [
-        "Kampfspiele",
-        "Rollenspiele"
+        "Kampfspiele"
       ],
       "services": []
     },
@@ -28702,7 +27627,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28791,7 +27715,6 @@
       "regularPriceMinor": 4999,
       "genres": [
         "Karte & Brett",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -28809,7 +27732,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28844,8 +27766,7 @@
       "genres": [
         "Action & Abenteuer",
         "Klassiker",
-        "Platformer",
-        "Rollenspiele"
+        "Platformer"
       ],
       "services": []
     },
@@ -28898,7 +27819,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28932,7 +27852,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28949,7 +27868,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -28970,7 +27888,6 @@
         "Sport"
       ],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29038,7 +27955,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29075,7 +27991,6 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29124,7 +28039,6 @@
       "priceMinor": 1139,
       "regularPriceMinor": 1899,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -29142,7 +28056,6 @@
       "priceMinor": 2129,
       "regularPriceMinor": 3549,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -29159,9 +28072,7 @@
       ],
       "priceMinor": 1999,
       "regularPriceMinor": 3999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -29175,9 +28086,7 @@
       ],
       "priceMinor": 1499,
       "regularPriceMinor": 5999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -29192,8 +28101,7 @@
       "priceMinor": 2549,
       "regularPriceMinor": 8499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -29208,9 +28116,7 @@
       ],
       "priceMinor": 1699,
       "regularPriceMinor": 8499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -29224,9 +28130,7 @@
       ],
       "priceMinor": 999,
       "regularPriceMinor": 3999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -29275,7 +28179,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29310,7 +28213,6 @@
       "genres": [
         "Action & Abenteuer",
         "Klassiker",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -29345,8 +28247,7 @@
       "priceMinor": 249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -29362,8 +28263,7 @@
       "priceMinor": 1749,
       "regularPriceMinor": 3499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -29379,8 +28279,7 @@
       "priceMinor": 1649,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -29396,8 +28295,7 @@
       "priceMinor": 1249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -29413,8 +28311,7 @@
       "priceMinor": 1499,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -29430,8 +28327,7 @@
       "priceMinor": 279,
       "regularPriceMinor": 699,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -29448,8 +28344,7 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Andere",
-        "Karte & Brett",
-        "Rollenspiele"
+        "Karte & Brett"
       ],
       "services": []
     },
@@ -29465,8 +28360,7 @@
       "priceMinor": 2474,
       "regularPriceMinor": 4499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -29499,7 +28393,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29516,7 +28409,6 @@
       "regularPriceMinor": 3499,
       "genres": [
         "Familie & Kinder",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -29534,7 +28426,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29617,7 +28508,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29716,7 +28606,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29736,7 +28625,6 @@
         "Andere"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29769,7 +28657,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29785,8 +28672,7 @@
       "priceMinor": 899,
       "regularPriceMinor": 4499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -29869,7 +28755,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29888,7 +28773,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -29903,9 +28787,7 @@
       ],
       "priceMinor": 2449,
       "regularPriceMinor": 3499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -29969,7 +28851,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30002,11 +28883,9 @@
       "regularPriceMinor": 1699,
       "genres": [
         "Action & Abenteuer",
-        "Klassiker",
-        "Rollenspiele"
+        "Klassiker"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30022,11 +28901,9 @@
       "priceMinor": 799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30043,12 +28920,9 @@
       "regularPriceMinor": 1249,
       "genres": [
         "Klassiker",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
-        "ea-play:ea-play",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30081,7 +28955,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30098,7 +28971,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30180,7 +29052,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30198,7 +29069,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30216,7 +29086,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30287,23 +29156,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:bz4wd43d8dts",
-      "id": "bz4wd43d8dts",
-      "title": "The Elder Scrolls III: Morrowind",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-elder-scrolls-iii-morrowind/bz4wd43d8dts",
-      "cover": "https://store-images.s-microsoft.com/image/apps.23519.64058972034305073.b87da33f-b9c2-4c9d-b9fa-46986dbd7e0b.3cce092b-48bc-4502-a441-79ef227da5fe?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:console",
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bxvcfbjbns17",
       "id": "bxvcfbjbns17",
       "title": "The Elder Scrolls III: Morrowind",
@@ -30313,6 +29165,22 @@
         "xbox-series"
       ],
       "priceMinor": 999,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bz4wd43d8dts",
+      "id": "bz4wd43d8dts",
+      "title": "The Elder Scrolls III: Morrowind",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-elder-scrolls-iii-morrowind/bz4wd43d8dts",
+      "cover": "https://store-images.s-microsoft.com/image/apps.23519.64058972034305073.b87da33f-b9c2-4c9d-b9fa-46986dbd7e0b.3cce092b-48bc-4502-a441-79ef227da5fe?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1499,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
@@ -30332,7 +29200,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30349,7 +29216,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30366,7 +29232,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30383,7 +29248,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30466,7 +29330,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30483,7 +29346,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30531,8 +29393,7 @@
       "priceMinor": 4199,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -30564,8 +29425,7 @@
       "priceMinor": 374,
       "regularPriceMinor": 1499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -30582,8 +29442,7 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Action & Abenteuer",
-        "Andere",
-        "Rollenspiele"
+        "Andere"
       ],
       "services": []
     },
@@ -30616,7 +29475,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30653,7 +29511,6 @@
         "Familie & Kinder",
         "Karte & Brett",
         "Rätsel & Wissen",
-        "Rollenspiele",
         "Strategiespiele",
         "Wort- und Sprachspiele"
       ],
@@ -30792,8 +29649,7 @@
       "priceMinor": 299,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -30844,7 +29700,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30944,8 +29799,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Familie & Kinder",
-        "Rollenspiele"
+        "Familie & Kinder"
       ],
       "services": []
     },
@@ -30962,7 +29816,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30977,11 +29830,8 @@
       ],
       "priceMinor": 3499,
       "regularPriceMinor": 6999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -30996,9 +29846,7 @@
       ],
       "priceMinor": 4999,
       "regularPriceMinor": 9999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -31012,9 +29860,7 @@
       ],
       "priceMinor": 1500,
       "regularPriceMinor": 3000,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -31029,11 +29875,9 @@
       "priceMinor": 1599,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31068,7 +29912,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31138,7 +29981,6 @@
       "regularPriceMinor": 5249,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter",
         "Strategiespiele"
       ],
@@ -31158,7 +30000,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31175,7 +30016,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31241,7 +30081,6 @@
       "regularPriceMinor": 4999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -31323,9 +30162,7 @@
       ],
       "priceMinor": 624,
       "regularPriceMinor": 2499,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -31392,7 +30229,6 @@
         "Rätsel & Wissen"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31441,7 +30277,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31458,7 +30293,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31475,7 +30309,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31492,7 +30325,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31509,7 +30341,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31526,7 +30357,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31543,7 +30373,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31560,7 +30389,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31577,7 +30405,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31627,7 +30454,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31696,7 +30522,6 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Andere",
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -31835,7 +30660,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31886,7 +30710,6 @@
       "regularPriceMinor": 999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -31904,7 +30727,6 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -31940,9 +30762,7 @@
       ],
       "priceMinor": 449,
       "regularPriceMinor": 2999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -31958,7 +30778,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -31993,7 +30812,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32044,7 +30862,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32078,7 +30895,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32095,7 +30911,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32195,7 +31010,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32260,7 +31074,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32279,7 +31092,6 @@
         "Sport"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32343,45 +31155,10 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 287,
+      "priceMinor": 474,
       "regularPriceMinor": 1439,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:c3fk18tn91jd",
-      "id": "c3fk18tn91jd",
-      "title": "Torchlight II",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/torchlight-ii/c3fk18tn91jd",
-      "cover": "https://store-images.s-microsoft.com/image/apps.58202.66034900387983919.3854c773-95fe-4a92-83c1-06870fb668c3.d477aac3-c2aa-4bf0-b807-65e740594994?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n944bp7smcg",
-      "id": "9n944bp7smcg",
-      "title": "Torchlight III",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/torchlight-iii/9n944bp7smcg",
-      "cover": "https://store-images.s-microsoft.com/image/apps.14142.13544390040965331.402f2557-c1a5-4d54-981b-376593efabf0.d038ce9e-b364-46e3-b6fa-bdde05d673c9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 799,
-      "regularPriceMinor": 3999,
-      "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -32397,11 +31174,9 @@
       "priceMinor": 749,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32451,7 +31226,6 @@
       "priceMinor": 1649,
       "regularPriceMinor": 2999,
       "genres": [
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -32470,7 +31244,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32487,7 +31260,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32509,27 +31281,8 @@
         "Simulation"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nsrsrtw5dbw",
-      "id": "9nsrsrtw5dbw",
-      "title": "Totally Reliable Delivery Service Deluxe Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/totally-reliable-delivery-service-deluxe-edition/9nsrsrtw5dbw",
-      "cover": "https://store-images.s-microsoft.com/image/apps.59260.14286085105788233.0006af61-f14b-4a7e-a8aa-571ac0d89c51.756ce150-69e4-45ca-9b9d-7e49988acd6e?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1851,
-      "regularPriceMinor": 2849,
-      "genres": [
-        "Action & Abenteuer",
-        "Andere",
-        "Familie & Kinder"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9p2zs6r7f19q",
@@ -32579,7 +31332,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32645,7 +31397,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32713,7 +31464,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32797,7 +31547,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -32881,8 +31630,7 @@
       "genres": [
         "Action & Abenteuer",
         "Kampfspiele",
-        "Platformer",
-        "Rollenspiele"
+        "Platformer"
       ],
       "services": []
     },
@@ -32902,8 +31650,7 @@
         "Andere",
         "Familie & Kinder",
         "Kampfspiele",
-        "Platformer",
-        "Rollenspiele"
+        "Platformer"
       ],
       "services": []
     },
@@ -33023,7 +31770,6 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -33041,7 +31787,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33208,7 +31953,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33225,7 +31969,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33280,7 +32023,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33348,8 +32090,7 @@
       "priceMinor": 1399,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -33369,7 +32110,6 @@
         "Sport"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33385,7 +32125,6 @@
       "priceMinor": 2099,
       "regularPriceMinor": 6999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -33471,7 +32210,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33488,7 +32226,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33543,24 +32280,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9nn0fk211swj",
-      "id": "9nn0fk211swj",
-      "title": "Used Cars Simulator",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/used-cars-simulator/9nn0fk211swj",
-      "cover": "https://store-images.s-microsoft.com/image/apps.59928.13752443598281669.384db9cd-d14d-4ff2-946f-3774b8d55e0e.00e80483-e453-48c4-b2e1-e824a4c4eb55?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1599,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Action & Abenteuer",
-        "Rennen & Fliegen",
-        "Simulation"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nsdnlfcdv3h",
       "id": "9nsdnlfcdv3h",
       "title": "Vagrus - The Riven Realms",
@@ -33572,7 +32291,6 @@
       "priceMinor": 1349,
       "regularPriceMinor": 2999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -33623,7 +32341,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33644,7 +32361,6 @@
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33663,7 +32379,6 @@
         "Action & Abenteuer"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33679,8 +32394,7 @@
       "priceMinor": 4699,
       "regularPriceMinor": 9399,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -33713,7 +32427,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33747,8 +32460,7 @@
       "priceMinor": 1249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -33798,7 +32510,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33847,7 +32558,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33864,7 +32574,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33881,7 +32590,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33898,7 +32606,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33915,7 +32622,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33932,7 +32638,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -33949,7 +32654,6 @@
       "regularPriceMinor": 3749,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -34020,8 +32724,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Kampfspiele",
-        "Rollenspiele"
+        "Kampfspiele"
       ],
       "services": []
     },
@@ -34085,7 +32788,6 @@
       "priceMinor": 1124,
       "regularPriceMinor": 4499,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -34102,7 +32804,6 @@
       "priceMinor": 1249,
       "regularPriceMinor": 4999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -34120,7 +32821,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34135,9 +32835,7 @@
       ],
       "priceMinor": 799,
       "regularPriceMinor": 3999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -34152,8 +32850,7 @@
       "priceMinor": 999,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -34169,8 +32866,7 @@
       "priceMinor": 1199,
       "regularPriceMinor": 5999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -34205,11 +32901,9 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34227,7 +32921,6 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -34246,7 +32939,6 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -34264,7 +32956,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34315,7 +33006,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34396,8 +33086,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Andere",
-        "Rollenspiele"
+        "Andere"
       ],
       "services": []
     },
@@ -34414,8 +33103,7 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
-        "Andere",
-        "Rollenspiele"
+        "Andere"
       ],
       "services": []
     },
@@ -34432,8 +33120,7 @@
       "regularPriceMinor": 7999,
       "genres": [
         "Action & Abenteuer",
-        "Andere",
-        "Rollenspiele"
+        "Andere"
       ],
       "services": []
     },
@@ -34450,7 +33137,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34467,12 +33153,10 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34487,11 +33171,8 @@
       ],
       "priceMinor": 1199,
       "regularPriceMinor": 3999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34506,9 +33187,7 @@
       ],
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
-      "genres": [
-        "Rollenspiele"
-      ],
+      "genres": [],
       "services": []
     },
     {
@@ -34524,11 +33203,9 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Klassiker",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34546,7 +33223,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34580,7 +33256,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34649,7 +33324,6 @@
         "Andere",
         "Musik",
         "Rätsel & Wissen",
-        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -34685,7 +33359,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34701,7 +33374,6 @@
       "priceMinor": 199,
       "regularPriceMinor": 1999,
       "genres": [
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -34735,7 +33407,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34802,7 +33473,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34887,7 +33557,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34904,7 +33573,6 @@
       "regularPriceMinor": 2099,
       "genres": [
         "Action & Abenteuer",
-        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -34922,7 +33590,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -34973,7 +33640,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35058,7 +33724,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35112,7 +33777,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35129,8 +33793,7 @@
       "regularPriceMinor": 6999,
       "genres": [
         "Action & Abenteuer",
-        "Andere",
-        "Rollenspiele"
+        "Andere"
       ],
       "services": []
     },
@@ -35147,7 +33810,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35164,7 +33826,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35181,7 +33842,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35198,7 +33858,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35215,7 +33874,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35232,7 +33890,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35313,7 +33970,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35330,7 +33986,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35438,7 +34093,6 @@
         "Rennen & Fliegen"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35471,7 +34125,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35610,8 +34263,7 @@
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -35627,8 +34279,7 @@
       "priceMinor": 1249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -35713,7 +34364,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35812,7 +34462,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35867,7 +34516,6 @@
         "Familie & Kinder"
       ],
       "services": [
-        "xbox-game-pass:console",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35884,7 +34532,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -35901,7 +34548,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ea-play:ea-play",
         "xbox-game-pass:ultimate"
       ]
     },
