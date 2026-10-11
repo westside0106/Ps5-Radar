@@ -76,6 +76,12 @@ export default function XboxClient({ snapshot }) {
   const [page, setPage] = useState(1);
   const active = TABS.find((item) => item.id === tab) || TABS[0];
   const coverage = snapshot.coverage.views?.[active.view] || null;
+  const captured = Number(coverage?.count || 0) > 0;
+  const captureMissing = !captured && !coverage?.complete;
+  const tabGames = useMemo(() => snapshot.games.filter((game) =>
+    tab === 'deals' ? discount(game) !== null : game.services.includes(tab)
+  ), [snapshot.games, tab]);
+  const hasPrices = tabGames.some((game) => Number.isInteger(game.priceMinor));
 
   // Genres sind nur fuer die Angebotsansicht erfasst. Der Filter erscheint nur,
   // wenn JEDER Eintrag des Bereichs eines hat - sonst wuerde er stillschweigend
@@ -91,9 +97,13 @@ export default function XboxClient({ snapshot }) {
     const needle = query.trim().toLocaleLowerCase('de');
     const order = {
       titel: (a, b) => a.title.localeCompare(b.title, 'de'),
-      rabatt: (a, b) => (discount(b) || 0) - (discount(a) || 0),
+      'titel-desc': (a, b) => b.title.localeCompare(a.title, 'de'),
+      rabatt: (a, b) => (discount(b) ?? -1) - (discount(a) ?? -1),
+      'rabatt-asc': (a, b) => (discount(a) ?? Infinity) - (discount(b) ?? Infinity),
       preis: (a, b) => (a.priceMinor ?? Infinity) - (b.priceMinor ?? Infinity),
-      relevanz: (a, b) => (tab === 'deals' ? (discount(b) || 0) - (discount(a) || 0) : 0),
+      'preis-desc': (a, b) => (b.priceMinor ?? -1) - (a.priceMinor ?? -1),
+      'cover-first': (a, b) => Number(Boolean(b.cover)) - Number(Boolean(a.cover)),
+      relevanz: (a, b) => (tab === 'deals' ? (discount(b) ?? -1) - (discount(a) ?? -1) : 0),
     }[sort] || (() => 0);
     return snapshot.games
       .filter((game) => (tab === 'deals' ? discount(game) !== null : game.services.includes(tab)))
@@ -106,7 +116,7 @@ export default function XboxClient({ snapshot }) {
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const current = Math.min(page, pages);
   const visible = filtered.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
-  const select = (value) => { setTab(value); setGenre('all'); setPage(1); };
+  const select = (value) => { setTab(value); setGenre('all'); setSort(value === 'deals' ? 'relevanz' : 'titel'); setQuery(''); setOnlyWithArt(false); setPage(1); };
   const update = (setter) => (value) => { setter(value); setPage(1); };
 
   return <div className="catalog-app is-xbox">
@@ -128,46 +138,51 @@ export default function XboxClient({ snapshot }) {
 
     <nav className="catalog-tabs" aria-label="Xbox-Bereiche">
       {TABS.map((item) => <button key={item.id} type="button" className={tab === item.id ? 'active' : ''}
-        aria-current={tab === item.id ? 'page' : undefined} onClick={() => select(item.id)}>{item.label}</button>)}
+        aria-current={tab === item.id ? 'page' : undefined} onClick={() => select(item.id)}>{item.label}{!snapshot.coverage.views?.[item.view]?.count && !snapshot.coverage.views?.[item.view]?.complete ? <small className="xbox-tab-unavailable">ohne Daten</small> : null}</button>)}
     </nav>
 
     <section className="catalog-status" aria-live="polite">
       <div>
         <strong>{active.label}</strong>
-        <span>{coverage ? `${coverage.count} erfasste Einträge${coverage.complete ? ' · Quelle vollständig geprüft' : ` · Quelle nennt ${coverage.expected ?? '?'}, erfasst wurden ${coverage.observed}`}` : 'Keine Erfassung für diesen Bereich'}</span>
+        <span>{captureMissing ? 'Keine belastbare Erfassung verfügbar – nicht mit einem leeren Spielekatalog gleichzusetzen' : coverage ? `${coverage.count} erfasste Einträge${coverage.complete ? ' · Quelle vollständig geprüft' : ' · Quelle noch nicht vollständig bestätigt'}` : 'Keine bestätigten Quelldaten'}</span>
       </div>
       <span className="catalog-date">Quellenstand {dateLabel(snapshot.checkedAt) || '—'}</span>
     </section>
 
-    {coverage && !coverage.complete ? <div className="catalog-warning" role="status">
-      Für diesen Bereich nennt die Quelle {coverage.expected ?? '—'} Einträge, geliefert wurden {coverage.observed}. Die Abdeckung ist damit nicht vollständig bestätigt. Es werden keine Einträge ergänzt oder geschätzt. <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Offiziellen Katalog prüfen ↗</a>
-    </div> : null}
+    {captureMissing ? <div className="catalog-warning xbox-coverage-warning" role="status">
+      <strong>Dieser Abo-Bereich konnte nicht verlässlich ausgelesen werden.</strong> Das bedeutet nicht, dass dort keine Spiele enthalten sind.
+      <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer"> Offiziellen Xbox-Katalog prüfen ↗</a>
+    </div> : coverage && !coverage.complete ? <details className="catalog-warning xbox-coverage-details">
+      <summary>Datenabdeckung unvollständig · {coverage.observed} von {coverage.expected ?? '?'} Quellkarten erfasst</summary>
+      <p>Die Quelle konnte nicht vollständig eingelesen werden. Fehlende Einträge werden weder geschätzt noch aus anderen Abos übernommen. <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Quelle prüfen ↗</a></p>
+    </details> : null}
 
-    {tab === 'deals'
+    {!captureMissing && (tab === 'deals'
       ? <p className="catalog-note">Preise und Rabatte sind Beobachtungen aus dem offiziellen Katalog zum genannten Quellenstand, keine Zusicherung. Maßgeblich ist der Microsoft Store.</p>
-      : <p className="catalog-note">Abo-Zugehörigkeit gilt für die angezeigte Plattform und das genannte Abo. Eine Aufnahme in ein Abo ist kein Besitz und kann enden. Game Pass für PC und Cloud werden hier nicht als Konsolenzugang ausgewiesen.</p>}
+      : <p className="catalog-note">Abo-Zugehörigkeit gilt für die angezeigte Plattform und das genannte Abo. Eine Aufnahme in ein Abo ist kein Besitz und kann enden. Game Pass für PC und Cloud werden hier nicht als Konsolenzugang ausgewiesen.</p>)}
 
-    <div className="catalog-filter-head">
+    {!captureMissing ? <><div className="catalog-filter-head">
       <label className="catalog-search"><span className="sr-only">Spiele suchen</span>
         <input type="search" placeholder="Spiel suchen …" value={query} onChange={(event) => update(setQuery)(event.target.value)} /></label>
       <button className="catalog-filter-toggle" onClick={() => setHideFilters(!hideFilters)} aria-expanded={!hideFilters}>{hideFilters ? 'Filter anzeigen' : 'Filter'}</button>
     </div>
     {!hideFilters ? <div className="catalog-filters">
-      <label>Plattform<select value="xbox-series" disabled><option value="xbox-series">Xbox Series X|S</option></select></label>
+      <span className="xbox-platform-caption">Plattform: Xbox Series X|S</span>
       {genres.length ? <label>Genre<select value={genre} onChange={(event) => update(setGenre)(event.target.value)}>
         <option value="all">Alle Genres</option>
         {genres.map((value) => <option key={value} value={value}>{value}</option>)}
       </select></label> : null}
       <label>Sortieren<select value={sort} onChange={(event) => update(setSort)(event.target.value)}>
-        <option value="relevanz">{tab === 'deals' ? 'Höchster Rabatt' : 'Titel A–Z'}</option>
+        {tab === 'deals' ? <><option value="relevanz">Höchster Rabatt</option><option value="rabatt-asc">Niedrigster Rabatt</option></> : null}
         <option value="titel">Titel A–Z</option>
-        <option value="rabatt">Höchster Rabatt</option>
-        <option value="preis">Günstigster Preis</option>
+        <option value="titel-desc">Titel Z–A</option>
+        {hasPrices ? <><option value="preis">Günstigster Preis</option><option value="preis-desc">Höchster Preis</option></> : null}
+        <option value="cover-first">Mit Bild zuerst</option>
       </select></label>
       <label className="catalog-check"><input type="checkbox" checked={onlyWithArt} onChange={(event) => update(setOnlyWithArt)(event.target.checked)} /> Nur mit Bild</label>
-    </div> : null}
+    </div> : null}</> : null}
 
-    <div className="catalog-results-head">
+    {!captureMissing ? <><div className="catalog-results-head">
       <strong>{filtered.length.toLocaleString('de-DE')} {filtered.length === 1 ? 'Eintrag' : 'Einträge'}</strong>
       <span>{filtered.length ? `${(current - 1) * PAGE_SIZE + 1}–${Math.min(current * PAGE_SIZE, filtered.length)}` : 'Keine Treffer'}</span>
     </div>
@@ -181,11 +196,11 @@ export default function XboxClient({ snapshot }) {
       <button disabled={current <= 1} onClick={() => setPage((value) => value - 1)}>← Zurück</button>
       <span>Seite {current} von {pages}</span>
       <button disabled={current >= pages} onClick={() => setPage((value) => value + 1)}>Weiter →</button>
-    </nav> : null}
+    </nav> : null}</> : null}
 
     <footer className="catalog-footer">
       Private Übersicht · Beta · Keine Kauf- oder Abo-Funktion · Verfügbarkeit, Preis und Berechtigung im Microsoft Store prüfen.
-      {!genres.length ? <><br />Der Genrefilter ist nur für Angebote erfasst. Über alle Abo-Bereiche hinweg wären es 105 Abrufe der Quelle – das steht in keinem Verhältnis.</> : null}
+      {!genres.length && captured ? <><br />Genreangaben sind für diesen Bereich nicht durchgehend verifiziert.</> : null}
       <br />Quelle: <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">{snapshot.sourceUrl}</a>, Ziel Xbox Series X|S.
     </footer>
   </div>;
