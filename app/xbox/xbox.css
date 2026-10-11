@@ -57,3 +57,7 @@
 .is-xbox .xbox-platform-caption{display:flex;align-items:center;font-size:12px;font-weight:700;color:var(--xb-muted);min-height:44px}
 .is-xbox .catalog-filters select{height:44px}
 @media(max-width:650px){.is-xbox .xbox-platform-caption{grid-column:1/-1;min-height:22px}.is-xbox .xbox-coverage-details{font-size:12px}}
+
+/* Microsoft Store catalog art is square, not a PlayStation-style portrait cover. */
+.is-xbox .catalog-art{aspect-ratio:1/1}
+.is-xbox .catalog-art img{object-fit:cover}
