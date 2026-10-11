@@ -46,3 +46,14 @@
 .is-xbox .catalog-footer a{color:#8ce88c;text-decoration:underline;text-underline-offset:3px}
 .is-xbox :focus-visible{outline-color:var(--xb-bright)}
 .is-xbox .radar-sheet-kicker{color:#7ae07a}
+
+/* Partial coverage stays visible but no longer takes a full warning panel. */
+.is-xbox .xbox-coverage-details{padding:10px 13px}
+.is-xbox .xbox-coverage-details summary{cursor:pointer;font-weight:800;list-style-position:inside}
+.is-xbox .xbox-coverage-details p{margin:8px 0 0;line-height:1.5}
+.is-xbox .xbox-coverage-warning{display:grid;gap:5px}
+.is-xbox .xbox-tab-unavailable{font-size:10px;font-weight:700;color:#e0b777;white-space:nowrap}
+.is-xbox .catalog-tabs button.active .xbox-tab-unavailable{color:#fff1c4}
+.is-xbox .xbox-platform-caption{display:flex;align-items:center;font-size:12px;font-weight:700;color:var(--xb-muted);min-height:44px}
+.is-xbox .catalog-filters select{height:44px}
+@media(max-width:650px){.is-xbox .xbox-platform-caption{grid-column:1/-1;min-height:22px}.is-xbox .xbox-coverage-details{font-size:12px}}
