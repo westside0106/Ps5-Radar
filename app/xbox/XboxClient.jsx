@@ -31,7 +31,17 @@ function dateLabel(value) {
     : new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', day: '2-digit', month: '2-digit', year: 'numeric' }).format(date);
 }
 
+function enlargedOfficialCover(url) {
+  if (!url?.startsWith('https://store-images.s-microsoft.com/image/')) return url || null;
+  // The official listing currently supplies mostly 177 × 177 thumbnails.
+  // Only adjust existing Microsoft CDN size parameters; never invent artwork.
+  return url.replace(/([?&])w=\d+/i, '$1w=640').replace(/([?&])h=\d+/i, '$1h=640');
+}
+
 function GameTile({ game }) {
+  const [largeFailed, setLargeFailed] = useState(false);
+  const [artFailed, setArtFailed] = useState(false);
+  const art = artFailed ? null : largeFailed ? game.cover : enlargedOfficialCover(game.cover);
   const cut = discount(game);
   const price = euro(game.priceMinor);
   const regular = euro(game.regularPriceMinor);
@@ -53,7 +63,8 @@ function GameTile({ game }) {
   return <DetailTile detail={detail} className="catalog-tile">
     <article className="catalog-card">
       <div className="catalog-art">
-        {game.cover ? <img src={game.cover} alt="" loading="lazy" decoding="async" />
+        {art ? <img src={art} alt="" loading="lazy" decoding="async"
+          onError={() => { if (!largeFailed && art !== game.cover) setLargeFailed(true); else setArtFailed(true); }} />
           : <span className="catalog-no-art">XB<br /><small>Kein Bild erfasst</small></span>}
       </div>
       <div className="catalog-card-copy">
