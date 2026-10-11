@@ -7,6 +7,7 @@ import DetailTile from './DetailTile';
 import catalog from '../../data/ps-plus-catalog.json';
 import gameSources from '../../data/game-sources.json';
 import { safePlusCover } from '../../lib/radar-media.mjs';
+import { currentEssential } from '../../lib/ps-plus-current.mjs';
 
 export const dynamic = 'force-dynamic';
 
@@ -73,6 +74,8 @@ function dealStats(deal) {
   let discount = discountNumber(deal.discount);
   if (!discount && current !== null && old) discount = Math.round((1 - current / old) * 100);
   const saving = current !== null && old !== null && old > current ? old - current : null;
+  const essential = currentEssential(radar, catalog);
+  const quickItems = (radar.quickItems || []).map(item => item === radar.psplusTitle ? essential.title : item);
   const remaining = daysUntil(radar.storeEnd);
   const expiry = remaining === null ? 'AKTUELL' : remaining === 0 ? 'ENDET HEUTE' : remaining === 1 ? 'NOCH 1 TAG' : `NOCH ${remaining} TAGE`;
   const strength = discount >= 70 ? 'MEGA-DEAL' : discount >= 50 ? 'STARK' : discount >= 30 ? 'GUT' : 'DEAL';
@@ -213,7 +216,7 @@ function storyDetail({ title, date, text, price, image, top = false }) {
   };
 }
 
-function psPlusDetail(game) {
+function psPlusDetail(game, essential) {
   const info = { ...(gameSources[game.title] || {}), ...gameInfo(game.title) };
   const cover = safePlusCover(game, radar, catalog, gameSources[game.title] || {});
   return {
@@ -222,14 +225,15 @@ function psPlusDetail(game) {
     title: game.title,
     image: cover,
     gallery: cover ? [cover] : [],
-    summary: info.description || 'Teil der aktuell im Radar geführten monatlichen PlayStation-Plus-Spiele.',
+    summary: info.description || 'Eintrag aus der verifizierten PlayStation-Plus-Quelle. Beanspruchungszeitraum bitte separat prüfen.',
     rows: richRows(game.title, [
-      { label: 'Paket', value: radar.psplusLabel },
-      { label: 'Status', value: radar.psplusTitle },
-      { label: 'Zeitraum', value: radar.psplusText },
+      { label: 'Paket', value: essential.label },
+      { label: 'Status', value: essential.title },
+      { label: 'Zeitraum / Quellenstand', value: essential.text },
     ]),
     links: gameLinks(game.title, [
-      { label: 'PS-Plus-Ankündigung', url: radar.resolvedSources?.psPlusMonthly || sources.psPlusMonthly },
+      { label: 'Offizielle PS-Plus-Quelle', url: essential.sourceUrl },
+      { label: 'PlayStation Store', url: game.storeUrl },
     ]),
   };
 }
@@ -306,20 +310,20 @@ function eaDetail() {
   };
 }
 
-function quickDetail(item) {
-  if (item === radar.psplusTitle) {
-    const titles = (radar.plusGames || []).map((game) => game.title);
+function quickDetail(item, essential) {
+  if (item === essential.title) {
+    const titles = essential.games.map((game) => game.title);
     return {
       kicker: 'PS PLUS',
       title: item,
-      summary: `${radar.psplusText} Diese Monatsspiele müssen innerhalb des Zeitraums zur Bibliothek hinzugefügt werden; danach bleiben sie mit aktivem Abonnement spielbar.`,
+      summary: essential.text,
       rows: [
-        { label: 'Paket', value: radar.psplusLabel },
+        { label: 'Paket', value: essential.label },
         { label: 'Spiele', value: titles.length ? String(titles.length) : null },
         ...titles.map((title, index) => ({ label: `Titel ${index + 1}`, value: title })),
       ].filter((row) => row.value != null && row.value !== ''),
       links: [
-        { label: 'PS-Plus-Ankündigung', url: radar.resolvedSources?.psPlusMonthly || sources.psPlusMonthly },
+        { label: 'Offizielle PS-Plus-Quelle', url: essential.sourceUrl },
       ],
     };
   }
@@ -359,13 +363,13 @@ function Panel({ tone, icon, title, children, className = '' }) {
   );
 }
 
-function PlusCover({ game, label }) {
+function PlusCover({ game, essential }) {
   const cover = safePlusCover(game, radar, catalog, gameSources[game.title] || {});
   return (
-    <DetailTile detail={psPlusDetail(game)}>
+    <DetailTile detail={psPlusDetail(game, essential)}>
       <article className="plus-cover">
         <div className={`plus-cover-art ${cover ? "" : "is-missing"}`} style={cover ? { backgroundImage: `url("${cover}")` } : undefined}>{!cover ? <span>Cover nicht verifiziert</span> : null}</div>
-        <div className="plus-cover-copy"><strong>{game.title}</strong><small>PS PLUS · {label || 'AKTUELL'}</small></div>
+        <div className="plus-cover-copy"><strong>{game.title}</strong><small>PS PLUS · {essential.label || 'AKTUELL'}</small></div>
       </article>
     </DetailTile>
   );
@@ -515,23 +519,23 @@ export default async function RadarPage() {
           </div>
         </section>
 
-        <Panel tone="plus" icon="＋" title={`PLAYSTATION PLUS · ${radar.psplusLabel || 'AKTUELL'}`} className="mag-plus">
+        <Panel tone="plus" icon="＋" title={`PLAYSTATION PLUS · ${essential.label}`} className="mag-plus">
           <DetailTile detail={{
             kicker: 'PLAYSTATION PLUS',
             kind: 'summary',
-            title: radar.psplusTitle,
-            summary: radar.psplusText,
-            rows: [{ label: 'Paket', value: radar.psplusLabel }],
-            links: [{ label: 'PS-Plus-Ankündigung', url: radar.resolvedSources?.psPlusMonthly || sources.psPlusMonthly }],
+            title: essential.title,
+            summary: essential.text,
+            rows: [{ label: 'Quelle', value: essential.label }],
+            links: [{ label: 'Offizieller PS-Plus-Katalog', url: essential.sourceUrl }],
           }}>
             <div className="plus-summary compact-summary">
-              <div><span>ESSENTIAL</span><h4>{radar.psplusTitle}</h4></div><p>{radar.psplusText}</p>
+              <div><span>ESSENTIAL</span><h4>{essential.title}</h4></div><p>{essential.text}</p>
             </div>
           </DetailTile>
-          <div className="plus-catalog-nav"><a href="/ps-plus">Alle PS+-Spiele anzeigen <span aria-hidden="true">↗</span></a><small>Essential · Extra · Premium · Trials</small></div>
-          <div className="plus-covers">
-            {radar.plusGames.map((game) => <PlusCover key={game.title} game={game} label={radar.psplusLabel} />)}
-          </div>
+          <div className="plus-catalog-nav"><a href="/ps-plus">Alle PS+-Spiele anzeigen <span aria-hidden="true">↗</span></a><small>Essential · Extra · Premium · Ubisoft+ Classics</small></div>
+          {essential.games.length ? <div className="plus-covers">
+            {essential.games.map((game) => <PlusCover key={game.title} game={game} essential={essential} />)}
+          </div> : null}
         </Panel>
 
         <section className="mag-focusgrid">
@@ -643,9 +647,9 @@ export default async function RadarPage() {
 
           <Panel tone="quick" icon="✓" title="KURZ & KOMPAKT" className="quick-showcase">
             <ul className="quick-list">
-              {(radar.quickItems || []).map((item) => (
+              {quickItems.map((item) => (
                 <li key={item}>
-                  <DetailTile detail={quickDetail(item)} className="quick-item-clickable">{item}</DetailTile>
+                  <DetailTile detail={quickDetail(item, essential)} className="quick-item-clickable">{item}</DetailTile>
                 </li>
               ))}
             </ul>
