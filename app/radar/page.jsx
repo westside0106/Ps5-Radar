@@ -425,6 +425,7 @@ function ReleaseCard({ item }) {
         <div className="release-card-top">
           <span className={`release-countdown ${timingClass}`.trim()}>{timing.label}</span>
         </div>
+        {!media.image ? <div className="release-art-placeholder" aria-hidden="true"><span>PS5</span><small>Cover noch nicht verifiziert</small></div> : null}
         <div className="release-card-copy">
           <span className="release-date">{timing.fullDate}</span>
           <h4>{item.title}</h4>
