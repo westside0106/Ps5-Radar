@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-10T13:46:49.291Z",
+  "checkedAt": "2026-10-11T05:58:07.239Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -58,7 +58,7 @@
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 208191,
+    "bytes": 209175,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 174782,
+    "bytes": 175766,
     "updated": true,
     "parsed": {
       "games": [
@@ -138,7 +138,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-10T13:47:23.402Z",
+      "checkedAt": "2026-10-11T05:58:45.687Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -158,7 +158,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241556,
+    "bytes": 241555,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -171,7 +171,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163235,
+    "bytes": 163233,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
@@ -203,8 +203,7 @@
       "parsed": {
         "prices": [
           "79,99 €",
-          "19,99 €",
-          "99 €"
+          "19,99 €"
         ],
         "discounts": [
           "-75 %"
