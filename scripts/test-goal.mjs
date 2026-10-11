@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import { emptyCatalog, normalizeCatalog, catalogCover, catalogFilter, mergeCatalogSnapshots, berlinDate, titleKey } from '../lib/ps-plus-catalog.mjs';
 import { safePlusCover, dailyLabel } from '../lib/radar-media.mjs';
 import { CATALOG_TABS, prepareCatalog, catalogFilter as catalogViewFilter } from '../lib/radar-catalog-view.mjs';
+import { berlinDay, monthlyClaimEnd, currentEssential } from '../lib/ps-plus-current.mjs';
 import { storeProduct, verifiedStoreCover } from './lib/media-identity.mjs';
 const source='https://www.playstation.com/de-de/ps-plus/games/';
 const store='https://store.playstation.com/de-de/product/EP0000-PPSA00000_00-GAME000000000000';
@@ -102,6 +103,25 @@ test('PS+ sorting uses available metadata with deterministic fallback',()=>{
  assert.equal(ids('cover-last'),'a,c,b,d');
  assert.equal(ids('release-new'),'b,a,d,c');
  assert.equal(ids('release-old'),'d,a,b,c');
+});
+test('expired monthly PS+ editorial yields to recent verified Essential catalog',()=>{
+ const radar={psplusLabel:'SEPTEMBER 2026',psplusTitle:'September-Spiele sind live',psplusText:'Verfügbar bis 05.10.',plusGames:[{title:'Altes Spiel'}]};
+ const catalog={checkedAt:'2026-10-11T10:00:00Z',sourceUrl:'https://www.playstation.com/de-de/ps-plus/games/',sections:{essential:{complete:true}},games:[
+  {title:'Aktuelles Spiel',storeUrl:'https://store.playstation.com/de-de/concept/123',services:['essential'],image:'https://image.api.playstation.com/abc.png'},
+  {title:'Extra-Spiel',storeUrl:'https://store.playstation.com/de-de/concept/456',services:['extra']}
+ ]};
+ assert.equal(monthlyClaimEnd(radar),'2026-10-05');
+ assert.equal(berlinDay(new Date('2026-10-11T22:30:00Z')),'2026-10-12');
+ const current=currentEssential(radar,catalog,new Date('2026-10-12T01:00:00Z'));
+ assert.equal(current.kind,'catalog');
+ assert.deepEqual(current.games.map(game=>game.title),['Aktuelles Spiel']);
+ assert.match(current.text,/Beanspruchungsfrist.*nicht bestätigt/i);
+ assert.equal(current.sourceUrl,catalog.sourceUrl);
+ assert.equal(currentEssential(radar,catalog,new Date('2026-10-03T12:00:00Z')).kind,'monthly');
+ const tooOld={...catalog,checkedAt:'2026-09-01T10:00:00Z'};
+ assert.equal(currentEssential(radar,tooOld,new Date('2026-10-12T01:00:00Z')).kind,'unverified');
+ assert.equal(currentEssential(radar,{...catalog,sections:{essential:{complete:false}}},new Date('2026-10-12T01:00:00Z')).games.length,0);
+ assert.equal(monthlyClaimEnd({psplusLabel:'DEZEMBER 2026',psplusText:'Verfügbar bis 05.01.'}),'2027-01-05');
 });
 test('failed refresh preserves last valid snapshot and does not invent games',()=>{
  const old=fixture();const next=normalizeCatalog({checkedAt:'2026-09-08T08:00:00Z',results:{extra:{expected:5,complete:false,entries:[]}}});
