@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import fs from 'node:fs/promises';
 import { emptyCatalog, normalizeCatalog, catalogCover, catalogFilter, mergeCatalogSnapshots, berlinDate, titleKey } from '../lib/ps-plus-catalog.mjs';
 import { safePlusCover, dailyLabel } from '../lib/radar-media.mjs';
-import { CATALOG_TABS, prepareCatalog } from '../lib/radar-catalog-view.mjs';
+import { CATALOG_TABS, prepareCatalog, catalogFilter as catalogViewFilter } from '../lib/radar-catalog-view.mjs';
 import { storeProduct, verifiedStoreCover } from './lib/media-identity.mjs';
 const source='https://www.playstation.com/de-de/ps-plus/games/';
 const store='https://store.playstation.com/de-de/product/EP0000-PPSA00000_00-GAME000000000000';
@@ -84,6 +84,24 @@ test('catalog membership is not confused with a monthly claim',()=>{
  assert.equal(view.sections.extra.complete,true);
  assert.deepEqual(CATALOG_TABS.map(tab=>tab.id),['essential','extra','premium','ubisoft']);
  assert.equal(view.sections.trials,undefined);assert.equal(view.sections.leaving,undefined);
+});
+test('PS+ sorting uses available metadata with deterministic fallback',()=>{
+ const games=[
+  {id:'a',title:'Alpha',services:['extra'],genres:['Action'],platforms:['PS4'],image:null,releaseDate:'2024-05-01'},
+  {id:'b',title:'Beta',services:['extra'],genres:['Puzzle'],platforms:['PS5'],image:cover,releaseDate:'2025-05-01'},
+  {id:'c',title:'Charlie',services:['extra'],genres:[],platforms:['PS4','PS5'],image:null},
+  {id:'d',title:'Delta',services:['extra'],genres:['Adventure'],platforms:['PS4'],image:cover,releaseDate:'2023-05-01'}
+ ];
+ const ids=sort=>catalogViewFilter(games,{service:'extra',sort}).map(game=>game.id).join(',');
+ assert.equal(ids('title-desc'),'d,c,b,a');
+ assert.equal(ids('genre'),'a,d,b,c');
+ assert.equal(ids('genre-desc'),'b,d,a,c');
+ assert.equal(ids('ps5-first'),'b,c,a,d');
+ assert.equal(ids('ps4-first'),'a,c,d,b');
+ assert.equal(ids('cover-first'),'b,d,a,c');
+ assert.equal(ids('cover-last'),'a,c,b,d');
+ assert.equal(ids('release-new'),'b,a,d,c');
+ assert.equal(ids('release-old'),'d,a,b,c');
 });
 test('failed refresh preserves last valid snapshot and does not invent games',()=>{
  const old=fixture();const next=normalizeCatalog({checkedAt:'2026-09-08T08:00:00Z',results:{extra:{expected:5,complete:false,entries:[]}}});
