@@ -5,6 +5,12 @@ name: Daily Xbox Radar
 # allein rund 10 Minuten - mehr als das Zeitlimit des PS-Jobs.
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-xbox.yml'
+      - 'lib/providers/xbox/**'
+      - 'scripts/update-xbox-snapshot.mjs'
   schedule:
     - cron: '15 7 * * *'
 
@@ -18,7 +24,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v7
         with:
@@ -42,6 +48,10 @@ jobs:
       - name: Verify platform contracts
         run: npm run test:platform
       - name: Collect official Xbox catalog views
+        env:
+          # Push-triggered repair runs reuse previously verified genre labels;
+          # scheduled runs continue to refresh genres from the source.
+          XBOX_SKIP_GENRES: ${{ github.event_name == 'push' && '1' || '0' }}
         run: npm run xbox:refresh
       - name: Commit Xbox snapshot
         shell: bash
