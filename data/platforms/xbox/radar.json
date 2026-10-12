@@ -3,47 +3,63 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-10T13:47:50.102Z",
+  "checkedAt": "2026-10-12T15:39:08.474Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 2068,
+    "count": 2071,
     "views": {
       "deals": {
-        "expected": 1430,
-        "observed": 1430,
-        "count": 1430,
-        "complete": true
+        "expected": 1432,
+        "observed": 1432,
+        "count": 1432,
+        "complete": true,
+        "attempts": 2
       },
-      "gamepass-console": {
+      "gamepass-essential": {
         "expected": null,
         "observed": 0,
         "count": 0,
-        "complete": false
+        "complete": false,
+        "attempts": 2
+      },
+      "gamepass-premium": {
+        "expected": null,
+        "observed": 0,
+        "count": 0,
+        "complete": false,
+        "attempts": 2
       },
       "gamepass-ultimate": {
         "expected": 693,
         "observed": 692,
         "count": 692,
-        "complete": false
+        "complete": false,
+        "attempts": 2
       },
       "ea-play": {
         "expected": null,
         "observed": 0,
         "count": 0,
-        "complete": false
+        "complete": false,
+        "attempts": 2
       },
       "ubisoft-plus": {
         "expected": 117,
         "observed": 113,
         "count": 113,
-        "complete": false
+        "complete": false,
+        "attempts": 2
       }
     },
     "errors": [
-      "gamepass-console: gamepass-console: Anzahl nicht von der Ausgangszahl unterscheidbar",
-      "ea-play: ea-play: Anzahl nicht von der Ausgangszahl unterscheidbar",
-      "gamepass-console: 0/? Karten gesehen",
+      "gamepass-essential: keine bestaetigte Quelle (Durchlauf 1: Filtergruppe Spielen auf auf Game-Pass-Seite fehlt; Durchlauf 2: Filtergruppe Spielen auf auf Game-Pass-Seite fehlt)",
+      "gamepass-premium: keine bestaetigte Quelle (Durchlauf 1: Filtergruppe Spielen auf auf Game-Pass-Seite fehlt; Durchlauf 2: Filtergruppe Spielen auf auf Game-Pass-Seite fehlt)",
+      "gamepass-ultimate: 692/693 eindeutig belegt, Durchlauf 1: 692/693 eindeutige IDs; Durchlauf 2: 692/693 eindeutige IDs",
+      "ea-play: keine bestaetigte Quelle (Durchlauf 1: Filtergruppe Spielen auf auf Game-Pass-Seite fehlt; Durchlauf 2: Filtergruppe Spielen auf auf Game-Pass-Seite fehlt)",
+      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 113/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
+      "gamepass-essential: 0/? Karten gesehen",
+      "gamepass-premium: 0/? Karten gesehen",
       "gamepass-ultimate: 692/693 Karten gesehen",
       "ea-play: 0/? Karten gesehen",
       "ubisoft-plus: 113/117 Karten gesehen"
@@ -56,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-10T13:47:50.102Z",
+      "observedAt": "2026-10-12T15:39:08.474Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -67,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-10T13:47:50.102Z",
+      "observedAt": "2026-10-12T15:39:08.474Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -78,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-10T13:47:50.102Z",
+      "observedAt": "2026-10-12T15:39:08.474Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -22438,6 +22454,48 @@
       "services": []
     },
     {
+      "key": "xbox:product:9p5vmg8d4p4b",
+      "id": "9p5vmg8d4p4b",
+      "title": "Power Rangers: Battle for the Grid",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/power-rangers-battle-for-the-grid/9p5vmg8d4p4b",
+      "cover": "https://store-images.s-microsoft.com/image/apps.60516.14636624242477201.684d5e4f-5586-4870-aa98-c0ce136ea8f4.4db9f25f-f2f2-4e72-a4d4-c4926ed6be0e?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 399,
+      "regularPriceMinor": 1999,
+      "genres": [],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9nhgd97lxsgg",
+      "id": "9nhgd97lxsgg",
+      "title": "Power Rangers: Battle for the Grid - Sammleredition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/power-rangers-battle-for-the-grid-sammleredition/9nhgd97lxsgg",
+      "cover": "https://store-images.s-microsoft.com/image/apps.15013.13626471372139733.b4e87ad1-c88c-49e3-8643-1fba0dbe2d4d.c90749ec-cef7-4cee-a127-39b7bbd60c48?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 599,
+      "regularPriceMinor": 2999,
+      "genres": [],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9n167rtv1wdh",
+      "id": "9n167rtv1wdh",
+      "title": "Power Rangers: Battle for the Grid Super Ausgabe",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/power-rangers-battle-for-the-grid-super-ausgabe/9n167rtv1wdh",
+      "cover": "https://store-images.s-microsoft.com/image/apps.54596.13907416406605308.0779fe4a-0eb3-4ebb-a025-8fe41ba4c586.5930da65-56f2-4033-b017-b0d2a3a590bf?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 999,
+      "regularPriceMinor": 4999,
+      "genres": [],
+      "services": []
+    },
+    {
       "key": "xbox:product:9nx6td1k3hvm",
       "id": "9nx6td1k3hvm",
       "title": "PowerSlave Exhumed",
@@ -27892,6 +27950,20 @@
       ]
     },
     {
+      "key": "xbox:product:9n33spbxbpc7",
+      "id": "9n33spbxbpc7",
+      "title": "Super Pixel Kid 2",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/super-pixel-kid-2/9n33spbxbpc7",
+      "cover": "https://store-images.s-microsoft.com/image/apps.30001.13944106307604978.e4105757-3028-41bc-91ce-3075355a36d5.25fadfbf-df2a-47f6-a88c-8b85eb8f8c56?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 99,
+      "regularPriceMinor": 419,
+      "genres": [],
+      "services": []
+    },
+    {
       "key": "xbox:product:c0zj976bh91x",
       "id": "c0zj976bh91x",
       "title": "Super Toy Cars",
@@ -31990,22 +32062,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:bnnmlwzrnqf6",
-      "id": "bnnmlwzrnqf6",
-      "title": "Ultimate Chicken Horse",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/ultimate-chicken-horse/bnnmlwzrnqf6",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29379.68078631346001331.49a472fe-4e1f-4aab-8e4f-732405dfb269.70c5ab0c-c824-44be-b4f8-3623be2a5ecd?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 674,
-      "regularPriceMinor": 1499,
-      "genres": [
-        "Platformer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9p1h8k2v0nnp",
       "id": "9p1h8k2v0nnp",
       "title": "Ultimate Sheep Raccoon",
@@ -32014,8 +32070,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 1529,
-      "regularPriceMinor": 1799,
+      "priceMinor": 1799,
+      "regularPriceMinor": null,
       "genres": [
         "Action & Abenteuer",
         "Andere",
