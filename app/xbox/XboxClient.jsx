@@ -3,14 +3,16 @@ import { useMemo, useState } from 'react';
 import DetailTile from '../radar/DetailTile';
 
 const SERVICES = {
-  'xbox-game-pass:console': 'Game Pass · Konsole',
+  'xbox-game-pass:essential': 'Game Pass · Essential',
+  'xbox-game-pass:premium': 'Game Pass · Premium',
   'xbox-game-pass:ultimate': 'Game Pass · Ultimate',
   'ea-play:ea-play': 'EA Play',
   'ubisoft-plus:ubisoft-plus': 'Ubisoft+',
 };
 const TABS = [
   { id: 'deals', label: 'Angebote', view: 'deals' },
-  { id: 'xbox-game-pass:console', label: 'Game Pass · Konsole', view: 'gamepass-console' },
+  { id: 'xbox-game-pass:essential', label: 'Game Pass · Essential', view: 'gamepass-essential' },
+  { id: 'xbox-game-pass:premium', label: 'Game Pass · Premium', view: 'gamepass-premium' },
   { id: 'xbox-game-pass:ultimate', label: 'Game Pass · Ultimate', view: 'gamepass-ultimate' },
   { id: 'ea-play:ea-play', label: 'EA Play', view: 'ea-play' },
   { id: 'ubisoft-plus:ubisoft-plus', label: 'Ubisoft+', view: 'ubisoft-plus' },
