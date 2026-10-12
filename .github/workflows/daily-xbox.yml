@@ -19,7 +19,7 @@ permissions:
 
 concurrency:
   group: daily-xbox-radar
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
