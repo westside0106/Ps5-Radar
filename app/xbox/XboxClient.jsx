@@ -89,6 +89,9 @@ export default function XboxClient({ snapshot }) {
   const [page, setPage] = useState(1);
   const active = TABS.find((item) => item.id === tab) || TABS[0];
   const coverage = snapshot.coverage.views?.[active.view] || null;
+  const sourceUrl = ['gamepass-essential', 'gamepass-premium', 'ea-play'].includes(active.view)
+    ? 'https://www.xbox.com/de-DE/xbox-game-pass/games'
+    : snapshot.sourceUrl || 'https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS';
   const captured = Number(coverage?.count || 0) > 0;
   const captureMissing = !captured && !coverage?.complete;
   const tabGames = useMemo(() => snapshot.games.filter((game) =>
@@ -164,10 +167,10 @@ export default function XboxClient({ snapshot }) {
 
     {captureMissing ? <div className="catalog-warning xbox-coverage-warning" role="status">
       <strong>Dieser Abo-Bereich konnte nicht verlässlich ausgelesen werden.</strong> Das bedeutet nicht, dass dort keine Spiele enthalten sind.
-      <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer"> Offiziellen Xbox-Katalog prüfen ↗</a>
+      <a href={sourceUrl} target="_blank" rel="noreferrer"> Offiziellen Xbox-Katalog prüfen ↗</a>
     </div> : coverage && !coverage.complete ? <details className="catalog-warning xbox-coverage-details">
       <summary>Datenabdeckung unvollständig · {coverage.observed} von {coverage.expected ?? '?'} Quellkarten erfasst</summary>
-      <p>Die Quelle konnte nicht vollständig eingelesen werden. Fehlende Einträge werden weder geschätzt noch aus anderen Abos übernommen. <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Quelle prüfen ↗</a></p>
+      <p>Die Quelle konnte nicht vollständig eingelesen werden. Fehlende Einträge werden weder geschätzt noch aus anderen Abos übernommen. <a href={sourceUrl} target="_blank" rel="noreferrer">Quelle prüfen ↗</a></p>
     </details> : null}
 
     {!captureMissing && (tab === 'deals'
@@ -203,7 +206,7 @@ export default function XboxClient({ snapshot }) {
     {visible.length
       ? <div className="catalog-grid">{visible.map((game) => <GameTile key={game.key} game={game} />)}</div>
       : <div className="catalog-empty"><h2>Keine passenden Einträge</h2><p>Für diesen Bereich wurde nichts erfasst. Es werden keine Spiele erfunden oder aus anderen Abos ergänzt.</p>
-        <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Offiziellen Xbox-Katalog öffnen ↗</a></div>}
+        <a href={sourceUrl} target="_blank" rel="noreferrer">Offiziellen Xbox-Katalog öffnen ↗</a></div>}
 
     {pages > 1 ? <nav className="catalog-pagination" aria-label="Ergebnisseiten">
       <button disabled={current <= 1} onClick={() => setPage((value) => value - 1)}>← Zurück</button>
@@ -214,7 +217,7 @@ export default function XboxClient({ snapshot }) {
     <footer className="catalog-footer">
       Private Übersicht · Beta · Keine Kauf- oder Abo-Funktion · Verfügbarkeit, Preis und Berechtigung im Microsoft Store prüfen.
       {!genres.length && captured ? <><br />Genreangaben sind für diesen Bereich nicht durchgehend verifiziert.</> : null}
-      <br />Quelle: <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">{snapshot.sourceUrl}</a>, Ziel Xbox Series X|S.
+      <br />Quelle: <a href={sourceUrl} target="_blank" rel="noreferrer">{sourceUrl}</a>, Ziel Xbox Series X|S.
     </footer>
   </div>;
 }
