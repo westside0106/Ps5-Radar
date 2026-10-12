@@ -5,6 +5,7 @@ import { collectDealGenres } from '../lib/providers/xbox/collector.mjs';
 const directory = new URL('../data/platforms/xbox/', import.meta.url);
 const output = new URL('snapshot.json', directory);
 const previous = await fs.readFile(output, 'utf8').then(JSON.parse).catch(() => null);
+const previousView = await fs.readFile(new URL('radar.json', directory), 'utf8').then(JSON.parse).catch(() => null);
 
 const snapshot = await collectXboxSnapshot();
 
@@ -26,11 +27,16 @@ console.log(`Xbox snapshot: ${snapshot.products.length} Produkte, ${snapshot.off
 console.log(`Sichten: ${views}`);
 for (const message of snapshot.coverage.errors) console.log(`::warning::Xbox ${message}`);
 
-// Genres fuer die Angebotsansicht. Ein Fehlschlag hier kostet nur den Filter,
-// nicht die Erfassung - die Spiele bleiben vollstaendig.
-const { genres, errors: genreErrors } = await collectDealGenres();
-for (const message of genreErrors) console.log(`::warning::Xbox ${message}`);
-console.log(`Genres: ${Object.keys(genres).length} Angebote zugeordnet, ${genreErrors.length} Durchlaeufe fehlgeschlagen`);
+// A fast recovery run can skip the expensive 21-genre scrape, preserving
+// previously verified genres only for unchanged Microsoft product IDs.
+// The daily full refresh still performs source-verified genre collection.
+const cachedGenres = Object.fromEntries((previousView?.games || [])
+  .filter(game => game.id && game.genres?.length).map(game => [game.id, game.genres]));
+const skipGenres = process.env.XBOX_SKIP_GENRES === '1';
+const genreResult = skipGenres ? { genres: {}, errors: [] } : await collectDealGenres();
+const genres = { ...cachedGenres, ...genreResult.genres };
+for (const message of genreResult.errors) console.log(`::warning::Xbox ${message}`);
+console.log(`Genres: ${Object.keys(genreResult.genres).length} frisch, ${Object.keys(cachedGenres).length} vorher belegt, ${skipGenres ? 'schneller Wiederherstellungslauf' : 'vollstaendige Neuerfassung'}`);
 
 // Abgeleitete Ansicht: der vollstaendige Snapshot mit Belegen je Angebot und
 // Berechtigung ist fuer die Seite zu gross. Hier bleibt pro Produkt genau das,
@@ -53,7 +59,7 @@ const view = {
   region: 'DE',
   target: snapshot.coverage.target,
   checkedAt: snapshot.checkedAt,
-  sourceUrl: snapshot.evidence[0]?.url || null,
+  sourceUrl: snapshot.evidence[0]?.url || 'https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS',
   coverage: { complete: snapshot.coverage.complete, count: snapshot.coverage.count, views: snapshot.coverage.views, errors: snapshot.coverage.errors },
   evidence: snapshot.evidence,
   games: snapshot.products.map((product) => {
