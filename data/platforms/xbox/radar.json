@@ -3,7 +3,7 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-12T15:49:54.901Z",
+  "checkedAt": "2026-10-12T16:53:25.427Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
@@ -14,7 +14,7 @@
         "observed": 1432,
         "count": 1432,
         "complete": true,
-        "attempts": 1
+        "attempts": 2
       },
       "gamepass-essential": {
         "expected": null,
@@ -57,7 +57,7 @@
       "gamepass-premium: keine bestaetigte Quelle (Durchlauf 1: locator.waitFor: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator('#consmemberfilt input[name=\"default2\"][value=\"allgamespremium\"]').first() to be visible\n    20 × locator resolved to hidden <input type=\"radio\" id=\"default2-2\" name=\"default2\" aria-setsize=\"5\" aria-posinset=\"2\" data-bi-bhvr=\"APPLY\" data-bi-type=\"option\" value=\"allgamespremium\" data-bi-id=\"default2-2\" data-bi-name=\"allgamespremium\" aria-label=\"Spiele nach Game Pass Premium filtern\"/>\n; Durchlauf 2: locator.waitFor: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator('#consmemberfilt input[name=\"default2\"][value=\"allgamespremium\"]').first() to be visible\n    20 × locator resolved to hidden <input type=\"radio\" id=\"default2-2\" name=\"default2\" aria-setsize=\"5\" aria-posinset=\"2\" data-bi-bhvr=\"APPLY\" data-bi-type=\"option\" value=\"allgamespremium\" data-bi-id=\"default2-2\" data-bi-name=\"allgamespremium\" aria-label=\"Spiele nach Game Pass Premium filtern\"/>\n)",
       "gamepass-ultimate: 692/693 eindeutig belegt, Durchlauf 1: 692/693 eindeutige IDs; Durchlauf 2: 692/693 eindeutige IDs",
       "ea-play: keine bestaetigte Quelle (Durchlauf 1: locator.waitFor: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator('#ultimatecollfilt input[name=\"default4\"][value=\"eaplay\"]').first() to be visible\n    20 × locator resolved to hidden <input type=\"radio\" value=\"eaplay\" name=\"default4\" id=\"default4-11\" aria-setsize=\"17\" aria-posinset=\"11\" data-bi-bhvr=\"APPLY\" data-bi-name=\"eaplay\" data-bi-type=\"option\" data-bi-id=\"default4-11\" aria-label=\"Spiele nach EA Play filtern\"/>\n; Durchlauf 2: locator.waitFor: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator('#ultimatecollfilt input[name=\"default4\"][value=\"eaplay\"]').first() to be visible\n    20 × locator resolved to hidden <input type=\"radio\" value=\"eaplay\" name=\"default4\" id=\"default4-11\" aria-setsize=\"17\" aria-posinset=\"11\" data-bi-bhvr=\"APPLY\" data-bi-name=\"eaplay\" data-bi-type=\"option\" data-bi-id=\"default4-11\" aria-label=\"Spiele nach EA Play filtern\"/>\n)",
-      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 111/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
+      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 113/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
       "gamepass-essential: 0/? Karten gesehen",
       "gamepass-premium: 0/? Karten gesehen",
       "gamepass-ultimate: 692/693 Karten gesehen",
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-12T15:49:54.901Z",
+      "observedAt": "2026-10-12T16:53:25.427Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-12T15:49:54.901Z",
+      "observedAt": "2026-10-12T16:53:25.427Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-12T15:49:54.901Z",
+      "observedAt": "2026-10-12T16:53:25.427Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -112,7 +112,9 @@
       ],
       "priceMinor": 3599,
       "regularPriceMinor": 5999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -127,7 +129,8 @@
       "priceMinor": 839,
       "regularPriceMinor": 2799,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -337,6 +340,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -356,6 +360,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -375,6 +380,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -1177,7 +1183,9 @@
       ],
       "priceMinor": 749,
       "regularPriceMinor": 1499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -1263,6 +1271,7 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -1653,6 +1662,7 @@
       "regularPriceMinor": 4499,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": [
@@ -2347,7 +2357,9 @@
       ],
       "priceMinor": 3499,
       "regularPriceMinor": 6999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -2361,7 +2373,9 @@
       ],
       "priceMinor": 2999,
       "regularPriceMinor": 5999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -2375,7 +2389,9 @@
       ],
       "priceMinor": 5999,
       "regularPriceMinor": 11999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -2389,7 +2405,9 @@
       ],
       "priceMinor": 5499,
       "regularPriceMinor": 10999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -2405,6 +2423,7 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -2520,7 +2539,9 @@
       ],
       "priceMinor": 2999,
       "regularPriceMinor": 4999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
@@ -2587,6 +2608,7 @@
       "regularPriceMinor": 1899,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -2669,6 +2691,7 @@
       "regularPriceMinor": 6999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -3283,7 +3306,8 @@
       "priceMinor": 4124,
       "regularPriceMinor": 5499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -3301,7 +3325,8 @@
       "priceMinor": 4761,
       "regularPriceMinor": 6349,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -3402,6 +3427,7 @@
       "regularPriceMinor": 839,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -3622,7 +3648,9 @@
       ],
       "priceMinor": 599,
       "regularPriceMinor": 1999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -3637,7 +3665,8 @@
       "priceMinor": 899,
       "regularPriceMinor": 1799,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -3720,7 +3749,9 @@
       ],
       "priceMinor": 999,
       "regularPriceMinor": 3999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -3734,7 +3765,9 @@
       ],
       "priceMinor": 2659,
       "regularPriceMinor": 3799,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -3748,7 +3781,9 @@
       ],
       "priceMinor": 7699,
       "regularPriceMinor": 10999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -3762,7 +3797,9 @@
       ],
       "priceMinor": 499,
       "regularPriceMinor": 999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -3894,7 +3931,8 @@
       "priceMinor": 949,
       "regularPriceMinor": 3799,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -3929,7 +3967,8 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Platformer"
+        "Platformer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -4111,7 +4150,9 @@
       ],
       "priceMinor": 499,
       "regularPriceMinor": 1999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -4456,6 +4497,7 @@
       "genres": [
         "Action & Abenteuer",
         "Kampfspiele",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": [
@@ -4476,6 +4518,7 @@
       "genres": [
         "Action & Abenteuer",
         "Kampfspiele",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -4595,6 +4638,7 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -5370,7 +5414,8 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Action & Abenteuer",
-        "Familie & Kinder"
+        "Familie & Kinder",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -5424,7 +5469,8 @@
       "priceMinor": 1749,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -5525,7 +5571,8 @@
       "priceMinor": 404,
       "regularPriceMinor": 2699,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -5590,7 +5637,9 @@
       ],
       "priceMinor": 749,
       "regularPriceMinor": 1499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -5622,7 +5671,8 @@
       "priceMinor": 749,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -5689,7 +5739,8 @@
       "priceMinor": 599,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -5705,7 +5756,8 @@
       "priceMinor": 1249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -5721,7 +5773,8 @@
       "priceMinor": 1799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -5753,7 +5806,8 @@
       "priceMinor": 4724,
       "regularPriceMinor": 6299,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -5769,6 +5823,7 @@
       "priceMinor": 699,
       "regularPriceMinor": 3499,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -5786,6 +5841,7 @@
       "priceMinor": 799,
       "regularPriceMinor": 3999,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -5803,6 +5859,7 @@
       "priceMinor": 999,
       "regularPriceMinor": 4999,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -5958,7 +6015,8 @@
       "priceMinor": 5399,
       "regularPriceMinor": 8999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -6258,6 +6316,7 @@
       "regularPriceMinor": 2999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter",
         "Simulation"
       ],
@@ -6392,6 +6451,7 @@
       "priceMinor": 1799,
       "regularPriceMinor": 2999,
       "genres": [
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -6410,7 +6470,8 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Familie & Kinder"
+        "Familie & Kinder",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -6865,6 +6926,7 @@
       "priceMinor": 499,
       "regularPriceMinor": 1999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -6881,6 +6943,7 @@
       "priceMinor": 999,
       "regularPriceMinor": 4999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -6897,6 +6960,7 @@
       "priceMinor": 5249,
       "regularPriceMinor": 7499,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -7268,7 +7332,8 @@
       "priceMinor": 1099,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -7741,7 +7806,8 @@
       "priceMinor": 1644,
       "regularPriceMinor": 2349,
       "genres": [
-        "Karte & Brett"
+        "Karte & Brett",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -7804,7 +7870,9 @@
       ],
       "priceMinor": 1749,
       "regularPriceMinor": 2499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -7936,6 +8004,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Karte & Brett",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -8137,6 +8206,7 @@
       "regularPriceMinor": 1399,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation",
         "Sport"
       ],
@@ -8287,7 +8357,8 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Action & Abenteuer",
-        "Platformer"
+        "Platformer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -8480,7 +8551,9 @@
       ],
       "priceMinor": 5999,
       "regularPriceMinor": 9999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -8543,6 +8616,7 @@
       "priceMinor": 1099,
       "regularPriceMinor": 1999,
       "genres": [
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -8673,7 +8747,8 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Kampfspiele"
+        "Kampfspiele",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -8688,7 +8763,9 @@
       ],
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -8738,7 +8815,8 @@
       "priceMinor": 299,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -9216,6 +9294,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Andere",
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -9234,6 +9313,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -9316,6 +9396,7 @@
       "regularPriceMinor": 2999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -9332,7 +9413,8 @@
       "priceMinor": 1499,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -9552,6 +9634,7 @@
       "regularPriceMinor": 7999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -9848,7 +9931,8 @@
       "priceMinor": 6749,
       "regularPriceMinor": 8999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -9883,7 +9967,8 @@
       "priceMinor": 4199,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -9932,7 +10017,8 @@
       "priceMinor": 199,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -9987,7 +10073,8 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Andere"
+        "Andere",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -10069,7 +10156,8 @@
       "regularPriceMinor": 3499,
       "genres": [
         "Action & Abenteuer",
-        "Kampfspiele"
+        "Kampfspiele",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -10152,7 +10240,8 @@
       "priceMinor": 1749,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -10468,7 +10557,9 @@
       ],
       "priceMinor": 999,
       "regularPriceMinor": 1999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
@@ -10521,7 +10612,9 @@
       ],
       "priceMinor": 749,
       "regularPriceMinor": 1499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -10637,7 +10730,8 @@
       "priceMinor": 299,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -10934,7 +11028,8 @@
       "priceMinor": 1749,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -11050,6 +11145,7 @@
       "priceMinor": 624,
       "regularPriceMinor": 2499,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -11226,6 +11322,7 @@
       "priceMinor": 199,
       "regularPriceMinor": 999,
       "genres": [
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -11406,6 +11503,7 @@
         "Action & Abenteuer",
         "Familie & Kinder",
         "Karte & Brett",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
@@ -12238,6 +12336,7 @@
       "priceMinor": 1799,
       "regularPriceMinor": 3999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -12723,7 +12822,9 @@
       ],
       "priceMinor": 799,
       "regularPriceMinor": 3999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -12887,7 +12988,8 @@
       "priceMinor": 1999,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -13044,7 +13146,8 @@
       "priceMinor": 749,
       "regularPriceMinor": 999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -13062,7 +13165,8 @@
       "priceMinor": 899,
       "regularPriceMinor": 1199,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -13861,7 +13965,8 @@
       "priceMinor": 1124,
       "regularPriceMinor": 7499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -13879,7 +13984,8 @@
       "priceMinor": 1049,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -14367,6 +14473,7 @@
       "regularPriceMinor": 1199,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -15655,6 +15762,7 @@
       "priceMinor": 1799,
       "regularPriceMinor": 4499,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -15671,6 +15779,7 @@
       "priceMinor": 1199,
       "regularPriceMinor": 1999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -15688,7 +15797,8 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Kampfspiele"
+        "Kampfspiele",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -15704,6 +15814,7 @@
       "priceMinor": 599,
       "regularPriceMinor": 3999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -15719,7 +15830,9 @@
       ],
       "priceMinor": 449,
       "regularPriceMinor": 2999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
@@ -15737,6 +15850,7 @@
       "regularPriceMinor": 9999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -15770,6 +15884,7 @@
       "regularPriceMinor": 8999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -15820,7 +15935,8 @@
       "priceMinor": 999,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -15922,7 +16038,8 @@
       "priceMinor": 2799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -16085,7 +16202,8 @@
       "priceMinor": 199,
       "regularPriceMinor": 999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -16168,6 +16286,7 @@
       "priceMinor": 1124,
       "regularPriceMinor": 2499,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Sport"
       ],
@@ -16188,6 +16307,7 @@
         "Action & Abenteuer",
         "Kampfspiele",
         "Rätsel & Wissen",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -16627,7 +16747,8 @@
       "priceMinor": 2999,
       "regularPriceMinor": 5999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -16658,7 +16779,9 @@
       ],
       "priceMinor": 1749,
       "regularPriceMinor": 6999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
@@ -16695,7 +16818,8 @@
       "genres": [
         "Action & Abenteuer",
         "Familie & Kinder",
-        "Platformer"
+        "Platformer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -17003,6 +17127,7 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17019,7 +17144,8 @@
       "priceMinor": 989,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -17036,6 +17162,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Andere",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17053,6 +17180,7 @@
       "regularPriceMinor": 3449,
       "genres": [
         "Andere",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17116,7 +17244,9 @@
       ],
       "priceMinor": 624,
       "regularPriceMinor": 2499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -17659,7 +17789,8 @@
       "priceMinor": 899,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -17723,6 +17854,7 @@
       "priceMinor": 1124,
       "regularPriceMinor": 7499,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17739,6 +17871,7 @@
       "priceMinor": 1049,
       "regularPriceMinor": 6999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17755,6 +17888,7 @@
       "priceMinor": 1999,
       "regularPriceMinor": 9999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17771,6 +17905,7 @@
       "priceMinor": 1999,
       "regularPriceMinor": 9999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -17899,7 +18034,8 @@
       "priceMinor": 374,
       "regularPriceMinor": 1499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -17915,7 +18051,8 @@
       "priceMinor": 499,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -18109,7 +18246,8 @@
       "priceMinor": 1049,
       "regularPriceMinor": 1499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -18493,7 +18631,8 @@
       "regularPriceMinor": 2999,
       "genres": [
         "Action & Abenteuer",
-        "Andere"
+        "Andere",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -18742,6 +18881,7 @@
       "regularPriceMinor": 999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -18791,7 +18931,8 @@
       "priceMinor": 1049,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -18807,7 +18948,8 @@
       "priceMinor": 599,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -18823,7 +18965,8 @@
       "priceMinor": 599,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -18839,7 +18982,8 @@
       "priceMinor": 749,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -19018,7 +19162,8 @@
       "priceMinor": 1749,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -19034,7 +19179,8 @@
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -19050,7 +19196,8 @@
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -19066,7 +19213,8 @@
       "priceMinor": 6029,
       "regularPriceMinor": 8999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -19082,7 +19230,8 @@
       "priceMinor": 6999,
       "regularPriceMinor": 9999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -19098,7 +19247,8 @@
       "priceMinor": 2099,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -19114,7 +19264,8 @@
       "priceMinor": 1649,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -19263,7 +19414,8 @@
       "priceMinor": 2099,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -19434,6 +19586,7 @@
       "regularPriceMinor": 4999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -19451,6 +19604,7 @@
       "regularPriceMinor": 5999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -19467,7 +19621,8 @@
       "priceMinor": 499,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -19923,7 +20078,8 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
-        "Familie & Kinder"
+        "Familie & Kinder",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -20587,7 +20743,8 @@
       "priceMinor": 149,
       "regularPriceMinor": 999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -20604,7 +20761,8 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Familie & Kinder"
+        "Familie & Kinder",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -20700,7 +20858,8 @@
       "priceMinor": 659,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -20716,7 +20875,8 @@
       "priceMinor": 791,
       "regularPriceMinor": 2399,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -20767,6 +20927,7 @@
       "regularPriceMinor": 999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -20928,7 +21089,9 @@
       ],
       "priceMinor": 2399,
       "regularPriceMinor": 2999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -20993,7 +21156,8 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Musik"
+        "Musik",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -21301,7 +21465,9 @@
       ],
       "priceMinor": 899,
       "regularPriceMinor": 2999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -21364,7 +21530,8 @@
       "priceMinor": 449,
       "regularPriceMinor": 2999,
       "genres": [
-        "Andere"
+        "Andere",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -21585,7 +21752,8 @@
       "regularPriceMinor": 6299,
       "genres": [
         "Action & Abenteuer",
-        "Rennen & Fliegen"
+        "Rennen & Fliegen",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -21602,7 +21770,8 @@
       "regularPriceMinor": 4699,
       "genres": [
         "Action & Abenteuer",
-        "Rennen & Fliegen"
+        "Rennen & Fliegen",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -21636,6 +21805,7 @@
       "regularPriceMinor": 9999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Sport"
       ],
       "services": []
@@ -21737,7 +21907,8 @@
       "priceMinor": 799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -21754,6 +21925,7 @@
       "regularPriceMinor": 3499,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -21968,7 +22140,9 @@
       ],
       "priceMinor": 2099,
       "regularPriceMinor": 5999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -21982,7 +22156,9 @@
       ],
       "priceMinor": 3149,
       "regularPriceMinor": 8999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -21996,7 +22172,9 @@
       ],
       "priceMinor": 1799,
       "regularPriceMinor": 5999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
@@ -22029,6 +22207,7 @@
       "priceMinor": 1799,
       "regularPriceMinor": 3999,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Sport"
       ],
@@ -22046,6 +22225,7 @@
       "priceMinor": 3149,
       "regularPriceMinor": 6999,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Sport"
       ],
@@ -22111,6 +22291,7 @@
       "priceMinor": 1199,
       "regularPriceMinor": 2999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
@@ -22129,7 +22310,8 @@
       "priceMinor": 1199,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -22464,7 +22646,9 @@
       ],
       "priceMinor": 399,
       "regularPriceMinor": 1999,
-      "genres": [],
+      "genres": [
+        "Kampfspiele"
+      ],
       "services": []
     },
     {
@@ -22478,7 +22662,9 @@
       ],
       "priceMinor": 599,
       "regularPriceMinor": 2999,
-      "genres": [],
+      "genres": [
+        "Kampfspiele"
+      ],
       "services": []
     },
     {
@@ -22492,7 +22678,9 @@
       ],
       "priceMinor": 999,
       "regularPriceMinor": 4999,
-      "genres": [],
+      "genres": [
+        "Kampfspiele"
+      ],
       "services": []
     },
     {
@@ -22559,6 +22747,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -22712,6 +22901,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -22988,7 +23178,9 @@
       ],
       "priceMinor": 2749,
       "regularPriceMinor": 4999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -23085,7 +23277,8 @@
       "priceMinor": 999,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -23397,7 +23590,8 @@
       "priceMinor": 1749,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -23721,7 +23915,9 @@
       ],
       "priceMinor": 999,
       "regularPriceMinor": 1999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -23737,7 +23933,8 @@
       "regularPriceMinor": 1299,
       "genres": [
         "Action & Abenteuer",
-        "Familie & Kinder"
+        "Familie & Kinder",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -24147,6 +24344,7 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": [
@@ -24166,6 +24364,7 @@
       "regularPriceMinor": 4999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -24318,6 +24517,7 @@
       "priceMinor": 749,
       "regularPriceMinor": 2999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -24601,6 +24801,7 @@
       "regularPriceMinor": 5999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -24618,6 +24819,7 @@
       "regularPriceMinor": 2449,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -24635,6 +24837,7 @@
       "regularPriceMinor": 5449,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -24703,7 +24906,9 @@
       ],
       "priceMinor": 599,
       "regularPriceMinor": 2999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -25048,7 +25253,9 @@
       ],
       "priceMinor": 1749,
       "regularPriceMinor": 3499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -25490,7 +25697,9 @@
       ],
       "priceMinor": 1799,
       "regularPriceMinor": 5999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -25741,7 +25950,9 @@
       ],
       "priceMinor": 749,
       "regularPriceMinor": 1499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -25794,6 +26005,7 @@
       "genres": [
         "Action & Abenteuer",
         "Kampfspiele",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -25894,6 +26106,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Karte & Brett",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -25986,6 +26199,7 @@
       "genres": [
         "Action & Abenteuer",
         "Karte & Brett",
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -26310,6 +26524,7 @@
       "priceMinor": 749,
       "regularPriceMinor": 2999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -26326,6 +26541,7 @@
       "priceMinor": 2999,
       "regularPriceMinor": 5999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -26658,6 +26874,7 @@
       "priceMinor": 1199,
       "regularPriceMinor": 3999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -26692,7 +26909,8 @@
       "priceMinor": 374,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -27272,6 +27490,7 @@
       "regularPriceMinor": 4749,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -27339,6 +27558,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Wort- und Sprachspiele"
       ],
       "services": []
@@ -27405,6 +27625,7 @@
       "priceMinor": 799,
       "regularPriceMinor": 1999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -27571,7 +27792,8 @@
       "priceMinor": 1599,
       "regularPriceMinor": 3999,
       "genres": [
-        "Kampfspiele"
+        "Kampfspiele",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -27773,6 +27995,7 @@
       "regularPriceMinor": 4999,
       "genres": [
         "Karte & Brett",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -27824,7 +28047,8 @@
       "genres": [
         "Action & Abenteuer",
         "Klassiker",
-        "Platformer"
+        "Platformer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -27960,7 +28184,11 @@
       ],
       "priceMinor": 99,
       "regularPriceMinor": 419,
-      "genres": [],
+      "genres": [
+        "Action & Abenteuer",
+        "Klassiker",
+        "Platformer"
+      ],
       "services": []
     },
     {
@@ -28111,6 +28339,7 @@
       "priceMinor": 1139,
       "regularPriceMinor": 1899,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -28128,6 +28357,7 @@
       "priceMinor": 2129,
       "regularPriceMinor": 3549,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -28144,7 +28374,9 @@
       ],
       "priceMinor": 1999,
       "regularPriceMinor": 3999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -28158,7 +28390,9 @@
       ],
       "priceMinor": 1499,
       "regularPriceMinor": 5999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -28173,7 +28407,8 @@
       "priceMinor": 2549,
       "regularPriceMinor": 8499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28188,7 +28423,9 @@
       ],
       "priceMinor": 1699,
       "regularPriceMinor": 8499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -28202,7 +28439,9 @@
       ],
       "priceMinor": 999,
       "regularPriceMinor": 3999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -28285,6 +28524,7 @@
       "genres": [
         "Action & Abenteuer",
         "Klassiker",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -28319,7 +28559,8 @@
       "priceMinor": 249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28335,7 +28576,8 @@
       "priceMinor": 1749,
       "regularPriceMinor": 3499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28351,7 +28593,8 @@
       "priceMinor": 1649,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28367,7 +28610,8 @@
       "priceMinor": 1249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28383,7 +28627,8 @@
       "priceMinor": 1499,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28399,7 +28644,8 @@
       "priceMinor": 279,
       "regularPriceMinor": 699,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28416,7 +28662,8 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Andere",
-        "Karte & Brett"
+        "Karte & Brett",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28432,7 +28679,8 @@
       "priceMinor": 2474,
       "regularPriceMinor": 4499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28481,6 +28729,7 @@
       "regularPriceMinor": 3499,
       "genres": [
         "Familie & Kinder",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -28744,7 +28993,8 @@
       "priceMinor": 899,
       "regularPriceMinor": 4499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -28859,7 +29109,9 @@
       ],
       "priceMinor": 2449,
       "regularPriceMinor": 3499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -28955,7 +29207,8 @@
       "regularPriceMinor": 1699,
       "genres": [
         "Action & Abenteuer",
-        "Klassiker"
+        "Klassiker",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -28973,7 +29226,8 @@
       "priceMinor": 799,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -28992,6 +29246,7 @@
       "regularPriceMinor": 1249,
       "genres": [
         "Klassiker",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
@@ -29465,7 +29720,8 @@
       "priceMinor": 4199,
       "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -29497,7 +29753,8 @@
       "priceMinor": 374,
       "regularPriceMinor": 1499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -29514,7 +29771,8 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Action & Abenteuer",
-        "Andere"
+        "Andere",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -29583,6 +29841,7 @@
         "Familie & Kinder",
         "Karte & Brett",
         "Rätsel & Wissen",
+        "Rollenspiele",
         "Strategiespiele",
         "Wort- und Sprachspiele"
       ],
@@ -29721,7 +29980,8 @@
       "priceMinor": 299,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -29871,7 +30131,8 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
-        "Familie & Kinder"
+        "Familie & Kinder",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -29902,7 +30163,9 @@
       ],
       "priceMinor": 3499,
       "regularPriceMinor": 6999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
@@ -29918,7 +30181,9 @@
       ],
       "priceMinor": 4999,
       "regularPriceMinor": 9999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -29932,7 +30197,9 @@
       ],
       "priceMinor": 1500,
       "regularPriceMinor": 3000,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -29947,7 +30214,8 @@
       "priceMinor": 1599,
       "regularPriceMinor": 3999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -30053,6 +30321,7 @@
       "regularPriceMinor": 5249,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter",
         "Strategiespiele"
       ],
@@ -30153,6 +30422,7 @@
       "regularPriceMinor": 4999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -30234,7 +30504,9 @@
       ],
       "priceMinor": 624,
       "regularPriceMinor": 2499,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -30594,6 +30866,7 @@
       "regularPriceMinor": 1999,
       "genres": [
         "Andere",
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -30782,6 +31055,7 @@
       "regularPriceMinor": 999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -30799,6 +31073,7 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -30834,7 +31109,9 @@
       ],
       "priceMinor": 449,
       "regularPriceMinor": 2999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -31230,7 +31507,8 @@
       "priceMinor": 474,
       "regularPriceMinor": 1439,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -31246,7 +31524,8 @@
       "priceMinor": 749,
       "regularPriceMinor": 2999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
@@ -31298,6 +31577,7 @@
       "priceMinor": 1649,
       "regularPriceMinor": 2999,
       "genres": [
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -31702,7 +31982,8 @@
       "genres": [
         "Action & Abenteuer",
         "Kampfspiele",
-        "Platformer"
+        "Platformer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -31722,7 +32003,8 @@
         "Andere",
         "Familie & Kinder",
         "Kampfspiele",
-        "Platformer"
+        "Platformer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -31842,6 +32124,7 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -32146,7 +32429,8 @@
       "priceMinor": 1399,
       "regularPriceMinor": 1999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -32181,6 +32465,7 @@
       "priceMinor": 2099,
       "regularPriceMinor": 6999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -32347,6 +32632,7 @@
       "priceMinor": 1349,
       "regularPriceMinor": 2999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -32450,7 +32736,8 @@
       "priceMinor": 4699,
       "regularPriceMinor": 9399,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -32516,7 +32803,8 @@
       "priceMinor": 1249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -32710,6 +32998,7 @@
       "regularPriceMinor": 3749,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Shooter"
       ],
       "services": []
@@ -32780,7 +33069,8 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Kampfspiele"
+        "Kampfspiele",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -32844,6 +33134,7 @@
       "priceMinor": 1124,
       "regularPriceMinor": 4499,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -32860,6 +33151,7 @@
       "priceMinor": 1249,
       "regularPriceMinor": 4999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -32891,7 +33183,9 @@
       ],
       "priceMinor": 799,
       "regularPriceMinor": 3999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -32906,7 +33200,8 @@
       "priceMinor": 999,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -32922,7 +33217,8 @@
       "priceMinor": 1199,
       "regularPriceMinor": 5999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -32957,6 +33253,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
@@ -32977,6 +33274,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -32995,6 +33293,7 @@
       "genres": [
         "Action & Abenteuer",
         "Andere",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -33142,7 +33441,8 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
-        "Andere"
+        "Andere",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -33159,7 +33459,8 @@
       "regularPriceMinor": 3999,
       "genres": [
         "Action & Abenteuer",
-        "Andere"
+        "Andere",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -33176,7 +33477,8 @@
       "regularPriceMinor": 7999,
       "genres": [
         "Action & Abenteuer",
-        "Andere"
+        "Andere",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -33209,6 +33511,7 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Simulation",
         "Strategiespiele"
       ],
@@ -33227,7 +33530,9 @@
       ],
       "priceMinor": 1199,
       "regularPriceMinor": 3999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
@@ -33243,7 +33548,9 @@
       ],
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
-      "genres": [],
+      "genres": [
+        "Rollenspiele"
+      ],
       "services": []
     },
     {
@@ -33259,6 +33566,7 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Klassiker",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": [
@@ -33380,6 +33688,7 @@
         "Andere",
         "Musik",
         "Rätsel & Wissen",
+        "Rollenspiele",
         "Simulation"
       ],
       "services": []
@@ -33430,6 +33739,7 @@
       "priceMinor": 199,
       "regularPriceMinor": 1999,
       "genres": [
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -33629,6 +33939,7 @@
       "regularPriceMinor": 2099,
       "genres": [
         "Action & Abenteuer",
+        "Rollenspiele",
         "Strategiespiele"
       ],
       "services": []
@@ -33849,7 +34160,8 @@
       "regularPriceMinor": 6999,
       "genres": [
         "Action & Abenteuer",
-        "Andere"
+        "Andere",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -34319,7 +34631,8 @@
       "priceMinor": 1499,
       "regularPriceMinor": 4999,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
@@ -34335,7 +34648,8 @@
       "priceMinor": 1249,
       "regularPriceMinor": 2499,
       "genres": [
-        "Action & Abenteuer"
+        "Action & Abenteuer",
+        "Rollenspiele"
       ],
       "services": []
     },
