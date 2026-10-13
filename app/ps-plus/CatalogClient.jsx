@@ -22,6 +22,9 @@ function CatalogCard({ game, service }) {
     { label: 'Mitgliedschaft', value: membership },
     { label: 'Plattform', value: platforms },
     { label: 'Genre', value: game.genre || game.genres?.join(' · ') },
+    { label: 'Spielmodus', value: game.modes?.join(' · ') },
+    { label: 'Perspektive', value: game.perspective },
+    { label: 'Spielzeit', value: Number.isFinite(game.playtimeHours) ? `${game.playtimeHours} Stunden` : null },
     { label: 'Entwickler', value: game.developer },
     { label: 'Publisher', value: game.publisher },
     { label: 'Release', value: dateLabel(game.releaseDate) },
@@ -49,6 +52,7 @@ function CatalogCard({ game, service }) {
         <h3>{game.title}</h3>
         {platforms ? <p>{platforms}</p> : null}
         {game.genres?.length ? <p className="catalog-card-genres">{game.genres.slice(0,2).join(' · ')}</p> : null}
+        {game.modes?.length ? <p className="catalog-card-genres">{game.modes.join(' · ')}{game.perspective ? ` · ${game.perspective}` : ''}</p> : null}
         {game.description ? <p className="catalog-card-desc">{game.description}</p> : null}
         {game.releaseDate ? <span className="catalog-card-release">Release {dateLabel(game.releaseDate)}</span> : null}
         {game.leavingAt ? <span className="catalog-expiry">Verlässt am {dateLabel(game.leavingAt)}</span> : null}
@@ -66,7 +70,7 @@ export default function CatalogClient({ snapshot }) {
       if (!CATALOG_TABS.some(tab => tab.id === value)) return;
       setService(value);
       setPage(1);
-      setGenre('all');
+      setGenre('all');setMode('all');setPerspective('all');setPlaytime('all');
       setPlatform('all');
       setSort('release-new');
       setOnlyVerifiedArt(false);
@@ -79,6 +83,9 @@ export default function CatalogClient({ snapshot }) {
   const deferredQuery = useDeferredValue(query);
   const [platform, setPlatform] = useState('all');
   const [genre, setGenre] = useState('all');
+  const [mode, setMode] = useState('all');
+  const [perspective, setPerspective] = useState('all');
+  const [playtime, setPlaytime] = useState('all');
   const [sort, setSort] = useState('release-new');
   const [page, setPage] = useState(1);
   const [onlyVerifiedArt, setOnlyVerifiedArt] = useState(false);
@@ -88,10 +95,13 @@ export default function CatalogClient({ snapshot }) {
   const serviceGames = useMemo(() => games.filter(game => game.services?.includes(service)), [games, service]);
   const hasPlatforms = useMemo(() => serviceGames.some(game => game.platforms?.length), [serviceGames]);
   const genres = useMemo(() => [...new Set(serviceGames.flatMap(g => g.genres || []))].sort((a,b) => a.localeCompare(b,'de')), [serviceGames]);
+  const modes = useMemo(() => [...new Set(serviceGames.flatMap(g=>g.modes||[]))].sort(), [serviceGames]);
+  const perspectives = useMemo(() => [...new Set(serviceGames.map(g=>g.perspective).filter(Boolean))].sort(), [serviceGames]);
+  const playtimeCount = useMemo(() => serviceGames.filter(g=>Number.isFinite(g.playtimeHours)).length, [serviceGames]);
   const hasAddedDates = useMemo(() => serviceGames.some(game => Boolean(game.addedAt)), [serviceGames]);
   const hasLeavingDates = useMemo(() => serviceGames.some(game => Boolean(game.leavingAt)), [serviceGames]);
   const releaseDateCount = useMemo(() => serviceGames.filter(game => Boolean(game.releaseDate)).length, [serviceGames]);
-  const filtered = useMemo(() => catalogFilter(games, { service, query: deferredQuery, platform, genre, sort }).filter(g => !onlyVerifiedArt || Boolean(g.image)), [games,service,deferredQuery,platform,genre,sort,onlyVerifiedArt]);
+  const filtered = useMemo(() => catalogFilter(games, { service, query: deferredQuery, platform, genre, mode, perspective, playtime, sort }).filter(g => !onlyVerifiedArt || Boolean(g.image)), [games,service,deferredQuery,platform,genre,mode,perspective,playtime,sort,onlyVerifiedArt]);
   const pages = Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
   const visible = filtered.slice((Math.min(page,pages)-1)*PAGE_SIZE,Math.min(page,pages)*PAGE_SIZE);
   const update = setter => value => { setter(value); setPage(1); };
@@ -100,7 +110,7 @@ export default function CatalogClient({ snapshot }) {
     setService(value);setPage(1);setGenre('all');setPlatform('all');setSort('release-new');setOnlyVerifiedArt(false);
     window.history.pushState(null,'',`/ps-plus?tab=${value}`);
   };
-  const hasActiveFilters = Boolean(query.trim()) || platform !== 'all' || genre !== 'all' || sort !== 'release-new' || onlyVerifiedArt;
+  const hasActiveFilters = Boolean(query.trim()) || platform !== 'all' || genre !== 'all' || mode !== 'all' || perspective !== 'all' || playtime !== 'all' || sort !== 'release-new' || onlyVerifiedArt;
   const resetFilters = () => { setQuery(''); setPlatform('all'); setGenre('all'); setSort('release-new'); setOnlyVerifiedArt(false); setPage(1); };
   const goToPage = nextPage => {
     setPage(nextPage);
@@ -135,7 +145,7 @@ export default function CatalogClient({ snapshot }) {
       </div>
     </section>
     <div className="catalog-filter-head"><label className="catalog-search"><span className="sr-only">Spiele suchen</span><input type="search" placeholder="Spiel suchen …" value={query} onChange={e=>update(setQuery)(e.target.value)} /></label>{hasActiveFilters ? <button className="catalog-reset" type="button" onClick={resetFilters}>Zurücksetzen</button> : null}<button className="catalog-filter-toggle" type="button" onClick={()=>setHideFilters(!hideFilters)} aria-expanded={!hideFilters}>{hideFilters?'Filter anzeigen':'Filter'}</button></div>
-    {!hideFilters ? <div className="catalog-filters">{hasPlatforms ? <label>Plattform<select value={platform} onChange={e=>update(setPlatform)(e.target.value)}><option value="all">Alle Plattformen</option><option value="PS5">PS5</option><option value="PS4">PS4</option></select></label> : null}{genres.length ? <label>Genre<select value={genre} onChange={e=>update(setGenre)(e.target.value)}><option value="all">Alle Genres</option>{genres.map(g=><option key={g} value={g}>{g}</option>)}</select></label> : null}<div className="catalog-sort" role="group" aria-label="Spiele sortieren">
+    {!hideFilters ? <div className="catalog-filters">{hasPlatforms ? <label>Plattform<select value={platform} onChange={e=>update(setPlatform)(e.target.value)}><option value="all">Alle Plattformen</option><option value="PS5">PS5</option><option value="PS4">PS4</option></select></label> : null}{genres.length ? <label>Genre<select value={genre} onChange={e=>update(setGenre)(e.target.value)}><option value="all">Alle Genres</option>{genres.map(g=><option key={g} value={g}>{g}</option>)}</select></label> : null}{modes.length ? <label>Spielmodus<select value={mode} onChange={e=>update(setMode)(e.target.value)}><option value="all">Alle Spielmodi</option>{modes.map(v=><option key={v} value={v}>{v}</option>)}</select></label> : null}{perspectives.length ? <label>Perspektive<select value={perspective} onChange={e=>update(setPerspective)(e.target.value)}><option value="all">Alle Perspektiven</option>{perspectives.map(v=><option key={v} value={v}>{v}</option>)}</select></label> : null}{playtimeCount ? <label>Spielzeit<select value={playtime} onChange={e=>update(setPlaytime)(e.target.value)}><option value="all">Alle Spielzeiten</option><option value="0-10">Unter 10 Stunden</option><option value="10-30">10–29 Stunden</option><option value="30-60">30–59 Stunden</option><option value="60-">60+ Stunden</option></select></label> : null}<div className="catalog-sort" role="group" aria-label="Spiele sortieren">
   <span className="catalog-sort-heading">Sortieren</span>
   <div className="catalog-sort-chips">
     <button type="button" className={sort.startsWith('title') ? 'active' : ''} aria-pressed={sort.startsWith('title')} onClick={()=>update(setSort)(sort==='title'?'title-desc':'title')}>Titel {sort==='title-desc'?'Z–A':'A–Z'} <span aria-hidden="true">↕</span></button>
