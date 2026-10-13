@@ -25,5 +25,5 @@ test('iPhone video pass protects touch layouts and raw image navigation', async 
   assert.match(client, /href="\/daily\/latest\.png"/);
   assert.match(client, /setAttribute\('href', '\/bild'\)/);
   assert.match(viewer, /src="\/daily\/latest\.png"/);
-  assert.match(catalog, /Titel Z–A/);
+  assert.match(catalog, /sort==='title-desc'\?'Z–A':'A–Z'/);
 });
