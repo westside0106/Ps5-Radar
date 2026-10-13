@@ -98,6 +98,9 @@ export default function CatalogClient({ snapshot }) {
   const modes = useMemo(() => [...new Set(serviceGames.flatMap(g=>g.modes||[]))].sort(), [serviceGames]);
   const perspectives = useMemo(() => [...new Set(serviceGames.map(g=>g.perspective).filter(Boolean))].sort(), [serviceGames]);
   const playtimeCount = useMemo(() => serviceGames.filter(g=>Number.isFinite(g.playtimeHours)).length, [serviceGames]);
+  const recentChanges = useMemo(() => (snapshot.changes || []).filter(change => change.service === service).slice(0,12), [snapshot.changes,service]);
+  const recentAdds = recentChanges.filter(change => change.kind === 'added');
+  const recentRemovals = recentChanges.filter(change => change.kind === 'removed');
   const hasAddedDates = useMemo(() => serviceGames.some(game => Boolean(game.addedAt)), [serviceGames]);
   const hasLeavingDates = useMemo(() => serviceGames.some(game => Boolean(game.leavingAt)), [serviceGames]);
   const releaseDateCount = useMemo(() => serviceGames.filter(game => Boolean(game.releaseDate)).length, [serviceGames]);
@@ -107,11 +110,11 @@ export default function CatalogClient({ snapshot }) {
   const update = setter => value => { setter(value); setPage(1); };
   const selectService = value => {
     if (value === service) return;
-    setService(value);setPage(1);setGenre('all');setPlatform('all');setSort('release-new');setOnlyVerifiedArt(false);
+    setService(value);setPage(1);setGenre('all');setMode('all');setPerspective('all');setPlaytime('all');setPlatform('all');setSort('release-new');setOnlyVerifiedArt(false);
     window.history.pushState(null,'',`/ps-plus?tab=${value}`);
   };
   const hasActiveFilters = Boolean(query.trim()) || platform !== 'all' || genre !== 'all' || mode !== 'all' || perspective !== 'all' || playtime !== 'all' || sort !== 'release-new' || onlyVerifiedArt;
-  const resetFilters = () => { setQuery(''); setPlatform('all'); setGenre('all'); setSort('release-new'); setOnlyVerifiedArt(false); setPage(1); };
+  const resetFilters = () => { setQuery(''); setPlatform('all'); setGenre('all');setMode('all');setPerspective('all');setPlaytime('all'); setSort('release-new'); setOnlyVerifiedArt(false); setPage(1); };
   const goToPage = nextPage => {
     setPage(nextPage);
     window.requestAnimationFrame(() => {
@@ -136,6 +139,10 @@ export default function CatalogClient({ snapshot }) {
     {service==='essential' ? <p className="catalog-note">Monatliche Spiele müssen während ihres Beanspruchungszeitraums zur Bibliothek hinzugefügt werden. Sie bleiben mit aktivem PS-Plus-Abonnement spielbar.</p> : null}
     {service==='extra' ? <p className="catalog-note">Extra-Spiele sind nur während ihrer Katalogzugehörigkeit spielbar. Ein früheres Hinzufügen zur Bibliothek verlängert den Zugriff nicht. Premium enthält ebenfalls den Extra-Spielekatalog.</p> : null}
     {service==='premium' ? <p className="catalog-note">Diese Ansicht zeigt den Klassikerkatalog. Mit Premium erhältst du zusätzlich Zugriff auf den Extra-Spielekatalog.</p> : null}
+    {recentChanges.length ? <section className="catalog-change-feed" aria-label="Änderungen im Spielekatalog">
+      <h2>Katalogänderungen <small>{recentAdds.length} hinzugefügt · {recentRemovals.length} entfernt (letzte erfasste Änderungen)</small></h2>
+      <div className="catalog-change-list">{recentChanges.map((change,index)=><a key={change.id+change.kind+change.date+index} href={change.storeUrl} target="_blank" rel="noopener noreferrer"><span className={change.kind==='added'?'catalog-change-added':'catalog-change-removed'}>{change.kind==='added'?'Neu im Abo':'Entfernt'}</span><strong>{change.title}</strong><small>{dateLabel(change.date)}</small></a>)}</div>
+    </section> : null}
     <section className="catalog-discovery" aria-label="Spiele entdecken">
       <div><strong>Was soll ich spielen?</strong><span>Direkt stöbern · PS5, Genre und neue Veröffentlichungen</span></div>
       <div className="catalog-discovery-actions">
