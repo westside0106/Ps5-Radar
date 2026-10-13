@@ -1,23 +1,23 @@
 {
   "date": "13.10.2026",
   "edition": "AUSGABE #039",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "2 NEUE PLAYSTATION-MELDUNGEN",
   "newCount": "13.10 · LIVE",
-  "leadTitle": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
-  "leadDate": "06.10.2026",
-  "leadMeta": "PS5-Spiele Oktober 2026: Ghost of Yōtei, Dragon's Dogma 2: Dark Arisen, Star Wars: Galactic Racer und Call of Duty: Modern Warfare 4 erscheinen…",
+  "leadTitle": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
+  "leadDate": "13.10.2026",
+  "leadMeta": "Stellt euch Folgendes vor: Eine kühle Herbstbrise weht durch den Wald, während ein Bataillon Roboter auf einen Außenposten zuläuft.",
   "leadPrice": null,
-  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8a186228a34c91ac18bc1e25ea585f6ad67d52f8.png",
-  "secondary1Title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
-  "secondary1Date": "08.10.2026",
-  "secondary1Meta": "Freut euch auf „Rockbeasts“: Critical Role steigt ein, Release ist im Januar 2027 für PS5. Jetzt auf die Wunschliste setzen!",
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/789f7d3c0087d25bc443ff5900d178ec2c36449b.jpg",
+  "secondary1Title": "Escape Academy 2: Back 2 School erscheint am 5. November",
+  "secondary1Date": "13.10.2026",
+  "secondary1Meta": "Erfahrt, was euch im Open-World-Campus von Escape Academy 2: Back 2 School erwartet, ab 5. November auf PS5.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1462d9c21007030d11a34576e65c529ff57484d9.jpg",
-  "secondary2Title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
-  "secondary2Date": "07.10.2026",
-  "secondary2Meta": "Hallo, Leute! Ich bin Takeshi Yamanaka, Producer von MARVEL Tōkon: Fighting Souls.",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/fc6949ebe748b4e02d0027027fe11e6ff513c48f.jpg",
+  "secondary2Title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
+  "secondary2Date": "06.10.2026",
+  "secondary2Meta": "PS5-Spiele Oktober 2026: Ghost of Yōtei, Dragon's Dogma 2: Dark Arisen, Star Wars: Galactic Racer und Call of Duty: Modern Warfare 4 erscheinen…",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/98097314e9d55b7d423b44f27db7f40c75413f3d.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8a186228a34c91ac18bc1e25ea585f6ad67d52f8.png",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -114,25 +114,38 @@
   "radarCheck": "Stand 13.10.2026 · 9/9 Quellen · Store 8 geprüft · 12/15 Details",
   "sourceAlerts": [
     {
+      "title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
+      "url": "https://blog.de.playstation.com/2026/10/13/helldivers-2-visier-der-autoritaet-premium-kriegsanleihe-erscheint-am-20-oktober/",
+      "type": "editorial"
+    },
+    {
+      "title": "Escape Academy 2: Back 2 School erscheint am 5. November",
+      "url": "https://blog.de.playstation.com/2026/10/13/escape-academy-2-back-2-school-erscheint-am-5-november/",
+      "type": "editorial"
+    },
+    {
       "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
       "url": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
       "type": "editorial"
-    },
-    {
-      "title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
-      "url": "https://blog.de.playstation.com/2026/10/08/rockbeasts-critical-role-an-bord-release-im-januar-2027/",
-      "type": "editorial"
-    },
-    {
-      "title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
-      "url": "https://blog.de.playstation.com/2026/10/07/phoenix-cyclops-erscheint-am-2-november-in-marvel-tokon-fighting-souls/",
-      "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
+      "url": "https://blog.de.playstation.com/2026/10/13/helldivers-2-visier-der-autoritaet-premium-kriegsanleihe-erscheint-am-20-oktober/",
+      "category": "release",
+      "score": 100
+    },
+    {
+      "title": "Escape Academy 2: Back 2 School erscheint am 5. November",
+      "url": "https://blog.de.playstation.com/2026/10/13/escape-academy-2-back-2-school-erscheint-am-5-november/",
+      "category": "release",
+      "score": 100
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-13T04:03:26.239Z",
+    "checkedAt": "2026-10-13T15:07:03.038Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -146,10 +159,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-13T04:03:26.239Z"
+    "lastSuccessfulCheck": "2026-10-13T15:07:03.038Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-13T04:03:26.239Z",
+    "checkedAt": "2026-10-13T15:07:03.038Z",
     "errors": [],
     "sources": [
       {
@@ -191,9 +204,9 @@
     ]
   },
   "gameDetails": {
+    "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober": {},
+    "Escape Academy 2: Back 2 School erscheint am 5. November": {},
     "PS5-Spiele Oktober 2026: Diese Releases erwarten euch": {},
-    "Rockbeasts: Critical Role an Bord, Release im Januar 2027": {},
-    "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls": {},
     "Sniper Elite: Resistance": {
       "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
       "developer": "Rebellion",
@@ -360,7 +373,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-13T04:03:08.691Z",
+    "checkedAt": "2026-10-13T15:06:41.099Z",
     "titles": 15,
     "fetched": 8,
     "enriched": 12,
@@ -418,7 +431,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-13T04:02:55.259Z",
+    "checkedAt": "2026-10-13T15:06:22.789Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -432,7 +445,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-13T04:02:55.326Z",
+    "checkedAt": "2026-10-13T15:06:22.886Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -445,7 +458,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-13T04:03:23.006Z",
+    "checkedAt": "2026-10-13T15:06:50.550Z",
     "verified": 4,
     "missing": [],
     "warnings": [
@@ -454,35 +467,35 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-13T04:02:54.072Z",
+    "checkedAt": "2026-10-13T15:06:18.539Z",
     "date": "13.10.2026",
     "maxAgeDays": 21,
     "selected": [
+      {
+        "title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
+        "date": "13.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/13/helldivers-2-visier-der-autoritaet-premium-kriegsanleihe-erscheint-am-20-oktober/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/789f7d3c0087d25bc443ff5900d178ec2c36449b.jpg"
+      },
+      {
+        "title": "Escape Academy 2: Back 2 School erscheint am 5. November",
+        "date": "13.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/13/escape-academy-2-back-2-school-erscheint-am-5-november/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/fc6949ebe748b4e02d0027027fe11e6ff513c48f.jpg"
+      },
       {
         "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
         "date": "06.10.2026",
         "url": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8a186228a34c91ac18bc1e25ea585f6ad67d52f8.png"
-      },
-      {
-        "title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
-        "date": "08.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/08/rockbeasts-critical-role-an-bord-release-im-januar-2027/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1462d9c21007030d11a34576e65c529ff57484d9.jpg"
-      },
-      {
-        "title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
-        "date": "07.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/07/phoenix-cyclops-erscheint-am-2-november-in-marvel-tokon-fighting-souls/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/98097314e9d55b7d423b44f27db7f40c75413f3d.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-13T04:03:23.875Z",
+    "checkedAt": "2026-10-13T15:06:51.540Z",
     "berlinDate": "2026-10-13",
-    "newPostsToday": 0,
+    "newPostsToday": 2,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }
