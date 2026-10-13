@@ -197,10 +197,10 @@ test('magazine defines Essential and quick links inside RadarPage render scope',
  assert.ok(dealStart>=0 && dealEnd>dealStart && renderStart>dealEnd && renderEnd>renderStart);
  const dealBody=page.slice(dealStart,dealEnd);
  const renderSetup=page.slice(renderStart,renderEnd);
- assert.doesNotMatch(dealBody,/\\bconst (?:essential|quickItems)\\s*=/,
+ assert.doesNotMatch(dealBody,/\bconst (?:essential|quickItems)\s*=/,
   'Essential state must not be nested inside the unrelated dealStats helper');
- assert.match(renderSetup,/const essential\\s*=\\s*currentEssential\\(radar, catalog\\)/,
+ assert.match(renderSetup,/const essential\s*=\s*currentEssential\(radar, catalog\)/,
   'Essential must be defined in the server-render scope');
- assert.match(renderSetup,/const quickItems\\s*=\\s*\\(radar\\.quickItems/,
+ assert.match(renderSetup,/const quickItems\s*=\s*\(radar\.quickItems/,
   'Quick links must be defined in the server-render scope');
 });
