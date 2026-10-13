@@ -74,8 +74,6 @@ function dealStats(deal) {
   let discount = discountNumber(deal.discount);
   if (!discount && current !== null && old) discount = Math.round((1 - current / old) * 100);
   const saving = current !== null && old !== null && old > current ? old - current : null;
-  const essential = currentEssential(radar, catalog);
-  const quickItems = (radar.quickItems || []).map(item => item === radar.psplusTitle ? essential.title : item);
   const remaining = daysUntil(radar.storeEnd);
   const expiry = remaining === null ? 'AKTUELL' : remaining === 0 ? 'ENDET HEUTE' : remaining === 1 ? 'NOCH 1 TAG' : `NOCH ${remaining} TAGE`;
   const strength = discount >= 70 ? 'MEGA-DEAL' : discount >= 50 ? 'STARK' : discount >= 30 ? 'GUT' : 'DEAL';
@@ -446,6 +444,8 @@ export default async function RadarPage() {
   const actual = jar.get(COOKIE_NAME)?.value;
   if (!expected || !safeEqual(actual, expected)) redirect('/');
 
+  const essential = currentEssential(radar, catalog);
+  const quickItems = (radar.quickItems || []).map(item => item === radar.psplusTitle ? essential.title : item);
   const remaining = daysUntil(radar.storeEnd);
   const storeEnd = displayEnd(radar.storeEnd);
   const nextRelease = radar.releases?.[0] || null;
