@@ -120,3 +120,13 @@
 .catalog-discovery-actions{display:flex;gap:8px;flex-wrap:wrap}
 .catalog-discovery-actions button{min-height:40px;border:1px solid #39628a;border-radius:10px;background:#122f52;color:#e5f1ff;font-weight:700;font-size:12px;padding:8px 12px}
 .catalog-discovery-actions button:focus-visible{outline:2px solid #8cc7ff;outline-offset:2px}
+
+.catalog-change-feed{margin:14px 0;padding:14px;border:1px solid #2c557d;border-radius:12px;background:#0b2038}
+.catalog-change-feed h2{margin:0 0 10px;font-size:15px;color:#f0f7ff}
+.catalog-change-feed h2 small{display:block;margin-top:4px;font-size:11px;font-weight:400;color:#a7c0dc}
+.catalog-change-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px}
+.catalog-change-list a{display:flex;flex-direction:column;align-items:flex-start;gap:5px;border:1px solid #315477;border-radius:9px;padding:10px;color:#eef6ff;text-decoration:none;background:#112b48;font-size:12px}
+.catalog-change-list a strong{font-size:12px;line-height:1.35}
+.catalog-change-list a small{color:#a9bfd6}
+.catalog-change-added{color:#a4f2c3;font-weight:800}
+.catalog-change-removed{color:#ffc3ac;font-weight:800}
