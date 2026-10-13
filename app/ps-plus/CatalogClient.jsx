@@ -126,6 +126,14 @@ export default function CatalogClient({ snapshot }) {
     {service==='essential' ? <p className="catalog-note">Monatliche Spiele müssen während ihres Beanspruchungszeitraums zur Bibliothek hinzugefügt werden. Sie bleiben mit aktivem PS-Plus-Abonnement spielbar.</p> : null}
     {service==='extra' ? <p className="catalog-note">Extra-Spiele sind nur während ihrer Katalogzugehörigkeit spielbar. Ein früheres Hinzufügen zur Bibliothek verlängert den Zugriff nicht. Premium enthält ebenfalls den Extra-Spielekatalog.</p> : null}
     {service==='premium' ? <p className="catalog-note">Diese Ansicht zeigt den Klassikerkatalog. Mit Premium erhältst du zusätzlich Zugriff auf den Extra-Spielekatalog.</p> : null}
+    <section className="catalog-discovery" aria-label="Spiele entdecken">
+      <div><strong>Was soll ich spielen?</strong><span>Direkt stöbern · PS5, Genre und neue Veröffentlichungen</span></div>
+      <div className="catalog-discovery-actions">
+        <button type="button" onClick={()=>{setPlatform('PS5');setGenre('all');setSort('release-new');setPage(1);}}>PS5 · Neueste zuerst</button>
+        {['Action','Adventure','Rennspiele','Rollenspiele','Simulation'].filter(g=>genres.includes(g)).map(g=><button key={g} type="button" onClick={()=>{setGenre(g);setPage(1);}}>{g}</button>)}
+        <button type="button" onClick={resetFilters}>Alle Spiele</button>
+      </div>
+    </section>
     <div className="catalog-filter-head"><label className="catalog-search"><span className="sr-only">Spiele suchen</span><input type="search" placeholder="Spiel suchen …" value={query} onChange={e=>update(setQuery)(e.target.value)} /></label>{hasActiveFilters ? <button className="catalog-reset" type="button" onClick={resetFilters}>Zurücksetzen</button> : null}<button className="catalog-filter-toggle" type="button" onClick={()=>setHideFilters(!hideFilters)} aria-expanded={!hideFilters}>{hideFilters?'Filter anzeigen':'Filter'}</button></div>
     {!hideFilters ? <div className="catalog-filters">{hasPlatforms ? <label>Plattform<select value={platform} onChange={e=>update(setPlatform)(e.target.value)}><option value="all">Alle Plattformen</option><option value="PS5">PS5</option><option value="PS4">PS4</option></select></label> : null}{genres.length ? <label>Genre<select value={genre} onChange={e=>update(setGenre)(e.target.value)}><option value="all">Alle Genres</option>{genres.map(g=><option key={g} value={g}>{g}</option>)}</select></label> : null}<div className="catalog-sort" role="group" aria-label="Spiele sortieren">
   <span className="catalog-sort-heading">Sortieren</span>
