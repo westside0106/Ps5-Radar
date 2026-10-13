@@ -520,6 +520,18 @@ export default async function RadarPage() {
           </div>
         </section>
 
+        <section className="mag-gamefinder" aria-label="Spiel entdecken">
+          <div className="mag-gamefinder-intro">
+            <strong>WAS SPIELE ICH ALS NÄCHSTES?</strong>
+            <p>Stöbere gezielt im verifizierten PS+-Katalog: nach PS5, Genre und Veröffentlichungsdatum. Nicht bekannte Release-Daten werden ausdrücklich gekennzeichnet.</p>
+          </div>
+          <div className="mag-gamefinder-links">
+            <a href="/ps-plus?tab=extra">PS+ Extra entdecken ↗</a>
+            <a href="/ps-plus?tab=premium">Premium-Klassiker ↗</a>
+            <a href="/ps-plus?tab=ubisoft">Ubisoft+ Classics ↗</a>
+          </div>
+        </section>
+
         <Panel tone="plus" icon="＋" title={`PLAYSTATION PLUS · ${essential.label}`} className="mag-plus">
           <DetailTile detail={{
             kicker: 'PLAYSTATION PLUS',
