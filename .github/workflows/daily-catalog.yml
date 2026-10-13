@@ -44,6 +44,11 @@ jobs:
         run: npm run test:goal
       - name: Refresh official PS Plus catalog
         run: npm run catalog:refresh
+      - name: Enrich verified game metadata (optional IGDB)
+        env:
+          IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+          IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
+        run: node scripts/enrich-plus-igdb.mjs
       - name: Commit catalog snapshot
         shell: bash
         run: |
