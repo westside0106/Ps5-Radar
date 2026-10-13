@@ -204,3 +204,23 @@ test('magazine defines Essential and quick links inside RadarPage render scope',
  assert.match(renderSetup,/const quickItems\s*=\s*\(radar\.quickItems/,
   'Quick links must be defined in the server-render scope');
 });
+
+test('verified catalog changes produce sortable additions and removals without false positives',()=>{
+ const old=fixture();
+ const extra={...item,title:'Zweiter Titel',storeUrl:'https://store.playstation.com/de-de/product/EP0000-PPSA00001_00-GAME000000000001'};
+ const next=normalizeCatalog({checkedAt:'2026-09-08T08:00:00Z',sourceUrl:source,results:{
+  extra:{expected:1,observed:1,complete:true,entries:[extra]},
+  essential:{expected:0,observed:0,complete:true,entries:[]},
+  classics:{expected:0,observed:0,complete:true,entries:[]},
+  ubisoft:{expected:0,observed:0,complete:true,entries:[]}
+ }});
+ const merged=mergeCatalogSnapshots(old,next);
+ assert.deepEqual(merged.changes.map(c=>c.kind).sort(),['added','removed']);
+ assert.deepEqual(merged.games.map(g=>g.title),['Zweiter Titel']);
+ const prepared=prepareCatalog(merged,{plusGames:[],gameDetails:{}});
+ assert.equal(prepared.games[0].addedAt,'2026-09-08T08:00:00Z');
+ const failed=normalizeCatalog({checkedAt:'2026-09-09T08:00:00Z',results:{extra:{expected:2,observed:0,complete:false,entries:[]}}});
+ const preserved=mergeCatalogSnapshots(merged,failed);
+ assert.equal(preserved.changes.length,2);
+ assert.equal(preserved.games.length,1);
+});
