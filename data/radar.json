@@ -1,8 +1,8 @@
 {
-  "date": "11.10.2026",
-  "edition": "AUSGABE #038",
+  "date": "13.10.2026",
+  "edition": "AUSGABE #039",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "11.10 · LIVE",
+  "newCount": "13.10 · LIVE",
   "leadTitle": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
   "leadDate": "06.10.2026",
   "leadMeta": "PS5-Spiele Oktober 2026: Ghost of Yōtei, Dragon's Dogma 2: Dark Arisen, Star Wars: Galactic Racer und Call of Duty: Modern Warfare 4 erscheinen…",
@@ -30,7 +30,7 @@
     },
     {
       "title": "MLB The Show 26",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
       "imageSource": "official-product"
     },
@@ -105,13 +105,11 @@
     "The Play List"
   ],
   "ubisoftTitle": "Ubisoft+ Classics",
-  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat.",
   "ubisoftItems": [
-    "Ubisoft+ Classics",
-    "PS Plus Extra",
-    "PS Plus Premium"
+    "Ubisoft+ Classics"
   ],
-  "radarCheck": "Stand 11.10.2026 · 9/9 Quellen · Store 8 geprüft · 12/15 Details",
+  "radarCheck": "Stand 13.10.2026 · 8/9 Quellen · 5 Warnung(en)",
   "sourceAlerts": [
     {
       "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
@@ -131,12 +129,12 @@
   ],
   "editorial": [],
   "health": {
-    "status": "ok",
-    "checkedAt": "2026-10-11T14:07:46.468Z",
-    "okSources": 9,
+    "status": "warning",
+    "checkedAt": "2026-10-13T02:47:24.389Z",
+    "okSources": 8,
     "totalSources": 9,
-    "failedSources": 0,
-    "warnings": 0,
+    "failedSources": 1,
+    "warnings": 5,
     "storeDiscoveryMode": "dynamic-browser",
     "storeProductsVerified": 8,
     "storeDealsSelected": 3,
@@ -149,8 +147,14 @@
     "lastSuccessfulCheck": "2026-10-11T14:07:46.468Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-11T14:07:46.468Z",
-    "errors": [],
+    "checkedAt": "2026-10-13T02:47:24.389Z",
+    "errors": [
+      "PS Plus aktuell: Quellenabruf fehlgeschlagen",
+      "Detail-Enrichment: Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
+      "Detail-Enrichment: MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
+      "Detail-Enrichment: Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
+      "Detail-Enrichment: EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
+    ],
     "sources": [
       {
         "name": "PlayStation Blog",
@@ -166,7 +170,7 @@
       },
       {
         "name": "PS Plus aktuell",
-        "ok": true
+        "ok": false
       },
       {
         "name": "EA Play",
@@ -235,7 +239,7 @@
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
       "title": "MLB The Show 26"
     },
     "Wobbly Life": {
@@ -360,11 +364,16 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-11T14:07:24.372Z",
+    "checkedAt": "2026-10-13T02:47:19.294Z",
     "titles": 15,
-    "fetched": 8,
+    "fetched": 4,
     "enriched": 12,
-    "warnings": []
+    "warnings": [
+      "Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
+      "MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
+      "Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
+      "EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
+    ]
   },
   "resolvedSources": {
     "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
@@ -410,15 +419,13 @@
     "title": "Ubisoft+ Classics",
     "price": "7,99 €",
     "items": [
-      "Ubisoft+ Classics",
-      "PS Plus Extra",
-      "PS Plus Premium"
+      "Ubisoft+ Classics"
     ],
     "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-11T14:07:09.081Z",
+    "checkedAt": "2026-10-13T02:47:07.693Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -432,7 +439,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-11T14:07:09.185Z",
+    "checkedAt": "2026-10-13T02:47:07.761Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -445,7 +452,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-11T14:07:32.525Z",
+    "checkedAt": "2026-10-13T02:47:21.286Z",
     "verified": 4,
     "missing": [],
     "warnings": [
@@ -454,8 +461,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-11T14:06:45.638Z",
-    "date": "11.10.2026",
+    "checkedAt": "2026-10-13T02:47:06.822Z",
+    "date": "13.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -480,8 +487,8 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-11T14:07:33.253Z",
-    "berlinDate": "2026-10-11",
+    "checkedAt": "2026-10-13T02:47:22.062Z",
+    "berlinDate": "2026-10-13",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []
