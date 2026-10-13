@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-13T04:00:43.254Z",
+  "checkedAt": "2026-10-13T04:02:46.402Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -58,7 +58,7 @@
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209157,
+    "bytes": 209207,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175748,
+    "bytes": 175798,
     "updated": true,
     "parsed": {
       "games": [
@@ -138,7 +138,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-13T04:01:02.657Z",
+      "checkedAt": "2026-10-13T04:03:23.875Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
