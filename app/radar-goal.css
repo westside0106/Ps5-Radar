@@ -44,3 +44,9 @@
 .platform-switch b,.catalog-back b{margin-left:6px;padding:2px 6px;border-radius:5px;background:#1f7a3d;color:#eaffef;font-size:9px;letter-spacing:.08em;font-weight:950;vertical-align:middle}
 .platform-switch.is-active,.catalog-back a.is-active{border-color:#5cabff;background:#12335c;color:#eaf4ff}
 .catalog-back a.is-active{font-weight:900}
+
+.mag-gamefinder{margin:12px 0 16px;padding:17px;border:1px solid rgba(82,160,255,.45);border-radius:13px;background:linear-gradient(110deg,#102947,#081a31);color:#e9f3ff;display:grid;gap:12px}
+.mag-gamefinder-intro strong{display:block;font-size:14px;letter-spacing:.06em;color:#a9d5ff}
+.mag-gamefinder-intro p{margin:7px 0 0;font-size:13px;line-height:1.5;color:#c1d4ec}
+.mag-gamefinder-links{display:flex;flex-wrap:wrap;gap:9px}
+.mag-gamefinder-links a{display:inline-flex;align-items:center;min-height:40px;padding:9px 12px;border:1px solid #4375a5;border-radius:9px;background:#14345a;color:#eff7ff;text-decoration:none;font-size:12px;font-weight:800}
