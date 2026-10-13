@@ -105,11 +105,13 @@
     "The Play List"
   ],
   "ubisoftTitle": "Ubisoft+ Classics",
-  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat.",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
   "ubisoftItems": [
-    "Ubisoft+ Classics"
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
   ],
-  "radarCheck": "Stand 13.10.2026 · 8/9 Quellen · 5 Warnung(en)",
+  "radarCheck": "Stand 13.10.2026 · 9/9 Quellen · Store 8 geprüft · 12/15 Details",
   "sourceAlerts": [
     {
       "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
@@ -129,12 +131,12 @@
   ],
   "editorial": [],
   "health": {
-    "status": "warning",
-    "checkedAt": "2026-10-13T02:48:45.195Z",
-    "okSources": 8,
+    "status": "ok",
+    "checkedAt": "2026-10-13T04:01:05.188Z",
+    "okSources": 9,
     "totalSources": 9,
-    "failedSources": 1,
-    "warnings": 5,
+    "failedSources": 0,
+    "warnings": 0,
     "storeDiscoveryMode": "dynamic-browser",
     "storeProductsVerified": 8,
     "storeDealsSelected": 3,
@@ -144,17 +146,11 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-11T14:07:46.468Z"
+    "lastSuccessfulCheck": "2026-10-13T04:01:05.188Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-13T02:48:45.195Z",
-    "errors": [
-      "PS Plus aktuell: Quellenabruf fehlgeschlagen",
-      "Detail-Enrichment: Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
-      "Detail-Enrichment: MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
-      "Detail-Enrichment: Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
-      "Detail-Enrichment: EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
-    ],
+    "checkedAt": "2026-10-13T04:01:05.188Z",
+    "errors": [],
     "sources": [
       {
         "name": "PlayStation Blog",
@@ -170,7 +166,7 @@
       },
       {
         "name": "PS Plus aktuell",
-        "ok": false
+        "ok": true
       },
       {
         "name": "EA Play",
@@ -230,7 +226,7 @@
       "release": "17.3.2026",
       "platform": "PS5",
       "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202610/0222/053b8a892b7866d761a017a1b8b6ee790285f5ac74f3bcbc.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
         "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
@@ -364,16 +360,11 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-13T02:48:30.948Z",
+    "checkedAt": "2026-10-13T04:00:57.554Z",
     "titles": 15,
-    "fetched": 4,
+    "fetched": 8,
     "enriched": 12,
-    "warnings": [
-      "Sniper Elite: Resistance: 403 https://www.playstation.com/de-de/games/sniper-elite-resistance/",
-      "MLB The Show 26: 403 https://www.playstation.com/de-de/games/mlb-the-show/",
-      "Chained Echoes: 403 https://www.playstation.com/de-de/games/chained-echoes/",
-      "EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
-    ]
+    "warnings": []
   },
   "resolvedSources": {
     "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
@@ -419,13 +410,15 @@
     "title": "Ubisoft+ Classics",
     "price": "7,99 €",
     "items": [
-      "Ubisoft+ Classics"
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
     ],
     "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-13T02:48:18.714Z",
+    "checkedAt": "2026-10-13T04:00:46.158Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -439,7 +432,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-13T02:48:19.054Z",
+    "checkedAt": "2026-10-13T04:00:46.222Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -452,7 +445,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-13T02:48:33.059Z",
+    "checkedAt": "2026-10-13T04:01:01.880Z",
     "verified": 4,
     "missing": [],
     "warnings": [
@@ -461,7 +454,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-13T02:48:17.857Z",
+    "checkedAt": "2026-10-13T04:00:45.003Z",
     "date": "13.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -487,7 +480,7 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-13T02:48:33.872Z",
+    "checkedAt": "2026-10-13T04:01:02.657Z",
     "berlinDate": "2026-10-13",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
