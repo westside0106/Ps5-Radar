@@ -5,6 +5,11 @@ name: Daily PS Plus Catalog
 # nicht drei Workflows gleichzeitig nach main pushen. Die Katalogseite meldet
 # einen Stand ab 48 Stunden als veraltet - taeglich genuegt also deutlich.
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/enrich-plus-igdb.mjs'
+      - '.github/workflows/daily-catalog.yml'
   workflow_dispatch:
   schedule:
     - cron: '45 3 * * *'
