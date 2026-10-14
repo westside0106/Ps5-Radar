@@ -7,11 +7,12 @@ import './style.css';
 export const dynamic='force-dynamic';
 export const metadata={title:'Mein PlayStation · PS5 Radar',robots:{index:false,follow:false}};
 function hours(value){const n=Number(value);return Number.isFinite(n)?Math.round(n/60)+' Std.':'—';}
-export default async function MyPlayStation(){
+export default async function MyPlayStation({searchParams}){
  const jar=await cookies(), expected=sessionToken();
  if(!expected||!safeEqual(jar.get(COOKIE_NAME)?.value,expected))redirect('/');
  let data;try{data=await getPsnDashboard();}catch(e){data={connected:false,configured:true,error:e.message};}
- const titles=data?.trophies?.trophyTitles||[];
+ const params=await searchParams; const over50=params?.filter==='over50';
+ const titles=(data?.trophies?.trophyTitles||[]).filter(g=>!over50||Number(g.progress)>50);
  const played=data?.played?.titles||[];
  const summary=data?.summary||{};
  const counts=summary.earnedTrophies||{};
@@ -29,7 +30,7 @@ export default async function MyPlayStation(){
  </section>
  {data.errors?.length?<p className="psn-warning">Einzelne Bereiche konnten nicht geladen werden: {data.errors.join(' · ')}</p>:null}
  <section className="psn-panel"><h2>Zuletzt gespielt</h2><div className="psn-games">{played.length?played.slice(0,36).map((game,i)=><article key={game.titleId||i}><strong>{game.name||game.titleName||'Unbekanntes Spiel'}</strong><span>{hours(game.playDuration)}{game.lastPlayedDateTime?' · Zuletzt '+new Date(game.lastPlayedDateTime).toLocaleDateString('de-DE'):''}</span></article>):<p>Keine Spielaktivität verfügbar oder durch Privatsphäre-Einstellungen eingeschränkt.</p>}</div></section>
- <section className="psn-panel"><h2>Trophäenfortschritt</h2><div className="psn-games">{titles.length?titles.map((game,i)=><article key={game.npCommunicationId||i}><strong>{game.trophyTitleName||'Unbekanntes Spiel'}</strong><span>{game.progress??0}% · {game.earnedTrophies?.platinum??0} Platin · {game.earnedTrophies?.gold??0} Gold</span><div className="psn-progress"><i style={{width:Math.max(0,Math.min(100,Number(game.progress)||0))+'%'}}/></div></article>):<p>Keine Trophäenliste verfügbar.</p>}</div></section>
+ <section className="psn-panel"><h2>Trophäenfortschritt</h2><div className="psn-filter"><Link href="/mein-playstation">Alle Spiele</Link><Link href="/mein-playstation?filter=over50">Über 50 %</Link></div><div className="psn-games">{titles.length?titles.map((game,i)=><article key={game.npCommunicationId||i}><strong>{game.trophyTitleName||'Unbekanntes Spiel'}</strong><span>{game.progress??0}% · {game.earnedTrophies?.platinum??0} Platin · {game.earnedTrophies?.gold??0} Gold</span><div className="psn-progress"><i style={{width:Math.max(0,Math.min(100,Number(game.progress)||0))+'%'}}/></div></article>):<p>Keine Trophäenliste verfügbar.</p>}</div></section>
  <p className="psn-foot">Synchronisiert: {new Date(data.checkedAt).toLocaleString('de-DE')} · Nur lesender Zugriff · Inoffizielle PSN-Schnittstelle</p></>:null}
  </main>;
 }
