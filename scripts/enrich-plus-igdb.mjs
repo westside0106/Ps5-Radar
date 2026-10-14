@@ -66,7 +66,7 @@ function equivalent(a,b) {
 }
 async function search(name) {
   const escaped=name.replace(/["\\]/g,' ').slice(0,110);
-  const query='search "'+escaped+'"; fields id,name,first_release_date,summary,platforms.name,game_modes.name,player_perspectives.name; limit 35;';
+  const query='search "'+escaped+'"; fields id,name,first_release_date,summary,cover.image_id,platforms.name,game_modes.name,player_perspectives.name; limit 35;';
   const response=await fetch('https://api.igdb.com/v4/games',{
     method:'POST',headers:{'Client-ID':clientId,'Authorization':'Bearer '+token,'Content-Type':'text/plain'},body:query
   });
@@ -78,7 +78,7 @@ const unresolved=[];
 for (const game of catalog.games) {
   // A previously verified IGDB identity must not be re-matched just because
   // IGDB lacks a perspective or mode for that particular title.
-  if (game.metadataSource === 'IGDB' || (game.releaseDate && game.description && game.modes?.length && game.perspective)) {alreadyComplete++;continue;}
+  if (game.image && (game.metadataSource === 'IGDB' || (game.releaseDate && game.description && game.modes?.length && game.perspective))) {alreadyComplete++;continue;}
   const candidates=candidateNames(game.title);
   const isLegacyOnly=(game.services||[]).includes('premium') && !(game.services||[]).some(s=>s==='extra'||s==='essential');
   let match=null,ambiguous=false;
@@ -101,6 +101,10 @@ for (const game of catalog.games) {
       await wait(300);
     }
     if (!match) {unmatched++;unresolved.push({title:game.title,reason:ambiguous?'ambiguous':'not_found'});continue;}
+    if (!game.image && /^[a-zA-Z0-9_]+$/.test(match.cover?.image_id||'')) {
+      game.image='https://images.igdb.com/igdb/image/upload/t_cover_big_2x/'+match.cover.image_id+'.jpg';
+      game.imageSource='IGDB';
+    }
     if (!game.releaseDate && Number.isInteger(match.first_release_date)) {
       const date=new Date(match.first_release_date*1000).toISOString().slice(0,10);
       if (/^\d{4}-\d{2}-\d{2}$/.test(date)) game.releaseDate=date;
@@ -108,7 +112,7 @@ for (const game of catalog.games) {
     if (!game.description && match.summary) game.description=match.summary.slice(0,520);
     if (!game.modes?.length) game.modes=(match.game_modes||[]).map(m=>modes[m.name]).filter(Boolean);
     if (!game.perspective) game.perspective=(match.player_perspectives||[]).map(p=>perspectives[p.name]).find(Boolean)||null;
-    if (game.releaseDate || game.description || game.modes?.length || game.perspective) {
+    if (game.image || game.releaseDate || game.description || game.modes?.length || game.perspective) {
       game.metadataSource='IGDB';
       enriched++;
     } else {unmatched++;unresolved.push({title:game.title,reason:'no_metadata'});}
