@@ -8,11 +8,12 @@
     "start": "next start",
     "radar:screenshot": "node scripts/finalize-health.mjs && node scripts/screenshot-radar.mjs",
     "radar:semantics": "node scripts/validate-temporal-semantics.mjs",
-    "test:goal": "node --test scripts/test-goal.mjs scripts/test-temporal-helpers.mjs scripts/test-price-radar-state.mjs scripts/test-video-pass-2.mjs scripts/test-video-pass-3.mjs",
+    "test:goal": "node --test scripts/test-goal.mjs scripts/test-temporal-helpers.mjs scripts/test-price-radar-state.mjs scripts/test-video-pass-2.mjs scripts/test-video-pass-3.mjs scripts/test-psn-metadata.mjs",
     "catalog:refresh": "node scripts/update-plus-catalog.mjs",
     "test:goal:browser": "node scripts/test-goal-browser.mjs",
     "test:platform": "node --test lib/platform-core/tests/*.test.mjs lib/providers/xbox/tests/*.test.mjs",
-    "xbox:refresh": "node scripts/update-xbox-snapshot.mjs"
+    "xbox:refresh": "node scripts/update-xbox-snapshot.mjs",
+    "test:psn": "node --test scripts/test-psn-metadata.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
