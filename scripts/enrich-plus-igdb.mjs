@@ -19,6 +19,18 @@ const modes = {'Single player':'Solo','Multiplayer':'Mehrspieler','Co-operative'
 const perspectives = {'First person':'First-Person','Third person':'Third-Person','Bird view / Isometric':'Isometrisch','Side view':'Seitenansicht','Text':'Text','Auditory':'Audio','Virtual Reality':'VR'};
 const wait = ms => new Promise(resolve=>setTimeout(resolve,ms));
 const unique = values => [...new Set(values.filter(Boolean))];
+// Verified exceptions for IGDB's punctuation or regional spelling differences.
+// Never map remasters, collections or DLCs to an unrelated base game.
+const aliases = new Map([
+  ['FARCRY 6', 'Far Cry 6'],
+  ['FARCRY 3 Classic Edition', 'Far Cry 3: Classic Edition'],
+  ['EARTH DEFENSE FORCE:WORLD BROTHERS', 'Earth Defense Force: World Brothers'],
+  ['For The King', 'For the King'],
+  ['Death end reQuest', 'Death end re;Quest'],
+  ['Grand Theft Auto V (PS4 & PS5)', 'Grand Theft Auto V'],
+  ['Dying Light 2 Stay Human PS4&PS5 LV', 'Dying Light 2 Stay Human'],
+]);
+
 function candidateNames(title) {
   let cleaned = title.normalize('NFKC').replace(/[®™©]/g,'').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();
   const candidates=[cleaned];
@@ -36,6 +48,13 @@ function candidateNames(title) {
     .replace(/\s*\b(?:PlayStation Plus|Free Upgrade)\b/gi,' ')
     .replace(/\s+/g,' ').replace(/[\s:|+&-]+$/g,'').trim();
   candidates.push(cleaned);
+  const alias=aliases.get(title.normalize('NFKC').replace(/[®™©]/g,'').trim());
+  if (alias) candidates.push(alias);
+  // Some storefront titles have an extra regional/version marker after PS4/PS5.
+  candidates.push(cleaned.replace(/\\s+LV$/i,'').trim());
+  // Only generic platform marketing: remove a trailing platform parenthetical
+  // and a PS4/PS5 marketing suffix without touching gameplay subtitles.
+  candidates.push(cleaned.replace(/\\s*\\((?:PS4|PS5)(?:\\s*[&+]\\s*(?:PS4|PS5))?\\)\\s*$/i,'').trim());
   // Do not automatically equate named collections, remasters or expansions
   // with their base game: those may have different release dates/content.
   return unique(candidates.filter(n=>n.length>=3 && !/^(PS4|PS5)$/i.test(n)));
