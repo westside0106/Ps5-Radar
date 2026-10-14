@@ -28,10 +28,11 @@ const aliases = new Map([
   ['For The King', 'For the King'],
   ['Death end reQuest', 'Death end re;Quest'],
   ['Grand Theft Auto V (PS4 & PS5)', 'Grand Theft Auto V'],
+  ['Grand Theft Auto V (PS4™ & PS5™)', 'Grand Theft Auto V'],
   ['Dying Light 2 Stay Human PS4&PS5 LV', 'Dying Light 2 Stay Human'],
 ]);
 
-function candidateNames(title) {
+export function candidateNames(title) {
   let cleaned = title.normalize('NFKC').replace(/[®™©]/g,'').replace(/[’‘]/g,"'").replace(/\s+/g,' ').trim();
   const candidates=[cleaned];
   // Strip only store packaging, platform labels and generic edition suffixes.
@@ -51,10 +52,10 @@ function candidateNames(title) {
   const alias=aliases.get(title.normalize('NFKC').replace(/[®™©]/g,'').trim());
   if (alias) candidates.push(alias);
   // Some storefront titles have an extra regional/version marker after PS4/PS5.
-  candidates.push(cleaned.replace(/\\s+LV$/i,'').trim());
+  candidates.push(cleaned.replace(/\s+LV$/i,'').trim());
   // Only generic platform marketing: remove a trailing platform parenthetical
   // and a PS4/PS5 marketing suffix without touching gameplay subtitles.
-  candidates.push(cleaned.replace(/\\s*\\((?:PS4|PS5)(?:\\s*[&+]\\s*(?:PS4|PS5))?\\)\\s*$/i,'').trim());
+  candidates.push(cleaned.replace(/\s*\((?:PS4|PS5)(?:\s*[&+]\s*(?:PS4|PS5))?\)\s*$/i,'').trim());
   // Do not automatically equate named collections, remasters or expansions
   // with their base game: those may have different release dates/content.
   return unique(candidates.filter(n=>n.length>=3 && !/^(PS4|PS5)$/i.test(n)));
@@ -77,12 +78,14 @@ const unresolved=[];
 for (const game of catalog.games) {
   if (game.releaseDate && game.description && game.modes?.length && game.perspective) {alreadyComplete++;continue;}
   const candidates=candidateNames(game.title);
+  const isLegacyOnly=(game.services||[]).includes('premium') && !(game.services||[]).some(s=>s==='extra'||s==='essential');
   let match=null,ambiguous=false;
   try {
     for (const candidate of candidates) {
       const results=await search(candidate);
+      const supportedPlatforms=isLegacyOnly ? /^(PlayStation|PlayStation 2|PlayStation Portable|PlayStation 4|PlayStation 5)$/ : /^(PlayStation 4|PlayStation 5)$/;
       const exact=results.filter(item => equivalent(item.name,candidate)
-        && (item.platforms||[]).some(p=>/^(PlayStation 4|PlayStation 5)$/.test(p.name||'')));
+        && (item.platforms||[]).some(p=>supportedPlatforms.test(p.name||'')));
       // Multiple distinct IGDB entries (e.g. remasters/versions) are ambiguous.
       if (exact.length===1) {match=exact[0];break;}
       if (exact.length>1) ambiguous=true;
