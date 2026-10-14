@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-13T15:06:09.129Z",
+  "checkedAt": "2026-10-14T00:02:25.059Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,24 +54,11 @@
         "pubDate": "Mon, 05 Oct 2026 12:15:48 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
-        "link": "https://blog.de.playstation.com/2026/10/13/helldivers-2-visier-der-autoritaet-premium-kriegsanleihe-erscheint-am-20-oktober/",
-        "pubDate": "Tue, 13 Oct 2026 13:00:00 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Escape Academy 2: Back 2 School erscheint am 5. November",
-        "link": "https://blog.de.playstation.com/2026/10/13/escape-academy-2-back-2-school-erscheint-am-5-november/",
-        "pubDate": "Tue, 13 Oct 2026 12:00:00 +0000",
-        "category": "release"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 210141,
+    "bytes": 209163,
     "schedule": [
       {
         "date": "03.09.",
@@ -122,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176732,
+    "bytes": 175754,
     "updated": true,
     "parsed": {
       "games": [
@@ -151,7 +138,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-13T15:06:51.540Z",
+      "checkedAt": "2026-10-14T00:03:20.466Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -166,12 +153,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 610254
+    "bytes": 609235
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241529,
+    "bytes": 241407,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -184,7 +171,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163237,
+    "bytes": 163231,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
