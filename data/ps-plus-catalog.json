@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-13T23:43:54.109Z",
+  "checkedAt": "2026-10-14T00:02:38.911Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-13T23:43:54.109Z"
+      "checkedAt": "2026-10-14T00:02:38.911Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-13T23:43:54.109Z"
+      "checkedAt": "2026-10-14T00:02:38.911Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 168,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-13T23:43:54.109Z"
+      "checkedAt": "2026-10-14T00:02:38.911Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-13T23:43:54.109Z"
+      "checkedAt": "2026-10-14T00:02:38.911Z"
     }
   },
   "games": [
@@ -80,7 +80,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2022-11-08",
+      "description": "A Little To The Left is a cozy puzzle game that has you sort, stack, and organize household items into pleasing arrangements while you keep an eye out for a mischievous cat with an inclination for chaos. Check out this playful and intuitive puzzler with 75+ satisfying messes to tidy.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10009366",
@@ -244,7 +251,16 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-04-16",
+      "description": "Anno 1800: Lead the Industrial Revolution! Welcome to the dawn of the Industrial Age. The path you choose will define your world. Are you an innovator or an exploiter? A conqueror or a liberator? How the world remembers your name is up to you.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Isometrisch",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10001119",
@@ -261,7 +277,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2022-03-17",
+      "description": "Anno: Mutationem set up a near future Metropolis after the catastrophy. Moreover, they’ve introduced the famous open-sourced work series “SCP Foundation” in to the world of Anno: Mutationem, to mix the creative ideas of authors from all over the world.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:221831",
@@ -420,7 +443,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2022-07-19",
+      "description": "As Dusk Falls is an original interactive drama from INTERIOR/NIGHT that explores the entangled lives of two families across thirty years. Starting in 1998 with a robbery-gone-wrong in small town Arizona, the choices you make have a powerful impact on the characters’ lives in this uncompromising story of betrayal, sacrifice and resilience. Drive the lives and relationships of multiple characters in a decades-spanning story told across two intense books.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:200102",
@@ -616,7 +648,14 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2016-02-09",
+      "description": "Chronicles: Russia will feature the Russian assassin Nikolai Orelov in 1918, during the aftermath of the October Revolution. Orelov wants to leave with his family, but is required to perform one last mission for the Assassin Order: infiltrate the house where the Tsar's family is being held by the Bolsheviks, and steal an artifact that has been fought over by Assassins and Templars for centuries. Along the way, he witnesses the massacre of the Tsar Nicholas II's children, but manages to save the princess, Anastasia.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:200098",
@@ -634,7 +673,15 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2013-12-17",
+      "description": "Born a slave, Adewale found freedom as a pirate aboard Edward Kenway’s ship, the Jackdaw. 15 years later, Adewale has become a trained Assassin who finds himself shipwrecked in Saint-Domingue without weapons or crew. He now has to acquire a ship and gather his own crew to free the slaves and avenge them. Over 3 hours of new single-player gameplay!",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:231856",
@@ -671,7 +718,14 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-10-05",
+      "description": "Assassin’s Creed Mirage is a stealth-focused action-adventure game set in ninth-century Baghdad. It emphasizes parkour, infiltration, and targeted assassinations. The game follows a more compact structure than recent entries in the series. Players control Basim, a young thief drawn into a secretive order. The title blends historical settings with narrative elements tied to the franchise’s established lore.\n\nThe story unfolds in a thriving Baghdad at the height of its cultural and scientific influence, where Basim, ",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:230095",
@@ -689,7 +743,14 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2018-03-20",
+      "description": "In addition to running in 4K, Assassin's Creed Rogue Remastered sports higher-resolution textures and shadows, improved environmental rendering, and new visual effects, making its sprawling wilderness, Arctic icescapes, and bustling version of New York City more striking than ever. The new edition also packs in all of the original's downloadable content and expansions, including two bonus missions – The Armor of Sir Gunn and The Siege of Fort de Sable – as well as the weapons, outfits, and customization items in th",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:212339",
@@ -706,7 +767,14 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2015-10-23",
+      "description": "Assassin's Creed Syndicate is a third-person action-adventure stealth game set in London during the Industrial Revolution of 1868. Players control twin Assassins Jacob and Evie Frye, each with distinct abilities: Jacob specializes in brawling and close combat while Evie excels at stealth. Gameplay features open-world exploration of Victorian London using parkour, carriages, a rope launcher, and gang warfare mechanics. The city is divided into boroughs that players liberate from enemy control by completing missions ",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:225519",
@@ -724,13 +792,20 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2016-11-15",
+      "description": "Make history as the legendary Master Assassin, Ezio Auditore da Firenze, in Assassin’s Creed The Ezio Collection, which includes the acclaimed single-player campaigns and single-player add-on content (no multiplayer content) from Assassin’s Creed II, Assassin’s Creed Brotherhood, and Assassin’s Creed Revelations with enhanced\ngraphics.\n\nLive the life of Ezio and learn the ways of the Assassin as he seeks vengeance for the betrayal of his family. Travel through 15th-century Renaissance Italy, including the capital R",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:234902",
       "title": "Assetto Corsa Competizione",
       "storeUrl": "https://store.playstation.com/de-de/concept/234902",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2922/42a58ec7aff10990d3af0c968e9223b9f3b0e1aa7c516ae8.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -747,7 +822,7 @@
       "id": "concept:234630",
       "title": "ASTRONEER",
       "storeUrl": "https://store.playstation.com/de-de/concept/234630",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2101/0367df8de23c764cf34cb0295eedf887da7e751f9ab5a2fd.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -775,7 +850,7 @@
       "id": "concept:10005432",
       "title": "Atelier Ryza 3: Alchemist of the End & the Secret Key (PS4 & PS5)",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005432",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202209/0107/w3plTnuSWMWg5jJbIUe6UMLW.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -786,13 +861,20 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-03-24",
+      "description": "Ryza and her friends are living their lives on Kurken Island when news of a sudden appearance of a mysterious group of islands in nearby waters arrives. To find a way to save her island, Ryza and her friends will set off on final adventure surrounding the \"roots of alchemy.\"",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10002689",
       "title": "Atlas Fallen: Reign of Sand",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002689",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/1616/47404eac92226b1142c89e3098898a2c816ed246591bd674.png",
       "platforms": [
         "PS5"
       ],
@@ -854,7 +936,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2021-10-12",
+      "description": "Back 4 Blood is a thrilling cooperative first-person shooter from the creators of the critically acclaimed Left 4 Dead franchise. You are at the center of a war against the Ridden. These once-human hosts of a deadly parasite have turned into terrifying creatures bent on devouring what remains of civilization. With humanity’s extinction on the line, it’s up to you and your friends to take the fight to the enemy, eradicate the Ridden, and reclaim the world.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:231064",
@@ -1183,7 +1274,7 @@
       "id": "concept:10006070",
       "title": "Bluey: The Videogame",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006070",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/3010/9fc8cb414e1cdbd62918909feecbf4fd0533ccc020b93527.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1211,7 +1302,7 @@
       "id": "concept:214367",
       "title": "Bound™",
       "storeUrl": "https://store.playstation.com/de-de/concept/214367",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA04380_00/Bbr7sKYkC8mOJQEgdr3WMNdL01CDCSzQ.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1259,7 +1350,7 @@
       "id": "concept:221878",
       "title": "Brawlout",
       "storeUrl": "https://store.playstation.com/de-de/concept/221878",
-      "image": "https://image.api.playstation.com/cdn/EP2196/CUSA05544_00/ppqIRtQgst8CmI2HtGxPh2jN9fgeiqkh.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -1286,7 +1377,7 @@
       "id": "concept:10008760",
       "title": "Broken Sword - Shadow of the Templars: Reforged",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008760",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/0508/5d46ca76bc4a51d0d6333d3fcef5409ed138ec24cdc80a61.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1345,7 +1436,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2018-10-29",
+      "description": "Developed by seasoned studio Cyanide, Call of Cthulhu is an RPG-Investigation game with psychological horror and stealth mechanics, set in a deeply immersive world. On a mission to find the truth behind the death of an acclaimed artist and her family on a backwater island, the player will soon uncover a more disturbing truth as the Great Dreamer, Cthulhu, prepares its awakening...",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10000938",
@@ -1565,7 +1663,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2021-07-28",
+      "description": "Chernobylite is a science-fiction survival horror experience, mixing the free exploration of its disturbing world with challenging combat, unique crafting, and non-linear storytelling. Play as a physicist, one of the Chernobyl Power Plant's ex-employees, and investigate the mysterious disappearance of your beloved. Try to survive and reveal the contamination zone's twisted secrets. Remember, the military presence is not your only concern.\n\nGet ready for a thrilling adventure of survival, conspiracy, horror, love, a",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:225783",
@@ -1661,7 +1768,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2021-06-08",
+      "description": "Chivalry 2 is a multiplayer first person slasher inspired by epic medieval movie battles. Players are thrust into the action of every iconic moment of the era - from clashing swords, to storms of flaming arrows, to sprawling castle sieges and more.",
+      "modes": [
+        "Mehrspieler"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:224821",
@@ -1683,7 +1797,7 @@
       "id": "concept:10007275",
       "title": "Citizen Sleeper",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007275",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202303/1609/e3278cdeab2b05d0b0ff86c29c14f8b48ea0ada641ca1595.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1707,7 +1821,7 @@
       "id": "concept:10011288",
       "title": "Citizen Sleeper 2: Starward Vector",
       "storeUrl": "https://store.playstation.com/de-de/concept/10011288",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/3107/041fdba8fed2b3a3f55482211f4d51b1390d01c446b98b22.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -1730,7 +1844,7 @@
       "id": "concept:234471",
       "title": "Coffee Talk",
       "storeUrl": "https://store.playstation.com/de-de/concept/234471",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202104/0510/kqFKzYXgYrUH0Ytg9ehjazY9.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1754,7 +1868,7 @@
       "id": "concept:10004780",
       "title": "Coffee Talk Episode 2: Hibiscus & Butterfly",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004780",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2802/7e8081b6fe6c07c724b389099ffa21072f2ef814c890190a.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -1816,7 +1930,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-09-26",
+      "description": "Concrete Genie is a game about Ash, a young boy who is bullied but discovers a magical paint that might save his home town.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10010232",
@@ -2082,7 +2203,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-05-08",
+      "description": "The eagerly awaited follow-up to Red Hook's smash hit gothic horror RPG! DDII will test your mettle and drive you to the brink of madness. Armor yourself with purpose and provision your party for the journey ahead. It will be arduous.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:229018",
@@ -2125,7 +2253,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2016-06-14",
+      "description": "Trapped forever in a realm of eldritch evil where even death is not an escape, four determined Survivors face a bloodthirsty Killer in a vicious game of nerve and wits. Pick a side and step into a world of tension and terror with horror gaming's best asymmetrical multiplayer.\n\nSurvivors play in third-person and have the advantage of better situational awareness. The Killer plays in first-person and is more focused on their prey.\n\nThe Survivors' goal in each encounter is to escape the Killing Ground without getting ",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:231053",
@@ -2142,7 +2279,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2018-08-06",
+      "description": "Dead Cells is a 2D side-scrolling action platformer combining roguelike and Metroidvania design. Players control the Prisoner, an immortal creature that possesses corpses and fights through procedurally generated levels filled with mutated enemies. Combat centers on melee weapons, bows, traps, and dodging, with enemy patterns that reward careful observation. Death is permanent for each run, stripping the player of most collected items, though an in-game currency called Cells allows for purchasing upgrades that pers",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:220997",
@@ -2275,7 +2419,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-10-10",
+      "description": "Deliver Us the Moon is a sci-fi adventure game developed by KeokeN Interactive and released in 2019. Set in a near future where Earth's resources are nearly depleted, the game follows a lone astronaut on a mission to the Moon to restore energy to the planet. Players explore abandoned lunar bases and use tools to solve environmental puzzles while uncovering the fate of the people who once lived there. The game combines narrative-driven exploration with light puzzle-solving elements and offers a mix of first-person a",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10000368",
@@ -2330,7 +2481,7 @@
       "id": "concept:221852",
       "title": "Destiny 2: Legacy Collection (2025)",
       "storeUrl": "https://store.playstation.com/de-de/concept/221852",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202506/2417/df4a3d06921b2b0546c2f195eaf5a6280d39f3408fc9b38a.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -2397,7 +2548,7 @@
       "id": "concept:200972",
       "title": "DISGAEA 5: ALLIANCE OF VENGEANCE",
       "storeUrl": "https://store.playstation.com/de-de/concept/200972",
-      "image": "https://image.api.playstation.com/cdn/EP1063/CUSA02664_00/RtLGnAnvIisKEk9r1FDheH25YGyPtszR.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2488,13 +2639,21 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-03-19",
+      "description": "Doom Eternal is a first-person shooter developed by id Software and the sequel to Doom (2016). Players control the Doom Slayer as he fights to end a demonic invasion of Earth. Combat is built around aggressive resource management, where health, armor, and ammo are gained by executing, igniting, or chainsawing enemies. The game introduces platforming segments, destructible enemy weak points, an expanded weapon arsenal, and a multiplayer mode called Battlemode, where one player-controlled Slayer fights two player-con",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:232591",
       "title": "Dragon Star Varnir™",
       "storeUrl": "https://store.playstation.com/de-de/concept/232591",
-      "image": "https://image.api.playstation.com/cdn/EP4060/CUSA15724_00/QmCK4ZIaOCvPWogvf5GHHraEMsZ7FC4D.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2601,7 +2760,7 @@
       "id": "concept:229001",
       "title": "DYNASTY WARRIORS 9",
       "storeUrl": "https://store.playstation.com/de-de/concept/229001",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307z9F24933jpiehmfwRAQD1Vw8F_o6MILQ0POjG9h7MqUgneIoIMaVA6fKyl6Ph_hEibMoHkPMqauUJNAiOtlljcbSnic.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -2922,7 +3081,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2024-09-19",
+      "description": "Enotria: The Last Song is a soulslike set in a beautiful sun-lit world inspired by Italian folklore where the brightest sun casts the darkest shadow. Wear unique role-altering masks, face formidable foes and alter reality with the power of Ardore to unravel the secrets of Enotria.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:234806",
@@ -2987,7 +3153,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2024-03-05",
+      "description": "Embark on scientific expeditions with this new off-road adventure from the creators of MudRunner and SnowRunner. Lead research missions as you drive a variety of all-terrain vehicles, using high-tech tools and managing your camp and crew to ensure your success in the wild.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:231804",
@@ -3055,7 +3230,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2018-11-14",
+      "description": "Fallout 76 is an online action role-playing game and the first multiplayer entry in the Fallout series. Set in 2102 in Appalachia, West Virginia, players control a resident of Vault 76 who ventures into the open world 25 years after a nuclear war. The game features exploration, questing, base building, and combat against mutated creatures and hostile factions. It can be played solo or cooperatively, with players sharing servers and engaging in trade or PvP combat.",
+      "modes": [
+        "Mehrspieler",
+        "Koop",
+        "MMO"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10003269",
@@ -3177,7 +3361,16 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-02-15",
+      "description": "Dive into a transformed vibrant post-apocalyptic Hope County, Montana, 17 years after a global nuclear catastrophe. Lead the fight against the Highwaymen, as they seek to take over the last remaining resources.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10002934",
@@ -3195,7 +3388,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2022-03-01",
+      "description": "Far: Changing Tides is an atmospheric vehicle adventure driven by an emotional story. When floods ravage your world, captain a ship like no other and search for a new home. Sail stormy waters, dive unknown depths, and explore forgotten ruins on your voyage.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:231486",
@@ -3270,7 +3470,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-09-29",
+      "description": "Throughout the Fate franchise, pairs of masters and heroic spirits —also known as servants— have been fighting across history in a series of Holy Grail Wars, with the winning duo receiving an ancient artifact that grants wishes.\n\nFate/Samurai Remnant continues the series’ epic Holy Grail War in the fourth year of the Keian Era, Edo Period Japan. It has been several decades since the end of a turbulent, blood-soaked era, and while the people are finally enjoying peace and tranquility, a battle between seven pairs of",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10012303",
@@ -3473,7 +3680,7 @@
       "id": "concept:10014519",
       "title": "Football Manager 26 Console",
       "storeUrl": "https://store.playstation.com/de-de/concept/10014519",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202509/0112/e1a7a09b0d6a2adbcd22d206e82aefa406d34723c9eb2b38.png",
       "platforms": [
         "PS5"
       ],
@@ -3509,13 +3716,22 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2017-02-13",
+      "description": "Enter the chaos of war as a bold Knight, a brutal Viking, or a deadly Samurai. Play the thrilling story campaign or fight in brutal PvP modes, all on new dedicated servers. Enjoy an evolved experience with 18 Heroes, 18 maps, new PvP and ranked modes, thousands of gear items, and more.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:232512",
       "title": "For The King",
       "storeUrl": "https://store.playstation.com/de-de/concept/232512",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP4395/CUSA12941_00/x7ANceXfy6aRaOsOdVtrUmzjRxzNke1D.png",
       "platforms": [
         "PS4"
       ],
@@ -3533,7 +3749,7 @@
       "id": "concept:233993",
       "title": "Frostpunk: Console Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/233993",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307dRNIA91BmsNlAiza66g_qnqcnn5bL2DO8xTxiQLGTCkodnDdjk43lKvKFcfwVP58sneYw4cnkgSxjkX96GdoeACAEQa.png",
       "platforms": [
         "PS4"
       ],
@@ -3595,13 +3811,20 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-07-17",
+      "description": "Uncover the hidden wonders of Tsushima in this open-world action adventure. Forge a new path and wage an unconventional war for the freedom of Tsushima. Challenge opponents with your katana, master the bow to eliminate distant threats, develop stealth tactics to ambush enemies in order to win over the mongols.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:234646",
       "title": "Gigantosaurus The Game",
       "storeUrl": "https://store.playstation.com/de-de/concept/234646",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/113075VBMYn_68ArPN9M4XV4iBfWDKvyaexHGcOjewzye0CkKEpKol_CblHzF8GDdFnYIqd1lQwm_2qus7-FVup1_rEVjfhy.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -3741,7 +3964,17 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-12-14",
+      "description": "Dare to rumble with the best like never before with all-new characters, mechanics, and modes in the sequel to the revolutionary fighting game praised by both newcomers and fighting game veterans alike.\n\nExperience even smoother and more responsive online play with rollback netcode and engage in battle cross-platform against players on PlayStation 5, PlayStation 4, and Steam!",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop",
+        "Splitscreen"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:229066",
@@ -3759,13 +3992,22 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2024-02-01",
+      "description": "A grand adventure in the skies awaits! Form a party of four from a diverse roster of skyfarers and slash—or shoot or hex—your way to victory against treacherous foes in this action RPG. Take on quests solo or with the help of others in up to 4-player co-op play!",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:201954",
       "title": "Grand Ages: Medieval",
       "storeUrl": "https://store.playstation.com/de-de/concept/201954",
-      "image": "https://image.api.playstation.com/cdn/EP4365/CUSA02501_00/LsSzqJ8rtLxqcYKaSGfuPJdHbnckpxhN.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -3845,7 +4087,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-09-05",
+      "description": "Green Hell is a sweltering struggle for survival in the Amazonian rainforest. Clinging to life, the player is set on a journey of durability as the effects of solitude wear heavy not only on the body but also the mind. How long can you survive against the dangers of the unknown?",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:234650",
@@ -3863,7 +4114,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2018-12-13",
+      "description": "Gris is a 2D platformer developed by Nomada Studio and published by Devolver Digital. It is a visually striking game that follows the journey of a young woman named Gris as she navigates a world of grief and loss. The game features no dialogue, relying on its hand-painted art style, evocative music, and environmental storytelling to convey its themes.\n\nGameplay involves exploration, light platforming, and puzzle-solving, with Gris gaining new abilities as the story progresses. It received critical acclaim for its a",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10005051",
@@ -3893,7 +4151,7 @@
       "id": "concept:10000657",
       "title": "HELLDIVERS™ 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000657",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0517/741ac2e5afb13283621b253f320c1a27b080b2c90b6c03a6.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -3953,7 +4211,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-02-10",
+      "description": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Now you can take control of the action and be at the center of your own adventure in the wizarding world. Embark on a journey through familiar and new locations as you explore and discover fantastic beasts, customize your character and craft potions, master spell casting, upgrade talents, and become the wizard you want to be. Discover the feeling of living at Hogwarts as you make allies, battle Dark w",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:232654",
@@ -4114,7 +4379,17 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2016-07-22",
+      "description": "Human: Fall Flat is a physics-based puzzle platformer where players control a customizable wobbly human character named Bob. Using intentionally clumsy arm controls for grabbing, climbing, and interacting with objects, players navigate open-ended levels that each contain multiple solutions to their puzzles. The game supports up to eight players in online or LAN multiplayer. Originally created by a solo Lithuanian developer as a prototype for a motion-sensing camera before transitioning to traditional controls, the ",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop",
+        "Splitscreen"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:233011",
@@ -4174,7 +4449,14 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2015-12-22",
+      "description": "Hungry Shark World is a mobile game where players take on the role of a hungry shark navigating through various underwater environments, from the ocean depths to bustling coastal cities. The main goal is to survive and thrive by consuming anything edible in sight, including fish, humans, and other marine creatures. As players progress, they can upgrade their shark with various abilities and unlock new species with unique traits.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:202132",
@@ -4249,7 +4531,7 @@
       "id": "concept:10008296",
       "title": "INDIKA",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008296",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1114/2ab11b93f3b922d21a0c77af4baf962952e4e4d4ac775641.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -4272,7 +4554,7 @@
       "id": "concept:202140",
       "title": "inFAMOUS™ First Light",
       "storeUrl": "https://store.playstation.com/de-de/concept/202140",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA00897_00/xHASya7wZyIZCv8xi2Ye4kbFMgqWfWAl.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4295,7 +4577,7 @@
       "id": "concept:227147",
       "title": "Insurgency: Sandstorm [PS4 & PS5]",
       "storeUrl": "https://store.playstation.com/de-de/concept/227147",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202108/0611/eoDbrsfX3o7IkaNzaLMcWq9e.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -4306,13 +4588,23 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2018-12-12",
+      "description": "Insurgency: Sandstorm is a team-based, tactical FPS based on lethal close quarters combat and objective-oriented multiplayer gameplay. Experience the intensity of modern combat where skill is rewarded, and teamwork wins the fight.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop",
+        "Splitscreen"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:233283",
       "title": "JUMANJI: The Video Game",
       "storeUrl": "https://store.playstation.com/de-de/concept/233283",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307lxXmX1CynrUl-tYBZPDfUVtx_zUwqIEyY1r6tIwDXm0zN4wNhuPbF7ad8Qi6y0-kxPnOOIotbLxOlbOVo0_BG4qEOjf.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4339,7 +4631,7 @@
       "id": "concept:10002577",
       "title": "Jurassic World Evolution 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002577",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/2708/WZhQmSMCGEJgLHhnikOcuMnu.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -4364,7 +4656,7 @@
       "id": "concept:10005847",
       "title": "Killer Frequency",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005847",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202304/0514/9b72d5ad5ab5f3d6081b7139aed77c3a11161d3ad8f068aa.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -4389,7 +4681,7 @@
       "id": "concept:221915",
       "title": "Killing Floor 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/221915",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1113/yMqKCbhbYRuFvXyBUKdXlA8N.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4414,7 +4706,7 @@
       "id": "concept:202335",
       "title": "KILLZONE™ SHADOW FALL",
       "storeUrl": "https://store.playstation.com/de-de/concept/202335",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA00002_00/puVoa40RPVNLcnzVUIMm2R1pglNwACtv.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4438,7 +4730,7 @@
       "id": "concept:227410",
       "title": "Kingdom Come: Deliverance",
       "storeUrl": "https://store.playstation.com/de-de/concept/227410",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0313/8d0a12037596ef54fb9f7e79bd77bca4942df26119014b2c.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -4463,7 +4755,7 @@
       "id": "concept:10006210",
       "title": "Kingdom Come: Deliverance II",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006210",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1208/05a84ce968125d79fa36484c5a756a1c8d9b05622aae21c1.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -4486,7 +4778,7 @@
       "id": "concept:231088",
       "title": "Kingdom: New Lands",
       "storeUrl": "https://store.playstation.com/de-de/concept/231088",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202111/1912/it7X1Mtx3bwEWJ2I2Iy4Bq1F.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4511,7 +4803,7 @@
       "id": "concept:202340",
       "title": "KNACK™",
       "storeUrl": "https://store.playstation.com/de-de/concept/202340",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA00006_00/t01mb3xR05FOaFXtUyTbP25sqh6RDUTa.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4535,7 +4827,7 @@
       "id": "concept:10003149",
       "title": "Lake PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10003149",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1816/b1604e488f92488c2ba4b6c84bf565f0bcf5b0e593792292.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -4546,7 +4838,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2021-09-01",
+      "description": "It's 1986 - Meredith Weiss takes a break from her career in the big city to deliver mail in her hometown. How will she experience two weeks in beautiful Providence Oaks, with its iconic lake and quirky community? And what will she do next? It's up to you.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:232460",
@@ -4580,7 +4879,7 @@
       "id": "concept:202496",
       "title": "LEGO® Batman™ 3: Beyond Gotham",
       "storeUrl": "https://store.playstation.com/de-de/concept/202496",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307dBfgKGm4u0XTWe_x-xhB1mqJfZvWhlVKlyOktbb-pOQUl5adtFmSMDdH536PcfLS3MmqytebmzhUiXy6myTZ-8hJ_Tj.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4597,7 +4896,7 @@
       "id": "concept:224875",
       "title": "LEGO® CITY Undercover",
       "storeUrl": "https://store.playstation.com/de-de/concept/224875",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202111/2322/bKdcrwdYuMPisVDmHXQ6ZDVx.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4608,13 +4907,23 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2017-04-04",
+      "description": "New features of the Nintendo Switch, PlayStation 4, Windows and Xbox One versions includes that of split-screen cooperation support.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop",
+        "Splitscreen"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:231944",
       "title": "LEGO® DC Super-Villains",
       "storeUrl": "https://store.playstation.com/de-de/concept/231944",
-      "image": "https://image.api.playstation.com/cdn/EP1018/CUSA11550_00/TVDaGXcThHZzrhlzzeX1yh8eO6hXKgpX.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4625,13 +4934,23 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2018-10-16",
+      "description": "Lego DC Super-Villains is a Lego-themed action-adventure platform video game developed by Traveller's Tales. The fourth installment in the Lego Batman series of games, it is a spin-off that focuses entirely on villains of the DC Universe; it is the first in the series to do so since the villain levels from Lego Batman: The Videogame.\n\nWhile the core gameplay follows the same style as past Lego titles, including the addition of a two-player cooperative multiplayer mode, DC Super-Villains is the first title to incorp",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop",
+        "Splitscreen"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10007722",
       "title": "LEGO® Horizon Adventures™",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007722",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202409/2013/96a84262e4562c459c213515a9dfd53d82547603b86a2c6a.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -4675,7 +4994,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2016-01-26",
+      "description": "Lego Marvel's Avengers is a Lego-themed action-adventure video game developed by Traveller's Tales and published by Warner Bros. Interactive Entertainment. It is the spin-off to Lego Marvel Super Heroes and the second instalment of the Lego Marvel franchise. The game is based on the Marvel Cinematic Universe.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:228782",
@@ -4692,7 +5020,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2017-09-22",
+      "description": "Find your inner ninja with the all-new LEGO Ninjago Movie Video Game! Play as your favorite ninjas, Lloyd, Jay, Kai, Cole, Zane, Nya and Master Wu to defend Ninjago City from the evil Lord Garmadon and his Shark Army. Master the art of Ninja-gility by wall-running, high-jumping and battling the foes of Ninjago to rank up and upgrade the ninja’s combat skills. Only in the LEGO Ninjago Movie Video Game will you experience the film across 8 action packed locations each with its own unique Challenge Dojo. And with the ",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:202454",
@@ -4709,7 +5046,17 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2014-04-08",
+      "description": "Reclaim the Lost Kingdom brick by brick! Join Bilbo Baggins, Gandalf, Thorin and his company of Dwarves in an epic adventure across Middle-earth to recapture the Lonely Mountain in the most expansive LEGO game to date. Battle ravenous Trolls, dangerous Orcs and many more. Combine the Dwarves' unique abilities to solve puzzles - often with hilarious results! Explore iconic locations in Middle-earth, from the Shire to Goblin-town and beyond.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop",
+        "Splitscreen"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:202508",
@@ -4726,7 +5073,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2017-03-07",
+      "description": "LEGO Worlds is an open environment of procedurally-generated Worlds made entirely of LEGO bricks which you can freely manipulate and dynamically populate with LEGO models. Create anything you can imagine one brick at a time, or use large-scale landscaping tools to create vast mountain ranges and dot your world with tropical islands. Drop in prefabricated structures to build and customize any world to your liking. Explore using helicopters, dragons, motorbikes or even gorillas and unlock treasures that enhance your ",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10008183",
@@ -4766,7 +5122,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2024-01-26",
+      "description": "Like a Dragon: Infinite Wealth is a turn-based role-playing game developed by Ryu Ga Gotoku Studio and published by Sega. It follows dual protagonists Ichiban Kasuga and Kazuma Kiryu, with the narrative set primarily in Japan and Hawaii. The game uses a party-based combat system that builds on previous Like a Dragon entries, incorporating positioning and environmental interactions. Players engage in main story missions alongside a wide range of optional activities and side content. The title combines narrative-driv",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10000661",
@@ -4793,7 +5156,7 @@
       "id": "concept:234290",
       "title": "Lonely Mountains: Downhill",
       "storeUrl": "https://store.playstation.com/de-de/concept/234290",
-      "image": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA16005_00/2/i_2aabdda4a6fa6e88eb6c591d8bc638c4f4d24161ded0a7a496b91e02046e7f94/i/icon0.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4861,7 +5224,7 @@
       "id": "concept:222304",
       "title": "Malicious™ Fallen",
       "storeUrl": "https://store.playstation.com/de-de/concept/222304",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA07401_00/U7qD1q3WfyB1ipSakBZR07wYpYkpu4Oq.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -4897,7 +5260,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-05-22",
+      "description": "You were cut from your mother's body and left to die in the unforgiving waters of the Gulf Coast. Your only tools are your wits, your jaws, and an uncanny ability to evolve as you feed. Anything and everything is on the menu... provided you kill it before it kills you.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:234665",
@@ -4914,7 +5284,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2021-10-26",
+      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this action-adventure game, you are Star-Lord leading the unpredictable Guardians from one explosion of chaos to the next. You got this. Probably.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10002456",
@@ -4978,7 +5355,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-11-12",
+      "description": "Marvel's Spider-Man: Miles Morales is a third-person action-adventure game and a standalone continuation of Marvel's Spider-Man (2018). Set in an open-world version of New York City during winter, the game follows Miles Morales as he takes on the role of Spider-Man while Peter Parker is abroad. Gameplay focuses on traversal, combat, and completing missions across the city. Miles has unique abilities distinct from Peter, including bio-electric \"Venom\" attacks and temporary invisibility. The game features unlockable ",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:224903",
@@ -5007,7 +5391,7 @@
       "id": "concept:234427",
       "title": "MediEvil",
       "storeUrl": "https://store.playstation.com/de-de/concept/234427",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307Wm1JA9ApMArVhceTfFj0uYCsQj_rAHLUJA2Ku_rDY2sjiHAfntFA57HQqRBO7M6UPoVMfF2pbEUiA_AMefq5M4YSl4O.jpg",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5388,7 +5772,7 @@
       "id": "concept:10002581",
       "title": "My Friend Peppa Pig",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002581",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1715/g3LqT6URPeqn3S3SE15SnWnJ.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5412,7 +5796,7 @@
       "id": "concept:10008721",
       "title": "Mystic Pillars X Kantara",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008721",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202602/2517/c4c63052d6521407737df0217e2c3fde843bc4a0963f8de8.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -5428,7 +5812,7 @@
       "id": "concept:10008521",
       "title": "Neva",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008521",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202409/2622/fccefbd2e111473a6398f16b5c68cad89ed09dcab9e83207.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5471,7 +5855,7 @@
       "id": "concept:213861",
       "title": "Nioh",
       "storeUrl": "https://store.playstation.com/de-de/concept/213861",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/0700/Hsx91ywFFT0r6iRzcOS69FwD.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5496,7 +5880,7 @@
       "id": "concept:10004267",
       "title": "No More Heroes 3",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004267",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2503/pFU5XtBqeij3EwpBYJEZbcKd.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5513,7 +5897,7 @@
       "id": "concept:225235",
       "title": "NOBUNAGA'S AMBITION: Taishi",
       "storeUrl": "https://store.playstation.com/de-de/concept/225235",
-      "image": "https://image.api.playstation.com/cdn/EP4108/CUSA12006_00/5fOCpguPpUXDSJdF8N3ZyUHxpMAIERH2.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5536,7 +5920,7 @@
       "id": "concept:10001519",
       "title": "Observer: System Redux",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001519",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1815/2b06f03f1a7372f17f2620366653398bafcf3495c75463ae.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5586,7 +5970,7 @@
       "id": "concept:203202",
       "title": "Oddworld: New 'n' Tasty (PS4™)",
       "storeUrl": "https://store.playstation.com/de-de/concept/203202",
-      "image": "https://image.api.playstation.com/cdn/EP4134/CUSA00326_00/BqGVJE6RpTchLZI5ZXCQ4YOTOzC9LC44.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5603,7 +5987,7 @@
       "id": "concept:227431",
       "title": "Oddworld: Soulstorm Enhanced Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/227431",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202111/1114/x11L6rvYTz3IvbuvlDnryUJO.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5627,7 +6011,7 @@
       "id": "concept:203215",
       "title": "Omega Quintet",
       "storeUrl": "https://store.playstation.com/de-de/concept/203215",
-      "image": "https://image.api.playstation.com/cdn/EP0031/CUSA01951_00/vcNlsWag3K2ccove6z4DYsrFmYdjrkVk.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5651,7 +6035,7 @@
       "id": "concept:10002601",
       "title": "Orcs Must Die! 3 PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002601",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202107/2201/dih0npdr59dlJ5RImsZamoPZ.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5663,13 +6047,22 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-07-14",
+      "description": "Orc Must Die! 3 ushers orc-slaying mayhem to a previously unimaginable scale. All new War Scenarios pit players and their friends against the largest orc armies ever assembled. Mountable War Machines give players the essential firepower to heave, stab, carbonize, and disarticulate the abominable intruders. Orcs Must Die! 3 is the long-awaited successor to the award-winning series.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:224919",
       "title": "Outlast 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/224919",
-      "image": "https://image.api.playstation.com/cdn/EP4467/CUSA06633_00/8jdfNPVFM9lSN84bPAAIDXfEw2a2BSZW.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5686,7 +6079,7 @@
       "id": "concept:10000899",
       "title": "Overcooked! All You Can Eat",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000899",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/2700/hKBAhyUmI0fv5JrDxITp5rRJ.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5714,7 +6107,7 @@
       "id": "concept:233719",
       "title": "Overpass",
       "storeUrl": "https://store.playstation.com/de-de/concept/233719",
-      "image": "https://image.api.playstation.com/gs2-sec/acpkgo/prod/CUSA15507_00/4/i_37ce6fd4fdc8779ce793d149053b50a37e0cf689295ae9295a8c69f62835e317/i/icon0.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -5740,7 +6133,7 @@
       "id": "concept:10006027",
       "title": "Overpass 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006027",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/2508/fc58641f45a624f52b66e419bdd37c5c4c30383ad084edbe.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -5764,7 +6157,7 @@
       "id": "concept:10006288",
       "title": "Pacific Drive",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006288",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202311/0710/516003921755aa5cb8873cb08c22b172141e997a0d5cd075.png",
+      "image": null,
       "platforms": [
         "PS5"
       ],
@@ -5839,7 +6232,7 @@
       "id": "concept:10001866",
       "title": "PAW Patrol The Movie: Adventure City Calls",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001866",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202107/1613/Bhy3nYhlqZ1L1pyEFzCn5DSp.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -5976,7 +6369,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-10-31",
+      "description": "Persona 5 Royal is an enhanced version of the turn-based role-playing game Persona 5, set in modern-day Tokyo. Players control a high school student who leads a group of secret vigilantes called the Phantom Thieves of Hearts, exploring supernatural dungeons called Palaces to change the hearts of corrupt adults. The game combines dungeon crawling and turn-based combat with social simulation elements, where players manage daily activities, build relationships, and develop character statistics across a school year. Ro",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10000598",
@@ -6133,7 +6533,15 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-11-19",
+      "description": "Welcome to the most immersive poker simulation ever made. Live the life of a poker pro in a global Poker Tour, then join a Club and make a name for yourself in 200-player online tournaments.",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": null,
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10000663",
@@ -6335,7 +6743,16 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2021-08-05",
+      "description": "Embark on a legendary journey with the Rabbids in this hilarious party game! Join them on an incredible quest, filled with hilarious moments and colorful characters.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:229997",
@@ -6467,7 +6884,7 @@
       "id": "concept:234774",
       "title": "ReadySet Heroes",
       "storeUrl": "https://store.playstation.com/de-de/concept/234774",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/113076BoByByWCwE8JGqAqNC6Njam4hYENv1-0sLJdWqqkXAq8epAN5D350cxP7lypf8eHdtlupS0Y3JphOv7KdaH6oPvuSJ.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6531,7 +6948,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2021-05-06",
+      "description": "Resident Evil Village is a first-person survival horror game and the sequel to Resident Evil 7: Biohazard. The game maintains elements from previous Resident Evil games, with players having to scavenge environments for items and manage their resources. However, it adds more action-oriented gameplay, with higher enemy counts and a greater emphasis on combat.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:203706",
@@ -6680,7 +7104,7 @@
       "id": "concept:210671",
       "title": "Risk Urban Assault",
       "storeUrl": "https://store.playstation.com/de-de/concept/210671",
-      "image": "https://image.api.playstation.com/cdn/EP0001/CUSA02123_00/st6xXkkoWIxK67oOFOxp7R9dpiL0kBxR.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -6809,7 +7233,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2024-03-06",
+      "description": "A bundle of the first three S.T.A.L.K.E.R. games released on consoles for the first time.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10000177",
@@ -6826,7 +7257,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-11-12",
+      "description": "Iconic PlayStation hero, Sackboy returns in an all-new 3D adventure with a deeply immersive and expressive control scheme. Players can go on this epic platforming journey solo-style, or they can team up with friends for collaborative, chaotic multiplayer fun.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:229323",
@@ -6920,7 +7360,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-01-31",
+      "description": "Close your eyes, take a deep breath and let yourself be carried away by the great journey of Season, a third-person atmospheric adventure bicycle road trip game. Explore the world through the eyes of a young woman. Collect artifacts and memories before a mysterious cataclysm washes everything away.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10001738",
@@ -7149,7 +7596,7 @@
       "id": "concept:216395",
       "title": "Sniper Elite 4",
       "storeUrl": "https://store.playstation.com/de-de/concept/216395",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP4529/CUSA04099_00/gICDNHi83meNszd0q0uNfEETnjWDe1HG.png",
       "platforms": [
         "PS4"
       ],
@@ -7211,7 +7658,7 @@
       "id": "concept:10009300",
       "title": "Snow Bros. Wonderland",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009300",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202410/2915/7c7c2fd3c13d4e2e10353d380a1d1a790f8ef1120bb87e20.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7237,7 +7684,7 @@
       "id": "concept:10007617",
       "title": "Somerville",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007617",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2810/a7fef55185b08f916c06d1f4de7ccfe1f4177bf8c88f6336.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7262,7 +7709,7 @@
       "id": "concept:10008755",
       "title": "SONIC X SHADOW GENERATIONS PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008755",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2308/1efd5c197776d8dd5d5c79261559cd5947b0d52fc23e1174.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7273,7 +7720,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2024-10-25",
+      "description": "Shadow the Hedgehog is back with Classic and Modern Sonic in Sonic X Shadow Generations, an all-new collection featuring two unique experiences! Play as Shadow in a brand-new story campaign featuring never-before-seen abilities that prove why he's known as the Ultimate Life Form! Speed through iconic stages from Shadow's history, discover hidden secrets in an expansive hub world, and unlock new powers to take on Black Doom and save the world. Sonic X Shadow Generations also includes a complete remaster of the highl",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:216489",
@@ -7304,7 +7758,7 @@
       "id": "concept:10002535",
       "title": "Space Engineers PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002535",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202103/0211/e2To5dPScYHqJkRqNAXti14N.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7316,13 +7770,22 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-02-28",
+      "description": "Space Engineers is a sandbox game about engineering, construction and maintenance of space works. Players build space ships and space stations of various sizes and utilization (civil and military), pilot ships and perform asteroid mining.\n\nSpace Engineers utilizes a realistic volumetric-based physics engine: all objects can be assembled, disassembled, damaged and destroyed.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:227988",
       "title": "Space Hulk: Deathwing - Enhanced Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/227988",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP4133/CUSA08573_00/plPJsFdgTAvKx3joXk5ysUsUUqP3tBys.png",
       "platforms": [
         "PS4"
       ],
@@ -7464,7 +7927,15 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-02-26",
+      "description": "The universe is getting bigger every day! Paradox Development Studio is bringing the grand strategy genre to consoles for the first time ever with Stellaris: Console Edition.\n\nFeaturing the same deep strategic gameplay, rich and diverse alien races and emergent storytelling, Stellaris: Console Edition puts the complexity of the galaxy at your thumbsticks.",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": "Isometrisch",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:232043",
@@ -7804,7 +8275,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-05-14",
+      "description": "Tetris Effect: Connected adds an all-new robust multiplayer expansion to the huge variety of addictive and innovative single-player modes that Tetris Effect is known for. Connect and play with or against each other in all-new modes like \"Zone Battle,\" which shakes up traditional 1-on-1 Tetris gameplay via the time-stopping Zone mechanic, or try the innovative co-op of \"Connected\" mode, where up to three players can literally connect their Tetris playfields together and play as one, as they work together to take dow",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10007988",
@@ -7859,7 +8339,7 @@
       "id": "concept:10002313",
       "title": "The Crew Motorfest Cross-Gen Bundle",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002313",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2315/607d9ed1ac762c9de33ef73fd09b3431d0b96ef4985ac2fb.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2217/aff7ae0da202d816a5761fd4ce865085320052f46223c770.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7888,7 +8368,17 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2018-06-29",
+      "description": "The newest iteration in the revolutionary franchise, The Crew 2 captures the thrill of the American motorsports spirit in one of the most exhilarating open worlds ever created. Welcome to Motornation, a huge, varied, action-packed, and beautiful playground built for motorsports throughout the entire US of A. Enjoy unrestrained exploration on ground, sea, and sky. From coast to coast, street and pro racers, off-road explorers, and freestylers gather and compete in all kinds of disciplines. Join them in high-octane c",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop",
+        "MMO"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:204861",
@@ -7905,7 +8395,17 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2014-04-04",
+      "description": "Every legend starts somewhere and in The Elder Scrolls Online, it starts with you. Write your story into a vibrant chapter of Tamriel’s distant past that takes place nearly 1,000 years before the iconic TES V: Skyrim, and discover a world steeped in adventure and possibility.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop",
+        "MMO"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:230955",
@@ -7923,7 +8423,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2016-10-27",
+      "description": "Skyrim special edition is a remaster of the classic from 2011. Now with upgraded visuals.\nSkyrim reimagines and revolutionises the open-world fantasy epic, bringing to life a complete virtual world open for you to explore any way you choose.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:228861",
@@ -8014,7 +8521,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2018-09-20",
+      "description": "The Gardens Between is a surreal puzzle adventure through memory, moments and time that follows best friends, Arina and Frendt, as they fall into a mysterious world of beautiful garden islands. The player can traverse back and forwards in time to discover each garden's secrets and, along the way, reveal a story about friendship, childhood and growing up.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10002666",
@@ -8125,7 +8639,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2014-02-07",
+      "description": "Join Emmet and an unlikely group of resistance fighters in their heroic quest to thwart Lord Business' evil plans - a mission that Emmet is hopelessly and hilariously unprepared for. It's a wild ride with a surprising mix of over 90 playable characters including Batman, Superman, Wonder Woman, the Green Ninja, Gandalf, Shakespeare, Cleopatra and more.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:229391",
@@ -8143,7 +8666,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2017-08-01",
+      "description": "Welcome to The Long Dark, the innovative exploration-survival experience Wired magazine calls \"the pinnacle of an entire genre\". The game is a thoughtful, exploration-survival experience that challenges solo players to think for themselves as they explore an expansive frozen wilderness in the aftermath of a geomagnetic disaster. There are no zombies but only you, the cold, and all the threats Mother Nature can muster.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10008445",
@@ -8223,7 +8753,7 @@
       "id": "concept:234411",
       "title": "The Settlers: New Allies",
       "storeUrl": "https://store.playstation.com/de-de/concept/234411",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202301/3100/LzIC2wNAofNPvr4X8nfHyCpj.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -8542,7 +9072,16 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-10-04",
+      "description": "Tom Clancy's Ghost Recon Breakpoint is a military shooter set in a diverse and hostile open world entirely playable solo or in up to four-player co-op. Players will discover Auroa, a mysterious island where the most technically advanced facilities meet wild and untamed nature. Home to drone creators, tech giant Skell Technology, Auroa has fallen into the wrong hands and all contact has been lost.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:203897",
@@ -8577,7 +9116,16 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2022-01-20",
+      "description": "Assemble your elite team of Rainbow Six Operators to launch incursions in the unpredictable containment zones and face off against an evolving Alien threat. Band together and put everything on the line as you take on this unknown enemy.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:204941",
@@ -8726,7 +9274,18 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2016-03-22",
+      "description": "Trackmania offers you the ultimate arcade racing universe where everything is about reaching the perfect racing time. Test your skills in over 200 tracks, experience immediate fun by challenging your friends at home (offline splitscreen) or online. The competition lasts forever: design and share your own tracks with other players in the Trackbuilder!",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop",
+        "Splitscreen",
+        "MMO"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10011130",
@@ -8743,7 +9302,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2024-09-17",
+      "description": "The Rails are Yours in Train Sim World 5! Take on new challenges and new roles as you master the tracks and trains of iconic cities across 3 new routes. Immerse yourself in the ultimate rail hobby and embark on your next journey.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:229520",
@@ -8835,7 +9401,16 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2019-02-26",
+      "description": "Trials Rising is a stunning comeback of the acclaimed gameplay with all new features, more competition and fresh visual look. With more tracks than ever before, beginners are in for a smooth ride towards mastery, while the skills and nerves of experienced players will be put to the test in the most advanced challenges. This is Trials at its best.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:221793",
@@ -8895,7 +9470,7 @@
       "id": "concept:221794",
       "title": "TRON RUN/r",
       "storeUrl": "https://store.playstation.com/de-de/concept/221794",
-      "image": "https://image.api.playstation.com/cdn/EP1006/CUSA02395_00/njhfC1ELaZU4k87CUsn2mphQ6SGfC3BJ.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -8968,7 +9543,7 @@
       "id": "concept:234969",
       "title": "Two Point Hospital™",
       "storeUrl": "https://store.playstation.com/de-de/concept/234969",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307p71284v8W0be02A6VSmSFCCMaV-cxLVeR-rne93k7Dsd7jX-lrTo4CB3OAAjsO5GXtMaIAUUqtqen96elfdpjgV6RzT.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -8991,7 +9566,7 @@
       "id": "concept:10009660",
       "title": "Two Point Museum",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009660",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/3014/0494ed5040dbb383906f4bab12de9411722c247d769c1f05.png",
       "platforms": [
         "PS5"
       ],
@@ -9014,7 +9589,7 @@
       "id": "concept:10008192",
       "title": "Umamusume: Pretty Derby – Party Dash",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008192",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/1106/2ab8887fe4699ea1e7da810ed15421cda0846c58c927be9d.png",
       "platforms": [
         "PS4"
       ],
@@ -9038,7 +9613,7 @@
       "id": "concept:205354",
       "title": "Uncharted: The Lost Legacy",
       "storeUrl": "https://store.playstation.com/de-de/concept/205354",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2813/h9Xc7ZhCEGUcS05YvpEcNT0D.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -9064,7 +9639,7 @@
       "id": "concept:10005244",
       "title": "Under The Waves",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005244",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0819/8dee0e6f68b3efd178afe3832ef42b5e40b08ba69d531b28.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -9089,7 +9664,7 @@
       "id": "concept:228887",
       "title": "Undertale",
       "storeUrl": "https://store.playstation.com/de-de/concept/228887",
-      "image": null,
+      "image": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA09239_00/1/i_691ab24757a01bfc94c6f293abd4fac52478bdac0d5829388ceb9a4e4da9c7d1/i/icon0.png",
       "platforms": [
         "PS4"
       ],
@@ -9112,7 +9687,7 @@
       "id": "concept:217373",
       "title": "UNO®",
       "storeUrl": "https://store.playstation.com/de-de/concept/217373",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202309/1415/d664b3a660165397e3b1890fc79ade6c2338e9812b2ab420.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -9124,13 +9699,22 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2016-08-16",
+      "description": "Uno makes its return with new exciting features! Match cards by color or value and play action cards to change things up. Race against others to empty your hand before everyone else in Classic play or customize your experience with House Rules.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10007897",
       "title": "Until Dawn™",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007897",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202401/2910/d48262b72a5a2daa3ca3aed6c8f42c44f3fdaf2902265a13.png",
       "platforms": [
         "PS5"
       ],
@@ -9146,7 +9730,7 @@
       "id": "concept:205132",
       "title": "Until Dawn™ 2015",
       "storeUrl": "https://store.playstation.com/de-de/concept/205132",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2318/2cJRHg2UOwbvp10QxGrbX62S.png",
       "platforms": [
         "PS4"
       ],
@@ -9163,7 +9747,7 @@
       "id": "concept:10000039",
       "title": "Untitled Goose Game",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000039",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202009/0405/GO4TUY9mA2UNJ54R0NPEEEBf.png",
       "platforms": [
         "PS4"
       ],
@@ -9191,7 +9775,7 @@
       "id": "concept:10007965",
       "title": "V Rising",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007965",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2212/681ee3b52f89e9f71601a36c0f313665626f679abcd551b9.png",
       "platforms": [
         "PS5"
       ],
@@ -9218,7 +9802,7 @@
       "id": "concept:205194",
       "title": "Valiant Hearts: The Great War",
       "storeUrl": "https://store.playstation.com/de-de/concept/205194",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP0001/CUSA00479_00/Jc4MD22HFKwN6IZYsjbFZQ0CrfGBxvmM.png",
       "platforms": [
         "PS4"
       ],
@@ -9243,7 +9827,7 @@
       "id": "concept:10010458",
       "title": "Vampire Survivors",
       "storeUrl": "https://store.playstation.com/de-de/concept/10010458",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202404/1109/a331284fd9dc56ec526e49afd7ee41d7aafa697e947816cf.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -9271,7 +9855,7 @@
       "id": "concept:205200",
       "title": "Vampyr",
       "storeUrl": "https://store.playstation.com/de-de/concept/205200",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP4133/CUSA03468_00/DPDMxx9gbLmaq5oR8eQFJAVHRSOg6gvX.png",
       "platforms": [
         "PS4"
       ],
@@ -9389,7 +9973,7 @@
       "id": "concept:232764",
       "title": "Warhammer: Vermintide 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/232764",
-      "image": "https://image.api.playstation.com/cdn/EP4122/CUSA13645_00/kQoHA5x2wEx7ruWi2lNhKyTXo4oEfOAP.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -9414,7 +9998,7 @@
       "id": "concept:10012449",
       "title": "WARRIORS: Abyss",
       "storeUrl": "https://store.playstation.com/de-de/concept/10012449",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0406/6a5a37bdcf2df6cff320a5cb1739d04a19f18848a20c5944.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -9452,7 +10036,16 @@
         "extra",
         "ubisoft"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-10-29",
+      "description": "In Watch Dogs: Legion, near future London is facing its downfall... Unless you do something about it. Build a resistance, fight back, and give the city back to the people. It's time to rise up.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:216759",
@@ -9476,7 +10069,7 @@
       "id": "concept:205264",
       "title": "Watch_Dogs™",
       "storeUrl": "https://store.playstation.com/de-de/concept/205264",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP0001/CUSA00016_00/k2RvZFMl61ZcrXBZVmEfxcTf1NXWQzfA.png",
       "platforms": [
         "PS4"
       ],
@@ -9503,7 +10096,7 @@
       "id": "concept:234709",
       "title": "Werewolf: The Apocalypse – Earthblood",
       "storeUrl": "https://store.playstation.com/de-de/concept/234709",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202106/0715/VFixb2toiP73l3rExKbjGeH1.png",
       "platforms": [
         "PS4"
       ],
@@ -9524,7 +10117,7 @@
       "id": "concept:221804",
       "title": "Werewolves Within",
       "storeUrl": "https://store.playstation.com/de-de/concept/221804",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP0001/CUSA05287_00/SB2665uOjUGa8EGXxsTLZlGlkvXOmECf.png",
       "platforms": [
         "PS4"
       ],
@@ -9541,7 +10134,7 @@
       "id": "concept:234315",
       "title": "West of Dead",
       "storeUrl": "https://store.playstation.com/de-de/concept/234315",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202005/0507/2Qxl4co49CQWyOsqpeO8NFpC.png",
       "platforms": [
         "PS4"
       ],
@@ -9564,7 +10157,7 @@
       "id": "concept:10004448",
       "title": "Wizard with a Gun",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004448",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1318/134353dc3a941edb1087c2fa100e0df3c8918cd512abb16b.png",
       "platforms": [
         "PS5"
       ],
@@ -9590,7 +10183,7 @@
       "id": "concept:10004116",
       "title": "Wo Long: Fallen Dynasty (PS4 & PS5)",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004116",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2609/lgPM04qlLofxYamtlfMfqkHZ.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -9603,13 +10196,22 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-03-03",
+      "description": "Wo Long: Fallen Dynasty is a historical fantasy action role-playing video game developed by Team Ninja and published by Koei Tecmo.\n\nSet during a fictionalised version of the fall of the Han Dynasty, the plot follows an unnamed protagonist who battles historical characters and Chinese mythological creatures corrupted by demonic qi.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:205292",
       "title": "Wolfenstein: The New Order",
       "storeUrl": "https://store.playstation.com/de-de/concept/205292",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3004/ZKYzTfaw4UrsLLt6VjYGwh5r.png",
       "platforms": [
         "PS4"
       ],
@@ -9633,7 +10235,7 @@
       "id": "concept:205293",
       "title": "Wolfenstein: The Old Blood",
       "storeUrl": "https://store.playstation.com/de-de/concept/205293",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3005/xvisZlFdwfRCyUphggKQdwJ4.png",
       "platforms": [
         "PS4"
       ],
@@ -9657,7 +10259,7 @@
       "id": "concept:232887",
       "title": "Wolfenstein: Youngblood (German)",
       "storeUrl": "https://store.playstation.com/de-de/concept/232887",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0605/s9anMLJErDUXJTbBOoKSiqiv.png",
       "platforms": [
         "PS4"
       ],
@@ -9771,7 +10373,15 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2016-02-04",
+      "description": "XCOM 2 is the sequel to XCOM: Enemy Unknown, the 2012 award-winning strategy game of the year. Earth has changed and is now under alien rule. Facing impossible odds you must rebuild XCOM, and ignite a global resistance to reclaim our world and save humanity.",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": "Isometrisch",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:235238",
@@ -9786,7 +10396,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2020-01-16",
+      "description": "Yakuza: Like a Dragon is a role-playing game developed and published by Sega. Released in 2020, it is the eighth main entry in the Yakuza series. The game introduces a new protagonist, Ichiban Kasuga, and departs from the traditional action combat system, instead featuring turn-based combat with a party of characters. Set in the city of Yokohama, the game follows Kasuga's quest for revenge and his journey through Japan's criminal underworld.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:235411",
@@ -9830,7 +10447,15 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2022-09-14",
+      "description": "Drive, drift, and park in You Suck at Parking, the simple and accessible yet challenging game where parking is more important than your driving skills. Collect cars, learn new mechanics, challenge the world, and customize your ride in this ever-evolving parking simulator.",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": "Isometrisch",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:233994",
@@ -10094,7 +10719,7 @@
       "id": "concept:10010951",
       "title": "Mr Moskeeto",
       "storeUrl": "https://store.playstation.com/de-de/concept/10010951",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1623/484bf81e3d788bcef97b4b1af7e36900b6f0fe813b2faeda.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -10123,7 +10748,12 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2022-06-23",
+      "description": "A port of Mr. Driller, originally released on the PlayStation console, enhanced with up-rendering, rewind, quick save, and custom video filters.\n\nMr. Driller is a puzzle game developed by Namco and first released in 1999. Players control a driller who descends through layers of colored blocks, clearing paths while managing a limited air supply.\nBlocks disappear when four or more of the same color are connected, creating strategic challenges as the screen scrolls upward.\n\nThe game emphasizes quick decision-making an",
+      "modes": [],
+      "perspective": null,
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10008667",
@@ -10188,7 +10818,7 @@
       "id": "concept:10005197",
       "title": "Oddworld: Abe's Oddysee (PS1 Emulation)",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005197",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202205/1709/njvW2yDKDs2uUdtmj0MYzJU6.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -10228,7 +10858,7 @@
       "id": "concept:10019710",
       "title": "Onimusha: Dawn of Dreams",
       "storeUrl": "https://store.playstation.com/de-de/concept/10019710",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202607/3004/d6b6f2ee4bdb5db2a32928b998f7f26e55e21f8f1b447345.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -10252,7 +10882,7 @@
       "id": "concept:227430",
       "title": "Outcast - Second Contact",
       "storeUrl": "https://store.playstation.com/de-de/concept/227430",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/UP4008/CUSA07476_00/XO81bpOmmO9Rs9APRkDzlf6I1SUs5eAm.png",
       "platforms": [
         "PS4"
       ],
@@ -10276,7 +10906,7 @@
       "id": "concept:203521",
       "title": "PaRappa The Rapper 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/203521",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA01946_00/VQznnnzZUqrc3zR8sJzj38WnRgvIAmjs.png",
       "platforms": [
         "PS4"
       ],
@@ -10298,7 +10928,7 @@
       "id": "concept:10007599",
       "title": "Patapon 3",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007599",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1402/c73f3d3fe23c466b4ae8965d91e2ce042409b70b9d071168.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -10878,7 +11508,14 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2025-06-17",
+      "description": "The year is 2052 and the world is a dangerous and chaotic place. Terrorists operate openly - killing thousands; drugs, disease and pollution kill even more. The world's economies are close to collapse and the gap between the insanely wealthy and the desperately poor grows ever wider. Worst of all, an ages old conspiracy bent on world domination has decided that the time is right to emerge from the shadows and take control.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10005160",
@@ -10918,7 +11555,14 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2015-08-25",
+      "description": "Arkane Studios’ 2012 Game of the Year, Dishonored, and all of its additional content - Dunwall City Trials, The Knife of Dunwall, The Brigmore Witches and Void Walker’s Arsenal – comes to PlayStation 4 and Xbox One in Dishonored: Definitive Edition! Experience Dishonored plus all of its additional content on the new console systems for the first time, complete with enhanced graphics that take full advantage of the powerful hardware of this generation.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10007642",
@@ -11362,7 +12006,14 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2015-07-14",
+      "description": "Set in the realm of brutal Greek mythology, God of War III Remastered is the critically acclaimed single-player game that allows players to take on the fearless role of the ex-Spartan warrior, Kratos, as he rises from the darkest depths of Hades to scale the very heights of Mount Olympus to seek his bloody revenge. Armed with double-chained blades and an array of new weapons and magic, Kratos must take on mythology’s deadliest creatures while solving intricate puzzles throughout his merciless quest to destroy Olymp",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10005103",
@@ -11648,7 +12299,7 @@
       "id": "concept:202185",
       "title": "Jak II™: Renegade",
       "storeUrl": "https://store.playstation.com/de-de/concept/202185",
-      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA07990_00/PDXfEyJt3Ux4Ht21eDwOxollEuXvJVn5.png",
+      "image": null,
       "platforms": [
         "PS4"
       ],
@@ -11884,7 +12535,14 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2025-09-16",
+      "description": "A port of Legacy of Kain: Defiance, enhanced with up-rendering, rewind, quick save, and custom video filters.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10007589",
@@ -11961,7 +12619,7 @@
       "id": "concept:235243",
       "title": "Patapon™ 2 Remastered",
       "storeUrl": "https://store.playstation.com/de-de/concept/235243",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307DXGQ_7-cP3VJNptmA-r5B6gaczXXuWaP6JsdGSO-gAwfsSy2c-VAJ9y-FJMCQyqM3YNXSxf5dukmmu4qRwRLEc2kZqh.png",
       "platforms": [
         "PS4"
       ],
@@ -11985,7 +12643,7 @@
       "id": "concept:227969",
       "title": "Patapon™ Remastered",
       "storeUrl": "https://store.playstation.com/de-de/concept/227969",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA07285_00/LxyyiLIqCUdfDlYrHHwvxRRz4Vc15qng.png",
       "platforms": [
         "PS4"
       ],
@@ -12009,7 +12667,7 @@
       "id": "concept:10005043",
       "title": "Pinball Heroes",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005043",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1123/igNhlEey8ZMV7KcmFF8u98Yj.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12033,7 +12691,7 @@
       "id": "concept:203612",
       "title": "Primal",
       "storeUrl": "https://store.playstation.com/de-de/concept/203612",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA02077_00/s3d6AWNbTx56d9djDifTkv80igMAbsEt.png",
       "platforms": [
         "PS4"
       ],
@@ -12057,7 +12715,7 @@
       "id": "concept:10006276",
       "title": "Pursuit Force",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006276",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202303/1018/e805d17e3c6ad2eda9caff27e98efc865c3e4769afe67990.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12081,7 +12739,7 @@
       "id": "concept:10005512",
       "title": "Pursuit Force: Extreme Justice",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005512",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202307/1315/f90595ee7f24093db1ef3c0d50b9793c8f27f5b766a9d75f.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12105,7 +12763,7 @@
       "id": "concept:233101",
       "title": "R-Type Dimensions EX",
       "storeUrl": "https://store.playstation.com/de-de/concept/233101",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP2038/CUSA14559_00/1uqqgyAEQlbAVd4geYGjScKo3HWRVSVL.png",
       "platforms": [
         "PS4"
       ],
@@ -12131,7 +12789,7 @@
       "id": "concept:10005099",
       "title": "R4 RIDGE RACER TYPE 4® PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005099",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202303/0909/2c1effc6f46df595423ea8f7158df0550643b8eeba8ad80e.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12142,13 +12800,22 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-03-21",
+      "description": "A port of R4: Ridge Racer Type 4, originally released on the PlayStation console, enhanced with up-rendering, rewind, quick save, and custom video filters.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Splitscreen"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:203873",
       "title": "Rainbow Moon",
       "storeUrl": "https://store.playstation.com/de-de/concept/203873",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP2005/CUSA03436_00/G6Nbc4NowufL52qJ0xkdJrdLX6U6MLUN.png",
       "platforms": [
         "PS4"
       ],
@@ -12172,7 +12839,7 @@
       "id": "concept:10007648",
       "title": "Rally Cross",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007648",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202312/1221/870e59fef446ed5d3e9879b431c77c6693394e003943e8c5.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12197,7 +12864,7 @@
       "id": "concept:10007644",
       "title": "Ratchet & Clank: Size Matters",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007644",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202406/2123/c261a0f006b6c663003a793fcccd2903ffc77732d283ea49.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12221,7 +12888,7 @@
       "id": "concept:10005150",
       "title": "Resident Evil 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005150",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202205/1307/QpeOEfRcYvTWs6oU7vwePeWK.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12324,7 +12991,14 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2022-12-20",
+      "description": "A port of Ridge Racer 2, originally released on the PSP, enhanced for PS4/PS5 with up-rendering, rewind, quick save, and custom video filters.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": null,
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10015861",
@@ -12341,7 +13015,15 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2026-01-20",
+      "description": "A port of Ridge Racer, originally released on the PlayStation console, enhanced with up-rendering, rewind, quick save, and custom video filters.",
+      "modes": [
+        "Solo",
+        "Splitscreen"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:203685",
@@ -12559,7 +13241,12 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2025-12-16",
+      "description": "A port of SoulCalibur III, originally released on the PlayStation 2 console, enhanced with up-rendering, rewind, quick save, and custom video filters.\n\nSoulcalibur III is a fighting game, the sequel to Soulcalibur II, and the fourth installment in the Soul series. Compared to its predecessor, it introduces three new modes and a larger character roster, with 24 characters playable in Tales of Souls mode and an additional 18 playable in all other modes.",
+      "modes": [],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10005102",
@@ -12828,7 +13515,7 @@
       "id": "concept:10005946",
       "title": "Syphon Filter 3",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005946",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2723/bTK3DgMPjGGBLxDOBAuiQGqI.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12911,7 +13598,15 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2025-10-21",
+      "description": "A port of Tekken 3, originally released on the PlayStation console, enhanced with up-rendering, rewind, quick save, and custom video filters.\n\nNineteen years following the previous King of Iron Fist tournament, fighters from all over the world have mysteriously begun to disappear at the hands of the enigmatic being known only as Toshin. Heihachi, hoping the promise of strong opponents will lure out this so-called \"God of Fighting,\" begins his preparations for The King of Iron Fist Tournament 3.",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10005101",
@@ -12945,7 +13640,14 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2026-03-17",
+      "description": "A port of Tekken: Dark Resurrection, originally released on the PSP (PlayStation Portable) system, enhanced with up-rendering, rewind, quick save, and custom video filters.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Seitenansicht",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10005100",
@@ -13010,7 +13712,7 @@
       "id": "concept:10004605",
       "title": "The Legend of Dragoon",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004605",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202301/1219/PyEmterFf86JE0rst8JfEPsQ.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13034,7 +13736,7 @@
       "id": "concept:211634",
       "title": "The Mark of Kri",
       "storeUrl": "https://store.playstation.com/de-de/concept/211634",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA01945_00/ytgJUDiPElmgxpjbUuMY40NDCl0rxTDc.png",
       "platforms": [
         "PS4"
       ],
@@ -13058,7 +13760,7 @@
       "id": "concept:232046",
       "title": "The Raven Remastered",
       "storeUrl": "https://store.playstation.com/de-de/concept/232046",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP4389/CUSA08953_00/brbuDul8KINJrO5FnQ5WYL5fpspKgieJ.png",
       "platforms": [
         "PS4"
       ],
@@ -13082,7 +13784,7 @@
       "id": "concept:10007618",
       "title": "Thrillville",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007618",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0819/ec11dc9f4eadbb0bdb0e4eef3e36c40025a3c2a170aaf14c.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13105,7 +13807,7 @@
       "id": "concept:10007620",
       "title": "Thrillville: Off the Rails",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007620",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202311/1621/0f0e2a9a0b0bf135d7127695b81625196f37d76d33606910.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13133,7 +13835,7 @@
       "id": "concept:10016535",
       "title": "TIME CRISIS PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10016535",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202604/2105/1cbd20676ea7012dde8984a1eba73cb0e7eff646943595be.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13144,13 +13846,20 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2026-05-19",
+      "description": "A port of Time Crisis, originally released on the PlayStation console, enhanced with up-rendering, rewind, quick save, and custom video filters.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10011401",
       "title": "TimeSplitters",
       "storeUrl": "https://store.playstation.com/de-de/concept/10011401",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/3114/49002ac068b64a1f2ec3f88ebc053bd61526779309c3f59f.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13176,7 +13885,7 @@
       "id": "concept:10013616",
       "title": "Tomb Raider: Anniversary PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10013616",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202509/1818/decbb09e70d03e7320919e661b457cc3438d96c7427b0ac6.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13187,13 +13896,20 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2025-11-18",
+      "description": "This is an emulation of the classic PS2 action-adventure title, Tomb Raider: Anniversary, playable on PS4 and PS5 for the first time and enhanced with up-rendering, rewind, quick save, and custom video filters.\n\nTomb Raider: Anniversary is a third-person action-adventure game that revisits Lara Croft’s original journey to recover the Scion artifact. It reimagines the 1996 title with updated environments, refined controls, and expanded narrative elements while maintaining the exploration, platforming, and combat of ",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10010747",
       "title": "Tomb Raider: Legend",
       "storeUrl": "https://store.playstation.com/de-de/concept/10010747",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/0816/1d9bea712b88097f61b829fac5e96f956fb67225be456f36.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13217,7 +13933,7 @@
       "id": "concept:10008366",
       "title": "Twisted Metal",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008366",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2116/88bafd641512979019a604ee6bd179c0501dec42aff9d9cc.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13242,7 +13958,7 @@
       "id": "concept:10008368",
       "title": "Twisted Metal World Tour",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008368",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2121/781a0fdc8331aada7f6ec700949e4948957174f10ee5378f.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13259,7 +13975,7 @@
       "id": "concept:10013708",
       "title": "Twisted Metal™ 4",
       "storeUrl": "https://store.playstation.com/de-de/concept/10013708",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202507/0122/5756d1c967fd24b74981396f1ebdb69639cd78c4e860f2fa.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13284,7 +14000,7 @@
       "id": "concept:10013707",
       "title": "Twisted Metal™ III",
       "storeUrl": "https://store.playstation.com/de-de/concept/10013707",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202507/0122/f3b3627921332b0ca00008d2a9096aaaeaca617c2d5501d7.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13309,7 +14025,7 @@
       "id": "concept:205353",
       "title": "Uncharted™: The Nathan Drake Collection",
       "storeUrl": "https://store.playstation.com/de-de/concept/205353",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/1101/zC3kulm2Ho3ZE38ZUYHW7WMK.png",
       "platforms": [
         "PS4"
       ],
@@ -13333,7 +14049,7 @@
       "id": "concept:10011396",
       "title": "War of the Monsters",
       "storeUrl": "https://store.playstation.com/de-de/concept/10011396",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202504/0318/dd828bbee1db946b84685336ef767351370c8be3d98317d0.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13350,7 +14066,7 @@
       "id": "concept:10004409",
       "title": "Wild Arms",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004409",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2823/TKRl699HCoyBIyhUFNxDWXYJ.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13374,7 +14090,7 @@
       "id": "concept:10005513",
       "title": "Wild Arms 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005513",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202301/1722/wTuclpsVflXLVAb7KCB5HvDx.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13421,7 +14137,7 @@
       "id": "concept:10011231",
       "title": "Wild Arms™ 4",
       "storeUrl": "https://store.playstation.com/de-de/concept/10011231",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202604/1020/29e99c4e2e66dc33f157e807d17e37ef75e6e888720f8f2e.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13445,7 +14161,7 @@
       "id": "concept:227255",
       "title": "WipEout™ Omega Collection",
       "storeUrl": "https://store.playstation.com/de-de/concept/227255",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2320/mVdlpN89TmaYhDWUZ8azXrrO.png",
       "platforms": [
         "PS4"
       ],
@@ -13470,7 +14186,7 @@
       "id": "concept:10004898",
       "title": "Worms [PS1 Emulation]",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004898",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0716/e41d253b508f813b83efe92920a463d24fcfd40f93061bb5.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13487,7 +14203,7 @@
       "id": "concept:10004899",
       "title": "Worms Armageddon [PS1 Emulation]",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004899",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2813/OR4HwTYY1fUjHtPVgtYHtRcg.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13504,7 +14220,7 @@
       "id": "concept:10008316",
       "title": "Worms Pinball [PS1 Emulation]",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008316",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2014/03a9e3233bb8c39617e080ec1fea6912ff0087b5f7309a73.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13521,7 +14237,7 @@
       "id": "concept:10004900",
       "title": "Worms World Party [PS1 Emulation]",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004900",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2814/1EyzC0GmUPfAM0hil6CVcnLf.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13658,7 +14374,7 @@
       "id": "concept:10013857",
       "title": "NINJA GAIDEN: Ragebound",
       "storeUrl": "https://store.playstation.com/de-de/concept/10013857",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202504/1616/b1a631440844715c22c91b314777a0ecacfe24f2a5e1ade3.png",
+      "image": null,
       "platforms": [
         "PS4",
         "PS5"
@@ -13766,7 +14482,16 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2026-03-13",
+      "description": "The show never stops in WWE 2K26! Step into CM Punk’s 2K Showcase, dominate with 400+ Superstars and Legends, and unleash chaos with all-new match types.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:202807",
@@ -13807,7 +14532,16 @@
       "services": [
         "essential"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2024-05-23",
+      "description": "Earth Defense Force: World Brothers 2 tells the story of what happened to the voxel Earth after the events of the first installment. It cleverly introduces elements from Earth Defense Force 6 and features the Wing Diver Shooter, who didn’t make it into the previous game. This latest installment is filled with more love for the Earth Defense Force series (and Earth!) than ever before!",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:10011830",
@@ -13823,7 +14557,16 @@
       "services": [
         "essential"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2025-05-30",
+      "description": "Leave your mark on the world of racing in F1 25, the official video game of the 2025 FIA Formula One World Championship, featuring a revamped My Team mode, the thrilling third chapter of Braking Point, and more!",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:234014",
@@ -13854,5 +14597,5 @@
   ],
   "errors": [],
   "changes": [],
-  "lastAttemptAt": "2026-10-13T23:43:54.109Z"
+  "lastAttemptAt": "2026-10-14T00:02:38.911Z"
 }
