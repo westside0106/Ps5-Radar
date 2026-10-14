@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-14T10:03:39.666Z",
+  "checkedAt": "2026-10-14T10:04:33.492Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,18 +54,11 @@
         "pubDate": "Mon, 05 Oct 2026 14:00:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Battlefield 6 Season 5 ist live: Ab nach Las Vegas!",
-        "link": "https://blog.de.playstation.com/2026/10/14/battlefield-6-season-5-startet-heute-ab-nach-las-vegas-inklusive-gewinnspiel/",
-        "pubDate": "Wed, 14 Oct 2026 09:22:34 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209164,
+    "bytes": 209213,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175755,
+    "bytes": 175804,
     "updated": true,
     "parsed": {
       "games": [
@@ -145,7 +138,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-14T10:03:56.627Z",
+      "checkedAt": "2026-10-14T10:05:00.653Z",
       "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -165,7 +158,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241406,
+    "bytes": 241527,
     "updated": true,
     "parsed": {
       "trial": false,
