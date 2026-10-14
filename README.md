@@ -140,6 +140,7 @@ Die Befehle sind im `package.json` definiert. Erfolgreiche Tests oder ein erfolg
 - [ ] PS-Plus-Bibliotheksabgleich und persönliche Empfehlungen
 - [ ] Trophäen-Seltenheit, zusätzliche Filter und verbesserte Bilddaten
 - [ ] **Gaming-Jahresrückblick / PlayStation Wrapped** — vorgemerkt, keine Priorität
+- [ ] **Xbox-Integration (nachrangig)** — erst nach Fertigstellung der PlayStation-Funktionen; Xbox-Spiele und Achievements optional ergänzen
 - [ ] Automatisierte Integrationstests der Sony-Endpunkte ohne Veröffentlichung von Zugangsdaten
 
 ## ℹ️ Hinweise
