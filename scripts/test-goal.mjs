@@ -224,3 +224,16 @@ test('verified catalog changes produce sortable additions and removals without f
  assert.equal(preserved.changes.length,2);
  assert.equal(preserved.games.length,1);
 });
+
+test('daily refresh preserves IGDB metadata without replacing fresh PlayStation membership',()=>{
+ const old=fixture();
+ Object.assign(old.games[0],{releaseDate:'2020-01-02',description:'Verified IGDB summary',modes:['Solo'],perspective:'Third-Person',metadataSource:'IGDB'});
+ const newer=normalizeCatalog({checkedAt:'2026-10-14T10:00:00Z',results:{extra:{expected:1,observed:1,complete:true,entries:[{...item,title:'Testspiel neu'}]}}});
+ const merged=mergeCatalogSnapshots(old,newer);
+ assert.equal(merged.games[0].title,'Testspiel neu');
+ assert.equal(merged.games[0].description,'Verified IGDB summary');
+ assert.equal(merged.games[0].releaseDate,'2020-01-02');
+ assert.deepEqual(merged.games[0].modes,['Solo']);
+ assert.equal(merged.games[0].perspective,'Third-Person');
+ assert.equal(merged.games[0].metadataSource,'IGDB');
+});
