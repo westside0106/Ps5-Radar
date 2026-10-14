@@ -90,7 +90,7 @@ for (const game of catalog.games) {
         && (item.platforms||[]).some(p=>supportedPlatforms.test(p.name||'')));
       // Prefer the original release when a Classic explicitly identifies its
       // legacy platform. Otherwise multiple editions remain ambiguous.
-      const legacyHint=/PS1|PlayStation\\s*1|PS2|PlayStation\\s*2|PSP|Portable|Emulation/i.test(game.title);
+      const legacyHint=/PS1|PlayStation\s*1|PS2|PlayStation\s*2|PSP|Portable|Emulation/i.test(game.title);
       const preferred=legacyHint && isLegacyOnly
         ? exact.filter(item=>(item.platforms||[]).some(p=>/^(PlayStation|PlayStation 2|PlayStation Portable)$/.test(p.name||'')))
         : exact;
