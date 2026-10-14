@@ -127,7 +127,7 @@ export default function CatalogClient({ snapshot }) {
   const duplicateCards = status.complete && Number.isFinite(status.expected) ? Math.max(0, status.expected - (status.count ?? 0)) : 0;
   return <div className="catalog-app">
     <header className="catalog-header">
-      <nav className="catalog-back"><a href="/radar">← Magazin</a><a href="/radar" className="is-active" aria-current="page">PlayStation</a><a href="/xbox">Xbox <b>BETA</b></a><a href="/preise">Preisradar</a></nav>
+      <nav className="catalog-back"><a href="/radar">← Magazin</a><a href="/radar" className="is-active" aria-current="page">PlayStation</a><a href="/xbox">Xbox <b>BETA</b></a><a href="/preise">Preisradar</a><a href="/mein-playstation">Mein PlayStation</a></nav>
       <div className="catalog-heading"><div><span className="catalog-eyebrow">PLAYSTATION-RADAR · DEUTSCHLAND</span><h1>Dein PS+ Spielekatalog</h1><p>Alle verlässlich erfassten Katalogbereiche durchsuchen, filtern und direkt im PlayStation Store öffnen.</p></div><div className="catalog-count"><strong>{total.toLocaleString('de-DE')}</strong><span>eindeutige erfasste Titel</span></div></div>
     </header>
     <nav className="catalog-tabs" aria-label="PS-Plus-Bereiche">{CATALOG_TABS.map(tab => {
