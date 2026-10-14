@@ -16,6 +16,7 @@ function dateLabel(value) {
 }
 
 function CatalogCard({ game, service }) {
+  const [imageFailed,setImageFailed]=useState(false);
   const platforms = game.platforms?.length ? game.platforms.join(' · ') : null;
   const membership = serviceNames[service] || 'PlayStation Plus';
   const rows = [
@@ -39,14 +40,14 @@ function CatalogCard({ game, service }) {
   ].filter(Boolean);
   const detail = {
     kind: 'catalog-game', kicker: membership.toUpperCase(), title: game.title,
-    image: game.image || null, gallery: game.image ? [game.image] : [],
+    image: imageFailed ? null : game.image || null, gallery: game.image && !imageFailed ? [game.image] : [],
     summary: game.description || 'Spiel aus dem offiziellen PlayStation-Plus-Katalog. Weitere Details findest du im PlayStation Store.',
     rows, links,
   };
   return <DetailTile detail={detail} className="catalog-tile">
     <article className="catalog-card">
       <div className="catalog-art">
-        {game.image ? <img src={game.image} alt="" loading="lazy" decoding="async" /> : <span className="catalog-no-art">PS<br/><small>Cover nicht verifiziert</small></span>}
+        {game.image && !imageFailed ? <img src={game.image} alt="" loading="lazy" decoding="async" onError={()=>setImageFailed(true)} /> : <span className="catalog-no-art">PS<br/><small>{imageFailed?'Cover nicht erreichbar':'Cover nicht verifiziert'}</small></span>}
       </div>
       <div className="catalog-card-copy">
         <h3>{game.title}</h3>
@@ -165,7 +166,7 @@ export default function CatalogClient({ snapshot }) {
   </div>
 </div><label className="catalog-check"><input type="checkbox" checked={onlyVerifiedArt} onChange={e=>update(setOnlyVerifiedArt)(e.target.checked)}/> Nur mit Cover</label></div> : null}
     {sort.startsWith('release-') ? <p className="catalog-date-notice" role="status">Veröffentlichung {sort==='release-new'?'Neu → Alt':'Alt → Neu'} · {releaseDateCount} von {serviceGames.length} Spielen mit bestätigtem Datum. Spiele ohne Datum stehen am Ende. Die Datenquelle liefert noch keine vollständigen Veröffentlichungsdaten; fehlende Angaben werden nicht geschätzt.</p> : null}
-    <div id="catalog-results" className="catalog-results-head" aria-live="polite"><strong>{filtered.length.toLocaleString('de-DE')} {filtered.length===1?'Spiel':'Spiele'}</strong><span>{filtered.length?`${(Math.min(page,pages)-1)*PAGE_SIZE+1}–${Math.min(Math.min(page,pages)*PAGE_SIZE,filtered.length)}`:'Keine Treffer'}</span></div>
+    <div id="catalog-results" className="catalog-results-head" aria-live="polite"><strong>{filtered.length.toLocaleString('de-DE')} von {serviceGames.length.toLocaleString('de-DE')} {serviceGames.length===1?'Spiel':'Spielen'}</strong><span>{hasActiveFilters?'Filter aktiv · ':''}{filtered.length?`${(Math.min(page,pages)-1)*PAGE_SIZE+1}–${Math.min(Math.min(page,pages)*PAGE_SIZE,filtered.length)}`:'Keine Treffer'}</span></div>
     {visible.length ? <div className="catalog-grid">{visible.map(game=><CatalogCard key={game.id} game={game} service={service}/>)}</div> : <div className="catalog-empty"><h2>Keine passenden Einträge</h2><p>{status.complete?'Versuche andere Suchbegriffe oder Filter.':'Für diesen Katalogbereich liegt aktuell keine vollständig bestätigte Liste vor.'}</p>{hasActiveFilters ? <button className="catalog-reset catalog-empty-reset" type="button" onClick={resetFilters}>Alle Filter zurücksetzen</button> : <a href={snapshot.sourceUrl} target="_blank" rel="noreferrer">Offiziellen Spielefinder öffnen ↗</a>}</div>}
     {pages>1 ? <nav className="catalog-pagination" aria-label="Ergebnisseiten"><button disabled={page<=1} onClick={()=>goToPage(page-1)}>← Zurück</button><span>Seite {Math.min(page,pages)} von {pages}</span><button disabled={page>=pages} onClick={()=>goToPage(page+1)}>Weiter →</button></nav> : null}
     <footer className="catalog-footer">Private Spieleübersicht · Keine Kauf- oder Abo-Funktion · Verfügbarkeit und Berechtigung im offiziellen Store prüfen.{!hasPlatforms || !genres.length ? <><br/>Plattform- und Genrefilter erscheinen nur, wenn die offizielle Katalogquelle diese Angaben belastbar liefert.</> : null}</footer>
