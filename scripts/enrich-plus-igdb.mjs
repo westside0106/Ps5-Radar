@@ -76,7 +76,9 @@ async function search(name) {
 let enriched=0,unmatched=0,failures=0,alreadyComplete=0;
 const unresolved=[];
 for (const game of catalog.games) {
-  if (game.releaseDate && game.description && game.modes?.length && game.perspective) {alreadyComplete++;continue;}
+  // A previously verified IGDB identity must not be re-matched just because
+  // IGDB lacks a perspective or mode for that particular title.
+  if (game.metadataSource === 'IGDB' || (game.releaseDate && game.description && game.modes?.length && game.perspective)) {alreadyComplete++;continue;}
   const candidates=candidateNames(game.title);
   const isLegacyOnly=(game.services||[]).includes('premium') && !(game.services||[]).some(s=>s==='extra'||s==='essential');
   let match=null,ambiguous=false;
@@ -86,9 +88,16 @@ for (const game of catalog.games) {
       const supportedPlatforms=isLegacyOnly ? /^(PlayStation|PlayStation 2|PlayStation Portable|PlayStation 4|PlayStation 5)$/ : /^(PlayStation 4|PlayStation 5)$/;
       const exact=results.filter(item => equivalent(item.name,candidate)
         && (item.platforms||[]).some(p=>supportedPlatforms.test(p.name||'')));
+      // Prefer the original release when a Classic explicitly identifies its
+      // legacy platform. Otherwise multiple editions remain ambiguous.
+      const legacyHint=/PS1|PlayStation\\s*1|PS2|PlayStation\\s*2|PSP|Portable|Emulation/i.test(game.title);
+      const preferred=legacyHint && isLegacyOnly
+        ? exact.filter(item=>(item.platforms||[]).some(p=>/^(PlayStation|PlayStation 2|PlayStation Portable)$/.test(p.name||'')))
+        : exact;
+      const verified=preferred.length ? preferred : exact;
       // Multiple distinct IGDB entries (e.g. remasters/versions) are ambiguous.
-      if (exact.length===1) {match=exact[0];break;}
-      if (exact.length>1) ambiguous=true;
+      if (verified.length===1) {match=verified[0];break;}
+      if (verified.length>1) ambiguous=true;
       await wait(300);
     }
     if (!match) {unmatched++;unresolved.push({title:game.title,reason:ambiguous?'ambiguous':'not_found'});continue;}
