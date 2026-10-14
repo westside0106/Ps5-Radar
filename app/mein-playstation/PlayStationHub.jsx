@@ -1,5 +1,6 @@
 'use client';
 import {useMemo,useState,useEffect} from 'react';
+import {createPortal} from 'react-dom';
 function durationMinutes(v){if(v==null||v==='')return null;if(typeof v==='string'&&/^P(?:\d+D|T)/i.test(v)){const m=v.match(/^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?)?$/i);return m?Number(m[1]||0)*1440+Number(m[2]||0)*60+Number(m[3]||0)+Number(m[4]||0)/60:null}const n=Number(v);return Number.isFinite(n)&&n>=0?n:null}
 function duration(v){const n=durationMinutes(v);return n===null?'Spielzeit nicht verfügbar':n>=60?Math.round(n/60).toLocaleString('de-DE')+' Std.':Math.round(n)+' Min.'}
 function cover(g){return g.metadata?.coverUrl||g.imageUrl||g.trophyTitleIconUrl||g.image?.url||g.media?.coverUrl||g.images?.[0]?.url||null}
@@ -33,7 +34,7 @@ function GameTrophies({game}){
  return <article className="psn-hub-trophy-game">
   <button type="button" className="psn-hub-open" onClick={show} aria-haspopup="dialog"><span className="psn-hub-game-heading"><span className="psn-hub-trophy-cover-wrapper"><GameCover game={game} className="psn-hub-trophy-cover"/></span><span><strong>{displayGameName(game.trophyTitleName)}</strong><small>{game.progress||0}% · {game.earnedTrophies?.bronze||0} Bronze · {game.earnedTrophies?.silver||0} Silber · {game.earnedTrophies?.gold||0} Gold · {game.earnedTrophies?.platinum||0} Platin</small></span></span><span aria-hidden="true">↗</span></button>
   <div className="psn-progress"><i style={{width:Math.max(0,Math.min(100,Number(game.progress)||0))+'%'}}/></div>
-  {open?<div className="psn-trophy-overlay" role="presentation" onClick={()=>setOpen(false)}>
+  {open&&typeof document!=='undefined'?createPortal(<div className="psn-trophy-overlay" role="presentation" onClick={()=>setOpen(false)}>
    <section className="psn-trophy-sheet" role="dialog" aria-modal="true" aria-label={'Trophäen '+displayGameName(game.trophyTitleName)} onClick={e=>e.stopPropagation()}>
     <header className="psn-trophy-sheet-head"><button className="psn-trophy-back" type="button" onClick={()=>setOpen(false)} aria-label="Zurück zur Übersicht">←</button><span className="psn-eyebrow">TROPHÄEN-JAGD</span><button className="psn-trophy-back" type="button" onClick={()=>setOpen(false)} aria-label="Schließen">×</button></header>
     <div className="psn-trophy-hero"><span className="psn-hub-trophy-cover-wrapper"><GameCover game={game} className="psn-hub-trophy-cover"/></span><div><h3>{displayGameName(game.trophyTitleName)}</h3><span>{game.progress||0}% abgeschlossen</span></div></div>
@@ -48,7 +49,7 @@ function GameTrophies({game}){
       <label className="psn-trophy-reveal"><input type="checkbox" checked={reveal} onChange={e=>setReveal(e.target.checked)}/> Versteckte Trophäen anzeigen</label>
       <div className="psn-trophy-results">{filtered.length?filtered.map(t=>{const hidden=t.trophyHidden&&!t.earned&&!reveal;const rarity=trophyRarity(t);return <article className={'psn-trophy-result '+(t.earned?'is-earned':'is-locked')} key={t.trophyId}><div className="psn-trophy-art">{hidden?<span className="psn-trophy-hidden-icon" aria-label="Versteckt">?</span>:<TrophyArtwork trophy={t}/>}</div><div className="psn-trophy-result-body"><strong>{hidden?'Versteckte Trophäe':t.trophyName||'Unbenannte Trophäe'}</strong><p>{hidden?'Aktiviere „Versteckte Trophäen anzeigen“, um die Beschreibung einzublenden.':t.trophyDetail||'Keine Beschreibung verfügbar'}</p><div className="psn-trophy-result-meta"><TrophyIcon type={t.trophyType}/><span>{t.earned?'Erhalten'+(t.earnedDateTime?' · '+safeDate(t.earnedDateTime):''):'Noch offen'}</span>{rarity!==null?<span>{rarity.toLocaleString('de-DE',{maximumFractionDigits:1})}% Seltenheit</span>:null}</div></div></article>}):<p className="psn-trophy-message">Keine Trophäen für diese Filter gefunden.</p>}</div>
      </>:null}
-   </section></div>:null}
+   </section></div>,document.body):null}
  </article>
 }
 export default function PlayStationHub({titles=[],played=[]}){
