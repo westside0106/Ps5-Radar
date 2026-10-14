@@ -19,6 +19,7 @@ import './video-pass-2.css';
 import WatchlistDock from './WatchlistDock';
 import VideoReviewFixes from './VideoReviewFixes';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'PlayStation Radar',
@@ -33,5 +34,5 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="de"><body>{children}<WatchlistDock /><VideoReviewFixes /><Analytics /></body></html>;
+  return <html lang="de"><body>{children}<WatchlistDock /><VideoReviewFixes /><Analytics /><SpeedInsights /></body></html>;
 }
