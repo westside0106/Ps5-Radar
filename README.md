@@ -27,7 +27,7 @@
 | **PS Plus** | Katalog, Suche und Filter | Katalogdateien und Metadaten |
 | **Mein PlayStation** | Trophäenlevel, Bronze/Silber/Gold/Platin | Persönliche PSN-Abfragen |
 | **Trophäen-Zentrale** | Fortschrittsregler (0–100 %), Suche, Sortierung, Einzel-Trophäen auf Abruf | PSN Trophy API |
-| **Meine Spielwelt** | Zuletzt gespielte Titel, Spielzeit (wenn verfügbar), Cover (wenn geliefert) | PSN Game List |
+| **Meine Spielwelt** | Zuletzt gespielte Titel, Spielzeit, klickbare Karten mit Spielinfos und Cover-Fallbacks | PSN Game List + vorhandene PS-Plus-/IGDB-Metadaten; optional Live-IGDB |
 | **Private Anmeldung** | HTTP-only-Sitzungscookie | Next.js-Server |
 
 ## 🏆 PlayStation-Hub
@@ -48,9 +48,11 @@ Der geschützte Bereich **`/mein-playstation`** kombiniert zwei mobil optimierte
 
 ### Meine Spielwelt
 - Zuletzt gespielte Titel
-- Cover-Karten, soweit die API Bilddaten liefert
-- Spielzeit, sofern verfügbar
-- Suche und Sortierung
+- Cover aus PSN und dem bereits angereicherten Spielekatalog
+- Klickbare Spieldetails mit Genres, Beschreibung, Modi und Release, sofern bestätigt
+- Optionale IGDB-Screenshots und Kritikerwertung, wenn die Live-Anbindung konfiguriert ist
+- Spielzeit, sofern Sony sie liefert
+- Suche und nach echter Spielzeit sortieren
 - Responsive Grid für schmale Smartphone-Displays
 
 </td></tr>
@@ -58,6 +60,14 @@ Der geschützte Bereich **`/mein-playstation`** kombiniert zwei mobil optimierte
 
 > [!NOTE]
 > Die Spieleliste der PSN-Game-List ist **nicht automatisch eine vollständige Kaufbibliothek**. Sony-Endpunkte sind inoffiziell und können sich ändern. Einzel-Trophäen werden erst beim Öffnen einer Spielkarte abgerufen und serverseitig kurz zwischengespeichert.
+
+## 🎮 IGDB-Metadaten
+
+„Meine Spielwelt“ gleicht Spielnamen **serverseitig und konservativ** mit dem vorhandenen PS-Plus-Katalog ab. Bereits bestätigte IGDB-Daten stehen ohne zusätzliche Zugangsdaten zur Verfügung. Optional ergänzt die IGDB-API weitere exakte PlayStation-Treffer, Bilder, Genres, Beschreibungen und Screenshots.
+
+Für den optionalen Live-Abgleich müssen `IGDB_CLIENT_ID` und `IGDB_CLIENT_SECRET` als **Vercel-Umgebungsvariablen** eingerichtet sein; fehlen sie, funktioniert der katalogbasierte Fallback weiterhin. Persönliche PSN-IDs werden nicht an IGDB übertragen. Unklare Mehrfachtreffer werden nicht automatisch zugeordnet. Fehlende Metadaten oder Spielzeiten werden niemals erfunden.
+
+Fehlende Cover des PS-Plus-Katalogs ergänzt der bestehende nächtliche GitHub-Workflow nach Möglichkeit aus verifizierten IGDB-Cover-IDs. Bereits zugeordnete Bilder werden bei regulären Katalogupdates bewahrt.
 
 ## 🧱 Architektur
 
@@ -86,6 +96,7 @@ Konfiguriere die folgenden Variablen in Vercel unter **Environment Variables**:
 | `RADAR_PASSWORD` | Passwort für die private Anmeldung |
 | `RADAR_SESSION_SECRET` | Langer zufälliger Sitzungsschlüssel (mindestens 32 Zeichen) |
 | `PSN_NPSSO` | Optional: privater Sony-Session-Token für die PSN-Integration |
+| `IGDB_CLIENT_ID` / `IGDB_CLIENT_SECRET` | Optional: IGDB-Live-Metadaten für die persönliche Spielwelt |
 
 - **Niemals** Secrets in Dateien, Commits, Screenshots oder Issue-Logs veröffentlichen.
 - Der PSN-Token bleibt ausschließlich auf dem Server; Browseranfragen an Detailrouten erfordern die Radar-Sitzung.
@@ -136,6 +147,7 @@ Die Befehle sind im `package.json` definiert. Erfolgreiche Tests oder ein erfolg
 - [x] Interaktiver Fortschrittsfilter
 - [x] Trophäen-Zentrale mit bedarfsgeladenen Detaildaten
 - [x] Meine Spielwelt für zuletzt gespielte Titel
+- [x] IGDB-/PS-Plus-Katalog-Metadatenabgleich und detaillierte Spielkarten (Live-IGDB optional)
 - [ ] Vollständigen PSN-Kaufbibliotheksabruf und Lizenzstatus gesondert verifizieren
 - [ ] PS-Plus-Bibliotheksabgleich und persönliche Empfehlungen
 - [ ] Trophäen-Seltenheit, zusätzliche Filter und verbesserte Bilddaten
