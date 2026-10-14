@@ -132,16 +132,16 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-14T00:03:20.306Z",
+    "checkedAt": "2026-10-14T00:38:54.275Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-10-14T00:02:25.059Z",
+    "lastSuccessfulCheck": "2026-10-14T00:38:10.637Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-14T00:02:25.059Z",
+    "checkedAt": "2026-10-14T00:38:10.637Z",
     "errors": [],
     "sources": [
       {
@@ -352,7 +352,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-14T00:03:00.878Z",
+    "checkedAt": "2026-10-14T00:38:37.356Z",
     "titles": 15,
     "fetched": 8,
     "enriched": 12,
@@ -410,7 +410,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-14T00:02:42.085Z",
+    "checkedAt": "2026-10-14T00:38:21.049Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -424,7 +424,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-14T00:02:42.186Z",
+    "checkedAt": "2026-10-14T00:38:21.165Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -437,7 +437,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-14T00:03:19.679Z",
+    "checkedAt": "2026-10-14T00:38:53.834Z",
     "verified": 4,
     "missing": [],
     "warnings": [
@@ -446,7 +446,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-14T00:02:37.187Z",
+    "checkedAt": "2026-10-14T00:38:19.310Z",
     "date": "14.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -472,9 +472,9 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-13T15:06:51.540Z",
-    "berlinDate": "2026-10-13",
-    "newPostsToday": 2,
+    "checkedAt": "2026-10-14T00:03:20.466Z",
+    "berlinDate": "2026-10-14",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": []
   }
