@@ -3,6 +3,7 @@ import {redirect} from 'next/navigation';
 import Link from 'next/link';
 import {COOKIE_NAME,safeEqual,sessionToken} from '../auth';
 import {getPsnDashboard} from '../../lib/psn-server.mjs';
+import {enrichPsnLibrary} from '../../lib/psn-game-metadata.mjs';
 import './style.css';
 import PlayStationHub from './PlayStationHub';
 export const dynamic='force-dynamic';
@@ -12,8 +13,9 @@ export default async function MyPlayStation({searchParams}){
  const jar=await cookies(), expected=sessionToken();
  if(!expected||!safeEqual(jar.get(COOKIE_NAME)?.value,expected))redirect('/');
  let data;try{data=await getPsnDashboard();}catch(e){data={connected:false,configured:true,error:e.message};}
- const titles=data?.trophies?.trophyTitles||[];
- const played=data?.played?.titles||[];
+ const rawTitles=data?.trophies?.trophyTitles||[];
+ const rawPlayed=data?.played?.titles||[];
+ const {titles,played}=await enrichPsnLibrary(rawPlayed,rawTitles);
  const summary=data?.summary||{};
  const counts=summary.earnedTrophies||{};
  return <main className="psn-shell">
