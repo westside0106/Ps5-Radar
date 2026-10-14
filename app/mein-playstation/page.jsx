@@ -4,7 +4,7 @@ import Link from 'next/link';
 import {COOKIE_NAME,safeEqual,sessionToken} from '../auth';
 import {getPsnDashboard} from '../../lib/psn-server.mjs';
 import './style.css';
-import TrophyBrowser from './TrophyBrowser';
+import PlayStationHub from './PlayStationHub';
 export const dynamic='force-dynamic';
 export const metadata={title:'Mein PlayStation · PS5 Radar',robots:{index:false,follow:false}};
 function hours(value){const n=Number(value);return Number.isFinite(n)?Math.round(n/60)+' Std.':'—';}
@@ -29,8 +29,7 @@ export default async function MyPlayStation({searchParams}){
  <div><span>Bronze</span><strong>{counts.bronze??'—'}</strong></div>
  </section>
  {data.errors?.length?<p className="psn-warning">Einzelne Bereiche konnten nicht geladen werden: {data.errors.join(' · ')}</p>:null}
- <section className="psn-panel"><h2>Zuletzt gespielt</h2><div className="psn-games">{played.length?played.slice(0,36).map((game,i)=><article key={game.titleId||i}><strong>{game.name||game.titleName||'Unbekanntes Spiel'}</strong><span>{hours(game.playDuration)}{game.lastPlayedDateTime?' · Zuletzt '+new Date(game.lastPlayedDateTime).toLocaleDateString('de-DE'):''}</span></article>):<p>Keine Spielaktivität verfügbar oder durch Privatsphäre-Einstellungen eingeschränkt.</p>}</div></section>
- <TrophyBrowser titles={data?.trophies?.trophyTitles||[]}/>
+ <PlayStationHub titles={titles} played={played}/>
  <p className="psn-foot">Synchronisiert: {new Date(data.checkedAt).toLocaleString('de-DE')} · Nur lesender Zugriff · Inoffizielle PSN-Schnittstelle</p></>:null}
  </main>;
 }
