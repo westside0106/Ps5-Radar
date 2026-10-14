@@ -6,6 +6,8 @@ import {verifiedMetadataImage} from '../lib/ps-plus-catalog.mjs';
 test('PSN names ignore only explicit platform packaging',()=>{
   assert.equal(psnTitleKey('A Hat in Time PS5'),psnTitleKey('A Hat in Time'));
   assert.equal(psnTitleKey('A Hat in Time (PS4)'),psnTitleKey('A Hat in Time'));
+  assert.equal(psnTitleKey('Grand Theft Auto V (PlayStation®5)'),psnTitleKey('Grand Theft Auto V'));
+  assert.equal(psnTitleKey('Grand Theft Auto V (PlayStation™4)'),psnTitleKey('Grand Theft Auto V'));
   assert.notEqual(psnTitleKey('Assassin’s Creed Mirage Deluxe Edition'),psnTitleKey('Assassin’s Creed Mirage'));
   assert.notEqual(psnTitleKey('Final Fantasy VII Remake'),psnTitleKey('Final Fantasy VII Rebirth'));
 });
