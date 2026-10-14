@@ -130,3 +130,9 @@
 .catalog-change-list a small{color:#a9bfd6}
 .catalog-change-added{color:#a4f2c3;font-weight:800}
 .catalog-change-removed{color:#ffc3ac;font-weight:800}
+
+/* Avoid Safari's text-selection sheet when long-pressing an interactive game tile.
+   Detail modal text remains selectable. */
+.catalog-tile>.catalog-card,.catalog-tile>.catalog-card *{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.catalog-tile{touch-action:manipulation}
+.catalog-results-head strong{font-variant-numeric:tabular-nums}
