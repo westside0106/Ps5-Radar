@@ -132,7 +132,7 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-14T10:11:19.047Z",
+    "checkedAt": "2026-10-14T12:54:36.928Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -146,10 +146,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-14T10:11:19.047Z"
+    "lastSuccessfulCheck": "2026-10-14T12:54:36.928Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-14T10:11:19.047Z",
+    "checkedAt": "2026-10-14T12:54:36.928Z",
     "errors": [],
     "sources": [
       {
@@ -360,7 +360,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-14T10:10:54.970Z",
+    "checkedAt": "2026-10-14T12:54:21.387Z",
     "titles": 15,
     "fetched": 8,
     "enriched": 12,
@@ -418,7 +418,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-14T10:10:41.723Z",
+    "checkedAt": "2026-10-14T12:54:06.845Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -432,7 +432,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-14T10:10:41.831Z",
+    "checkedAt": "2026-10-14T12:54:06.935Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -445,7 +445,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-14T10:11:10.113Z",
+    "checkedAt": "2026-10-14T12:54:29.298Z",
     "verified": 4,
     "missing": [],
     "warnings": [
@@ -454,7 +454,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-14T10:10:40.058Z",
+    "checkedAt": "2026-10-14T12:54:04.720Z",
     "date": "14.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -480,7 +480,7 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-14T10:11:11.042Z",
+    "checkedAt": "2026-10-14T12:54:29.975Z",
     "berlinDate": "2026-10-14",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
