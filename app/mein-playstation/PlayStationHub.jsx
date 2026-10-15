@@ -1,6 +1,8 @@
 'use client';
 import {useMemo,useState,useEffect} from 'react';
 import {createPortal} from 'react-dom';
+import dynamic from 'next/dynamic';
+const TrophyModel=dynamic(()=>import('./TrophyModel'),{ssr:false,loading:()=> <span className="psn-trophy-model-loading">3D-Modell wird geladen …</span>});
 function durationMinutes(v){if(v==null||v==='')return null;if(typeof v==='string'&&/^P(?:\d+D|T)/i.test(v)){const m=v.match(/^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?)?$/i);return m?Number(m[1]||0)*1440+Number(m[2]||0)*60+Number(m[3]||0)+Number(m[4]||0)/60:null}const n=Number(v);return Number.isFinite(n)&&n>=0?n:null}
 function duration(v){const n=durationMinutes(v);return n===null?'Spielzeit nicht verfügbar':n>=60?Math.round(n/60).toLocaleString('de-DE')+' Std.':Math.round(n)+' Min.'}
 function cover(g){return g.metadata?.coverUrl||g.imageUrl||g.trophyTitleIconUrl||g.image?.url||g.media?.coverUrl||g.images?.[0]?.url||null}
@@ -18,7 +20,7 @@ function trophyRarity(t){const n=Number(t.trophyEarnedRate);return Number.isFini
 function TrophyArtwork({trophy}){const [failed,setFailed]=useState(false);useEffect(()=>setFailed(false),[trophy.trophyIconUrl]);return trophy.trophyIconUrl&&!failed?<img src={trophy.trophyIconUrl} alt="" loading="lazy" onError={()=>setFailed(true)}/>:<TrophyIcon type={trophy.trophyType}/>}
 function GameTrophies({game}){
  const [open,setOpen]=useState(false),[loading,setLoading]=useState(false),[list,setList]=useState(null),[error,setError]=useState('');
- const [status,setStatus]=useState('missing'),[sort,setSort]=useState('default'),[group,setGroup]=useState('all'),[rank,setRank]=useState('all'),[reveal,setReveal]=useState(false),[revealedIds,setRevealedIds]=useState([]),[query,setQuery]=useState(''),[targets,setTargets]=useState([]),[targetsOnly,setTargetsOnly]=useState(false);
+ const [status,setStatus]=useState('missing'),[sort,setSort]=useState('default'),[group,setGroup]=useState('all'),[rank,setRank]=useState('all'),[reveal,setReveal]=useState(false),[revealedIds,setRevealedIds]=useState([]),[query,setQuery]=useState(''),[targets,setTargets]=useState([]),[targetsOnly,setTargetsOnly]=useState(false),[modelRank,setModelRank]=useState(null);
  useEffect(()=>{try{const saved=JSON.parse(localStorage.getItem('psn-trophy-targets-v1')||'{}');setTargets(Array.isArray(saved[game.npCommunicationId])?saved[game.npCommunicationId]:[])}catch{}},[game.npCommunicationId]);
  function toggleTarget(id){const next=targets.includes(id)?targets.filter(v=>v!==id):[...targets,id];setTargets(next);try{const saved=JSON.parse(localStorage.getItem('psn-trophy-targets-v1')||'{}');saved[game.npCommunicationId]=next;localStorage.setItem('psn-trophy-targets-v1',JSON.stringify(saved))}catch{}}
  useEffect(()=>{if(!open)return;const old=document.body.style.overflow;document.body.style.overflow='hidden';const key=e=>{if(e.key==='Escape')setOpen(false)};window.addEventListener('keydown',key);return()=>{document.body.style.overflow=old;window.removeEventListener('keydown',key)}},[open]);
@@ -43,7 +45,7 @@ function GameTrophies({game}){
     <header className="psn-trophy-sheet-head"><button className="psn-trophy-back" type="button" onClick={()=>setOpen(false)} aria-label="Zurück zur Übersicht">←</button><span className="psn-eyebrow">TROPHÄEN-JAGD</span><button className="psn-trophy-back" type="button" onClick={()=>setOpen(false)} aria-label="Schließen">×</button></header>
     <div className="psn-trophy-hero"><span className="psn-hub-trophy-cover-wrapper"><GameCover game={game} className="psn-hub-trophy-cover"/></span><div><h3>{displayGameName(game.trophyTitleName)}</h3><span>{game.progress||0}% abgeschlossen</span></div></div>
     <div className="psn-progress"><i style={{width:Math.max(0,Math.min(100,Number(game.progress)||0))+'%'}}/></div>
-    <div className="psn-trophy-summary">{[['platinum','Platin'],['gold','Gold'],['silver','Silber'],['bronze','Bronze']].map(([type,label])=><div key={type}><TrophyIcon type={type}/><strong>{game.earnedTrophies?.[type]||0}</strong><small>{label}</small></div>)}</div>
+    <div className="psn-trophy-summary">{[['platinum','Platin'],['gold','Gold'],['silver','Silber'],['bronze','Bronze']].map(([type,label])=><button type="button" key={type} className={modelRank===type?'is-active':''} aria-pressed={modelRank===type} onClick={()=>setModelRank(v=>v===type?null:type)} title={label+' als 3D-Modell ansehen'}><TrophyIcon type={type}/><strong>{game.earnedTrophies?.[type]||0}</strong><small>{label} · 3D</small></button>)}</div>{modelRank?<div className="psn-trophy-model-panel"><div><strong>{({platinum:'Platin',gold:'Gold',silver:'Silber',bronze:'Bronze'})[modelRank]}-Trophäe</strong><small>Mit dem Finger drehen · zum Schließen erneut auf den Rang tippen</small></div><TrophyModel rank={modelRank}/></div>:null}
     {loading?<p className="psn-trophy-message">Trophäen werden geladen …</p>:null}
     {error?<div className="psn-trophy-message" role="alert">{error}<button type="button" onClick={()=>{setList(null);setOpen(false)}}>Schließen und erneut öffnen</button></div>:null}
     {list?<><div className="psn-trophy-filter-head"><strong>{missing} noch offen · {earned} erhalten</strong><small>{filtered.length} Treffer</small></div>
