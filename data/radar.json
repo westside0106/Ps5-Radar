@@ -1,50 +1,50 @@
 {
-  "date": "14.10.2026",
-  "edition": "AUSGABE #040",
+  "date": "16.10.2026",
+  "edition": "AUSGABE #041",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "14.10 · LIVE",
-  "leadTitle": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
-  "leadDate": "13.10.2026",
-  "leadMeta": "Stellt euch Folgendes vor: Eine kühle Herbstbrise weht durch den Wald, während ein Bataillon Roboter auf einen Außenposten zuläuft.",
+  "newCount": "16.10 · LIVE",
+  "leadTitle": "Peak erklimmt PS5: Release am 22. Oktober",
+  "leadDate": "15.10.2026",
+  "leadMeta": "Kletterspiel „Peak“ erscheint am 22. Oktober für PS5: Erfahrt, wie Team Peak Freundschaft und Koop-Chaos auf den Berg bringt.",
   "leadPrice": null,
-  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/789f7d3c0087d25bc443ff5900d178ec2c36449b.jpg",
-  "secondary1Title": "Escape Academy 2: Back 2 School erscheint am 5. November",
-  "secondary1Date": "13.10.2026",
-  "secondary1Meta": "Erfahrt, was euch im Open-World-Campus von Escape Academy 2: Back 2 School erwartet, ab 5. November auf PS5.",
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/f1466e01a66f4cc1fc90e226b8b4f2bf3974e497.jpg",
+  "secondary1Title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
+  "secondary1Date": "14.10.2026",
+  "secondary1Meta": "Hallo zusammen! Wir freuen uns, heute Neuigkeiten zu Gran Turismo mit euch teilen zu können.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/fc6949ebe748b4e02d0027027fe11e6ff513c48f.jpg",
-  "secondary2Title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
-  "secondary2Date": "06.10.2026",
-  "secondary2Meta": "PS5-Spiele Oktober 2026: Ghost of Yōtei, Dragon's Dogma 2: Dark Arisen, Star Wars: Galactic Racer und Call of Duty: Modern Warfare 4 erscheinen…",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6d9f5f5f5b1b464c1319876195c43235bf3000e5-scaled.jpg",
+  "secondary2Title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
+  "secondary2Date": "13.10.2026",
+  "secondary2Meta": "Stellt euch Folgendes vor: Eine kühle Herbstbrise weht durch den Wald, während ein Bataillon Roboter auf einen Außenposten zuläuft.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8a186228a34c91ac18bc1e25ea585f6ad67d52f8.png",
-  "psplusLabel": "SEPTEMBER 2026",
-  "psplusTitle": "September-Spiele sind live",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/789f7d3c0087d25bc443ff5900d178ec2c36449b.jpg",
+  "psplusLabel": "OKTOBER 2026",
+  "psplusTitle": "Oktober-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
   "plusGames": [
     {
-      "title": "Sniper Elite: Resistance",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
-      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
-      "imageSource": "official-product"
+      "title": "Mafia: The Old Country",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/product/EP1001-PPSA14299_00-00000NEROPS5SIEE",
+      "imageSource": "unverified"
     },
     {
-      "title": "MLB The Show 26",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
-      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
-      "imageSource": "official-product"
+      "title": "Horizon Forbidden West",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/product/EP9000-PPSA01521_00-FORBIDDENWESTPS5",
+      "imageSource": "unverified"
     },
     {
-      "title": "Wobbly Life",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
-      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
-      "imageSource": "official-product"
+      "title": "Mycopunk",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/concept/10018765",
+      "imageSource": "unverified"
     },
     {
-      "title": "Chained Echoes",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
-      "storeUrl": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748",
-      "imageSource": "official-product"
+      "title": "Poppy Playtime: Kapitel 2",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/product/UP8103-PPSA21631_00-0349038686339467",
+      "imageSource": "unverified"
     }
   ],
   "storeTitle": "Aktuelle Store-Top-Deals",
@@ -76,25 +76,10 @@
       "image": null
     }
   ],
-  "releases": [
-    {
-      "date": "14.10.",
-      "title": "Castlevania: Belmont’s Curse"
-    },
-    {
-      "date": "22.10.",
-      "title": "Final Fantasy Resonance"
-    },
-    {
-      "date": "23.10.",
-      "title": "Call of Duty: Modern Warfare 4"
-    },
-    {
-      "date": "29.10.",
-      "title": "Phantom Blade Zero"
-    }
+  "releases": [],
+  "quickItems": [
+    "September-Spiele sind live"
   ],
-  "quickItems": [],
   "leavingTitle": "Aktuelle Store-Aktion endet bald",
   "leavingText": "Aktuelle Store-Aktion endet am 22.10., 00:59 Uhr.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
@@ -111,46 +96,60 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 14.10.2026 · 9/9 Quellen · Store 8 geprüft · 12/15 Details",
+  "radarCheck": "Stand 16.10.2026 · 9/9 Quellen · 1 Warnung(en)",
   "sourceAlerts": [
+    {
+      "title": "PlayStation Plus-Spielekatalog für Oktober 2026",
+      "url": "https://blog.de.playstation.com/2026/10/14/playstation-plus-spielekatalog-fuer-oktober-2026/",
+      "source": "PlayStation Blog DE",
+      "category": "psplus"
+    },
+    {
+      "title": "Players’ Choice: Control Resonant wurde zum besten neuen Spiel im September 2026 gewählt",
+      "url": "https://blog.de.playstation.com/2026/10/14/players-choice-bestes-neues-spiel-im-september-2026/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Peak erklimmt PS5: Release am 22. Oktober",
+      "url": "https://blog.de.playstation.com/2026/10/15/peak-erklimmt-ps5-release-am-22-oktober/",
+      "type": "editorial"
+    },
+    {
+      "title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
+      "url": "https://blog.de.playstation.com/2026/10/14/spec-iv-teil-1-von-gran-turismo-7-erscheint-morgen-erster-blick-auf-den-dualsense-wireless-controller-gran-turismo-limited-edition/",
+      "type": "editorial"
+    },
     {
       "title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
       "url": "https://blog.de.playstation.com/2026/10/13/helldivers-2-visier-der-autoritaet-premium-kriegsanleihe-erscheint-am-20-oktober/",
-      "type": "editorial"
-    },
-    {
-      "title": "Escape Academy 2: Back 2 School erscheint am 5. November",
-      "url": "https://blog.de.playstation.com/2026/10/13/escape-academy-2-back-2-school-erscheint-am-5-november/",
-      "type": "editorial"
-    },
-    {
-      "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
-      "url": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
       "type": "editorial"
     }
   ],
   "editorial": [],
   "health": {
-    "status": "ok",
-    "checkedAt": "2026-10-14T12:54:36.928Z",
+    "status": "warning",
+    "checkedAt": "2026-10-16T13:28:01.807Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
-    "warnings": 0,
+    "warnings": 1,
     "storeDiscoveryMode": "dynamic-browser",
     "storeProductsVerified": 8,
     "storeDealsSelected": 3,
-    "enrichedTitles": 12,
-    "detailTitles": 15,
+    "enrichedTitles": 8,
+    "detailTitles": 11,
     "automationNotes": 0,
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
-    "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-14T12:54:36.928Z"
+    "catalogFreshness": "stale",
+    "lastSuccessfulCheck": "2026-10-16T13:27:24.742Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-14T12:54:36.928Z",
-    "errors": [],
+    "checkedAt": "2026-10-16T13:28:01.807Z",
+    "errors": [
+      "PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden"
+    ],
     "sources": [
       {
         "name": "PlayStation Blog",
@@ -191,93 +190,20 @@
     ]
   },
   "gameDetails": {
+    "Peak erklimmt PS5: Release am 22. Oktober": {},
+    "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition": {},
     "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober": {},
-    "Escape Academy 2: Back 2 School erscheint am 5. November": {},
-    "PS5-Spiele Oktober 2026: Diese Releases erwarten euch": {},
-    "Sniper Elite: Resistance": {
-      "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
-      "developer": "Rebellion",
-      "genre": "Taktik-Shooter · Stealth · Action",
-      "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
-      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
-      "publisher": "REBELLION INTERACTIVE",
-      "release": "30.1.2025",
-      "platform": "PS4 · PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/b026676dfa9d7639fef041a9f0ed4c6d076e2ad3647eae1c.png",
-        "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202411/1909/8aafcc75d67ed0a3c4bb8410cd57ff437ae3a726da42177f.png"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=wPH9TFf6yfE",
-      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
-      "title": "Sniper Elite: Resistance"
+    "Mafia: The Old Country": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 05.10."
     },
-    "MLB The Show 26": {
-      "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
-      "developer": "San Diego Studio",
-      "genre": "Sport · Baseball",
-      "description": "Baseball-Simulation von San Diego Studio mit Road to the Show, Diamond Dynasty und weiteren Einzelspieler- und Online-Modi.",
-      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
-      "publisher": "Sony Interactive Entertainment",
-      "release": "17.3.2026",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
-        "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
-      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
-      "title": "MLB The Show 26"
+    "Horizon Forbidden West": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 05.10."
     },
-    "Wobbly Life": {
-      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
-      "developer": "RubberBandGames",
-      "genre": "Sandbox · Adventure · Familie",
-      "description": "Offene Physik-Sandbox mit Jobs, Missionen, Fahrzeugen, Häusern und Koop für bis zu vier Spieler.",
-      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
-      "publisher": "RUBBERBANDGAMES LTD",
-      "release": "18.9.2025",
-      "platform": "PS4 · PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/l2VMZjLR9en9orx3nHGCaj8U.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/3650ac7e207de17c9aa1e057339b9e5b405c97a427af26de.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/b44f53cd0e854a7e1663d3ea5908708161c3a8972d1c95c5.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/6d5fc87bf96131851634a38b4e50c1d18b1697b9f5054891.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/4a6dcb161d41908a172df2bc0b2e435d79c454198de1c08f.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/9a3b72705f0abf31b9997bddf3e54b88883dfefcee8af8a5.jpg"
-      ],
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
-      "title": "Wobbly Life"
+    "Mycopunk": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 05.10."
     },
-    "Chained Echoes": {
-      "pageUrl": "https://www.playstation.com/de-de/games/chained-echoes/",
-      "developer": "Matthias Linda",
-      "genre": "Rollenspiel · JRPG-inspiriert",
-      "description": "Storyfokussiertes 16-Bit-Rollenspiel mit rundenbasierten Kämpfen, Fantasywelt, Mechs und einer Reise durch den Kontinent Valandis.",
-      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
-      "publisher": "DECK13 INTERACTIVE",
-      "release": "7.12.2022",
-      "platform": "PS4",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/2dmcrpRqwwcV89IGO9TqQsNd.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202507/0913/3bfc69e8efb69db85ffef2b61280c9a9df6491d6af7b947e.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/this-month-on-playstation-cross-sell-background-block-desktop-01-en-04oct22",
-        "https://gmedia.playstation.com/is/image/SIEPDC/best-jrpgs-keyart-02-en-30aug22",
-        "https://gmedia.playstation.com/is/image/SIEPDC/loader-spinner-dark"
-      ],
-      "storeUrl": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748",
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
-      "title": "Chained Echoes"
+    "Poppy Playtime: Kapitel 2": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 05.10."
     },
     "Forza Horizon 5 Standard Edition": {
       "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
@@ -328,18 +254,6 @@
       ],
       "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
     },
-    "Castlevania: Belmont’s Curse": {
-      "release": "14.10.2026"
-    },
-    "Final Fantasy Resonance": {
-      "release": "22.10.2026"
-    },
-    "Call of Duty: Modern Warfare 4": {
-      "release": "23.10.2026"
-    },
-    "Phantom Blade Zero": {
-      "release": "29.10.2026"
-    },
     "EA SPORTS FC 27": {
       "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
       "developer": "EA SPORTS",
@@ -360,31 +274,33 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-14T12:54:21.387Z",
-    "titles": 15,
-    "fetched": 8,
-    "enriched": 12,
+    "checkedAt": "2026-10-16T13:27:48.503Z",
+    "titles": 11,
+    "fetched": 4,
+    "enriched": 8,
     "warnings": []
   },
   "resolvedSources": {
-    "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
+    "psPlusMonthly": "https://blog.de.playstation.com/2026/10/14/playstation-plus-spielekatalog-fuer-oktober-2026/",
     "psPlusStoreUrls": {
-      "Sniper Elite: Resistance": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
-      "MLB The Show 26": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
-      "Wobbly Life": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
-      "Chained Echoes": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748"
+      "Mafia: The Old Country": "https://store.playstation.com/product/EP1001-PPSA14299_00-00000NEROPS5SIEE",
+      "Horizon Forbidden West": "https://store.playstation.com/product/EP9000-PPSA01521_00-FORBIDDENWESTPS5",
+      "Mycopunk": "https://store.playstation.com/concept/10018765",
+      "Poppy Playtime: Kapitel 2": "https://store.playstation.com/product/UP8103-PPSA21631_00-0349038686339467",
+      "The Midnight Walk": "https://store.playstation.com/product/EP2907-PPSA24864_00-0657719756865376",
+      "Tales of Arise – Beyond the Dawn Edition": "https://store.playstation.com/product/EP0700-PPSA02745_00-BTDPRMEDITION000"
     },
-    "monthlyReleases": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
+    "monthlyReleases": "https://blog.de.playstation.com/?p=204875",
     "releaseStoreUrls": {
-      "Ghost of Yōtei: Complete Edition": "https://store.playstation.com/product/UP9000-PPSA26344_00-GHOST2CE00000000",
-      "Ace Combat 8: Wings of Theve": "https://store.playstation.com/product/JP0700-PPSA24913_00-MAINGAME00000000",
-      "Star Wars: Galactic Racer": "https://store.playstation.com/product/UP8737-PPSA28416_00-SWGALACTICRACER1",
-      "Clive Barker’s Hellraiser: Revival": "https://store.playstation.com/product/EP6853-PPSA25642_00-0082868685413873",
-      "Dragon’s Dogma 2: Dark Arisen": "https://store.playstation.com/product/EP0102-PPSA09664_00-DD2DA00000000000",
-      "Castlevania: Belmont’s Curse": "https://store.playstation.com/product/JP0101-PPSA35399_00-CVBCAPP000000000",
-      "Final Fantasy Resonance": "https://store.playstation.com/product/JP0082-PPSA31544_00-FFRSSTDWW0000000",
-      "Call of Duty: Modern Warfare 4": "https://store.playstation.com/product/EP0002-PPSA07950_00-CODMW4STANDARD01",
-      "Phantom Blade Zero": "https://store.playstation.com/product/UB2134-PPSA34579_00-0622032276386943"
+      "The Blood of Dawnwalker": "https://store.playstation.com/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
+      "Onimusha: Way of the Sword": "https://store.playstation.com/product/UP0102-PPSA27836_00-0000000000000001",
+      "NBA 2K27": "https://store.playstation.com/product/UP1001-PPSA35889_00-NBA2K27000000000",
+      "Mewgenics": "https://store.playstation.com/concept/10019219",
+      "Marvel’s Wolverine": "https://store.playstation.com/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+      "Aniimo": "https://store.playstation.com/product/JB2238-PPSA35870_00-0588301512156043",
+      "Control Resonant": "https://store.playstation.com/product/EP5291-PPSA34547_00-0210080241603648",
+      "Silent Hill: Townfall": "https://store.playstation.com/product/JP0101-PPSA33286_00-TOWNFALLSIEJ0000",
+      "EA Sports FC 27": "https://store.playstation.com/product/UP0006-PPSA34015_00-27STANDARDBUNDLE"
     },
     "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
     "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
@@ -418,7 +334,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-14T12:54:06.845Z",
+    "checkedAt": "2026-10-16T13:27:33.985Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -432,7 +348,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-14T12:54:06.935Z",
+    "checkedAt": "2026-10-16T13:27:34.071Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -445,45 +361,59 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-14T12:54:29.298Z",
-    "verified": 4,
-    "missing": [],
+    "checkedAt": "2026-10-16T13:27:53.822Z",
+    "verified": 0,
+    "missing": [
+      "Mafia: The Old Country",
+      "Horizon Forbidden West",
+      "Mycopunk",
+      "Poppy Playtime: Kapitel 2"
+    ],
     "warnings": [
-      "Chained Echoes: Produktidentitaet oder Cover nicht bestaetigt"
+      "Mafia: The Old Country: Produktidentitaet oder Cover nicht bestaetigt",
+      "Horizon Forbidden West: Produktidentitaet oder Cover nicht bestaetigt",
+      "Mycopunk: Produktidentitaet oder Cover nicht bestaetigt",
+      "Poppy Playtime: Kapitel 2: Produktidentitaet oder Cover nicht bestaetigt"
     ]
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-14T12:54:04.720Z",
-    "date": "14.10.2026",
+    "checkedAt": "2026-10-16T13:27:31.030Z",
+    "date": "16.10.2026",
     "maxAgeDays": 21,
     "selected": [
+      {
+        "title": "Peak erklimmt PS5: Release am 22. Oktober",
+        "date": "15.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/15/peak-erklimmt-ps5-release-am-22-oktober/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/f1466e01a66f4cc1fc90e226b8b4f2bf3974e497.jpg"
+      },
+      {
+        "title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
+        "date": "14.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/14/spec-iv-teil-1-von-gran-turismo-7-erscheint-morgen-erster-blick-auf-den-dualsense-wireless-controller-gran-turismo-limited-edition/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6d9f5f5f5b1b464c1319876195c43235bf3000e5-scaled.jpg"
+      },
       {
         "title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
         "date": "13.10.2026",
         "url": "https://blog.de.playstation.com/2026/10/13/helldivers-2-visier-der-autoritaet-premium-kriegsanleihe-erscheint-am-20-oktober/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/789f7d3c0087d25bc443ff5900d178ec2c36449b.jpg"
-      },
-      {
-        "title": "Escape Academy 2: Back 2 School erscheint am 5. November",
-        "date": "13.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/13/escape-academy-2-back-2-school-erscheint-am-5-november/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/fc6949ebe748b4e02d0027027fe11e6ff513c48f.jpg"
-      },
-      {
-        "title": "PS5-Spiele Oktober 2026: Diese Releases erwarten euch",
-        "date": "06.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/06/ps5-spiele-oktober-2026-ghost-of-yotei-complete-edition-call-of-duty-modern-warfare-4-und-mehr-erwarten-euch/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8a186228a34c91ac18bc1e25ea585f6ad67d52f8.png"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-14T12:54:29.975Z",
-    "berlinDate": "2026-10-14",
+    "checkedAt": "2026-10-16T13:27:54.435Z",
+    "berlinDate": "2026-10-16",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
-    "errors": []
+    "errors": [],
+    "warnings": [
+      "PS Plus: kein verifiziertes Produktcover für Mafia: The Old Country",
+      "PS Plus: kein verifiziertes Produktcover für Horizon Forbidden West",
+      "PS Plus: kein verifiziertes Produktcover für Mycopunk",
+      "PS Plus: kein verifiziertes Produktcover für Poppy Playtime: Kapitel 2"
+    ]
   }
 }
