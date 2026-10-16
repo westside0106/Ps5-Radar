@@ -24,12 +24,12 @@ export default function TrophyModel({rank='platinum'}){
     const camera=new PerspectiveCamera(35,1,.01,1000);camera.position.set(0,0,5);
     renderer=new WebGLRenderer({antialias:true,alpha:true,powerPreference:'low-power'});
     renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.5));
-    renderer.outputColorSpace=SRGBColorSpace;renderer.toneMapping=ACESFilmicToneMapping;
+    renderer.outputColorSpace=SRGBColorSpace;renderer.toneMapping=ACESFilmicToneMapping;renderer.toneMappingExposure=rank==='platinum'?.83:1.18;
     renderer.setClearColor(new Color(0x000000),0);
     canvas=renderer.domElement;el.appendChild(canvas);
-    scene.add(new AmbientLight(0xffffff,3.2));
-    const key=new DirectionalLight(0xffffff,5.5);key.position.set(3,5,7);scene.add(key);
-    const rim=new DirectionalLight(0xb8dfff,3.5);rim.position.set(-5,2,-4);scene.add(rim);const fill=new DirectionalLight(0xffffff,3.5);fill.position.set(-4,-2,6);scene.add(fill);
+    scene.add(new AmbientLight(0xffffff,rank==='platinum'?2.5:4.2));
+    const key=new DirectionalLight(0xffffff,rank==='platinum'?4.2:7.2);key.position.set(3,5,7);scene.add(key);
+    const rim=new DirectionalLight(0xb8dfff,rank==='platinum'?2.7:4.6);rim.position.set(-5,2,-4);scene.add(rim);const fill=new DirectionalLight(0xffffff,rank==='platinum'?3:5.4);fill.position.set(-4,-2,6);scene.add(fill);
     if(hasOriginal){try{const gltf=await new GLTFLoader().loadAsync(MODEL_PATHS[rank]);if(disposed)return;model=gltf.scene}catch{}}
     if(!model){
       const shades={platinum:0xb9dfff,gold:0xf5b83f,silver:0xc7d0df,bronze:0xb96b52};
@@ -45,6 +45,16 @@ export default function TrophyModel({rank='platinum'}){
       const ring=new Mesh(new TorusGeometry(.59,.035,10,64),accent);ring.rotation.x=Math.PI/2;ring.position.y=.86;trophy.add(ring);
       if(rank==='platinum'){const orb=new Mesh(new SphereGeometry(.35,32,20),new MeshStandardMaterial({color:0x5aaeff,metalness:.25,roughness:.1,transparent:true,opacity:.78}));orb.position.y=.5;trophy.add(orb)}
       model=trophy;
+    }
+    if(rank==='platinum'){
+      model.traverse(node=>{
+        if(!node.isMesh||!node.material)return;
+        for(const mat of (Array.isArray(node.material)?node.material:[node.material])){
+          if(!mat.color)continue;
+          const {r,g,b}=mat.color;
+          if(b>r*1.15&&b>g*1.04)mat.color.setRGB(Math.min(.27,r*.75),Math.min(.36,g*.8),Math.min(.82,b*.92));
+        }
+      });
     }
     scene.add(model);
     const box=new Box3().setFromObject(model),size=box.getSize(new Vector3()),center=box.getCenter(new Vector3());
