@@ -155,3 +155,17 @@
  .catalog-filter-head>.catalog-reset,.catalog-filter-head>.catalog-filter-toggle{font-size:13px;padding-inline:10px}
  .catalog-filter-head>.catalog-filter-toggle{min-width:95px}
 }
+
+/* P3 mobile density pass: only primary navigation remains sticky.
+   Prevent stacked navigation, filters and result headers obscuring game cards. */
+@media(max-width:650px){
+ .catalog-back{position:relative;top:auto;z-index:1;padding-top:8px;padding-bottom:8px}
+ .catalog-tabs{position:sticky;top:0;z-index:24;margin-inline:-12px;padding:8px 12px;background:rgba(5,11,24,.97)}
+ .catalog-filter-head{position:relative;top:auto;z-index:1;margin:12px 0 8px;padding:0;background:none;backdrop-filter:none;border-bottom:0}
+ .catalog-results-head{position:relative;top:auto;z-index:1;margin:14px 0 10px;padding:0;background:none;backdrop-filter:none}
+ .catalog-discovery{padding:12px;gap:9px}
+ .catalog-discovery-actions{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+ .catalog-discovery-actions::-webkit-scrollbar{display:none}
+ .catalog-discovery-actions button{flex:0 0 auto}
+ .catalog-date-notice{font-size:12px;line-height:1.45}
+}
