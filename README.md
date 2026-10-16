@@ -161,8 +161,8 @@ public/
     └── README.md
 ```
 
-> [!WARNING]
-> **Originalmodelle noch nicht veröffentlicht.** Die vier vom Nutzer bereitgestellten GLB-Assets sind derzeit **nicht im Repository**. Der Viewer verwendet solange eine **vereinfachte, prozedural erzeugte Three.js-Trophäe**. Diese Vorschau ist nicht mit den Originalmodellen identisch. Erst nach dem Upload unter den genannten Dateinamen erscheinen die echten Modelle.
+> [!NOTE]
+> **Alle vier Original-GLBs sind jetzt im Repository vorhanden.** Der Viewer verwendet die Modelle unter `public/trophies/` und greift nur dann auf eine vereinfachte, prozedurale Three.js-Trophäe zurück, wenn ein Modell nicht erreichbar oder nicht ladbar ist. Die Darstellung auf einem echten iPhone muss noch im Praxistest geprüft werden.
 
 **Rendering-Konzept**
 
@@ -239,7 +239,7 @@ flowchart TB
     M --> C["Lokaler PS-Plus-Katalog"]
     M --> I["IGDB API · optional"]
     T --> V["Three.js Trophy Viewer"]
-    V --> G["Original GLBs · nach Upload"]
+    V --> G["Original GLBs · im Repository"]
     V --> F["Prozedurale 3D-Vorschau"]
     R --> SNAP["Snapshots / GitHub Actions"]
     classDef primary fill:#173f75,color:#fff,stroke:#6cb8ff
@@ -247,7 +247,7 @@ flowchart TB
     classDef pending fill:#4c371e,color:#fff,stroke:#e8b35b
     class N,P,T,W primary
     class A,S,API secure
-    class G pending
+    class G secure
 ```
 
 **Technology stack**
