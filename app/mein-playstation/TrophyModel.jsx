@@ -21,15 +21,15 @@ export default function TrophyModel({rank='platinum'}){
     const response=await fetch(MODEL_PATHS[rank],{method:'HEAD'}).catch(()=>null);
     const hasOriginal=Boolean(response?.ok);
     scene=new Scene();scene.background=null;
-    const camera=new PerspectiveCamera(35,1,.01,1000);camera.position.set(0,0,4.8);
+    const camera=new PerspectiveCamera(35,1,.01,1000);camera.position.set(0,0,5);
     renderer=new WebGLRenderer({antialias:true,alpha:true,powerPreference:'low-power'});
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.75));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.5));
     renderer.outputColorSpace=SRGBColorSpace;renderer.toneMapping=ACESFilmicToneMapping;
     renderer.setClearColor(new Color(0x000000),0);
     canvas=renderer.domElement;el.appendChild(canvas);
-    scene.add(new AmbientLight(0xffffff,2.1));
-    const key=new DirectionalLight(0xffffff,3);key.position.set(3,5,7);scene.add(key);
-    const rim=new DirectionalLight(0x80b8ff,1.8);rim.position.set(-5,2,-4);scene.add(rim);
+    scene.add(new AmbientLight(0xffffff,3.2));
+    const key=new DirectionalLight(0xffffff,5.5);key.position.set(3,5,7);scene.add(key);
+    const rim=new DirectionalLight(0xb8dfff,3.5);rim.position.set(-5,2,-4);scene.add(rim);const fill=new DirectionalLight(0xffffff,3.5);fill.position.set(-4,-2,6);scene.add(fill);
     if(hasOriginal){try{const gltf=await new GLTFLoader().loadAsync(MODEL_PATHS[rank]);if(disposed)return;model=gltf.scene}catch{}}
     if(!model){
       const shades={platinum:0xb9dfff,gold:0xf5b83f,silver:0xc7d0df,bronze:0xb96b52};
@@ -49,8 +49,10 @@ export default function TrophyModel({rank='platinum'}){
     scene.add(model);
     const box=new Box3().setFromObject(model),size=box.getSize(new Vector3()),center=box.getCenter(new Vector3());
     model.position.sub(center);
-    const extent=Math.max(size.x,size.y,size.z)||1;model.scale.setScalar(2.6/extent);
-    const onResize=()=>{if(!renderer)return;const w=Math.max(1,el.clientWidth),h=Math.max(1,el.clientHeight);renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()};
+    const extent=Math.max(size.x,size.y,size.z)||1;model.scale.setScalar(1/extent);
+    const scaled=extent>0?size.clone().multiplyScalar(1/extent):new Vector3(1,1,1);
+    const fitCamera=()=>{const aspect=Math.max(.5,el.clientWidth/Math.max(1,el.clientHeight));const fov=camera.fov*Math.PI/180;const required=Math.max(scaled.y/(2*Math.tan(fov/2)),scaled.x/(2*Math.tan(fov/2)*aspect));camera.position.set(0,0,Math.max(1.4,required*1.55));camera.lookAt(0,0,0)};fitCamera();
+    const onResize=()=>{if(!renderer)return;const w=Math.max(1,el.clientWidth),h=Math.max(1,el.clientHeight);renderer.setSize(w,h,false);camera.aspect=w/h;fitCamera();camera.updateProjectionMatrix()};
     resize=new ResizeObserver(onResize);resize.observe(el);onResize();
     observer=new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting??true});observer.observe(el);
     let last=0;const animate=(time)=>{if(disposed)return;frame=requestAnimationFrame(animate);if(!visible)return;if(model&&!dragging&&time-last>16){model.rotation.y+=.0035;last=time}renderer.render(scene,camera)};frame=requestAnimationFrame(animate);
