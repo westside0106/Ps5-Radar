@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-16T13:27:24.742Z",
+  "checkedAt": "2026-10-16T13:38:50.155Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,32 +54,7 @@
         "pubDate": "Wed, 07 Oct 2026 17:00:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Peak erklimmt PS5: Release am 22. Oktober",
-        "link": "https://blog.de.playstation.com/2026/10/15/peak-erklimmt-ps5-release-am-22-oktober/",
-        "pubDate": "Thu, 15 Oct 2026 17:00:00 +0000",
-        "category": "release"
-      },
-      {
-        "title": "PlayStation Plus-Spielekatalog für Oktober 2026",
-        "link": "https://blog.de.playstation.com/2026/10/14/playstation-plus-spielekatalog-fuer-oktober-2026/",
-        "pubDate": "Wed, 14 Oct 2026 15:30:00 +0000",
-        "category": "psplus"
-      },
-      {
-        "title": "Players&#8216; Choice: Control Resonant wurde zum besten neuen Spiel im September 2026 gewählt",
-        "link": "https://blog.de.playstation.com/2026/10/14/players-choice-bestes-neues-spiel-im-september-2026/",
-        "pubDate": "Wed, 14 Oct 2026 14:00:00 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
-        "link": "https://blog.de.playstation.com/2026/10/14/spec-iv-teil-1-von-gran-turismo-7-erscheint-morgen-erster-blick-auf-den-dualsense-wireless-controller-gran-turismo-limited-edition/",
-        "pubDate": "Wed, 14 Oct 2026 13:00:00 +0000",
-        "category": "release"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
@@ -163,7 +138,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-16T13:27:54.435Z",
+      "checkedAt": "2026-10-16T13:39:20.565Z",
       "parsed": 5,
       "accepted": [],
       "rejected": [
@@ -182,7 +157,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241407,
+    "bytes": 241530,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -195,7 +170,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163831,
+    "bytes": 163843,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

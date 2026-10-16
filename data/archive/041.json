@@ -99,18 +99,6 @@
   "radarCheck": "Stand 16.10.2026 · 9/9 Quellen erfolgreich geprüft",
   "sourceAlerts": [
     {
-      "title": "PlayStation Plus-Spielekatalog für Oktober 2026",
-      "url": "https://blog.de.playstation.com/2026/10/14/playstation-plus-spielekatalog-fuer-oktober-2026/",
-      "source": "PlayStation Blog DE",
-      "category": "psplus"
-    },
-    {
-      "title": "Players’ Choice: Control Resonant wurde zum besten neuen Spiel im September 2026 gewählt",
-      "url": "https://blog.de.playstation.com/2026/10/14/players-choice-bestes-neues-spiel-im-september-2026/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
-    {
       "title": "Peak erklimmt PS5: Release am 22. Oktober",
       "url": "https://blog.de.playstation.com/2026/10/15/peak-erklimmt-ps5-release-am-22-oktober/",
       "type": "editorial"
@@ -129,16 +117,16 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-16T13:27:54.314Z",
+    "checkedAt": "2026-10-16T13:39:20.407Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-10-16T13:27:24.742Z",
+    "lastSuccessfulCheck": "2026-10-16T13:38:50.155Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-16T13:27:24.742Z",
+    "checkedAt": "2026-10-16T13:38:50.155Z",
     "errors": [],
     "sources": [
       {
@@ -264,7 +252,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-16T13:27:48.503Z",
+    "checkedAt": "2026-10-16T13:39:13.852Z",
     "titles": 11,
     "fetched": 4,
     "enriched": 8,
@@ -324,7 +312,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-16T13:27:33.985Z",
+    "checkedAt": "2026-10-16T13:38:59.051Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -338,7 +326,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-16T13:27:34.071Z",
+    "checkedAt": "2026-10-16T13:38:59.167Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -351,7 +339,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-16T13:27:53.822Z",
+    "checkedAt": "2026-10-16T13:39:19.843Z",
     "verified": 0,
     "missing": [
       "Mafia: The Old Country",
@@ -368,7 +356,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-16T13:27:31.030Z",
+    "checkedAt": "2026-10-16T13:38:57.245Z",
     "date": "16.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -394,10 +382,16 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-14T12:54:29.975Z",
-    "berlinDate": "2026-10-14",
+    "checkedAt": "2026-10-16T13:27:54.435Z",
+    "berlinDate": "2026-10-16",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
-    "errors": []
+    "errors": [],
+    "warnings": [
+      "PS Plus: kein verifiziertes Produktcover für Mafia: The Old Country",
+      "PS Plus: kein verifiziertes Produktcover für Horizon Forbidden West",
+      "PS Plus: kein verifiziertes Produktcover für Mycopunk",
+      "PS Plus: kein verifiziertes Produktcover für Poppy Playtime: Kapitel 2"
+    ]
   }
 }
