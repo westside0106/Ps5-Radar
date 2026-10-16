@@ -16,10 +16,10 @@ export default function TrophyModel({rank='platinum'}){
   setError(false);
   async function init(){
    try{
-    const [{Scene,PerspectiveCamera,WebGLRenderer,AmbientLight,DirectionalLight,Box3,Vector3,Color,SRGBColorSpace,ACESFilmicToneMapping},{GLTFLoader}]=await Promise.all([import('three'),import('three/addons/loaders/GLTFLoader.js')]);
+    const [{Scene,PerspectiveCamera,WebGLRenderer,AmbientLight,DirectionalLight,Box3,Vector3,Color,SRGBColorSpace,ACESFilmicToneMapping,Group,Mesh,MeshStandardMaterial,LatheGeometry,TubeGeometry,CatmullRomCurve3,TorusGeometry,SphereGeometry},{GLTFLoader}]=await Promise.all([import('three'),import('three/addons/loaders/GLTFLoader.js')]);
     if(disposed)return;
-    const response=await fetch(MODEL_PATHS[rank],{method:'HEAD'});
-    if(!response.ok)throw Error('3D-Datei nicht veröffentlicht');
+    const response=await fetch(MODEL_PATHS[rank],{method:'HEAD'}).catch(()=>null);
+    const hasOriginal=Boolean(response?.ok);
     scene=new Scene();scene.background=null;
     const camera=new PerspectiveCamera(35,1,.01,1000);camera.position.set(0,0,4.8);
     renderer=new WebGLRenderer({antialias:true,alpha:true,powerPreference:'low-power'});
@@ -30,9 +30,23 @@ export default function TrophyModel({rank='platinum'}){
     scene.add(new AmbientLight(0xffffff,2.1));
     const key=new DirectionalLight(0xffffff,3);key.position.set(3,5,7);scene.add(key);
     const rim=new DirectionalLight(0x80b8ff,1.8);rim.position.set(-5,2,-4);scene.add(rim);
-    const gltf=await new GLTFLoader().loadAsync(MODEL_PATHS[rank]);
-    if(disposed)return;
-    model=gltf.scene;scene.add(model);
+    if(hasOriginal){try{const gltf=await new GLTFLoader().loadAsync(MODEL_PATHS[rank]);if(disposed)return;model=gltf.scene}catch{}}
+    if(!model){
+      const shades={platinum:0xb9dfff,gold:0xf5b83f,silver:0xc7d0df,bronze:0xb96b52};
+      const material=new MeshStandardMaterial({color:shades[rank]||shades.gold,metalness:.86,roughness:.2});
+      const accent=new MeshStandardMaterial({color:rank==='platinum'?0x5b9aff:0x23344b,metalness:.65,roughness:.24});
+      const trophy=new Group();
+      const pts=[[0,-1.3],[.55,-1.3],[.63,-1.24],[.63,-1.12],[.25,-1.12],[.18,-.98],[.12,-.85],[.13,-.55],[.25,-.45],[.39,-.3],[.55,0],[.69,.35],[.74,.78],[.7,.9],[.6,.94],[.52,.87],[.45,.58],[.3,.3],[0,.2]].map(([x,y])=>({x,y}));
+      trophy.add(new Mesh(new LatheGeometry(pts,72),material));
+      for(const side of [-1,1]){
+        const path=new CatmullRomCurve3([[.58,.78,0],[1.0,.93,0],[1.12,.35,0],[.92,-.1,0],[.55,-.16,0]].map(([x,y,z])=>new Vector3(x*side,y,z)));
+        trophy.add(new Mesh(new TubeGeometry(path,45,.07,10,false),material));
+      }
+      const ring=new Mesh(new TorusGeometry(.59,.035,10,64),accent);ring.rotation.x=Math.PI/2;ring.position.y=.86;trophy.add(ring);
+      if(rank==='platinum'){const orb=new Mesh(new SphereGeometry(.35,32,20),new MeshStandardMaterial({color:0x5aaeff,metalness:.25,roughness:.1,transparent:true,opacity:.78}));orb.position.y=.5;trophy.add(orb)}
+      model=trophy;
+    }
+    scene.add(model);
     const box=new Box3().setFromObject(model),size=box.getSize(new Vector3()),center=box.getCenter(new Vector3());
     model.position.sub(center);
     const extent=Math.max(size.x,size.y,size.z)||1;model.scale.setScalar(2.6/extent);
