@@ -48,13 +48,13 @@ export default function TrophyModel({rank='platinum'}){
     }
     scene.add(model);
     const box=new Box3().setFromObject(model),size=box.getSize(new Vector3()),center=box.getCenter(new Vector3());
-    model.position.sub(center);
     const extent=Math.max(size.x,size.y,size.z)||1;model.scale.setScalar(1/extent);
+    model.position.copy(center).multiplyScalar(-1/extent);
     const scaled=extent>0?size.clone().multiplyScalar(1/extent):new Vector3(1,1,1);
     const fitCamera=()=>{const aspect=Math.max(.5,el.clientWidth/Math.max(1,el.clientHeight));const fov=camera.fov*Math.PI/180;const required=Math.max(scaled.y/(2*Math.tan(fov/2)),scaled.x/(2*Math.tan(fov/2)*aspect));camera.position.set(0,0,Math.max(1.4,required*1.55));camera.lookAt(0,0,0)};fitCamera();
     const onResize=()=>{if(!renderer)return;const w=Math.max(1,el.clientWidth),h=Math.max(1,el.clientHeight);renderer.setSize(w,h,false);camera.aspect=w/h;fitCamera();camera.updateProjectionMatrix()};
     resize=new ResizeObserver(onResize);resize.observe(el);onResize();
-    observer=new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting??true});observer.observe(el);
+    if(typeof IntersectionObserver!=='undefined'){observer=new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting??true});observer.observe(el)}
     let last=0;const animate=(time)=>{if(disposed)return;frame=requestAnimationFrame(animate);if(!visible)return;if(model&&!dragging&&time-last>16){model.rotation.y+=.0035;last=time}renderer.render(scene,camera)};frame=requestAnimationFrame(animate);
    }catch(e){if(!disposed)setError(true)}
   }
@@ -65,5 +65,5 @@ export default function TrophyModel({rank='platinum'}){
   init();
   return()=>{disposed=true;cancelAnimationFrame(frame);resize?.disconnect();observer?.disconnect();el.removeEventListener('pointerdown',down);el.removeEventListener('pointermove',move);el.removeEventListener('pointerup',up);el.removeEventListener('pointercancel',up);if(scene){scene.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material){const mats=Array.isArray(o.material)?o.material:[o.material];for(const m of mats){for(const v of Object.values(m))if(v?.isTexture)v.dispose();m.dispose()}}})}renderer?.dispose();if(canvas?.parentNode===el)el.removeChild(canvas)};
  },[rank]);
- return <div className="psn-trophy-3d" ref={host} role="img" aria-label={'Interaktives 3D-Modell der '+({platinum:'Platin',gold:'Gold',silver:'Silber',bronze:'Bronze'}[rank]||rank)+'-Trophäe'}>{error?<div className="psn-trophy-3d-fallback"><span aria-hidden="true">{rank==='platinum'?'🏆':rank==='gold'?'🥇':rank==='silver'?'🥈':'🥉'}</span><small>3D-Datei noch nicht veröffentlicht</small></div>:null}</div>;
+ return <div className="psn-trophy-3d" ref={host} role="img" aria-label={'Interaktives 3D-Modell der '+({platinum:'Platin',gold:'Gold',silver:'Silber',bronze:'Bronze'}[rank]||rank)+'-Trophäe'}>{error?<div className="psn-trophy-3d-fallback"><span aria-hidden="true">◇</span><small>3D-Vorschau auf diesem Gerät nicht verfügbar</small></div>:null}</div>;
 }
