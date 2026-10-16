@@ -13,6 +13,7 @@ const berlinIso = new Intl.DateTimeFormat('sv-SE', {
 const berlinDisplay = berlinIso.split('-').reverse().join('.');
 const [todayYear, todayMonth, todayDay] = berlinIso.split('-').map(Number);
 const errors = [];
+const warnings = [];
 let staleRelativeCopyFixed = 0;
 
 function normalizeDate(value) {
@@ -82,7 +83,13 @@ for (const game of radar.plusGames || []) {
   if (!key || seenPlus.has(key)) errors.push(`PS Plus: doppelter oder leerer Titel ${game.title || '(leer)'}`);
   seenPlus.add(key);
   if (!/^https:\/\/store\.playstation\.com\//.test(String(game.storeUrl || ''))) errors.push(`PS Plus: keine offizielle Store-Identität für ${game.title}`);
-  if (!/^https:\/\/image\.api\.playstation\.com\//.test(String(game.image || ''))) errors.push(`PS Plus: kein verifiziertes Produktcover für ${game.title}`);
+  if (!/^https:\/\/image\.api\.playstation\.com\//.test(String(game.image || ''))) {
+    // Missing artwork must remain visibly unverified, but must not suppress
+    // the entire daily issue, PNG and archive. Never substitute a guessed cover.
+    game.image = null;
+    game.imageSource = 'unverified';
+    warnings.push(`PS Plus: kein verifiziertes Produktcover für ${game.title}`);
+  }
 }
 
 const parsedCandidates = state.psPlusMonthly?.parsed?.games || [];
@@ -113,14 +120,16 @@ radar.temporalCheck = {
   berlinDate: berlinIso,
   newPostsToday: todayPosts.length,
   staleRelativeCopyFixed,
-  errors
+  errors,
+  warnings
 };
 
 await fs.writeFile(radarPath, JSON.stringify(radar, null, 2) + '\n');
 await fs.writeFile(statePath, JSON.stringify(state, null, 2) + '\n');
 
+for (const warning of warnings) console.log(`::warning::${warning}`);
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exit(1);
 }
-console.log(`Temporal semantics: ok; today=${todayPosts.length}; stale-copy-fixed=${staleRelativeCopyFixed}; PS+ candidates=${parsedCandidates.length}.`);
+console.log(`Temporal semantics: ok; warnings=${warnings.length}; today=${todayPosts.length}; stale-copy-fixed=${staleRelativeCopyFixed}; PS+ candidates=${parsedCandidates.length}.`);
