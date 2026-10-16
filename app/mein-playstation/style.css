@@ -90,3 +90,35 @@
  .psn-trophy-showcase-heading strong{font-size:17px}
  .psn-trophy-showcase-heading>span{font-size:10px}
 }
+
+/* Collection 3D is now the main trophy hero, not a blocker inside the hunt dialog. */
+.psn-collection-stage{overflow:hidden;border:1px solid #4a78aa;border-radius:19px;margin:17px 0 22px;background:radial-gradient(ellipse at 65% 30%,#365f85 0,#1c3759 45%,#101f35 100%);box-shadow:inset 0 1px #b7ddff2e,0 16px 36px #0004}
+.psn-collection-stage-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(140px,48%);align-items:center;min-height:225px;position:relative}
+.psn-collection-stage-top>div:first-child{display:flex;flex-direction:column;gap:11px;padding:20px;z-index:1}
+.psn-collection-stage-top>div:first-child strong{font-size:clamp(24px,4vw,34px);color:#f5f9ff;line-height:1.12}
+.psn-collection-stage-top>div:first-child small{font-size:12px;color:#b9d7f5;line-height:1.4}
+.psn-collection-stage-model{height:225px;min-width:0}
+.psn-collection-stage-model .psn-trophy-3d{height:100%;width:100%}
+.psn-collection-ranks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;padding:9px;border-top:1px solid #7096bd5e;background:#08182b70}
+.psn-collection-ranks button{display:flex;align-items:center;justify-content:center;gap:7px;min-width:0;min-height:58px;background:#203a58c7;border:1px solid #436386;border-radius:11px;color:#eff6ff;cursor:pointer}
+.psn-collection-ranks button[aria-pressed=true]{background:#345f90;border-color:#add7ff;box-shadow:inset 0 0 0 1px #8ac1ff55}
+.psn-collection-ranks button>span:last-child{display:grid;text-align:left;gap:1px}
+.psn-collection-ranks button strong{font-size:19px;line-height:1.1}
+.psn-collection-ranks button small{font-size:11px;color:#c5d8ef}
+.psn-medal{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;line-height:1}
+.psn-medal svg{display:block;filter:drop-shadow(0 1px 3px #0006)}
+.psn-collection-ranks .psn-medal svg{width:25px;height:25px}
+.psn-trophy-3d-fallback span{font-size:40px}
+@media(max-width:650px){
+ .psn-collection-stage-top{grid-template-columns:minmax(0,1fr) minmax(135px,51%);min-height:190px}
+ .psn-collection-stage-top>div:first-child{padding:14px 5px 14px 14px;gap:8px}
+ .psn-collection-stage-top>div:first-child strong{font-size:25px}
+ .psn-collection-stage-top>div:first-child small{font-size:10px}
+ .psn-collection-stage-model{height:190px}
+ .psn-collection-ranks{gap:5px;padding:7px}
+ .psn-collection-ranks button{flex-direction:column;gap:2px;min-height:64px;padding:5px 1px}
+ .psn-collection-ranks button>span:last-child{text-align:center}
+ .psn-collection-ranks button strong{font-size:16px}
+ .psn-collection-ranks button small{font-size:10px}
+ .psn-collection-ranks .psn-medal svg{width:21px;height:21px}
+}
