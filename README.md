@@ -1,166 +1,361 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:101a30,55:224b83,100:5b9ee8&height=180&section=header&text=PlayStation%20Radar&fontSize=45&fontColor=ffffff&fontAlignY=36&desc=Private%20Gaming%20Intelligence%20Hub&descSize=16&descAlignY=58" width="100%" alt="PlayStation Radar" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:030712,38:0b2348,72:1956a2,100:6ac7ff&height=240&section=header&text=PLAYSTATION%20RADAR&fontSize=49&fontColor=ffffff&fontAlignY=36&desc=YOUR%20PRIVATE%20GAMING%20COMMAND%20CENTER&descSize=15&descAlignY=59&animation=fadeIn" alt="PlayStation Radar – Private Gaming Command Center" width="100%" />
 
-# PlayStation Radar
+### THE PLAYSTATION EXPERIENCE · REIMAGINED
 
-**Dein privates Dashboard für PlayStation, PS Plus, Spielaktivität und Trophäen.**
+**Deine Spiele. Deine Trophäen. Dein Radar. Ein privates Gaming-Cockpit.**
 
-[![Next.js](https://img.shields.io/badge/Next.js-16-111827?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19-24548a?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
-[![Vercel](https://img.shields.io/badge/Deployment-Vercel-111827?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
-[![Private](https://img.shields.io/badge/Zugriff-geschützt-2f658e?style=for-the-badge)](#-sicherheit)
-[![Daily Radar](https://github.com/westside0106/Ps5-Radar/actions/workflows/daily-catalog.yml/badge.svg)](https://github.com/westside0106/Ps5-Radar/actions/workflows/daily-catalog.yml)
+[![Next.js](https://img.shields.io/badge/NEXT.JS-16-070b16?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/REACT-19-102b55?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Three.js](https://img.shields.io/badge/THREE.JS-3D%20TROPHIES-184a89?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
+[![Vercel](https://img.shields.io/badge/VERCEL-DEPLOYED-070b16?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
+[![Private](https://img.shields.io/badge/ACCESS-PROTECTED-185e91?style=for-the-badge&logo=shield&logoColor=white)](#-security--privacy)
 
-[**Dashboard**](#-funktionen) · [**PlayStation-Hub**](#-playstation-hub) · [**Installation**](#-lokal-starten) · [**Architektur**](#-architektur) · [**Roadmap**](#-roadmap)
+[![Daily Catalog](https://github.com/westside0106/Ps5-Radar/actions/workflows/daily-catalog.yml/badge.svg)](https://github.com/westside0106/Ps5-Radar/actions/workflows/daily-catalog.yml)
+![Mobile First](https://img.shields.io/badge/DESIGN-MOBILE%20FIRST-0c2449?style=flat-square)
+![Language](https://img.shields.io/badge/LOCALE-DE--DE-0c2449?style=flat-square)
+![Data](https://img.shields.io/badge/DATA-PSN%20%2B%20IGDB-0c2449?style=flat-square)
+
+<br/>
+
+[**▶ PLAYSTATION-RADAR ÖFFNEN**](https://playstation-radar-private.vercel.app/mein-playstation)
+
+[Features](#-mission-control) · [Trophäen](#-trophy-hunter) · [3D](#-3d-trophy-showcase) · [Spielwelt](#-meine-spielwelt) · [Setup](#-quick-start) · [Architektur](#-system-architecture) · [Roadmap](#-roadmap)
 
 </div>
 
+---
+
 > [!IMPORTANT]
-> **Privates Projekt.** Das Repository enthält keinen PSN-Token. Die Live-Daten werden serverseitig aus geschützten Umgebungsvariablen geladen. Eine öffentliche Repository-README ist keine Zugriffssperre für die Anwendung.
+> **PRIVATE BUILD · KEINE ÖFFENTLICHE PSN-SITZUNG.** Dieses Projekt ist ein privates Fan-Dashboard. Der Zugriff auf persönliche PSN-Daten ist serverseitig geschützt. Zugangsdaten, Sitzungsschlüssel und Sony-Tokens gehören **ausschließlich** in geschützte Umgebungsvariablen – niemals in dieses Repository.
 
-## ✨ Funktionen
-
-| Bereich | Funktion | Datenquelle |
-|:--|:--|:--|
-| **Radar** | PlayStation-Angebote und weitere Gaming-Informationen | Lokale Snapshots / Aktualisierungsworkflows |
-| **PS Plus** | Katalog, Suche und Filter | Katalogdateien und Metadaten |
-| **Mein PlayStation** | Trophäenlevel, Bronze/Silber/Gold/Platin | Persönliche PSN-Abfragen |
-| **Trophäen-Zentrale** | Fortschrittsregler (0–100 %), Suche, Sortierung, Einzel-Trophäen auf Abruf | PSN Trophy API |
-| **Meine Spielwelt** | Zuletzt gespielte Titel, Spielzeit, klickbare Karten mit Spielinfos und Cover-Fallbacks | PSN Game List + vorhandene PS-Plus-/IGDB-Metadaten; optional Live-IGDB |
-| **Private Anmeldung** | HTTP-only-Sitzungscookie | Next.js-Server |
-
-## 🏆 PlayStation-Hub
-
-Der geschützte Bereich **`/mein-playstation`** kombiniert zwei mobil optimierte Ansichten:
+## ◈ MISSION CONTROL
 
 <table>
-<tr><td width="50%" valign="top">
+<tr>
+<td width="50%" valign="top">
 
-### Trophäen-Zentrale
-- Mindestfortschritt per Slider von **0 bis 100 %**
-- Schnellwahl: 0 / 25 / 50 / 75 / 90 %
-- Suche und Sortierung
-- Aufklappbare Trophäen je Spiel
-- Freigeschaltete und offene Erfolge samt Typ und Datum, sofern von Sony geliefert
+### 01 / RADAR
 
-</td><td width="50%" valign="top">
+**Gaming-Informationen, Angebote und Katalogbewegungen.**
 
-### Meine Spielwelt
-- Zuletzt gespielte Titel
-- Cover aus PSN und dem bereits angereicherten Spielekatalog
-- Klickbare Spieldetails mit Genres, Beschreibung, Modi und Release, sofern bestätigt
-- Optionale IGDB-Screenshots und Kritikerwertung, wenn die Live-Anbindung konfiguriert ist
-- Spielzeit, sofern Sony sie liefert
-- Suche und nach echter Spielzeit sortieren
-- Responsive Grid für schmale Smartphone-Displays
+- PlayStation-Radar und Angebotsübersichten
+- Preisradar und verfügbare Snapshots
+- Automatisierte Aktualisierungsworkflows
+- Eigene Bereiche für PlayStation und Xbox
 
-</td></tr>
+</td>
+<td width="50%" valign="top">
+
+### 02 / PS PLUS ATLAS
+
+**Ein durchsuchbarer Katalog statt endloser Store-Seiten.**
+
+- Essential · Extra · Premium / Klassiker
+- Ubisoft+ Classics
+- Suche, Plattform-, Genre-, Modus- und Perspektivfilter
+- Veröffentlichungs- und weitere Sortierungen
+- Cover-Fallbacks und bestätigte Metadaten
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 03 / TROPHY HUNTER
+
+**Vom Fortschrittsbalken zur gezielten Platin-Jagd.**
+
+- PSN-Trophäenübersicht und Detailansicht
+- Offene, erhaltene und alle Trophäen
+- Rang-, Gruppen-, Text- und Sortierfilter
+- Merkliste für persönliche Trophäenziele
+- Interaktive 3D-Rangvorschau
+
+</td>
+<td width="50%" valign="top">
+
+### 04 / MY PLAYSTATION
+
+**Deine persönliche Spielewelt.**
+
+- Zuletzt gespielte Titel und PSN-Spielzeit
+- Individuelle Spieldetails
+- IGDB-Genres, Modi, Perspektive, Screenshots
+- Metadaten- und Cover-Lückenfilter
+- Apps & Medien getrennt von Spielen
+
+</td>
+</tr>
 </table>
 
+## 🏆 TROPHY HUNTER
+
+<div align="center">
+
+![Platinum](https://img.shields.io/badge/PLATINUM-TROPHY%20RANK-93caff?style=for-the-badge)
+![Gold](https://img.shields.io/badge/GOLD-TROPHY%20RANK-d9aa45?style=for-the-badge)
+![Silver](https://img.shields.io/badge/SILVER-TROPHY%20RANK-a9bacf?style=for-the-badge)
+![Bronze](https://img.shields.io/badge/BRONZE-TROPHY%20RANK-b97d61?style=for-the-badge)
+
+</div>
+
+Die **Trophäen-Zentrale** unter `/mein-playstation` ist auf die Frage optimiert: **Welche Trophäe fehlt mir – und was mache ich als Nächstes?**
+
+| Capability | Umsetzung |
+|:--|:--|
+| **Progress Navigator** | Fortschrittsfilter 0–100 % und Schnellwahl |
+| **Trophy Detail View** | Eigenständiges mobiles Dialogfenster statt Inline-Liste |
+| **Hunt Modes** | Noch offen / Erhalten / Alle |
+| **Advanced Filtering** | Trophäenrang, Gruppe, Textsuche und Sortierung |
+| **DLC Groups** | Vollversion und Add-ons; Sony-Gruppennamen, sofern geliefert |
+| **Hidden Trophies** | Verborgene Details auf Wunsch einzeln enthüllen |
+| **Target List** | ☆ / ★ – Trophäen lokal als persönliche Ziele markieren |
+| **Trophy Artwork** | Originale Einzel-Trophäenbilder, sofern von PSN geliefert |
+| **Rarity** | Seltenheitsbasierte Sortierung, sofern Sony Werte bereitstellt |
+| **Earned Data** | Freischaltungsdatum, sofern Sony es liefert |
+| **3D Ranks** | Auf Abruf geladene, per Touch drehbare 3D-Trophäen |
+
 > [!NOTE]
-> Die Spieleliste der PSN-Game-List ist **nicht automatisch eine vollständige Kaufbibliothek**. Sony-Endpunkte sind inoffiziell und können sich ändern. Einzel-Trophäen werden erst beim Öffnen einer Spielkarte abgerufen und serverseitig kurz zwischengespeichert.
+> Die Zielmarkierungen werden derzeit **im lokalen Browser-Speicher** gehalten. Sie sind keine PSN-Funktion und werden nicht automatisch zwischen Geräten synchronisiert. Die Detaildaten werden erst bei Bedarf vom Server abgerufen und kurz zwischengespeichert.
 
-## 🎮 IGDB-Metadaten
-
-„Meine Spielwelt“ gleicht Spielnamen **serverseitig und konservativ** mit dem vorhandenen PS-Plus-Katalog ab. Bereits bestätigte IGDB-Daten stehen ohne zusätzliche Zugangsdaten zur Verfügung. Optional ergänzt die IGDB-API weitere exakte PlayStation-Treffer, Bilder, Genres, Beschreibungen und Screenshots.
-
-Für den optionalen Live-Abgleich müssen `IGDB_CLIENT_ID` und `IGDB_CLIENT_SECRET` als **Vercel-Umgebungsvariablen** eingerichtet sein; fehlen sie, funktioniert der katalogbasierte Fallback weiterhin. Persönliche PSN-IDs werden nicht an IGDB übertragen. Unklare Mehrfachtreffer werden nicht automatisch zugeordnet. Fehlende Metadaten oder Spielzeiten werden niemals erfunden.
-
-Fehlende Cover des PS-Plus-Katalogs ergänzt der bestehende nächtliche GitHub-Workflow nach Möglichkeit aus verifizierten IGDB-Cover-IDs. Bereits zugeordnete Bilder werden bei regulären Katalogupdates bewahrt.
-
-## 🧱 Architektur
+### Trophy-Hunt-Flow
 
 ```mermaid
-flowchart TD
-    A["iPhone / Browser"] --> B["Next.js App Router"]
-    B --> C{"Private Sitzung gültig?"}
-    C -->|Nein| D["Login"]
-    C -->|Ja| E["PlayStation-Hub"]
-    E --> F["Serverseitige PSN-Anbindung"]
-    F --> G["Trophäenübersicht"]
-    F --> H["Zuletzt gespielte Titel"]
-    E --> I["Trophäen-Detailroute"]
-    I --> F
-    B --> J["PS-Plus-Katalog und Radar-Snapshots"]
+flowchart LR
+    A["Spiel auswählen"] --> B["Trophäen öffnen"]
+    B --> C{"Was suchst du?"}
+    C -->|Fehlend| D["Noch offen"]
+    C -->|Bereits geschafft| E["Erhalten"]
+    C -->|DLC| F["Trophäengruppe"]
+    D --> G["Filtern und sortieren"]
+    F --> G
+    G --> H["★ Als Ziel merken"]
+    H --> I["Zurück ins Spiel"]
+    classDef start fill:#163b6b,color:#fff,stroke:#65baff
+    classDef target fill:#59451e,color:#fff,stroke:#e3b85c
+    class A,B start
+    class H target
 ```
 
-**Stack:** Next.js 16 · React 19 · JavaScript/JSX · CSS · Vercel · GitHub Actions.
+## 💎 3D TROPHY SHOWCASE
 
-## 🔐 Sicherheit
+<div align="center">
 
-Konfiguriere die folgenden Variablen in Vercel unter **Environment Variables**:
+**INTERACTIVE · TOUCH-ROTATABLE · ON-DEMAND WEBGL**
 
-| Variable | Zweck |
+`PLATINUM` · `GOLD` · `SILVER` · `BRONZE`
+
+</div>
+
+Das 3D-System basiert auf **Three.js**, lädt seinen Viewer erst bei Auswahl eines Trophäenrangs und unterstützt Rotation per Finger. Für die vier Ränge existieren feste GLB-Pfade:
+
+```text
+public/
+└── trophies/
+    ├── platinum.glb
+    ├── gold.glb
+    ├── silver.glb
+    ├── bronze.glb
+    └── README.md
+```
+
+> [!WARNING]
+> **Originalmodelle noch nicht veröffentlicht.** Die vier vom Nutzer bereitgestellten GLB-Assets sind derzeit **nicht im Repository**. Der Viewer verwendet solange eine **vereinfachte, prozedural erzeugte Three.js-Trophäe**. Diese Vorschau ist nicht mit den Originalmodellen identisch. Erst nach dem Upload unter den genannten Dateinamen erscheinen die echten Modelle.
+
+**Rendering-Konzept**
+
+- Lazy-Loading der 3D-Komponente statt WebGL auf jeder Spielkarte
+- Maximal ein aktiver Viewer im Trophäenfenster
+- Touch-Rotation, automatische langsame Drehung, ResizeObserver
+- Metalness-/Roughness-Materialien und gerichtete Beleuchtung
+- Fallback, falls ein Originalmodell nicht erreichbar oder nicht ladbar ist
+- Bereinigung von WebGL-Ressourcen beim Schließen
+
+**Implementierung:** [`TrophyModel.jsx`](app/mein-playstation/TrophyModel.jsx) · [`public/trophies/README.md`](public/trophies/README.md)
+
+## 🎮 MEINE SPIELWELT
+
+**PSN-Spielaktivität trifft auf kuratierte Game-Metadaten.**
+
+```text
+MY PLAYSTATION
+│
+├── TROPHÄEN-ZENTRALE
+│   ├── Fortschritt / Rang / Seltenheit
+│   ├── Offene & erhaltene Erfolge
+│   ├── DLC-Gruppen / Trophäenziele
+│   └── 3D-Trophäenränge
+│
+└── MEINE SPIELWELT
+    ├── Spiele
+    │   ├── Zuletzt gespielt
+    │   ├── Spielzeit
+    │   ├── Cover & Screenshots
+    │   ├── Genre / Spielmodus / Perspektive
+    │   └── IGDB-Metadatenstatus
+    └── Apps & Medien
+```
+
+### Metadata Intelligence
+
+Der Server ordnet Titel **konservativ** zu: erst über den bestehenden PS-Plus-Katalog, optional zusätzlich über **IGDB**. Ein unklarer Treffer wird nicht stillschweigend einem anderen Spiel zugeordnet.
+
+| Daten | Herkunft / Verhalten |
 |:--|:--|
-| `RADAR_PASSWORD` | Passwort für die private Anmeldung |
-| `RADAR_SESSION_SECRET` | Langer zufälliger Sitzungsschlüssel (mindestens 32 Zeichen) |
-| `PSN_NPSSO` | Optional: privater Sony-Session-Token für die PSN-Integration |
-| `IGDB_CLIENT_ID` / `IGDB_CLIENT_SECRET` | Optional: IGDB-Live-Metadaten für die persönliche Spielwelt |
+| Spielzeit, letzter Spieltag | PSN, soweit verfügbar |
+| Cover und Spielbeschreibung | PSN / PS-Plus-Katalog / IGDB |
+| Genre, Spielmodus, Perspektive | Bestätigte Metadaten |
+| Screenshots, aggregierte Wertung | Optional IGDB |
+| Fehlende Informationen | Werden gekennzeichnet, **nicht geschätzt** |
 
-- **Niemals** Secrets in Dateien, Commits, Screenshots oder Issue-Logs veröffentlichen.
-- Der PSN-Token bleibt ausschließlich auf dem Server; Browseranfragen an Detailrouten erfordern die Radar-Sitzung.
-- Die Integration ist **read-only** und verwendet eine **inoffizielle** PSN-Schnittstelle.
-- `robots`-Sperren verhindern keine unberechtigten Zugriffe; entscheidend ist die serverseitige Authentifizierung.
+Mit **Alle Datenstände**, **Unvollständige Daten**, **Ohne IGDB** und **Ohne Cover** lassen sich Titel mit Nachbearbeitungsbedarf gezielt finden.
 
-## 🚀 Lokal starten
+> [!NOTE]
+> Sonys Liste zuletzt gespielter Titel ist **keine verifizierte vollständige Kaufbibliothek**. Metadaten- und Trophäenabdeckung hängen von den verfügbaren Sony-Endpunkten und den jeweiligen Datenquellen ab.
+
+## 🗂️ PS PLUS CATALOG
+
+Der Katalog bündelt bestätigte Einträge für **Essential, Extra, Premium/Klassiker und Ubisoft+ Classics**. Die Oberfläche bietet kombinierbare Filter, mobile Suche und Sortierungen. Katalogstände und Verfügbarkeit können sich ändern; maßgeblich bleiben die angezeigten Quellen und der jeweilige Erfassungsstand.
+
+**Mobile-UX:** Suchfeld und Aktionsbuttons sind für schmale Bildschirme neu proportioniert. Die Anzahl gleichzeitig fixierter Leisten wurde reduziert, damit Spielecover nicht von der Navigation überdeckt werden.
+
+## 🧠 SYSTEM ARCHITECTURE
+
+```mermaid
+flowchart TB
+    U["iPhone / Desktop Browser"] --> N["Next.js 16 · React 19"]
+    N --> A{"Geschützte Sitzung?"}
+    A -->|Nein| L["Login"]
+    A -->|Ja| P["Mein PlayStation"]
+    A -->|Ja| R["Radar & PS-Plus-Katalog"]
+    P --> T["Trophy Hunter UI"]
+    P --> W["Meine Spielwelt"]
+    T --> API["Private Trophy API"]
+    API --> S["PSN Server · Cache"]
+    W --> S
+    W --> M["Metadata Enrichment"]
+    M --> C["Lokaler PS-Plus-Katalog"]
+    M --> I["IGDB API · optional"]
+    T --> V["Three.js Trophy Viewer"]
+    V --> G["Original GLBs · nach Upload"]
+    V --> F["Prozedurale 3D-Vorschau"]
+    R --> SNAP["Snapshots / GitHub Actions"]
+    classDef primary fill:#173f75,color:#fff,stroke:#6cb8ff
+    classDef secure fill:#163b32,color:#fff,stroke:#60cfa5
+    classDef pending fill:#4c371e,color:#fff,stroke:#e8b35b
+    class N,P,T,W primary
+    class A,S,API secure
+    class G pending
+```
+
+**Technology stack**
+
+| Layer | Technologie |
+|:--|:--|
+| Frontend | Next.js 16 · React 19 · JavaScript / JSX |
+| Design | Responsive CSS · Mobile-first Dialoge · Touch |
+| 3D | Three.js · WebGL · glTF/GLB |
+| Game Data | PSN-Endpunkte · PS-Plus-Snapshots · optional IGDB |
+| Hosting | Vercel |
+| Automation | GitHub Actions |
+| Testing | Node Test Runner · vorhandene Playwright-Skripte |
+
+## 🔐 SECURITY & PRIVACY
+
+| Environment Variable | Verwendung |
+|:--|:--|
+| `RADAR_PASSWORD` | Passwort der privaten Anwendung |
+| `RADAR_SESSION_SECRET` | Geheimnis zur Signierung/Absicherung der Sitzung; mindestens 32 Zeichen |
+| `PSN_NPSSO` | Privater Sony-Session-Token für PSN-Daten |
+| `IGDB_CLIENT_ID` | Optionaler IGDB-Client |
+| `IGDB_CLIENT_SECRET` | Optionales IGDB-Secret |
+
+- **Keine Zugangsdaten im Frontend, in Commits oder Screenshots.**
+- Die PSN-Anbindung arbeitet serverseitig und **read-only**.
+- Persönliche PSN-IDs werden nicht zur IGDB-Titelsuche übertragen.
+- Private API-Routen prüfen die Radar-Sitzung.
+- Eine `robots.txt`-Sperre ersetzt **keine** Authentifizierung.
+- PSN-Endpunkte sind **inoffiziell** und können sich ändern.
+
+## ⚡ QUICK START
 
 ```bash
 git clone https://github.com/westside0106/Ps5-Radar.git
 cd Ps5-Radar
 cp .env.example .env.local
-npm install
+npm ci
 npm run dev
 ```
 
-Öffne anschließend `http://localhost:3000`. Trage benötigte Variablen nur in `.env.local` ein und committe diese Datei nicht.
+Öffne `http://localhost:3000`. Trage Geheimnisse ausschließlich in `.env.local` ein und committe diese Datei nicht.
 
 <details>
-<summary><b>Weitere Befehle und Checks</b></summary>
+<summary><strong>▶ Build, Checks und Wartung</strong></summary>
 
 ```bash
 npm run build
 npm run test:goal
 npm run test:platform
+npm run test:psn
 npm run catalog:refresh
 ```
 
-Die Befehle sind im `package.json` definiert. Erfolgreiche Tests oder ein erfolgreiches Deployment werden hier nicht pauschal behauptet; der aktuelle Status ist in den GitHub Actions und bei Vercel zu prüfen.
+`npm run catalog:refresh` aktualisiert Daten und ist kein rein lesender Test. Ein erfolgreiches Deployment beweist nicht automatisch die Funktion aller Sony-Endpunkte oder die Bedienbarkeit auf einem konkreten iPhone.
 
 </details>
 
-## 📂 Projektstruktur
+<details>
+<summary><strong>▶ Repository-Struktur</strong></summary>
 
-| Pfad | Zweck |
+| Pfad | Aufgabe |
 |:--|:--|
-| `app/mein-playstation/` | Privates PSN-Hub, UI und geschützte Detailroute |
-| `lib/psn-server.mjs` | Serverseitige PSN-Abfragen und Cache |
+| `app/mein-playstation/PlayStationHub.jsx` | Private PSN-Oberfläche, Trophäen-Zentrale, Spielwelt |
+| `app/mein-playstation/TrophyModel.jsx` | Interaktiver Three.js-Viewer |
+| `app/mein-playstation/style.css` | Responsive PlayStation-Hub-Gestaltung |
+| `app/mein-playstation/api/trophies/` | Private Trophäen-Detailroute |
+| `lib/psn-server.mjs` | PSN-Anbindung, Trophäen und Cache |
+| `lib/psn-game-metadata.mjs` | Konservativer PSN-/IGDB-Abgleich |
 | `app/ps-plus/` | PS-Plus-Katalog |
-| `app/radar/` | Radar-Ansicht |
-| `data/` | Katalog- und Radar-Snapshots |
-| `.github/workflows/` | Automatische Aktualisierungsworkflows |
-| `scripts/` | Aktualisierung, Validierung und Tests |
+| `app/radar/` | Radar-Oberfläche |
+| `data/` | Katalog- und Snapshot-Dateien |
+| `.github/workflows/` | Datenaktualisierung |
+| `scripts/` | Validierung, Import und Tests |
 
-## 🗺️ Roadmap
+</details>
 
-- [x] Private PSN-Verbindung und Trophäenübersicht
-- [x] Interaktiver Fortschrittsfilter
-- [x] Trophäen-Zentrale mit bedarfsgeladenen Detaildaten
-- [x] Meine Spielwelt für zuletzt gespielte Titel
-- [x] IGDB-/PS-Plus-Katalog-Metadatenabgleich und detaillierte Spielkarten (Live-IGDB optional)
-- [ ] Vollständigen PSN-Kaufbibliotheksabruf und Lizenzstatus gesondert verifizieren
-- [ ] PS-Plus-Bibliotheksabgleich und persönliche Empfehlungen
-- [ ] Trophäen-Seltenheit, zusätzliche Filter und verbesserte Bilddaten
-- [ ] **Gaming-Jahresrückblick / PlayStation Wrapped** — vorgemerkt, keine Priorität
-- [ ] **Xbox-Integration (nachrangig)** — erst nach Fertigstellung der PlayStation-Funktionen; Xbox-Spiele und Achievements optional ergänzen
-- [ ] Automatisierte Integrationstests der Sony-Endpunkte ohne Veröffentlichung von Zugangsdaten
+## 🛣️ ROADMAP
 
-## ℹ️ Hinweise
+| Status | Meilenstein |
+|:--:|:--|
+| ✅ | Private PSN-Anbindung und Trophäenübersicht |
+| ✅ | Trophy Hunter mit Suche, Filtern, Zielmarkierungen und DLC-Gruppen |
+| ✅ | Eigene mobile Trophäen-Detailansicht |
+| ✅ | Three.js-Viewer mit Touch-Rotation und prozeduralem 3D-Fallback |
+| ⏳ | **Vier Original-GLB-Modelle in `public/trophies/` veröffentlichen** |
+| ⏳ | Praxistest auf iPhone / Mobile Safari |
+| ⏳ | PSN-DLC-Namen, Seltenheit und versteckte Trophäen an echten Daten validieren |
+| ⏳ | Cover- und Metadatenlücken weiter schließen |
+| ⏳ | Vollständigkeit der PSN-Kaufbibliothek gesondert verifizieren |
+| ◇ | Persönliche Empfehlungen / PS-Plus-Bibliotheksabgleich |
+| ◇ | PlayStation Wrapped / Jahresrückblick (nachrangig) |
+| ◇ | Xbox-Achievements und tiefere Xbox-Integration (nachrangig) |
 
-Dieses private Fanprojekt ist **nicht mit Sony Interactive Entertainment verbunden**. PlayStation ist eine Marke der jeweiligen Rechteinhaber. API-Verfügbarkeit, Spielzeiten, Cover und Trophäendaten hängen von Sonys Schnittstellen und den Privatsphäre-Einstellungen ab.
+**Legende:** ✅ implementiert · ⏳ offen / zu verifizieren · ◇ vorgemerkt
+
+---
+
+## ⚖️ LEGAL & DATA NOTES
+
+Dieses Projekt ist ein **unabhängiges, privates Fanprojekt** und **nicht mit Sony Interactive Entertainment verbunden**. PlayStation und zugehörige Marken gehören ihren jeweiligen Rechteinhabern. Datenqualität und Verfügbarkeit hängen von Sonys Schnittstellen, Berechtigungen, Quellenstand und Privatsphäre-Einstellungen ab.
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:101a30,55:224b83,100:5b9ee8&height=90&section=footer" width="100%" alt="" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:030712,40:0b2348,75:1956a2,100:6ac7ff&height=125&section=footer" alt="" width="100%" />
+
+**BUILT FOR THE HUNT. DESIGNED FOR THE PLAYER.**
+
+<sub>PLAYSTATION RADAR · PRIVATE GAMING INTELLIGENCE</sub>
 
 </div>
