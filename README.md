@@ -115,7 +115,7 @@ Die **Trophäen-Zentrale** unter `/mein-playstation` ist auf die Frage optimiert
 | **Trophy Artwork** | Originale Einzel-Trophäenbilder, sofern von PSN geliefert |
 | **Rarity** | Seltenheitsbasierte Sortierung, sofern Sony Werte bereitstellt |
 | **Earned Data** | Freischaltungsdatum, sofern Sony es liefert |
-| **3D Ranks** | Auf Abruf geladene, per Touch drehbare 3D-Trophäen |
+| **3D Ranks** | In die Sammlungsübersicht integrierte, per Touch drehbare 3D-Trophäen |
 
 > [!NOTE]
 > Die Zielmarkierungen werden derzeit **im lokalen Browser-Speicher** gehalten. Sie sind keine PSN-Funktion und werden nicht automatisch zwischen Geräten synchronisiert. Die Detaildaten werden erst bei Bedarf vom Server abgerufen und kurz zwischengespeichert.
@@ -149,7 +149,7 @@ flowchart LR
 
 </div>
 
-Das 3D-System basiert auf **Three.js**, lädt seinen Viewer erst bei Auswahl eines Trophäenrangs und unterstützt Rotation per Finger. Für die vier Ränge existieren feste GLB-Pfade:
+Das 3D-System basiert auf **Three.js** und ist in die zentrale Trophäensammlung eingebettet, statt die Detailansicht einzelner Spiele zu blockieren. Die vier Rangschalter wechseln das Modell; die Darstellung unterstützt Rotation per Finger. Für die vier Ränge existieren feste GLB-Pfade:
 
 ```text
 public/
@@ -166,8 +166,8 @@ public/
 
 **Rendering-Konzept**
 
-- Lazy-Loading der 3D-Komponente statt WebGL auf jeder Spielkarte
-- Maximal ein aktiver Viewer im Trophäenfenster
+- Lazy-Loading der 3D-Komponente; keine zusätzlichen WebGL-Viewer in den einzelnen Spielkarten
+- Ein aktiver Viewer in der Trophäensammlung
 - Touch-Rotation, automatische langsame Drehung, ResizeObserver
 - Metalness-/Roughness-Materialien und gerichtete Beleuchtung
 - Fallback, falls ein Originalmodell nicht erreichbar oder nicht ladbar ist
