@@ -1,5 +1,6 @@
 name: Daily PS Plus Catalog
 
+# Katalog-Rerun nach Korrektur der PSN-Namensnormalisierung (2026-10-17).
 # Eigener Workflow: der Lauf dauert rund 6 Minuten und ist unabhaengig von
 # Radar und Xbox. Bewusst zu einer anderen Zeit als die beiden Radars, damit
 # nicht drei Workflows gleichzeitig nach main pushen. Die Katalogseite meldet
