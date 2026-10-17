@@ -54,7 +54,10 @@ jobs:
         env:
           IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
           IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
-        run: node scripts/enrich-plus-igdb.mjs
+        run: |
+          if ! node scripts/enrich-plus-igdb.mjs; then
+            echo '::warning::IGDB-Anreicherung fehlgeschlagen; der offiziell gepruefte PS-Plus-Katalog wird trotzdem gespeichert.'
+          fi
       - name: Commit catalog snapshot
         shell: bash
         run: |
