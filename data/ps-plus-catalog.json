@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-17T03:11:27.185Z",
+  "checkedAt": "2026-10-17T08:03:16.215Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-17T03:11:27.185Z"
+      "checkedAt": "2026-10-17T08:03:16.215Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-17T03:11:27.185Z"
+      "checkedAt": "2026-10-17T08:03:16.215Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 168,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-17T03:11:27.185Z"
+      "checkedAt": "2026-10-17T08:03:16.215Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-17T03:11:27.185Z"
+      "checkedAt": "2026-10-17T08:03:16.215Z"
     }
   },
   "games": [
@@ -1085,7 +1085,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233889",
@@ -1139,7 +1139,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234613",
@@ -1169,7 +1169,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000494",
@@ -1224,7 +1224,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10011854",
@@ -1318,7 +1318,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10006070",
@@ -1347,7 +1347,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:214367",
@@ -1450,7 +1450,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233251",
@@ -1552,7 +1552,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233200",
@@ -1604,7 +1604,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:229453",
@@ -1658,7 +1658,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007859",
@@ -1688,7 +1688,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:231477",
@@ -1712,7 +1712,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002921",
@@ -1738,13 +1738,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:225783",
       "title": "Chess Ultra",
       "storeUrl": "https://store.playstation.com/de-de/concept/225783",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co22vs.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP4337/CUSA06579_00/13nka1TeUdVLgWr110W6K53vCu0zhj0n.png",
       "platforms": [
         "PS4"
       ],
@@ -1765,7 +1765,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:200740",
@@ -1819,13 +1819,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234762",
       "title": "Chivalry 2 PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/234762",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2yqh.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202209/2715/SWj7rvM10WcLZdsMWjH0PW30.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -1845,13 +1845,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:224821",
       "title": "Cities: Skylines - PlayStation®4 Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/224821",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP4139/CUSA06407_00/AUGjjbhpZHp2OWTNQPMUXCvs8RToNKPO.png",
       "platforms": [
         "PS4"
       ],
@@ -1862,7 +1862,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007275",
@@ -1942,7 +1942,7 @@
       "id": "concept:10004780",
       "title": "Coffee Talk Episode 2: Hibiscus & Butterfly",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004780",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4p7r.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2802/7e8081b6fe6c07c724b389099ffa21072f2ef814c890190a.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -1961,13 +1961,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:231261",
       "title": "Conan Exiles",
       "storeUrl": "https://store.playstation.com/de-de/concept/231261",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coa90l.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1607/b8430a91c8d71ec52a06eebd8a9ea1adc0aec231de695b21.png",
       "platforms": [
         "PS4"
       ],
@@ -1989,7 +1989,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233628",
@@ -2045,7 +2045,7 @@
       "id": "concept:10000438",
       "title": "Construction Simulator",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000438",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co513s.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2908/kH5fyiAE8Q0DBBeeM35mpcOu.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -2066,13 +2066,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234544",
       "title": "CONTRA: ROGUE CORPS",
       "storeUrl": "https://store.playstation.com/de-de/concept/234544",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1lzz.jpg",
+      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307U-DktwgMVLvMQvsqdp5vOWF1bZmhYyk2pluwqmnrLYcaSChvF3oDWc5AfBFqNEqYmIs9plt2rYigv_dn0xZetERK570.png",
       "platforms": [
         "PS4"
       ],
@@ -2094,7 +2094,7 @@
       ],
       "perspective": null,
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10008698",
@@ -2228,7 +2228,7 @@
       "id": "concept:234567",
       "title": "Cyberpunk 2077",
       "storeUrl": "https://store.playstation.com/de-de/concept/234567",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaih8.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -2247,7 +2247,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:231085",
@@ -2279,7 +2279,7 @@
       "id": "concept:10009597",
       "title": "Darkest Dungeon II PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009597",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co6grp.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202401/2617/d79ce4d6d77ed2f2a7a453e02ff9eefbbfe6712b9fd4c077.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -2298,7 +2298,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:229018",
@@ -2330,7 +2330,7 @@
       "id": "concept:227319",
       "title": "Dead by Daylight PS4® & PS5®",
       "storeUrl": "https://store.playstation.com/de-de/concept/227319",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5zky.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0113/e98238835ada32e22b4e21455b4206cacd19070ea359763f.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -2352,7 +2352,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:231053",
@@ -2780,7 +2780,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:206887",
@@ -2823,7 +2823,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232374",
@@ -2875,7 +2875,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:229001",
@@ -2902,7 +2902,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:216171",
@@ -2958,7 +2958,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:222995",
@@ -2985,7 +2985,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232625",
@@ -3011,7 +3011,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10001019",
@@ -3087,7 +3087,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002570",
@@ -3167,7 +3167,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:235085",
@@ -3414,7 +3414,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:201624",
@@ -3443,7 +3443,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:221692",
@@ -3471,7 +3471,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:201634",
@@ -3497,7 +3497,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232910",
@@ -3525,7 +3525,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002934",
@@ -3577,7 +3577,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233961",
@@ -3603,7 +3603,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10009612",
@@ -3911,7 +3911,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232512",
@@ -3989,7 +3989,7 @@
       "id": "concept:235227",
       "title": "Ghost of Tsushima DIRECTOR’S CUT (PlayStation Plus)",
       "storeUrl": "https://store.playstation.com/de-de/concept/235227",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2crj.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202106/2322/c16gs6a7lbAYzPf7ZTikbH1c.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -4008,7 +4008,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234646",
@@ -4070,7 +4070,7 @@
       "id": "concept:10001850",
       "title": "God of War Ragnarök",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001850",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coba3d.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2016/b69c06fb108299866057126b0d3a0530bdf96a39d2ce1cb9.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -4089,13 +4089,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:227770",
       "title": "God of War™",
       "storeUrl": "https://store.playstation.com/de-de/concept/227770",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/1021/X3WIAh63yKhRRiMohLoJMeQu.png",
       "platforms": [
         "PS4"
       ],
@@ -4114,7 +4114,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:235061",
@@ -4176,7 +4176,7 @@
       "id": "concept:229066",
       "title": "Granblue Fantasy: Relink Standard Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/229066",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7ptq.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0711/bd65ba90dac453a151a9a6fc0fd4b0744c414d38cdccb900.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -4198,7 +4198,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:201954",
@@ -4231,7 +4231,7 @@
       "id": "concept:201930",
       "title": "Grand Theft Auto V (PS4™ & PS5™)",
       "storeUrl": "https://store.playstation.com/de-de/concept/201930",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1409/oltI7Zc96usbdvhVVXcV1EAi.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -4244,13 +4244,13 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:221698",
       "title": "Gravity Rush™ 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/221698",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2320/UQRzoZKzI3PjOYfPa2XOqS19.png",
       "platforms": [
         "PS4"
       ],
@@ -4269,13 +4269,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002038",
       "title": "Green Hell PS4 + PS5 Free Upgrade",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002038",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9d3h.jpg",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202106/0421/64a4leQbt6zne3MHrR4n64ec.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -4297,7 +4297,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234650",
@@ -4329,7 +4329,7 @@
       "id": "concept:10005051",
       "title": "Hell is Us",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005051",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9vum.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202505/1208/881d62059f98b7d5191eae48029004d5052df238da708d5b.png",
       "platforms": [
         "PS5"
       ],
@@ -4348,7 +4348,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000657",
@@ -4469,7 +4469,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10001919",
@@ -4495,7 +4495,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005940",
@@ -4520,7 +4520,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10006547",
@@ -4608,7 +4608,7 @@
       "id": "concept:233011",
       "title": "HUMANITY",
       "storeUrl": "https://store.playstation.com/de-de/concept/233011",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co66z7.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202212/1423/ceiwbi2grLMGYXWlZCduDvuI.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -4628,7 +4628,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004309",
@@ -4672,7 +4672,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:202132",
@@ -4698,7 +4698,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:231098",
@@ -4768,7 +4768,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:202140",
@@ -4792,7 +4792,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:227147",
@@ -4820,7 +4820,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233283",
@@ -4848,7 +4848,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002577",
@@ -4874,7 +4874,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005847",
@@ -4900,7 +4900,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:221915",
@@ -4926,7 +4926,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:202335",
@@ -4951,7 +4951,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:227410",
@@ -4977,7 +4977,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10006210",
@@ -5001,7 +5001,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:231088",
@@ -5027,7 +5027,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:202340",
@@ -5052,7 +5052,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10003149",
@@ -5077,7 +5077,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232460",
@@ -5106,7 +5106,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:202496",
@@ -5124,7 +5124,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:224875",
@@ -5152,7 +5152,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:231944",
@@ -5180,7 +5180,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007722",
@@ -5197,7 +5197,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:202450",
@@ -5242,7 +5242,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:228782",
@@ -5269,7 +5269,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:202454",
@@ -5348,7 +5348,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004462",
@@ -5379,7 +5379,7 @@
       "id": "concept:10000661",
       "title": "Little Big Workshop",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000661",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co20u4.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/1115/NqJVop3p0HvO8QgrQgIO908Y.png",
       "platforms": [
         "PS4"
       ],
@@ -5395,7 +5395,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234290",
@@ -5454,7 +5454,7 @@
       "id": "concept:218717",
       "title": "Mahjong",
       "storeUrl": "https://store.playstation.com/de-de/concept/218717",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP4008/CUSA05079_00/LcxCyhRYpMabNCFbXAhHG4orJEP650IA.png",
       "platforms": [
         "PS4"
       ],
@@ -5466,7 +5466,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:222304",
@@ -5490,7 +5490,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233202",
@@ -5542,7 +5542,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002456",
@@ -5566,7 +5566,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000762",
@@ -5591,7 +5591,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000649",
@@ -5616,13 +5616,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:224903",
       "title": "MATTERFALL",
       "storeUrl": "https://store.playstation.com/de-de/concept/224903",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1y58.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA02475_00/Nttro1trhXv5jNXOBGU1k9ehv9HguvpW.png",
       "platforms": [
         "PS4"
       ],
@@ -5640,13 +5640,13 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234427",
       "title": "MediEvil",
       "storeUrl": "https://store.playstation.com/de-de/concept/234427",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307Wm1JA9ApMArVhceTfFj0uYCsQj_rAHLUJA2Ku_rDY2sjiHAfntFA57HQqRBO7M6UPoVMfF2pbEUiA_AMefq5M4YSl4O.jpg",
       "platforms": [
         "PS4"
       ],
@@ -5658,7 +5658,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:202663",
@@ -5682,13 +5682,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000480",
       "title": "MELTY BLOOD: TYPE LUMINA",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000480",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2w8y.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202108/0409/mxRZykg6EexpTj6PfbErej74.png",
       "platforms": [
         "PS4"
       ],
@@ -5707,13 +5707,13 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10008291",
       "title": "Metal Eden",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008291",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9f8x.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/1516/5a59526a26d03ce67695c0856e6816a0e9a5f5e0127e4868.png",
       "platforms": [
         "PS5"
       ],
@@ -5733,13 +5733,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:231769",
       "title": "Metro Exodus",
       "storeUrl": "https://store.playstation.com/de-de/concept/231769",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coaroh.jpg",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2814/jhNIE3yH1SNEe9CmxTVHAdme.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -5760,13 +5760,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10009198",
       "title": "Mighty Morphin Power Rangers: Rita's Rewind",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009198",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8zrz.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202410/2821/51d6eb5a4a96c0a546c0f7e475a6477a6c4a29196c95820b.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -5787,7 +5787,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002216",
@@ -5814,13 +5814,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:217487",
       "title": "Monster Boy and the Cursed Kingdom",
       "storeUrl": "https://store.playstation.com/de-de/concept/217487",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co27mg.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202108/3113/Y912qTmnEDRKRRFeU5YBjQqv.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -5840,13 +5840,13 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007582",
       "title": "Monster Hunter Stories",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007582",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob1tv.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202403/0105/e058b465f4e8c6525af84885857c7f6293cc4ce6d69f2933.png",
       "platforms": [
         "PS4"
       ],
@@ -5865,13 +5865,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007583",
       "title": "Monster Hunter Stories 2: Wings of Ruin",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007583",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobksk.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202402/0808/e8e4c955262795d508bf4bda41b32c6286629de781f2deec.png",
       "platforms": [
         "PS4"
       ],
@@ -5891,13 +5891,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10008248",
       "title": "Monster Jam™ Showdown PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008248",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1614/84c31b0e953c82f73f0ae4fde874d10c4658fa3da1493e29.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -5910,13 +5910,13 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10010256",
       "title": "Monster Train",
       "storeUrl": "https://store.playstation.com/de-de/concept/10010256",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8tqp.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/1011/74e101d1f70cd0ee57f903bc37ec1b88d32e6c7cc6078e89.png",
       "platforms": [
         "PS5"
       ],
@@ -5935,13 +5935,13 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000346",
       "title": "Monster Truck Championship",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000346",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2gba.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202007/1312/ArKJUruutDZyHHPSeqvDRubF.png",
       "platforms": [
         "PS5"
       ],
@@ -5960,7 +5960,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:229817",
@@ -5991,7 +5991,7 @@
       "id": "concept:10004427",
       "title": "MORDHAU",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004427",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1qrx.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202302/1509/823903c5a84f386f467fbec8022f302a3cd76835f020efae.png",
       "platforms": [
         "PS5"
       ],
@@ -6012,13 +6012,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004911",
       "title": "Mortal Kombat™ 1",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004911",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/1515/1cc63f4f4b2c9a9852fabefba4ca7eea936b1ef7867811a5.png",
       "platforms": [
         "PS5"
       ],
@@ -6037,13 +6037,13 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002581",
       "title": "My Friend Peppa Pig",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002581",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3irs.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1715/g3LqT6URPeqn3S3SE15SnWnJ.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -6062,7 +6062,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10008721",
@@ -6244,7 +6244,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:203202",
@@ -6655,7 +6655,7 @@
       "id": "concept:234529",
       "title": "Persona 5 Royal Ultimate Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/234529",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coclf1.jpg",
+      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307YAAIxp7MZ2CspnYs9t7Eh7peTJys3KSrDMBplPuTdG0xmlQGSIXvf6-4Z6PhtxTIFymdkdSCH_hRDdI9T7dh-wh_zfu.png",
       "platforms": [
         "PS4"
       ],
@@ -6673,7 +6673,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000598",
@@ -6895,7 +6895,7 @@
       "id": "concept:233468",
       "title": "Power Rangers: Battle For The Grid",
       "storeUrl": "https://store.playstation.com/de-de/concept/233468",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1isu.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP5002/CUSA15284_00/Vn4uKIDb5wwrwUl1rNZzm56STS7wi9IY.png",
       "platforms": [
         "PS4"
       ],
@@ -6914,7 +6914,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:224929",
@@ -6966,7 +6966,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:216605",
@@ -7065,7 +7065,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:229997",
@@ -7196,7 +7196,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234774",
@@ -7425,7 +7425,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:210671",
@@ -7450,13 +7450,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000504",
       "title": "Rogue Lords",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000504",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3peb.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202111/0513/ypvQEl55fsAilYe6RgE2FpUR.png",
       "platforms": [
         "PS4"
       ],
@@ -7474,13 +7474,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10001348",
       "title": "Roguebook",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001348",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4bob.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202111/1813/FHhoyE3vgSQ9MZqIlxK8XMT9.png",
       "platforms": [
         "PS5"
       ],
@@ -7498,7 +7498,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10008324",
@@ -7524,7 +7524,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002870",
@@ -7554,7 +7554,7 @@
       "id": "concept:10008577",
       "title": "S.T.A.L.K.E.R.: Legends of the Zone Trilogy PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008577",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7uzc.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202504/1809/164791a50b916408ad98935ca030f312c78757bbf12d0c35.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7573,13 +7573,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000177",
       "title": "Sackboy: A Big Adventure PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000177",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4522.jpg",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/1614/TJiBEQMJ9qa93lWBu4sKScY9.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7600,13 +7600,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:229323",
       "title": "Sakuna: Of Rice and Ruin",
       "storeUrl": "https://store.playstation.com/de-de/concept/229323",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob1u5.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/0421/LUMjBRzWYhwYltvFWpvCr4ct.png",
       "platforms": [
         "PS4"
       ],
@@ -7625,13 +7625,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10003231",
       "title": "Salt and Sacrifice",
       "storeUrl": "https://store.playstation.com/de-de/concept/10003231",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobwoi.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/2805/3OfHHMHNfNcPznx1fuWQXquT.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7653,13 +7653,13 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10001263",
       "title": "SAMURAI WARRIORS 5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001263",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2ti0.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202104/2602/jIRiYO758aoaUYTX77Wsx2lb.png",
       "platforms": [
         "PS4"
       ],
@@ -7680,13 +7680,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10001697",
       "title": "SEASON: A letter to the future PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001697",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co56q9.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0319/Ap7NdK7pk3Xw3tH4LJFuM6d9.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7705,13 +7705,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10001738",
       "title": "Secret Neighbor",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001738",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1zil.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202310/2314/27cd13e614b08218e52cf51718f938f8e16968bd4f041833.png",
       "platforms": [
         "PS4"
       ],
@@ -7733,13 +7733,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004240",
       "title": "Session: Skate Sim",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004240",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co8851.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202509/1909/16ba82c23d973f61c7d7c5e26cae95c8166c39899c28cba2.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -7759,13 +7759,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:204156",
       "title": "Shadow of the Beast™",
       "storeUrl": "https://store.playstation.com/de-de/concept/204156",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA00951_00/HOeVki1iQ4BASztfTLgTt2htLlogwKdu.png",
       "platforms": [
         "PS4"
       ],
@@ -7784,7 +7784,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:225857",
@@ -8243,7 +8243,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:221765",
@@ -8438,7 +8438,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233784",
@@ -8512,7 +8512,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002568",
@@ -8640,7 +8640,7 @@
       "id": "concept:232708",
       "title": "Tetris® Effect: Connected",
       "storeUrl": "https://store.playstation.com/de-de/concept/232708",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7kus.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202301/2006/Jjqj4oIcWvyV4jGpDQkTsSag.png",
       "platforms": [
         "PS4"
       ],
@@ -8660,7 +8660,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007988",
@@ -8691,7 +8691,7 @@
       "id": "concept:10008245",
       "title": "The Casting of Frank Stone™",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008245",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/1719/d0129733cdcf7f11eac10f8171d83184fb2f4f23f7b19b95.png",
       "platforms": [
         "PS5"
       ],
@@ -8711,13 +8711,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002313",
       "title": "The Crew Motorfest Cross-Gen Bundle",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002313",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2217/aff7ae0da202d816a5761fd4ce865085320052f46223c770.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2315/607d9ed1ac762c9de33ef73fd09b3431d0b96ef4985ac2fb.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -8764,7 +8764,7 @@
       "id": "concept:204861",
       "title": "The Elder Scrolls Online (PS5)",
       "storeUrl": "https://store.playstation.com/de-de/concept/204861",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9nt3.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2521/0139eed8a6364389d3d50eacd6e6d0aaefc46e815b8d8107.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -8786,13 +8786,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:230955",
       "title": "The Elder Scrolls V: Skyrim Special Edition - PS5 & PS4",
       "storeUrl": "https://store.playstation.com/de-de/concept/230955",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1vco.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/2818/FuG72QFUf4aRYbSBAMNH2xwm.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -8812,13 +8812,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:228861",
       "title": "The Evil Within 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/228861",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5wgu.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0100/iLBYSuHyeGG5CVXTkSm4MKTo.png",
       "platforms": [
         "PS4"
       ],
@@ -8838,13 +8838,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10011105",
       "title": "The Exit 8",
       "storeUrl": "https://store.playstation.com/de-de/concept/10011105",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7fw1.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2505/34cb80e4a067cf254409922546821d594f431178fb715c92.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -8863,7 +8863,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002458",
@@ -8894,7 +8894,7 @@
       "id": "concept:231167",
       "title": "The Gardens Between",
       "storeUrl": "https://store.playstation.com/de-de/concept/231167",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/geovgtecshgrr1ksmzyy.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1006/yfnLy15X9en69ddxdcgAaO5C.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -8914,7 +8914,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002666",
@@ -8944,7 +8944,7 @@
       "id": "concept:204826",
       "title": "The Last Guardian™",
       "storeUrl": "https://store.playstation.com/de-de/concept/204826",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2318/3jnbbEumNaIlpdlyrq7pQUXe.png",
       "platforms": [
         "PS4"
       ],
@@ -8963,13 +8963,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002694",
       "title": "The Last of Us™ Part I",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002694",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png",
       "platforms": [
         "PS5"
       ],
@@ -8987,7 +8987,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:230079",
@@ -9167,7 +9167,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:216542",
@@ -9218,7 +9218,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004172",
@@ -9310,7 +9310,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:228868",
@@ -9462,7 +9462,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233112",
@@ -9490,7 +9490,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:203897",
@@ -9510,7 +9510,7 @@
         "ubisoft"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233592",
@@ -9536,7 +9536,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:204941",
@@ -9566,7 +9566,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232391",
@@ -9594,7 +9594,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:212740",
@@ -9620,7 +9620,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000393",
@@ -9702,7 +9702,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10011130",
@@ -9727,7 +9727,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:229520",
@@ -9779,7 +9779,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:216382",
@@ -9804,7 +9804,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:228851",
@@ -9832,7 +9832,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:221793",
@@ -9912,7 +9912,7 @@
       ],
       "perspective": null,
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:204990",
@@ -9945,7 +9945,7 @@
       "id": "concept:10001458",
       "title": "Two Point Campus",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001458",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co31nr.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202203/3011/GT1ZAtZiXW05nON8ZB6TdNA2.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -9964,13 +9964,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234969",
       "title": "Two Point Hospital™",
       "storeUrl": "https://store.playstation.com/de-de/concept/234969",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307p71284v8W0be02A6VSmSFCCMaV-cxLVeR-rne93k7Dsd7jX-lrTo4CB3OAAjsO5GXtMaIAUUqtqen96elfdpjgV6RzT.png",
       "platforms": [
         "PS4"
       ],
@@ -9988,13 +9988,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10009660",
       "title": "Two Point Museum",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009660",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9t39.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/3014/0494ed5040dbb383906f4bab12de9411722c247d769c1f05.png",
       "platforms": [
         "PS5"
       ],
@@ -10012,13 +10012,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10008192",
       "title": "Umamusume: Pretty Derby – Party Dash",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008192",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9504.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/1106/2ab8887fe4699ea1e7da810ed15421cda0846c58c927be9d.png",
       "platforms": [
         "PS4"
       ],
@@ -10037,7 +10037,7 @@
       ],
       "perspective": null,
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:205354",
@@ -10064,7 +10064,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005244",
@@ -10090,13 +10090,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:228887",
       "title": "Undertale",
       "storeUrl": "https://store.playstation.com/de-de/concept/228887",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cob1t2.jpg",
+      "image": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA09239_00/1/i_691ab24757a01bfc94c6f293abd4fac52478bdac0d5829388ceb9a4e4da9c7d1/i/icon0.png",
       "platforms": [
         "PS4"
       ],
@@ -10114,7 +10114,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:217373",
@@ -10142,7 +10142,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007897",
@@ -10159,7 +10159,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:205132",
@@ -10177,13 +10177,13 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000039",
       "title": "Untitled Goose Game",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000039",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1vqc.jpg",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202009/0405/GO4TUY9mA2UNJ54R0NPEEEBf.png",
       "platforms": [
         "PS4"
       ],
@@ -10206,13 +10206,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007965",
       "title": "V Rising",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007965",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coby9v.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2212/681ee3b52f89e9f71601a36c0f313665626f679abcd551b9.png",
       "platforms": [
         "PS5"
       ],
@@ -10234,7 +10234,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:205194",
@@ -10260,7 +10260,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10010458",
@@ -10338,7 +10338,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:224994",
@@ -10365,7 +10365,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10003330",
@@ -10382,13 +10382,13 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233226",
       "title": "Warhammer: Chaosbane Slayer Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/233226",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2k6h.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/2814/SPtJpKqndoc2mJO9xvjVkPJe.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -10412,13 +10412,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232764",
       "title": "Warhammer: Vermintide 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/232764",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co20u8.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP4122/CUSA13645_00/kQoHA5x2wEx7ruWi2lNhKyTXo4oEfOAP.png",
       "platforms": [
         "PS4"
       ],
@@ -10438,13 +10438,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10012449",
       "title": "WARRIORS: Abyss",
       "storeUrl": "https://store.playstation.com/de-de/concept/10012449",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9e1d.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/0406/6a5a37bdcf2df6cff320a5cb1739d04a19f18848a20c5944.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -10464,7 +10464,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232581",
@@ -10493,7 +10493,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:216759",
@@ -10512,7 +10512,7 @@
         "ubisoft"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:205264",
@@ -10540,13 +10540,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234709",
       "title": "Werewolf: The Apocalypse – Earthblood",
       "storeUrl": "https://store.playstation.com/de-de/concept/234709",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co259p.jpg",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202106/0715/VFixb2toiP73l3rExKbjGeH1.png",
       "platforms": [
         "PS4"
       ],
@@ -10562,7 +10562,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:221804",
@@ -10586,7 +10586,7 @@
       "id": "concept:234315",
       "title": "West of Dead",
       "storeUrl": "https://store.playstation.com/de-de/concept/234315",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2lpa.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202005/0507/2Qxl4co49CQWyOsqpeO8NFpC.png",
       "platforms": [
         "PS4"
       ],
@@ -10604,13 +10604,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004448",
       "title": "Wizard with a Gun",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004448",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co398y.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1318/134353dc3a941edb1087c2fa100e0df3c8918cd512abb16b.png",
       "platforms": [
         "PS5"
       ],
@@ -10631,13 +10631,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004116",
       "title": "Wo Long: Fallen Dynasty (PS4 & PS5)",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004116",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocjk6.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2609/lgPM04qlLofxYamtlfMfqkHZ.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -10660,7 +10660,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:205292",
@@ -10691,7 +10691,7 @@
       "id": "concept:205293",
       "title": "Wolfenstein: The Old Blood",
       "storeUrl": "https://store.playstation.com/de-de/concept/205293",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co21et.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3005/xvisZlFdwfRCyUphggKQdwJ4.png",
       "platforms": [
         "PS4"
       ],
@@ -10710,7 +10710,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232887",
@@ -10734,7 +10734,7 @@
       "id": "concept:229533",
       "title": "Wolfenstein® II: The New Colossus™ (CUSA07379)",
       "storeUrl": "https://store.playstation.com/de-de/concept/229533",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3018/MwvmVsIf2RIrC9LrHcilGzmu.png",
       "platforms": [
         "PS4"
       ],
@@ -10746,7 +10746,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:230658",
@@ -11034,7 +11034,7 @@
       "id": "concept:227869",
       "title": "LocoRoco™ 2 Remastered",
       "storeUrl": "https://store.playstation.com/de-de/concept/227869",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA07695_00/zE96z29SrXm2iY9pkMTKsf6dw4bKTVbi.png",
       "platforms": [
         "PS4"
       ],
@@ -11052,7 +11052,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:227868",
@@ -11196,7 +11196,7 @@
       "id": "concept:10010951",
       "title": "Mr Moskeeto",
       "storeUrl": "https://store.playstation.com/de-de/concept/10010951",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1623/484bf81e3d788bcef97b4b1af7e36900b6f0fe813b2faeda.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -11208,7 +11208,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005104",
@@ -11336,7 +11336,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10019710",
@@ -11361,7 +11361,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:227430",
@@ -11392,7 +11392,7 @@
       "id": "concept:203521",
       "title": "PaRappa The Rapper 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/203521",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co42bg.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA01946_00/VQznnnzZUqrc3zR8sJzj38WnRgvIAmjs.png",
       "platforms": [
         "PS4"
       ],
@@ -11409,7 +11409,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007599",
@@ -12280,7 +12280,7 @@
       "id": "concept:10005031",
       "title": "echoshift",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005031",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202206/2818/vswyl7DPrIDKyShl1NTKe4bE.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12301,7 +12301,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004411",
@@ -12333,7 +12333,7 @@
       "id": "concept:10004604",
       "title": "Everybody's Golf 2 (PS1)",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004604",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2819/mPqHEr0tK6Ba5fp6ijYQeX9x.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12345,13 +12345,13 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:207034",
       "title": "Everybody’s Tennis",
       "storeUrl": "https://store.playstation.com/de-de/concept/207034",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA02270_00/S7aVCLBVcNAbCQpLgxBraj6Igr0i4Ja6.png",
       "platforms": [
         "PS4"
       ],
@@ -12362,7 +12362,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:221705",
@@ -12386,7 +12386,7 @@
       "id": "concept:201538",
       "title": "FantaVision",
       "storeUrl": "https://store.playstation.com/de-de/concept/201538",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA01949_00/gHCxOb3pkaOeqU3IgaJWumTeWgw6GPyl.png",
       "platforms": [
         "PS4"
       ],
@@ -12404,7 +12404,7 @@
       ],
       "perspective": null,
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10010950",
@@ -12428,7 +12428,7 @@
       "id": "concept:10008137",
       "title": "G-Police",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008137",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202404/2317/9770c5764fa451640cadd999a61f44b7c91d5121bdbe9298.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12447,7 +12447,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:208240",
@@ -12481,7 +12481,7 @@
       "id": "concept:10010578",
       "title": "Ghosthunter",
       "storeUrl": "https://store.playstation.com/de-de/concept/10010578",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0519/64b26d812ffbfec1acffeaa7d3a61effb12400fff2d95935.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12500,13 +12500,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10017591",
       "title": "Gitaroo-Man",
       "storeUrl": "https://store.playstation.com/de-de/concept/10017591",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coc5rd.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2704/a22187bd7be9ca54c7e9181a650b8324448366d1c7d489ba.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12524,13 +12524,13 @@
       ],
       "perspective": "Audio",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:228618",
       "title": "God of War® III Remastered",
       "storeUrl": "https://store.playstation.com/de-de/concept/228618",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3koh.jpg",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/0711/p8JCvA8692BICXAPoyylh7ed.png",
       "platforms": [
         "PS4"
       ],
@@ -12549,13 +12549,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005103",
       "title": "GODS EATER BURST PS4™ & PS5®",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005103",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202402/2102/31b372bce7227435ea70ba0bbc5b13d2b77c9f01f283fcc3.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12568,13 +12568,13 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10008233",
       "title": "Grandia",
       "storeUrl": "https://store.playstation.com/de-de/concept/10008233",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202309/1808/68d0c363b5d74c0ce73d602c03813902e23f0c21554cca5b.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12593,13 +12593,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007237",
       "title": "Gravity Crash Portable",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007237",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2ipo.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/2118/f58aafe6314964d493e53e601208e5cb45b85041cda3f80a.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12618,13 +12618,13 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:226357",
       "title": "Gravity Rush™ Remastered",
       "storeUrl": "https://store.playstation.com/de-de/concept/226357",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2320/2lfQr4uLgI8usrz5anG6a9wC.png",
       "platforms": [
         "PS4"
       ],
@@ -12643,7 +12643,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:207498",
@@ -12674,7 +12674,7 @@
       "id": "concept:10005231",
       "title": "Harvest Moon: Back to Nature",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005231",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0200/HWOmHfeDBYSnicWL64UM4Nj5.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12693,7 +12693,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:201902",
@@ -12847,7 +12847,7 @@
       "id": "concept:202185",
       "title": "Jak II™: Renegade",
       "storeUrl": "https://store.playstation.com/de-de/concept/202185",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA07990_00/PDXfEyJt3Ux4Ht21eDwOxollEuXvJVn5.png",
       "platforms": [
         "PS4"
       ],
@@ -12859,13 +12859,13 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:229131",
       "title": "Jak™X: Combat Racing",
       "storeUrl": "https://store.playstation.com/de-de/concept/229131",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA07992_00/4vvIrTHnwvjXnG1HUogV2orQgQ6AIFIz.png",
       "platforms": [
         "PS4"
       ],
@@ -12877,7 +12877,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007464",
@@ -12944,7 +12944,7 @@
       "id": "concept:10004413",
       "title": "Jumping Flash!",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004413",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2915/MLHZVF9BsMdXFVNEmOvSrevO.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12963,7 +12963,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005028",
@@ -13040,7 +13040,7 @@
       "id": "concept:10004410",
       "title": "Kurushi",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004410",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2821/eJcpBqtzv6Ke3uFsu9rbrLS5.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13052,7 +13052,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004412",
@@ -13133,7 +13133,7 @@
       "id": "concept:227162",
       "title": "Lock's Quest",
       "storeUrl": "https://store.playstation.com/de-de/concept/227162",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1px4.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP4389/CUSA07305_00/i7HC85pQKoKJNKwVF6iCQcTX5fnynphD.png",
       "platforms": [
         "PS4"
       ],
@@ -13151,7 +13151,7 @@
       ],
       "perspective": null,
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004655",
@@ -13182,7 +13182,7 @@
       "id": "concept:235243",
       "title": "Patapon™ 2 Remastered",
       "storeUrl": "https://store.playstation.com/de-de/concept/235243",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307DXGQ_7-cP3VJNptmA-r5B6gaczXXuWaP6JsdGSO-gAwfsSy2c-VAJ9y-FJMCQyqM3YNXSxf5dukmmu4qRwRLEc2kZqh.png",
       "platforms": [
         "PS4"
       ],
@@ -13201,13 +13201,13 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:227969",
       "title": "Patapon™ Remastered",
       "storeUrl": "https://store.playstation.com/de-de/concept/227969",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA07285_00/LxyyiLIqCUdfDlYrHHwvxRRz4Vc15qng.png",
       "platforms": [
         "PS4"
       ],
@@ -13226,7 +13226,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005043",
@@ -13257,7 +13257,7 @@
       "id": "concept:203612",
       "title": "Primal",
       "storeUrl": "https://store.playstation.com/de-de/concept/203612",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1oye.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA02077_00/s3d6AWNbTx56d9djDifTkv80igMAbsEt.png",
       "platforms": [
         "PS4"
       ],
@@ -13276,13 +13276,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10006276",
       "title": "Pursuit Force",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006276",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202303/1018/e805d17e3c6ad2eda9caff27e98efc865c3e4769afe67990.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13301,13 +13301,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005512",
       "title": "Pursuit Force: Extreme Justice",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005512",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202307/1315/f90595ee7f24093db1ef3c0d50b9793c8f27f5b766a9d75f.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13326,7 +13326,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:233101",
@@ -13359,7 +13359,7 @@
       "id": "concept:10005099",
       "title": "R4 RIDGE RACER TYPE 4® PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005099",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202303/0909/2c1effc6f46df595423ea8f7158df0550643b8eeba8ad80e.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13380,13 +13380,13 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:203873",
       "title": "Rainbow Moon",
       "storeUrl": "https://store.playstation.com/de-de/concept/203873",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocvyo.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP2005/CUSA03436_00/G6Nbc4NowufL52qJ0xkdJrdLX6U6MLUN.png",
       "platforms": [
         "PS4"
       ],
@@ -13405,13 +13405,13 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007648",
       "title": "Rally Cross",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007648",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202312/1221/870e59fef446ed5d3e9879b431c77c6693394e003943e8c5.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13431,13 +13431,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007644",
       "title": "Ratchet & Clank: Size Matters",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007644",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202406/2123/c261a0f006b6c663003a793fcccd2903ffc77732d283ea49.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -13456,7 +13456,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005150",
@@ -13963,7 +13963,7 @@
       "id": "concept:204271",
       "title": "STAR WARS® JEDI STARFIGHTER™",
       "storeUrl": "https://store.playstation.com/de-de/concept/204271",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP1006/CUSA03494_00/9MsXVY5UULzSHB5BTreuKhwep3KZwvQP.png",
       "platforms": [
         "PS4"
       ],
@@ -13975,7 +13975,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:204268",
@@ -13994,7 +13994,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:204227",
@@ -14117,7 +14117,7 @@
       "id": "concept:10005946",
       "title": "Syphon Filter 3",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005946",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2723/bTK3DgMPjGGBLxDOBAuiQGqI.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -14136,7 +14136,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004652",
@@ -14212,7 +14212,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005101",
@@ -14230,13 +14230,13 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10015859",
       "title": "TEKKEN DARK RESURRECTION PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10015859",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0404/cec873df23665ab9d2102de16ef6aaddefa60c4a60314775.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -14255,13 +14255,13 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005100",
       "title": "TEKKEN2 PS4 & PS5",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005100",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202204/2603/sIUqSXFhTJWlDhFEpCQV93rH.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -14273,7 +14273,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:228638",
@@ -14299,13 +14299,13 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:228639",
       "title": "The Last of Us™: Left Behind (Standalone)",
       "storeUrl": "https://store.playstation.com/de-de/concept/228639",
-      "image": null,
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA00558_00/ciuvvuMA589abWN7PQ1n2evC0wV1UWCw.png",
       "platforms": [
         "PS4"
       ],
@@ -14317,7 +14317,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004605",
@@ -14392,7 +14392,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007618",
@@ -14497,7 +14497,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10013616",
@@ -14932,7 +14932,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007196",
@@ -14958,7 +14958,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10019857",
@@ -14989,7 +14989,7 @@
       "id": "concept:202806",
       "title": "Metro Redux",
       "storeUrl": "https://store.playstation.com/de-de/concept/202806",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co4b2q.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP4062/CUSA00593_00/74C5XBvmTgxNNjvECPxlj8tC639xS0WR.png",
       "platforms": [
         "PS4"
       ],
@@ -15008,7 +15008,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10013857",
@@ -15085,7 +15085,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10009203",
@@ -15246,5 +15246,5 @@
   ],
   "errors": [],
   "changes": [],
-  "lastAttemptAt": "2026-10-17T03:11:27.185Z"
+  "lastAttemptAt": "2026-10-17T08:03:16.215Z"
 }
