@@ -1,8 +1,8 @@
 {
-  "date": "16.10.2026",
-  "edition": "AUSGABE #041",
+  "date": "17.10.2026",
+  "edition": "AUSGABE #042",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "16.10 · LIVE",
+  "newCount": "17.10 · LIVE",
   "leadTitle": "Peak erklimmt PS5: Release am 22. Oktober",
   "leadDate": "15.10.2026",
   "leadMeta": "Kletterspiel „Peak“ erscheint am 22. Oktober für PS5: Erfahrt, wie Team Peak Freundschaft und Koop-Chaos auf den Berg bringt.",
@@ -96,7 +96,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 16.10.2026 · 9/9 Quellen · 1 Warnung(en)",
+  "radarCheck": "Stand 17.10.2026 · 9/9 Quellen · Store 8 geprüft · 8/11 Details",
   "sourceAlerts": [
     {
       "title": "Peak erklimmt PS5: Release am 22. Oktober",
@@ -116,12 +116,12 @@
   ],
   "editorial": [],
   "health": {
-    "status": "warning",
-    "checkedAt": "2026-10-16T13:39:29.839Z",
+    "status": "ok",
+    "checkedAt": "2026-10-17T11:39:42.445Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
-    "warnings": 1,
+    "warnings": 0,
     "storeDiscoveryMode": "dynamic-browser",
     "storeProductsVerified": 8,
     "storeDealsSelected": 3,
@@ -130,14 +130,12 @@
     "automationNotes": 0,
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
-    "catalogFreshness": "stale",
-    "lastSuccessfulCheck": "2026-10-16T13:38:50.155Z"
+    "catalogFreshness": "ok",
+    "lastSuccessfulCheck": "2026-10-17T11:39:42.445Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-16T13:39:29.839Z",
-    "errors": [
-      "PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden"
-    ],
+    "checkedAt": "2026-10-17T11:39:42.445Z",
+    "errors": [],
     "sources": [
       {
         "name": "PlayStation Blog",
@@ -262,7 +260,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-16T13:39:13.852Z",
+    "checkedAt": "2026-10-17T11:39:29.001Z",
     "titles": 11,
     "fetched": 4,
     "enriched": 8,
@@ -322,7 +320,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-16T13:38:59.051Z",
+    "checkedAt": "2026-10-17T11:39:15.338Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -336,7 +334,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-16T13:38:59.167Z",
+    "checkedAt": "2026-10-17T11:39:15.422Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -349,7 +347,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-16T13:39:19.843Z",
+    "checkedAt": "2026-10-17T11:39:33.999Z",
     "verified": 0,
     "missing": [
       "Mafia: The Old Country",
@@ -366,8 +364,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-16T13:38:57.245Z",
-    "date": "16.10.2026",
+    "checkedAt": "2026-10-17T11:39:13.259Z",
+    "date": "17.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -392,8 +390,8 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-16T13:39:20.565Z",
-    "berlinDate": "2026-10-16",
+    "checkedAt": "2026-10-17T11:39:34.954Z",
+    "berlinDate": "2026-10-17",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],
