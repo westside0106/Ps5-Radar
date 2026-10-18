@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-17T11:39:56.663Z",
+  "checkedAt": "2026-10-18T12:08:11.351Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1165,
+    "count": 1164,
     "views": {
       "deals": {
-        "expected": 444,
-        "observed": 444,
-        "count": 444,
+        "expected": 443,
+        "observed": 443,
+        "count": 443,
         "complete": true,
         "attempts": 1
       },
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-17T11:39:56.663Z",
+      "observedAt": "2026-10-18T12:08:11.351Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-17T11:39:56.663Z",
+      "observedAt": "2026-10-18T12:08:11.351Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-17T11:39:56.663Z",
+      "observedAt": "2026-10-18T12:08:11.351Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -116,22 +116,6 @@
         "Action & Abenteuer",
         "Platformer",
         "Sport"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n7mvhhlzjwg",
-      "id": "9n7mvhhlzjwg",
-      "title": "007 First Light - Deluxe Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/007-first-light-deluxe-edition/9n7mvhhlzjwg",
-      "cover": "https://store-images.s-microsoft.com/image/apps.44331.14061820152705655.7a34a258-001d-4a91-b044-d6e19df5ad73.c5cc7b8b-d878-4d42-967a-13bb4487bcc9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 5599,
-      "regularPriceMinor": 7999,
-      "genres": [
-        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -11902,38 +11886,6 @@
       ]
     },
     {
-      "key": "xbox:product:9nf005tnwkzx",
-      "id": "9nf005tnwkzx",
-      "title": "Once Upon a Katamari - Rolling Live Highlights Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/once-upon-a-katamari-rolling-live-highlights-edition/9nf005tnwkzx",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29079.13604609799064361.0aa14261-3c5e-4960-9c17-fe9a5a7e13ed.97bdae71-bdb5-43ba-9b2c-8ca89af5a02b?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 4499,
-      "regularPriceMinor": 4999,
-      "genres": [
-        "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9pkpsn24zr1j",
-      "id": "9pkpsn24zr1j",
-      "title": "Once Upon a Katamari - Royal Sound Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/once-upon-a-katamari-royal-sound-edition/9pkpsn24zr1j",
-      "cover": "https://store-images.s-microsoft.com/image/apps.16600.14262856645225157.7c69903e-6867-49b5-8f8c-5fdf0ab8d10e.a0cd914f-480b-4a20-b2d4-f6af5d9d9b0e?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 6799,
-      "regularPriceMinor": 7999,
-      "genres": [
-        "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nx7nwzqn500",
       "id": "9nx7nwzqn500",
       "title": "One Word by POWGI",
@@ -14301,6 +14253,40 @@
       "genres": [
         "Action & Abenteuer",
         "Rätsel & Wissen"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9mz2r9pd8l6w",
+      "id": "9mz2r9pd8l6w",
+      "title": "Shadow Cat (Xbox One)",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/shadow-cat-xbox-one/9mz2r9pd8l6w",
+      "cover": "https://store-images.s-microsoft.com/image/apps.6198.13882820594052048.fc15a1b0-b355-439d-9849-1541177197e3.f9327073-af06-4856-a773-6b673f18eacc?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 399,
+      "regularPriceMinor": 499,
+      "genres": [
+        "Action & Abenteuer",
+        "Platformer"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9nlcszbxzwx5",
+      "id": "9nlcszbxzwx5",
+      "title": "Shadow Cat (Xbox Series)",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/shadow-cat-xbox-series/9nlcszbxzwx5",
+      "cover": "https://store-images.s-microsoft.com/image/apps.6198.13709542874853110.bc093d44-22f6-456e-ae76-29bd79bef2d8.45c0823f-1871-4152-ac35-3466f9c1b149?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 399,
+      "regularPriceMinor": 499,
+      "genres": [
+        "Action & Abenteuer",
+        "Platformer"
       ],
       "services": []
     },
