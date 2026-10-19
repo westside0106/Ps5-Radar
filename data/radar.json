@@ -1,23 +1,23 @@
 {
-  "date": "18.10.2026",
-  "edition": "AUSGABE #043",
-  "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "18.10 · LIVE",
+  "date": "19.10.2026",
+  "edition": "AUSGABE #044",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
+  "newCount": "19.10 · LIVE",
   "leadTitle": "Peak erklimmt PS5: Release am 22. Oktober",
   "leadDate": "15.10.2026",
   "leadMeta": "Kletterspiel „Peak“ erscheint am 22. Oktober für PS5: Erfahrt, wie Team Peak Freundschaft und Koop-Chaos auf den Berg bringt.",
   "leadPrice": null,
   "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/f1466e01a66f4cc1fc90e226b8b4f2bf3974e497.jpg",
-  "secondary1Title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
-  "secondary1Date": "14.10.2026",
-  "secondary1Meta": "Hallo zusammen! Wir freuen uns, heute Neuigkeiten zu Gran Turismo mit euch teilen zu können.",
+  "secondary1Title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
+  "secondary1Date": "19.10.2026",
+  "secondary1Meta": "Ab heute (19. Oktober) ist das Update Saros: Zenith für alle Besitzer von Saros ohne zusätzliche Kosten verfügbar.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6d9f5f5f5b1b464c1319876195c43235bf3000e5-scaled.jpg",
-  "secondary2Title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
-  "secondary2Date": "13.10.2026",
-  "secondary2Meta": "Stellt euch Folgendes vor: Eine kühle Herbstbrise weht durch den Wald, während ein Bataillon Roboter auf einen Außenposten zuläuft.",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6f74532604007217dd93d5abbe62a5276e765ed2.jpg",
+  "secondary2Title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
+  "secondary2Date": "14.10.2026",
+  "secondary2Meta": "Hallo zusammen! Wir freuen uns, heute Neuigkeiten zu Gran Turismo mit euch teilen zu können.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/789f7d3c0087d25bc443ff5900d178ec2c36449b.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6d9f5f5f5b1b464c1319876195c43235bf3000e5-scaled.jpg",
   "psplusLabel": "OKTOBER 2026",
   "psplusTitle": "Oktober-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -96,7 +96,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 18.10.2026 · 9/9 Quellen · Store 8 geprüft · 8/11 Details",
+  "radarCheck": "Stand 19.10.2026 · 9/9 Quellen · Store 8 geprüft · 8/11 Details",
   "sourceAlerts": [
     {
       "title": "Peak erklimmt PS5: Release am 22. Oktober",
@@ -104,20 +104,27 @@
       "type": "editorial"
     },
     {
-      "title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
-      "url": "https://blog.de.playstation.com/2026/10/14/spec-iv-teil-1-von-gran-turismo-7-erscheint-morgen-erster-blick-auf-den-dualsense-wireless-controller-gran-turismo-limited-edition/",
+      "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
+      "url": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
       "type": "editorial"
     },
     {
-      "title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
-      "url": "https://blog.de.playstation.com/2026/10/13/helldivers-2-visier-der-autoritaet-premium-kriegsanleihe-erscheint-am-20-oktober/",
+      "title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
+      "url": "https://blog.de.playstation.com/2026/10/14/spec-iv-teil-1-von-gran-turismo-7-erscheint-morgen-erster-blick-auf-den-dualsense-wireless-controller-gran-turismo-limited-edition/",
       "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
+      "url": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
+      "category": "news",
+      "score": 61
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-18T12:05:22.344Z",
+    "checkedAt": "2026-10-19T14:44:10.897Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -131,10 +138,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-18T12:05:22.344Z"
+    "lastSuccessfulCheck": "2026-10-19T14:44:10.897Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-18T12:05:22.344Z",
+    "checkedAt": "2026-10-19T14:44:10.897Z",
     "errors": [],
     "sources": [
       {
@@ -177,8 +184,8 @@
   },
   "gameDetails": {
     "Peak erklimmt PS5: Release am 22. Oktober": {},
+    "Saros: Kostenloses Zenith-Update ab sofort verfügbar": {},
     "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition": {},
-    "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober": {},
     "Mafia: The Old Country": {
       "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 05.10."
     },
@@ -260,7 +267,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-18T12:05:09.495Z",
+    "checkedAt": "2026-10-19T14:43:54.990Z",
     "titles": 11,
     "fetched": 4,
     "enriched": 8,
@@ -320,7 +327,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-18T12:04:56.502Z",
+    "checkedAt": "2026-10-19T14:43:37.907Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -334,7 +341,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-18T12:04:56.593Z",
+    "checkedAt": "2026-10-19T14:43:38.005Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -347,7 +354,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-18T12:05:14.423Z",
+    "checkedAt": "2026-10-19T14:44:01.383Z",
     "verified": 0,
     "missing": [
       "Mafia: The Old Country",
@@ -364,8 +371,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-18T12:04:55.321Z",
-    "date": "18.10.2026",
+    "checkedAt": "2026-10-19T14:43:33.787Z",
+    "date": "19.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -375,24 +382,24 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/f1466e01a66f4cc1fc90e226b8b4f2bf3974e497.jpg"
       },
       {
+        "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
+        "date": "19.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6f74532604007217dd93d5abbe62a5276e765ed2.jpg"
+      },
+      {
         "title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
         "date": "14.10.2026",
         "url": "https://blog.de.playstation.com/2026/10/14/spec-iv-teil-1-von-gran-turismo-7-erscheint-morgen-erster-blick-auf-den-dualsense-wireless-controller-gran-turismo-limited-edition/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6d9f5f5f5b1b464c1319876195c43235bf3000e5-scaled.jpg"
-      },
-      {
-        "title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
-        "date": "13.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/13/helldivers-2-visier-der-autoritaet-premium-kriegsanleihe-erscheint-am-20-oktober/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/789f7d3c0087d25bc443ff5900d178ec2c36449b.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-18T12:05:15.056Z",
-    "berlinDate": "2026-10-18",
-    "newPostsToday": 0,
+    "checkedAt": "2026-10-19T14:44:02.381Z",
+    "berlinDate": "2026-10-19",
+    "newPostsToday": 1,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [

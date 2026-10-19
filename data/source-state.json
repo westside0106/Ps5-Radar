@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-10-18T12:04:49.522Z",
+  "checkedAt": "2026-10-19T14:43:25.745Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
+        "link": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
+        "pubDate": "Mon, 19 Oct 2026 12:00:00 +0000"
+      },
       {
         "title": "Peak erklimmt PS5: Release am 22. Oktober",
         "link": "https://blog.de.playstation.com/2026/10/15/peak-erklimmt-ps5-release-am-22-oktober/",
@@ -47,14 +52,16 @@
         "title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
         "link": "https://blog.de.playstation.com/2026/10/08/rockbeasts-critical-role-an-bord-release-im-januar-2027/",
         "pubDate": "Thu, 08 Oct 2026 17:00:00 +0000"
-      },
-      {
-        "title": "Phönix-Cyclops erscheint am 2. November in MARVEL Tōkon: Fighting Souls",
-        "link": "https://blog.de.playstation.com/2026/10/07/phoenix-cyclops-erscheint-am-2-november-in-marvel-tokon-fighting-souls/",
-        "pubDate": "Wed, 07 Oct 2026 17:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
+        "link": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
+        "pubDate": "Mon, 19 Oct 2026 12:00:00 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
@@ -138,7 +145,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-18T12:05:15.056Z",
+      "checkedAt": "2026-10-19T14:44:02.381Z",
       "parsed": 5,
       "accepted": [],
       "rejected": [
@@ -152,12 +159,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 609235
+    "bytes": 609450
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241406,
+    "bytes": 241530,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -170,7 +177,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163851,
+    "bytes": 163823,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
