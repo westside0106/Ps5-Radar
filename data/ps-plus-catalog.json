@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-18T08:20:31.923Z",
+  "checkedAt": "2026-10-19T09:19:30.557Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-18T08:20:31.923Z"
+      "checkedAt": "2026-10-19T09:19:30.557Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-18T08:20:31.923Z"
+      "checkedAt": "2026-10-19T09:19:30.557Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 168,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-18T08:20:31.923Z"
+      "checkedAt": "2026-10-19T09:19:30.557Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-18T08:20:31.923Z"
+      "checkedAt": "2026-10-19T09:19:30.557Z"
     }
   },
   "games": [
@@ -2669,7 +2669,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:201017",
@@ -6293,7 +6293,7 @@
       "id": "concept:203215",
       "title": "Omega Quintet",
       "storeUrl": "https://store.playstation.com/de-de/concept/203215",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9uim.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP0031/CUSA01951_00/vcNlsWag3K2ccove6z4DYsrFmYdjrkVk.png",
       "platforms": [
         "PS4"
       ],
@@ -6312,7 +6312,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10002601",
@@ -6730,7 +6730,7 @@
       "id": "concept:10002220",
       "title": "PJ Masks: Heroes of the Night",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002220",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3grq.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/0711/BBTw1d190prbaHtR5hLwDCy0.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -6750,7 +6750,7 @@
       ],
       "perspective": null,
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10009610",
@@ -8869,7 +8869,7 @@
       "id": "concept:10002458",
       "title": "The Forgotten City",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002458",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3muu.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202106/3010/Sgq7l1vKwsYclxIkaEnYyF4n.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -8888,7 +8888,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:231167",
@@ -8920,7 +8920,7 @@
       "id": "concept:10002666",
       "title": "The Invincible",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002666",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co61ol.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202310/2713/ae43dd232ad127bd49fc04140ee0642f8345398ee0164766.png",
       "platforms": [
         "PS5"
       ],
@@ -8938,7 +8938,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:204826",
@@ -9753,7 +9753,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:203938",
@@ -9859,7 +9859,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:230059",
@@ -11000,7 +11000,7 @@
       ],
       "perspective": "First-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:232371",
@@ -12274,7 +12274,7 @@
       ],
       "perspective": "Isometrisch",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005031",
@@ -12307,7 +12307,7 @@
       "id": "concept:10004411",
       "title": "Everybody's Golf",
       "storeUrl": "https://store.playstation.com/de-de/concept/10004411",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2f81.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202205/0218/ZoXA7hnthuu6TJv2nTXHGoDH.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12327,7 +12327,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004604",
@@ -12649,7 +12649,7 @@
       "id": "concept:207498",
       "title": "GUILTY GEAR Xrd -REVELATOR-",
       "storeUrl": "https://store.playstation.com/de-de/concept/207498",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2zs0.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP4293/CUSA04759_00/nAT29e55ANQs5m9n40ZwF8yIbdt7GCsU.png",
       "platforms": [
         "PS4"
       ],
@@ -12668,7 +12668,7 @@
       ],
       "perspective": "Seitenansicht",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10005231",
@@ -12926,7 +12926,7 @@
       "id": "concept:10009010",
       "title": "Jet Rider 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009010",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202401/2422/518a6266070d462266626c87fe5922d4bb9faeb4c0d26625.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -12938,7 +12938,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10004413",
@@ -14342,7 +14342,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": null
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:211634",
@@ -14742,7 +14742,7 @@
       "id": "concept:205307",
       "title": "Wild Arms 3",
       "storeUrl": "https://store.playstation.com/de-de/concept/205307",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2wi4.jpg",
+      "image": "https://image.api.playstation.com/cdn/EP9000/CUSA02273_00/7J2WPvwcnQi9LZkarq2FLYo64LPUlEmK.png",
       "platforms": [
         "PS4"
       ],
@@ -14760,7 +14760,7 @@
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
-      "imageSource": "IGDB"
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10011231",
@@ -15246,5 +15246,5 @@
   ],
   "errors": [],
   "changes": [],
-  "lastAttemptAt": "2026-10-18T08:20:31.923Z"
+  "lastAttemptAt": "2026-10-19T09:19:30.557Z"
 }
