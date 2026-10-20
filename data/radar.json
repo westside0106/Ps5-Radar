@@ -1,8 +1,8 @@
 {
-  "date": "19.10.2026",
-  "edition": "AUSGABE #044",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "19.10 · LIVE",
+  "date": "20.10.2026",
+  "edition": "AUSGABE #045",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "20.10 · LIVE",
   "leadTitle": "Peak erklimmt PS5: Release am 22. Oktober",
   "leadDate": "15.10.2026",
   "leadMeta": "Kletterspiel „Peak“ erscheint am 22. Oktober für PS5: Erfahrt, wie Team Peak Freundschaft und Koop-Chaos auf den Berg bringt.",
@@ -96,7 +96,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 19.10.2026 · 9/9 Quellen · Store 8 geprüft · 8/11 Details",
+  "radarCheck": "Stand 20.10.2026 · 9/9 Quellen · Store 8 geprüft · 8/11 Details",
   "sourceAlerts": [
     {
       "title": "Peak erklimmt PS5: Release am 22. Oktober",
@@ -114,17 +114,10 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
-      "url": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
-      "category": "news",
-      "score": 61
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-19T14:44:10.897Z",
+    "checkedAt": "2026-10-20T12:46:14.175Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -138,10 +131,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-19T14:44:10.897Z"
+    "lastSuccessfulCheck": "2026-10-20T12:46:14.175Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-19T14:44:10.897Z",
+    "checkedAt": "2026-10-20T12:46:14.175Z",
     "errors": [],
     "sources": [
       {
@@ -267,7 +260,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-19T14:43:54.990Z",
+    "checkedAt": "2026-10-20T12:45:59.178Z",
     "titles": 11,
     "fetched": 4,
     "enriched": 8,
@@ -327,7 +320,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-19T14:43:37.907Z",
+    "checkedAt": "2026-10-20T12:45:44.546Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -341,7 +334,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-19T14:43:38.005Z",
+    "checkedAt": "2026-10-20T12:45:44.651Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -354,7 +347,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-19T14:44:01.383Z",
+    "checkedAt": "2026-10-20T12:46:04.796Z",
     "verified": 0,
     "missing": [
       "Mafia: The Old Country",
@@ -371,8 +364,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-19T14:43:33.787Z",
-    "date": "19.10.2026",
+    "checkedAt": "2026-10-20T12:45:43.741Z",
+    "date": "20.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -397,9 +390,9 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-19T14:44:02.381Z",
-    "berlinDate": "2026-10-19",
-    "newPostsToday": 1,
+    "checkedAt": "2026-10-20T12:46:05.697Z",
+    "berlinDate": "2026-10-20",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [

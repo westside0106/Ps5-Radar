@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-19T14:43:25.745Z",
+  "checkedAt": "2026-10-20T12:45:37.454Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,18 +54,11 @@
         "pubDate": "Thu, 08 Oct 2026 17:00:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
-        "link": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
-        "pubDate": "Mon, 19 Oct 2026 12:00:00 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 210306,
+    "bytes": 209339,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176897,
+    "bytes": 175880,
     "updated": true,
     "parsed": {
       "games": [
@@ -145,7 +138,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-19T14:44:02.381Z",
+      "checkedAt": "2026-10-20T12:46:05.697Z",
       "parsed": 5,
       "accepted": [],
       "rejected": [
@@ -164,7 +157,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241530,
+    "bytes": 241529,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -177,7 +170,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 163823,
+    "bytes": 173803,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
