@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-20T08:53:30.528Z",
+  "checkedAt": "2026-10-21T08:53:47.037Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-20T08:53:30.528Z"
+      "checkedAt": "2026-10-21T08:53:47.037Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-20T08:53:30.528Z"
+      "checkedAt": "2026-10-21T08:53:47.037Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 168,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-20T08:53:30.528Z"
+      "checkedAt": "2026-10-21T08:53:47.037Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-20T08:53:30.528Z"
+      "checkedAt": "2026-10-21T08:53:47.037Z"
     }
   },
   "games": [
@@ -10548,7 +10548,7 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/234709",
       "image": "https://image.api.playstation.com/vulcan/img/rnd/202106/0715/VFixb2toiP73l3rExKbjGeH1.png",
       "platforms": [
-        "PS4"
+        "PS5"
       ],
       "genres": [],
       "services": [
@@ -15246,5 +15246,5 @@
   ],
   "errors": [],
   "changes": [],
-  "lastAttemptAt": "2026-10-20T08:53:30.528Z"
+  "lastAttemptAt": "2026-10-21T08:53:47.037Z"
 }
