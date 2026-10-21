@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-10-20T12:45:37.454Z",
+  "checkedAt": "2026-10-21T12:58:03.044Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
+        "link": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
+        "pubDate": "Tue, 20 Oct 2026 13:00:00 +0000"
+      },
       {
         "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
         "link": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
@@ -47,18 +52,20 @@
         "title": "Die Player’s Choice Angebote sind im PlayStation Store gelandet",
         "link": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
         "pubDate": "Fri, 09 Oct 2026 11:20:39 +0000"
-      },
-      {
-        "title": "Rockbeasts: Critical Role an Bord, Release im Januar 2027",
-        "link": "https://blog.de.playstation.com/2026/10/08/rockbeasts-critical-role-an-bord-release-im-januar-2027/",
-        "pubDate": "Thu, 08 Oct 2026 17:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
+        "link": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
+        "pubDate": "Tue, 20 Oct 2026 13:00:00 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209339,
+    "bytes": 209270,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175880,
+    "bytes": 175861,
     "updated": true,
     "parsed": {
       "games": [
@@ -138,7 +145,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-20T12:46:05.697Z",
+      "checkedAt": "2026-10-21T12:58:36.594Z",
       "parsed": 5,
       "accepted": [],
       "rejected": [
@@ -152,12 +159,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 609450
+    "bytes": 598987
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241529,
+    "bytes": 241526,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -170,7 +177,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173803,
+    "bytes": 173801,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
@@ -217,11 +224,12 @@
         "prices": [
           "24,99 €",
           "49,99 €",
-          "99,99 €",
-          "5 €"
+          "39,99 €",
+          "99,99 €"
         ],
         "discounts": [
-          "-50 %"
+          "-50 %",
+          "-60 %"
         ]
       }
     }

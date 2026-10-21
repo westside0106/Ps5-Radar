@@ -1,8 +1,8 @@
 {
-  "date": "20.10.2026",
-  "edition": "AUSGABE #045",
+  "date": "21.10.2026",
+  "edition": "AUSGABE #046",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "20.10 · LIVE",
+  "newCount": "21.10 · LIVE",
   "leadTitle": "Peak erklimmt PS5: Release am 22. Oktober",
   "leadDate": "15.10.2026",
   "leadMeta": "Kletterspiel „Peak“ erscheint am 22. Oktober für PS5: Erfahrt, wie Team Peak Freundschaft und Koop-Chaos auf den Berg bringt.",
@@ -13,11 +13,11 @@
   "secondary1Meta": "Ab heute (19. Oktober) ist das Update Saros: Zenith für alle Besitzer von Saros ohne zusätzliche Kosten verfügbar.",
   "secondary1Price": null,
   "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6f74532604007217dd93d5abbe62a5276e765ed2.jpg",
-  "secondary2Title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
-  "secondary2Date": "14.10.2026",
-  "secondary2Meta": "Hallo zusammen! Wir freuen uns, heute Neuigkeiten zu Gran Turismo mit euch teilen zu können.",
+  "secondary2Title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
+  "secondary2Date": "20.10.2026",
+  "secondary2Meta": "Erfahrt im Hands-on, wie Visions in Final Fantasy Resonance eure Gruppe und den Kampf grundlegend verändern.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6d9f5f5f5b1b464c1319876195c43235bf3000e5-scaled.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/b869c580514658b6007f9af664f0d2d6c67986d8.jpg",
   "psplusLabel": "OKTOBER 2026",
   "psplusTitle": "Oktober-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -60,19 +60,19 @@
       "image": null
     },
     {
+      "title": "WWE 2K26 Standard Edition",
+      "platform": "PS5",
+      "price": "31,99 €",
+      "oldPrice": "79,99 €",
+      "discount": "-60 %",
+      "image": null
+    },
+    {
       "title": "Forza Horizon 5 Premium Edition",
       "platform": "PS5",
       "price": "35,99 €",
       "oldPrice": "89,99 €",
       "discount": "-60 %",
-      "image": null
-    },
-    {
-      "title": "WWE 2K26 Standard Edition",
-      "platform": "PS5",
-      "price": "49,99 €",
-      "oldPrice": "99,99 €",
-      "discount": "-50 %",
       "image": null
     }
   ],
@@ -96,7 +96,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 20.10.2026 · 9/9 Quellen · Store 8 geprüft · 8/11 Details",
+  "radarCheck": "Stand 21.10.2026 · 9/9 Quellen · Store 16 geprüft · 8/11 Details",
   "sourceAlerts": [
     {
       "title": "Peak erklimmt PS5: Release am 22. Oktober",
@@ -109,21 +109,21 @@
       "type": "editorial"
     },
     {
-      "title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
-      "url": "https://blog.de.playstation.com/2026/10/14/spec-iv-teil-1-von-gran-turismo-7-erscheint-morgen-erster-blick-auf-den-dualsense-wireless-controller-gran-turismo-limited-edition/",
+      "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
+      "url": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
       "type": "editorial"
     }
   ],
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-20T12:46:14.175Z",
+    "checkedAt": "2026-10-21T12:58:43.540Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
     "storeDiscoveryMode": "dynamic-browser",
-    "storeProductsVerified": 8,
+    "storeProductsVerified": 16,
     "storeDealsSelected": 3,
     "enrichedTitles": 8,
     "detailTitles": 11,
@@ -131,10 +131,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-20T12:46:14.175Z"
+    "lastSuccessfulCheck": "2026-10-21T12:58:43.540Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-20T12:46:14.175Z",
+    "checkedAt": "2026-10-21T12:58:43.540Z",
     "errors": [],
     "sources": [
       {
@@ -178,7 +178,7 @@
   "gameDetails": {
     "Peak erklimmt PS5: Release am 22. Oktober": {},
     "Saros: Kostenloses Zenith-Update ab sofort verfügbar": {},
-    "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition": {},
+    "Final Fantasy Resonance: Visions im Hands-on erklärt": {},
     "Mafia: The Old Country": {
       "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 05.10."
     },
@@ -207,22 +207,6 @@
       ],
       "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347"
     },
-    "Forza Horizon 5 Premium Edition": {
-      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
-      "publisher": "Microsoft Corporation",
-      "genre": "Rennspiele",
-      "release": "24.4.2025",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/0c5df2b67b23263d055f3b78aeb77a6ce4668bb078fced77.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
-    },
     "WWE 2K26 Standard Edition": {
       "description": "Die Show endet nie",
       "publisher": "Take-Two",
@@ -239,6 +223,22 @@
         "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/ab700572fee7600b8af42c89daf723690a61803dcaf9955e.jpg"
       ],
       "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
+    },
+    "Forza Horizon 5 Premium Edition": {
+      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
+      "publisher": "Microsoft Corporation",
+      "genre": "Rennspiele",
+      "release": "24.4.2025",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/0c5df2b67b23263d055f3b78aeb77a6ce4668bb078fced77.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
     },
     "EA SPORTS FC 27": {
       "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
@@ -260,7 +260,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-20T12:45:59.178Z",
+    "checkedAt": "2026-10-21T12:58:31.065Z",
     "titles": 11,
     "fetched": 4,
     "enriched": 8,
@@ -294,8 +294,8 @@
     "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "storeDeals": {
       "Forza Horizon 5 Standard Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347",
-      "Forza Horizon 5 Premium Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906",
-      "WWE 2K26 Standard Edition": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
+      "WWE 2K26 Standard Edition": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000",
+      "Forza Horizon 5 Premium Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
     }
   },
   "eaPlay": {
@@ -320,7 +320,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-20T12:45:44.546Z",
+    "checkedAt": "2026-10-21T12:58:17.833Z",
     "month": "Oktober",
     "year": 2026,
     "notes": [],
@@ -329,25 +329,25 @@
       "storeDiscoveryStaticLinks": 1,
       "storeDiscoveryBrowserLinks": 24,
       "storeDiscoveryLinks": 25,
-      "storeDiscoveryVerified": 8,
+      "storeDiscoveryVerified": 16,
       "storeDiscoverySelected": 3
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-20T12:45:44.651Z",
+    "checkedAt": "2026-10-21T12:58:17.919Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": true,
     "staticLinks": 1,
     "browserLinks": 24,
     "links": 25,
     "fetched": 25,
-    "verified": 8,
+    "verified": 16,
     "selected": 3,
     "mode": "dynamic-browser",
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-20T12:46:04.796Z",
+    "checkedAt": "2026-10-21T12:58:35.966Z",
     "verified": 0,
     "missing": [
       "Mafia: The Old Country",
@@ -364,8 +364,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-20T12:45:43.741Z",
-    "date": "20.10.2026",
+    "checkedAt": "2026-10-21T12:58:15.092Z",
+    "date": "21.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -381,17 +381,17 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6f74532604007217dd93d5abbe62a5276e765ed2.jpg"
       },
       {
-        "title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
-        "date": "14.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/14/spec-iv-teil-1-von-gran-turismo-7-erscheint-morgen-erster-blick-auf-den-dualsense-wireless-controller-gran-turismo-limited-edition/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6d9f5f5f5b1b464c1319876195c43235bf3000e5-scaled.jpg"
+        "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
+        "date": "20.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/b869c580514658b6007f9af664f0d2d6c67986d8.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-20T12:46:05.697Z",
-    "berlinDate": "2026-10-20",
+    "checkedAt": "2026-10-21T12:58:36.594Z",
+    "berlinDate": "2026-10-21",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],
