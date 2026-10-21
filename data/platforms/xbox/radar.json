@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-20T12:47:05.270Z",
+  "checkedAt": "2026-10-21T13:00:01.291Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1178,
+    "count": 1174,
     "views": {
       "deals": {
-        "expected": 457,
-        "observed": 457,
-        "count": 457,
+        "expected": 453,
+        "observed": 453,
+        "count": 453,
         "complete": true,
         "attempts": 1
       },
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-20T12:47:05.270Z",
+      "observedAt": "2026-10-21T13:00:01.291Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-20T12:47:05.270Z",
+      "observedAt": "2026-10-21T13:00:01.291Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-20T12:47:05.270Z",
+      "observedAt": "2026-10-21T13:00:01.291Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -3491,6 +3491,22 @@
       "services": []
     },
     {
+      "key": "xbox:product:9nn3lkf38fr4",
+      "id": "9nn3lkf38fr4",
+      "title": "Coffee Talk Tokyo",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/coffee-talk-tokyo/9nn3lkf38fr4",
+      "cover": "https://store-images.s-microsoft.com/image/apps.47945.13639600872173169.0bd923b9-b930-41b2-8928-8e1ca453409f.9a9e0be6-ccd2-4f66-bdc3-3bb51bdbae83?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1199,
+      "regularPriceMinor": 1499,
+      "genres": [
+        "Action & Abenteuer"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9ng6fpv4fd5m",
       "id": "9ng6fpv4fd5m",
       "title": "Complete Edition – Avatar: Frontiers of Pandora™",
@@ -5874,23 +5890,6 @@
       ]
     },
     {
-      "key": "xbox:product:9nx3j163sszd",
-      "id": "9nx3j163sszd",
-      "title": "Everdream Valley - Farm & Family Pack",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/everdream-valley-farm-family-pack/9nx3j163sszd",
-      "cover": "https://store-images.s-microsoft.com/image/apps.44632.14437623737182373.f40203ae-1650-4b77-9520-e57f224872fe.ada87ed5-8a8e-43f0-b6de-33e15a4d136c?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1207,
-      "regularPriceMinor": 3449,
-      "genres": [
-        "Action & Abenteuer",
-        "Familie & Kinder"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9npc5398scq6",
       "id": "9npc5398scq6",
       "title": "Evil Genius 2: World Domination",
@@ -7452,23 +7451,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9pn5nr0nkzwt",
-      "id": "9pn5nr0nkzwt",
-      "title": "Gloomy Eyes - Deluxe Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/gloomy-eyes-deluxe-edition/9pn5nr0nkzwt",
-      "cover": "https://store-images.s-microsoft.com/image/apps.9576.14354751007550792.cb237690-2ab7-4419-9b19-3d5a10b3cf8f.b0f739a9-7a5e-4019-9faf-32f3c08973dc?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1417,
-      "regularPriceMinor": 3149,
-      "genres": [
-        "Action & Abenteuer",
-        "Andere"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9pf2zs4xb4jh",
       "id": "9pf2zs4xb4jh",
       "title": "GOALS",
@@ -7581,41 +7563,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9ngdbv8z90pp",
-      "id": "9ngdbv8z90pp",
-      "title": "Golf Club Nostalgia + Golf VS Zombies Bundle",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/golf-club-nostalgia-golf-vs-zombies-bundle/9ngdbv8z90pp",
-      "cover": "https://store-images.s-microsoft.com/image/apps.1461.13647258579958644.ae37f5a7-f89f-4c35-b483-f9b9f2e4a169.7c3f6972-dcae-4792-b334-82a9ecc8ef7b?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 469,
-      "regularPriceMinor": 939,
-      "genres": [
-        "Platformer",
-        "Rätsel & Wissen",
-        "Sport"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9nbzr3bzwrzv",
-      "id": "9nbzr3bzwrzv",
-      "title": "Golf vs Zombies",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/golf-vs-zombies/9nbzr3bzwrzv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.28325.13573763051134899.e2813e4f-be60-4352-9d98-e072c26f3758.0ab51a78-daad-4081-85a6-65ca459e9125?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 999,
-      "genres": [
-        "Action & Abenteuer",
-        "Kampfspiele"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:bt3611gr00cq",
@@ -7870,6 +7817,25 @@
       ]
     },
     {
+      "key": "xbox:product:9p8dwsc8g1v1",
+      "id": "9p8dwsc8g1v1",
+      "title": "Hail to the Rainbow",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/hail-to-the-rainbow/9p8dwsc8g1v1",
+      "cover": "https://store-images.s-microsoft.com/image/apps.15132.14093619197941158.6324ed2b-35e4-429e-8cbe-b5ee122e8e96.76fbcccc-7437-4507-a334-162bbca4d0fa?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1199,
+      "regularPriceMinor": 1499,
+      "genres": [
+        "Action & Abenteuer",
+        "Andere",
+        "Rätsel & Wissen",
+        "Shooter"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9nmnms626r59",
       "id": "9nmnms626r59",
       "title": "Halls of Torment",
@@ -8112,24 +8078,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9nd8c4314zzg",
-      "id": "9nd8c4314zzg",
-      "title": "Hardspace: Shipbreaker",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/hardspace-shipbreaker/9nd8c4314zzg",
-      "cover": "https://store-images.s-microsoft.com/image/apps.11359.13552902647075103.9e24872e-3f43-4078-8279-1ddf37a77ab1.795f17b4-3acd-4226-91d9-5c6031d7899e?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 999,
-      "regularPriceMinor": 3999,
-      "genres": [
-        "Action & Abenteuer",
-        "Simulation",
-        "Strategiespiele"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9p1gn7lsjzxq",
       "id": "9p1gn7lsjzxq",
       "title": "Harry Potter: Quidditch Champions",
@@ -8230,6 +8178,22 @@
       "services": []
     },
     {
+      "key": "xbox:product:9n917pw2pm3c",
+      "id": "9n917pw2pm3c",
+      "title": "Hell Let Loose: Vietnam Deluxe Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/hell-let-loose-vietnam-deluxe-edition/9n917pw2pm3c",
+      "cover": "https://store-images.s-microsoft.com/image/apps.15768.13542093730857198.ae17ee5a-e9bc-4473-ae98-584fcde63aee.f2ad3b0b-4193-4c63-a4f2-d2c6a9fa7cf7?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 5399,
+      "regularPriceMinor": 5999,
+      "genres": [
+        "Shooter"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9pmbb7nghv95",
       "id": "9pmbb7nghv95",
       "title": "Hellblade II: Senua's Saga",
@@ -8313,23 +8277,6 @@
       ]
     },
     {
-      "key": "xbox:product:9mv0sz8f602c",
-      "id": "9mv0sz8f602c",
-      "title": "Hidden Dogs",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/hidden-dogs/9mv0sz8f602c",
-      "cover": "https://store-images.s-microsoft.com/image/apps.38862.13798319223921984.7d9dc0ec-36b9-4d37-8520-6948918a215a.9fe168d3-f945-433f-8fb1-dff59e5903e1?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Familie & Kinder",
-        "Rätsel & Wissen"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nl4714vtlrs",
       "id": "9nl4714vtlrs",
       "title": "High On Life",
@@ -8364,22 +8311,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9p5bkvxrqhb6",
-      "id": "9p5bkvxrqhb6",
-      "title": "Highwater",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/highwater/9p5bkvxrqhb6",
-      "cover": "https://store-images.s-microsoft.com/image/apps.46225.14572354118911817.a9494fc4-88bb-4e95-8e2a-8102a863adad.9e4ab701-df37-41d2-b421-3a3bdb5a177a?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 599,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Action & Abenteuer"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9nn82nh949d5",
@@ -10182,40 +10113,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9pb32dkqkzdq",
-      "id": "9pb32dkqkzdq",
-      "title": "Marathon",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/marathon/9pb32dkqkzdq",
-      "cover": "https://store-images.s-microsoft.com/image/apps.2716.14127061896385485.4ca65223-bc93-4cae-b18a-92e0b802ad57.e1522f8a-4452-4f87-9bfb-f4178786ff6b?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2399,
-      "regularPriceMinor": 3999,
-      "genres": [
-        "Action & Abenteuer",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n7rk2rc5fth",
-      "id": "9n7rk2rc5fth",
-      "title": "Marathon – Deluxe Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/marathon-deluxe-edition/9n7rk2rc5fth",
-      "cover": "https://store-images.s-microsoft.com/image/apps.52025.14063833363766718.05bfdd50-601b-41fa-b5b1-ebb1f4bb771b.1202e16d-15a4-49a2-8a3b-412fe9cbbc8e?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 3299,
-      "regularPriceMinor": 5999,
-      "genres": [
-        "Action & Abenteuer",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9n79tqtztqq4",
       "id": "9n79tqtztqq4",
       "title": "MARVEL Cosmic Invasion",
@@ -11288,6 +11185,22 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9ndz4vc0fckp",
+      "id": "9ndz4vc0fckp",
+      "title": "Mortal Sin",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/mortal-sin/9ndz4vc0fckp",
+      "cover": "https://store-images.s-microsoft.com/image/apps.21058.13605164436268176.5fa90049-a425-4ef1-8c43-9af495fd9603.cdf569e8-5710-4549-8ba5-74697632c5cb?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1999,
+      "regularPriceMinor": 2499,
+      "genres": [
+        "Action & Abenteuer"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:9mtfx6mz6s9p",
@@ -16867,7 +16780,7 @@
       "id": "9pgd71cmds0z",
       "title": "THE FINALS",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/the-finals/9pgd71cmds0z",
-      "cover": "https://store-images.s-microsoft.com/image/apps.15427.14187080498030026.0dd8c398-3cd8-46a2-a68f-9c4f3d2d879b.59ee74ee-1be0-4d6f-9f03-f75afa5d0eda?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.27851.14187080498030026.59e4e911-b9e6-4100-966e-ab13c66cf874.8706c7f1-8fe5-4b12-82d4-afe098729420?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
@@ -19167,6 +19080,23 @@
       ]
     },
     {
+      "key": "xbox:product:9ncv2h01lht4",
+      "id": "9ncv2h01lht4",
+      "title": "We Were Here Tomorrow",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/we-were-here-tomorrow/9ncv2h01lht4",
+      "cover": "https://store-images.s-microsoft.com/image/apps.28035.13556498983821705.03f02384-6c7b-463c-892f-be35d14e9e01.885463be-0058-4bb1-9ffd-54e2e2393233?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1799,
+      "regularPriceMinor": 1999,
+      "genres": [
+        "Action & Abenteuer",
+        "Rätsel & Wissen"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9plh7r84gjwp",
       "id": "9plh7r84gjwp",
       "title": "Well Dweller",
@@ -19528,7 +19458,7 @@
       "id": "9n11jm7f5cxk",
       "title": "World of Tanks: HEAT",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/world-of-tanks-heat/9n11jm7f5cxk",
-      "cover": "https://store-images.s-microsoft.com/image/apps.63783.13914660851585642.a21c2c87-a21a-4263-9436-669b54cfa894.6f6c51ca-27ad-495d-892b-50adfb797702?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.51844.13914660851585642.bf740845-6b4f-4219-8754-f267907650cd.8dd0d24a-2002-449f-8a76-cd569f1ddac4?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
@@ -19675,7 +19605,7 @@
       "id": "9n4x0wfz2stm",
       "title": "Zenless Zone Zero",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/zenless-zone-zero/9n4x0wfz2stm",
-      "cover": "https://store-images.s-microsoft.com/image/apps.28577.13974579424110118.c5a91c87-b857-4a17-add3-fc6ba76c3f74.5bbb6b0c-cc25-4abe-bf01-c00408e6e3fa?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.58815.13974579424110118.f25d72f8-8c3b-4aa5-9d1f-ec335023c9b3.a33bb192-d9d2-48fd-b7ab-9892f5ce53a9?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
