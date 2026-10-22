@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-21T08:53:47.037Z",
+  "checkedAt": "2026-10-22T08:56:11.592Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-21T08:53:47.037Z"
+      "checkedAt": "2026-10-22T08:56:11.592Z"
     },
     "extra": {
       "complete": true,
@@ -17,15 +17,15 @@
       "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-21T08:53:47.037Z"
+      "checkedAt": "2026-10-22T08:56:11.592Z"
     },
     "classics": {
       "complete": true,
-      "expected": 168,
-      "count": 168,
+      "expected": 170,
+      "count": 170,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-21T08:53:47.037Z"
+      "checkedAt": "2026-10-22T08:56:11.592Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-21T08:53:47.037Z"
+      "checkedAt": "2026-10-22T08:56:11.592Z"
     }
   },
   "games": [
@@ -2448,34 +2448,6 @@
       "imageSource": "PlayStation"
     },
     {
-      "id": "concept:225086",
-      "title": "Death Squared",
-      "storeUrl": "https://store.playstation.com/de-de/concept/225086",
-      "image": "https://image.api.playstation.com/cdn/EP8946/CUSA06739_00/hlJa7HykLWHGqjS5vUWeCKzyALBibeka.png",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Familie",
-        "Party",
-        "Puzzle"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2017-03-13",
-      "description": "Death Squared is a co-op puzzle game about cooperation, communication, and robot explosions.",
-      "modes": [
-        "Solo",
-        "Mehrspieler",
-        "Koop"
-      ],
-      "perspective": "Isometrisch",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
       "id": "concept:234585",
       "title": "DEATH STRANDING DIRECTOR’S CUT",
       "storeUrl": "https://store.playstation.com/de-de/concept/234585",
@@ -4040,33 +4012,6 @@
       "imageSource": "PlayStation"
     },
     {
-      "id": "concept:10005240",
-      "title": "Gloomhaven Mercenaries Edition",
-      "storeUrl": "https://store.playstation.com/de-de/concept/10005240",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202310/0213/d440735da53ed87dd3b8e9a1a098e31732a1da3b5b3e1b8c.png",
-      "platforms": [
-        "PS4",
-        "PS5"
-      ],
-      "genres": [
-        "Rollenspiel (RPG)",
-        "Strategiespiele"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2023-09-18",
-      "description": "Gloomhaven Mercenaries Edition includes Gloomhaven base game and the Solo Scenarios: Mercenary Challenges DLC.",
-      "modes": [
-        "Solo",
-        "Koop"
-      ],
-      "perspective": null,
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
       "id": "concept:10001850",
       "title": "God of War Ragnarök",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001850",
@@ -4851,32 +4796,6 @@
       "imageSource": "PlayStation"
     },
     {
-      "id": "concept:10002577",
-      "title": "Jurassic World Evolution 2",
-      "storeUrl": "https://store.playstation.com/de-de/concept/10002577",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/2708/WZhQmSMCGEJgLHhnikOcuMnu.png",
-      "platforms": [
-        "PS4",
-        "PS5"
-      ],
-      "genres": [
-        "Simulation",
-        "Strategiespiele"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2021-11-09",
-      "description": "Jurassic World Evolution 2 is the much-anticipated sequel to Frontier’s ground-breaking 2018 management simulation, Jurassic World Evolution, offering an all new narrative campaign voiced by cast members from across the Jurassic World film franchise, exciting new features, four engaging game modes, and an expanded roster of awe-inspiring dinosaurs.",
-      "modes": [
-        "Solo"
-      ],
-      "perspective": "Isometrisch",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
       "id": "concept:10005847",
       "title": "Killer Frequency",
       "storeUrl": "https://store.playstation.com/de-de/concept/10005847",
@@ -5049,31 +4968,6 @@
       "modes": [
         "Solo",
         "Koop"
-      ],
-      "perspective": "Third-Person",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
-      "id": "concept:10003149",
-      "title": "Lake PS4 & PS5",
-      "storeUrl": "https://store.playstation.com/de-de/concept/10003149",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1816/b1604e488f92488c2ba4b6c84bf565f0bcf5b0e593792292.png",
-      "platforms": [
-        "PS5"
-      ],
-      "genres": [
-        "Adventure",
-        "Simulation"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2021-09-01",
-      "description": "It's 1986 - Meredith Weiss takes a break from her career in the big city to deliver mail in her hometown. How will she experience two weeks in beautiful Providence Oaks, with its iconic lake and quirky community? And what will she do next? It's up to you.",
-      "modes": [
-        "Solo"
       ],
       "perspective": "Third-Person",
       "metadataSource": "IGDB",
@@ -6270,7 +6164,6 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/227431",
       "image": "https://image.api.playstation.com/vulcan/img/rnd/202111/1114/x11L6rvYTz3IvbuvlDnryUJO.png",
       "platforms": [
-        "PS4",
         "PS5"
       ],
       "genres": [
@@ -7453,30 +7346,6 @@
       "imageSource": "PlayStation"
     },
     {
-      "id": "concept:10000504",
-      "title": "Rogue Lords",
-      "storeUrl": "https://store.playstation.com/de-de/concept/10000504",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202111/0513/ypvQEl55fsAilYe6RgE2FpUR.png",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Adventure"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2021-09-30",
-      "description": "A dark fantasy roguelike where you play as the Devil! Lead famous evil geniuses through events and turn-based fights to spread terror and corruption. Create synergies between your disciples, use your evil powers and take revenge on those miserable Demon Hunters.",
-      "modes": [
-        "Solo"
-      ],
-      "perspective": "Third-Person",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
       "id": "concept:10001348",
       "title": "Roguebook",
       "storeUrl": "https://store.playstation.com/de-de/concept/10001348",
@@ -7860,30 +7729,6 @@
         "Koop"
       ],
       "perspective": "First-Person",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
-      "id": "concept:10005529",
-      "title": "SILENT HILL 2",
-      "storeUrl": "https://store.playstation.com/de-de/concept/10005529",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2000/IgwsFz9BiBrFvyV7pIWpoVgd.png",
-      "platforms": [
-        "PS5"
-      ],
-      "genres": [
-        "Horror"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2024-10-08",
-      "description": "Silent Hill 2 Remake is a ground-up reimagining of the 2001 psychological horror game. It follows James Sunderland as he searches for his deceased wife in the fog-shrouded town of Silent Hill. The remake features entirely rebuilt visuals in Unreal Engine 5, over-the-shoulder gameplay, reworked combat, and new voice acting.",
-      "modes": [
-        "Solo"
-      ],
-      "perspective": "Third-Person",
       "metadataSource": "IGDB",
       "imageSource": "PlayStation"
     },
@@ -10754,8 +10599,7 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/230658",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1609/H7gbJJRlxx0gh6L40A0kkZ5x.png",
       "platforms": [
-        "PS4",
-        "PS5"
+        "PS4"
       ],
       "genres": [
         "Action",
@@ -10843,29 +10687,6 @@
         "Mehrspieler"
       ],
       "perspective": "Isometrisch",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
-      "id": "concept:235238",
-      "title": "Yakuza: Like a Dragon PS4 & PS5",
-      "storeUrl": "https://store.playstation.com/de-de/concept/235238",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202007/0917/fid2e7IysrUvFqmppIxi48GT.png",
-      "platforms": [
-        "PS4",
-        "PS5"
-      ],
-      "genres": [],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2020-01-16",
-      "description": "Yakuza: Like a Dragon is a role-playing game developed and published by Sega. Released in 2020, it is the eighth main entry in the Yakuza series. The game introduces a new protagonist, Ichiban Kasuga, and departs from the traditional action combat system, instead featuring turn-based combat with a party of characters. Set in the city of Yokohama, the game follows Kasuga's quest for revenge and his journey through Japan's criminal underworld.",
-      "modes": [
-        "Solo"
-      ],
-      "perspective": "First-Person",
       "metadataSource": "IGDB",
       "imageSource": "PlayStation"
     },
@@ -15242,9 +15063,341 @@
       "perspective": "First-Person",
       "metadataSource": "IGDB",
       "imageSource": "PlayStation"
+    },
+    {
+      "id": "concept:10018570",
+      "title": "DINO CRISIS 2",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10018570",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202609/2807/b04d2b0792659c9d667f4b3e60f73fd612b5355b193b1daa.png",
+      "platforms": [
+        "PS4",
+        "PS5"
+      ],
+      "genres": [
+        "Action"
+      ],
+      "services": [
+        "premium"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+    },
+    {
+      "id": "concept:10000886",
+      "title": "Horizon Forbidden West™",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10000886",
+      "image": null,
+      "platforms": [
+        "PS4",
+        "PS5"
+      ],
+      "genres": [
+        "Action"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+    },
+    {
+      "id": "concept:10007134",
+      "title": "Mafia: The Old Country",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10007134",
+      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coa9dq.jpg",
+      "platforms": [
+        "PS5"
+      ],
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "IGDB",
+      "releaseDate": "2025-08-07",
+      "description": "Mafia: The Old Country is a third-person action-adventure game set in early 1900s Sicily. It follows Enzo Favara, a former forced laborer who joins the Torrisi crime family in search of a better life and becomes involved in the violent world of organized crime.\n\nThe game follows a linear narrative structure and combines gunfights, knife combat, stealth, and exploration. Enzo travels across Sicilian towns and countryside on foot, horseback, and in period automobiles while carrying out assignments for the Torrisi fam",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:10009931",
+      "title": "Monster Energy Supercross 25 - The Official Video Game",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10009931",
+      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9qg9.jpg",
+      "platforms": [
+        "PS5"
+      ],
+      "genres": [
+        "Rennspiele",
+        "Sportspiele"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "IGDB",
+      "releaseDate": "2025-04-10",
+      "description": "Get ready for a new beginning with the upcoming 2025 season, official riders and tracks, a renewed gameplay thanks to Unreal Engine 5, and much more!",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": null,
+      "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:10018765",
+      "title": "Mycopunk",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10018765",
+      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9qrc.jpg",
+      "platforms": [
+        "PS5"
+      ],
+      "genres": [
+        "Action",
+        "Shooter"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "IGDB",
+      "releaseDate": "2026-10-20",
+      "description": "A ragtag squad of robot rejects is hired by the SAXON corporation and given one last shot at profitable glory (and avoiding the scrap heap). They are the New Atlas Hazard Crew, a ramshackle squad of exterminators sent to uncover the mysteries behind a planet-wide fungal catastrophe.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:10010437",
+      "title": "Poppy Playtime: Chapter 2",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10010437",
+      "image": null,
+      "platforms": [
+        "PS5"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+    },
+    {
+      "id": "concept:10012956",
+      "title": "RollerCoaster Tycoon 3 Complete Edition",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10012956",
+      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2g2g.jpg",
+      "platforms": [
+        "PS4",
+        "PS5"
+      ],
+      "genres": [
+        "Simulation",
+        "Strategiespiele"
+      ],
+      "services": [
+        "premium"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "IGDB",
+      "releaseDate": "2020-09-24",
+      "description": "RollerCoaster Tycoon 3: Complete Edition is an updated release of RollerCoaster Tycoon 3 that includes the Soaked! and Wild! expansion packs. It retains the original theme park management and construction gameplay while adding widescreen support and improved compatibility on PC, with a redesigned interface and controls on Nintendo Switch.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Isometrisch",
+      "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:234823",
+      "title": "Tales of Arise - Beyond the Dawn Edition",
+      "storeUrl": "https://store.playstation.com/de-de/concept/234823",
+      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coblr7.jpg",
+      "platforms": [
+        "PS4",
+        "PS5"
+      ],
+      "genres": [
+        "Rollenspiel (RPG)"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "IGDB",
+      "releaseDate": "2023-09-19",
+      "description": "The Beyond the Dawn Edition includes:\n• Tales of Arise\n• Beyond the Dawn Expansion\n\nWield the Blazing Sword and join a mysterious, untouchable girl to fight your oppressors.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": null,
+      "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:10009390",
+      "title": "The Midnight Walk",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10009390",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202409/1110/b0815b75af7073ee06d73f71eef4d84f8b1c64b07a34cb53.png",
+      "platforms": [
+        "PS5"
+      ],
+      "genres": [
+        "Adventure",
+        "Horror"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2025-05-08",
+      "description": "The Midnight Walk is a first-person dark fantasy adventure game developed by MoonHood and published by Fast Travel Games. It follows the Burnt One, who travels through a hostile world alongside Potboy, a small lantern creature whose flame is used to illuminate the environment and interact with threats encountered along the journey. The story is structured around five interconnected tales.\n\nGameplay combines exploration, environmental puzzle-solving, and evasion. Potboy's flame can be used to distract creatures whil",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     }
   ],
   "errors": [],
-  "changes": [],
-  "lastAttemptAt": "2026-10-21T08:53:47.037Z"
+  "changes": [
+    {
+      "id": "concept:10000886",
+      "title": "Horizon Forbidden West™",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10000886"
+    },
+    {
+      "id": "concept:10007134",
+      "title": "Mafia: The Old Country",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10007134"
+    },
+    {
+      "id": "concept:10009931",
+      "title": "Monster Energy Supercross 25 - The Official Video Game",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10009931"
+    },
+    {
+      "id": "concept:10018765",
+      "title": "Mycopunk",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10018765"
+    },
+    {
+      "id": "concept:10010437",
+      "title": "Poppy Playtime: Chapter 2",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10010437"
+    },
+    {
+      "id": "concept:234823",
+      "title": "Tales of Arise - Beyond the Dawn Edition",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/234823"
+    },
+    {
+      "id": "concept:10009390",
+      "title": "The Midnight Walk",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10009390"
+    },
+    {
+      "id": "concept:225086",
+      "title": "Death Squared",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/225086"
+    },
+    {
+      "id": "concept:10005240",
+      "title": "Gloomhaven Mercenaries Edition",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10005240"
+    },
+    {
+      "id": "concept:10002577",
+      "title": "Jurassic World Evolution 2",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10002577"
+    },
+    {
+      "id": "concept:10003149",
+      "title": "Lake PS4 & PS5",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10003149"
+    },
+    {
+      "id": "concept:10000504",
+      "title": "Rogue Lords",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10000504"
+    },
+    {
+      "id": "concept:10005529",
+      "title": "SILENT HILL 2",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10005529"
+    },
+    {
+      "id": "concept:235238",
+      "title": "Yakuza: Like a Dragon PS4 & PS5",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/235238"
+    },
+    {
+      "id": "concept:10018570",
+      "title": "DINO CRISIS 2",
+      "service": "premium",
+      "kind": "added",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10018570"
+    },
+    {
+      "id": "concept:10012956",
+      "title": "RollerCoaster Tycoon 3 Complete Edition",
+      "service": "premium",
+      "kind": "added",
+      "date": "2026-10-22T08:56:11.592Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
+    }
+  ],
+  "lastAttemptAt": "2026-10-22T08:56:11.592Z"
 }
