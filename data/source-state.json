@@ -1,8 +1,33 @@
 {
-  "checkedAt": "2026-10-21T12:58:03.044Z",
+  "checkedAt": "2026-10-22T13:00:06.985Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Top Downloads im September 2026",
+        "link": "https://blog.de.playstation.com/2026/10/22/top-downloads-im-september-2026/",
+        "pubDate": "Thu, 22 Oct 2026 13:00:00 +0000"
+      },
+      {
+        "title": "Tomb Raider: Die Evolution von Lara Crofts Design",
+        "link": "https://blog.de.playstation.com/2026/10/22/tomb-raider-die-evolution-von-lara-crofts-design/",
+        "pubDate": "Thu, 22 Oct 2026 12:02:53 +0000"
+      },
+      {
+        "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+        "link": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
+        "pubDate": "Wed, 21 Oct 2026 17:00:00 +0000"
+      },
+      {
+        "title": "Halloween-Spezial: Gruselige Indie-Games für PlayStation",
+        "link": "https://blog.de.playstation.com/2026/10/21/halloween-spezial-gruselige-indie-games-fuer-playstation/",
+        "pubDate": "Wed, 21 Oct 2026 16:00:00 +0000"
+      },
+      {
+        "title": "Stranger Than Heaven: Hands-on zum RGG-Studio-Titel",
+        "link": "https://blog.de.playstation.com/2026/10/21/stranger-than-heaven-hands-on-zum-rgg-studio-titel/",
+        "pubDate": "Wed, 21 Oct 2026 14:00:00 +0000"
+      },
       {
         "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
         "link": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
@@ -27,45 +52,44 @@
         "title": "Players&#8216; Choice: Control Resonant wurde zum besten neuen Spiel im September 2026 gewählt",
         "link": "https://blog.de.playstation.com/2026/10/14/players-choice-bestes-neues-spiel-im-september-2026/",
         "pubDate": "Wed, 14 Oct 2026 14:00:00 +0000"
-      },
-      {
-        "title": "Spec IV (Teil 1) von Gran Turismo 7 erscheint morgen; erster Blick auf den DualSense Wireless-Controller – Gran Turismo Limited Edition",
-        "link": "https://blog.de.playstation.com/2026/10/14/spec-iv-teil-1-von-gran-turismo-7-erscheint-morgen-erster-blick-auf-den-dualsense-wireless-controller-gran-turismo-limited-edition/",
-        "pubDate": "Wed, 14 Oct 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Battlefield 6 Season 5 ist live: Ab nach Las Vegas!",
-        "link": "https://blog.de.playstation.com/2026/10/14/battlefield-6-season-5-startet-heute-ab-nach-las-vegas-inklusive-gewinnspiel/",
-        "pubDate": "Wed, 14 Oct 2026 09:22:34 +0000"
-      },
-      {
-        "title": "Helldivers 2: „Visier der Autorität“-Premium-Kriegsanleihe erscheint am 20. Oktober",
-        "link": "https://blog.de.playstation.com/2026/10/13/helldivers-2-visier-der-autoritaet-premium-kriegsanleihe-erscheint-am-20-oktober/",
-        "pubDate": "Tue, 13 Oct 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Escape Academy 2: Back 2 School erscheint am 5. November",
-        "link": "https://blog.de.playstation.com/2026/10/13/escape-academy-2-back-2-school-erscheint-am-5-november/",
-        "pubDate": "Tue, 13 Oct 2026 12:00:00 +0000"
-      },
-      {
-        "title": "Die Player’s Choice Angebote sind im PlayStation Store gelandet",
-        "link": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
-        "pubDate": "Fri, 09 Oct 2026 11:20:39 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
-        "link": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
-        "pubDate": "Tue, 20 Oct 2026 13:00:00 +0000",
+        "title": "Top Downloads im September 2026",
+        "link": "https://blog.de.playstation.com/2026/10/22/top-downloads-im-september-2026/",
+        "pubDate": "Thu, 22 Oct 2026 13:00:00 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Tomb Raider: Die Evolution von Lara Crofts Design",
+        "link": "https://blog.de.playstation.com/2026/10/22/tomb-raider-die-evolution-von-lara-crofts-design/",
+        "pubDate": "Thu, 22 Oct 2026 12:02:53 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+        "link": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
+        "pubDate": "Wed, 21 Oct 2026 17:00:00 +0000",
+        "category": "release"
+      },
+      {
+        "title": "Halloween-Spezial: Gruselige Indie-Games für PlayStation",
+        "link": "https://blog.de.playstation.com/2026/10/21/halloween-spezial-gruselige-indie-games-fuer-playstation/",
+        "pubDate": "Wed, 21 Oct 2026 16:00:00 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Stranger Than Heaven: Hands-on zum RGG-Studio-Titel",
+        "link": "https://blog.de.playstation.com/2026/10/21/stranger-than-heaven-hands-on-zum-rgg-studio-titel/",
+        "pubDate": "Wed, 21 Oct 2026 14:00:00 +0000",
         "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209270,
+    "bytes": 208847,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +140,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175861,
+    "bytes": 175438,
     "updated": true,
     "parsed": {
       "games": [
@@ -139,32 +163,37 @@
         {
           "title": "QSSR bringt KI-Upscaling auf die PS5",
           "hasImage": true
+        },
+        {
+          "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+          "hasImage": true
         }
       ],
       "range": null,
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-21T12:58:36.594Z",
-      "parsed": 5,
+      "checkedAt": "2026-10-22T13:00:33.359Z",
+      "parsed": 6,
       "accepted": [],
       "rejected": [
         "Sniper Elite: Resistance",
         "MLB The Show 26",
         "Wobbly Life",
         "Chained Echoes",
-        "QSSR bringt KI-Upscaling auf die PS5"
+        "QSSR bringt KI-Upscaling auf die PS5",
+        "Once Human: „Isles of Abyss“ erscheint morgen auf PS5"
       ]
     }
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 598987
+    "bytes": 599018
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241526,
+    "bytes": 241530,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -177,7 +206,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173801,
+    "bytes": 173768,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
@@ -194,11 +223,14 @@
       "parsed": {
         "prices": [
           "74,99 €",
-          "11,24 €",
           "69,99 €"
         ],
         "discounts": [
-          "-85 %"
+          "-85 %",
+          "-69 %",
+          "-16 %",
+          "-6 %",
+          "-2 %"
         ]
       }
     },
@@ -209,7 +241,9 @@
       "parsed": {
         "prices": [
           "79,99 €",
-          "19,99 €"
+          "24,99 €",
+          "99,99 €",
+          "99 €"
         ],
         "discounts": [
           "-75 %"
@@ -222,13 +256,12 @@
       "updated": false,
       "parsed": {
         "prices": [
-          "24,99 €",
           "49,99 €",
           "39,99 €",
-          "99,99 €"
+          "99,99 €",
+          "5 €"
         ],
         "discounts": [
-          "-50 %",
           "-60 %"
         ]
       }

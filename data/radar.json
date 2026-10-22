@@ -1,23 +1,23 @@
 {
-  "date": "21.10.2026",
-  "edition": "AUSGABE #046",
-  "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "21.10 · LIVE",
-  "leadTitle": "Peak erklimmt PS5: Release am 22. Oktober",
-  "leadDate": "15.10.2026",
-  "leadMeta": "Kletterspiel „Peak“ erscheint am 22. Oktober für PS5: Erfahrt, wie Team Peak Freundschaft und Koop-Chaos auf den Berg bringt.",
+  "date": "22.10.2026",
+  "edition": "AUSGABE #047",
+  "newHeadline": "2 NEUE PLAYSTATION-MELDUNGEN",
+  "newCount": "22.10 · LIVE",
+  "leadTitle": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+  "leadDate": "21.10.2026",
+  "leadMeta": "Segelt ab morgen in „Isles of Abyss“: Die größte kostenlose Erweiterung von „Once Human“ erscheint auf PS5.",
   "leadPrice": null,
-  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/f1466e01a66f4cc1fc90e226b8b4f2bf3974e497.jpg",
-  "secondary1Title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
-  "secondary1Date": "19.10.2026",
-  "secondary1Meta": "Ab heute (19. Oktober) ist das Update Saros: Zenith für alle Besitzer von Saros ohne zusätzliche Kosten verfügbar.",
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg",
+  "secondary1Title": "Peak erklimmt PS5: Release am 22. Oktober",
+  "secondary1Date": "15.10.2026",
+  "secondary1Meta": "Kletterspiel „Peak“ erscheint am 22. Oktober für PS5: Erfahrt, wie Team Peak Freundschaft und Koop-Chaos auf den Berg bringt.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6f74532604007217dd93d5abbe62a5276e765ed2.jpg",
-  "secondary2Title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
-  "secondary2Date": "20.10.2026",
-  "secondary2Meta": "Erfahrt im Hands-on, wie Visions in Final Fantasy Resonance eure Gruppe und den Kampf grundlegend verändern.",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/f1466e01a66f4cc1fc90e226b8b4f2bf3974e497.jpg",
+  "secondary2Title": "Top Downloads im September 2026",
+  "secondary2Date": "22.10.2026",
+  "secondary2Meta": "Findet heraus, welche Spiele im September 2026 die PlayStation Store Download Charts anführten.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/b869c580514658b6007f9af664f0d2d6c67986d8.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/e116b573b898972892ada16bc678df79c690ded6.jpg",
   "psplusLabel": "OKTOBER 2026",
   "psplusTitle": "Oktober-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -47,41 +47,17 @@
       "imageSource": "unverified"
     }
   ],
-  "storeTitle": "Aktuelle Store-Top-Deals",
-  "storeText": "Automatisch aus der aktuell verifizierten PlayStation-Store-Aktion ausgewählt.",
-  "storeEnd": "2026-10-22T00:59:00+02:00",
-  "deals": [
-    {
-      "title": "Forza Horizon 5 Standard Edition",
-      "platform": "PS5",
-      "price": "35,99 €",
-      "oldPrice": "89,99 €",
-      "discount": "-60 %",
-      "image": null
-    },
-    {
-      "title": "WWE 2K26 Standard Edition",
-      "platform": "PS5",
-      "price": "31,99 €",
-      "oldPrice": "79,99 €",
-      "discount": "-60 %",
-      "image": null
-    },
-    {
-      "title": "Forza Horizon 5 Premium Edition",
-      "platform": "PS5",
-      "price": "35,99 €",
-      "oldPrice": "89,99 €",
-      "discount": "-60 %",
-      "image": null
-    }
-  ],
+  "storeTitle": "Keine verifizierten Top-Deals",
+  "storeText": "Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.",
+  "storeEnd": null,
+  "deals": [],
   "releases": [],
   "quickItems": [
+    "Tomb Raider: Die Evolution von Lara Crofts Design",
     "September-Spiele sind live"
   ],
-  "leavingTitle": "Aktuelle Store-Aktion endet bald",
-  "leavingText": "Aktuelle Store-Aktion endet am 22.10., 00:59 Uhr.",
+  "leavingTitle": "Kein aktives Angebotsende",
+  "leavingText": "Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
   "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
   "eaItems": [
@@ -96,45 +72,76 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 21.10.2026 · 9/9 Quellen · Store 16 geprüft · 8/11 Details",
+  "radarCheck": "Stand 22.10.2026 · 9/9 Quellen · 5/8 Details",
   "sourceAlerts": [
+    {
+      "title": "Tomb Raider: Die Evolution von Lara Crofts Design",
+      "url": "https://blog.de.playstation.com/2026/10/22/tomb-raider-die-evolution-von-lara-crofts-design/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Halloween-Spezial: Gruselige Indie-Games für PlayStation",
+      "url": "https://blog.de.playstation.com/2026/10/21/halloween-spezial-gruselige-indie-games-fuer-playstation/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Stranger Than Heaven: Hands-on zum RGG-Studio-Titel",
+      "url": "https://blog.de.playstation.com/2026/10/21/stranger-than-heaven-hands-on-zum-rgg-studio-titel/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+      "url": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
+      "type": "editorial"
+    },
     {
       "title": "Peak erklimmt PS5: Release am 22. Oktober",
       "url": "https://blog.de.playstation.com/2026/10/15/peak-erklimmt-ps5-release-am-22-oktober/",
       "type": "editorial"
     },
     {
-      "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
-      "url": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
-      "type": "editorial"
-    },
-    {
-      "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
-      "url": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
+      "title": "Top Downloads im September 2026",
+      "url": "https://blog.de.playstation.com/2026/10/22/top-downloads-im-september-2026/",
       "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Top Downloads im September 2026",
+      "url": "https://blog.de.playstation.com/2026/10/22/top-downloads-im-september-2026/",
+      "category": "news",
+      "score": 50
+    },
+    {
+      "title": "Tomb Raider: Die Evolution von Lara Crofts Design",
+      "url": "https://blog.de.playstation.com/2026/10/22/tomb-raider-die-evolution-von-lara-crofts-design/",
+      "category": "news",
+      "score": 50
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-21T12:58:43.540Z",
+    "checkedAt": "2026-10-22T13:00:41.037Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "storeDiscoveryMode": "dynamic-browser",
-    "storeProductsVerified": 16,
-    "storeDealsSelected": 3,
-    "enrichedTitles": 8,
-    "detailTitles": 11,
+    "storeDiscoveryMode": "no-active-campaign",
+    "storeProductsVerified": 0,
+    "storeDealsSelected": 0,
+    "enrichedTitles": 5,
+    "detailTitles": 8,
     "automationNotes": 0,
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-21T12:58:43.540Z"
+    "lastSuccessfulCheck": "2026-10-22T13:00:41.037Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-21T12:58:43.540Z",
+    "checkedAt": "2026-10-22T13:00:41.037Z",
     "errors": [],
     "sources": [
       {
@@ -176,9 +183,9 @@
     ]
   },
   "gameDetails": {
+    "Once Human: „Isles of Abyss“ erscheint morgen auf PS5": {},
     "Peak erklimmt PS5: Release am 22. Oktober": {},
-    "Saros: Kostenloses Zenith-Update ab sofort verfügbar": {},
-    "Final Fantasy Resonance: Visions im Hands-on erklärt": {},
+    "Top Downloads im September 2026": {},
     "Mafia: The Old Country": {
       "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 05.10."
     },
@@ -190,55 +197,6 @@
     },
     "Poppy Playtime: Kapitel 2": {
       "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 05.10."
-    },
-    "Forza Horizon 5 Standard Edition": {
-      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
-      "publisher": "Microsoft Corporation",
-      "genre": "Rennspiele",
-      "release": "28.4.2025",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202503/2417/4d27754720206805d54f5beddfcc0817700af978a56ff0db.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347"
-    },
-    "WWE 2K26 Standard Edition": {
-      "description": "Die Show endet nie",
-      "publisher": "Take-Two",
-      "genre": "Sport",
-      "release": "12.3.2026",
-      "platform": "PS5",
-      "psPlusStatus": "Im PS Plus Extra-Spielekatalog",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/1209/71bc53b949514603757703a1767b6c20a364f90241e5cb52.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/7c1c1c824ad4a78e6c563156bfd05573fffc0edc2e3b729c.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/599e0926688415049fb015792ab762f0a840621161cd3f2f.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/95670d4e001ff0093e64d07ed44f258ba5d88a66778f479d.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/57440b3be19235248f3fee53047b21c9cc67641954b99032.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202601/0917/ab700572fee7600b8af42c89daf723690a61803dcaf9955e.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000"
-    },
-    "Forza Horizon 5 Premium Edition": {
-      "description": "DEIN ULTIMATIVES HORIZON-ABENTEUER",
-      "publisher": "Microsoft Corporation",
-      "genre": "Rennspiele",
-      "release": "24.4.2025",
-      "platform": "PS5",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/0c5df2b67b23263d055f3b78aeb77a6ce4668bb078fced77.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/a39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/f786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/de66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202502/1219/088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
     },
     "EA SPORTS FC 27": {
       "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
@@ -260,10 +218,10 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-21T12:58:31.065Z",
-    "titles": 11,
-    "fetched": 4,
-    "enriched": 8,
+    "checkedAt": "2026-10-22T13:00:26.789Z",
+    "titles": 8,
+    "fetched": 1,
+    "enriched": 5,
     "warnings": []
   },
   "resolvedSources": {
@@ -292,11 +250,7 @@
     "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
     "storeCampaign": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
     "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
-    "storeDeals": {
-      "Forza Horizon 5 Standard Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0629872585919347",
-      "WWE 2K26 Standard Edition": "https://store.playstation.com/de-de/product/UP1001-PPSA34299_00-WWE2K26000000000",
-      "Forza Horizon 5 Premium Edition": "https://store.playstation.com/de-de/product/UP6312-PPSA22327_00-0810100104879906"
-    }
+    "storeDeals": {}
   },
   "eaPlay": {
     "title": "FC™ 27 · 10h Trial ab 18.09.",
@@ -320,39 +274,30 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-21T12:58:17.833Z",
+    "checkedAt": "2026-10-22T13:00:23.631Z",
     "month": "Oktober",
     "year": 2026,
-    "notes": [],
-    "resolved": {
-      "storeDiscoveryMode": "dynamic-browser",
-      "storeDiscoveryStaticLinks": 1,
-      "storeDiscoveryBrowserLinks": 24,
-      "storeDiscoveryLinks": 25,
-      "storeDiscoveryVerified": 16,
-      "storeDiscoverySelected": 3
-    }
+    "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-21T12:58:17.919Z",
+    "checkedAt": "2026-10-22T13:00:24.169Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
-    "activeCampaign": true,
-    "staticLinks": 1,
-    "browserLinks": 24,
-    "links": 25,
-    "fetched": 25,
-    "verified": 16,
-    "selected": 3,
-    "mode": "dynamic-browser",
+    "activeCampaign": false,
+    "staticLinks": 0,
+    "browserLinks": 0,
+    "links": 0,
+    "fetched": 0,
+    "verified": 0,
+    "selected": 0,
+    "mode": "no-active-campaign",
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-21T12:58:35.966Z",
-    "verified": 0,
+    "checkedAt": "2026-10-22T13:00:31.600Z",
+    "verified": 1,
     "missing": [
       "Mafia: The Old Country",
       "Horizon Forbidden West",
-      "Mycopunk",
       "Poppy Playtime: Kapitel 2"
     ],
     "warnings": [
@@ -364,10 +309,16 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-21T12:58:15.092Z",
-    "date": "21.10.2026",
+    "checkedAt": "2026-10-22T13:00:21.672Z",
+    "date": "22.10.2026",
     "maxAgeDays": 21,
     "selected": [
+      {
+        "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+        "date": "21.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg"
+      },
       {
         "title": "Peak erklimmt PS5: Release am 22. Oktober",
         "date": "15.10.2026",
@@ -375,24 +326,18 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/f1466e01a66f4cc1fc90e226b8b4f2bf3974e497.jpg"
       },
       {
-        "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
-        "date": "19.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/6f74532604007217dd93d5abbe62a5276e765ed2.jpg"
-      },
-      {
-        "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
-        "date": "20.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/b869c580514658b6007f9af664f0d2d6c67986d8.jpg"
+        "title": "Top Downloads im September 2026",
+        "date": "22.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/22/top-downloads-im-september-2026/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/e116b573b898972892ada16bc678df79c690ded6.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-21T12:58:36.594Z",
-    "berlinDate": "2026-10-21",
-    "newPostsToday": 0,
+    "checkedAt": "2026-10-22T13:00:33.359Z",
+    "berlinDate": "2026-10-22",
+    "newPostsToday": 2,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
