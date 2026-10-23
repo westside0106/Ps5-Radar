@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-22T08:56:11.592Z",
+  "checkedAt": "2026-10-23T08:51:27.885Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-22T08:56:11.592Z"
+      "checkedAt": "2026-10-23T08:51:27.885Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-22T08:56:11.592Z"
+      "checkedAt": "2026-10-23T08:51:27.885Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 170,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-22T08:56:11.592Z"
+      "checkedAt": "2026-10-23T08:51:27.885Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-22T08:56:11.592Z"
+      "checkedAt": "2026-10-23T08:51:27.885Z"
     }
   },
   "games": [
@@ -15079,13 +15079,14 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10000886",
       "title": "Horizon Forbidden West™",
       "storeUrl": "https://store.playstation.com/de-de/concept/10000886",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/9v9q3P2LuokLyI0Tsp4hHq9G.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -15096,13 +15097,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10007134",
       "title": "Mafia: The Old Country",
       "storeUrl": "https://store.playstation.com/de-de/concept/10007134",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coa9dq.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202504/2416/06f677b905f8794395b855a0de3e9fcb42b567e78c50aaed.png",
       "platforms": [
         "PS5"
       ],
@@ -15114,7 +15116,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "IGDB",
+      "imageSource": "PlayStation",
       "releaseDate": "2025-08-07",
       "description": "Mafia: The Old Country is a third-person action-adventure game set in early 1900s Sicily. It follows Enzo Favara, a former forced laborer who joins the Torrisi crime family in search of a better life and becomes involved in the violent world of organized crime.\n\nThe game follows a linear narrative structure and combines gunfights, knife combat, stealth, and exploration. Enzo travels across Sicilian towns and countryside on foot, horseback, and in period automobiles while carrying out assignments for the Torrisi fam",
       "modes": [
@@ -15127,7 +15129,7 @@
       "id": "concept:10009931",
       "title": "Monster Energy Supercross 25 - The Official Video Game",
       "storeUrl": "https://store.playstation.com/de-de/concept/10009931",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9qg9.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1409/fa3f9b7d40c4b31a7247bf908a73e99391fe6c465926edd7.png",
       "platforms": [
         "PS5"
       ],
@@ -15139,7 +15141,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "IGDB",
+      "imageSource": "PlayStation",
       "releaseDate": "2025-04-10",
       "description": "Get ready for a new beginning with the upcoming 2025 season, official riders and tracks, a renewed gameplay thanks to Unreal Engine 5, and much more!",
       "modes": [
@@ -15180,7 +15182,7 @@
       "id": "concept:10010437",
       "title": "Poppy Playtime: Chapter 2",
       "storeUrl": "https://store.playstation.com/de-de/concept/10010437",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/2820/7981c9f8f122ac08d5febb8b883578b895300f8248f8cb1a.png",
       "platforms": [
         "PS5"
       ],
@@ -15190,13 +15192,14 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10012956",
       "title": "RollerCoaster Tycoon 3 Complete Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2g2g.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202501/1021/0522bca1e44b8f950f1372e99b0b85210f5996fc1adaa53d.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -15209,7 +15212,7 @@
         "premium"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "IGDB",
+      "imageSource": "PlayStation",
       "releaseDate": "2020-09-24",
       "description": "RollerCoaster Tycoon 3: Complete Edition is an updated release of RollerCoaster Tycoon 3 that includes the Soaked! and Wild! expansion packs. It retains the original theme park management and construction gameplay while adding widescreen support and improved compatibility on PC, with a redesigned interface and controls on Nintendo Switch.",
       "modes": [
@@ -15222,7 +15225,7 @@
       "id": "concept:234823",
       "title": "Tales of Arise - Beyond the Dawn Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/234823",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/coblr7.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202601/3011/b88f41716c66fb8c83437eb221fef51480bac2433ccdcfcd.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -15234,7 +15237,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "IGDB",
+      "imageSource": "PlayStation",
       "releaseDate": "2023-09-19",
       "description": "The Beyond the Dawn Edition includes:\n• Tales of Arise\n• Beyond the Dawn Expansion\n\nWield the Blazing Sword and join a mysterious, untouchable girl to fight your oppressors.",
       "modes": [
@@ -15265,7 +15268,8 @@
         "Solo"
       ],
       "perspective": "First-Person",
-      "metadataSource": "IGDB"
+      "metadataSource": "IGDB",
+      "imageSource": "PlayStation"
     }
   ],
   "errors": [],
@@ -15399,5 +15403,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-10-22T08:56:11.592Z"
+  "lastAttemptAt": "2026-10-23T08:51:27.885Z"
 }
