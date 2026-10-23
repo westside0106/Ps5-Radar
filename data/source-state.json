@@ -1,8 +1,18 @@
 {
-  "checkedAt": "2026-10-22T13:00:06.985Z",
+  "checkedAt": "2026-10-23T12:39:24.132Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Die Aktion &#8222;Planet der Angebote&#8220; ist im PlayStation Store gelandet",
+        "link": "https://blog.de.playstation.com/2026/10/23/die-aktion-planet-der-angebote-ist-im-playstation-store-gelandet/",
+        "pubDate": "Fri, 23 Oct 2026 11:47:10 +0000"
+      },
+      {
+        "title": "Marvel’s Wolverine: Tipps und Tricks für den Fotomodus",
+        "link": "https://blog.de.playstation.com/2026/10/22/marvels-wolverine-tipps-und-tricks-fuer-den-fotomodus/",
+        "pubDate": "Thu, 22 Oct 2026 14:00:00 +0000"
+      },
       {
         "title": "Top Downloads im September 2026",
         "link": "https://blog.de.playstation.com/2026/10/22/top-downloads-im-september-2026/",
@@ -42,54 +52,26 @@
         "title": "Peak erklimmt PS5: Release am 22. Oktober",
         "link": "https://blog.de.playstation.com/2026/10/15/peak-erklimmt-ps5-release-am-22-oktober/",
         "pubDate": "Thu, 15 Oct 2026 17:00:00 +0000"
-      },
-      {
-        "title": "PlayStation Plus-Spielekatalog für Oktober 2026",
-        "link": "https://blog.de.playstation.com/2026/10/14/playstation-plus-spielekatalog-fuer-oktober-2026/",
-        "pubDate": "Wed, 14 Oct 2026 15:30:00 +0000"
-      },
-      {
-        "title": "Players&#8216; Choice: Control Resonant wurde zum besten neuen Spiel im September 2026 gewählt",
-        "link": "https://blog.de.playstation.com/2026/10/14/players-choice-bestes-neues-spiel-im-september-2026/",
-        "pubDate": "Wed, 14 Oct 2026 14:00:00 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Top Downloads im September 2026",
-        "link": "https://blog.de.playstation.com/2026/10/22/top-downloads-im-september-2026/",
-        "pubDate": "Thu, 22 Oct 2026 13:00:00 +0000",
-        "category": "news"
+        "title": "Die Aktion &#8222;Planet der Angebote&#8220; ist im PlayStation Store gelandet",
+        "link": "https://blog.de.playstation.com/2026/10/23/die-aktion-planet-der-angebote-ist-im-playstation-store-gelandet/",
+        "pubDate": "Fri, 23 Oct 2026 11:47:10 +0000",
+        "category": "store"
       },
       {
-        "title": "Tomb Raider: Die Evolution von Lara Crofts Design",
-        "link": "https://blog.de.playstation.com/2026/10/22/tomb-raider-die-evolution-von-lara-crofts-design/",
-        "pubDate": "Thu, 22 Oct 2026 12:02:53 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
-        "link": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
-        "pubDate": "Wed, 21 Oct 2026 17:00:00 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Halloween-Spezial: Gruselige Indie-Games für PlayStation",
-        "link": "https://blog.de.playstation.com/2026/10/21/halloween-spezial-gruselige-indie-games-fuer-playstation/",
-        "pubDate": "Wed, 21 Oct 2026 16:00:00 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Stranger Than Heaven: Hands-on zum RGG-Studio-Titel",
-        "link": "https://blog.de.playstation.com/2026/10/21/stranger-than-heaven-hands-on-zum-rgg-studio-titel/",
-        "pubDate": "Wed, 21 Oct 2026 14:00:00 +0000",
+        "title": "Marvel’s Wolverine: Tipps und Tricks für den Fotomodus",
+        "link": "https://blog.de.playstation.com/2026/10/22/marvels-wolverine-tipps-und-tricks-fuer-den-fotomodus/",
+        "pubDate": "Thu, 22 Oct 2026 14:00:00 +0000",
         "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 208847,
+    "bytes": 207956,
     "schedule": [
       {
         "date": "03.09.",
@@ -140,7 +122,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 175438,
+    "bytes": 174547,
     "updated": true,
     "parsed": {
       "games": [
@@ -173,14 +155,15 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-22T13:00:33.359Z",
+      "checkedAt": "2026-10-23T12:39:43.868Z",
       "parsed": 6,
-      "accepted": [],
-      "rejected": [
+      "accepted": [
         "Sniper Elite: Resistance",
         "MLB The Show 26",
         "Wobbly Life",
-        "Chained Echoes",
+        "Chained Echoes"
+      ],
+      "rejected": [
         "QSSR bringt KI-Upscaling auf die PS5",
         "Once Human: „Isles of Abyss“ erscheint morgen auf PS5"
       ]
@@ -188,12 +171,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 599018
+    "bytes": 598997
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241530,
+    "bytes": 241407,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -206,7 +189,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173768,
+    "bytes": 173756,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
