@@ -241,3 +241,5 @@
 .psn-tools-fold-body .psn-snapshot-bars{min-height:80px}
 .psn-hub-game-grid{margin-top:10px}
 @media(max-width:620px){.psn-tools-fold>summary{flex-wrap:wrap}.psn-tools-fold>summary span{margin-right:auto;text-align:left}.psn-hub .psn-planner-stats strong{font-size:16px}}
+
+.psn-activity-ranked{display:grid;gap:9px;margin:14px 0}.psn-activity-row{display:grid;grid-template-columns:52px 1fr 58px;gap:8px;align-items:center;font-size:12px}.psn-activity-row strong{font-size:11px;text-align:right}.psn-activity-track{height:12px;border-radius:8px;background:#0b1a2c;overflow:hidden}.psn-activity-track span{display:block;height:100%;background:#75afe9;border-radius:8px}.psn-editor{border-color:#668dbb!important}.psn-save-plan{display:block;width:100%;padding:12px!important;font-weight:700}.psn-save-status{font-size:11px;color:#bfddf8}.psn-muted{font-size:11px;color:#b1c7db}
