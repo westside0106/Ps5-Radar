@@ -181,3 +181,13 @@
 .psn-external-health small{font-size:11px;line-height:1.5}
 .psn-external-logo img{display:block;max-width:min(330px,100%);max-height:90px;object-fit:contain;object-position:left;margin:10px 0}
 .psn-external-logo small{display:block;color:#9fbddd;font-size:11px}
+
+.psn-activity-days{display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:5px;margin-top:12px}
+.psn-activity-day{min-width:0;aspect-ratio:1;border:1px solid #75baff;border-radius:4px;background:#5498e6}
+.psn-activity-day:not(.is-active){background:#476787;border-color:#52677f}
+.psn-artwork-choices{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:12px 0;padding:10px;border:1px solid #355677;border-radius:10px}
+.psn-artwork-choices strong{width:100%;font-size:13px}
+.psn-artwork-choices button{border:1px solid #557aa2;border-radius:8px;padding:9px 12px;background:#173455;color:#e4f1ff}
+.psn-artwork-choices button[aria-pressed=true]{border-color:#8cc2ff;background:#2b6098}
+.psn-artwork-choices small{width:100%;font-size:10px;color:#adc6e0}
+@media(max-width:400px){.psn-activity-days{gap:4px}}
