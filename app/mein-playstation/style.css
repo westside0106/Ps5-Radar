@@ -220,3 +220,24 @@
 .psn-snapshot-bars>div>span{min-height:5px;background:#76b7f3;border-radius:4px 4px 0 0}
 .psn-snapshot-bars>div>span.is-uncertain{background:repeating-linear-gradient(45deg,#7693af,#7693af 3px,#324d67 3px,#324d67 6px)}
 .psn-snapshot-bars small{text-align:center;color:#a9c7e6;font-size:9px}
+
+/* 2026-10 Gameworld hierarchy: game library first, secondary controls disclosure-only. */
+.psn-hub .psn-hub-hint{font-size:11px;line-height:1.45;margin:8px 0 12px;color:#a7bfd8}
+.psn-hub .psn-planner{margin:22px 0 6px;padding:12px;background:#0e1d31;border-color:#314968}
+.psn-hub .psn-planner-heading{margin-bottom:8px}
+.psn-hub .psn-planner-heading h3{font-size:15px;margin:0}
+.psn-hub .psn-planner-heading small{font-size:10px}
+.psn-hub .psn-planner-stats{margin:8px 0 12px;gap:6px}
+.psn-hub .psn-planner-stats>div{padding:9px}
+.psn-tools-fold{margin-top:8px;border:1px solid #365575;background:#14283f;border-radius:12px;overflow:hidden}
+.psn-tools-fold>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 15px;font-weight:650;font-size:13px;color:#ecf4ff}
+.psn-tools-fold>summary::-webkit-details-marker{display:none}
+.psn-tools-fold>summary:after{content:'⌄';font-size:20px;color:#8ebff1;line-height:1}
+.psn-tools-fold[open]>summary:after{content:'⌃'}
+.psn-tools-fold>summary span{font-weight:400;color:#aac0d8;font-size:10px;text-align:right}
+.psn-tools-fold-body{display:grid;gap:10px;padding:0 10px 12px}
+.psn-tools-fold-body>.psn-planner-box{margin:0}
+.psn-tools-fold-body .psn-planner-panels{margin:0}
+.psn-tools-fold-body .psn-snapshot-bars{min-height:80px}
+.psn-hub-game-grid{margin-top:10px}
+@media(max-width:620px){.psn-tools-fold>summary{flex-wrap:wrap}.psn-tools-fold>summary span{margin-right:auto;text-align:left}.psn-hub .psn-planner-stats strong{font-size:16px}}
