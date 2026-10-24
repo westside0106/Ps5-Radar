@@ -82,7 +82,9 @@
 
 - Zuletzt gespielte Titel und PSN-Spielzeit
 - Individuelle Spieldetails
-- IGDB-Genres, Modi, Perspektive, Screenshots
+- IGDB-Genres, Modi, Perspektive und optionale Screenshots (bei Bedarf serverseitig nachgeladen)
+- Historische Metacritic-/Nutzerwertungen und geschätzte Spieldauer/Platinzeit für 376 Titel (OliveOcelot, September 2026)
+- Vergleichswerte strikt getrennt von echter PSN-Spielzeit; historische Listenstatus **nicht** als aktuelle PS-Plus-Verfügbarkeit behandeln
 - Metadaten- und Cover-Lückenfilter
 - Apps & Medien getrennt von Spielen
 
@@ -359,3 +361,9 @@ Dieses Projekt ist ein **unabhängiges, privates Fanprojekt** und **nicht mit So
 <sub>PLAYSTATION RADAR · PRIVATE GAMING INTELLIGENCE</sub>
 
 </div>
+
+### Historische Spielebewertungen (September 2026)
+
+Die Quelldaten in `data/psplus-oliveocelot-2026-09.mjs` basieren auf den von der Nutzerseite gelieferten vier XLSX-Sortierungen der OliveOcelot-Liste. Sie sind **nicht live** und **keine verifizierte Aussage zur derzeitigen PS-Plus-Verfügbarkeit**. Gemischte Bewertungen und die geschätzten Zeiten sind Drittquellenwerte, keine IGDB- und keine PSN-Daten. Der Import unter `lib/psn-community-insights.mjs` ordnet Titel nur über normalisierte, eindeutige Namen und ausdrücklich verifizierte Aliasse zu, niemals über unscharfe Ähnlichkeit. Für unbekannte Titel wird kein Eintrag erfunden. PSN-Spielzeit und letzter Spieltag bleiben unverändert.
+
+IGDB-Screenshots werden beim Öffnen einer Spielkarte bei Bedarf über den geschützten Endpunkt `/mein-playstation/api/igdb-gallery` nachgeladen. Dafür sind `IGDB_CLIENT_ID` und `IGDB_CLIENT_SECRET` im Server notwendig. Ohne diese, bei IGDB-Ausfall oder ohne eindeutige Übereinstimmung zeigt der Dialog weiterhin das vorhandene Cover und die vorhandenen Spieldetails, aber keine erfundenen Screenshots. Die Bibliothek ist weiterhin rein lesend.
