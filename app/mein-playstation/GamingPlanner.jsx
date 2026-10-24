@@ -67,7 +67,7 @@ export default function GamingPlanner({played=[],titles=[]}){
    const changes=[[KEY,merged]];
    if(raw.version===2){
     if(Array.isArray(raw.history)){
-     const mergedHistory=[...history,...raw.history].filter(x=>x&&/^\\d{4}-\\d{2}-\\d{2}$/.test(x.date)&&Number.isFinite(x.minutes)&&x.minutes>=0&&Number.isInteger(x.games)&&x.games>=0).sort((a,b)=>a.date.localeCompare(b.date));
+     const mergedHistory=[...history,...raw.history].filter(x=>x&&/^\d{4}-\d{2}-\d{2}$/.test(x.date)&&Number.isFinite(x.minutes)&&x.minutes>=0&&Number.isInteger(x.games)&&x.games>=0).sort((a,b)=>a.date.localeCompare(b.date));
      const byDate=new Map(mergedHistory.map(x=>[x.date,{date:x.date,minutes:Math.round(x.minutes),games:x.games}]));
      const list=[...byDate.values()].slice(-365);changes.push([HISTORY_KEY,list]);
     }
