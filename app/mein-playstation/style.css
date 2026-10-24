@@ -203,3 +203,14 @@
 .psn-digital-list strong,.psn-digital-list small{display:block;overflow-wrap:anywhere}
 .psn-digital-list small{margin-top:5px;font-size:10px;color:#afc7dd}
 @media(max-width:550px){.psn-digital-list{grid-template-columns:1fr}}
+
+.psn-gallery-toggle{margin:12px 0;border:1px solid #6daee8;background:#19416c;color:#eaf4ff;padding:10px 14px;border-radius:10px;cursor:pointer}
+.psn-gallery-showcase{margin-top:12px;padding:12px;background:#09182a;border:1px solid #375f91;border-radius:14px}
+.psn-gallery-3d{width:100%;height:clamp(240px,52vw,440px);min-height:240px;overflow:hidden;touch-action:pan-y;border-radius:11px;background:#081427}
+.psn-gallery-3d canvas{display:block;width:100%;height:100%}
+.psn-gallery-ranks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:12px 0}
+.psn-gallery-ranks>div{border:1px solid #3d628a;border-radius:8px;padding:9px;background:#142b46;text-align:center}
+.psn-gallery-ranks strong,.psn-gallery-ranks small{display:block}
+.psn-gallery-ranks small{font-size:10px;color:#b4cde3}
+.psn-gallery-showcase>small{color:#adc7df;font-size:11px;line-height:1.5}
+@media(max-width:420px){.psn-gallery-ranks{gap:4px}.psn-gallery-ranks>div{padding:7px 3px}.psn-gallery-ranks strong{font-size:13px}.psn-gallery-3d{height:280px}}
