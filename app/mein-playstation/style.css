@@ -214,3 +214,9 @@
 .psn-gallery-ranks small{font-size:10px;color:#b4cde3}
 .psn-gallery-showcase>small{color:#adc7df;font-size:11px;line-height:1.5}
 @media(max-width:420px){.psn-gallery-ranks{gap:4px}.psn-gallery-ranks>div{padding:7px 3px}.psn-gallery-ranks strong{font-size:13px}.psn-gallery-3d{height:280px}}
+
+.psn-snapshot-bars{display:flex;align-items:flex-end;gap:5px;min-height:130px;overflow-x:auto;margin:14px 0 8px;border-bottom:1px solid #3b6085}
+.psn-snapshot-bars>div{flex:1 0 22px;max-width:46px;height:116px;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;align-items:stretch}
+.psn-snapshot-bars>div>span{min-height:5px;background:#76b7f3;border-radius:4px 4px 0 0}
+.psn-snapshot-bars>div>span.is-uncertain{background:repeating-linear-gradient(45deg,#7693af,#7693af 3px,#324d67 3px,#324d67 6px)}
+.psn-snapshot-bars small{text-align:center;color:#a9c7e6;font-size:9px}
