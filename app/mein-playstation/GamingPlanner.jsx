@@ -1,6 +1,7 @@
 'use client';
 import {useMemo,useState,useEffect} from 'react';
 import DigitalLibrary from './DigitalLibrary';
+import ProfileSync from './ProfileSync';
 const KEY='psn-game-planner-v1';
 const HISTORY_KEY='psn-playtime-snapshots-v1';
 const choices=[['planned','Geplant'],['playing','In Arbeit'],['paused','Pausiert'],['completed','Durchgespielt'],['platinum','Platin-Ziel']];
@@ -96,6 +97,7 @@ export default function GamingPlanner({played=[],titles=[]}){
   <div className="psn-planner-box"><h4>Backup &amp; Gerätewechsel</h4><p>Komplett-Backup mit Backlog, Favoriten, Notizen, Cover-Auswahl, Trophäenzielen und lokalen Spielzeit-Snapshots. Für einen Gerätewechsel Datei auf dem anderen Gerät importieren; eine automatische Cloud-Synchronisierung ist das nicht. Persönliche Notizen bleiben in der Datei lesbar.</p><button className="psn-planner-button" type="button" onClick={exportBackup}>Komplettes Backup sichern</button><label>Backup-Datei importieren<input type="file" accept=".json,application/json" onChange={async e=>{const f=e.target.files?.[0];if(!f)return;if(f.size>1500000){setBackupMessage('Datei zu groß.');return}setImportText(await f.text())}}/></label><button className="psn-planner-button" type="button" disabled={!importText} onClick={importBackup}>Backup einspielen</button>{backupMessage?<p role="status">{backupMessage}</p>:null}</div>
   <div className="psn-planner-box"><h4>Platin-Planung</h4><p>Die vorhandene Trophäen-Zentrale trackt Einzel-Trophäen und Seltenheit bereits. Hier werden verfügbare Zeit-Schätzungen ergänzt, ohne eine Platin-Freischaltung zu behaupten.</p><div className="psn-planner-items">{games.filter(g=>g.game.communityInsight?.platinumHours!=null).sort((a,b)=>a.game.communityInsight.platinumHours-b.game.communityInsight.platinumHours).slice(0,8).map(g=><button type="button" key={g.key} onClick={()=>setSelected(g.key)}><span>{g.name}</span><small>Platin-Schätzung: {g.game.communityInsight.platinumHours} Std. · bisher {hours(mins(g.game.playDuration))} Std. PSN</small></button>)}</div></div>
   <DigitalLibrary played={played}/>
+  <ProfileSync/>
   <p className="psn-planner-foot">Wichtig: Die PSN-Spielzeit ist kumuliert, keine Sitzungs-Historie. Trophäen-100 % bedeutet nicht automatisch Platin. Backlog und Favoriten werden nur lokal auf diesem Gerät gespeichert.</p>
  </section>;
 }
