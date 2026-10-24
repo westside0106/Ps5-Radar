@@ -173,3 +173,11 @@
 .psn-planner-items button span,.psn-planner-items button small{display:block;overflow-wrap:anywhere}.psn-planner-items button small{color:#9bbad9;font-size:10px;margin-top:3px}
 .psn-planner-foot{line-height:1.5;margin:12px 0 0}
 @media(max-width:650px){.psn-planner{padding:12px}.psn-planner-panels{grid-template-columns:1fr}.psn-planner-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.psn-planner-items{grid-template-columns:1fr}}
+
+.psn-planner-button{display:inline-block;margin:5px 8px 5px 0;padding:9px 13px;border:1px solid #6ca8e8;border-radius:9px;color:#eaf4ff;background:#24558a;cursor:pointer}
+.psn-planner-button:disabled{opacity:.45;cursor:not-allowed}
+.psn-planner-box input[type=file]{min-width:0;max-width:100%;font-size:12px}
+.psn-external-health{border-top:1px solid #355678;margin-top:12px;padding:9px 0;color:#abc8e4}
+.psn-external-health small{font-size:11px;line-height:1.5}
+.psn-external-logo img{display:block;max-width:min(330px,100%);max-height:90px;object-fit:contain;object-position:left;margin:10px 0}
+.psn-external-logo small{display:block;color:#9fbddd;font-size:11px}
