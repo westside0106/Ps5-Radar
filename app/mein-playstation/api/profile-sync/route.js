@@ -19,7 +19,7 @@ export async function PUT(request){
  let body;try{body=JSON.parse(raw)}catch{return Response.json({error:'Ungültiges JSON'},{status:400})}
  if(!body||!Number.isSafeInteger(body.revision)||body.revision<0||body.version!==2||!body.data||typeof body.data!=='object'||Array.isArray(body.data))return Response.json({error:'Ungültiges Sync-Paket'},{status:400});
  const data=body.data;
- if(!['notes','history','covers','trophyTargets'].every(k=>data[k]===undefined||typeof data[k]==='object'&&data[k]!==null))return Response.json({error:'Ungültige Datenfelder'},{status:400});
+ if(!['notes','covers','trophyTargets'].every(k=>data[k]===undefined||data[k]===null||typeof data[k]==='object'&&!Array.isArray(data[k]))||!(data.history===undefined||data.history===null||Array.isArray(data.history)))return Response.json({error:'Ungültige Datenfelder'},{status:400});
  try{
   const current=await read(config),revision=current?.revision??0;
   if(body.revision!==revision)return Response.json({error:'Versionskonflikt',revision,record:current},{status:409});
