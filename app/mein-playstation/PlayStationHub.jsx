@@ -127,6 +127,8 @@ export default function PlayStationHub({titles=[],played=[]}){
 {external.data.rawg.genres?.length?<p><strong>RAWG-Genres</strong><span>{external.data.rawg.genres.join(' · ')}</span></p>:null}
 </div><a href={external.data.rawg.url} target="_blank" rel="noopener noreferrer">Quelle: RAWG ↗</a>
 </div>:null}
+<div className="psn-external-health"><small>Datenquellen · RAWG: {external.data.providers?.rawg==='ready'?'Treffer':external.data.providers?.rawg==='error'?'Abruffehler':external.data.providers?.rawg==='no-match'?'Kein eindeutiger Treffer':'Nicht konfiguriert'} · SteamGridDB: {external.data.providers?.steamgriddb==='ready'?'Treffer':external.data.providers?.steamgriddb==='error'?'Abruffehler':external.data.providers?.steamgriddb==='no-match'?'Kein eindeutiger Treffer':'Nicht konfiguriert'}</small></div>
+{external.data.artwork?.logo?<div className="psn-external-logo"><img src={external.data.artwork.logo} alt={'Alternatives SteamGridDB-Logo für '+displayGameName(selected.name||selected.titleName)} loading="lazy"/><small>Spiel-Logo · SteamGridDB</small></div>:null}
 {external.data.artwork?.hero?<div className="psn-external-art"><h4>Alternatives Artwork</h4><img src={external.data.artwork.hero} alt={'SteamGridDB Hintergrund zu '+displayGameName(selected.name||selected.titleName)} loading="lazy"/><small>SteamGridDB · Community-Artwork</small></div>:null}
 {external.data.artwork?.cover?<div className="psn-external-art"><a href={external.data.artwork.cover} target="_blank" rel="noopener noreferrer">Alternatives Cover ansehen ↗</a><small>Quelle: SteamGridDB</small></div>:null}
 </div>:null}
