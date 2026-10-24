@@ -64,6 +64,20 @@ export default function PlayStationHub({titles=[],played=[]}){
  const [tab,setTab]=useState('trophies'),[min,setMin]=useState(50),[search,setSearch]=useState(''),[order,setOrder]=useState('progress'),[selected,setSelected]=useState(null),[libraryType,setLibraryType]=useState('games'),[metadataFilter,setMetadataFilter]=useState('all');
  const [gallery,setGallery]=useState({title:'',images:[],status:'idle'});
  const [galleryReload,setGalleryReload]=useState(0);
+ const [external,setExternal]=useState({title:'',data:null,status:'idle'});
+ useEffect(()=>{
+   if(!selected){setExternal({title:'',data:null,status:'idle'});return}
+   const title=selected.name||selected.titleName||'';
+   if(isMediaApp(selected))return;
+   const controller=new AbortController();
+   setExternal({title,data:null,status:'loading'});
+   fetch('/mein-playstation/api/extra-sources?title='+encodeURIComponent(title),{credentials:'same-origin',signal:controller.signal})
+     .then(async response=>{if(!response.ok)throw Error('Provider unavailable');return response.json()})
+     .then(data=>{if(!controller.signal.aborted)setExternal({title,data,status:'ready'})})
+     .catch(()=>{if(!controller.signal.aborted)setExternal({title,data:null,status:'error'})});
+   return ()=>controller.abort();
+ },[selected]);
+
  useEffect(()=>{
    if(!selected){setGallery({title:'',images:[],status:'idle'});return}
    const title=selected.name||selected.titleName||'';
@@ -102,6 +116,19 @@ export default function PlayStationHub({titles=[],played=[]}){
    <div className="psn-community-time-grid"><div><small>Zügig durchspielen</small><strong>{estimateHours(selected.communityInsight.rushedHours)}</strong></div><div><small>Platin-Schätzung</small><strong>{estimateHours(selected.communityInsight.platinumHours)}</strong></div></div>
    <p className="psn-community-source">Quelle: OliveOcelot (September 2026), unabhängige Schätzwerte. {historicalListLabel(selected.communityInsight)}. Nicht mit deiner tatsächlichen PSN-Spielzeit verwechseln.</p>
  </div>:null}
+{external.title===(selected.name||selected.titleName||'')&&external.data&&(external.data.rawg||external.data.artwork)?<div className="psn-game-modal-section psn-external-sources">
+<h4>Weitere Spieldaten</h4>
+{external.data.rawg?<div className="psn-external-rawg">
+{external.data.rawg.background?<img src={external.data.rawg.background} alt="" loading="lazy"/>:null}
+<div className="psn-game-modal-facts">
+{external.data.rawg.metacritic!=null?<p><strong>RAWG · Metacritic</strong><span>{external.data.rawg.metacritic}/100</span></p>:null}
+{external.data.rawg.rating!=null?<p><strong>RAWG-Wertung</strong><span>{external.data.rawg.rating}/5</span></p>:null}
+{external.data.rawg.genres?.length?<p><strong>RAWG-Genres</strong><span>{external.data.rawg.genres.join(' · ')}</span></p>:null}
+</div><a href={external.data.rawg.url} target="_blank" rel="noopener noreferrer">Quelle: RAWG ↗</a>
+</div>:null}
+{external.data.artwork?.hero?<div className="psn-external-art"><h4>Alternatives Artwork</h4><img src={external.data.artwork.hero} alt={'SteamGridDB Hintergrund zu '+displayGameName(selected.name||selected.titleName)} loading="lazy"/><small>SteamGridDB · Community-Artwork</small></div>:null}
+{external.data.artwork?.cover?<div className="psn-external-art"><a href={external.data.artwork.cover} target="_blank" rel="noopener noreferrer">Alternatives Cover ansehen ↗</a><small>Quelle: SteamGridDB</small></div>:null}
+</div>:null}
 {selected.metadata?<div className="psn-game-modal-section"><h4>Spieldetails</h4><div className="psn-game-modal-facts">{selected.metadata.genres?.length?<p><strong>Genres</strong><span>{selected.metadata.genres.join(' · ')}</span></p>:null}{selected.metadata.modes?.length?<p><strong>Spielmodi</strong><span>{selected.metadata.modes.join(' · ')}</span></p>:null}{selected.metadata.perspective?<p><strong>Perspektive</strong><span>{selected.metadata.perspective}</span></p>:null}{selected.metadata.inPlus?.length?<p><strong>PS Plus</strong><span>{selected.metadata.inPlus.join(' · ')}</span></p>:null}{selected.metadata.source?<p><strong>Quelle</strong><span>{selected.metadata.source}</span></p>:null}</div></div>:null}
 {gallery.title===(selected.name||selected.titleName||'')&&gallery.images.length?<div className="psn-game-modal-section"><h4>IGDB-Screenshots</h4><div className="psn-game-modal-shots">{gallery.images.map((url,i)=><img key={url} src={url} alt={'IGDB-Screenshot '+(i+1)+' von '+displayGameName(selected.name||selected.titleName)} loading="lazy"/>)}</div></div>:gallery.title===(selected.name||selected.titleName||'')&&gallery.status==='loading'?<p className="psn-gallery-state" role="status">Weitere IGDB-Bilder werden geprüft …</p>:gallery.title===(selected.name||selected.titleName||'')&&['error','not-configured','no-images'].includes(gallery.status)?<div className="psn-game-modal-section psn-gallery-unavailable"><p>{gallery.status==='error'?'IGDB-Bilder konnten derzeit nicht geladen werden.':gallery.status==='not-configured'?'Die IGDB-Bildergalerie ist serverseitig nicht eingerichtet.':'Für diesen Titel wurden keine eindeutig zugeordneten IGDB-Screenshots gefunden.'}</p>{gallery.status==='error'?<button type="button" className="psn-modal-action" onClick={()=>setGalleryReload(n=>n+1)}>Bilder erneut prüfen</button>:null}</div>:null}
 <div className="psn-game-modal-section psn-game-modal-facts"><p><strong>Plattform</strong><span>{Array.isArray(selected.platforms)?selected.platforms.join(' · '):platformLabel(selected)}</span></p><p><strong>Titel-ID</strong><span>{selected.titleId||'Nicht verfügbar'}</span></p></div>
