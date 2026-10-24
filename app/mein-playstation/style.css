@@ -143,3 +143,8 @@
 .psn-gallery-unavailable{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .psn-gallery-unavailable p{margin:0;flex:1 1 180px;color:#b0c5dd;font-size:12px}
 .psn-gallery-unavailable button{border:1px solid #477caf;background:#173f68;color:#e1f0ff;padding:9px 12px;border-radius:9px;cursor:pointer}
+
+.psn-external-rawg>img,.psn-external-art>img{display:block;width:100%;max-height:220px;object-fit:cover;border-radius:12px;margin:10px 0}
+.psn-external-sources a{display:inline-block;padding:8px 0;color:#82caff;font-size:12px;text-decoration:underline;text-underline-offset:3px}
+.psn-external-art{margin-top:12px}
+.psn-external-art small{display:block;color:#a6c1dc;font-size:10px;margin-top:5px}

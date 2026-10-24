@@ -367,3 +367,12 @@ Dieses Projekt ist ein **unabhängiges, privates Fanprojekt** und **nicht mit So
 Die Quelldaten in `data/psplus-oliveocelot-2026-09.mjs` basieren auf den von der Nutzerseite gelieferten vier XLSX-Sortierungen der OliveOcelot-Liste. Sie sind **nicht live** und **keine verifizierte Aussage zur derzeitigen PS-Plus-Verfügbarkeit**. Gemischte Bewertungen und die geschätzten Zeiten sind Drittquellenwerte, keine IGDB- und keine PSN-Daten. Der Import unter `lib/psn-community-insights.mjs` ordnet Titel nur über normalisierte, eindeutige Namen und ausdrücklich verifizierte Aliasse zu, niemals über unscharfe Ähnlichkeit. Für unbekannte Titel wird kein Eintrag erfunden. PSN-Spielzeit und letzter Spieltag bleiben unverändert.
 
 IGDB-Screenshots werden beim Öffnen einer Spielkarte bei Bedarf über den geschützten Endpunkt `/mein-playstation/api/igdb-gallery` nachgeladen. Dafür sind `IGDB_CLIENT_ID` und `IGDB_CLIENT_SECRET` im Server notwendig. Ohne diese, bei IGDB-Ausfall oder ohne eindeutige Übereinstimmung zeigt der Dialog weiterhin das vorhandene Cover und die vorhandenen Spieldetails, aber keine erfundenen Screenshots. Die Bibliothek ist weiterhin rein lesend.
+
+### Optionale zusätzliche Spieldatenquellen
+
+Die geschützte Spiel-Detailansicht lädt bei Bedarf weitere Informationen. Aktiviere folgende **serverseitige** Vercel-Umgebungsvariablen:
+
+- `RAWG_API_KEY`: von https://rawg.io/apidocs – RAWG-Metacritic, RAWG-Wertung, Genres, Hintergrundbild und Quellenlink.
+- `STEAMGRIDDB_API_KEY`: von https://www.steamgriddb.com/profile/preferences/api – alternatives Hero-Artwork und Cover.
+
+Ohne Keys funktionieren PSN, bestehende IGDB-Daten und die restliche Anwendung weiter. Beide Quellen werden nur für **eindeutige** exakte normalisierte Spieletitel abgefragt, nicht per ähnlich klingendem Treffer und nicht für Medien-Apps. Erfolge werden serverseitig zwölf Stunden zwischengespeichert; Schlüssel erscheinen nicht im Browser. Keine API-Keys in das Repository committen. RAWG-Inhalte sind mit einem anklickbaren RAWG-Quellenlink gekennzeichnet; Community-Artwork von SteamGridDB ist gesondert markiert und unterliegt den jeweiligen Bildrechten.
