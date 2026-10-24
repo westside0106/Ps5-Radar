@@ -90,16 +90,16 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-24T03:26:24.663Z",
+    "checkedAt": "2026-10-24T03:31:28.975Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-10-24T03:25:59.870Z",
+    "lastSuccessfulCheck": "2026-10-24T03:31:21.460Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-24T03:25:59.870Z",
+    "checkedAt": "2026-10-24T03:31:21.460Z",
     "errors": [],
     "sources": [
       {
@@ -174,12 +174,12 @@
       "platform": "PS5",
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
         "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
       "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
@@ -246,7 +246,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-24T03:26:16.980Z",
+    "checkedAt": "2026-10-24T03:31:26.503Z",
     "titles": 8,
     "fetched": 5,
     "enriched": 5,
@@ -300,13 +300,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-24T03:26:16.507Z",
+    "checkedAt": "2026-10-24T03:31:26.162Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-24T03:26:16.614Z",
+    "checkedAt": "2026-10-24T03:31:26.228Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -319,7 +319,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-24T03:26:24.488Z",
+    "checkedAt": "2026-10-24T03:31:28.818Z",
     "verified": 3,
     "missing": [
       "Chained Echoes"
@@ -330,7 +330,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-24T03:26:15.193Z",
+    "checkedAt": "2026-10-24T03:31:25.456Z",
     "date": "24.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -356,7 +356,7 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-24T03:23:21.121Z",
+    "checkedAt": "2026-10-24T03:26:24.878Z",
     "berlinDate": "2026-10-24",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
