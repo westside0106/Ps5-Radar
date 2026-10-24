@@ -11,10 +11,10 @@ export default function DigitalLibrary({played=[]}){
  }
  const games=(data?.titles||[]).filter(g=>g.name.toLocaleLowerCase('de').includes(query.toLocaleLowerCase('de')));
  const unseen=(data?.titles||[]).filter(g=>!playedIds.has(g.titleId)).length;
- return <section className="psn-planner-box psn-digital-library"><h4>Digitale PSN-Bibliothek</h4>
-  <p>Aktive digitale PS4/PS5-Lizenzen getrennt von zuletzt gespielten Titeln. Enthält möglicherweise PS-Plus- und kostenlose Berechtigungen; kein Nachweis über bezahlte Käufe oder Disc-Spiele.</p>
+ return <section className="psn-planner-box psn-digital-library"><h4>Digitale PSN-Bibliothek · Beta</h4>
+  <p>Experimenteller Sony-Abruf digitaler Berechtigungen. Nicht gleichbedeutend mit Käufen oder Disc-Besitz.</p>
   <button className="psn-planner-button" type="button" onClick={load} disabled={loading}>{loading?'PSN-Lizenzen werden geladen …':data?'Bibliothek aktualisieren':'Digitale Lizenzen abrufen'}</button>
-  {error?<p role="alert">{error}. Die übrige Spielewelt bleibt unverändert.</p>:null}
+  {error?<p role="alert" className="psn-digital-error">{error.includes('HTTP 400')?'Sony hat die Bibliotheksabfrage abgelehnt (HTTP 400). Der inoffizielle Dienst ist derzeit möglicherweise nicht verfügbar.':error} <span>Deine vorhandene Spieleliste bleibt nutzbar.</span></p>:null}
   {data?<><div className="psn-digital-library-metrics"><div><strong>{data.titles.length}</strong><small>Geladene Berechtigungen</small></div><div><strong>{unseen}</strong><small>Nicht in der zuletzt-gespielt-Liste</small></div></div>
   {!data.complete?<p>Hinweis: Der Abruf konnte nicht als vollständig bestätigt werden (maximal 1.000 Einträge).</p>:null}
   <label>Digitale Bibliothek durchsuchen<input type="search" placeholder="Titel eingeben …" value={query} onChange={e=>setQuery(e.target.value)}/></label>
