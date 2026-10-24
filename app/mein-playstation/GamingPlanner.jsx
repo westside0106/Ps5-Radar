@@ -1,5 +1,6 @@
 'use client';
 import {useMemo,useState,useEffect} from 'react';
+import DigitalLibrary from './DigitalLibrary';
 const KEY='psn-game-planner-v1';
 const choices=[['planned','Geplant'],['playing','In Arbeit'],['paused','Pausiert'],['completed','Durchgespielt'],['platinum','Platin-Ziel']];
 const norm=v=>String(v||'').trim().toLocaleLowerCase('de');
@@ -45,6 +46,7 @@ export default function GamingPlanner({played=[],titles=[]}){
   <div className="psn-planner-box"><h4>Backlog-Übersicht</h4><div className="psn-planner-filters"><button type="button" aria-pressed={filter==='all'} onClick={()=>setFilter('all')}>Alle ({games.length})</button>{choices.map(([v,label])=><button key={v} type="button" aria-pressed={filter===v} onClick={()=>setFilter(v)}>{label} ({statuses[v]})</button>)}</div><div className="psn-planner-items">{ranked.slice(0,12).map(g=><button key={g.key} type="button" onClick={()=>setSelected(g.key)}><span>{notes[g.key]?.favorite?'★ ':''}{g.name}</span><small>{choices.find(c=>c[0]===notes[g.key]?.status)?.[1]||'Offen'} · {hours(mins(g.game.playDuration))} Std.</small></button>)}</div>{ranked.length>12?<small>Die ersten 12 Spiele werden angezeigt. Über die Filter eingrenzen.</small>:null}</div>
   <div className="psn-planner-box"><h4>Backup &amp; Gerätewechsel</h4><p>Du kannst Status, Favoriten und Notizen als JSON sichern und auf einem anderen Gerät wieder einspielen. Bestehende Einträge werden beim Import nach Spielkennung ergänzt.</p><button className="psn-planner-button" type="button" onClick={exportBackup}>Backlog sichern</button><label>Backup-Datei importieren<input type="file" accept=".json,application/json" onChange={async e=>{const f=e.target.files?.[0];if(!f)return;if(f.size>1500000){setBackupMessage('Datei zu groß.');return}setImportText(await f.text())}}/></label><button className="psn-planner-button" type="button" disabled={!importText} onClick={importBackup}>Backup einspielen</button>{backupMessage?<p role="status">{backupMessage}</p>:null}</div>
   <div className="psn-planner-box"><h4>Platin-Planung</h4><p>Die vorhandene Trophäen-Zentrale trackt Einzel-Trophäen und Seltenheit bereits. Hier werden verfügbare Zeit-Schätzungen ergänzt, ohne eine Platin-Freischaltung zu behaupten.</p><div className="psn-planner-items">{games.filter(g=>g.game.communityInsight?.platinumHours!=null).sort((a,b)=>a.game.communityInsight.platinumHours-b.game.communityInsight.platinumHours).slice(0,8).map(g=><button type="button" key={g.key} onClick={()=>setSelected(g.key)}><span>{g.name}</span><small>Platin-Schätzung: {g.game.communityInsight.platinumHours} Std. · bisher {hours(mins(g.game.playDuration))} Std. PSN</small></button>)}</div></div>
+  <DigitalLibrary played={played}/>
   <p className="psn-planner-foot">Wichtig: Die PSN-Spielzeit ist kumuliert, keine Sitzungs-Historie. Trophäen-100 % bedeutet nicht automatisch Platin. Backlog und Favoriten werden nur lokal auf diesem Gerät gespeichert.</p>
  </section>;
 }
