@@ -148,3 +148,28 @@
 .psn-external-sources a{display:inline-block;padding:8px 0;color:#82caff;font-size:12px;text-decoration:underline;text-underline-offset:3px}
 .psn-external-art{margin-top:12px}
 .psn-external-art small{display:block;color:#a6c1dc;font-size:10px;margin-top:5px}
+
+/* Personal PSN planner; compact on mobile without impacting trophy dialogs. */
+.psn-planner{margin:20px 0 24px;padding:18px;border:1px solid #32547b;border-radius:18px;background:linear-gradient(135deg,#172d49,#101d32);color:#eaf3ff}
+.psn-planner-heading{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;align-items:baseline}
+.psn-planner-heading h3,.psn-planner-box h4{margin:0 0 10px;font-size:17px}
+.psn-planner-heading small,.psn-planner-foot{color:#a8bfd9;font-size:11px}
+.psn-planner-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:14px 0}
+.psn-planner-stats>div{min-width:0;border:1px solid #355474;background:#11253e;border-radius:10px;padding:12px}
+.psn-planner-stats small{display:block;color:#a8bfd9;font-size:10px}
+.psn-planner-stats strong{display:block;font-size:clamp(15px,2.8vw,22px);margin-top:5px}
+.psn-planner-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:12px}
+.psn-planner-box{border:1px solid #345270;border-radius:12px;padding:14px;min-width:0;background:#142740}
+.psn-planner-box label{display:flex;flex-direction:column;gap:6px;margin:9px 0;color:#bcd2e9;font-size:12px}
+.psn-planner-box select,.psn-planner-box textarea{display:block;width:100%;min-width:0;box-sizing:border-box;border:1px solid #44658a;border-radius:8px;padding:10px;background:#0d1d31;color:#fff;font:inherit}
+.psn-planner-box .psn-planner-check{flex-direction:row;align-items:center}
+.psn-planner-check input{width:17px;height:17px}
+.psn-planner-box p{margin:12px 0 0}.psn-planner-box p small{display:block;color:#a8bfd9;margin-top:5px}
+.psn-planner-filters{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.psn-planner-filters button{border:1px solid #45658a;color:#cae0f7;background:#1b3858;padding:8px 10px;border-radius:18px;font-size:11px}
+.psn-planner-filters button[aria-pressed=true]{background:#3064a0;border-color:#7eb9ff;color:#fff}
+.psn-planner-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.psn-planner-items button{min-width:0;background:#12233a;color:#eaf3ff;border:1px solid #365578;border-radius:8px;padding:9px;text-align:left;cursor:pointer}
+.psn-planner-items button span,.psn-planner-items button small{display:block;overflow-wrap:anywhere}.psn-planner-items button small{color:#9bbad9;font-size:10px;margin-top:3px}
+.psn-planner-foot{line-height:1.5;margin:12px 0 0}
+@media(max-width:650px){.psn-planner{padding:12px}.psn-planner-panels{grid-template-columns:1fr}.psn-planner-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.psn-planner-items{grid-template-columns:1fr}}
