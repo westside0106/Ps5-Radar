@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-23T08:51:27.885Z",
+  "checkedAt": "2026-10-24T08:25:31.130Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-23T08:51:27.885Z"
+      "checkedAt": "2026-10-24T08:25:31.130Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-23T08:51:27.885Z"
+      "checkedAt": "2026-10-24T08:25:31.130Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 170,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-23T08:51:27.885Z"
+      "checkedAt": "2026-10-24T08:25:31.130Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-23T08:51:27.885Z"
+      "checkedAt": "2026-10-24T08:25:31.130Z"
     }
   },
   "games": [
@@ -15155,7 +15155,7 @@
       "id": "concept:10018765",
       "title": "Mycopunk",
       "storeUrl": "https://store.playstation.com/de-de/concept/10018765",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co9qrc.jpg",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1321/6dafd54c5f7bff9737d2b0c462a8e0852f645571418a3163.png",
       "platforms": [
         "PS5"
       ],
@@ -15167,7 +15167,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "IGDB",
+      "imageSource": "PlayStation",
       "releaseDate": "2026-10-20",
       "description": "A ragtag squad of robot rejects is hired by the SAXON corporation and given one last shot at profitable glory (and avoiding the scrap heap). They are the New Atlas Hazard Crew, a ramshackle squad of exterminators sent to uncover the mysteries behind a planet-wide fungal catastrophe.",
       "modes": [
@@ -15403,5 +15403,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-10-23T08:51:27.885Z"
+  "lastAttemptAt": "2026-10-24T08:25:31.130Z"
 }
