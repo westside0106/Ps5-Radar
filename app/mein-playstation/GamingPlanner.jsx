@@ -2,6 +2,7 @@
 import {useMemo,useState,useEffect} from 'react';
 import DigitalLibrary from './DigitalLibrary';
 const KEY='psn-game-planner-v1';
+const HISTORY_KEY='psn-playtime-snapshots-v1';
 const choices=[['planned','Geplant'],['playing','In Arbeit'],['paused','Pausiert'],['completed','Durchgespielt'],['platinum','Platin-Ziel']];
 const norm=v=>String(v||'').trim().toLocaleLowerCase('de');
 const getId=g=>String(g.titleId||g.name||g.titleName||'');
@@ -12,9 +13,28 @@ export default function GamingPlanner({played=[],titles=[]}){
  const [selected,setSelected]=useState('');
  const [budget,setBudget]=useState(2);
  const [filter,setFilter]=useState('all');
+ const [history,setHistory]=useState([]);
  const [importText,setImportText]=useState('');
  const [backupMessage,setBackupMessage]=useState('');
  useEffect(()=>{try{const data=JSON.parse(localStorage.getItem(KEY)||'{}');if(data&&typeof data==='object'&&!Array.isArray(data))setNotes(data)}catch{}},[]);
+ useEffect(()=>{
+  // A local daily snapshot of cumulative PSN playtimes, not a real session log.
+  try{
+   const previous=JSON.parse(localStorage.getItem(HISTORY_KEY)||'[]');
+   const records=Array.isArray(previous)?previous.filter(x=>x&&typeof x.date==='string'&&typeof x.minutes==='number').slice(-365):[];
+   const date=new Date().toLocaleDateString('sv-SE');
+   const total=played.reduce((sum,g)=>sum+mins(g.playDuration),0);
+   const last=records[records.length-1];
+   // Store only nonempty readings; today's latest reading replaces today's earlier snapshot.
+   if(played.length&&(last?.date!==date||last.minutes!==total)){
+    if(last?.date===date)records.pop();
+    records.push({date,minutes:Math.round(total),games:played.length});
+    localStorage.setItem(HISTORY_KEY,JSON.stringify(records.slice(-365)));
+   }
+   setHistory(records.slice(-365));
+  }catch{}
+ },[played]);
+ const changes=useMemo(()=>history.slice(1).map((x,i)=>({date:x.date,change:Math.max(0,x.minutes-history[i].minutes),comparable:x.games===history[i].games})),[history]);
  const games=useMemo(()=>played.filter(g=>!(/^(youtube|spotify|netflix|twitch|prime video|disney\+|apple tv)$/i.test(String(g.name||'')))).map(g=>({key:getId(g),name:g.name||g.titleName||'Spiel',game:g})).filter(g=>g.key),[played]);
  const stats=useMemo(()=>{
   const times=games.map(x=>mins(x.game.playDuration));
@@ -40,6 +60,7 @@ export default function GamingPlanner({played=[],titles=[]}){
  return <section className="psn-planner" aria-label="Spielplaner und Statistiken">
   <div className="psn-planner-heading"><h3>Deine Gaming-Zentrale</h3><small>Dein Backlog und Statistiken · persönliche Einträge nur in diesem Browser</small></div>
   <div className="psn-planner-stats"><div><small>Erfasste Spiele</small><strong>{games.length}</strong></div><div><small>PSN-Spielzeit</small><strong>{hours(stats.total)} Std.</strong></div><div><small>Mit Status</small><strong>{stats.tracked}</strong></div><div><small>100 % Trophäen</small><strong>{stats.completed}</strong></div></div>
+  <div className="psn-planner-box"><h4>Lokale PSN-Snapshots</h4><p>Die kumulierte Spielzeit wird beim Öffnen der Seite höchstens einmal pro Tag festgehalten. Das ist keine echte Sitzungshistorie. Differenzen sind nur bei gleicher Anzahl erfasster Spiele direkt vergleichbar.</p><div className="psn-snapshot-bars" aria-label="Differenzen zwischen lokalen PSN-Snapshots">{changes.slice(-14).map(x=><div key={x.date} title={x.date+': '+(x.comparable?Math.round(x.change/60*10)/10+' Stunden Zuwachs':'Spielanzahl verändert')}><span style={{height:(x.comparable?Math.max(5,Math.min(100,x.change/120*100)):5)+'%'}} className={x.comparable?'':'is-uncertain'}/><small>{x.date.slice(5)}</small></div>)}</div><small>{history.length} lokale Messpunkte gespeichert. Werden beim Entfernen der Browserdaten gelöscht.</small></div>
   <div className="psn-planner-box"><h4>Zuletzt gespielt · 28 Tage</h4><p>Verteilung des letzten erfassten Spieltags pro Titel, <strong>keine</strong> täglichen Spielstunden oder vollständige Sitzungshistorie. {totalRecent} Titel im Zeitraum.</p><div className="psn-activity-days" role="img" aria-label="28 Tage, nach Datum des jeweils letzten Spielstarts gruppiert">{activity.map(day=><span key={day.day} className={'psn-activity-day '+(day.count?'is-active':'')} style={{opacity:day.count?Math.min(1,.3+day.count*.22):.22}} title={day.date+': '+day.count+' zuletzt gespielte Spiele'}/>)}</div></div>
   <div className="psn-planner-panels"><div className="psn-planner-box"><h4>Was spiele ich heute?</h4><label>Mein Zeitbudget <select value={budget} onChange={e=>setBudget(Number(e.target.value))}><option value="1">1 Stunde</option><option value="2">2 Stunden</option><option value="4">4 Stunden</option><option value="8">8 Stunden</option></select></label>{recommendation?<p><strong>{recommendation.name}</strong><small> Vorschlag aus deinen zuletzt gespielten Titeln; kein Live-Tracking</small></p>:<p>Keine Spiele verfügbar.</p>}</div>
   <div className="psn-planner-box"><h4>Meine Spiele planen</h4><label>Spiel auswählen<select value={selected} onChange={e=>setSelected(e.target.value)}><option value="">Spiel auswählen …</option>{games.map(g=><option key={g.key} value={g.key}>{g.name}</option>)}</select></label>{focused?<><label>Status<select value={notes[selected]?.status||''} onChange={e=>save(selected,{status:e.target.value})}><option value="">Noch nicht eingestuft</option>{choices.map(([v,label])=><option key={v} value={v}>{label}</option>)}</select></label><label className="psn-planner-check"><input type="checkbox" checked={!!notes[selected]?.favorite} onChange={e=>save(selected,{favorite:e.target.checked})}/> Favorit</label><label>Meine Notiz<textarea maxLength={800} rows={2} placeholder="Was möchte ich noch erledigen?" value={notes[selected]?.note||''} onChange={e=>save(selected,{note:e.target.value})}/></label></>:null}</div></div>
