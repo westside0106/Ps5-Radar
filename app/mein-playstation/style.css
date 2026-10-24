@@ -191,3 +191,15 @@
 .psn-artwork-choices button[aria-pressed=true]{border-color:#8cc2ff;background:#2b6098}
 .psn-artwork-choices small{width:100%;font-size:10px;color:#adc6e0}
 @media(max-width:400px){.psn-activity-days{gap:4px}}
+
+.psn-digital-library{margin:12px 0}
+.psn-digital-library-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+.psn-digital-library-metrics>div{padding:10px;border:1px solid #41618a;border-radius:10px;background:#10223a}
+.psn-digital-library-metrics strong{display:block;font-size:22px}
+.psn-digital-library-metrics small{display:block;color:#adc6dc;font-size:11px}
+.psn-digital-library input[type=search]{width:100%;min-width:0;box-sizing:border-box;background:#0c1e32;border:1px solid #45698d;border-radius:8px;color:#fff;padding:10px}
+.psn-digital-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;max-height:340px;overflow:auto}
+.psn-digital-list>div{min-width:0;border:1px solid #335679;background:#10233d;border-radius:8px;padding:10px}
+.psn-digital-list strong,.psn-digital-list small{display:block;overflow-wrap:anywhere}
+.psn-digital-list small{margin-top:5px;font-size:10px;color:#afc7dd}
+@media(max-width:550px){.psn-digital-list{grid-template-columns:1fr}}
