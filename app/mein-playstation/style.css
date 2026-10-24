@@ -139,3 +139,7 @@
 .psn-community-insights .psn-community-source{color:#b0c2d9;font-size:11px;line-height:1.5;margin:11px 0 0}
 .psn-gallery-state{padding:6px 0;color:#abc2dd;font-size:11px}
 @media(max-width:350px){.psn-community-score-grid>div{padding:10px 6px}.psn-community-score-grid small{font-size:9px}}
+
+.psn-gallery-unavailable{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.psn-gallery-unavailable p{margin:0;flex:1 1 180px;color:#b0c5dd;font-size:12px}
+.psn-gallery-unavailable button{border:1px solid #477caf;background:#173f68;color:#e1f0ff;padding:9px 12px;border-radius:9px;cursor:pointer}
