@@ -71,3 +71,9 @@ test('library enrichment retains exact PSN fields and attaches historical estima
   assert.equal(played[0].lastPlayedDateTime,raw.lastPlayedDateTime);
   assert.equal(played[0].communityInsight.platinumHours,148);
 });
+
+import {getExternalGameSources} from '../lib/psn-extra-providers.mjs';
+test('extra metadata endpoints reject invalid titles without network calls',async()=>{
+ assert.equal((await getExternalGameSources('')).status,'invalid-title');
+ assert.equal((await getExternalGameSources('a'.repeat(126))).status,'invalid-title');
+});
