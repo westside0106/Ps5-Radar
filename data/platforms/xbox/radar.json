@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-23T12:41:56.416Z",
+  "checkedAt": "2026-10-24T12:05:39.728Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1627,
+    "count": 1626,
     "views": {
       "deals": {
-        "expected": 942,
-        "observed": 942,
-        "count": 942,
+        "expected": 938,
+        "observed": 938,
+        "count": 938,
         "complete": true,
         "attempts": 1
       },
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-23T12:41:56.416Z",
+      "observedAt": "2026-10-24T12:05:39.728Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-23T12:41:56.416Z",
+      "observedAt": "2026-10-24T12:05:39.728Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-23T12:41:56.416Z",
+      "observedAt": "2026-10-24T12:05:39.728Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -4467,20 +4467,22 @@
       "services": []
     },
     {
-      "key": "xbox:product:9p3xdgw7k7kh",
-      "id": "9p3xdgw7k7kh",
-      "title": "Casual Sport Series: Racket Sports Bundle",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/casual-sport-series-racket-sports-bundle/9p3xdgw7k7kh",
-      "cover": "https://store-images.s-microsoft.com/image/apps.59247.14534092154351446.64327e48-4c1a-418a-ad0f-bb06a5de2f3f.5c01ce22-bdb7-4f50-8e79-b12bad5c2046?q=90&w=177&h=177",
+      "key": "xbox:product:9nxz0jnc5zpr",
+      "id": "9nxz0jnc5zpr",
+      "title": "Carry The Glass",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/carry-the-glass/9nxz0jnc5zpr",
+      "cover": "https://store-images.s-microsoft.com/image/apps.33499.14491030974379630.6406d5da-a161-43b2-991a-352f219d4370.cbd70c7c-71b1-43c6-a468-23bccf317b10?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 719,
-      "regularPriceMinor": 899,
+      "priceMinor": 479,
+      "regularPriceMinor": 599,
       "genres": [
+        "Action & Abenteuer",
         "Familie & Kinder",
-        "Simulation",
-        "Sport"
+        "Platformer",
+        "Rätsel & Wissen",
+        "Simulation"
       ],
       "services": []
     },
@@ -8807,8 +8809,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 249,
-      "regularPriceMinor": 999,
+      "priceMinor": 999,
+      "regularPriceMinor": null,
       "genres": [
         "Rollenspiele"
       ],
@@ -8825,46 +8827,14 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 499,
-      "regularPriceMinor": 1999,
+      "priceMinor": 1999,
+      "regularPriceMinor": null,
       "genres": [
         "Rollenspiele"
       ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9pfrg44xzcfj",
-      "id": "9pfrg44xzcfj",
-      "title": "Fallout 4: Anniversary Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/fallout-4-anniversary-edition/9pfrg44xzcfj",
-      "cover": "https://store-images.s-microsoft.com/image/apps.50489.14199495301608061.222a9c4b-4b6c-4b60-bd5a-27c78c53c08a.5ed20372-1585-47e0-a0ef-fc073e702f47?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2999,
-      "regularPriceMinor": 5999,
-      "genres": [
-        "Rollenspiele"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:c24svx28pnwm",
-      "id": "c24svx28pnwm",
-      "title": "Fallout 4: Game of the Year Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/fallout-4-game-of-the-year-edition/c24svx28pnwm",
-      "cover": "https://store-images.s-microsoft.com/image/apps.13683.65812291288120258.78db0a4c-6279-4de9-b89c-0e62cd3d55c7.4a149c21-c471-49db-8b56-24fc14623c36?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 999,
-      "regularPriceMinor": 3999,
-      "genres": [
-        "Rollenspiele"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:bs6wj2l56b10",
@@ -8883,22 +8853,6 @@
       ]
     },
     {
-      "key": "xbox:product:9ng31k1jgx8h",
-      "id": "9ng31k1jgx8h",
-      "title": "Fallout 76: Deathclaw Pet Deluxe Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/fallout-76-deathclaw-pet-deluxe-edition/9ng31k1jgx8h",
-      "cover": "https://store-images.s-microsoft.com/image/apps.38854.13583273009434872.42786b77-aec4-424e-bfb3-4b37c0751709.7c319446-bc44-4578-b550-1276f4f0a437?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1979,
-      "regularPriceMinor": 5999,
-      "genres": [
-        "Rollenspiele"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:bx3jnk07z6qk",
       "id": "bx3jnk07z6qk",
       "title": "Fallout: New Vegas",
@@ -8907,8 +8861,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 249,
-      "regularPriceMinor": 999,
+      "priceMinor": 999,
+      "regularPriceMinor": null,
       "genres": [
         "Action & Abenteuer",
         "Rollenspiele",
@@ -9966,6 +9920,26 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9nqjm0l2nzr8",
+      "id": "9nqjm0l2nzr8",
+      "title": "Fünf Elemente Schach",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/funf-elemente-schach/9nqjm0l2nzr8",
+      "cover": "https://store-images.s-microsoft.com/image/apps.45139.13772863885102857.e4bcabd8-8996-410b-a4d2-e0f1c65a4919.4c09fbc7-b48a-4730-85bf-377206e0ee9d?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1274,
+      "regularPriceMinor": 1499,
+      "genres": [
+        "Andere",
+        "Familie & Kinder",
+        "Karte & Brett",
+        "Rätsel & Wissen",
+        "Strategiespiele"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:bp8rrgc7x0pj",
@@ -18756,7 +18730,7 @@
       "id": "9n5k7hwxl4q6",
       "title": "REMATCH",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/rematch/9n5k7hwxl4q6",
-      "cover": "https://store-images.s-microsoft.com/image/apps.6707.14036668029170653.6510dadb-d349-4a75-b762-95e6550fdd9b.d5b36e28-53c0-460b-b8bb-7b97e3335433?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.32652.14036668029170653.97838000-87b6-4a56-9c79-e4eddcea3b6f.0e8acd37-4ade-4b98-b9a1-3ce6befe26d8?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
@@ -22226,6 +22200,24 @@
       ]
     },
     {
+      "key": "xbox:product:9n33spbxbpc7",
+      "id": "9n33spbxbpc7",
+      "title": "Super Pixel Kid 2",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/super-pixel-kid-2/9n33spbxbpc7",
+      "cover": "https://store-images.s-microsoft.com/image/apps.30001.13944106307604978.e4105757-3028-41bc-91ce-3075355a36d5.25fadfbf-df2a-47f6-a88c-8b85eb8f8c56?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 99,
+      "regularPriceMinor": 419,
+      "genres": [
+        "Action & Abenteuer",
+        "Klassiker",
+        "Platformer"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9pbmghl3m2wm",
       "id": "9pbmghl3m2wm",
       "title": "Super Retro Charge",
@@ -23204,22 +23196,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nv3n4g18lts",
-      "id": "9nv3n4g18lts",
-      "title": "The Elder Scrolls V: Skyrim Anniversary Edition + Fallout 4: Anniversary Edition Bundle",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-elder-scrolls-v-skyrim-anniversary-edition-fallout-4-anniversary-edition-bundle/9nv3n4g18lts",
-      "cover": "https://store-images.s-microsoft.com/image/apps.59211.14406600042616633.edf9fe4e-27ce-4661-9d55-40afb3857b33.1c84d5e4-e66b-43fb-ad3b-027c9d2e3609?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 5399,
-      "regularPriceMinor": 8999,
-      "genres": [
-        "Rollenspiele"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:bq1w1t1fc14w",
@@ -24487,6 +24463,24 @@
       "regularPriceMinor": 4999,
       "genres": [
         "Action & Abenteuer"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9nxc038sk8vp",
+      "id": "9nxc038sk8vp",
+      "title": "The Walking Trade",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-walking-trade/9nxc038sk8vp",
+      "cover": "https://store-images.s-microsoft.com/image/apps.18937.14432481906225438.499bca74-e5cd-4820-b1d8-4166c60c6e10.7ccb1c95-776d-442e-9b8f-049fbfd46add?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1079,
+      "regularPriceMinor": 1199,
+      "genres": [
+        "Action & Abenteuer",
+        "Shooter",
+        "Simulation"
       ],
       "services": []
     },
@@ -26137,22 +26131,6 @@
       ]
     },
     {
-      "key": "xbox:product:bw9tffj50mkv",
-      "id": "bw9tffj50mkv",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": null,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bsxsl6wbj0v7",
       "id": "bsxsl6wbj0v7",
       "title": "Viva Piñata",
@@ -26162,6 +26140,22 @@
         "xbox-series"
       ],
       "priceMinor": 1499,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bw9tffj50mkv",
+      "id": "bw9tffj50mkv",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
+      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": null,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
