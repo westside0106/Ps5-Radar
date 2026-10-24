@@ -1,18 +1,18 @@
 {
-  "date": "23.10.2026",
-  "edition": "AUSGABE #048",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "23.10 · LIVE",
+  "date": "24.10.2026",
+  "edition": "AUSGABE #049",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "24.10 · LIVE",
   "leadTitle": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
   "leadDate": "21.10.2026",
   "leadMeta": "Segelt ab morgen in „Isles of Abyss“: Die größte kostenlose Erweiterung von „Once Human“ erscheint auf PS5.",
   "leadPrice": null,
   "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg",
-  "secondary1Title": "Peak erklimmt PS5: Release am 22. Oktober",
-  "secondary1Date": "15.10.2026",
-  "secondary1Meta": "Kletterspiel „Peak“ erscheint am 22. Oktober für PS5: Erfahrt, wie Team Peak Freundschaft und Koop-Chaos auf den Berg bringt.",
+  "secondary1Title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
+  "secondary1Date": "23.10.2026",
+  "secondary1Meta": "Erfahrt, wie Housemarque und Nixxes die epischen Bosse von Saros erschaffen haben.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/f1466e01a66f4cc1fc90e226b8b4f2bf3974e497.jpg",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/ec63432eb0db6548cd70683f739620ad6900ef2f-scaled.jpg",
   "secondary2Title": "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet",
   "secondary2Date": "23.10.2026",
   "secondary2Meta": "Bei der Aktion „Planet der Angebote\" im PlayStation Store gibt es nur für kurze Zeit Rabatte auf eine große Auswahl von Spielen, darunter…",
@@ -30,7 +30,7 @@
     },
     {
       "title": "MLB The Show 26",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
       "imageSource": "official-product"
     },
@@ -69,28 +69,16 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 23.10.2026 · 9/9 Quellen · 5/8 Details",
+  "radarCheck": "Stand 24.10.2026 · 9/9 Quellen · 5/8 Details",
   "sourceAlerts": [
-    {
-      "title": "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet",
-      "url": "https://blog.de.playstation.com/2026/10/23/die-aktion-planet-der-angebote-ist-im-playstation-store-gelandet/",
-      "source": "PlayStation Blog DE",
-      "category": "store"
-    },
-    {
-      "title": "Marvel’s Wolverine: Tipps und Tricks für den Fotomodus",
-      "url": "https://blog.de.playstation.com/2026/10/22/marvels-wolverine-tipps-und-tricks-fuer-den-fotomodus/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
     {
       "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
       "url": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
       "type": "editorial"
     },
     {
-      "title": "Peak erklimmt PS5: Release am 22. Oktober",
-      "url": "https://blog.de.playstation.com/2026/10/15/peak-erklimmt-ps5-release-am-22-oktober/",
+      "title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
+      "url": "https://blog.de.playstation.com/2026/10/23/saros-hinter-den-kulissen-der-epischen-herrscher-von-carcosa/",
       "type": "editorial"
     },
     {
@@ -99,17 +87,10 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Die Aktion &#8222;Planet der Angebote&#8220; ist im PlayStation Store gelandet",
-      "url": "https://blog.de.playstation.com/2026/10/23/die-aktion-planet-der-angebote-ist-im-playstation-store-gelandet/",
-      "category": "store",
-      "score": 70
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-23T12:39:50.986Z",
+    "checkedAt": "2026-10-24T01:26:28.984Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -123,10 +104,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-23T12:39:50.986Z"
+    "lastSuccessfulCheck": "2026-10-24T01:26:28.984Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-23T12:39:50.986Z",
+    "checkedAt": "2026-10-24T01:26:28.984Z",
     "errors": [],
     "sources": [
       {
@@ -169,7 +150,7 @@
   },
   "gameDetails": {
     "Once Human: „Isles of Abyss“ erscheint morgen auf PS5": {},
-    "Peak erklimmt PS5: Release am 22. Oktober": {},
+    "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa": {},
     "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet": {},
     "Sniper Elite: Resistance": {
       "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
@@ -201,18 +182,18 @@
       "platform": "PS5",
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
         "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
       "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
       "developer": "San Diego Studio",
       "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
       "title": "MLB The Show 26"
     },
     "Wobbly Life": {
@@ -273,7 +254,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-23T12:39:37.136Z",
+    "checkedAt": "2026-10-24T01:26:09.209Z",
     "titles": 8,
     "fetched": 5,
     "enriched": 5,
@@ -327,13 +308,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-23T12:39:36.766Z",
+    "checkedAt": "2026-10-24T01:26:08.786Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-23T12:39:36.854Z",
+    "checkedAt": "2026-10-24T01:26:08.882Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -346,7 +327,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-23T12:39:43.551Z",
+    "checkedAt": "2026-10-24T01:26:20.324Z",
     "verified": 3,
     "missing": [
       "Chained Echoes"
@@ -357,8 +338,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-23T12:39:36.419Z",
-    "date": "23.10.2026",
+    "checkedAt": "2026-10-24T01:26:08.197Z",
+    "date": "24.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -368,10 +349,10 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg"
       },
       {
-        "title": "Peak erklimmt PS5: Release am 22. Oktober",
-        "date": "15.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/15/peak-erklimmt-ps5-release-am-22-oktober/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/f1466e01a66f4cc1fc90e226b8b4f2bf3974e497.jpg"
+        "title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
+        "date": "23.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/23/saros-hinter-den-kulissen-der-epischen-herrscher-von-carcosa/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/ec63432eb0db6548cd70683f739620ad6900ef2f-scaled.jpg"
       },
       {
         "title": "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet",
@@ -383,9 +364,9 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-23T12:39:43.868Z",
-    "berlinDate": "2026-10-23",
-    "newPostsToday": 1,
+    "checkedAt": "2026-10-24T01:26:20.682Z",
+    "berlinDate": "2026-10-24",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [

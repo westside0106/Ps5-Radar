@@ -1,0 +1,368 @@
+{
+  "date": "24.10.2026",
+  "edition": "AUSGABE #049",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "24.10 · LIVE",
+  "leadTitle": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+  "leadDate": "21.10.2026",
+  "leadMeta": "Segelt ab morgen in „Isles of Abyss“: Die größte kostenlose Erweiterung von „Once Human“ erscheint auf PS5.",
+  "leadPrice": null,
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg",
+  "secondary1Title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
+  "secondary1Date": "23.10.2026",
+  "secondary1Meta": "Erfahrt, wie Housemarque und Nixxes die epischen Bosse von Saros erschaffen haben.",
+  "secondary1Price": null,
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/ec63432eb0db6548cd70683f739620ad6900ef2f-scaled.jpg",
+  "secondary2Title": "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet",
+  "secondary2Date": "23.10.2026",
+  "secondary2Meta": "Bei der Aktion „Planet der Angebote\" im PlayStation Store gibt es nur für kurze Zeit Rabatte auf eine große Auswahl von Spielen, darunter…",
+  "secondary2Price": null,
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4840acc49660b14d14f188543cec3418e2725e88-scaled.png",
+  "psplusLabel": "SEPTEMBER 2026",
+  "psplusTitle": "September-Spiele sind live",
+  "psplusText": "Verfügbar bis 05.10.",
+  "plusGames": [
+    {
+      "title": "Sniper Elite: Resistance",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "imageSource": "official-product"
+    },
+    {
+      "title": "MLB The Show 26",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
+      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "imageSource": "official-product"
+    },
+    {
+      "title": "Wobbly Life",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
+      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "imageSource": "official-product"
+    },
+    {
+      "title": "Chained Echoes",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748",
+      "imageSource": "unverified"
+    }
+  ],
+  "storeTitle": "Keine verifizierten Top-Deals",
+  "storeText": "Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.",
+  "storeEnd": null,
+  "deals": [],
+  "releases": [],
+  "quickItems": [],
+  "leavingTitle": "Kein aktives Angebotsende",
+  "leavingText": "Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.",
+  "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
+  "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
+  "eaItems": [
+    "10 % auf digitale EA-Käufe",
+    "Monatliche Mitgliederbelohnungen",
+    "The Play List"
+  ],
+  "ubisoftTitle": "Ubisoft+ Classics",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftItems": [
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
+  ],
+  "radarCheck": "Stand 24.10.2026 · 9/9 Quellen erfolgreich geprüft",
+  "sourceAlerts": [
+    {
+      "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+      "url": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
+      "type": "editorial"
+    },
+    {
+      "title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
+      "url": "https://blog.de.playstation.com/2026/10/23/saros-hinter-den-kulissen-der-epischen-herrscher-von-carcosa/",
+      "type": "editorial"
+    },
+    {
+      "title": "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet",
+      "url": "https://blog.de.playstation.com/2026/10/23/die-aktion-planet-der-angebote-ist-im-playstation-store-gelandet/",
+      "type": "editorial"
+    }
+  ],
+  "editorial": [],
+  "health": {
+    "status": "ok",
+    "checkedAt": "2026-10-24T01:26:20.480Z",
+    "okSources": 9,
+    "totalSources": 9,
+    "failedSources": 0,
+    "warnings": 0,
+    "lastSuccessfulCheck": "2026-10-24T01:25:58.669Z",
+    "editorialFreshness": "ok"
+  },
+  "sourceCheck": {
+    "checkedAt": "2026-10-24T01:25:58.669Z",
+    "errors": [],
+    "sources": [
+      {
+        "name": "PlayStation Blog",
+        "ok": true
+      },
+      {
+        "name": "Monats-Releases",
+        "ok": true
+      },
+      {
+        "name": "PS Plus monatlich",
+        "ok": true
+      },
+      {
+        "name": "PS Plus aktuell",
+        "ok": true
+      },
+      {
+        "name": "EA Play",
+        "ok": true
+      },
+      {
+        "name": "Ubisoft+",
+        "ok": true
+      },
+      {
+        "name": "Store: Hogwarts Legacy",
+        "ok": true
+      },
+      {
+        "name": "Store: Star Wars Outlaws",
+        "ok": true
+      },
+      {
+        "name": "Store: Red Dead Redemption",
+        "ok": true
+      }
+    ]
+  },
+  "gameDetails": {
+    "Once Human: „Isles of Abyss“ erscheint morgen auf PS5": {},
+    "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa": {},
+    "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet": {},
+    "Sniper Elite: Resistance": {
+      "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
+      "publisher": "REBELLION INTERACTIVE",
+      "genre": "Taktik-Shooter · Stealth · Action",
+      "release": "30.1.2025",
+      "platform": "PS4 · PS5",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/b026676dfa9d7639fef041a9f0ed4c6d076e2ad3647eae1c.png",
+        "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202411/1909/8aafcc75d67ed0a3c4bb8410cd57ff437ae3a726da42177f.png"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=wPH9TFf6yfE",
+      "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
+      "developer": "Rebellion",
+      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
+      "title": "Sniper Elite: Resistance"
+    },
+    "MLB The Show 26": {
+      "description": "Baseball-Simulation von San Diego Studio mit Road to the Show, Diamond Dynasty und weiteren Einzelspieler- und Online-Modi.",
+      "publisher": "Sony Interactive Entertainment",
+      "genre": "Sport · Baseball",
+      "release": "17.3.2026",
+      "platform": "PS5",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
+        "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
+      "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
+      "developer": "San Diego Studio",
+      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
+      "title": "MLB The Show 26"
+    },
+    "Wobbly Life": {
+      "description": "Offene Physik-Sandbox mit Jobs, Missionen, Fahrzeugen, Häusern und Koop für bis zu vier Spieler.",
+      "publisher": "RUBBERBANDGAMES LTD",
+      "genre": "Sandbox · Adventure · Familie",
+      "release": "18.9.2025",
+      "platform": "PS4 · PS5",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/l2VMZjLR9en9orx3nHGCaj8U.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/3650ac7e207de17c9aa1e057339b9e5b405c97a427af26de.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/b44f53cd0e854a7e1663d3ea5908708161c3a8972d1c95c5.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/6d5fc87bf96131851634a38b4e50c1d18b1697b9f5054891.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/4a6dcb161d41908a172df2bc0b2e435d79c454198de1c08f.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/9a3b72705f0abf31b9997bddf3e54b88883dfefcee8af8a5.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "developer": "RubberBandGames",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
+      "title": "Wobbly Life"
+    },
+    "Chained Echoes": {
+      "description": "Storyfokussiertes 16-Bit-Rollenspiel mit rundenbasierten Kämpfen, Fantasywelt, Mechs und einer Reise durch den Kontinent Valandis.",
+      "publisher": "DECK13 INTERACTIVE",
+      "genre": "Rollenspiel · JRPG-inspiriert",
+      "release": "7.12.2022",
+      "platform": "PS4",
+      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/2dmcrpRqwwcV89IGO9TqQsNd.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202507/0913/3bfc69e8efb69db85ffef2b61280c9a9df6491d6af7b947e.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/this-month-on-playstation-cross-sell-background-block-desktop-01-en-04oct22",
+        "https://gmedia.playstation.com/is/image/SIEPDC/best-jrpgs-keyart-02-en-30aug22",
+        "https://gmedia.playstation.com/is/image/SIEPDC/loader-spinner-dark"
+      ],
+      "pageUrl": "https://www.playstation.com/de-de/games/chained-echoes/",
+      "developer": "Matthias Linda"
+    },
+    "EA SPORTS FC 27": {
+      "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
+      "developer": "EA SPORTS",
+      "genre": "Sport · Fußball",
+      "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
+      "publisher": "EA Swiss Sarl",
+      "release": "18.9.2026",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
+        "https://i.ytimg.com/vi_webp/LoqWKZ1kjio/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-02-en-13jul26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=LoqWKZ1kjio"
+    }
+  },
+  "enrichment": {
+    "checkedAt": "2026-10-24T01:26:09.209Z",
+    "titles": 8,
+    "fetched": 5,
+    "enriched": 5,
+    "warnings": []
+  },
+  "resolvedSources": {
+    "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
+    "psPlusStoreUrls": {
+      "Sniper Elite: Resistance": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
+      "MLB The Show 26": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
+      "Wobbly Life": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
+      "Chained Echoes": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748"
+    },
+    "monthlyReleases": "https://blog.de.playstation.com/?p=204875",
+    "releaseStoreUrls": {
+      "The Blood of Dawnwalker": "https://store.playstation.com/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
+      "Onimusha: Way of the Sword": "https://store.playstation.com/product/UP0102-PPSA27836_00-0000000000000001",
+      "NBA 2K27": "https://store.playstation.com/product/UP1001-PPSA35889_00-NBA2K27000000000",
+      "Mewgenics": "https://store.playstation.com/concept/10019219",
+      "Marvel’s Wolverine": "https://store.playstation.com/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+      "Aniimo": "https://store.playstation.com/product/JB2238-PPSA35870_00-0588301512156043",
+      "Control Resonant": "https://store.playstation.com/product/EP5291-PPSA34547_00-0210080241603648",
+      "Silent Hill: Townfall": "https://store.playstation.com/product/JP0101-PPSA33286_00-TOWNFALLSIEJ0000",
+      "EA Sports FC 27": "https://store.playstation.com/product/UP0006-PPSA34015_00-27STANDARDBUNDLE"
+    },
+    "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
+    "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
+    "storeCampaign": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
+    "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "storeDeals": {}
+  },
+  "eaPlay": {
+    "title": "FC™ 27 · 10h Trial ab 18.09.",
+    "trial": null,
+    "items": [
+      "10 % auf digitale EA-Käufe",
+      "Monatliche Mitgliederbelohnungen",
+      "The Play List"
+    ],
+    "sourceUrl": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play"
+  },
+  "ubisoftPlus": {
+    "title": "Ubisoft+ Classics",
+    "price": "7,99 €",
+    "items": [
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
+    ],
+    "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
+  },
+  "automationV2": {
+    "version": 2,
+    "checkedAt": "2026-10-24T01:26:08.786Z",
+    "month": "Oktober",
+    "year": 2026,
+    "notes": []
+  },
+  "storeDiscovery": {
+    "checkedAt": "2026-10-24T01:26:08.882Z",
+    "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "activeCampaign": false,
+    "staticLinks": 0,
+    "browserLinks": 0,
+    "links": 0,
+    "fetched": 0,
+    "verified": 0,
+    "selected": 0,
+    "mode": "no-active-campaign",
+    "warnings": []
+  },
+  "mediaValidation": {
+    "checkedAt": "2026-10-24T01:26:20.324Z",
+    "verified": 3,
+    "missing": [
+      "Chained Echoes"
+    ],
+    "warnings": [
+      "Chained Echoes: Produktidentitaet oder Cover nicht bestaetigt"
+    ]
+  },
+  "editorialFreshness": {
+    "status": "ok",
+    "checkedAt": "2026-10-24T01:26:08.197Z",
+    "date": "24.10.2026",
+    "maxAgeDays": 21,
+    "selected": [
+      {
+        "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+        "date": "21.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg"
+      },
+      {
+        "title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
+        "date": "23.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/23/saros-hinter-den-kulissen-der-epischen-herrscher-von-carcosa/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/ec63432eb0db6548cd70683f739620ad6900ef2f-scaled.jpg"
+      },
+      {
+        "title": "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet",
+        "date": "23.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/23/die-aktion-planet-der-angebote-ist-im-playstation-store-gelandet/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4840acc49660b14d14f188543cec3418e2725e88-scaled.png"
+      }
+    ]
+  },
+  "temporalCheck": {
+    "status": "ok",
+    "checkedAt": "2026-10-23T12:39:43.868Z",
+    "berlinDate": "2026-10-23",
+    "newPostsToday": 1,
+    "staleRelativeCopyFixed": 0,
+    "errors": [],
+    "warnings": [
+      "PS Plus: kein verifiziertes Produktcover für Chained Echoes"
+    ]
+  }
+}
