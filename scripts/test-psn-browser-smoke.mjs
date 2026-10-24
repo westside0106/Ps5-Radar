@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-const base=process.env.RADAR_TEST_URL||'http://127.0.0.1:3100';
+const base=process.env.RADAR_TEST_URL||'http://localhost:3100';
 const browser=await chromium.launch({headless:true});
 try{
  for(const width of [375,390,768,1280]){
