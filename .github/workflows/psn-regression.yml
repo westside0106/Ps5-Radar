@@ -1,0 +1,23 @@
+name: PSN and metadata regression
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  psn-metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Test PSN and metadata integrations (mocked APIs; no secrets)
+        run: npm run test:psn
+      - name: Verify production build
+        run: npm run build
