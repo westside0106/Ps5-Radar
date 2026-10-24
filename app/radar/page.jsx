@@ -520,6 +520,10 @@ export default async function RadarPage() {
           </div>
         </section>
 
+        <a className="mag-spielewelt-banner" href="/mein-playstation?view=games#playstation-hub" aria-label="Meine Spielewelt öffnen: Spiele, Fortschritt und Spieldetails">
+          <img src="/meine-spielewelt-banner.svg" alt="Meine Spielewelt – Entdecke Spiele, deinen Fortschritt, Lieblingswelten und mehr" width="1536" height="512" loading="lazy"/>
+        </a>
+
         <section className="mag-gamefinder" aria-label="Spiel entdecken">
           <div className="mag-gamefinder-intro">
             <strong>WAS SPIELE ICH ALS NÄCHSTES?</strong>
