@@ -21,3 +21,13 @@ jobs:
         run: npm run test:psn
       - name: Verify production build
         run: npm run build
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+      - name: Check responsive browser and private endpoints
+        env:
+          RADAR_PASSWORD: radar-local
+          RADAR_SESSION_SECRET: ci-only-radar-session-secret-32-chars
+        run: |
+          npm run start -- -p 3100 > /tmp/radar-smoke.log 2>&1 &
+          for i in $(seq 1 40); do curl -fsS http://127.0.0.1:3100/ >/dev/null && break; sleep 2; done
+          node scripts/test-psn-browser-smoke.mjs
