@@ -61,7 +61,7 @@ export default function GamingPlanner({played=[],titles=[]}){
  },[games,notes,budget]);
  function exportBackup(){
   const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback))}catch{return fallback}};
-  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),trophyTargets:read('psn-trophy-targets-v1',{})},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),coverUrls:read('psn-cover-urls-v1',{}),trophyTargets:read('psn-trophy-targets-v1',{})},null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='ps5-radar-komplett-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),500);
   setBackupMessage('Vollständiges lokales Backup erstellt. Datei enthält deine persönlichen Notizen und Trophäenziele; sicher aufbewahren.');
  }
@@ -78,7 +78,7 @@ export default function GamingPlanner({played=[],titles=[]}){
      const byDate=new Map(mergedHistory.map(x=>[x.date,{date:x.date,minutes:Math.round(x.minutes),games:x.games}]));
      const list=[...byDate.values()].slice(-365);changes.push([HISTORY_KEY,list]);
     }
-    const fields=[['covers','psn-cover-preferences-v1',v=>v==='steamgriddb'||v==='original'],['trophyTargets','psn-trophy-targets-v1',v=>Array.isArray(v)]];
+    const fields=[['covers','psn-cover-preferences-v1',v=>v==='steamgriddb'||v==='original'],['coverUrls','psn-cover-urls-v1',v=>typeof v==='string'&&/^https:\/\/[a-z0-9.-]+\.steamgriddb\.com\//i.test(v)],['trophyTargets','psn-trophy-targets-v1',v=>Array.isArray(v)]];
     for(const [field,key,validate] of fields){const obj=raw[field];if(!obj||typeof obj!=='object'||Array.isArray(obj))continue;const cleaned={};for(const [id,value] of Object.entries(obj).slice(0,3000)){if(!id||id.length>180||!validate(value))continue;cleaned[id]=Array.isArray(value)?value.filter(x=>typeof x==='string'&&x.length<100).slice(0,400):value}let existing={};try{existing=JSON.parse(localStorage.getItem(key)||'{}')}catch{}changes.push([key,{...(existing&&typeof existing==='object'&&!Array.isArray(existing)?existing:{}),...cleaned}])}
    }
    // Validate all data before applying changes; avoid silently discarding existing local settings.
