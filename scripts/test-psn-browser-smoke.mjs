@@ -1,10 +1,11 @@
 import assert from 'node:assert/strict';
-import {chromium} from 'playwright';
+import {chromium,webkit} from 'playwright';
 const base=process.env.RADAR_TEST_URL||'http://localhost:3100';
-const browser=await chromium.launch({headless:true});
-try{
- for(const width of [375,390,430,768,1280]){
-  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE'});
+for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390,430]]]){
+ const browser=await engine.launch({headless:true});
+ try{
+ for(const width of widths){
+  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:width<=430,hasTouch:width<=430,deviceScaleFactor:width<=430?2:1});
   const page=await context.newPage();
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
@@ -23,9 +24,22 @@ try{
    await page.locator('.magazine').waitFor();
    await page.goto(base+'/mein-playstation?view=games',{waitUntil:'domcontentloaded'});
    const size=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
-   assert.ok(size.scroll<=size.client+2,'Horizontal overflow at '+width+': '+JSON.stringify(size));
+   assert.ok(size.scroll<=size.client+2,engine.name()+' horizontal overflow at '+width+': '+JSON.stringify(size));
+   // Live PSN data is not available in CI; exercise the real cards whenever fixture data is present.
+   const gameCard=page.locator('.psn-hub-game').first();
+   if(await gameCard.count()){
+    await gameCard.click();
+    const dialog=page.getByRole('dialog',{name:/Spieldetails/i});
+    await dialog.waitFor();
+    const modalSize=await dialog.evaluate(el=>({width:el.getBoundingClientRect().width,viewport:innerWidth,scrollWidth:el.scrollWidth,clientWidth:el.clientWidth}));
+    assert.ok(modalSize.width<=modalSize.viewport+1&&modalSize.scrollWidth<=modalSize.clientWidth+2,engine.name()+' modal horizontal overflow: '+JSON.stringify(modalSize));
+    await dialog.getByRole('button',{name:'Schließen'}).click();
+    assert.equal(await dialog.count(),0);
+   }
+
   }
   await context.close();
  }
- console.log('PSN private endpoint and responsive mobile browser smoke checks passed');
-}finally{await browser.close()}
+ }finally{await browser.close()}
+}
+console.log('PSN private routes, responsive Chromium and touch-enabled WebKit browser smoke checks passed');
