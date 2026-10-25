@@ -1,11 +1,12 @@
 import assert from 'node:assert/strict';
+import {createHmac} from 'node:crypto';
 import {chromium,webkit} from 'playwright';
 const base=process.env.RADAR_TEST_URL||'http://localhost:3100';
 for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390,430]]]){
  const browser=await engine.launch({headless:true});
  try{
  for(const width of widths){
-  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:width<=430,deviceScaleFactor:width<=430?2:1});
+  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:engine===webkit&&width<=430,deviceScaleFactor:width<=430?2:1});
   const page=await context.newPage();
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
@@ -17,14 +18,26 @@ for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390
   const unauthorizedUpload=await context.request.put(base+'/mein-playstation/api/profile-sync',{data:{version:2,revision:0,data:{notes:{},history:[]}},maxRedirects:0});
   assert.ok([401,302,303,307,308].includes(unauthorizedUpload.status()),'Cloud endpoint must reject unauthenticated writes');
   const input=page.locator('input[name="password"]');
-  if(await input.count()){
+  // WebKit rejects Secure cookies over HTTP localhost in production mode.
+  // Inject only a deterministic, CI-only session cookie for WebKit's private-layout check.
+  if(engine===webkit){
+   const password=process.env.RADAR_PASSWORD||'radar-local';
+   const secret=process.env.RADAR_SESSION_SECRET;
+   assert.ok(secret,'CI session secret missing');
+   const value=createHmac('sha256',secret).update('psradar:'+password).digest('hex');
+   await context.addCookies([{name:'psradar_session',value,url:base,httpOnly:true,sameSite:'Lax',secure:false}]);
+   await page.goto(base+'/mein-playstation?view=games',{waitUntil:'domcontentloaded'});
+  }else if(await input.count()){
    await input.fill(process.env.RADAR_PASSWORD||'radar-local');
    await page.getByRole('button',{name:'Radar öffnen'}).click();
    await page.waitForURL('**/radar',{waitUntil:'domcontentloaded',timeout:15000});
    await page.locator('.magazine').waitFor();
    await page.goto(base+'/mein-playstation?view=games',{waitUntil:'domcontentloaded'});
+  }
+  if(await page.locator('.psn-shell').count()){
    const size=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
    assert.ok(size.scroll<=size.client+2,engine.name()+' horizontal overflow at '+width+': '+JSON.stringify(size));
+   console.log('Gameworld viewport verified:',engine.name(),width);
    // Live PSN data is not available in CI; exercise the real cards whenever fixture data is present.
    const gameCard=page.locator('.psn-hub-game').first();
    if(await gameCard.count()){
