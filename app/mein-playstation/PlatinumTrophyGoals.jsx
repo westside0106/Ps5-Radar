@@ -17,6 +17,8 @@ export default function PlatinumTrophyGoals({game,titles=[],goal,onChange,onDirt
  const candidates=useMemo(()=>trophySetCandidates(game,titles),[game,titles]);
  const [data,setData]=useState(null),[state,setState]=useState('idle'),[error,setError]=useState('');
  const [view,setView]=useState('open'),[showHidden,setShowHidden]=useState(false),[refresh,setRefresh]=useState(0);
+ const [visibleCount,setVisibleCount]=useState(16);
+ useEffect(()=>setVisibleCount(16),[view,goal.setId]);
  const selectedSet=candidates.find(t=>String(t.npCommunicationId)===goal.setId);
  useEffect(()=>{
   if(!selectedSet){setData(null);setState('idle');setError('');return}
@@ -69,9 +71,9 @@ export default function PlatinumTrophyGoals({game,titles=[],goal,onChange,onDirt
      <div role="group" aria-label="Trophäen anzeigen">
       {[[ 'open','Noch offen'],['selected','Meine Ziele'],['all','Alle']].map(([id,label])=><button key={id} type="button" aria-pressed={view===id} onClick={()=>setView(id)}>{label}</button>)}
      </div>
-     <button type="button" onClick={()=>setRefresh(n=>n+1)}>PSN neu prüfen</button>
+     <button type="button" onClick={()=>setRefresh(n=>n+1)}>Trophäen neu laden</button>
     </div>
-    {shown.length?<div className="psn-platinum-list">{shown.map(t=>{
+    {shown.length?<><div className="psn-platinum-list">{shown.slice(0,visibleCount).map(t=>{
      const id=trophyId(t),isTarget=goal.targetIds.includes(id),manual=goal.doneIds.includes(id),hidden=t.trophyHidden&&!t.earned&&!showHidden;
      return <article key={id} className={'psn-platinum-item '+(t.earned?'is-earned':'')}>
       <div className="psn-platinum-item-title"><strong>{hidden?'Versteckte Trophäe':t.trophyName||'Unbenannte Trophäe'}</strong><small>{baseTrophy(t)?'Basisspiel':'DLC / Zusatzgruppe'} · {t.trophyType||'Trophäe'} · {t.earned?'Auf PSN erhalten':'Auf PSN offen'}</small></div>
@@ -82,7 +84,7 @@ export default function PlatinumTrophyGoals({game,titles=[],goal,onChange,onDirt
        {t.earned?<small>PSN bestätigt</small>:null}
       </div>
      </article>;
-    })}</div>:<p className="psn-platinum-note">{view==='selected'?'Noch keine Teilziele ausgewählt. Öffne „Noch offen“ und markiere die gewünschten Trophäen.':'Keine Trophäen für diese Ansicht.'}</p>}
+    })}</div>{shown.length>visibleCount?<button className="psn-platinum-more" type="button" onClick={()=>setVisibleCount(n=>n+16)}>Weitere Trophäen anzeigen ({shown.length-visibleCount} übrig)</button>:null}</>:<p className="psn-platinum-note">{view==='selected'?'Noch keine Teilziele ausgewählt. Öffne „Noch offen“ und markiere die gewünschten Trophäen.':'Keine Trophäen für diese Ansicht.'}</p>}
     {data.some(t=>t.trophyHidden&&!t.earned)?<label className="psn-platinum-check"><input type="checkbox" checked={showHidden} onChange={e=>setShowHidden(e.target.checked)}/> Versteckte Namen und Beschreibungen anzeigen</label>:null}
     <p className="psn-platinum-note"><strong>Speichern:</strong> Deine gewählten Trophäen und Häkchen werden zusammen mit dem Spielplan über den Button „Spielplan speichern“ übernommen.</p>
    </>:null}
