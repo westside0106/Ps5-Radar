@@ -18,7 +18,7 @@ function metadataStatus(game){const m=game.metadata;return !m?'Zusatzinfos im De
 function safeDate(v){if(!v)return null;const d=new Date(v);return Number.isNaN(d.getTime())?null:d.toLocaleDateString('de-DE')}
 function estimateHours(value){return value==null?'—':value.toLocaleString('de-DE',{maximumFractionDigits:1})+' Std.'}
 function historicalListLabel(insight){return insight.historicalStatus==='removed'?'In der Quelle als entfernt markiert'+(insight.removedNote?' ('+insight.removedNote+')':''):insight.historicalStatus==='additional'?'Zusatzliste (nicht als aktueller Katalog bestätigt)':'September-Hauptliste (keine aktuelle Verfügbarkeitsprüfung)'}
-function GameCover({game,className}){const [failed,setFailed]=useState(false);const url=cover(game);useEffect(()=>setFailed(false),[url]);return url&&!failed?<img className={className||undefined} src={url} loading="lazy" alt="" onError={()=>setFailed(true)}/>:<span className="psn-hub-cover-fallback" aria-hidden="true">PS</span>}
+function GameCover({game,className}){const [failed,setFailed]=useState(false);const url=cover(game);useEffect(()=>setFailed(false),[url]);return url&&!failed?<img className={className||undefined} src={url} loading="lazy" alt="" onError={()=>setFailed(true)}/>:<span className="psn-hub-cover-fallback" aria-hidden="true">{isManualGame(game)?'＋':'PS'}</span>}
 const isVerifiedAlternateCover=value=>typeof value==='string'&&/^https:\/\/(?:[a-z0-9-]+\.)*steamgriddb\.com\/[^\s?#]+/i.test(value);
 function PreferredCover({game,preferredUrl,className}){
  const [failed,setFailed]=useState(false);
