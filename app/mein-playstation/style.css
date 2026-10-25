@@ -322,3 +322,71 @@
 .psn-platinum-actions>small{font-size:11px;color:#a3e6c4}
 .psn-platinum-plan button:focus-visible,.psn-platinum-plan input:focus-visible,.psn-platinum-plan select:focus-visible{outline:3px solid #9bd3ff;outline-offset:2px}
 @media(max-width:480px){.psn-platinum-plan{padding:10px}.psn-platinum-metrics{gap:5px}.psn-platinum-metrics>div{padding:7px}.psn-platinum-metrics strong{font-size:17px}.psn-platinum-metrics small{font-size:9px}.psn-platinum-controls{align-items:stretch}.psn-platinum-list{max-height:420px}}
+
+/* #58 Gameworld finish: unified design language and mobile-first hierarchy */
+.psn-hub{--game-panel:#132b46;--game-outline:#456d94;--game-accent:#81bdf5}
+.psn-hub-filter-hub{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;margin:7px 0 12px}
+.psn-hub-primary-filters{margin:0!important;gap:7px}
+.psn-hub-primary-filters button{min-height:42px;border-color:#527aa4;font-size:12px;padding:10px 14px}
+.psn-hub-advanced-filters{min-width:0;position:relative}
+.psn-hub-advanced-filters>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;cursor:pointer;list-style:none;border:1px solid #42678a;color:#c8e0f4;background:#142b44;border-radius:10px;padding:11px 12px;font-size:12px;min-height:42px}
+.psn-hub-advanced-filters>summary::-webkit-details-marker{display:none}
+.psn-hub-advanced-filters>summary:before{content:'◫';color:#86bdf1}
+.psn-hub-advanced-filters[open]>summary{border-color:#81bdf5;border-radius:10px 10px 0 0}
+.psn-hub-advanced-filters .psn-hub-coverage-filters{position:absolute;right:0;z-index:6;top:100%;width:min(330px,calc(100vw - 36px));margin:0;padding:12px;border:1px solid #4e779c;border-top:0;border-radius:0 0 12px 12px;background:#10253b;box-shadow:0 12px 28px #0009}
+.psn-hub-active-filter{font-size:10px;border:1px solid #80bffd;padding:2px 6px;border-radius:8px;color:#e6f5ff;white-space:nowrap}
+.psn-hub-library-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:15px 0 8px}
+.psn-hub-library-head strong{font-size:16px;color:#edf6ff}
+.psn-hub-library-head small{font-size:11px;color:#a6c7df}
+.psn-hub-hint{margin:3px 0 10px!important}
+.psn-hub-empty-games{grid-column:1/-1;text-align:center;border:1px dashed #557fa5;border-radius:14px;padding:24px 15px;background:#122a44}
+.psn-hub-empty-games strong{font-size:16px;color:#ecf6ff}
+.psn-hub-empty-games p{font-size:12px;color:#b1c8db}
+.psn-hub-empty-games button{min-height:44px;border:1px solid #6c9fd0;border-radius:9px;background:#204d76;color:#f5f9ff;padding:10px 14px;cursor:pointer}
+.psn-hub .psn-hub-game{display:flex;flex-direction:column;align-items:stretch;text-align:left;gap:5px;border-color:#3a5d7d;background:linear-gradient(165deg,#172f4a,#0f2036);box-shadow:0 5px 15px #02081744;min-height:0}
+.psn-hub .psn-hub-game>strong{font-size:13px;line-height:1.35;min-height:0;overflow-wrap:anywhere}
+.psn-hub .psn-hub-game>small{line-height:1.45}
+.psn-hub .psn-hub-game .psn-hub-more{border-top:1px solid #335472;padding-top:8px;margin-top:auto;font-size:11px;font-weight:650}
+.psn-hub .psn-hub-game .psn-game-playtime{font-size:12px;color:#d5e9ff;white-space:normal}
+.psn-hub .psn-game-plan-label{background:#193e60;border-color:#5689b9}
+.psn-game-modal{width:min(100%,670px)!important;max-height:min(880px,calc(100dvh - 28px))!important;border-radius:18px!important;padding:20px 23px 22px!important;scroll-padding-top:22px}
+.psn-game-modal .psn-modal-close{position:sticky!important;top:0!important;float:right;margin:0 0 6px 8px!important;z-index:15;display:grid;place-items:center;min-width:42px;min-height:42px;border:1px solid #6a96bd;border-radius:12px!important;background:#152a41!important;box-shadow:0 4px 12px #0008}
+.psn-game-modal-hero{margin-top:8px!important;min-width:0}
+.psn-game-modal-hero-title{min-width:0}
+.psn-game-modal-hero-title h3{font-size:clamp(21px,3vw,29px);line-height:1.2;hyphens:auto}
+.psn-game-modal-personal{margin:14px 0 0;background:#0d2941;border:1px solid #3c688d;border-left:3px solid #91c9ff;border-radius:9px;padding:12px}
+.psn-game-modal-personal span{color:#9dc9e8;font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+.psn-game-modal-personal p{font-size:13px;color:#f0f5fb;line-height:1.55;margin:5px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.psn-game-modal-toolbar{margin-top:13px}
+.psn-game-modal-toolbar .psn-modal-action{min-height:44px}
+.psn-game-modal-highlights{gap:9px}
+.psn-game-modal-highlights>div{min-width:0}
+.psn-game-modal-section{border-top:1px solid #385674}
+.psn-game-modal-section h4{font-size:14px;margin-bottom:8px}
+.psn-game-modal-section>p,.psn-game-modal-section small{line-height:1.65}
+.psn-platinum-list{max-height:none!important;overflow:visible!important;padding-right:0}
+.psn-platinum-more{width:100%;border:1px solid #648eaf;border-radius:9px;background:#193d5d;color:#f2f8ff;padding:12px;min-height:44px;font-size:12px;font-weight:650;cursor:pointer}
+.psn-hub button:focus-visible,.psn-hub summary:focus-visible,.psn-game-modal button:focus-visible{outline:3px solid #a9d6ff!important;outline-offset:2px}
+@media(max-width:720px){
+ .psn-hub-filter-hub{grid-template-columns:1fr;gap:5px}
+ .psn-hub-advanced-filters{justify-self:start}
+ .psn-hub-advanced-filters .psn-hub-coverage-filters{left:0;right:auto}
+ .psn-hub-library-head{flex-direction:column;align-items:start;gap:3px}
+ .psn-game-modal{width:100%!important;max-height:calc(100dvh - 16px)!important;padding:15px!important;border-radius:16px!important}
+ .psn-modal-backdrop{padding:8px!important}
+ .psn-game-modal .psn-game-modal-hero{grid-template-columns:87px minmax(0,1fr);gap:11px}
+ .psn-game-modal .psn-game-modal-cover{width:87px;height:120px}
+ .psn-game-modal .psn-game-modal-hero-title h3{font-size:20px}
+ .psn-game-modal-highlights{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .psn-game-modal-highlights>div{min-width:0}
+}
+@media(max-width:380px){
+ .psn-hub-primary-filters{gap:5px}
+ .psn-hub-primary-filters button{padding:9px 11px;font-size:11px}
+ .psn-game-modal .psn-game-modal-hero{grid-template-columns:75px minmax(0,1fr)}
+ .psn-game-modal .psn-game-modal-cover{width:75px;height:102px}
+}
+@media(prefers-reduced-motion:reduce){
+ .psn-hub .psn-hub-game,.psn-game-modal,.psn-modal-backdrop{animation:none!important;transition:none!important}
+ .psn-hub .psn-hub-game:hover{transform:none!important}
+}
