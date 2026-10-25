@@ -13,7 +13,7 @@ Security/design:
 - The cloud API is disabled when env vars are absent. Opaque Supabase `sb_secret_*` keys are sent in the `apikey` header only; legacy service-role JWTs retain Bearer authorization.
 - The table is a private single-profile record, appropriate for the existing shared-password single-user application; do not extend this model to multiple independent users.
 - The API uses optimistic revision checks and returns HTTP 409 for concurrent changes. No automatic overwrites.
-- Sync is manual by default. An optional browser-local toggle uploads only after explicitly saving a game plan. There is no automatic download or cross-device merging.
+- Sync is manual by default. An optional browser-local toggle uploads after explicit local changes to game plans, manually added games, trophy target selections and cover settings. There is no automatic download or cross-device merging.
 - Game cover URL preferences are included in future cloud backups and JSON exports; old backups without that field remain loadable.
 - Back up your existing data using the JSON exporter before restoring cloud data.
 
@@ -23,3 +23,9 @@ Security/design:
 - CI validates Supabase payload types, secret headers, unauthenticated API rejection, and mobile browser layouts. It does not send a write to your real Supabase profile.
 - A complete device-to-device verification requires an authenticated save on device A, checking the revision, followed by a confirmed restore on device B. Do not automatically overwrite device B.
 - Digital purchases are from an undocumented Sony API. Current purchase query uses a hash confirmed in community code; Sony can change it at any time.
+
+## Functional audit (October 2026)
+
+- Manually planned games are stored in `psn-custom-games-v1` and included in JSON exports and Cloud profiles. They do not imply PSN ownership, playtime or trophy activity.
+- The main PSN played-title feed is paginated with a bounded 1,500-entry scan, duplicate detection and partial-failure reporting; this does not replace Sony's separate digital-entitlement Beta.
+- Selecting alternative artwork can trigger the optional cloud upload; users must activate this feature themselves. Automatic cloud download remains disabled.
