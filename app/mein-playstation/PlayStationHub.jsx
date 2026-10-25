@@ -2,6 +2,7 @@
 import {useMemo,useState,useEffect,useRef} from 'react';
 import {createPortal} from 'react-dom';
 import dynamic from 'next/dynamic';
+import {COLLECTIONS_KEY,CUSTOM_GAMES_KEY,VIEW_KEY,VIEWS,gameKey,isManualGame,normalizeManualGames,normalizeCollections,combinedGames,filterCollection,toggleCollectionGame} from '../../lib/psn-game-collections.mjs';
 const GamingPlanner=dynamic(()=>import('./GamingPlanner'),{ssr:false});
 const TrophyGallery=dynamic(()=>import('./TrophyGallery'),{ssr:false,loading:()=> <p>Sammlungsraum wird vorbereitet …</p>});
 const TrophyModel=dynamic(()=>import('./TrophyModel'),{ssr:false,loading:()=> <span className="psn-trophy-model-loading">3D-Modell wird geladen …</span>});
@@ -75,13 +76,70 @@ export default function PlayStationHub({titles=[],played=[]}){
  const [tab,setTab]=useState('games'),[min,setMin]=useState(0),[search,setSearch]=useState(''),[order,setOrder]=useState('progress'),[selected,setSelected]=useState(null),[libraryType,setLibraryType]=useState('games'),[metadataFilter,setMetadataFilter]=useState('all');
  const [visibleTrophyGames,setVisibleTrophyGames]=useState(36);
  const [visibleGames,setVisibleGames]=useState(36);
- useEffect(()=>setVisibleGames(36),[libraryType,metadataFilter,search,order]);
+ useEffect(()=>setVisibleGames(36),[libraryType,metadataFilter,search,order,activeCollection,viewMode]);
  useEffect(()=>setVisibleTrophyGames(36),[min,search,order]);
  const [gallery,setGallery]=useState({title:'',images:[],status:'idle'});
  const [galleryReload,setGalleryReload]=useState(0);
  const [external,setExternal]=useState({title:'',data:null,status:'idle'});
  const [artworkChoice,setArtworkChoice]=useState({});
  const [personalNotes,setPersonalNotes]=useState({});
+ const [manualGames,setManualGames]=useState([]);
+ const [collections,setCollections]=useState([]);
+ const [activeCollection,setActiveCollection]=useState('');
+ const [newCollectionName,setNewCollectionName]=useState('');
+ const [collectionMessage,setCollectionMessage]=useState('');
+ const [viewMode,setViewMode]=useState('cards');
+ useEffect(()=>{
+  const refresh=()=>{
+   try{setManualGames(normalizeManualGames(JSON.parse(localStorage.getItem(CUSTOM_GAMES_KEY)||'[]')))}catch{setManualGames([])}
+   try{setCollections(normalizeCollections(JSON.parse(localStorage.getItem(COLLECTIONS_KEY)||'[]')))}catch{setCollections([])}
+  };
+  refresh();
+  try{const mode=localStorage.getItem(VIEW_KEY);if(VIEWS.includes(mode))setViewMode(mode)}catch{}
+  window.addEventListener('psn-profile-local-change',refresh);
+  window.addEventListener('storage',refresh);
+  return()=>{window.removeEventListener('psn-profile-local-change',refresh);window.removeEventListener('storage',refresh)};
+ },[]);
+ function saveCollections(next){
+  const cleaned=normalizeCollections(next);
+  try{
+   localStorage.setItem(COLLECTIONS_KEY,JSON.stringify(cleaned));
+   setCollections(cleaned);
+   window.dispatchEvent(new Event('psn-profile-local-change'));
+   setCollectionMessage('Sammlungen gespeichert.');
+   return true;
+  }catch{setCollectionMessage('Sammlungen konnten nicht gespeichert werden. Browser-Speicher prüfen.');return false}
+ }
+ function createCollection(){
+  const name=newCollectionName.trim().replace(/\s+/g,' ').slice(0,42);
+  if(name.length<2){setCollectionMessage('Bitte einen Sammlungsnamen mit mindestens zwei Zeichen eingeben.');return}
+  if(collections.length>=40){setCollectionMessage('Maximal 40 Sammlungen sind möglich.');return}
+  if(collections.some(c=>c.name.toLocaleLowerCase('de')===name.toLocaleLowerCase('de'))){setCollectionMessage('Eine Sammlung mit diesem Namen existiert bereits.');return}
+  const id='col:'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8);
+  if(saveCollections([...collections,{id,name,gameIds:[]}])){setActiveCollection(id);setNewCollectionName('');setCollectionMessage('Sammlung „'+name+'“ angelegt. Öffne Spiele, um sie hinzuzufügen.')}
+ }
+ function changeView(mode){if(!VIEWS.includes(mode))return;setViewMode(mode);try{localStorage.setItem(VIEW_KEY,mode)}catch{}}
+ function toggleMembership(collectionId,id){saveCollections(toggleCollectionGame(collections,collectionId,id))}
+ function removeCollection(){
+  const col=collections.find(c=>c.id===activeCollection);
+  if(!col||!window.confirm('Sammlung „'+col.name+'“ löschen? Die Spiele und deine Pläne bleiben erhalten.'))return;
+  if(saveCollections(collections.filter(c=>c.id!==activeCollection))){setActiveCollection('');setCollectionMessage('Sammlung gelöscht; alle Spiele bleiben erhalten.')}
+ }
+ function deleteManualGame(game){
+  if(!isManualGame(game)||!window.confirm('„'+(game.name||'Spiel')+'“ aus den manuell vorgemerkten Spielen entfernen? Der persönliche Spielplan wird ebenfalls entfernt.'))return;
+  const id=gameKey(game),nextManual=manualGames.filter(g=>g.titleId!==id);
+  const nextCollections=normalizeCollections(collections.map(c=>({...c,gameIds:c.gameIds.filter(key=>key!==id)})));
+  const nextNotes={...personalNotes};delete nextNotes[id];
+  const changes=[[CUSTOM_GAMES_KEY,nextManual],[COLLECTIONS_KEY,nextCollections],['psn-game-planner-v1',nextNotes]];
+  const previous=changes.map(([key])=>[key,localStorage.getItem(key)]);
+  try{
+   for(const [key,value] of changes)localStorage.setItem(key,JSON.stringify(value));
+   setManualGames(nextManual);setCollections(nextCollections);setPersonalNotes(nextNotes);setSelected(null);
+   setCollectionMessage('Vorgemerkten Titel entfernt.');
+   window.dispatchEvent(new Event('psn-profile-local-change'));
+  }catch{for(const [key,value] of previous){try{if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value)}catch{}}setCollectionMessage('Entfernen nicht möglich; Daten wurden soweit möglich wiederhergestellt.')}
+ }
+
  useEffect(()=>{const refresh=()=>{try{setPersonalNotes(JSON.parse(localStorage.getItem('psn-game-planner-v1')||'{}'))}catch{setPersonalNotes({})}};refresh();window.addEventListener('psn-profile-local-change',refresh);window.addEventListener('storage',refresh);return()=>{window.removeEventListener('psn-profile-local-change',refresh);window.removeEventListener('storage',refresh)}},[]);
  const [artworkUrls,setArtworkUrls]=useState({});
  const modalTriggerRef=useRef(null);
@@ -148,7 +206,28 @@ export default function PlayStationHub({titles=[],played=[]}){
   return()=>{document.body.style.overflow=old;window.removeEventListener('keydown',onKey);requestAnimationFrame(()=>modalTriggerRef.current?.focus({preventScroll:true}))};
  },[selected]);
  const trophyGames=useMemo(()=>titles.filter(g=>Number(g.progress||0)>=min&&String(g.trophyTitleName||'').toLocaleLowerCase('de').includes(search.toLocaleLowerCase('de'))).sort((a,b)=>order==='name'?String(a.trophyTitleName).localeCompare(String(b.trophyTitleName),'de'):order==='low'?Number(a.progress||0)-Number(b.progress||0):Number(b.progress||0)-Number(a.progress||0)),[titles,min,search,order]);
- const games=useMemo(()=>played.filter(g=>(libraryType==='apps'?isMediaApp(g):!isMediaApp(g))&&(metadataFilter==='all'||(metadataFilter==='missing'?!g.metadata:metadataFilter==='no-cover'?!cover(g):metadataFilter==='planned'?Boolean(personalNotes[g.titleId||g.name||g.titleName]?.status):metadataFilter==='favorites'?Boolean(personalNotes[g.titleId||g.name||g.titleName]?.favorite):!g.metadata?.summary||!g.metadata?.genres?.length))&&String(g.name||g.titleName||'').toLocaleLowerCase('de').includes(search.toLocaleLowerCase('de'))).sort((a,b)=>order==='name'?String(a.name||a.titleName).localeCompare(String(b.name||b.titleName),'de'):order==='low'?(durationMinutes(a.playDuration)??-1)-(durationMinutes(b.playDuration)??-1):order==='progress'?(durationMinutes(b.playDuration)??-1)-(durationMinutes(a.playDuration)??-1):0),[played,search,order,libraryType,metadataFilter,personalNotes]);
+ const allLibraryGames=useMemo(()=>combinedGames(played,manualGames),[played,manualGames]);
+ const games=useMemo(()=>{
+  const searchTerm=search.toLocaleLowerCase('de');
+  const scoped=allLibraryGames.filter(g=>
+   (libraryType==='apps'?isMediaApp(g):!isMediaApp(g))
+   &&(metadataFilter==='all'
+    ||metadataFilter==='manual'?isManualGame(g):
+    metadataFilter==='missing'?!g.metadata:
+    metadataFilter==='no-cover'?!cover(g):
+    metadataFilter==='planned'?Boolean(personalNotes[gameKey(g)]?.status):
+    metadataFilter==='favorites'?Boolean(personalNotes[gameKey(g)]?.favorite):
+    !g.metadata?.summary||!g.metadata?.genres?.length)
+   &&String(g.name||g.titleName||'').toLocaleLowerCase('de').includes(searchTerm));
+  const filtered=filterCollection(scoped,activeCollection,collections);
+  const last=g=>Number.isFinite(Date.parse(g.lastPlayedDateTime||''))?Date.parse(g.lastPlayedDateTime):0;
+  const rank=g=>{const n=personalNotes[gameKey(g)]||{};return (n.priority==='high'?3:n.priority==='low'?1:2)+(n.status==='playing'?0.5:0)};
+  return [...filtered].sort((a,b)=>order==='name'?String(a.name||a.titleName).localeCompare(String(b.name||b.titleName),'de'):
+   order==='low'?(durationMinutes(a.playDuration)??-1)-(durationMinutes(b.playDuration)??-1):
+   order==='recent'?last(b)-last(a):
+   order==='plan'?rank(b)-rank(a)||last(b)-last(a):
+   (durationMinutes(b.playDuration)??-1)-(durationMinutes(a.playDuration)??-1));
+ },[allLibraryGames,search,order,libraryType,metadataFilter,personalNotes,activeCollection,collections]);
  const featuredGame=useMemo(()=>{
   const candidates=played.filter(g=>!isMediaApp(g));
   const priority=g=>{
