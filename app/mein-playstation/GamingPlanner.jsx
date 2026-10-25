@@ -2,6 +2,7 @@
 import {useMemo,useState,useEffect} from 'react';
 import DigitalLibrary from './DigitalLibrary';
 import ProfileSync from './ProfileSync';
+import GamingChronicle from './GamingChronicle';
 import PlatinumTrophyGoals,{initialTrophyGoals} from './PlatinumTrophyGoals';
 import {COLLECTIONS_KEY,normalizeCollections} from '../../lib/psn-game-collections.mjs';
 const KEY='psn-game-planner-v1';
@@ -12,7 +13,7 @@ const norm=v=>String(v||'').trim().toLocaleLowerCase('de');
 const getId=g=>String(g.titleId||g.name||g.titleName||'');
 function mins(v){if(!v)return 0;if(typeof v==='number')return Math.max(0,v);const m=String(v).match(/^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?)?$/i);return m?Number(m[1]||0)*1440+Number(m[2]||0)*60+Number(m[3]||0)+Number(m[4]||0)/60:0}
 const hours=v=>Math.round(v/60).toLocaleString('de-DE');
-export default function GamingPlanner({played=[],titles=[]}){
+export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocusHandled}){
  const [notes,setNotes]=useState({});
  const [selected,setSelected]=useState('');
  const [draft,setDraft]=useState({status:'',favorite:false,note:''});
@@ -38,6 +39,22 @@ export default function GamingPlanner({played=[],titles=[]}){
   window.addEventListener('storage',refresh);
   return()=>{window.removeEventListener('psn-profile-local-change',refresh);window.removeEventListener('storage',refresh)};
  },[]);
+ useEffect(()=>{
+  if(!focusGameId)return;
+  let info={};
+  try{info=JSON.parse(localStorage.getItem(KEY)||'{}')?.[focusGameId]||{}}catch{}
+  setSelected(focusGameId);
+  setDraft({status:'platinum',favorite:!!info.favorite,note:info.note||'',priority:info.priority||'normal'});
+  setTrophyGoal(initialTrophyGoals(played.find(g=>getId(g)===focusGameId),titles,info));
+  setSavedNotice('Bearbeite dein Platin-Ziel und speichere anschließend ausdrücklich.');
+  const timeout=window.setTimeout(()=>{
+   const panel=document.getElementById('psn-game-editor');
+   const fold=panel?.closest('details');if(fold)fold.open=true;
+   panel?.scrollIntoView({behavior:'smooth',block:'center'});
+   onFocusHandled?.();
+  },90);
+  return()=>window.clearTimeout(timeout);
+ },[focusGameId]);
  useEffect(()=>setVisibleBacklog(12),[filter,priorityFilter]);
  useEffect(()=>{
   // A local daily snapshot of cumulative PSN playtimes, not a real session log.
@@ -56,7 +73,6 @@ export default function GamingPlanner({played=[],titles=[]}){
    setHistory(records.slice(-365));
   }catch{}
  },[played]);
- const changes=useMemo(()=>history.slice(1).map((x,i)=>({date:x.date,change:Math.max(0,x.minutes-history[i].minutes),comparable:x.games===history[i].games})),[history]);
  const games=useMemo(()=>[...played.filter(g=>!(/^(youtube|spotify|netflix|twitch|prime video|disney\+|apple tv)$/i.test(String(g.name||'')))),...customGames].map(g=>({key:getId(g),name:g.name||g.titleName||'Spiel',game:g})).filter(g=>g.key),[played,customGames]);
  const stats=useMemo(()=>{
   const times=games.map(x=>mins(x.game.playDuration));
@@ -189,14 +205,14 @@ export default function GamingPlanner({played=[],titles=[]}){
   <div className="psn-planner-box"><h4>Mein Backlog</h4><p className="psn-muted">Hier erscheinen nur Spiele, für die du einen Plan gespeichert hast. Hoch priorisierte Titel zuerst.</p><div className="psn-planner-filters"><button type="button" aria-pressed={filter==='all'} onClick={()=>setFilter('all')}>Meine Einträge ({games.filter(g=>notes[g.key]?.status||notes[g.key]?.favorite||notes[g.key]?.note).length})</button>{choices.map(([v,label])=><button key={v} type="button" aria-pressed={filter===v} onClick={()=>setFilter(v)}>{label} ({statuses[v]})</button>)}</div><label className="psn-priority-filter">Priorität <select value={priorityFilter} onChange={e=>setPriorityFilter(e.target.value)}><option value="all">Alle</option><option value="high">Hoch</option><option value="normal">Normal</option><option value="low">Später</option></select></label>{!ranked.length?<p className="psn-muted">Noch keine gespeicherten Spielpläne. Wähle oben einen Titel aus, lege einen Status fest und tippe auf „Spielplan speichern“.</p>:null}<div className="psn-planner-items">{ranked.slice(0,visibleBacklog).map(g=><button key={g.key} type="button" onClick={()=>selectGame(g.key)}><span>{notes[g.key]?.priority==='high'?'↑ ':''}{notes[g.key]?.favorite?'★ ':''}{g.name}</span><small>{choices.find(c=>c[0]===notes[g.key]?.status)?.[1]||'Offen'} · {notes[g.key]?.priority==='high'?'Hohe Priorität · ':''}{g.game.isManual?'Noch nicht auf PSN gespielt':hours(mins(g.game.playDuration))+' Std.'}</small></button>)}</div>{ranked.length>visibleBacklog?<button type="button" className="psn-planner-button psn-show-more" onClick={()=>setVisibleBacklog(n=>n+12)}>Weitere Spiele anzeigen ({ranked.length-visibleBacklog} übrig)</button>:null}</div>
   <div className="psn-planner-box"><h4>Platin-Kandidaten</h4><p>Ungefähre Platin-Dauer aus historischen Schätzungen. Kein garantierter Restaufwand. Tippe auf ein Spiel, um es als Platin-Ziel vorzumerken und anschließend zu speichern.</p><div className="psn-planner-items">{games.filter(g=>g.game.communityInsight?.platinumHours!=null).sort((a,b)=>a.game.communityInsight.platinumHours-b.game.communityInsight.platinumHours).slice(0,8).map(g=><button type="button" key={g.key} onClick={()=>selectGame(g.key,true)}><span>{g.name}</span><small>Platin-Schätzung: {g.game.communityInsight.platinumHours} Std. · bisher {hours(mins(g.game.playDuration))} Std. PSN</small></button>)}</div></div>
 </div></details>
-  <details className="psn-tools-fold"><summary>Statistiken &amp; Verlauf <span>Letzte Spieltage und Zeitentwicklung</span></summary><div className="psn-tools-fold-body">  <div className="psn-planner-box psn-stats-ranking"><h4>Meine meistgespielten Titel</h4><p>PSN-Gesamtspielzeit je Titel, nicht nur die letzten 28 Tage.</p><div className="psn-stats-rank-list">{topPlayed.map((g,i)=><div key={g.key}><span>{i+1}. {g.name}</span><strong>{hours(mins(g.game.playDuration))} Std.</strong></div>)}</div><h4 className="psn-stats-subheading">Zuletzt aktive Titel</h4><div className="psn-stats-rank-list">{recentGameList.map(g=><div key={g.key}><span>{g.name}</span><strong>{new Date(g.game.lastPlayedDateTime).toLocaleDateString('de-DE')}</strong></div>)}</div></div>
-  <div className="psn-planner-box"><h4>Spielzeit-Verlauf</h4><p>Kumulierte Spielzeit bei deinen Seitenaufrufen. Keine einzelnen Spielsitzungen.</p>{history.length>1?<div className="psn-snapshot-bars" aria-label="Differenzen zwischen lokalen PSN-Snapshots">{changes.slice(-14).map(x=><div key={x.date} title={x.date+': '+(x.comparable?Math.round(x.change/60*10)/10+' Stunden Zuwachs':'Spielanzahl verändert')}><span style={{height:(x.comparable?Math.max(5,Math.min(100,x.change/120*100)):5)+'%'}} className={x.comparable?'':'is-uncertain'}/><small>{x.date.slice(5)}</small></div>)}</div>:<p>Der Verlauf beginnt mit dem zweiten Messtag. Aktuell {history.length} Messpunkt.</p>}<small>Lokale Daten, keine echten Spielsessions.</small></div>
+  <details className="psn-tools-fold"><summary>Gaming-Chronik &amp; Statistiken <span>PSN-Messpunkte, Monatsvergleich und letzte Spieltage</span></summary><div className="psn-tools-fold-body">  <div className="psn-planner-box psn-stats-ranking"><h4>Meine meistgespielten Titel</h4><p>PSN-Gesamtspielzeit je Titel, nicht nur die letzten 28 Tage.</p><div className="psn-stats-rank-list">{topPlayed.map((g,i)=><div key={g.key}><span>{i+1}. {g.name}</span><strong>{hours(mins(g.game.playDuration))} Std.</strong></div>)}</div><h4 className="psn-stats-subheading">Zuletzt aktive Titel</h4><div className="psn-stats-rank-list">{recentGameList.map(g=><div key={g.key}><span>{g.name}</span><strong>{new Date(g.game.lastPlayedDateTime).toLocaleDateString('de-DE')}</strong></div>)}</div></div>
+  <GamingChronicle played={played} history={history}/>
   <div className="psn-planner-box"><h4>Letzte Spieltage nach Titeln</h4><p>{totalRecent} verschiedene Titel haben ihren letzten von PSN gemeldeten Spieltag in den vergangenen 28 Tagen. Die Balken zeigen die Anzahl der Titel pro Datum, nicht Spielsitzungen oder Spielstunden.</p><div className="psn-activity-ranked">{activeDates.slice(0,12).map(day=><div key={day.day} className="psn-activity-row"><span>{day.date}</span><div className="psn-activity-track"><span style={{width:(day.count/Math.max(1,activeDates[0]?.count||1)*100)+"%"}}/></div><strong>{day.count} Titel</strong></div>)}</div></div>
 </div></details>
   <details className="psn-tools-fold"><summary>Daten &amp; Synchronisierung <span>Cloud, Backup und PSN-Lizenzen</span></summary><div className="psn-tools-fold-body">  <DigitalLibrary played={played}/>
   <ProfileSync/>
   <div className="psn-planner-box"><h4>Backup &amp; Wiederherstellung</h4><p>Speichere deine eigenen Angaben als Datei oder importiere sie auf einem anderen Gerät.</p><button className="psn-planner-button" type="button" onClick={exportBackup}>Komplettes Backup sichern</button><label>Backup-Datei importieren<input type="file" accept=".json,application/json" onChange={async e=>{const f=e.target.files?.[0];if(!f)return;if(f.size>1500000){setBackupMessage('Datei zu groß.');return}setImportText(await f.text())}}/></label><button className="psn-planner-button" type="button" disabled={!importText} onClick={importBackup}>Backup einspielen</button>{backupMessage?<p role="status">{backupMessage}</p>:null}</div>
 </div></details>
-  <p className="psn-planner-foot">Wichtig: Die PSN-Spielzeit ist kumuliert, keine Sitzungs-Historie. Trophäen-100 % bedeutet nicht automatisch Platin. Backlog und Favoriten werden nur lokal auf diesem Gerät gespeichert.</p>
+  <p className="psn-planner-foot">Wichtig: Die PSN-Spielzeit ist kumuliert, keine Sitzungs-Historie. Trophäen-100 % bedeutet nicht automatisch Platin. Persönliche Angaben werden lokal gespeichert; eine Cloud-Sicherung ist optional. PlayStation liefert hier keine vollständige Sitzungs-Historie.</p>
  </section>;
 }
