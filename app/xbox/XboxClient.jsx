@@ -137,11 +137,7 @@ export default function XboxClient({ snapshot }) {
 
   return <div className="catalog-app is-xbox">
     <header className="catalog-header">
-      <nav className="catalog-back">
-        <a href="/radar">PlayStation</a>
-        <a href="/xbox" aria-current="page" className="is-active">Xbox</a>
-        <a href="/preise">Preisradar</a>
-      </nav>
+      
       <div className="catalog-heading">
         <div>
           <span className="catalog-eyebrow">XBOX-RADAR · DEUTSCHLAND · BETA</span>
