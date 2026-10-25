@@ -3,6 +3,7 @@ import {useMemo,useState,useEffect} from 'react';
 import DigitalLibrary from './DigitalLibrary';
 import ProfileSync from './ProfileSync';
 import PlatinumTrophyGoals,{initialTrophyGoals} from './PlatinumTrophyGoals';
+import {COLLECTIONS_KEY,normalizeCollections} from '../../lib/psn-game-collections.mjs';
 const KEY='psn-game-planner-v1';
 const HISTORY_KEY='psn-playtime-snapshots-v1';
 const CUSTOM_KEY='psn-custom-games-v1';
@@ -102,7 +103,7 @@ export default function GamingPlanner({played=[],titles=[]}){
  }
  function exportBackup(){
   const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback))}catch{return fallback}};
-  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),coverUrls:read('psn-cover-urls-v1',{}),manualGames:read(CUSTOM_KEY,[]),trophyTargets:read('psn-trophy-targets-v1',{}),platinumChecks:read('psn-platinum-checks-v1',{})},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),coverUrls:read('psn-cover-urls-v1',{}),manualGames:read(CUSTOM_KEY,[]),collections:read(COLLECTIONS_KEY,[]),trophyTargets:read('psn-trophy-targets-v1',{}),platinumChecks:read('psn-platinum-checks-v1',{})},null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='ps5-radar-komplett-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),500);
   setBackupMessage('Vollständiges lokales Backup erstellt. Datei enthält deine persönlichen Notizen und Trophäenziele; sicher aufbewahren.');
  }
@@ -119,6 +120,15 @@ export default function GamingPlanner({played=[],titles=[]}){
      const mergedGames=new Map([...customGames,...restored].map(g=>[g.titleId,{titleId:g.titleId,name:String(g.name).slice(0,120),isManual:true}]));
      changes.push([CUSTOM_KEY,[...mergedGames.values()]]);
     }
+    if(Array.isArray(raw.collections)){
+     let existing=[];try{existing=normalizeCollections(JSON.parse(localStorage.getItem(COLLECTIONS_KEY)||'[]'))}catch{}
+     const mergedCollections=new Map(existing.map(c=>[c.id,c]));
+     for(const c of normalizeCollections(raw.collections)){
+      const old=mergedCollections.get(c.id);
+      mergedCollections.set(c.id,old?{...old,gameIds:[...new Set([...old.gameIds,...c.gameIds])].slice(0,1500)}:c);
+     }
+     changes.push([COLLECTIONS_KEY,normalizeCollections([...mergedCollections.values()])]);
+    }
     if(Array.isArray(raw.history)){
      const mergedHistory=[...history,...raw.history].filter(x=>x&&/^\d{4}-\d{2}-\d{2}$/.test(x.date)&&Number.isFinite(x.minutes)&&x.minutes>=0&&Number.isInteger(x.games)&&x.games>=0).sort((a,b)=>a.date.localeCompare(b.date));
      const byDate=new Map(mergedHistory.map(x=>[x.date,{date:x.date,minutes:Math.round(x.minutes),games:x.games}]));
@@ -132,6 +142,7 @@ export default function GamingPlanner({played=[],titles=[]}){
    try{for(const [key,value] of changes)localStorage.setItem(key,JSON.stringify(value))}
    catch(error){for(const [key,value] of previous){if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value)}throw error}
    setNotes(merged);const restored=changes.find(x=>x[0]===HISTORY_KEY);if(restored)setHistory(restored[1]);const manual=changes.find(x=>x[0]===CUSTOM_KEY);if(manual)setCustomGames(manual[1]);
+   window.dispatchEvent(new Event('psn-profile-local-change'));
    setImportText('');setBackupMessage(Object.keys(clean).length+' Spieleinträge importiert'+(raw.version===2?' · inklusive unterstützter weiterer Daten':'')+'. Für Cover-/Trophäen-Zielanzeigen die Seite neu laden.');
   }catch{setBackupMessage('Import fehlgeschlagen – Dateiformat oder Browser-Speicher prüfen. Vorhandene Daten sollten unverändert bleiben.')}
  }
