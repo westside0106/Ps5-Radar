@@ -1,5 +1,6 @@
 'use client';
 import {usePathname} from 'next/navigation';
+import {useEffect,useRef} from 'react';
 
 const links=[
  {href:'/radar',label:'PlayStation',short:'PS',match:path=>path==='/radar'},
@@ -11,6 +12,13 @@ const links=[
 ];
 export default function RadarTopNavigation(){
  const path=usePathname()||'/';
+ const navRef=useRef(null);
+ useEffect(()=>{
+  const nav=navRef.current,active=nav?.querySelector('[aria-current="page"]');
+  if(!nav||!active)return;
+  const left=active.offsetLeft-nav.offsetLeft-(nav.clientWidth-active.clientWidth)/2;
+  nav.scrollLeft=Math.max(0,left);
+ },[path]);
  if(path==='/'||path.startsWith('/api/')||path.startsWith('/daily/'))return null;
  return <header className="radar-global-navigation">
   <div className="radar-global-navigation-inner">
@@ -18,7 +26,7 @@ export default function RadarTopNavigation(){
     <span className="radar-brand-symbol" aria-hidden="true">R</span>
     <span className="radar-brand-text"><strong>RADAR</strong><small>GAMING INTELLIGENCE</small></span>
    </a>
-   <nav className="radar-global-links" aria-label="Hauptnavigation">
+   <nav ref={navRef} className="radar-global-links" aria-label="Hauptnavigation">
     {links.map(item=><a key={item.href} href={item.href} className={'radar-global-link'+(item.match(path)?' is-current':'')+(item.personal?' is-personal':'')} aria-current={item.match(path)?'page':undefined}>
      <span className="radar-link-long">{item.label}</span>
      <span className="radar-link-short">{item.short}</span>
