@@ -390,3 +390,15 @@
  .psn-hub .psn-hub-game,.psn-game-modal,.psn-modal-backdrop{animation:none!important;transition:none!important}
  .psn-hub .psn-hub-game:hover{transform:none!important}
 }
+
+/* Functional audit: controls remain legible until #59 design direction is selected */
+.psn-add-manual-game{display:grid;gap:9px;padding:14px;margin:12px 0;border:1px dashed #547fa8;border-radius:12px;background:#102a45;min-width:0}
+.psn-add-manual-game label{display:grid;gap:7px;font-size:12px;font-weight:650;color:#e4effb}
+.psn-add-manual-game input{width:100%;min-width:0;padding:11px 12px;min-height:44px;background:#0c2137;border:1px solid #5680a5;border-radius:9px;color:#e8f4ff;font-size:16px}
+.psn-add-manual-game button,.psn-hub-more-trophies{min-height:44px;padding:10px 13px;border:1px solid #78aff0;border-radius:9px;background:#1a507f;color:#eef6ff;font-size:12px;font-weight:650;cursor:pointer}
+.psn-add-manual-game button:disabled{opacity:.5;cursor:not-allowed}
+.psn-add-manual-game small{font-size:11px;line-height:1.5;color:#b4cee3}
+.psn-hub-more-trophies{grid-column:1/-1;justify-self:stretch}
+.psn-show-more{width:100%;margin-top:10px}
+.psn-add-manual-game button:focus-visible,.psn-hub-more-trophies:focus-visible,.psn-show-more:focus-visible{outline:3px solid #8ec9ff;outline-offset:2px}
+@media(max-width:540px){.psn-add-manual-game{padding:11px}.psn-add-manual-game button,.psn-hub-more-trophies{font-size:13px}}
