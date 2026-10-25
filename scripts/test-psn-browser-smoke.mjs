@@ -85,6 +85,20 @@ for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390
     assert.ok(await page.locator('.psn-hub-game').filter({hasText:'Unplayed CI Test'}).count(),'Manual game missing after reload');
     assert.ok(await page.locator('.psn-library-shelf').count(),'View preference missing after reload');
    }
+   if(width===390){
+    await page.getByRole('button',{name:'Trophäen-Zentrale'}).click();
+    const mission=page.locator('.psn-mission-control');
+    await mission.waitFor();
+    assert.ok(await mission.getByText('Deine Platin-Missionen').count(),'Platin mission heading missing');
+    await page.getByRole('button',{name:'Meine Spielwelt'}).click();
+    const statsFold=page.locator('.psn-tools-fold').filter({hasText:'Gaming-Chronik & Statistiken'});
+    await statsFold.locator('summary').click();
+    await page.locator('.psn-chronicle').waitFor();
+    await page.getByRole('button',{name:'3 Mon.'}).click();
+    assert.equal(await page.getByRole('button',{name:'3 Mon.'}).getAttribute('aria-pressed'),'true');
+    const w=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+    assert.ok(w.scroll<=w.client+3,engine.name()+' chronology overflow: '+JSON.stringify(w));
+   }
    // Live PSN data is not available in CI; exercise the real cards whenever fixture data is present.
    const gameCard=page.locator('.psn-hub-game').first();
    if(await gameCard.count()){

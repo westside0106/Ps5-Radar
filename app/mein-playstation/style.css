@@ -550,3 +550,90 @@
  .psn-hub-game-grid.psn-library-list .psn-hub-game>strong{font-size:13px}
 }
 @media(max-width:390px){.psn-hub-game-grid.psn-library-shelf{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+/* #61 — Trophy Hunter mission dashboard and PSN provenance-aware chronology */
+.psn-mission-control{display:grid;gap:16px;padding:clamp(15px,2.3vw,27px);margin:17px 0 23px;border:1px solid #568cb8;border-radius:20px;background:radial-gradient(ellipse at 95% 0%,#27527a66,transparent 45%),linear-gradient(145deg,#123353,#091a30);box-shadow:0 18px 48px #02081477;min-width:0}
+.psn-mission-heading h3{margin:5px 0 7px;font-size:clamp(23px,3vw,32px);letter-spacing:-.05em;color:#f5faff;line-height:1.14}
+.psn-mission-heading p{margin:0;color:#b2cbe1;line-height:1.55;font-size:12px}
+.psn-mission-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.psn-mission-summary>div{padding:15px;border:1px solid #436f94;border-radius:13px;background:linear-gradient(150deg,#1a446c,#102b48);min-width:0}
+.psn-mission-summary strong{display:block;font-size:clamp(24px,3vw,35px);font-weight:900;line-height:1.1;letter-spacing:-.04em;color:#f3faff}
+.psn-mission-summary small{display:block;margin-top:5px;color:#b9d6ec;font-size:11px;line-height:1.4}
+.psn-mission-projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.psn-mission-card{display:flex;flex-direction:column;gap:11px;min-width:0;padding:17px;background:linear-gradient(155deg,#1b3a59,#0d2339);border:1px solid #476d91;border-radius:15px}
+.psn-mission-card.is-platinum-earned{border-color:#c2bb8a;background:linear-gradient(155deg,#423f3d,#15263e)}
+.psn-mission-card-head{display:flex;align-items:start;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.psn-mission-card-head>div{min-width:0;flex:1}
+.psn-mission-card-head small{font-size:9px;letter-spacing:.14em;color:#9bceef;font-weight:800}
+.psn-mission-card-head h4{font-size:clamp(15px,1.7vw,20px);line-height:1.25;margin:5px 0 0;color:#f3faff;overflow-wrap:anywhere}
+.psn-mission-state{display:inline-flex;align-items:center;border:1px solid #649bc6;border-radius:30px;color:#cfebff;background:#174267;padding:5px 9px;font-size:10px;line-height:1.25;white-space:normal}
+.psn-mission-progress-label{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#bdd8ec;font-size:11px}
+.psn-mission-progress-label strong{color:#f3faff;white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
+.psn-mission-track{height:9px;background:#254561;border-radius:30px;overflow:hidden}
+.psn-mission-track span{display:block;height:100%;background:linear-gradient(90deg,#397fc1,#9bd6ff);border-radius:inherit}
+.psn-mission-edition,.psn-mission-uncertain{font-size:11px;line-height:1.55;color:#b5cadf}
+.psn-mission-uncertain{margin:0}
+.psn-mission-next{padding:11px;background:#091e34;border-left:3px solid #77bbeb;border-radius:8px}
+.psn-mission-next small{color:#91c8ec;font-size:9px;font-weight:850;letter-spacing:.12em}
+.psn-mission-next p{margin:5px 0 0;font-size:12px;color:#e2f1ff;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+.psn-mission-card>button{align-self:flex-start;min-height:44px;padding:10px 13px;margin-top:auto;border:1px solid #73b9ed;border-radius:10px;background:#245d8f;color:#fff;font-weight:700;cursor:pointer;font-size:12px}
+.psn-mission-card>button:hover{background:#327cb2}
+.psn-mission-note{font-size:11px;line-height:1.6;color:#aac9df;margin:0}
+.psn-mission-empty{padding:24px 16px;border:1px dashed #517c9e;border-radius:13px;text-align:center;background:#0a2038}
+.psn-mission-empty strong{font-size:15px;color:#f5faff}
+.psn-mission-empty p{font-size:12px;color:#b4ccdf;line-height:1.6;margin:7px 0 0}
+/* Snapshot data remains distinct from last-played title dates */
+.psn-chronicle{display:grid;gap:14px;padding:18px;border:1px solid #4a759a;border-radius:17px;background:radial-gradient(ellipse at 95% 0%,#21507855,transparent 45%),#0d243c;min-width:0}
+.psn-chronicle-head{display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.psn-chronicle-head h4{font-size:clamp(20px,2.3vw,29px);letter-spacing:-.04em;margin:4px 0;color:#f5faff}
+.psn-chronicle-head p{margin:4px 0 0;color:#afcade;font-size:12px;line-height:1.6;max-width:62ch}
+.psn-chronicle-reading{padding:7px 10px;border:1px solid #497aa4;border-radius:25px;font-size:10px;color:#d7ecfd;background:#183e5e;white-space:nowrap}
+.psn-chronicle-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.psn-chronicle-summary>div{display:grid;gap:4px;padding:12px;background:#153550;border:1px solid #3e6686;border-radius:11px;min-width:0}
+.psn-chronicle-summary small{font-size:10px;line-height:1.45;color:#bdd4e5}
+.psn-chronicle-summary strong{font-size:clamp(19px,2.5vw,27px);line-height:1.16;color:#f2faff;font-variant-numeric:tabular-nums}
+.psn-chronicle-summary span{font-size:10px;color:#9db9d0;line-height:1.4}
+.psn-chronicle-panel{background:#0b1e33;border:1px solid #2e587d;border-radius:13px;padding:15px;min-width:0}
+.psn-chronicle-panel-header{display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.psn-chronicle-panel-header h5{font-size:16px;margin:0 0 5px;color:#f4faff}
+.psn-chronicle-panel-header p{font-size:11px;margin:0;color:#b6cde1;line-height:1.55;max-width:57ch}
+.psn-chronicle-periods{display:flex;gap:4px;padding:3px;border:1px solid #3e6a91;border-radius:9px;background:#0d2c48}
+.psn-chronicle-periods button{border:0;min-height:36px;padding:7px 10px;font-size:11px;font-weight:700;border-radius:6px;background:transparent;color:#bcd5e9;cursor:pointer}
+.psn-chronicle-periods button[aria-pressed=true]{background:#2972ab;color:#fff}
+.psn-chronicle-chart{display:flex;align-items:end;gap:9px;min-height:215px;overflow-x:auto;scrollbar-width:thin;margin:18px 0 8px;padding:8px 1px}
+.psn-chronicle-month{display:grid;grid-template-rows:minmax(140px,1fr) auto auto auto;min-width:54px;flex:1;text-align:center;gap:6px;max-width:120px}
+.psn-chronicle-column{height:150px;display:flex;align-items:end;border-bottom:1px solid #567996;padding:0 8px}
+.psn-chronicle-column span{display:block;width:100%;min-height:3px;max-height:100%;background:linear-gradient(0deg,#297fca,#97d7ff);border-radius:5px 5px 0 0;box-shadow:0 0 16px #359cef35}
+.psn-chronicle-month strong{font-size:11px;white-space:nowrap;color:#e6f4ff;font-variant-numeric:tabular-nums}
+.psn-chronicle-month small{font-size:10px;color:#adcadf}
+.psn-chronicle-month .psn-chronicle-warning{font-size:9px;color:#f3c58a}
+.psn-chronicle-annotation{margin:5px 0 0;color:#a8c6dd;font-size:10px;line-height:1.65}
+.psn-chronicle-timeline{display:grid;gap:0;margin-top:13px}
+.psn-chronicle-event{display:grid;grid-template-columns:14px minmax(0,1fr);gap:12px;align-items:stretch;min-height:57px}
+.psn-chronicle-event-point{position:relative;margin:0 auto;width:10px;height:10px;border:2px solid #94d2ff;border-radius:50%;background:#194e79;margin-top:6px;box-shadow:0 0 0 3px #25577f42}
+.psn-chronicle-event:not(:last-child) .psn-chronicle-event-point:after{content:'';position:absolute;top:11px;left:2px;width:2px;height:calc(100% + 37px);background:#416e93}
+.psn-chronicle-event>div{padding:1px 0 16px;border-bottom:1px solid #284c69}
+.psn-chronicle-event small{display:block;margin-bottom:4px;font-size:10px;color:#9fc5e0}
+.psn-chronicle-event strong{display:block;font-size:13px;color:#f1f8ff;line-height:1.4;overflow-wrap:anywhere}
+.psn-chronicle-more{width:100%;min-height:44px;border:1px solid #659bc7;border-radius:9px;background:#19466c;color:#f5faff;padding:10px;font-size:12px;cursor:pointer;margin-top:10px}
+.psn-mission-control button:focus-visible,.psn-chronicle button:focus-visible{outline:3px solid #9ed9ff;outline-offset:2px}
+@media(max-width:700px){
+ .psn-mission-projects{grid-template-columns:1fr}
+ .psn-mission-summary{gap:6px}
+ .psn-mission-summary>div{padding:10px}
+ .psn-mission-summary small{font-size:10px}
+ .psn-chronicle{padding:11px;gap:10px}
+ .psn-chronicle-panel{padding:11px}
+ .psn-chronicle-summary{gap:6px}
+ .psn-chronicle-summary>div{padding:9px}
+ .psn-chronicle-chart{gap:5px}
+ .psn-chronicle-month{min-width:48px}
+}
+@media(max-width:385px){
+ .psn-mission-summary{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .psn-mission-summary strong{font-size:23px}
+ .psn-chronicle-summary{grid-template-columns:1fr}
+ .psn-chronicle-summary>div{grid-template-columns:1fr auto;align-items:center}
+ .psn-chronicle-summary>div span{grid-column:1/-1}
+}
+@media(prefers-reduced-motion:reduce){.psn-mission-control,.psn-chronicle{scroll-behavior:auto!important}}
