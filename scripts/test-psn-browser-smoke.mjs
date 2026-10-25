@@ -53,6 +53,38 @@ for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390
     }
    }
 
+   if(width===390){
+    await page.locator('.psn-collection-tools').waitFor();
+    const edit=page.locator('.psn-tools-fold').first();
+    await edit.locator('summary').click();
+    await page.getByPlaceholder('Titel eingeben …').fill('Unplayed CI Test');
+    await page.getByRole('button',{name:'Zum Backlog hinzufügen'}).click();
+    const card=page.locator('.psn-hub-game').filter({hasText:'Unplayed CI Test'}).first();
+    await card.waitFor();
+    assert.match(await card.innerText(),/Manuell vorgemerkt/);
+    await page.locator('.psn-collection-manage > summary').click();
+    await page.getByPlaceholder('z. B. Assassin’s Creed, Open World …').fill('CI Collection');
+    await page.getByRole('button',{name:'Sammlung anlegen'}).click();
+    await page.getByRole('button',{name:'Alle Spiele'}).click();
+    await card.click();
+    const dialog=page.getByRole('dialog',{name:/Spieldetails/i});
+    await dialog.locator('.psn-game-modal-collections > summary').click();
+    await dialog.getByRole('checkbox',{name:'CI Collection'}).check();
+    await dialog.getByRole('button',{name:'Schließen'}).click();
+    await page.locator('.psn-collection-selector').getByRole('button',{name:/CI Collection/}).click();
+    await card.waitFor();
+    await page.getByRole('button',{name:'Liste',exact:true}).click();
+    assert.ok(await page.locator('.psn-library-list').count(),'List layout not active');
+    await page.getByRole('button',{name:'Regal',exact:true}).click();
+    assert.ok(await page.locator('.psn-library-shelf').count(),'Shelf layout not active');
+    const librarySize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+    assert.ok(librarySize.scroll<=librarySize.client+3,engine.name()+' collection layout overflow: '+JSON.stringify(librarySize));
+    await page.reload({waitUntil:'domcontentloaded'});
+    await page.locator('.psn-collection-tools').waitFor();
+    assert.ok(await page.getByRole('button',{name:/CI Collection/}).count(),'Collection missing after reload');
+    assert.ok(await page.locator('.psn-hub-game').filter({hasText:'Unplayed CI Test'}).count(),'Manual game missing after reload');
+    assert.ok(await page.locator('.psn-library-shelf').count(),'View preference missing after reload');
+   }
    // Live PSN data is not available in CI; exercise the real cards whenever fixture data is present.
    const gameCard=page.locator('.psn-hub-game').first();
    if(await gameCard.count()){

@@ -2,6 +2,8 @@
 import {useMemo,useState,useEffect,useRef} from 'react';
 import {createPortal} from 'react-dom';
 import dynamic from 'next/dynamic';
+import GameCollectionToolbar from './GameCollectionToolbar';
+import {COLLECTIONS_KEY,CUSTOM_GAMES_KEY,VIEW_KEY,VIEWS,gameKey,isManualGame,normalizeManualGames,normalizeCollections,combinedGames,filterCollection,toggleCollectionGame} from '../../lib/psn-game-collections.mjs';
 const GamingPlanner=dynamic(()=>import('./GamingPlanner'),{ssr:false});
 const TrophyGallery=dynamic(()=>import('./TrophyGallery'),{ssr:false,loading:()=> <p>Sammlungsraum wird vorbereitet …</p>});
 const TrophyModel=dynamic(()=>import('./TrophyModel'),{ssr:false,loading:()=> <span className="psn-trophy-model-loading">3D-Modell wird geladen …</span>});
@@ -16,7 +18,7 @@ function metadataStatus(game){const m=game.metadata;return !m?'Zusatzinfos im De
 function safeDate(v){if(!v)return null;const d=new Date(v);return Number.isNaN(d.getTime())?null:d.toLocaleDateString('de-DE')}
 function estimateHours(value){return value==null?'—':value.toLocaleString('de-DE',{maximumFractionDigits:1})+' Std.'}
 function historicalListLabel(insight){return insight.historicalStatus==='removed'?'In der Quelle als entfernt markiert'+(insight.removedNote?' ('+insight.removedNote+')':''):insight.historicalStatus==='additional'?'Zusatzliste (nicht als aktueller Katalog bestätigt)':'September-Hauptliste (keine aktuelle Verfügbarkeitsprüfung)'}
-function GameCover({game,className}){const [failed,setFailed]=useState(false);const url=cover(game);useEffect(()=>setFailed(false),[url]);return url&&!failed?<img className={className||undefined} src={url} loading="lazy" alt="" onError={()=>setFailed(true)}/>:<span className="psn-hub-cover-fallback" aria-hidden="true">PS</span>}
+function GameCover({game,className}){const [failed,setFailed]=useState(false);const url=cover(game);useEffect(()=>setFailed(false),[url]);return url&&!failed?<img className={className||undefined} src={url} loading="lazy" alt="" onError={()=>setFailed(true)}/>:<span className="psn-hub-cover-fallback" aria-hidden="true">{isManualGame(game)?'＋':'PS'}</span>}
 const isVerifiedAlternateCover=value=>typeof value==='string'&&/^https:\/\/(?:[a-z0-9-]+\.)*steamgriddb\.com\/[^\s?#]+/i.test(value);
 function PreferredCover({game,preferredUrl,className}){
  const [failed,setFailed]=useState(false);
@@ -75,13 +77,70 @@ export default function PlayStationHub({titles=[],played=[]}){
  const [tab,setTab]=useState('games'),[min,setMin]=useState(0),[search,setSearch]=useState(''),[order,setOrder]=useState('progress'),[selected,setSelected]=useState(null),[libraryType,setLibraryType]=useState('games'),[metadataFilter,setMetadataFilter]=useState('all');
  const [visibleTrophyGames,setVisibleTrophyGames]=useState(36);
  const [visibleGames,setVisibleGames]=useState(36);
- useEffect(()=>setVisibleGames(36),[libraryType,metadataFilter,search,order]);
+ useEffect(()=>setVisibleGames(36),[libraryType,metadataFilter,search,order,activeCollection,viewMode]);
  useEffect(()=>setVisibleTrophyGames(36),[min,search,order]);
  const [gallery,setGallery]=useState({title:'',images:[],status:'idle'});
  const [galleryReload,setGalleryReload]=useState(0);
  const [external,setExternal]=useState({title:'',data:null,status:'idle'});
  const [artworkChoice,setArtworkChoice]=useState({});
  const [personalNotes,setPersonalNotes]=useState({});
+ const [manualGames,setManualGames]=useState([]);
+ const [collections,setCollections]=useState([]);
+ const [activeCollection,setActiveCollection]=useState('');
+ const [newCollectionName,setNewCollectionName]=useState('');
+ const [collectionMessage,setCollectionMessage]=useState('');
+ const [viewMode,setViewMode]=useState('cards');
+ useEffect(()=>{
+  const refresh=()=>{
+   try{setManualGames(normalizeManualGames(JSON.parse(localStorage.getItem(CUSTOM_GAMES_KEY)||'[]')))}catch{setManualGames([])}
+   try{setCollections(normalizeCollections(JSON.parse(localStorage.getItem(COLLECTIONS_KEY)||'[]')))}catch{setCollections([])}
+  };
+  refresh();
+  try{const mode=localStorage.getItem(VIEW_KEY);if(VIEWS.includes(mode))setViewMode(mode)}catch{}
+  window.addEventListener('psn-profile-local-change',refresh);
+  window.addEventListener('storage',refresh);
+  return()=>{window.removeEventListener('psn-profile-local-change',refresh);window.removeEventListener('storage',refresh)};
+ },[]);
+ function saveCollections(next){
+  const cleaned=normalizeCollections(next);
+  try{
+   localStorage.setItem(COLLECTIONS_KEY,JSON.stringify(cleaned));
+   setCollections(cleaned);
+   window.dispatchEvent(new Event('psn-profile-local-change'));
+   setCollectionMessage('Sammlungen gespeichert.');
+   return true;
+  }catch{setCollectionMessage('Sammlungen konnten nicht gespeichert werden. Browser-Speicher prüfen.');return false}
+ }
+ function createCollection(){
+  const name=newCollectionName.trim().replace(/\s+/g,' ').slice(0,42);
+  if(name.length<2){setCollectionMessage('Bitte einen Sammlungsnamen mit mindestens zwei Zeichen eingeben.');return}
+  if(collections.length>=40){setCollectionMessage('Maximal 40 Sammlungen sind möglich.');return}
+  if(collections.some(c=>c.name.toLocaleLowerCase('de')===name.toLocaleLowerCase('de'))){setCollectionMessage('Eine Sammlung mit diesem Namen existiert bereits.');return}
+  const id='col:'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8);
+  if(saveCollections([...collections,{id,name,gameIds:[]}])){setActiveCollection(id);setNewCollectionName('');setCollectionMessage('Sammlung „'+name+'“ angelegt. Öffne Spiele, um sie hinzuzufügen.')}
+ }
+ function changeView(mode){if(!VIEWS.includes(mode))return;setViewMode(mode);try{localStorage.setItem(VIEW_KEY,mode)}catch{}}
+ function toggleMembership(collectionId,id){saveCollections(toggleCollectionGame(collections,collectionId,id))}
+ function removeCollection(){
+  const col=collections.find(c=>c.id===activeCollection);
+  if(!col||!window.confirm('Sammlung „'+col.name+'“ löschen? Die Spiele und deine Pläne bleiben erhalten.'))return;
+  if(saveCollections(collections.filter(c=>c.id!==activeCollection))){setActiveCollection('');setCollectionMessage('Sammlung gelöscht; alle Spiele bleiben erhalten.')}
+ }
+ function deleteManualGame(game){
+  if(!isManualGame(game)||!window.confirm('„'+(game.name||'Spiel')+'“ aus den manuell vorgemerkten Spielen entfernen? Der persönliche Spielplan wird ebenfalls entfernt.'))return;
+  const id=gameKey(game),nextManual=manualGames.filter(g=>g.titleId!==id);
+  const nextCollections=normalizeCollections(collections.map(c=>({...c,gameIds:c.gameIds.filter(key=>key!==id)})));
+  const nextNotes={...personalNotes};delete nextNotes[id];
+  const changes=[[CUSTOM_GAMES_KEY,nextManual],[COLLECTIONS_KEY,nextCollections],['psn-game-planner-v1',nextNotes]];
+  const previous=changes.map(([key])=>[key,localStorage.getItem(key)]);
+  try{
+   for(const [key,value] of changes)localStorage.setItem(key,JSON.stringify(value));
+   setManualGames(nextManual);setCollections(nextCollections);setPersonalNotes(nextNotes);setSelected(null);
+   setCollectionMessage('Vorgemerkten Titel entfernt.');
+   window.dispatchEvent(new Event('psn-profile-local-change'));
+  }catch{for(const [key,value] of previous){try{if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value)}catch{}}setCollectionMessage('Entfernen nicht möglich; Daten wurden soweit möglich wiederhergestellt.')}
+ }
+
  useEffect(()=>{const refresh=()=>{try{setPersonalNotes(JSON.parse(localStorage.getItem('psn-game-planner-v1')||'{}'))}catch{setPersonalNotes({})}};refresh();window.addEventListener('psn-profile-local-change',refresh);window.addEventListener('storage',refresh);return()=>{window.removeEventListener('psn-profile-local-change',refresh);window.removeEventListener('storage',refresh)}},[]);
  const [artworkUrls,setArtworkUrls]=useState({});
  const modalTriggerRef=useRef(null);
@@ -148,7 +207,28 @@ export default function PlayStationHub({titles=[],played=[]}){
   return()=>{document.body.style.overflow=old;window.removeEventListener('keydown',onKey);requestAnimationFrame(()=>modalTriggerRef.current?.focus({preventScroll:true}))};
  },[selected]);
  const trophyGames=useMemo(()=>titles.filter(g=>Number(g.progress||0)>=min&&String(g.trophyTitleName||'').toLocaleLowerCase('de').includes(search.toLocaleLowerCase('de'))).sort((a,b)=>order==='name'?String(a.trophyTitleName).localeCompare(String(b.trophyTitleName),'de'):order==='low'?Number(a.progress||0)-Number(b.progress||0):Number(b.progress||0)-Number(a.progress||0)),[titles,min,search,order]);
- const games=useMemo(()=>played.filter(g=>(libraryType==='apps'?isMediaApp(g):!isMediaApp(g))&&(metadataFilter==='all'||(metadataFilter==='missing'?!g.metadata:metadataFilter==='no-cover'?!cover(g):metadataFilter==='planned'?Boolean(personalNotes[g.titleId||g.name||g.titleName]?.status):metadataFilter==='favorites'?Boolean(personalNotes[g.titleId||g.name||g.titleName]?.favorite):!g.metadata?.summary||!g.metadata?.genres?.length))&&String(g.name||g.titleName||'').toLocaleLowerCase('de').includes(search.toLocaleLowerCase('de'))).sort((a,b)=>order==='name'?String(a.name||a.titleName).localeCompare(String(b.name||b.titleName),'de'):order==='low'?(durationMinutes(a.playDuration)??-1)-(durationMinutes(b.playDuration)??-1):order==='progress'?(durationMinutes(b.playDuration)??-1)-(durationMinutes(a.playDuration)??-1):0),[played,search,order,libraryType,metadataFilter,personalNotes]);
+ const allLibraryGames=useMemo(()=>combinedGames(played,manualGames),[played,manualGames]);
+ const games=useMemo(()=>{
+  const searchTerm=search.toLocaleLowerCase('de');
+  const scoped=allLibraryGames.filter(g=>
+   (libraryType==='apps'?isMediaApp(g):!isMediaApp(g))
+   &&(metadataFilter==='all'
+    ||(metadataFilter==='manual'?isManualGame(g):
+    metadataFilter==='missing'?!g.metadata:
+    metadataFilter==='no-cover'?!cover(g):
+    metadataFilter==='planned'?Boolean(personalNotes[gameKey(g)]?.status):
+    metadataFilter==='favorites'?Boolean(personalNotes[gameKey(g)]?.favorite):
+    !g.metadata?.summary||!g.metadata?.genres?.length))
+   &&String(g.name||g.titleName||'').toLocaleLowerCase('de').includes(searchTerm));
+  const filtered=filterCollection(scoped,activeCollection,collections);
+  const last=g=>Number.isFinite(Date.parse(g.lastPlayedDateTime||''))?Date.parse(g.lastPlayedDateTime):0;
+  const rank=g=>{const n=personalNotes[gameKey(g)]||{};return (n.priority==='high'?3:n.priority==='low'?1:2)+(n.status==='playing'?0.5:0)};
+  return [...filtered].sort((a,b)=>order==='name'?String(a.name||a.titleName).localeCompare(String(b.name||b.titleName),'de'):
+   order==='low'?(durationMinutes(a.playDuration)??-1)-(durationMinutes(b.playDuration)??-1):
+   order==='recent'?last(b)-last(a):
+   order==='plan'?rank(b)-rank(a)||last(b)-last(a):
+   (durationMinutes(b.playDuration)??-1)-(durationMinutes(a.playDuration)??-1));
+ },[allLibraryGames,search,order,libraryType,metadataFilter,personalNotes,activeCollection,collections]);
  const featuredGame=useMemo(()=>{
   const candidates=played.filter(g=>!isMediaApp(g));
   const priority=g=>{
@@ -210,12 +290,12 @@ export default function PlayStationHub({titles=[],played=[]}){
    <button type="button" onClick={()=>{const fold=document.querySelectorAll('.psn-tools-fold')[1];if(fold){fold.open=true;fold.scrollIntoView({behavior:'smooth',block:'center'})}}}><span aria-hidden="true">▥</span><strong>Statistiken</strong><small>Fortschritt verstehen</small></button>
   </div>
  </div>:null}
- <div className="psn-browser-controls">{tab==='trophies'?<><label className="psn-range-label" htmlFor="psn-hub-min">Mindestfortschritt <strong>{min}%</strong></label><input id="psn-hub-min" type="range" min="0" max="100" value={min} onChange={e=>setMin(Number(e.target.value))}/><div className="psn-range-presets">{[0,25,50,75,90].map(n=><button type="button" key={n} aria-pressed={min===n} onClick={()=>setMin(n)}>{n===0?'Alle':n+'%'}</button>)}</div></>:null}<div className="psn-browser-fields"><input type="search" aria-label="Spiel suchen" placeholder="Spiel suchen …" value={search} onChange={e=>setSearch(e.target.value)}/><select aria-label="Sortierung" value={order} onChange={e=>setOrder(e.target.value)}><option value="progress">{tab==='trophies'?'Fortschritt absteigend':'Spielzeit absteigend'}</option><option value="low">{tab==='trophies'?'Fortschritt aufsteigend':'Spielzeit aufsteigend'}</option><option value="name">Name A–Z</option></select></div></div>
- {tab==='trophies'?<><TrophyShowcase titles={titles}/><div className="psn-hub-trophy-grid">{trophyGames.slice(0,visibleTrophyGames).map(g=><GameTrophies key={g.npCommunicationId||g.trophyTitleName} game={g}/>)}{!trophyGames.length?<p>Keine Spiele für diesen Filter.</p>:null}{trophyGames.length>visibleTrophyGames?<button className="psn-hub-more-trophies" type="button" onClick={()=>setVisibleTrophyGames(n=>n+36)}>Weitere Trophäenspiele anzeigen ({trophyGames.length-visibleTrophyGames} übrig)</button>:null}</div></>:<><div className="psn-hub-library-types" role="group" aria-label="Bibliotheksbereich"><button type="button" aria-pressed={libraryType==='games'} onClick={()=>{setLibraryType('games');setMetadataFilter('all');setSelected(null)}}>Spiele ({played.filter(g=>!isMediaApp(g)).length})</button><button type="button" aria-pressed={libraryType==='apps'} onClick={()=>{setLibraryType('apps');setMetadataFilter('all');setSelected(null)}}>Apps & Medien ({played.filter(isMediaApp).length})</button></div><div className="psn-hub-filter-hub">
+ <div className="psn-browser-controls">{tab==='trophies'?<><label className="psn-range-label" htmlFor="psn-hub-min">Mindestfortschritt <strong>{min}%</strong></label><input id="psn-hub-min" type="range" min="0" max="100" value={min} onChange={e=>setMin(Number(e.target.value))}/><div className="psn-range-presets">{[0,25,50,75,90].map(n=><button type="button" key={n} aria-pressed={min===n} onClick={()=>setMin(n)}>{n===0?'Alle':n+'%'}</button>)}</div></>:null}<div className="psn-browser-fields"><input type="search" aria-label="Spiel suchen" placeholder="Spiel suchen …" value={search} onChange={e=>setSearch(e.target.value)}/><select aria-label="Sortierung" value={order} onChange={e=>setOrder(e.target.value)}><option value="progress">{tab==='trophies'?'Fortschritt absteigend':'Spielzeit absteigend'}</option><option value="low">{tab==='trophies'?'Fortschritt aufsteigend':'Spielzeit aufsteigend'}</option><option value="name">Name A–Z</option>{tab==='games'?<><option value="recent">Zuletzt gespielt</option><option value="plan">Meine Prioritäten</option></>:null}</select></div></div>
+ {tab==='trophies'?<><TrophyShowcase titles={titles}/><div className="psn-hub-trophy-grid">{trophyGames.slice(0,visibleTrophyGames).map(g=><GameTrophies key={g.npCommunicationId||g.trophyTitleName} game={g}/>)}{!trophyGames.length?<p>Keine Spiele für diesen Filter.</p>:null}{trophyGames.length>visibleTrophyGames?<button className="psn-hub-more-trophies" type="button" onClick={()=>setVisibleTrophyGames(n=>n+36)}>Weitere Trophäenspiele anzeigen ({trophyGames.length-visibleTrophyGames} übrig)</button>:null}</div></>:<><div className="psn-hub-library-types" role="group" aria-label="Bibliotheksbereich"><button type="button" aria-pressed={libraryType==='games'} onClick={()=>{setLibraryType('games');setMetadataFilter('all');setSelected(null)}}>Spiele ({allLibraryGames.filter(g=>!isMediaApp(g)).length})</button><button type="button" aria-pressed={libraryType==='apps'} onClick={()=>{setLibraryType('apps');setMetadataFilter('all');setSelected(null)}}>Apps & Medien ({played.filter(isMediaApp).length})</button></div><GameCollectionToolbar collections={collections} activeCollection={activeCollection} onSelect={setActiveCollection} onCreate={createCollection} onRemove={removeCollection} newName={newCollectionName} onNameChange={setNewCollectionName} viewMode={viewMode} onViewChange={changeView} message={collectionMessage}/><div className="psn-hub-filter-hub">
  <div className="psn-hub-library-types psn-hub-primary-filters" role="group" aria-label="Schnellfilter">
   <button type="button" aria-pressed={metadataFilter==='all'} onClick={()=>setMetadataFilter('all')}>Alle</button>
   <button type="button" aria-pressed={metadataFilter==='planned'} onClick={()=>setMetadataFilter('planned')}>Meine Pläne</button>
-  <button type="button" aria-pressed={metadataFilter==='favorites'} onClick={()=>setMetadataFilter('favorites')}>★ Favoriten</button>
+  <button type="button" aria-pressed={metadataFilter==='favorites'} onClick={()=>setMetadataFilter('favorites')}>★ Favoriten</button><button type="button" aria-pressed={metadataFilter==='manual'} onClick={()=>setMetadataFilter('manual')}>Ungespielt vorgemerkt</button>
  </div>
  <details className="psn-hub-advanced-filters">
   <summary>Datenqualität prüfen {['partial','missing','no-cover'].includes(metadataFilter)?<span className="psn-hub-active-filter">Filter aktiv</span>:null}</summary>
@@ -225,13 +305,18 @@ export default function PlayStationHub({titles=[],played=[]}){
    <button type="button" aria-pressed={metadataFilter==='no-cover'} onClick={()=>setMetadataFilter('no-cover')}>Ohne Cover</button>
   </div>
  </details>
-</div><p className="psn-hub-hint">Zuletzt gespielte Titel aus deinem PSN-Profil. Diese Liste ist nicht zwingend deine vollständige Kaufbibliothek.</p><div className="psn-hub-library-head"><strong>{games.length} {libraryType==='apps'?'Apps':'Spiele'}</strong><small>{metadataFilter==='all'?'Aus deinem PSN-Spielverlauf':metadataFilter==='planned'?'Deine gespeicherten Pläne':metadataFilter==='favorites'?'Deine Favoriten':'Gefiltert nach Datenqualität'}</small></div><div className="psn-hub-game-grid">{games.slice(0,visibleGames).map((g,i)=><button type="button" key={g.titleId||i} className="psn-hub-game" onClick={e=>{modalTriggerRef.current=e.currentTarget;setSelected(g)}} aria-label={'Details zu '+(g.name||g.titleName||'Spiel')+' öffnen'}><div className="psn-hub-cover">{personalNotes[g.titleId||g.name||g.titleName]?.favorite?<span className="psn-game-favorite" aria-label="Favorit">★</span>:null}<PreferredCover game={g} preferredUrl={artworkChoice[g.titleId||g.name||g.titleName]==='steamgriddb'?artworkUrls[g.titleId||g.name||g.titleName]:null}/></div><strong>{displayGameName(g.name||g.titleName)}</strong><small className="psn-game-playtime">{duration(g.playDuration)}</small>{personalNotes[g.titleId||g.name||g.titleName]?.status?<small className="psn-game-plan-label">{gameStatusLabels[personalNotes[g.titleId||g.name||g.titleName].status]||'Vorgemerkt'}</small>:null}{g.metadata?.genres?.length?<small className="psn-hub-genre">{g.metadata.genres.slice(0,2).join(' · ')}</small>:null}<small>{g.lastPlayedDateTime?'Zuletzt '+new Date(g.lastPlayedDateTime).toLocaleDateString('de-DE'):''}</small>{metadataFilter!=='all'&&metadataFilter!=='planned'&&metadataFilter!=='favorites'?<small className={'psn-hub-metadata '+(!g.metadata?'is-missing':!g.metadata.summary||!g.metadata.genres?.length?'is-partial':'is-ready')}>{metadataStatus(g)}</small>:null}<small className="psn-hub-more">Details ansehen ↗</small></button>)}{games.length>visibleGames?<button type="button" className="psn-cinema-load-more" onClick={()=>setVisibleGames(n=>n+36)}>Weitere Spiele laden ({games.length-visibleGames} übrig)</button>:null}{!games.length?<div className="psn-hub-empty-games"><strong>Keine passenden Einträge</strong><p>Probiere einen anderen Suchbegriff oder setze die Filter zurück.</p><button type="button" onClick={()=>{setSearch('');setMetadataFilter('all')}}>Suche und Filter zurücksetzen</button></div>:null}</div><GamingPlanner played={played.filter(g=>!isMediaApp(g))} titles={titles}/>{selected&&typeof document!=='undefined'?createPortal(<div className="psn-modal-backdrop" role="presentation" onClick={()=>setSelected(null)}>
+</div><p className="psn-hub-hint">PSN-Spielverlauf und deine manuell vorgemerkten Spiele. Die PSN-Liste entspricht nicht zwingend deiner vollständigen Kaufbibliothek.</p><div className="psn-hub-library-head"><strong>{games.length} {libraryType==='apps'?'Apps':'Spiele'}</strong><small>{metadataFilter==='all'?'Aus deinem PSN-Spielverlauf':metadataFilter==='planned'?'Deine gespeicherten Pläne':metadataFilter==='favorites'?'Deine Favoriten':metadataFilter==='manual'?'Ohne PSN-Aktivität vorgemerkt':activeCollection?'Deine eigene Sammlung':'Gefiltert nach Datenqualität'}</small></div><div className={'psn-hub-game-grid psn-library-'+viewMode}>{games.slice(0,visibleGames).map((g,i)=><button type="button" key={g.titleId||i} className="psn-hub-game" onClick={e=>{modalTriggerRef.current=e.currentTarget;setSelected(g)}} aria-label={'Details zu '+(g.name||g.titleName||'Spiel')+' öffnen'}><div className="psn-hub-cover">{personalNotes[g.titleId||g.name||g.titleName]?.favorite?<span className="psn-game-favorite" aria-label="Favorit">★</span>:null}<PreferredCover game={g} preferredUrl={artworkChoice[g.titleId||g.name||g.titleName]==='steamgriddb'?artworkUrls[g.titleId||g.name||g.titleName]:null}/></div><strong>{displayGameName(g.name||g.titleName)}</strong>{isManualGame(g)?<small className="psn-game-manual-label">Manuell vorgemerkt · keine PSN-Daten</small>:<small className="psn-game-playtime">{duration(g.playDuration)}</small>}{personalNotes[g.titleId||g.name||g.titleName]?.status?<small className="psn-game-plan-label">{gameStatusLabels[personalNotes[g.titleId||g.name||g.titleName].status]||'Vorgemerkt'}</small>:null}{g.metadata?.genres?.length?<small className="psn-hub-genre">{g.metadata.genres.slice(0,2).join(' · ')}</small>:null}{!isManualGame(g)&&g.lastPlayedDateTime?<small>Zuletzt {new Date(g.lastPlayedDateTime).toLocaleDateString('de-DE')}</small>:null}{metadataFilter!=='all'&&metadataFilter!=='planned'&&metadataFilter!=='favorites'&&metadataFilter!=='manual'?<small className={'psn-hub-metadata '+(!g.metadata?'is-missing':!g.metadata.summary||!g.metadata.genres?.length?'is-partial':'is-ready')}>{metadataStatus(g)}</small>:null}<small className="psn-hub-more">Details ansehen ↗</small></button>)}{games.length>visibleGames?<button type="button" className="psn-cinema-load-more" onClick={()=>setVisibleGames(n=>n+36)}>Weitere Spiele laden ({games.length-visibleGames} übrig)</button>:null}{!games.length?<div className="psn-hub-empty-games"><strong>Keine passenden Einträge</strong><p>Probiere einen anderen Suchbegriff oder setze die Filter zurück.</p><button type="button" onClick={()=>{setSearch('');setMetadataFilter('all')}}>Suche und Filter zurücksetzen</button></div>:null}</div><GamingPlanner played={played.filter(g=>!isMediaApp(g))} titles={titles}/>{selected&&typeof document!=='undefined'?createPortal(<div className="psn-modal-backdrop" role="presentation" onClick={()=>setSelected(null)}>
 <section ref={modalRef} className="psn-game-modal" role="dialog" aria-modal="true" aria-label={'Spieldetails '+displayGameName(selected.name||selected.titleName)} onKeyDown={e=>{if(e.key==='Escape')setSelected(null)}} onClick={e=>e.stopPropagation()}>
 <button className="psn-modal-close" type="button" onClick={()=>setSelected(null)} aria-label="Schließen">×</button>
 <div className="psn-game-modal-hero"><div className="psn-game-modal-cover"><PreferredCover game={selected} className="psn-modal-cover" preferredUrl={artworkChoice[selected.titleId||selected.name||selected.titleName]==='steamgriddb'?(artworkUrls[selected.titleId||selected.name||selected.titleName]||external.title===(selected.name||selected.titleName||'')&&external.data?.artwork?.cover):null}/></div><div className="psn-game-modal-hero-title"><span className="psn-eyebrow">{isMediaApp(selected)?'APPS & MEDIEN':'MEINE SPIELWELT'}</span><h3>{displayGameName(selected.name||selected.titleName)}</h3>{selected.metadata?.releaseDate?<span>Erschienen {safeDate(selected.metadata.releaseDate)}</span>:null}</div></div>
 {personalNotes[selected.titleId||selected.name||selected.titleName]?.note?<div className="psn-game-modal-personal"><span>Mein Spielplan</span><p>{personalNotes[selected.titleId||selected.name||selected.titleName].note}</p></div>:null}
-<div className="psn-game-modal-toolbar">{!isMediaApp(selected)?<button type="button" className="psn-modal-action" onClick={()=>{const id=selected.titleId||selected.name||selected.titleName;setSelected(null);window.dispatchEvent(new CustomEvent('psn-plan-game',{detail:{id}}))}}>Spiel planen / Ziel speichern ↗</button>:null}{personalNotes[selected.titleId||selected.name||selected.titleName]?.status?<span className="psn-game-plan-label">Mein Status: {gameStatusLabels[personalNotes[selected.titleId||selected.name||selected.titleName].status]||'Vorgemerkt'}</span>:null}</div><div className="psn-game-modal-highlights"><div><span>Spielzeit</span><strong>{duration(selected.playDuration)}</strong></div><div><span>Zuletzt gespielt</span><strong>{safeDate(selected.lastPlayedDateTime)||'Nicht verfügbar'}</strong></div>{selected.metadata?.rating!=null?<div><span>IGDB-Kritikerwertung</span><strong>{selected.metadata.rating}/100</strong></div>:null}</div>
-{!selected.metadata&&external.status!=='loading'&&!(external.title===(selected.name||selected.titleName||'')&&external.data?.rawg?.description)?<div className="psn-game-modal-section psn-game-modal-empty"><h4>Weitere Spielinformationen</h4><p>IGDB hat für diesen Titel keinen eindeutigen Treffer geliefert. Zusätzliche Angaben aus RAWG und SteamGridDB findest du weiter unten, sofern verfügbar.</p></div>:selected.metadata&&!selected.metadata.summary&&external.status!=='loading'&&!(external.title===(selected.name||selected.titleName||'')&&external.data?.rawg?.description)?<div className="psn-game-modal-section psn-game-modal-empty"><h4>Beschreibung noch nicht verfügbar</h4><p>Der Titel wurde zugeordnet, aber die Datenquelle liefert nicht alle Informationen.</p></div>:null}
+<details className="psn-game-modal-collections">
+ <summary>In Sammlungen organisieren {collections.length?<span>({collections.filter(c=>c.gameIds.includes(gameKey(selected))).length} zugeordnet)</span>:null}</summary>
+ {collections.length?<div className="psn-game-modal-collections-list">{collections.map(c=><label key={c.id}><input type="checkbox" checked={c.gameIds.includes(gameKey(selected))} onChange={()=>toggleMembership(c.id,gameKey(selected))}/>{c.name}</label>)}</div>:<p>Lege unter „Sammlungen verwalten“ zunächst eine Sammlung an.</p>}
+ </details>
+ {isManualGame(selected)?<div className="psn-game-modal-manual"><p>Dieser Titel wurde von dir vorgemerkt. Es liegen keine PSN-Spielzeiten oder Trophäen für diesen Eintrag vor.</p><button type="button" onClick={()=>deleteManualGame(selected)}>Manuellen Eintrag entfernen</button></div>:null}
+<div className="psn-game-modal-toolbar">{!isMediaApp(selected)?<button type="button" className="psn-modal-action" onClick={()=>{const id=selected.titleId||selected.name||selected.titleName;setSelected(null);window.dispatchEvent(new CustomEvent('psn-plan-game',{detail:{id}}))}}>Spiel planen / Ziel speichern ↗</button>:null}{personalNotes[selected.titleId||selected.name||selected.titleName]?.status?<span className="psn-game-plan-label">Mein Status: {gameStatusLabels[personalNotes[selected.titleId||selected.name||selected.titleName].status]||'Vorgemerkt'}</span>:null}</div><div className="psn-game-modal-highlights">{!isManualGame(selected)?<><div><span>Spielzeit</span><strong>{duration(selected.playDuration)}</strong></div><div><span>Zuletzt gespielt</span><strong>{safeDate(selected.lastPlayedDateTime)||'Nicht verfügbar'}</strong></div></>:null}{selected.metadata?.rating!=null?<div><span>IGDB-Kritikerwertung</span><strong>{selected.metadata.rating}/100</strong></div>:null}</div>
+{!isManualGame(selected)&&!selected.metadata&&external.status!=='loading'&&!(external.title===(selected.name||selected.titleName||'')&&external.data?.rawg?.description)?<div className="psn-game-modal-section psn-game-modal-empty"><h4>Weitere Spielinformationen</h4><p>IGDB hat für diesen Titel keinen eindeutigen Treffer geliefert. Zusätzliche Angaben aus RAWG und SteamGridDB findest du weiter unten, sofern verfügbar.</p></div>:!isManualGame(selected)&&selected.metadata&&!selected.metadata.summary&&external.status!=='loading'&&!(external.title===(selected.name||selected.titleName||'')&&external.data?.rawg?.description)?<div className="psn-game-modal-section psn-game-modal-empty"><h4>Beschreibung noch nicht verfügbar</h4><p>Der Titel wurde zugeordnet, aber die Datenquelle liefert nicht alle Informationen.</p></div>:null}
 {selected.metadata?.summary?<div className="psn-game-modal-section"><h4>Über das Spiel</h4><p>{selected.metadata.summary}</p></div>:null}{!selected.metadata?.summary&&external.title===(selected.name||selected.titleName||'')&&external.data?.rawg?.description?<div className="psn-game-modal-section"><h4>Über das Spiel · RAWG</h4><p>{external.data.rawg.description}</p><small>Quelle: <a href={external.data.rawg.url} target="_blank" rel="noopener noreferrer">RAWG ↗</a></small></div>:null}
  {selected.communityInsight?<div className="psn-game-modal-section psn-community-insights">
    <div className="psn-community-insights-head"><h4>Wertungen & geschätzte Spieldauer</h4><span>Datenstand 09/2026</span></div>

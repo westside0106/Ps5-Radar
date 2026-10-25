@@ -490,3 +490,63 @@
  .psn-cinema-shortcuts button small{font-size:9px}
 }
 @media(prefers-reduced-motion:reduce){.psn-cinema-hero,.psn-cinema-primary,.psn-cinema-shortcuts button{transition:none!important}}
+
+/* Design #60 — Collection Studio and three genuinely distinct library presentations */
+.psn-collection-tools{display:grid;gap:13px;padding:17px 18px;margin:18px 0;background:linear-gradient(130deg,#153452,#0b2039);border:1px solid #4b779f;border-radius:16px;box-shadow:inset 0 1px 0 #ffffff14;min-width:0}
+.psn-collection-tools-top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.psn-collection-tools-top h3{margin:3px 0 1px;font-size:19px;color:#f5faff;letter-spacing:-.03em}
+.psn-collection-tools-top small{font-size:11px;color:#a5c6e0;line-height:1.5}
+.psn-collection-view-switch{display:flex;align-items:center;border:1px solid #47769d;background:#071e33;border-radius:10px;padding:4px;gap:3px;flex-shrink:0}
+.psn-collection-view-switch button{border:0;min-height:38px;padding:7px 12px;border-radius:7px;background:transparent;color:#b8d1e6;font-size:12px;font-weight:680;cursor:pointer}
+.psn-collection-view-switch button[aria-pressed=true]{background:linear-gradient(130deg,#2d72af,#184a79);box-shadow:inset 0 1px 0 #ffffff29;color:white}
+.psn-collection-selector{display:flex;gap:7px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin;scrollbar-color:#456e97 transparent;scroll-snap-type:x proximity}
+.psn-collection-selector button{flex:0 0 auto;display:flex;align-items:center;gap:8px;min-height:42px;padding:9px 13px;border-radius:10px;border:1px solid #3b5e82;background:#102a45;color:#d2e7f8;font-size:12px;white-space:nowrap;cursor:pointer;scroll-snap-align:start}
+.psn-collection-selector button span{display:grid;place-items:center;padding:1px 7px;border-radius:7px;background:#294c69;color:#bedbef;font-size:10px}
+.psn-collection-selector button[aria-pressed=true]{background:#24659a;border-color:#9bd7ff;color:#fff}
+.psn-collection-manage>summary{cursor:pointer;display:inline-flex;align-items:center;min-height:40px;color:#a7d8ff;font-size:12px;font-weight:700}
+.psn-collection-manage-content{display:grid;grid-template-columns:minmax(180px,1fr) auto auto;gap:9px;align-items:end;padding:12px;border:1px solid #355d82;border-radius:11px;background:#0b2138}
+.psn-collection-manage-content label{display:grid;gap:6px;min-width:0;font-size:11px;color:#c1dbed}
+.psn-collection-manage-content input{width:100%;min-width:0;min-height:44px;padding:10px 12px;border:1px solid #648bb0;border-radius:9px;background:#0a192a;color:#eff8ff;font-size:16px}
+.psn-collection-manage-content button{min-height:44px;white-space:normal;padding:9px 12px;border:1px solid #82caff;border-radius:9px;background:#235a88;color:white;font-size:12px;cursor:pointer}
+.psn-collection-manage-content button:disabled{opacity:.5;cursor:not-allowed}
+.psn-collection-manage-content .psn-collection-delete{background:#482634;border-color:#a66d7b;color:#ffe9ef}
+.psn-collection-manage-content small{grid-column:1/-1;color:#9ebad3;line-height:1.5;font-size:11px}
+.psn-collection-feedback{font-size:11px;line-height:1.5;color:#bde2fa;margin:0}
+.psn-game-manual-label{display:inline-flex;width:fit-content;padding:4px 8px;border-radius:7px;color:#bee5ff;background:#214864;border:1px solid #467994;font-size:10px!important;line-height:1.4}
+.psn-game-modal-collections{margin:14px 0 5px;border:1px solid #4c7395;background:#0e2841;border-radius:12px;padding:10px 13px}
+.psn-game-modal-collections>summary{cursor:pointer;min-height:34px;color:#e0f3ff;font-size:13px;font-weight:750;line-height:34px}
+.psn-game-modal-collections>summary span{font-size:11px;color:#b5daee}
+.psn-game-modal-collections-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px;padding:12px 0}
+.psn-game-modal-collections-list label{display:flex;align-items:center;gap:8px;padding:10px;border:1px solid #305d84;border-radius:9px;cursor:pointer;font-size:12px;color:#e4f4ff;min-height:44px;overflow-wrap:anywhere}
+.psn-game-modal-collections-list input{flex:none;width:18px;height:18px;accent-color:#54b4ff}
+.psn-game-modal-collections>p{font-size:12px;color:#b4cfe6}
+.psn-game-modal-manual{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:12px;margin:8px 0;border:1px solid #487293;border-radius:10px;background:#142e45}
+.psn-game-modal-manual p{flex:1;min-width:160px;margin:0;color:#cbddee;font-size:12px;line-height:1.5}
+.psn-game-modal-manual button{padding:10px 12px;min-height:42px;border-radius:9px;border:1px solid #a96f77;background:#472630;color:#ffeaf0;cursor:pointer;font-size:12px}
+.psn-hub-game-grid.psn-library-list{grid-template-columns:1fr!important;gap:8px}
+.psn-hub-game-grid.psn-library-list .psn-hub-game{display:grid!important;grid-template-columns:90px minmax(0,1fr);grid-auto-rows:min-content;align-content:center;column-gap:15px;row-gap:4px;text-align:left;padding:10px!important;min-height:132px}
+.psn-hub-game-grid.psn-library-list .psn-hub-cover{grid-column:1;grid-row:1/9;width:90px!important;height:112px!important;aspect-ratio:4/5!important;max-height:112px;align-self:center;margin:0}
+.psn-hub-game-grid.psn-library-list .psn-hub-game>strong,.psn-hub-game-grid.psn-library-list .psn-hub-game>small{grid-column:2;min-width:0}
+.psn-hub-game-grid.psn-library-list .psn-hub-game>strong{font-size:16px;line-height:1.4;min-height:unset}
+.psn-hub-game-grid.psn-library-list .psn-hub-more{margin-top:5px;border:0;padding:0}
+.psn-hub-game-grid.psn-library-shelf{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))!important;gap:18px 10px;padding:10px 8px 20px;background:repeating-linear-gradient(0deg,transparent 0,transparent 278px,#5d7a9744 279px,#11263e 284px,#0a1526 294px,transparent 298px);border-radius:14px}
+.psn-hub-game-grid.psn-library-shelf .psn-hub-game{min-height:0;border:0!important;box-shadow:none!important;background:transparent!important;padding:3px!important}
+.psn-hub-game-grid.psn-library-shelf .psn-hub-cover{aspect-ratio:2/3;max-height:none;border-radius:9px;box-shadow:0 10px 22px #0009}
+.psn-hub-game-grid.psn-library-shelf .psn-hub-game>strong{font-size:11px;line-height:1.35;min-height:0;margin:5px 0}
+.psn-hub-game-grid.psn-library-shelf .psn-hub-game>small:not(.psn-game-manual-label):not(.psn-game-plan-label),.psn-hub-game-grid.psn-library-shelf .psn-hub-more,.psn-hub-game-grid.psn-library-shelf .psn-hub-genre{display:none}
+.psn-hub-game-grid.psn-library-shelf .psn-game-manual-label{font-size:9px!important;padding:3px 5px}
+.psn-hub-game-grid.psn-library-shelf .psn-game-plan-label{font-size:9px!important;padding:3px 5px}
+.psn-hub-game-grid.psn-library-list .psn-cinema-load-more,.psn-hub-game-grid.psn-library-shelf .psn-cinema-load-more{grid-column:1/-1}
+@media(max-width:650px){
+ .psn-collection-tools{padding:12px;gap:10px}
+ .psn-collection-tools-top{align-items:flex-start}
+ .psn-collection-view-switch{width:100%;justify-content:space-between}
+ .psn-collection-view-switch button{flex:1;min-width:0}
+ .psn-collection-manage-content{grid-template-columns:1fr}
+ .psn-collection-manage-content small{grid-column:1}
+ .psn-hub-game-grid.psn-library-shelf{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:13px 7px}
+ .psn-hub-game-grid.psn-library-list .psn-hub-game{grid-template-columns:78px minmax(0,1fr);min-height:116px;column-gap:10px}
+ .psn-hub-game-grid.psn-library-list .psn-hub-cover{width:78px!important;height:98px!important}
+ .psn-hub-game-grid.psn-library-list .psn-hub-game>strong{font-size:13px}
+}
+@media(max-width:390px){.psn-hub-game-grid.psn-library-shelf{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
