@@ -2,12 +2,14 @@ import assert from 'node:assert/strict';
 import {createHmac} from 'node:crypto';
 import {chromium,webkit} from 'playwright';
 const base=process.env.RADAR_TEST_URL||'http://localhost:3100';
-for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390,430]]]){
+for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320,375,390,430]]]){
  const browser=await engine.launch({headless:true});
  try{
  for(const width of widths){
-  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:engine===webkit&&width<=430,deviceScaleFactor:width<=430?2:1});
+  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:engine===webkit&&width<=430,deviceScaleFactor:width<=430?2:1,reducedMotion:width===320?'reduce':'no-preference'});
   const page=await context.newPage();
+  const clientErrors=[];
+  page.on('pageerror',error=>clientErrors.push(String(error?.stack||error?.message||error)));
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
@@ -38,6 +40,23 @@ for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390
    const size=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
    assert.ok(size.scroll<=size.client+2,engine.name()+' horizontal overflow at '+width+': '+JSON.stringify(size));
    console.log('Gameworld viewport verified:',engine.name(),width);
+   const hero=page.locator('.psn-cinema-hero-content');
+   await hero.waitFor();
+   if(width===320){
+    assert.equal(await page.evaluate(()=>matchMedia('(prefers-reduced-motion: reduce)').matches),true,'320px test must emulate reduced motion');
+    const duration=await hero.evaluate(el=>parseFloat(getComputedStyle(el).animationDuration)||0);
+    assert.ok(duration<0.01,engine.name()+' reduced-motion reveals must be disabled');
+   }
+   if(width<=430){
+    const navCurrent=page.locator('.radar-global-links a[aria-current="page"]');
+    await navCurrent.waitFor();
+    const navVisible=await navCurrent.evaluate(el=>{
+      const r=el.getBoundingClientRect(),n=el.parentElement.getBoundingClientRect();
+      return r.left>=n.left-3&&r.right<=n.right+3;
+    });
+    assert.ok(navVisible,engine.name()+' active navigation link should be scrolled into view at '+width);
+   }
+
    if(width===390||engine===chromium&&width===1280){
     const routes=['/radar','/xbox','/ps-plus','/preise','/archive','/mein-playstation?view=games'];
     for(const route of routes){
@@ -90,6 +109,11 @@ for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390
     const mission=page.locator('.psn-mission-control');
     await mission.waitFor();
     assert.ok(await mission.getByText('Deine Platin-Missionen').count(),'Platin mission heading missing');
+    const preview=page.locator('.psn-trophy-static-preview');
+    await preview.waitFor();
+    assert.ok(await preview.getByRole('button',{name:'3D-Trophäe aktivieren'}).count(),'3D must be opt-in to avoid heavy initial WebGL work');
+    assert.equal(await page.locator('.psn-collection-stage-model canvas').count(),0,'WebGL scene must not be mounted by default');
+
     await page.getByRole('button',{name:'Meine Spielwelt'}).click();
     const statsFold=page.locator('.psn-tools-fold').filter({hasText:'Gaming-Chronik & Statistiken'});
     await statsFold.locator('summary').click();
@@ -112,6 +136,8 @@ for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390
    }
 
   }
+  const relevantErrors=clientErrors.filter(t=>/PlayStationHub|GamingPlanner|PlatinumMissionControl|GamingChronicle|hydrate|hydration|before initialization|ReferenceError/i.test(t));
+  assert.deepEqual(relevantErrors,[],engine.name()+' '+width+' runtime/hydration errors');
   await context.close();
  }
  }finally{await browser.close()}
