@@ -86,3 +86,9 @@ body{background:radial-gradient(ellipse at 48% -14%,#16345d 0,transparent 42%),v
 /* Contrast, motion and keyboard ergonomics */
 .radar-global-navigation :focus-visible,.catalog-app :focus-visible,.mag-shell :focus-visible,.archive-shell :focus-visible,.watchlist-shell :focus-visible{outline:3px solid #a4d8ff;outline-offset:2px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.radar-global-link,.mag-shell .mag-story,.archive-shell .archive-cover-card,.catalog-app .catalog-card{transition:none!important;transform:none!important}}
+
+/* Keep old magazine utility actions beneath the new sticky navigation. */
+.mag-shell .radar-utility-toolbar{position:static!important;z-index:auto!important;display:flex;align-items:center;justify-content:flex-end;gap:9px;padding:8px 0!important;margin:0 auto 8px;background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.radar-utility-toolbar .radar-mag-context{margin-right:auto;color:#9fbee0;letter-spacing:.13em;font-size:10px;font-weight:800}
+.radar-utility-toolbar .logout{border-radius:9px;min-height:38px}
+@media(max-width:640px){.radar-utility-toolbar .radar-mag-context{display:none}.radar-utility-toolbar .logout{font-size:11px;padding:7px 10px}}
