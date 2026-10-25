@@ -16,6 +16,8 @@ import './iphone-magazine-ux.css';
 import './mobile-detail-watchlist.css';
 import './mobile-price-catalog.css';
 import './video-pass-2.css';
+import './radar-design-system.css';
+import RadarTopNavigation from './RadarTopNavigation';
 import WatchlistDock from './WatchlistDock';
 import VideoReviewFixes from './VideoReviewFixes';
 import { Analytics } from '@vercel/analytics/next';
@@ -34,5 +36,5 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="de"><body>{children}<WatchlistDock /><VideoReviewFixes /><Analytics /><SpeedInsights /></body></html>;
+  return <html lang="de"><body><RadarTopNavigation />{children}<WatchlistDock /><VideoReviewFixes /><Analytics /><SpeedInsights /></body></html>;
 }
