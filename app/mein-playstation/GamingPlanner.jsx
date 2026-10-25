@@ -2,6 +2,7 @@
 import {useMemo,useState,useEffect} from 'react';
 import DigitalLibrary from './DigitalLibrary';
 import ProfileSync from './ProfileSync';
+import PlatinumTrophyGoals,{initialTrophyGoals} from './PlatinumTrophyGoals';
 const KEY='psn-game-planner-v1';
 const HISTORY_KEY='psn-playtime-snapshots-v1';
 const choices=[['planned','Geplant'],['playing','In Arbeit'],['paused','Pausiert'],['completed','Durchgespielt'],['platinum','Platin-Ziel']];
@@ -13,6 +14,7 @@ export default function GamingPlanner({played=[],titles=[]}){
  const [notes,setNotes]=useState({});
  const [selected,setSelected]=useState('');
  const [draft,setDraft]=useState({status:'',favorite:false,note:''});
+ const [trophyGoal,setTrophyGoal]=useState({setId:'',targetIds:[],doneIds:[]});
  const [savedNotice,setSavedNotice]=useState('');
  const [priorityFilter,setPriorityFilter]=useState('all');
  const [budget,setBudget]=useState(2);
@@ -20,7 +22,7 @@ export default function GamingPlanner({played=[],titles=[]}){
  const [history,setHistory]=useState([]);
  const [importText,setImportText]=useState('');
  const [backupMessage,setBackupMessage]=useState('');
- useEffect(()=>{try{const data=JSON.parse(localStorage.getItem(KEY)||'{}');if(data&&typeof data==='object'&&!Array.isArray(data))setNotes(data)}catch{}const onPlan=e=>{const id=String(e.detail?.id||'');if(!id)return;const info=JSON.parse(localStorage.getItem(KEY)||'{}')[id]||{};setSelected(id);setDraft({status:e.detail?.platinum?'platinum':info.status||'',favorite:!!info.favorite,note:info.note||'',priority:info.priority||'normal'});setSavedNotice('');const panel=document.getElementById('psn-game-editor');const fold=panel?.closest('details');if(fold)fold.open=true;requestAnimationFrame(()=>panel?.scrollIntoView({behavior:'smooth',block:'center'}))};window.addEventListener('psn-plan-game',onPlan);return()=>window.removeEventListener('psn-plan-game',onPlan)},[]);
+ useEffect(()=>{try{const data=JSON.parse(localStorage.getItem(KEY)||'{}');if(data&&typeof data==='object'&&!Array.isArray(data))setNotes(data)}catch{}const onPlan=e=>{const id=String(e.detail?.id||'');if(!id)return;let info={};try{info=JSON.parse(localStorage.getItem(KEY)||'{}')?.[id]||{}}catch{}setSelected(id);setDraft({status:e.detail?.platinum?'platinum':info.status||'',favorite:!!info.favorite,note:info.note||'',priority:info.priority||'normal'});setTrophyGoal(initialTrophyGoals(played.find(g=>getId(g)===id),titles,info));setSavedNotice('');const panel=document.getElementById('psn-game-editor');const fold=panel?.closest('details');if(fold)fold.open=true;requestAnimationFrame(()=>panel?.scrollIntoView({behavior:'smooth',block:'center'}))};window.addEventListener('psn-plan-game',onPlan);return()=>window.removeEventListener('psn-plan-game',onPlan)},[]);
  useEffect(()=>{
   // A local daily snapshot of cumulative PSN playtimes, not a real session log.
   try{
@@ -61,7 +63,7 @@ export default function GamingPlanner({played=[],titles=[]}){
  },[games,notes,budget]);
  function exportBackup(){
   const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback))}catch{return fallback}};
-  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),coverUrls:read('psn-cover-urls-v1',{}),trophyTargets:read('psn-trophy-targets-v1',{})},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),coverUrls:read('psn-cover-urls-v1',{}),trophyTargets:read('psn-trophy-targets-v1',{}),platinumChecks:read('psn-platinum-checks-v1',{})},null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='ps5-radar-komplett-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),500);
   setBackupMessage('Vollständiges lokales Backup erstellt. Datei enthält deine persönlichen Notizen und Trophäenziele; sicher aufbewahren.');
  }
@@ -69,7 +71,7 @@ export default function GamingPlanner({played=[],titles=[]}){
   try{
    const raw=JSON.parse(importText);
    if(![1,2].includes(raw?.version)||!raw.notes||typeof raw.notes!=='object'||Array.isArray(raw.notes))throw Error('Ungültiges Backupformat');
-   const clean={};for(const [k,v] of Object.entries(raw.notes).slice(0,3000)){if(!k||k.length>180||!v||typeof v!=='object'||Array.isArray(v))continue;clean[k]={status:choices.some(c=>c[0]===v.status)?v.status:'',favorite:v.favorite===true,note:String(v.note||'').slice(0,800),priority:['high','normal','low'].includes(v.priority)?v.priority:'normal'}}
+   const clean={};for(const [k,v] of Object.entries(raw.notes).slice(0,3000)){if(!k||k.length>180||!v||typeof v!=='object'||Array.isArray(v))continue;clean[k]={status:choices.some(c=>c[0]===v.status)?v.status:'',favorite:v.favorite===true,note:String(v.note||'').slice(0,800),trophySetId:typeof v.trophySetId==='string'&&/^[a-zA-Z0-9_-]{4,100}$/.test(v.trophySetId)?v.trophySetId:'',priority:['high','normal','low'].includes(v.priority)?v.priority:'normal'}}
    const merged={...notes,...clean};
    const changes=[[KEY,merged]];
    if(raw.version===2){
@@ -78,7 +80,7 @@ export default function GamingPlanner({played=[],titles=[]}){
      const byDate=new Map(mergedHistory.map(x=>[x.date,{date:x.date,minutes:Math.round(x.minutes),games:x.games}]));
      const list=[...byDate.values()].slice(-365);changes.push([HISTORY_KEY,list]);
     }
-    const fields=[['covers','psn-cover-preferences-v1',v=>v==='steamgriddb'||v==='original'],['coverUrls','psn-cover-urls-v1',v=>typeof v==='string'&&/^https:\/\/[a-z0-9.-]+\.steamgriddb\.com\//i.test(v)],['trophyTargets','psn-trophy-targets-v1',v=>Array.isArray(v)]];
+    const fields=[['covers','psn-cover-preferences-v1',v=>v==='steamgriddb'||v==='original'],['coverUrls','psn-cover-urls-v1',v=>typeof v==='string'&&/^https:\/\/[a-z0-9.-]+\.steamgriddb\.com\//i.test(v)],['trophyTargets','psn-trophy-targets-v1',v=>Array.isArray(v)],['platinumChecks','psn-platinum-checks-v1',v=>Array.isArray(v)]];
     for(const [field,key,validate] of fields){const obj=raw[field];if(!obj||typeof obj!=='object'||Array.isArray(obj))continue;const cleaned={};for(const [id,value] of Object.entries(obj).slice(0,3000)){if(!id||id.length>180||!validate(value))continue;cleaned[id]=Array.isArray(value)?value.filter(x=>typeof x==='string'&&x.length<100).slice(0,400):value}let existing={};try{existing=JSON.parse(localStorage.getItem(key)||'{}')}catch{}changes.push([key,{...(existing&&typeof existing==='object'&&!Array.isArray(existing)?existing:{}),...cleaned}])}
    }
    // Validate all data before applying changes; avoid silently discarding existing local settings.
@@ -89,15 +91,37 @@ export default function GamingPlanner({played=[],titles=[]}){
    setImportText('');setBackupMessage(Object.keys(clean).length+' Spieleinträge importiert'+(raw.version===2?' · inklusive unterstützter weiterer Daten':'')+'. Für Cover-/Trophäen-Zielanzeigen die Seite neu laden.');
   }catch{setBackupMessage('Import fehlgeschlagen – Dateiformat oder Browser-Speicher prüfen. Vorhandene Daten sollten unverändert bleiben.')}
  }
- function selectGame(id,platinum=false){setSelected(id);const current=notes[id]||{};setDraft({status:platinum?'platinum':current.status||'',favorite:!!current.favorite,note:current.note||'',priority:current.priority||'normal'});setSavedNotice('');const panel=document.getElementById('psn-game-editor');const fold=panel?.closest('details');if(fold)fold.open=true;requestAnimationFrame(()=>panel?.scrollIntoView({behavior:'smooth',block:'center'}));}
- function saveDraft(){if(!selected)return;const next={...notes,[selected]:{...draft,updatedAt:new Date().toISOString()}};try{localStorage.setItem(KEY,JSON.stringify(next));setNotes(next);setSavedNotice('Gespeichert · '+new Date().toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'})+'. Cloud-Sicherung bei Bedarf im Datenbereich.');window.dispatchEvent(new Event('psn-profile-local-change'))}catch{setSavedNotice('Speichern nicht möglich. Browser-Speicher prüfen.')}}
+ function selectGame(id,platinum=false){setSelected(id);const current=notes[id]||{};setDraft({status:platinum?'platinum':current.status||'',favorite:!!current.favorite,note:current.note||'',priority:current.priority||'normal'});setTrophyGoal(initialTrophyGoals(played.find(g=>getId(g)===id),titles,current));setSavedNotice('');const panel=document.getElementById('psn-game-editor');const fold=panel?.closest('details');if(fold)fold.open=true;requestAnimationFrame(()=>panel?.scrollIntoView({behavior:'smooth',block:'center'}));}
+ function saveDraft(){
+  if(!selected)return;
+  const readObject=key=>{try{const value=JSON.parse(localStorage.getItem(key)||'{}');return value&&typeof value==='object'&&!Array.isArray(value)?value:{}}catch{return {}}};
+  const entry={...draft,trophySetId:trophyGoal.setId||undefined,updatedAt:new Date().toISOString()};
+  const changes=[[KEY,{...notes,[selected]:entry}]];
+  if(trophyGoal.setId){
+   const targetKey='psn-trophy-targets-v1',doneKey='psn-platinum-checks-v1';
+   const selectedIds=[...new Set(trophyGoal.targetIds)].slice(0,300);
+   changes.push([targetKey,{...readObject(targetKey),[trophyGoal.setId]:selectedIds}]);
+   changes.push([doneKey,{...readObject(doneKey),[trophyGoal.setId]:[...new Set(trophyGoal.doneIds.filter(id=>selectedIds.includes(id)))].slice(0,300)}]);
+  }
+  const previous=changes.map(([key])=>[key,localStorage.getItem(key)]);
+  try{
+   for(const [key,data] of changes)localStorage.setItem(key,JSON.stringify(data));
+   setNotes(changes[0][1]);
+   setSavedNotice('Gespeichert · '+new Date().toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'})+'.'+(trophyGoal.setId?' Trophäen-Ziele übernommen.':'')+' Cloud-Sicherung im Datenbereich.');
+   window.dispatchEvent(new Event('psn-profile-local-change'));
+   window.dispatchEvent(new Event('psn-trophy-targets-change'));
+  }catch{
+   for(const [key,value] of previous){try{if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value)}catch{}}
+   setSavedNotice('Speichern nicht möglich. Browser-Speicher prüfen.');
+  }
+ }
  const focused=games.find(g=>g.key===selected)||null;
  const statuses=Object.fromEntries(choices.map(([key])=>[key,games.filter(g=>notes[g.key]?.status===key).length]));
  return <section className="psn-planner" aria-label="Spielplaner und Statistiken">
   <div className="psn-planner-heading"><h3>Weitere Funktionen</h3><small>Nur öffnen, was du brauchst</small></div>
   <div className="psn-planner-stats"><div><small>Erfasste Spiele</small><strong>{games.length}</strong></div><div><small>PSN-Spielzeit</small><strong>{hours(stats.total)} Std.</strong></div><div><small>Mit Status</small><strong>{stats.tracked}</strong></div><div><small>100 % Trophäen</small><strong>{stats.completed}</strong></div></div>
   <details className="psn-tools-fold"><summary>Spiele planen &amp; Backlog <span>Favoriten, Status und Empfehlungen</span></summary><div className="psn-tools-fold-body">  <div className="psn-planner-panels"><div className="psn-planner-box"><h4>Spielvorschlag</h4><p className="psn-muted">Ein Vorschlag aus deinen zuletzt gespielten Titeln.</p><label>Zeitbudget <select value={budget} onChange={e=>setBudget(Number(e.target.value))}><option value="1">1 Stunde</option><option value="2">2 Stunden</option><option value="4">4 Stunden</option><option value="8">8 Stunden</option></select></label>{recommendation?<p><strong>{recommendation.name}</strong></p>:<p>Keine Spiele verfügbar.</p>}</div>
-  <div id="psn-game-editor" className="psn-planner-box psn-editor"><h4>Mein Spielplan</h4><p className="psn-muted">Spiel auswählen, Ziele festlegen und ausdrücklich speichern.</p><label>Spiel<select value={selected} onChange={e=>selectGame(e.target.value)}><option value="">Spiel auswählen …</option>{games.map(g=><option key={g.key} value={g.key}>{g.name}</option>)}</select></label>{focused?<><label>Status<select value={draft.status} onChange={e=>{setDraft(d=>({...d,status:e.target.value}));setSavedNotice('Nicht gespeicherte Änderungen')}}><option value="">Ohne Einordnung</option>{choices.map(([v,label])=><option key={v} value={v}>{label}</option>)}</select></label><label>Priorität<select value={draft.priority||'normal'} onChange={e=>{setDraft(d=>({...d,priority:e.target.value}));setSavedNotice('Nicht gespeicherte Änderungen')}}><option value="high">Hoch – als Nächstes</option><option value="normal">Normal</option><option value="low">Später</option></select></label><label className="psn-planner-check"><input type="checkbox" checked={draft.favorite} onChange={e=>{setDraft(d=>({...d,favorite:e.target.checked}));setSavedNotice('Nicht gespeicherte Änderungen')}}/> Favorit</label><label>Meine Notiz / nächstes Ziel<textarea maxLength={800} rows={3} placeholder="Zum Beispiel: Bei AC Shadows die restlichen Trophäen erreichen" value={draft.note} onChange={e=>{setDraft(d=>({...d,note:e.target.value}));setSavedNotice('Nicht gespeicherte Änderungen')}}/></label><button type="button" className="psn-planner-button psn-save-plan" onClick={saveDraft}>Spielplan speichern</button>{savedNotice?<p className="psn-save-status" role="status">{savedNotice}</p>:null}</>:<p className="psn-muted">Noch kein Spiel ausgewählt.</p>}</div></div>
+  <div id="psn-game-editor" className="psn-planner-box psn-editor"><h4>Mein Spielplan</h4><p className="psn-muted">Spiel auswählen, Ziele festlegen und ausdrücklich speichern.</p><label>Spiel<select value={selected} onChange={e=>selectGame(e.target.value)}><option value="">Spiel auswählen …</option>{games.map(g=><option key={g.key} value={g.key}>{g.name}</option>)}</select></label>{focused?<><label>Status<select value={draft.status} onChange={e=>{setDraft(d=>({...d,status:e.target.value}));setSavedNotice('Nicht gespeicherte Änderungen')}}><option value="">Ohne Einordnung</option>{choices.map(([v,label])=><option key={v} value={v}>{label}</option>)}</select></label><label>Priorität<select value={draft.priority||'normal'} onChange={e=>{setDraft(d=>({...d,priority:e.target.value}));setSavedNotice('Nicht gespeicherte Änderungen')}}><option value="high">Hoch – als Nächstes</option><option value="normal">Normal</option><option value="low">Später</option></select></label><label className="psn-planner-check"><input type="checkbox" checked={draft.favorite} onChange={e=>{setDraft(d=>({...d,favorite:e.target.checked}));setSavedNotice('Nicht gespeicherte Änderungen')}}/> Favorit</label><label>Meine Notiz / nächstes Ziel<textarea maxLength={800} rows={3} placeholder="Zum Beispiel: Bei AC Shadows die restlichen Trophäen erreichen" value={draft.note} onChange={e=>{setDraft(d=>({...d,note:e.target.value}));setSavedNotice('Nicht gespeicherte Änderungen')}}/></label>{draft.status==='platinum'?<PlatinumTrophyGoals game={focused.game} titles={titles} goal={trophyGoal} onChange={setTrophyGoal} onDirty={()=>setSavedNotice('Nicht gespeicherte Trophäen-Ziele')}/>:null}<button type="button" className="psn-planner-button psn-save-plan" onClick={saveDraft}>Spielplan speichern</button>{savedNotice?<p className="psn-save-status" role="status">{savedNotice}</p>:null}</>:<p className="psn-muted">Noch kein Spiel ausgewählt.</p>}</div></div>
   <div className="psn-planner-box"><h4>Mein Backlog</h4><p className="psn-muted">Hier erscheinen nur Spiele, für die du einen Plan gespeichert hast. Hoch priorisierte Titel zuerst.</p><div className="psn-planner-filters"><button type="button" aria-pressed={filter==='all'} onClick={()=>setFilter('all')}>Meine Einträge ({stats.tracked})</button>{choices.map(([v,label])=><button key={v} type="button" aria-pressed={filter===v} onClick={()=>setFilter(v)}>{label} ({statuses[v]})</button>)}</div>{!ranked.length?<p className="psn-muted">Noch keine gespeicherten Spielpläne. Wähle oben einen Titel aus, lege einen Status fest und tippe auf „Spielplan speichern“.</p>:null}<div className="psn-planner-items">{ranked.slice(0,12).map(g=><button key={g.key} type="button" onClick={()=>selectGame(g.key)}><span>{notes[g.key]?.priority==='high'?'↑ ':''}{notes[g.key]?.favorite?'★ ':''}{g.name}</span><small>{choices.find(c=>c[0]===notes[g.key]?.status)?.[1]||'Offen'} · {notes[g.key]?.priority==='high'?'Hohe Priorität · ':''}{hours(mins(g.game.playDuration))} Std.</small></button>)}</div>{ranked.length>12?<small>Die ersten 12 Einträge werden angezeigt. Nach Status filtern, um mehr zu sehen.</small>:null}</div>
   <div className="psn-planner-box"><h4>Platin-Kandidaten</h4><p>Ungefähre Platin-Dauer aus historischen Schätzungen. Kein garantierter Restaufwand. Tippe auf ein Spiel, um es als Platin-Ziel vorzumerken und anschließend zu speichern.</p><div className="psn-planner-items">{games.filter(g=>g.game.communityInsight?.platinumHours!=null).sort((a,b)=>a.game.communityInsight.platinumHours-b.game.communityInsight.platinumHours).slice(0,8).map(g=><button type="button" key={g.key} onClick={()=>selectGame(g.key,true)}><span>{g.name}</span><small>Platin-Schätzung: {g.game.communityInsight.platinumHours} Std. · bisher {hours(mins(g.game.playDuration))} Std. PSN</small></button>)}</div></div>
 </div></details>
