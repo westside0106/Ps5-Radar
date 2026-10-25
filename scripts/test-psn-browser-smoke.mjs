@@ -5,7 +5,7 @@ for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390
  const browser=await engine.launch({headless:true});
  try{
  for(const width of widths){
-  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:width<=430,hasTouch:width<=430,deviceScaleFactor:width<=430?2:1});
+  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:width<=430,deviceScaleFactor:width<=430?2:1});
   const page=await context.newPage();
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
@@ -20,7 +20,7 @@ for(const [engine,widths] of [[chromium,[375,390,430,768,1280]],[webkit,[375,390
   if(await input.count()){
    await input.fill(process.env.RADAR_PASSWORD||'radar-local');
    await page.getByRole('button',{name:'Radar öffnen'}).click();
-   await page.waitForURL('**/radar');
+   await page.waitForURL('**/radar',{waitUntil:'domcontentloaded',timeout:15000});
    await page.locator('.magazine').waitFor();
    await page.goto(base+'/mein-playstation?view=games',{waitUntil:'domcontentloaded'});
    const size=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
