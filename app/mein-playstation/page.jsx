@@ -19,7 +19,7 @@ export default async function MyPlayStation({searchParams}){
  const summary=data?.summary||{};
  const counts=summary.earnedTrophies||{};
  return <main className="psn-shell">
- <nav className="psn-nav"><Link href="/radar">← Radar</Link><Link href="/ps-plus">PS+ Katalog</Link></nav>
+ 
  <header><span className="psn-eyebrow">PRIVATE · PLAYSTATION NETWORK</span><h1>Mein PlayStation</h1><p>Deine Spielaktivität und Trophäen – ausschließlich für deinen geschützten Radar.</p></header>
  {!data.configured?<section className="psn-panel"><h2>Verbindung vorbereiten</h2><p>Die PSN-Anbindung ist implementiert, aber noch nicht mit deinem Konto verbunden. Hinterlege den NPSSO ausschließlich als geheime Vercel-Umgebungsvariable <code>PSN_NPSSO</code>. Niemals in GitHub oder im Chat veröffentlichen.</p><p>Nach einem neuen Deployment lädt diese Seite deine Daten automatisch.</p></section>:null}
  {data.error?<section className="psn-panel" role="alert"><h2>PSN-Verbindung fehlgeschlagen</h2><p>{data.error}</p></section>:null}

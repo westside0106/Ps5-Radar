@@ -72,8 +72,10 @@ function GameTrophies({game}){
  </article>
 }
 export default function PlayStationHub({titles=[],played=[]}){
- const [tab,setTab]=useState('trophies'),[min,setMin]=useState(0),[search,setSearch]=useState(''),[order,setOrder]=useState('progress'),[selected,setSelected]=useState(null),[libraryType,setLibraryType]=useState('games'),[metadataFilter,setMetadataFilter]=useState('all');
+ const [tab,setTab]=useState('games'),[min,setMin]=useState(0),[search,setSearch]=useState(''),[order,setOrder]=useState('progress'),[selected,setSelected]=useState(null),[libraryType,setLibraryType]=useState('games'),[metadataFilter,setMetadataFilter]=useState('all');
  const [visibleTrophyGames,setVisibleTrophyGames]=useState(36);
+ const [visibleGames,setVisibleGames]=useState(36);
+ useEffect(()=>setVisibleGames(36),[libraryType,metadataFilter,search,order]);
  useEffect(()=>setVisibleTrophyGames(36),[min,search,order]);
  const [gallery,setGallery]=useState({title:'',images:[],status:'idle'});
  const [galleryReload,setGalleryReload]=useState(0);
@@ -147,8 +149,67 @@ export default function PlayStationHub({titles=[],played=[]}){
  },[selected]);
  const trophyGames=useMemo(()=>titles.filter(g=>Number(g.progress||0)>=min&&String(g.trophyTitleName||'').toLocaleLowerCase('de').includes(search.toLocaleLowerCase('de'))).sort((a,b)=>order==='name'?String(a.trophyTitleName).localeCompare(String(b.trophyTitleName),'de'):order==='low'?Number(a.progress||0)-Number(b.progress||0):Number(b.progress||0)-Number(a.progress||0)),[titles,min,search,order]);
  const games=useMemo(()=>played.filter(g=>(libraryType==='apps'?isMediaApp(g):!isMediaApp(g))&&(metadataFilter==='all'||(metadataFilter==='missing'?!g.metadata:metadataFilter==='no-cover'?!cover(g):metadataFilter==='planned'?Boolean(personalNotes[g.titleId||g.name||g.titleName]?.status):metadataFilter==='favorites'?Boolean(personalNotes[g.titleId||g.name||g.titleName]?.favorite):!g.metadata?.summary||!g.metadata?.genres?.length))&&String(g.name||g.titleName||'').toLocaleLowerCase('de').includes(search.toLocaleLowerCase('de'))).sort((a,b)=>order==='name'?String(a.name||a.titleName).localeCompare(String(b.name||b.titleName),'de'):order==='low'?(durationMinutes(a.playDuration)??-1)-(durationMinutes(b.playDuration)??-1):order==='progress'?(durationMinutes(b.playDuration)??-1)-(durationMinutes(a.playDuration)??-1):0),[played,search,order,libraryType,metadataFilter,personalNotes]);
+ const featuredGame=useMemo(()=>{
+  const candidates=played.filter(g=>!isMediaApp(g));
+  const priority=g=>{
+   const id=g.titleId||g.name||g.titleName;
+   const n=personalNotes[id]||{};
+   const latest=Date.parse(g.lastPlayedDateTime||'');
+   const age=Number.isFinite(latest)?Math.max(0,14-Math.max(0,(Date.now()-latest)/86400000)):0;
+   return (n.priority==='high'?75:0)+(n.status==='playing'?55:n.status==='platinum'?50:0)+(n.favorite?30:0)+age;
+  };
+  return [...candidates].sort((a,b)=>priority(b)-priority(a))[0]||null;
+ },[played,personalNotes]);
+ const featureKey=featuredGame?.titleId||featuredGame?.name||featuredGame?.titleName||'';
+ const featureNotes=personalNotes[featureKey]||{};
+ const featureScreenshot=featuredGame?.metadata?.screenshotUrls?.[0]||null;
+ const playedGames=played.filter(g=>!isMediaApp(g));
+ const cumulativeMinutes=playedGames.reduce((sum,g)=>sum+(durationMinutes(g.playDuration)||0),0);
+ const countPlatinumGoals=Object.values(personalNotes).filter(g=>g?.status==='platinum').length;
+ const countFavorites=Object.values(personalNotes).filter(g=>g?.favorite).length;
+ const openPlannerFor=g=>{
+  const id=g?.titleId||g?.name||g?.titleName;
+  if(!id)return;
+  setSelected(null);
+  window.dispatchEvent(new CustomEvent('psn-plan-game',{detail:{id}}));
+ };
  return <section className="psn-panel psn-hub" id="playstation-hub"><div className="psn-hub-tabs" role="group" aria-label="PlayStation-Hub"><button type="button" aria-pressed={tab==='trophies'} onClick={()=>{setTab('trophies');setSearch('');setOrder('progress');setSelected(null)}}>Trophäen-Zentrale</button><button type="button" aria-pressed={tab==='games'} onClick={()=>{setTab('games');setSearch('');setOrder('progress');setSelected(null)}}>Meine Spielwelt</button></div>
- <div className="psn-hub-heading"><div><span className="psn-eyebrow">DEIN PRIVATES HUB</span><h2>{tab==='trophies'?'Trophäen-Zentrale':'Meine Spielwelt'}</h2></div><span>{tab==='trophies'?trophyGames.length+' / '+titles.length:games.length+(libraryType==='apps'?' Apps':' Spiele')}</span></div>
+ <div className="psn-hub-heading"><div><span className="psn-eyebrow">{tab==='games'?'DEIN PERSÖNLICHES GAMING-COCKPIT':'DEINE TROPHÄEN-JAGD'}</span><h2>{tab==='trophies'?'Trophäen-Zentrale':'Meine Spielwelt'}</h2></div><span>{tab==='trophies'?trophyGames.length+' / '+titles.length:games.length+(libraryType==='apps'?' Apps':' Spiele')}</span></div>
+ {tab==='games'?<div className="psn-cinema-dashboard">
+  <section className="psn-cinema-hero" aria-label="Dein aktuelles Spiel">
+   <div className="psn-cinema-art" aria-hidden="true">
+    {featureScreenshot?<img src={featureScreenshot} alt="" loading="eager"/>:featuredGame?<PreferredCover game={featuredGame} preferredUrl={artworkChoice[featureKey]==='steamgriddb'?artworkUrls[featureKey]:null}/>:null}
+   </div>
+   <div className="psn-cinema-veil"/>
+   <div className="psn-cinema-hero-content">
+    <span className="psn-cinema-kicker">DEIN NÄCHSTES KAPITEL</span>
+    {featuredGame?<><h3>{displayGameName(featuredGame.name||featuredGame.titleName)}</h3>
+     <p>{featureNotes.note||'Dein Spiel wartet auf das nächste Abenteuer. Öffne die Details oder plane deinen nächsten Schritt.'}</p>
+     <div className="psn-cinema-tags">
+      <span>{gameStatusLabels[featureNotes.status]||'Zuletzt gespielt'}</span>
+      <span>{duration(featuredGame.playDuration)}</span>
+      {featureNotes.priority==='high'?<span>Hohe Priorität</span>:null}
+     </div>
+     <div className="psn-cinema-actions">
+      <button type="button" className="psn-cinema-primary" onClick={()=>setSelected(featuredGame)}>Spiel entdecken <span aria-hidden="true">↗</span></button>
+      <button type="button" className="psn-cinema-secondary" onClick={()=>openPlannerFor(featuredGame)}>Ziele &amp; Spielplan</button>
+     </div></>:<><h3>Deine Spielwelt beginnt hier</h3><p>Sobald PSN deinen Spielverlauf liefert, erscheint hier dein nächstes Abenteuer.</p></>}
+   </div>
+   {featuredGame?<div className="psn-cinema-poster" aria-hidden="true"><PreferredCover game={featuredGame} preferredUrl={artworkChoice[featureKey]==='steamgriddb'?artworkUrls[featureKey]:null}/></div>:null}
+  </section>
+  <div className="psn-cinema-metrics" aria-label="Meine Gaming-Kennzahlen">
+   <div><span className="psn-cinema-metric-icon" aria-hidden="true">◈</span><strong>{playedGames.length.toLocaleString('de-DE')}</strong><small>Gespielte PSN-Titel</small></div>
+   <div><span className="psn-cinema-metric-icon" aria-hidden="true">◷</span><strong>{Math.round(cumulativeMinutes/60).toLocaleString('de-DE')} h</strong><small>Erfasste Gesamtspielzeit</small></div>
+   <div><span className="psn-cinema-metric-icon" aria-hidden="true">★</span><strong>{countPlatinumGoals}</strong><small>Geplante Platin-Ziele</small></div>
+   <div><span className="psn-cinema-metric-icon" aria-hidden="true">♥</span><strong>{countFavorites}</strong><small>Gespeicherte Favoriten</small></div>
+  </div>
+  <div className="psn-cinema-shortcuts" role="group" aria-label="Schnellzugriff">
+   <button type="button" onClick={()=>{setLibraryType('games');setMetadataFilter('all');document.querySelector('.psn-hub-library-head')?.scrollIntoView({behavior:'smooth',block:'start'})}}><span aria-hidden="true">▦</span><strong>Sammlung</strong><small>Spiele durchstöbern</small></button>
+   <button type="button" onClick={()=>{setTab('trophies');setSearch('');setOrder('progress')}}><span aria-hidden="true">♛</span><strong>Platin-Jagd</strong><small>Trophäen ansehen</small></button>
+   <button type="button" onClick={()=>{const fold=document.querySelector('.psn-tools-fold');if(fold){fold.open=true;fold.scrollIntoView({behavior:'smooth',block:'center'})}}}><span aria-hidden="true">✓</span><strong>Backlog</strong><small>Nächste Ziele planen</small></button>
+   <button type="button" onClick={()=>{const fold=document.querySelectorAll('.psn-tools-fold')[1];if(fold){fold.open=true;fold.scrollIntoView({behavior:'smooth',block:'center'})}}}><span aria-hidden="true">▥</span><strong>Statistiken</strong><small>Fortschritt verstehen</small></button>
+  </div>
+ </div>:null}
  <div className="psn-browser-controls">{tab==='trophies'?<><label className="psn-range-label" htmlFor="psn-hub-min">Mindestfortschritt <strong>{min}%</strong></label><input id="psn-hub-min" type="range" min="0" max="100" value={min} onChange={e=>setMin(Number(e.target.value))}/><div className="psn-range-presets">{[0,25,50,75,90].map(n=><button type="button" key={n} aria-pressed={min===n} onClick={()=>setMin(n)}>{n===0?'Alle':n+'%'}</button>)}</div></>:null}<div className="psn-browser-fields"><input type="search" aria-label="Spiel suchen" placeholder="Spiel suchen …" value={search} onChange={e=>setSearch(e.target.value)}/><select aria-label="Sortierung" value={order} onChange={e=>setOrder(e.target.value)}><option value="progress">{tab==='trophies'?'Fortschritt absteigend':'Spielzeit absteigend'}</option><option value="low">{tab==='trophies'?'Fortschritt aufsteigend':'Spielzeit aufsteigend'}</option><option value="name">Name A–Z</option></select></div></div>
  {tab==='trophies'?<><TrophyShowcase titles={titles}/><div className="psn-hub-trophy-grid">{trophyGames.slice(0,visibleTrophyGames).map(g=><GameTrophies key={g.npCommunicationId||g.trophyTitleName} game={g}/>)}{!trophyGames.length?<p>Keine Spiele für diesen Filter.</p>:null}{trophyGames.length>visibleTrophyGames?<button className="psn-hub-more-trophies" type="button" onClick={()=>setVisibleTrophyGames(n=>n+36)}>Weitere Trophäenspiele anzeigen ({trophyGames.length-visibleTrophyGames} übrig)</button>:null}</div></>:<><div className="psn-hub-library-types" role="group" aria-label="Bibliotheksbereich"><button type="button" aria-pressed={libraryType==='games'} onClick={()=>{setLibraryType('games');setMetadataFilter('all');setSelected(null)}}>Spiele ({played.filter(g=>!isMediaApp(g)).length})</button><button type="button" aria-pressed={libraryType==='apps'} onClick={()=>{setLibraryType('apps');setMetadataFilter('all');setSelected(null)}}>Apps & Medien ({played.filter(isMediaApp).length})</button></div><div className="psn-hub-filter-hub">
  <div className="psn-hub-library-types psn-hub-primary-filters" role="group" aria-label="Schnellfilter">
@@ -164,7 +225,7 @@ export default function PlayStationHub({titles=[],played=[]}){
    <button type="button" aria-pressed={metadataFilter==='no-cover'} onClick={()=>setMetadataFilter('no-cover')}>Ohne Cover</button>
   </div>
  </details>
-</div><p className="psn-hub-hint">Zuletzt gespielte Titel aus deinem PSN-Profil. Diese Liste ist nicht zwingend deine vollständige Kaufbibliothek.</p><div className="psn-hub-library-head"><strong>{games.length} {libraryType==='apps'?'Apps':'Spiele'}</strong><small>{metadataFilter==='all'?'Aus deinem PSN-Spielverlauf':metadataFilter==='planned'?'Deine gespeicherten Pläne':metadataFilter==='favorites'?'Deine Favoriten':'Gefiltert nach Datenqualität'}</small></div><div className="psn-hub-game-grid">{games.map((g,i)=><button type="button" key={g.titleId||i} className="psn-hub-game" onClick={e=>{modalTriggerRef.current=e.currentTarget;setSelected(g)}} aria-label={'Details zu '+(g.name||g.titleName||'Spiel')+' öffnen'}><div className="psn-hub-cover">{personalNotes[g.titleId||g.name||g.titleName]?.favorite?<span className="psn-game-favorite" aria-label="Favorit">★</span>:null}<PreferredCover game={g} preferredUrl={artworkChoice[g.titleId||g.name||g.titleName]==='steamgriddb'?artworkUrls[g.titleId||g.name||g.titleName]:null}/></div><strong>{displayGameName(g.name||g.titleName)}</strong><small className="psn-game-playtime">{duration(g.playDuration)}</small>{personalNotes[g.titleId||g.name||g.titleName]?.status?<small className="psn-game-plan-label">{gameStatusLabels[personalNotes[g.titleId||g.name||g.titleName].status]||'Vorgemerkt'}</small>:null}{g.metadata?.genres?.length?<small className="psn-hub-genre">{g.metadata.genres.slice(0,2).join(' · ')}</small>:null}<small>{g.lastPlayedDateTime?'Zuletzt '+new Date(g.lastPlayedDateTime).toLocaleDateString('de-DE'):''}</small>{metadataFilter!=='all'&&metadataFilter!=='planned'&&metadataFilter!=='favorites'?<small className={'psn-hub-metadata '+(!g.metadata?'is-missing':!g.metadata.summary||!g.metadata.genres?.length?'is-partial':'is-ready')}>{metadataStatus(g)}</small>:null}<small className="psn-hub-more">Details ansehen ↗</small></button>)}{!games.length?<div className="psn-hub-empty-games"><strong>Keine passenden Einträge</strong><p>Probiere einen anderen Suchbegriff oder setze die Filter zurück.</p><button type="button" onClick={()=>{setSearch('');setMetadataFilter('all')}}>Suche und Filter zurücksetzen</button></div>:null}</div><GamingPlanner played={played.filter(g=>!isMediaApp(g))} titles={titles}/>{selected&&typeof document!=='undefined'?createPortal(<div className="psn-modal-backdrop" role="presentation" onClick={()=>setSelected(null)}>
+</div><p className="psn-hub-hint">Zuletzt gespielte Titel aus deinem PSN-Profil. Diese Liste ist nicht zwingend deine vollständige Kaufbibliothek.</p><div className="psn-hub-library-head"><strong>{games.length} {libraryType==='apps'?'Apps':'Spiele'}</strong><small>{metadataFilter==='all'?'Aus deinem PSN-Spielverlauf':metadataFilter==='planned'?'Deine gespeicherten Pläne':metadataFilter==='favorites'?'Deine Favoriten':'Gefiltert nach Datenqualität'}</small></div><div className="psn-hub-game-grid">{games.slice(0,visibleGames).map((g,i)=><button type="button" key={g.titleId||i} className="psn-hub-game" onClick={e=>{modalTriggerRef.current=e.currentTarget;setSelected(g)}} aria-label={'Details zu '+(g.name||g.titleName||'Spiel')+' öffnen'}><div className="psn-hub-cover">{personalNotes[g.titleId||g.name||g.titleName]?.favorite?<span className="psn-game-favorite" aria-label="Favorit">★</span>:null}<PreferredCover game={g} preferredUrl={artworkChoice[g.titleId||g.name||g.titleName]==='steamgriddb'?artworkUrls[g.titleId||g.name||g.titleName]:null}/></div><strong>{displayGameName(g.name||g.titleName)}</strong><small className="psn-game-playtime">{duration(g.playDuration)}</small>{personalNotes[g.titleId||g.name||g.titleName]?.status?<small className="psn-game-plan-label">{gameStatusLabels[personalNotes[g.titleId||g.name||g.titleName].status]||'Vorgemerkt'}</small>:null}{g.metadata?.genres?.length?<small className="psn-hub-genre">{g.metadata.genres.slice(0,2).join(' · ')}</small>:null}<small>{g.lastPlayedDateTime?'Zuletzt '+new Date(g.lastPlayedDateTime).toLocaleDateString('de-DE'):''}</small>{metadataFilter!=='all'&&metadataFilter!=='planned'&&metadataFilter!=='favorites'?<small className={'psn-hub-metadata '+(!g.metadata?'is-missing':!g.metadata.summary||!g.metadata.genres?.length?'is-partial':'is-ready')}>{metadataStatus(g)}</small>:null}<small className="psn-hub-more">Details ansehen ↗</small></button>)}{games.length>visibleGames?<button type="button" className="psn-cinema-load-more" onClick={()=>setVisibleGames(n=>n+36)}>Weitere Spiele laden ({games.length-visibleGames} übrig)</button>:null}{!games.length?<div className="psn-hub-empty-games"><strong>Keine passenden Einträge</strong><p>Probiere einen anderen Suchbegriff oder setze die Filter zurück.</p><button type="button" onClick={()=>{setSearch('');setMetadataFilter('all')}}>Suche und Filter zurücksetzen</button></div>:null}</div><GamingPlanner played={played.filter(g=>!isMediaApp(g))} titles={titles}/>{selected&&typeof document!=='undefined'?createPortal(<div className="psn-modal-backdrop" role="presentation" onClick={()=>setSelected(null)}>
 <section ref={modalRef} className="psn-game-modal" role="dialog" aria-modal="true" aria-label={'Spieldetails '+displayGameName(selected.name||selected.titleName)} onKeyDown={e=>{if(e.key==='Escape')setSelected(null)}} onClick={e=>e.stopPropagation()}>
 <button className="psn-modal-close" type="button" onClick={()=>setSelected(null)} aria-label="Schließen">×</button>
 <div className="psn-game-modal-hero"><div className="psn-game-modal-cover"><PreferredCover game={selected} className="psn-modal-cover" preferredUrl={artworkChoice[selected.titleId||selected.name||selected.titleName]==='steamgriddb'?(artworkUrls[selected.titleId||selected.name||selected.titleName]||external.title===(selected.name||selected.titleName||'')&&external.data?.artwork?.cover):null}/></div><div className="psn-game-modal-hero-title"><span className="psn-eyebrow">{isMediaApp(selected)?'APPS & MEDIEN':'MEINE SPIELWELT'}</span><h3>{displayGameName(selected.name||selected.titleName)}</h3>{selected.metadata?.releaseDate?<span>Erschienen {safeDate(selected.metadata.releaseDate)}</span>:null}</div></div>
