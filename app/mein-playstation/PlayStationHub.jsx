@@ -212,12 +212,12 @@ export default function PlayStationHub({titles=[],played=[]}){
   const scoped=allLibraryGames.filter(g=>
    (libraryType==='apps'?isMediaApp(g):!isMediaApp(g))
    &&(metadataFilter==='all'
-    ||metadataFilter==='manual'?isManualGame(g):
+    ||(metadataFilter==='manual'?isManualGame(g):
     metadataFilter==='missing'?!g.metadata:
     metadataFilter==='no-cover'?!cover(g):
     metadataFilter==='planned'?Boolean(personalNotes[gameKey(g)]?.status):
     metadataFilter==='favorites'?Boolean(personalNotes[gameKey(g)]?.favorite):
-    !g.metadata?.summary||!g.metadata?.genres?.length)
+    !g.metadata?.summary||!g.metadata?.genres?.length))
    &&String(g.name||g.titleName||'').toLocaleLowerCase('de').includes(searchTerm));
   const filtered=filterCollection(scoped,activeCollection,collections);
   const last=g=>Number.isFinite(Date.parse(g.lastPlayedDateTime||''))?Date.parse(g.lastPlayedDateTime):0;
