@@ -3,13 +3,14 @@ import {useEffect,useRef,useState} from 'react';
 
 const keys={
  notes:'psn-game-planner-v1',
+ manualGames:'psn-custom-games-v1',
  history:'psn-playtime-snapshots-v1',
  covers:'psn-cover-preferences-v1',
  coverUrls:'psn-cover-urls-v1',
  trophyTargets:'psn-trophy-targets-v1',
  platinumChecks:'psn-platinum-checks-v1'
 };
-const defaults={notes:{},history:[],covers:{},coverUrls:{},trophyTargets:{},platinumChecks:{}};
+const defaults={notes:{},manualGames:[],history:[],covers:{},coverUrls:{},trophyTargets:{},platinumChecks:{}};
 function localSnapshot(){
  const data={};
  for(const [name,key] of Object.entries(keys)){
@@ -88,10 +89,10 @@ export default function ProfileSync(){
  }
  return <div className="psn-planner-box psn-profile-sync">
   <h4>Meine Daten auf anderen Geräten</h4>
-  <p>Deine persönlichen Spielpläne, Favoriten, Trophäenziele und Cover-Einstellungen liegen zunächst im Browser. Hier kannst du sie sichern und auf ein anderes Gerät übertragen. PSN-Trophäen werden unabhängig davon abgerufen.</p>
+  <p>Deine Spielpläne, auch manuell vorgemerkte Titel, Favoriten, Trophäenziele und Cover-Einstellungen liegen zunächst im Browser. Hier kannst du sie sichern und auf ein anderes Gerät übertragen. PSN-Trophäen werden unabhängig davon abgerufen.</p>
   {remoteDate?<small>Letztes Cloud-Backup: {new Date(remoteDate).toLocaleString('de-DE')} · Version {revision}</small>:null}
   <p role="status" aria-live="polite">{message}</p>
-  <label className="psn-planner-check"><input type="checkbox" checked={autoSave} onChange={e=>{setAutoSave(e.target.checked);try{localStorage.setItem('psn-sync-on-save-v1',e.target.checked?'yes':'no')}catch{}}}/> Nach dem bewussten Speichern eines Spielplans automatisch sichern</label>
+  <label className="psn-planner-check"><input type="checkbox" checked={autoSave} onChange={e=>{setAutoSave(e.target.checked);try{localStorage.setItem('psn-sync-on-save-v1',e.target.checked?'yes':'no')}catch{}}}/> Nach Änderungen an Spielplänen, Covern und Trophäenzielen automatisch sichern</label>
   <div className="psn-planner-filters">
    <button type="button" disabled={working} onClick={check}>Verbindung prüfen</button>
    <button type="button" disabled={working||revision===null} onClick={()=>void upload()}>In Cloud speichern</button>

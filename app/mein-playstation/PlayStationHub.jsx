@@ -72,7 +72,9 @@ function GameTrophies({game}){
  </article>
 }
 export default function PlayStationHub({titles=[],played=[]}){
- const [tab,setTab]=useState('trophies'),[min,setMin]=useState(50),[search,setSearch]=useState(''),[order,setOrder]=useState('progress'),[selected,setSelected]=useState(null),[libraryType,setLibraryType]=useState('games'),[metadataFilter,setMetadataFilter]=useState('all');
+ const [tab,setTab]=useState('trophies'),[min,setMin]=useState(0),[search,setSearch]=useState(''),[order,setOrder]=useState('progress'),[selected,setSelected]=useState(null),[libraryType,setLibraryType]=useState('games'),[metadataFilter,setMetadataFilter]=useState('all');
+ const [visibleTrophyGames,setVisibleTrophyGames]=useState(36);
+ useEffect(()=>setVisibleTrophyGames(36),[min,search,order]);
  const [gallery,setGallery]=useState({title:'',images:[],status:'idle'});
  const [galleryReload,setGalleryReload]=useState(0);
  const [external,setExternal]=useState({title:'',data:null,status:'idle'});
@@ -83,7 +85,19 @@ export default function PlayStationHub({titles=[],played=[]}){
  const modalTriggerRef=useRef(null);
  const modalRef=useRef(null);
  useEffect(()=>{try{const parsed=JSON.parse(localStorage.getItem('psn-cover-preferences-v1')||'{}');if(parsed&&typeof parsed==='object'&&!Array.isArray(parsed))setArtworkChoice(parsed)}catch{}try{const imgs=JSON.parse(localStorage.getItem('psn-cover-urls-v1')||'{}');if(imgs&&typeof imgs==='object'&&!Array.isArray(imgs))setArtworkUrls(imgs)}catch{}},[]);
- function chooseArtwork(key,value){setArtworkChoice(old=>{const next={...old,[key]:value};try{localStorage.setItem('psn-cover-preferences-v1',JSON.stringify(next))}catch{}return next});if(value==='steamgriddb'&&external.data?.artwork?.cover){setArtworkUrls(old=>{const next={...old,[key]:external.data.artwork.cover};try{localStorage.setItem('psn-cover-urls-v1',JSON.stringify(next))}catch{}return next})}}
+ function chooseArtwork(key,value){
+  const next={...artworkChoice,[key]:value};
+  setArtworkChoice(next);
+  try{
+   localStorage.setItem('psn-cover-preferences-v1',JSON.stringify(next));
+   if(value==='steamgriddb'&&external.data?.artwork?.cover){
+    const updated={...artworkUrls,[key]:external.data.artwork.cover};
+    setArtworkUrls(updated);
+    localStorage.setItem('psn-cover-urls-v1',JSON.stringify(updated));
+   }
+   window.dispatchEvent(new Event('psn-profile-local-change'));
+  }catch{}
+ }
 
  useEffect(()=>{
    if(!selected){setExternal({title:'',data:null,status:'idle'});return}
@@ -136,7 +150,7 @@ export default function PlayStationHub({titles=[],played=[]}){
  return <section className="psn-panel psn-hub" id="playstation-hub"><div className="psn-hub-tabs" role="group" aria-label="PlayStation-Hub"><button type="button" aria-pressed={tab==='trophies'} onClick={()=>{setTab('trophies');setSearch('');setOrder('progress');setSelected(null)}}>Trophäen-Zentrale</button><button type="button" aria-pressed={tab==='games'} onClick={()=>{setTab('games');setSearch('');setOrder('progress');setSelected(null)}}>Meine Spielwelt</button></div>
  <div className="psn-hub-heading"><div><span className="psn-eyebrow">DEIN PRIVATES HUB</span><h2>{tab==='trophies'?'Trophäen-Zentrale':'Meine Spielwelt'}</h2></div><span>{tab==='trophies'?trophyGames.length+' / '+titles.length:games.length+(libraryType==='apps'?' Apps':' Spiele')}</span></div>
  <div className="psn-browser-controls">{tab==='trophies'?<><label className="psn-range-label" htmlFor="psn-hub-min">Mindestfortschritt <strong>{min}%</strong></label><input id="psn-hub-min" type="range" min="0" max="100" value={min} onChange={e=>setMin(Number(e.target.value))}/><div className="psn-range-presets">{[0,25,50,75,90].map(n=><button type="button" key={n} aria-pressed={min===n} onClick={()=>setMin(n)}>{n===0?'Alle':n+'%'}</button>)}</div></>:null}<div className="psn-browser-fields"><input type="search" aria-label="Spiel suchen" placeholder="Spiel suchen …" value={search} onChange={e=>setSearch(e.target.value)}/><select aria-label="Sortierung" value={order} onChange={e=>setOrder(e.target.value)}><option value="progress">{tab==='trophies'?'Fortschritt absteigend':'Spielzeit absteigend'}</option><option value="low">{tab==='trophies'?'Fortschritt aufsteigend':'Spielzeit aufsteigend'}</option><option value="name">Name A–Z</option></select></div></div>
- {tab==='trophies'?<><TrophyShowcase titles={titles}/><div className="psn-hub-trophy-grid">{trophyGames.map(g=><GameTrophies key={g.npCommunicationId||g.trophyTitleName} game={g}/>)}{!trophyGames.length?<p>Keine Spiele für diesen Filter.</p>:null}</div></>:<><div className="psn-hub-library-types" role="group" aria-label="Bibliotheksbereich"><button type="button" aria-pressed={libraryType==='games'} onClick={()=>{setLibraryType('games');setMetadataFilter('all');setSelected(null)}}>Spiele ({played.filter(g=>!isMediaApp(g)).length})</button><button type="button" aria-pressed={libraryType==='apps'} onClick={()=>{setLibraryType('apps');setMetadataFilter('all');setSelected(null)}}>Apps & Medien ({played.filter(isMediaApp).length})</button></div><div className="psn-hub-filter-hub">
+ {tab==='trophies'?<><TrophyShowcase titles={titles}/><div className="psn-hub-trophy-grid">{trophyGames.slice(0,visibleTrophyGames).map(g=><GameTrophies key={g.npCommunicationId||g.trophyTitleName} game={g}/>)}{!trophyGames.length?<p>Keine Spiele für diesen Filter.</p>:null}{trophyGames.length>visibleTrophyGames?<button className="psn-hub-more-trophies" type="button" onClick={()=>setVisibleTrophyGames(n=>n+36)}>Weitere Trophäenspiele anzeigen ({trophyGames.length-visibleTrophyGames} übrig)</button>:null}</div></>:<><div className="psn-hub-library-types" role="group" aria-label="Bibliotheksbereich"><button type="button" aria-pressed={libraryType==='games'} onClick={()=>{setLibraryType('games');setMetadataFilter('all');setSelected(null)}}>Spiele ({played.filter(g=>!isMediaApp(g)).length})</button><button type="button" aria-pressed={libraryType==='apps'} onClick={()=>{setLibraryType('apps');setMetadataFilter('all');setSelected(null)}}>Apps & Medien ({played.filter(isMediaApp).length})</button></div><div className="psn-hub-filter-hub">
  <div className="psn-hub-library-types psn-hub-primary-filters" role="group" aria-label="Schnellfilter">
   <button type="button" aria-pressed={metadataFilter==='all'} onClick={()=>setMetadataFilter('all')}>Alle</button>
   <button type="button" aria-pressed={metadataFilter==='planned'} onClick={()=>setMetadataFilter('planned')}>Meine Pläne</button>

@@ -23,7 +23,7 @@ export default function PlatinumTrophyGoals({game,titles=[],goal,onChange,onDirt
  useEffect(()=>{
   if(!selectedSet){setData(null);setState('idle');setError('');return}
   const controller=new AbortController();setData(null);setState('loading');setError('');
-  const params=new URLSearchParams({id:String(selectedSet.npCommunicationId),service:selectedSet.npServiceName||'trophy'});
+  const params=new URLSearchParams({id:String(selectedSet.npCommunicationId),service:selectedSet.npServiceName||'trophy',...(refresh>0?{fresh:'1'}:{})});
   fetch('/mein-playstation/api/trophies?'+params,{credentials:'same-origin',cache:'no-store',signal:controller.signal})
    .then(async response=>{const json=await response.json();if(!response.ok)throw Error(json.error||'Sony-Trophäen konnten nicht geladen werden');return json})
    .then(json=>{if(!controller.signal.aborted){setData(Array.isArray(json.trophies)?json.trophies:[]);setState('ready')}})
