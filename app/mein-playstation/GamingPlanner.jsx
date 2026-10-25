@@ -29,6 +29,15 @@ export default function GamingPlanner({played=[],titles=[]}){
  const [backupMessage,setBackupMessage]=useState('');
  useEffect(()=>{try{const data=JSON.parse(localStorage.getItem(KEY)||'{}');if(data&&typeof data==='object'&&!Array.isArray(data))setNotes(data)}catch{}const onPlan=e=>{const id=String(e.detail?.id||'');if(!id)return;let info={};try{info=JSON.parse(localStorage.getItem(KEY)||'{}')?.[id]||{}}catch{}setSelected(id);setDraft({status:e.detail?.platinum?'platinum':info.status||'',favorite:!!info.favorite,note:info.note||'',priority:info.priority||'normal'});setTrophyGoal(initialTrophyGoals(played.find(g=>getId(g)===id),titles,info));setSavedNotice('');const panel=document.getElementById('psn-game-editor');const fold=panel?.closest('details');if(fold)fold.open=true;requestAnimationFrame(()=>panel?.scrollIntoView({behavior:'smooth',block:'center'}))};window.addEventListener('psn-plan-game',onPlan);return()=>window.removeEventListener('psn-plan-game',onPlan)},[]);
  useEffect(()=>{try{const v=JSON.parse(localStorage.getItem(CUSTOM_KEY)||'[]');if(Array.isArray(v))setCustomGames(v.filter(g=>g&&typeof g.name==='string'&&/^custom:[a-z0-9-]{3,100}$/.test(g.titleId||'')).slice(0,400))}catch{}},[]);
+ useEffect(()=>{
+  const refresh=()=>{
+   try{const value=JSON.parse(localStorage.getItem(KEY)||'{}');if(value&&typeof value==='object'&&!Array.isArray(value))setNotes(value)}catch{}
+   try{const value=JSON.parse(localStorage.getItem(CUSTOM_KEY)||'[]');if(Array.isArray(value))setCustomGames(value.filter(g=>g&&typeof g.name==='string'&&/^custom:[a-z0-9-]{3,100}$/.test(g.titleId||'')).slice(0,400))}catch{}
+  };
+  window.addEventListener('psn-profile-local-change',refresh);
+  window.addEventListener('storage',refresh);
+  return()=>{window.removeEventListener('psn-profile-local-change',refresh);window.removeEventListener('storage',refresh)};
+ },[]);
  useEffect(()=>setVisibleBacklog(12),[filter,priorityFilter]);
  useEffect(()=>{
   // A local daily snapshot of cumulative PSN playtimes, not a real session log.
