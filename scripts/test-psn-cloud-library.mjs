@@ -11,7 +11,7 @@ test('secret Supabase keys use apikey only; legacy JWTs retain bearer header',()
  assert.equal(legacy.Authorization,'Bearer legacy-service-role-jwt');
 });
 test('cloud schema includes cover URLs and chronological playtime snapshots',()=>{
- assert.ok(validCloudPayload({notes:{a:{status:'platinum',priority:'high'}},history:[{date:'2026-10-25',games:97,minutes:150}],covers:{a:'steamgriddb'},coverUrls:{a:'https://cdn2.steamgriddb.com/grid/example.png'},trophyTargets:{a:['1']}}));
+ assert.ok(validCloudPayload({notes:{a:{status:'platinum',priority:'high'}},history:[{date:'2026-10-25',games:97,minutes:150}],covers:{a:'steamgriddb'},coverUrls:{a:'https://cdn2.steamgriddb.com/grid/example.png'},trophyTargets:{a:['1']},platinumChecks:{a:['2']}}));
  assert.ok(validCloudPayload({notes:null,history:null,covers:null,coverUrls:null,trophyTargets:null}));
  assert.equal(validCloudPayload({history:{date:'2026-10-25'}}),false);
  assert.equal(validCloudPayload({coverUrls:[]}),false);

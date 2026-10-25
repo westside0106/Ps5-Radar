@@ -292,3 +292,33 @@
 .psn-stats-subheading{margin-top:20px!important}
 .psn-planner .psn-planner-check{line-height:1.5}
 @media(max-width:450px){.psn-game-modal-toolbar .psn-modal-action{width:100%}.psn-stats-rank-list>div{gap:7px}.psn-stats-rank-list>div>strong{font-size:11px}}
+
+/* Platinum planning: compact, explicitly saved PSN-linked objectives */
+.psn-platinum-plan{display:grid;gap:12px;border:1px solid #4f7497;background:linear-gradient(155deg,#142f4d,#102136);border-radius:13px;padding:15px;margin:16px 0 6px;min-width:0}
+.psn-platinum-head h5{font-size:15px;margin:0 0 4px;color:#edf6ff}
+.psn-platinum-head small,.psn-platinum-note{font-size:11px;line-height:1.55;color:#b7cadf}
+.psn-platinum-plan>label{display:grid;gap:6px;font-size:12px;color:#d9eaf9}
+.psn-platinum-plan select{max-width:100%;min-width:0;font-size:16px;padding:10px;border-radius:8px;border:1px solid #53779b;color:#fff;background:#102438}
+.psn-platinum-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.psn-platinum-metrics>div{padding:10px;border:1px solid #416386;background:#0d2239;border-radius:10px;min-width:0}
+.psn-platinum-metrics strong{display:block;font-size:21px;line-height:1.25;color:#e4f4ff;font-variant-numeric:tabular-nums}
+.psn-platinum-metrics small{display:block;margin-top:5px;color:#adcbdf;font-size:10px;line-height:1.35}
+.psn-platinum-bar{height:8px;border-radius:10px;background:#233e59;overflow:hidden}
+.psn-platinum-bar span{height:100%;display:block;border-radius:10px;background:linear-gradient(90deg,#4b8fcb,#8bcaff)}
+.psn-platinum-controls{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap}
+.psn-platinum-controls>div{display:flex;gap:4px;flex-wrap:wrap}
+.psn-platinum-controls button,.psn-platinum-plan [role=alert] button{border:1px solid #5682aa;background:#173650;color:#e5f3ff;border-radius:8px;padding:8px 11px;font-size:12px;cursor:pointer}
+.psn-platinum-controls button[aria-pressed=true]{background:#2d6294;border-color:#8dc6ff;font-weight:700}
+.psn-platinum-list{display:grid;gap:8px;max-height:540px;overflow:auto;scrollbar-color:#4777a1 transparent;padding-right:2px}
+.psn-platinum-item{background:#0d2238;border:1px solid #335a7f;border-radius:11px;padding:12px;min-width:0}
+.psn-platinum-item.is-earned{border-color:#4d7d71;background:#12312f}
+.psn-platinum-item-title{display:grid;gap:4px}
+.psn-platinum-item-title strong{font-size:13px;line-height:1.4;color:#f1f7ff;overflow-wrap:anywhere}
+.psn-platinum-item-title small{font-size:10px;color:#a9cee3;line-height:1.4}
+.psn-platinum-item>p{font-size:11px;line-height:1.5;margin:7px 0;color:#d0dfec}
+.psn-platinum-actions{display:flex;gap:10px 16px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.psn-platinum-actions>label,.psn-platinum-check{display:inline-flex!important;align-items:center;gap:7px;font-size:11px;line-height:1.4;color:#dfecf9;cursor:pointer}
+.psn-platinum-actions input,.psn-platinum-check input{width:17px;height:17px;accent-color:#6aaff0}
+.psn-platinum-actions>small{font-size:11px;color:#a3e6c4}
+.psn-platinum-plan button:focus-visible,.psn-platinum-plan input:focus-visible,.psn-platinum-plan select:focus-visible{outline:3px solid #9bd3ff;outline-offset:2px}
+@media(max-width:480px){.psn-platinum-plan{padding:10px}.psn-platinum-metrics{gap:5px}.psn-platinum-metrics>div{padding:7px}.psn-platinum-metrics strong{font-size:17px}.psn-platinum-metrics small{font-size:9px}.psn-platinum-controls{align-items:stretch}.psn-platinum-list{max-height:420px}}
