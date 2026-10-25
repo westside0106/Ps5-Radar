@@ -1,8 +1,8 @@
 {
-  "date": "25.10.2026",
-  "edition": "AUSGABE #050",
+  "date": "26.10.2026",
+  "edition": "AUSGABE #051",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "25.10 · LIVE",
+  "newCount": "26.10 · LIVE",
   "leadTitle": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
   "leadDate": "21.10.2026",
   "leadMeta": "Segelt ab morgen in „Isles of Abyss“: Die größte kostenlose Erweiterung von „Once Human“ erscheint auf PS5.",
@@ -69,7 +69,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 25.10.2026 · 9/9 Quellen · 5/8 Details",
+  "radarCheck": "Stand 26.10.2026 · 9/9 Quellen · 5/8 Details",
   "sourceAlerts": [
     {
       "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
@@ -90,7 +90,7 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-25T22:59:12.069Z",
+    "checkedAt": "2026-10-25T23:26:30.081Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -104,10 +104,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-25T22:59:12.069Z"
+    "lastSuccessfulCheck": "2026-10-25T23:26:30.081Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-25T22:59:12.069Z",
+    "checkedAt": "2026-10-25T23:26:30.081Z",
     "errors": [],
     "sources": [
       {
@@ -254,7 +254,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-25T22:58:54.716Z",
+    "checkedAt": "2026-10-25T23:26:12.712Z",
     "titles": 8,
     "fetched": 5,
     "enriched": 5,
@@ -308,13 +308,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-25T22:58:54.328Z",
+    "checkedAt": "2026-10-25T23:26:12.204Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-25T22:58:54.408Z",
+    "checkedAt": "2026-10-25T23:26:12.305Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -327,7 +327,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-25T22:59:03.847Z",
+    "checkedAt": "2026-10-25T23:26:20.293Z",
     "verified": 3,
     "missing": [
       "Chained Echoes"
@@ -338,8 +338,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-25T22:58:53.594Z",
-    "date": "25.10.2026",
+    "checkedAt": "2026-10-25T23:26:10.606Z",
+    "date": "26.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -364,8 +364,8 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-25T22:59:04.169Z",
-    "berlinDate": "2026-10-25",
+    "checkedAt": "2026-10-25T23:26:20.795Z",
+    "berlinDate": "2026-10-26",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],

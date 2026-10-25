@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-25T22:58:44.248Z",
+  "checkedAt": "2026-10-25T23:26:00.507Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -142,7 +142,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-25T22:59:04.169Z",
+      "checkedAt": "2026-10-25T23:26:20.795Z",
       "parsed": 6,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -158,7 +158,7 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 600016
+    "bytes": 598997
   },
   "eaPlay": {
     "ok": true,
@@ -176,7 +176,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173758,
+    "bytes": 173754,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
