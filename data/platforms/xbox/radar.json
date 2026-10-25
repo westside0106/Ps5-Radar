@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-24T12:05:39.728Z",
+  "checkedAt": "2026-10-25T12:38:41.870Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1626,
+    "count": 1620,
     "views": {
       "deals": {
-        "expected": 938,
-        "observed": 938,
-        "count": 938,
+        "expected": 932,
+        "observed": 932,
+        "count": 932,
         "complete": true,
         "attempts": 1
       },
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-24T12:05:39.728Z",
+      "observedAt": "2026-10-25T12:38:41.870Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-24T12:05:39.728Z",
+      "observedAt": "2026-10-25T12:38:41.870Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-24T12:05:39.728Z",
+      "observedAt": "2026-10-25T12:38:41.870Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -1170,25 +1170,6 @@
       "regularPriceMinor": 899,
       "genres": [
         "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9pcbffq1bcs5",
-      "id": "9pcbffq1bcs5",
-      "title": "Anti Gravity Racing",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/anti-gravity-racing/9pcbffq1bcs5",
-      "cover": "https://store-images.s-microsoft.com/image/apps.35653.14177276325867302.adb12eef-2b2f-43ee-ba35-da339b898d8a.078b444b-c66b-4ab1-8961-f82cf62dd275?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 364,
-      "regularPriceMinor": 729,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Rennen & Fliegen",
-        "Sport"
       ],
       "services": []
     },
@@ -2947,23 +2928,6 @@
       "genres": [
         "Action & Abenteuer",
         "Rollenspiele"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9nlfrhpfm4vt",
-      "id": "9nlfrhpfm4vt",
-      "title": "Bit ESC",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/bit-esc/9nlfrhpfm4vt",
-      "cover": "https://store-images.s-microsoft.com/image/apps.49234.13713037576880106.b83b4e03-e157-45b4-97f9-88583e0b98c2.e6fa6e52-1263-4c59-9473-9d08cd1014b5?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 599,
-      "regularPriceMinor": 1499,
-      "genres": [
-        "Action & Abenteuer",
-        "Platformer"
       ],
       "services": []
     },
@@ -8873,24 +8837,6 @@
       ]
     },
     {
-      "key": "xbox:product:9n0102b834zm",
-      "id": "9n0102b834zm",
-      "title": "Fantasy Dash",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/fantasy-dash/9n0102b834zm",
-      "cover": "https://store-images.s-microsoft.com/image/apps.41183.13930478916829142.8e94b6e0-c43c-49e9-b395-29dfc4059f03.8942e5aa-c256-48a1-a57f-d8d9eaf27920?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 99,
-      "regularPriceMinor": 309,
-      "genres": [
-        "Action & Abenteuer",
-        "Rätsel & Wissen",
-        "Rennen & Fliegen"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nvj4l71df5q",
       "id": "9nvj4l71df5q",
       "title": "Far Cry 3 Blood Dragon Classic Edition",
@@ -9882,26 +9828,6 @@
         "Action & Abenteuer",
         "Klassiker",
         "Platformer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9nq1s6c5dqn5",
-      "id": "9nq1s6c5dqn5",
-      "title": "Full Throttle Pixel Racing",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/full-throttle-pixel-racing/9nq1s6c5dqn5",
-      "cover": "https://store-images.s-microsoft.com/image/apps.11203.13782799040735650.34fa4ff2-b548-4f57-98e4-ffb4b22b845e.7e202f26-cd24-4210-b9fb-176dae885e8e?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 259,
-      "regularPriceMinor": 519,
-      "genres": [
-        "Familie & Kinder",
-        "Klassiker",
-        "Rennen & Fliegen",
-        "Simulation",
-        "Sport"
       ],
       "services": []
     },
@@ -16962,23 +16888,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9njt7cpdc23r",
-      "id": "9njt7cpdc23r",
-      "title": "Paint Ball - Jump n Run",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/paint-ball-jump-n-run/9njt7cpdc23r",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29621.13669773769287014.86d7a5ff-c8f9-4d05-87c8-f373b186ebcd.7915ec0a-44f2-49d3-be7b-518aadaa4cc5?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 259,
-      "regularPriceMinor": 519,
-      "genres": [
-        "Familie & Kinder",
-        "Platformer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nkv34xdw014",
       "id": "9nkv34xdw014",
       "title": "Palworld",
@@ -18740,24 +18649,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9p7l2bqlk5cb",
-      "id": "9p7l2bqlk5cb",
-      "title": "REMATCH - ELITE EDITION",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/rematch-elite-edition/9p7l2bqlk5cb",
-      "cover": "https://store-images.s-microsoft.com/image/apps.45835.14105901073154727.b69671df-ca9b-47f8-b3ba-41a12a57e88b.59bdf958-48d6-4ec8-8c15-8744fafe0c0b?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1779,
-      "regularPriceMinor": 4449,
-      "genres": [
-        "Action & Abenteuer",
-        "Multi-Player Online Battle Arena",
-        "Sport"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9p9278zmgqlj",
@@ -26131,22 +26022,6 @@
       ]
     },
     {
-      "key": "xbox:product:bsxsl6wbj0v7",
-      "id": "bsxsl6wbj0v7",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bsxsl6wbj0v7",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29891.69993262899909428.0190d6b7-60eb-4d3f-bd16-b44c0e303861.a44fc632-9741-443e-863c-cd2fce2e955b?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bw9tffj50mkv",
       "id": "bw9tffj50mkv",
       "title": "Viva Piñata",
@@ -26156,6 +26031,22 @@
         "xbox-series"
       ],
       "priceMinor": null,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bsxsl6wbj0v7",
+      "id": "bsxsl6wbj0v7",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bsxsl6wbj0v7",
+      "cover": "https://store-images.s-microsoft.com/image/apps.29891.69993262899909428.0190d6b7-60eb-4d3f-bd16-b44c0e303861.a44fc632-9741-443e-863c-cd2fce2e955b?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1499,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
