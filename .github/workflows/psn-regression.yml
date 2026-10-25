@@ -22,8 +22,8 @@ jobs:
       - name: Verify production build
         run: npm run build
       - name: Install browser
-        run: npx playwright install --with-deps chromium
-      - name: Check responsive browser and private endpoints
+        run: npx playwright install --with-deps chromium webkit
+      - name: Check Chromium and WebKit mobile browser and private endpoints
         env:
           RADAR_PASSWORD: radar-local
           RADAR_SESSION_SECRET: ci-only-radar-session-secret-32-chars
