@@ -1,0 +1,50 @@
+/* Finish #62: short, composited transitions. No perpetual particle effects or scroll listeners. */
+.psn-cinema-hero{overflow:hidden;isolation:isolate}
+.psn-cinema-art img{transition:transform .55s cubic-bezier(.22,1,.36,1),filter .5s ease}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ .psn-cinema-hero:hover .psn-cinema-art img{transform:scale(1.05)}
+}
+@keyframes radar-finish-enter{
+ from{opacity:0;transform:translate3d(0,12px,0)}
+ to{opacity:1;transform:translate3d(0,0,0)}
+}
+@media(prefers-reduced-motion:no-preference){
+ .psn-cinema-hero-content{animation:radar-finish-enter .5s ease both}
+ .psn-cinema-metrics{animation:radar-finish-enter .46s .09s ease both}
+ .psn-cinema-shortcuts{animation:radar-finish-enter .46s .14s ease both}
+ .psn-mission-control{animation:radar-finish-enter .4s ease both}
+ .psn-cinema-shortcuts button,.psn-cinema-actions button,.psn-collection-selector button,.psn-chronicle-periods button,.psn-platinum-controls button{
+  transition:background-color .18s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease;
+ }
+ @media(hover:hover){
+  .psn-cinema-shortcuts button:hover,.psn-cinema-actions button:hover{transform:translateY(-2px)}
+ }
+}
+.psn-shell .psn-hub-game{overflow:hidden}
+.psn-shell .psn-hub-game .psn-hub-cover{contain:paint;background:#122c47}
+.psn-shell .psn-hub-game img{object-position:center;image-rendering:auto}
+.psn-collection-stage-model{min-width:0}
+.psn-trophy-static-preview{display:grid;place-items:center;align-content:center;gap:13px;min-height:185px;width:100%;border-radius:14px;background:radial-gradient(circle at 50% 48%,#28587b 0%,#132c46 47%,#0b1d33 95%);border:1px solid #345f87}
+.psn-trophy-static-preview .psn-medal{transform:scale(2.4);display:grid;place-items:center;margin-bottom:19px}
+.psn-trophy-static-preview button{min-height:44px;padding:10px 14px;border:1px solid #87caff;border-radius:10px;background:#234e76;color:#f2f8ff;cursor:pointer;font-size:12px;font-weight:750}
+.psn-trophy-static-preview button:hover{background:#306b9d}
+.psn-trophy-static-preview button:focus-visible{outline:3px solid #9bd9ff;outline-offset:3px}
+.psn-cinema-actions button,.psn-collection-view-switch button,.psn-trophy-static-preview button{touch-action:manipulation}
+.psn-hub-advanced-filters summary,.psn-collection-manage summary{min-height:44px}
+.psn-mission-control,.psn-chronicle{scroll-margin-top:88px}
+@media(max-width:700px){
+ .psn-cinema-hero-content{padding-bottom:max(20px,env(safe-area-inset-bottom))}
+ .psn-game-modal{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+ .psn-collection-stage-model .psn-trophy-static-preview{min-height:170px}
+ .psn-cinema-shortcuts button{min-height:66px}
+ .psn-hub-game-grid{scroll-margin-top:75px}
+}
+@media(prefers-reduced-motion:reduce){
+ .psn-shell *, .psn-shell *::before,.psn-shell *::after{
+  animation-duration:0.01ms!important;
+  animation-iteration-count:1!important;
+  transition-duration:0.01ms!important;
+  scroll-behavior:auto!important;
+ }
+ .psn-cinema-art img{transform:none!important}
+}
