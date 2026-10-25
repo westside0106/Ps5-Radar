@@ -3,13 +3,14 @@ import {useEffect,useRef,useState} from 'react';
 
 const keys={
  notes:'psn-game-planner-v1',
+ manualGames:'psn-custom-games-v1',
  history:'psn-playtime-snapshots-v1',
  covers:'psn-cover-preferences-v1',
  coverUrls:'psn-cover-urls-v1',
  trophyTargets:'psn-trophy-targets-v1',
  platinumChecks:'psn-platinum-checks-v1'
 };
-const defaults={notes:{},history:[],covers:{},coverUrls:{},trophyTargets:{},platinumChecks:{}};
+const defaults={notes:{},manualGames:[],history:[],covers:{},coverUrls:{},trophyTargets:{},platinumChecks:{}};
 function localSnapshot(){
  const data={};
  for(const [name,key] of Object.entries(keys)){
