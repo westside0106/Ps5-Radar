@@ -6,9 +6,10 @@ const keys={
  history:'psn-playtime-snapshots-v1',
  covers:'psn-cover-preferences-v1',
  coverUrls:'psn-cover-urls-v1',
- trophyTargets:'psn-trophy-targets-v1'
+ trophyTargets:'psn-trophy-targets-v1',
+ platinumChecks:'psn-platinum-checks-v1'
 };
-const defaults={notes:{},history:[],covers:{},coverUrls:{},trophyTargets:{}};
+const defaults={notes:{},history:[],covers:{},coverUrls:{},trophyTargets:{},platinumChecks:{}};
 function localSnapshot(){
  const data={};
  for(const [name,key] of Object.entries(keys)){
