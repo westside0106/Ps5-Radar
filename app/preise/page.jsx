@@ -5,6 +5,7 @@ import priceHistory from '../../data/price-history.json';
 import { priceRadarRank, priceRadarState, summarizePriceRadar } from '../../lib/price-radar-state.mjs';
 import { COOKIE_NAME, safeEqual, sessionToken } from '../auth';
 import DetailTile from '../radar/DetailTile';
+import PriceTrend from './PriceTrend';
 
 export const dynamic = 'force-dynamic';
 
@@ -134,6 +135,7 @@ export default async function PriceRadarPage() {
                     ) : null}
                   </div>
 
+                  <PriceTrend title={item.title} points={item.points} signal={item.signal}/>
                   <div className="watchlist-card-foot">
                     <div className="watchlist-price">
                       <small>{item.activeDeal ? 'AKTUELL' : 'ZULETZT GEMESSEN'}</small>
@@ -141,6 +143,7 @@ export default async function PriceRadarPage() {
                       <span>Radar-Tief {euro(item.signal?.radarLow)} · zuletzt gemessen am {shortDate(item.latest?.date)}</span>
                     </div>
                     <div className="watchlist-card-actions">
+                      <a href={'/zentrale?tab=preise&game='+encodeURIComponent(item.title)}>Preisziel setzen</a>
                       {item.storeUrl ? <a href={item.storeUrl} target="_blank" rel="noreferrer">Store ↗</a> : null}
                     </div>
                   </div>

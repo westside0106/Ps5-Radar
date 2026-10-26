@@ -90,3 +90,16 @@
 @media(max-width:760px){.rz-shell{padding:11px}.rz-tiles,.rz-results{grid-template-columns:1fr}.rz-price-grid,.rz-source-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rz-tabs button{flex:0 0 auto}.rz-rule-editor{grid-template-columns:1fr 1fr}.rz-rule-editor>button{grid-column:1/-1}.rz-feature{min-height:310px}}
 @media(max-width:500px){.rz-head{padding:21px}.rz-head h1{font-size:31px}.rz-head-stats{gap:5px}.rz-head-stats span{font-size:10px;padding:7px}.rz-price-grid,.rz-source-grid{grid-template-columns:1fr}.rz-result>img,.rz-placeholder{width:51px;height:68px}.rz-result{gap:8px}.rz-result>a{font-size:10px;padding:8px}.rz-event{grid-template-columns:80px 1fr 12px;gap:7px;padding:10px}.rz-event time{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.rz-shell *, .rz-shell *::before,.rz-shell *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.rz-card-links{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 0}
+.rz-card-links a,.rz-calendar-export button{min-height:44px;padding:10px 13px;border:1px solid #8cc9f3;border-radius:10px;background:#235a85;color:#ecf8ff;font-size:12px;font-weight:750;text-decoration:none;cursor:pointer}
+.rz-calendar-export{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin:0 0 14px}
+.rz-calendar-export button:disabled{opacity:.55;cursor:not-allowed}
+.rz-calendar-export small{font-size:10px;line-height:1.5;color:#a4c9e3}
+
+.rz-app-tools{margin:0 0 14px;padding:17px;border:1px solid #4b7ba6;border-radius:16px;background:linear-gradient(130deg,#1a4065,#0b2038);display:grid;gap:11px}
+.rz-app-tools h3{font-size:20px;margin:6px 0;color:#f4faff}
+.rz-app-tools p,.rz-app-tools small{font-size:11px;line-height:1.6;color:#bfd5e7;margin:0}
+.rz-app-actions{display:flex;gap:8px;flex-wrap:wrap}
+.rz-app-actions button{min-height:44px;border:1px solid #7bc0ee;border-radius:9px;background:#205d89;color:#fff;padding:10px 14px;cursor:pointer;font-weight:750;font-size:12px}
+.rz-app-actions button:disabled{opacity:.52;cursor:not-allowed}

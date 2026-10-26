@@ -111,9 +111,13 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       await page.locator('.rz-result').first().waitFor();
       assert.ok(await page.locator('.rz-result').count(),'Universal search empty');
       await page.getByRole('button',{name:'Kalender'}).click();
+      await page.locator('.rz-calendar-export button').waitFor();
+      assert.equal(await page.locator('.rz-calendar-export button').count(),1,'Calendar ICS export missing');
+
       await page.locator('.rz-event-list').waitFor();
       await page.getByRole('button',{name:'Quellen'}).click();
       assert.equal(await page.locator('.rz-source').count(),4);
+      assert.ok(await page.getByRole('button',{name:/App installieren/}).count(),'PWA install help missing');
       await page.getByRole('button',{name:'Preisregeln'}).click();
       await page.locator('.rz-rule-editor select').selectOption({index:1});
       await page.getByRole('button',{name:'Preisregel speichern'}).click();
@@ -130,6 +134,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       await page.locator('.exp-magazine-cover').waitFor();
       assert.ok(await page.getByRole('button',{name:/Als PDF drucken/}).count(),'Print magazine action missing');
      }
+     if(route==='/preise')assert.ok(await page.locator('.price-analysis').count()>0,'Historical price charts missing');
      if(route==='/radar')assert.ok(await page.locator('.magazine').count(),'Daily magazine missing');
      if(route==='/mein-playstation?view=games')assert.ok(await page.locator('.psn-shell').count(),'PSN profile shell missing');
     }
@@ -190,6 +195,9 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await mission.waitFor();
     assert.ok(await mission.getByText('Deine Platin-Missionen').count(),'Platin mission heading missing');
     await mission.getByRole('heading',{name:'Unplayed CI Test'}).waitFor({timeout:10000});
+    const heatmap=page.locator('.psn-earned-heatmap');
+    await heatmap.waitFor();
+    assert.ok(await heatmap.locator('.psn-earned-day').count()>80,'True trophy activity heatmap missing');
     await mission.scrollIntoViewIfNeeded();
     await captureQa(page,engine.name(),width,'trophies');
     const preview=page.locator('.psn-trophy-static-preview');
