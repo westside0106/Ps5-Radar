@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {cleanPricePoints,summarizePriceHistory,chartPoints} from '../lib/price-radar-insights.mjs';
 import {calendarIcs} from '../lib/radar-calendar-export.mjs';
-import {TROPHY_DATES_KEY,mergeTrophyDates,normalizeTrophyDates,trophyHeatmap} from '../lib/psn-trophy-heatmap.mjs';
+import {TROPHY_DATES_KEY,mergeTrophyDates,normalizeTrophyDates,combineTrophyDates,trophyHeatmap} from '../lib/psn-trophy-heatmap.mjs';
 
 test('historical Radar prices are sorted by date and never treated as live merchant quotes',()=>{
  const history=[{date:'2026-10-02',price:18.99},{date:'2026-10-01',price:28.99},{date:'2026-10-02',price:17.99},{date:'2026-10-04',price:-9},{date:'2026-10-07',price:19.99}];
@@ -42,4 +42,15 @@ test('PSN trophy dates only persist truly unlocked timestamps and deduplicate re
  assert.equal(heat.observed,2);
  assert.equal(heat.total,2);
  assert.ok(heat.grid.some(x=>x.date==='2026-10-26'&&x.count===2),'Berlin local date should include 25 Oct at 23:30Z');
+});
+
+test('manual backup/cloud merges trophy unlock dates without destroying previous local entries',()=>{
+ const local=[{set:'NPWR00001_00',id:'1',at:'2026-10-25T09:00:00Z'}];
+ const cloud=[{set:'NPWR00001_00',id:'1',at:'2026-10-25T09:00:00Z'},{set:'NPWR00002_00',id:'5',at:'2026-10-26T09:00:00Z'}];
+ const merged=combineTrophyDates(local,cloud);
+ assert.equal(merged.length,2);
+ assert.equal(merged[0].id,'1');
+ assert.equal(merged[1].id,'5');
+ assert.deepEqual(combineTrophyDates(merged,cloud),merged,'Re-importing the same data must be idempotent');
+ assert.equal(combineTrophyDates(local,[{set:'NPWR00',id:'6',at:'invalid-date'}]).length,1);
 });

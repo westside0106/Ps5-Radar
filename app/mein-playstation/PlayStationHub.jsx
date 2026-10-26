@@ -49,8 +49,12 @@ function GameTrophies({game}){
    try{
     const history=JSON.parse(localStorage.getItem(TROPHY_DATES_KEY)||'[]');
     const merged=mergeTrophyDates(history,game.npCommunicationId,j.trophies||[]);
-    localStorage.setItem(TROPHY_DATES_KEY,JSON.stringify(merged));
-    window.dispatchEvent(new Event(TROPHY_DATES_EVENT));
+    if(JSON.stringify(history)!==JSON.stringify(merged)){
+     localStorage.setItem(TROPHY_DATES_KEY,JSON.stringify(merged));
+     window.dispatchEvent(new Event(TROPHY_DATES_EVENT));
+     // Optional cloud autosave listens for this standard local-profile event.
+     window.dispatchEvent(new Event('psn-profile-local-change'));
+    }
    }catch{/* Local trophy timeline cache is optional. */}
   }
   catch(e){setError(e.message||'Trophäen nicht verfügbar')}finally{setLoading(false)}

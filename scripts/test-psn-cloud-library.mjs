@@ -16,6 +16,9 @@ test('cloud schema includes cover URLs and chronological playtime snapshots',()=
  assert.equal(validCloudPayload({history:{date:'2026-10-25'}}),false);
  assert.equal(validCloudPayload({coverUrls:[]}),false);
  assert.equal(validCloudPayload({manualGames:{}}),false);
+ assert.ok(validCloudPayload({trophyDates:[{set:'NPWR00001_00',id:'12',at:'2026-10-26T10:00:00Z'}]}));
+ assert.ok(validCloudPayload({notes:{},collections:[],history:[]}),'Older clouds without trophyDates remain accepted');
+ assert.equal(validCloudPayload({trophyDates:{set:'NPWR00001_00'}}),false);
 });
 test('Sony library requests active digital entitlements with current persisted query and correct pagination',async()=>{
  const original=globalThis.fetch,oldNpsso=process.env.PSN_NPSSO;
