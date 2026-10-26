@@ -103,3 +103,32 @@
 .rz-app-actions{display:flex;gap:8px;flex-wrap:wrap}
 .rz-app-actions button{min-height:44px;border:1px solid #7bc0ee;border-radius:9px;background:#205d89;color:#fff;padding:10px 14px;cursor:pointer;font-weight:750;font-size:12px}
 .rz-app-actions button:disabled{opacity:.52;cursor:not-allowed}
+
+/* #70 Price Notifications - separate clear status, actions and inbox. */
+.rz-cloud-alerts{display:grid;gap:14px;margin:5px 0 25px;scroll-margin-top:100px}
+.rz-alert-intro{display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:13px;padding:18px;border:1px solid #527fa5;border-radius:14px;background:linear-gradient(120deg,#143d60,#102940)}
+.rz-alert-intro h3{font-size:clamp(21px,2.6vw,29px);margin:6px 0;color:#f3faff}
+.rz-alert-intro p{font-size:12px;line-height:1.65;color:#bddeef;max-width:70ch;margin:0}
+.rz-alert-state{display:inline-block;padding:8px 10px;background:#573c27;border:1px solid #9a7856;color:#ffe5c4;border-radius:9px;font-size:11px;font-weight:750}
+.rz-alert-state.is-ready{background:#184638;border-color:#5fa68d;color:#cdf9e6}
+.rz-alert-info{display:grid;gap:5px;padding:13px 15px;background:#132a43;border:1px solid #385f7e;border-radius:11px}
+.rz-alert-info strong{font-size:12px;color:#eaf6ff}
+.rz-alert-info span{font-size:11px;color:#b4d0e4;line-height:1.55}
+.rz-cloud-rule-list,.rz-cloud-inbox{display:grid;gap:8px}
+.rz-cloud-rule-list .rz-rule small{display:block;line-height:1.5}
+.rz-cloud-editor{margin-bottom:0}
+.rz-import-local,.rz-scan-now{min-height:44px;padding:10px 13px;background:#1d547f;color:#e7f5ff;border:1px solid #7ab8e3;border-radius:9px;font-weight:750;font-size:12px;cursor:pointer}
+.rz-import-local{background:#36402a;border-color:#adbf81}
+.rz-scan-now{width:max-content}
+.rz-import-local:disabled,.rz-scan-now:disabled,.rz-cloud-editor button:disabled{opacity:.55;cursor:not-allowed}
+.rz-alert-inbox-head{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-top:15px}
+.rz-alert-inbox-head h3{margin:0;font-size:18px}
+.rz-alert-inbox-head span{font-size:11px;color:#9bd0f4}
+.rz-alert-event{display:flex;align-items:center;justify-content:space-between;gap:13px;border:1px solid #345979;border-radius:11px;background:#10283f;padding:12px}
+.rz-alert-event.is-unread{border-color:#76bce9;background:#153856}
+.rz-alert-event>div{display:grid;gap:5px;min-width:0}
+.rz-alert-event strong{font-size:13px}
+.rz-alert-event small{font-size:11px;line-height:1.45;color:#adcee5}
+.rz-alert-event button{flex:none;border:1px solid #6f9fbd;background:#1a4b70;color:white;border-radius:9px;padding:9px 11px;min-height:42px;cursor:pointer}
+.rz-alert-event>span{font-size:11px;color:#afd5e9}
+@media(max-width:650px){.rz-alert-intro{padding:15px}.rz-cloud-editor{grid-template-columns:1fr}.rz-cloud-editor>button{grid-column:auto}.rz-scan-now{width:100%}.rz-alert-event{align-items:start;flex-wrap:wrap}}
