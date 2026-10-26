@@ -1,5 +1,6 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
+import {TROPHY_DATES_KEY,TROPHY_DATES_EVENT,normalizeTrophyDates,combineTrophyDates} from '../../lib/psn-trophy-heatmap.mjs';
 
 const keys={
  notes:'psn-game-planner-v1',
@@ -9,9 +10,10 @@ const keys={
  covers:'psn-cover-preferences-v1',
  coverUrls:'psn-cover-urls-v1',
  trophyTargets:'psn-trophy-targets-v1',
- platinumChecks:'psn-platinum-checks-v1'
+ platinumChecks:'psn-platinum-checks-v1',
+ trophyDates:TROPHY_DATES_KEY
 };
-const defaults={notes:{},manualGames:[],collections:[],history:[],covers:{},coverUrls:{},trophyTargets:{},platinumChecks:{}};
+const defaults={notes:{},manualGames:[],collections:[],history:[],covers:{},coverUrls:{},trophyTargets:{},platinumChecks:{},trophyDates:[]};
 function localSnapshot(){
  const data={};
  for(const [name,key] of Object.entries(keys)){
@@ -81,7 +83,13 @@ export default function ProfileSync(){
   const changes=Object.entries(keys).filter(([name])=>remote[name]!==undefined&&remote[name]!==null).map(([name,key])=>[key,JSON.stringify(remote[name])]);
   const previous=changes.map(([key])=>[key,localStorage.getItem(key)]);
   try{
-   for(const [key,value] of changes)localStorage.setItem(key,value);
+   for(const [key,value] of changes){
+    if(key===TROPHY_DATES_KEY){
+     let current=[];try{current=JSON.parse(localStorage.getItem(key)||'[]')}catch{}
+     localStorage.setItem(key,JSON.stringify(combineTrophyDates(current,JSON.parse(value))));
+    }else localStorage.setItem(key,value);
+   }
+   window.dispatchEvent(new Event(TROPHY_DATES_EVENT));
    window.location.reload();
   }catch{
    for(const [key,value] of previous){try{if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value)}catch{}}
@@ -90,7 +98,7 @@ export default function ProfileSync(){
  }
  return <div className="psn-planner-box psn-profile-sync">
   <h4>Meine Daten auf anderen Geräten</h4>
-  <p>Deine Spielpläne, Sammlungen, manuell vorgemerkte Titel, Favoriten, Trophäenziele und Cover-Einstellungen liegen zunächst im Browser. Hier kannst du sie sichern und auf ein anderes Gerät übertragen. PSN-Trophäen werden unabhängig davon abgerufen.</p>
+  <p>Deine Spielpläne, Sammlungen, manuell vorgemerkte Titel, Favoriten, Trophäenziele, lokal erfasste Trophäen-Freischaltdaten und Cover-Einstellungen liegen zunächst im Browser. Hier kannst du sie sichern und auf ein anderes Gerät übertragen. PSN-Trophäen werden unabhängig davon abgerufen.</p>
   {remoteDate?<small>Letztes Cloud-Backup: {new Date(remoteDate).toLocaleString('de-DE')} · Version {revision}</small>:null}
   <p role="status" aria-live="polite">{message}</p>
   <label className="psn-planner-check"><input type="checkbox" checked={autoSave} onChange={e=>{setAutoSave(e.target.checked);try{localStorage.setItem('psn-sync-on-save-v1',e.target.checked?'yes':'no')}catch{}}}/> Nach Änderungen an Spielplänen, Covern und Trophäenzielen automatisch sichern</label>
