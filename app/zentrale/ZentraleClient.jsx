@@ -153,7 +153,7 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
    <p className="rz-muted">„Entfernung festgestellt“ bedeutet: Ein Spiel wurde beim Katalogvergleich nicht mehr gefunden. Das ist nicht automatisch das Datum, an dem Sony das Spiel entfernt hat.</p>
   </section>:null}
   {tab==='preise'?<section className="rz-panel"><div className="rz-panel-heading"><h2>Preisradar & Benachrichtigungen</h2><p>Private Preisziele, echte serverseitige Prüfung und dauerhaft gespeicherte Meldungen. Nur Daten mit bestätigtem aktivem Store-Angebot lösen einen Treffer aus.</p></div>
-   <ServerPriceAlerts priceGames={priceGames} localRules={rules} initialTitle={ruleTitle} onRulesChange={setServerRules}/>
+   <ServerPriceAlerts priceGames={priceGames} localRules={rules} initialTitle={ruleTitle} onRulesChange={setServerRules} onLocalSave={updateRules}/>
    <h3>Beobachtete Store-Titel</h3><div className="rz-price-grid">{priced.map(([title,g])=><article key={title} className="rz-price-card">
     <strong>{title}</strong><small>{activePrice(g)!==null?'Aktuell verifizierter Preis: '+euro(activePrice(g)):'Kein verifizierter aktiver Deal'}</small><small>Historischer Tiefstwert: {euro(g.low)}</small><div>{g.storeUrl?<a href={g.storeUrl} target="_blank" rel="noopener noreferrer">Store</a>:null}<button type="button" onClick={()=>{setRuleTitle(title);document.querySelector('.rz-cloud-alerts')?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})}}>Preisziel setzen</button></div>
    </article>)}</div>

@@ -11,6 +11,7 @@ test('price rules are exact edition-aware titles with bounded EUR amounts',()=>{
  assert.equal(validatedRule({title:'Game PS4',limit:20},['Game PS5']),null);
  assert.equal(validatedRule({title:'Game PS5',limit:-1},['Game PS5']),null);
  assert.equal(validatedRule({title:'Game PS5',limit:'abc'},['Game PS5']),null);
+ for(const value of ['',null,undefined])assert.equal(validatedRule({title:'Game PS5',limit:value},['Game PS5']),null);
 });
 test('only fresh explicitly active Store prices can trigger notices',()=>{
  assert.ok(activePriceSignal(game,now));
@@ -31,7 +32,9 @@ test('cron scan makes no duplicate inbox items and rearms if deal stops',async()
   calls.push([table,query,options.method]);
   if(table==='radar_price_alert_rules'&&!options.method)return rules;
   if(table==='radar_price_notifications'){
-   const e=options.data;notifications.set(e.id,e);return [];
+   const e=options.data;
+   if(notifications.has(e.id))return [];
+   notifications.set(e.id,e);return [e];
   }
   if(table==='radar_price_alert_rules'&&options.method==='PATCH'){
    Object.assign(rules[0],options.data);return [];
@@ -41,8 +44,8 @@ test('cron scan makes no duplicate inbox items and rearms if deal stops',async()
  const source={updatedAt:now.toISOString(),games:{'Game PS5':game}};
  const base={config:{secret:'testing'},now,db,source};
  const first=await scanPriceAlerts(base);
- assert.equal(first.checked,1);assert.equal(first.matched,1);assert.equal(notifications.size,1);
- await scanPriceAlerts(base);assert.equal(notifications.size,1);
+ assert.equal(first.checked,1);assert.equal(first.matched,1);assert.equal(first.created,1);assert.equal(notifications.size,1);
+ const repeated=await scanPriceAlerts(base);assert.equal(repeated.created,0);assert.equal(notifications.size,1);
  source.games['Game PS5']={signal:{activeDeal:false,currentPrice:null,lastObservedDate:'2026-10-26'}};
  await scanPriceAlerts(base);assert.equal(rules[0].last_status,'no_active_deal');
  assert.equal(rules[0].last_match_key,null);
