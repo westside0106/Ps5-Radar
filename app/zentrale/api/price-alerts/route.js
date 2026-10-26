@@ -60,6 +60,6 @@ export async function PATCH(request){
 // Manual check, explicitly initiated in the authenticated UI. The same logic runs by cron.
 export async function PUT(){
  const {config,error}=await authorized();if(error)return error;
- try{return Response.json({ok:true,...await scanPriceAlerts({config})},{headers:secure})}
+ try{return Response.json({ok:true,...await scanPriceAlerts({config,source:priceHistory})},{headers:secure})}
  catch{return Response.json({error:'Prüfung nicht verfügbar'},{status:503,headers:secure})}
 }
