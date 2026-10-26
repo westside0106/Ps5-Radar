@@ -1,6 +1,31 @@
 import assert from 'node:assert/strict';
 import {createHmac} from 'node:crypto';
 import {chromium,webkit} from 'playwright';
+import {mkdirSync,writeFileSync} from 'node:fs';
+const QA_FOLDER='artifacts/gameworld-qa';
+mkdirSync(QA_FOLDER,{recursive:true});
+const qa=[];
+async function captureQa(page,engine,width,view){
+ const path=QA_FOLDER+'/'+engine+'-'+width+'-'+view+'.png';
+ await page.screenshot({path,animations:'disabled',fullPage:false});
+ const metrics=await page.evaluate(()=>{
+  const nav=performance.getEntriesByType('navigation').at(-1);
+  const paint=performance.getEntriesByType('paint');
+  const value=name=>paint.find(x=>x.name===name)?.startTime??null;
+  return {domContentLoadedMs:nav?Math.round(nav.domContentLoadedEventEnd):null,
+   responseEndMs:nav?Math.round(nav.responseEnd):null,
+   loadEventEndMs:nav?Math.round(nav.loadEventEnd):null,
+   firstPaintMs:value('first-paint'),firstContentfulPaintMs:value('first-contentful-paint'),
+   resourceRequests:performance.getEntriesByType('resource').length,
+   domElements:document.querySelectorAll('*').length,
+   viewportWidth:document.documentElement.clientWidth,
+   documentWidth:document.documentElement.scrollWidth,
+   reducedMotion:matchMedia('(prefers-reduced-motion: reduce)').matches
+  };
+ });
+ qa.push({engine,width,view,path,...metrics});
+ writeFileSync(QA_FOLDER+'/measurements.json',JSON.stringify({source:'CI synthetic profile, no real Sony tokens',measurementType:'Browser performance entries; not lab-certified Web Vitals',results:qa},null,2));
+}
 const base=process.env.RADAR_TEST_URL||'http://localhost:3100';
 for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320,375,390,430]]]){
  const browser=await engine.launch({headless:true});
@@ -78,6 +103,9 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await edit.locator('summary').click();
     await page.getByPlaceholder('Titel eingeben …').fill('Unplayed CI Test');
     await page.getByRole('button',{name:'Zum Backlog hinzufügen'}).click();
+    await page.locator('#psn-game-editor label').filter({hasText:/^Status/}).locator('select').selectOption('platinum');
+    await page.locator('#psn-game-editor .psn-save-plan').click();
+    await page.locator('#psn-game-editor .psn-save-status').getByText(/Gespeichert/).waitFor();
     const card=page.locator('.psn-hub-game').filter({hasText:'Unplayed CI Test'}).first();
     await card.waitFor();
     assert.match(await card.innerText(),/Manuell vorgemerkt/);
@@ -103,12 +131,29 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await page.locator('.psn-collection-selector').getByRole('button',{name:/CI Collection/}).waitFor({timeout:10000});
     await page.locator('.psn-hub-game').filter({hasText:'Unplayed CI Test'}).first().waitFor({timeout:10000});
     await page.locator('.psn-library-shelf').waitFor({timeout:10000});
+    const label=await page.locator('.psn-hub-library-head').innerText();
+    assert.match(label,/1 Spiel(?!e)/,'Use singular German game count');
+    assert.match(label,/eigene Einträge/,'Manual-only library must not claim PSN origin');
+    const sortContrast=await page.locator('.psn-browser-fields select').evaluate(el=>{
+      const style=getComputedStyle(el);
+      const component=rgb=>rgb.match(/\d+/g)?.slice(0,3).map(Number)||[0,0,0];
+      const toLinear=v=>{const n=v/255;return n<=0.04045?n/12.92:((n+0.055)/1.055)**2.4};
+      const light=rgb=>{const [r,g,b]=component(rgb).map(toLinear);return .2126*r+.7152*g+.0722*b};
+      const a=light(style.color),b=light(style.backgroundColor);
+      return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
+    });
+    assert.ok(sortContrast>=4.5,engine.name()+' dark sort select lacks text contrast: '+sortContrast);
+    await page.locator('.psn-hub-library-head').scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'shelf');
    }
    if(width===390){
     await page.getByRole('button',{name:'Trophäen-Zentrale'}).click();
     const mission=page.locator('.psn-mission-control');
     await mission.waitFor();
     assert.ok(await mission.getByText('Deine Platin-Missionen').count(),'Platin mission heading missing');
+    await mission.getByRole('heading',{name:'Unplayed CI Test'}).waitFor({timeout:10000});
+    await mission.scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'trophies');
     const preview=page.locator('.psn-trophy-static-preview');
     await preview.waitFor();
     assert.ok(await preview.getByRole('button',{name:'3D-Trophäe aktivieren'}).count(),'3D must be opt-in to avoid heavy initial WebGL work');
@@ -122,6 +167,17 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     assert.equal(await page.getByRole('button',{name:'3 Mon.'}).getAttribute('aria-pressed'),'true');
     const w=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
     assert.ok(w.scroll<=w.client+3,engine.name()+' chronology overflow: '+JSON.stringify(w));
+   }
+   if(width===1280&&engine===chromium){
+    const fold=page.locator('.psn-tools-fold').first();
+    await fold.locator('summary').click();
+    await page.getByPlaceholder('Titel eingeben …').fill('CI Wide Game');
+    await page.getByRole('button',{name:'Zum Backlog hinzufügen'}).click();
+    await page.locator('.psn-hub-game').filter({hasText:'CI Wide Game'}).first().waitFor();
+    await page.locator('.psn-cinema-hero').scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'desktop-hero');
+    await page.locator('.psn-hub-library-head').scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'desktop-library');
    }
    // Live PSN data is not available in CI; exercise the real cards whenever fixture data is present.
    const gameCard=page.locator('.psn-hub-game').first();

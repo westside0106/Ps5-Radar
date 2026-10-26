@@ -48,3 +48,16 @@
  }
  .psn-cinema-art img{transform:none!important}
 }
+
+/* #63 WebKit QA: native select control text must remain legible in dark UI. */
+.psn-shell select{
+ color-scheme:dark;
+ background-color:#112940!important;
+ color:#f3f9ff!important;
+ -webkit-text-fill-color:#f3f9ff;
+ border-color:#638caf;
+}
+.psn-shell select option{color:#f3f9ff;background:#142d46}
+@media(forced-colors:active){
+ .psn-shell select{color-scheme:normal;background-color:Field!important;color:FieldText!important;-webkit-text-fill-color:currentColor;border-color:ButtonBorder}
+}

@@ -31,3 +31,11 @@ jobs:
           npm run start -- -p 3100 > /tmp/radar-smoke.log 2>&1 &
           for i in $(seq 1 40); do curl -fsS http://127.0.0.1:3100/ >/dev/null && break; sleep 2; done
           node scripts/test-psn-browser-smoke.mjs
+      - name: Preserve QA screenshots and performance measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gameworld-qa-${{ github.run_id }}
+          path: artifacts/gameworld-qa/
+          if-no-files-found: ignore
+          retention-days: 7
