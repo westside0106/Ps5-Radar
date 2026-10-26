@@ -1,7 +1,7 @@
 import {timingSafeEqual} from 'node:crypto';
-import {alertStorageConfig} from '../../../../lib/radar-alerts-db.mjs';
-import {scanPriceAlerts} from '../../../../lib/radar-price-alert-scan.mjs';
-import priceHistory from '../../../../data/price-history.json';
+import {alertStorageConfig} from '../../../../../lib/radar-alerts-db.mjs';
+import {scanPriceAlerts} from '../../../../../lib/radar-price-alert-scan.mjs';
+import priceHistory from '../../../../../data/price-history.json';
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
 export const maxDuration=30;
