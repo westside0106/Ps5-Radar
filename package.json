@@ -13,7 +13,7 @@
     "test:goal:browser": "node scripts/test-goal-browser.mjs",
     "test:platform": "node --test lib/platform-core/tests/*.test.mjs lib/providers/xbox/tests/*.test.mjs",
     "xbox:refresh": "node scripts/update-xbox-snapshot.mjs",
-    "test:psn": "node --test scripts/test-psn-metadata.mjs scripts/test-psn-providers.mjs scripts/test-psn-cloud-library.mjs scripts/test-psn-platinum.mjs scripts/test-psn-game-collections.mjs scripts/test-psn-gaming-insights.mjs scripts/test-radar-zentrale.mjs"
+    "test:psn": "node --test scripts/test-psn-metadata.mjs scripts/test-psn-providers.mjs scripts/test-psn-cloud-library.mjs scripts/test-psn-platinum.mjs scripts/test-psn-game-collections.mjs scripts/test-psn-gaming-insights.mjs scripts/test-radar-zentrale.mjs scripts/test-psn-trophy-activity.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
