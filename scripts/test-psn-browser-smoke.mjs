@@ -157,8 +157,12 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       assert.ok(await page.getByRole('button',{name:/Als PDF drucken/}).count(),'Print magazine action missing');
      }
      if(route==='/preise')assert.ok(await page.locator('.price-analysis').count()>0,'Historical price charts missing');
+     if(route==='/zentrale')await captureQa(page,engine.name(),width,'radar-notifications');
      if(route==='/radar')assert.ok(await page.locator('.magazine').count(),'Daily magazine missing');
      if(route==='/mein-playstation?view=games')assert.ok(await page.locator('.psn-shell').count(),'PSN profile shell missing');
+     if(route!=='/zentrale'&&route!=='/mein-playstation?view=games')
+      await captureQa(page,engine.name(),width,'section-'+route.slice(1).replaceAll('/','-'));
+
     }
    }
 
