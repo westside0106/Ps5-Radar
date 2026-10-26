@@ -13,6 +13,7 @@ const norm=v=>String(v||'').trim().toLocaleLowerCase('de');
 const getId=g=>String(g.titleId||g.name||g.titleName||'');
 function mins(v){if(!v)return 0;if(typeof v==='number')return Math.max(0,v);const m=String(v).match(/^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+(?:\.\d+)?)S)?)?$/i);return m?Number(m[1]||0)*1440+Number(m[2]||0)*60+Number(m[3]||0)+Number(m[4]||0)/60:0}
 const hours=v=>Math.round(v/60).toLocaleString('de-DE');
+const motionBehavior=()=>typeof window!=='undefined'&&window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';
 export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocusHandled}){
  const [notes,setNotes]=useState({});
  const [selected,setSelected]=useState('');
@@ -28,7 +29,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
  const [history,setHistory]=useState([]);
  const [importText,setImportText]=useState('');
  const [backupMessage,setBackupMessage]=useState('');
- useEffect(()=>{try{const data=JSON.parse(localStorage.getItem(KEY)||'{}');if(data&&typeof data==='object'&&!Array.isArray(data))setNotes(data)}catch{}const onPlan=e=>{const id=String(e.detail?.id||'');if(!id)return;let info={};try{info=JSON.parse(localStorage.getItem(KEY)||'{}')?.[id]||{}}catch{}setSelected(id);setDraft({status:e.detail?.platinum?'platinum':info.status||'',favorite:!!info.favorite,note:info.note||'',priority:info.priority||'normal'});setTrophyGoal(initialTrophyGoals(played.find(g=>getId(g)===id),titles,info));setSavedNotice('');const panel=document.getElementById('psn-game-editor');const fold=panel?.closest('details');if(fold)fold.open=true;requestAnimationFrame(()=>panel?.scrollIntoView({behavior:'smooth',block:'center'}))};window.addEventListener('psn-plan-game',onPlan);return()=>window.removeEventListener('psn-plan-game',onPlan)},[]);
+ useEffect(()=>{try{const data=JSON.parse(localStorage.getItem(KEY)||'{}');if(data&&typeof data==='object'&&!Array.isArray(data))setNotes(data)}catch{}const onPlan=e=>{const id=String(e.detail?.id||'');if(!id)return;let info={};try{info=JSON.parse(localStorage.getItem(KEY)||'{}')?.[id]||{}}catch{}setSelected(id);setDraft({status:e.detail?.platinum?'platinum':info.status||'',favorite:!!info.favorite,note:info.note||'',priority:info.priority||'normal'});setTrophyGoal(initialTrophyGoals(played.find(g=>getId(g)===id),titles,info));setSavedNotice('');const panel=document.getElementById('psn-game-editor');const fold=panel?.closest('details');if(fold)fold.open=true;requestAnimationFrame(()=>panel?.scrollIntoView({behavior:motionBehavior(),block:'center'}))};window.addEventListener('psn-plan-game',onPlan);return()=>window.removeEventListener('psn-plan-game',onPlan)},[]);
  useEffect(()=>{try{const v=JSON.parse(localStorage.getItem(CUSTOM_KEY)||'[]');if(Array.isArray(v))setCustomGames(v.filter(g=>g&&typeof g.name==='string'&&/^custom:[a-z0-9-]{3,100}$/.test(g.titleId||'')).slice(0,400))}catch{}},[]);
  useEffect(()=>{
   const refresh=()=>{
@@ -50,7 +51,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
   const timeout=window.setTimeout(()=>{
    const panel=document.getElementById('psn-game-editor');
    const fold=panel?.closest('details');if(fold)fold.open=true;
-   panel?.scrollIntoView({behavior:'smooth',block:'center'});
+   panel?.scrollIntoView({behavior:motionBehavior(),block:'center'});
    onFocusHandled?.();
   },90);
   return()=>window.clearTimeout(timeout);
@@ -171,7 +172,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
    setImportText('');setBackupMessage(Object.keys(clean).length+' Spieleinträge importiert'+(raw.version===2?' · inklusive unterstützter weiterer Daten':'')+'. Für Cover-/Trophäen-Zielanzeigen die Seite neu laden.');
   }catch{setBackupMessage('Import fehlgeschlagen – Dateiformat oder Browser-Speicher prüfen. Vorhandene Daten sollten unverändert bleiben.')}
  }
- function selectGame(id,platinum=false){setSelected(id);const current=notes[id]||{};setDraft({status:platinum?'platinum':current.status||'',favorite:!!current.favorite,note:current.note||'',priority:current.priority||'normal'});setTrophyGoal(initialTrophyGoals(played.find(g=>getId(g)===id),titles,current));setSavedNotice('');const panel=document.getElementById('psn-game-editor');const fold=panel?.closest('details');if(fold)fold.open=true;requestAnimationFrame(()=>panel?.scrollIntoView({behavior:'smooth',block:'center'}));}
+ function selectGame(id,platinum=false){setSelected(id);const current=notes[id]||{};setDraft({status:platinum?'platinum':current.status||'',favorite:!!current.favorite,note:current.note||'',priority:current.priority||'normal'});setTrophyGoal(initialTrophyGoals(played.find(g=>getId(g)===id),titles,current));setSavedNotice('');const panel=document.getElementById('psn-game-editor');const fold=panel?.closest('details');if(fold)fold.open=true;requestAnimationFrame(()=>panel?.scrollIntoView({behavior:motionBehavior(),block:'center'}));}
  function saveDraft(){
   if(!selected)return;
   const readObject=key=>{try{const value=JSON.parse(localStorage.getItem(key)||'{}');return value&&typeof value==='object'&&!Array.isArray(value)?value:{}}catch{return {}}};

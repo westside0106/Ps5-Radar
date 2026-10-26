@@ -5,6 +5,7 @@ import {COOKIE_NAME,safeEqual,sessionToken} from '../auth';
 import {getPsnDashboard} from '../../lib/psn-server.mjs';
 import {enrichPsnLibrary} from '../../lib/psn-game-metadata.mjs';
 import './style.css';
+import './finish-62.css';
 import PlayStationHub from './PlayStationHub';
 export const dynamic='force-dynamic';
 export const metadata={title:'Mein PlayStation · PS5 Radar',robots:{index:false,follow:false}};

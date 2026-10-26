@@ -19,21 +19,22 @@ function metadataStatus(game){const m=game.metadata;return !m?'Zusatzinfos im De
 function safeDate(v){if(!v)return null;const d=new Date(v);return Number.isNaN(d.getTime())?null:d.toLocaleDateString('de-DE')}
 function estimateHours(value){return value==null?'—':value.toLocaleString('de-DE',{maximumFractionDigits:1})+' Std.'}
 function historicalListLabel(insight){return insight.historicalStatus==='removed'?'In der Quelle als entfernt markiert'+(insight.removedNote?' ('+insight.removedNote+')':''):insight.historicalStatus==='additional'?'Zusatzliste (nicht als aktueller Katalog bestätigt)':'September-Hauptliste (keine aktuelle Verfügbarkeitsprüfung)'}
-function GameCover({game,className}){const [failed,setFailed]=useState(false);const url=cover(game);useEffect(()=>setFailed(false),[url]);return url&&!failed?<img className={className||undefined} src={url} loading="lazy" alt="" onError={()=>setFailed(true)}/>:<span className="psn-hub-cover-fallback" aria-hidden="true">{isManualGame(game)?'＋':'PS'}</span>}
+function GameCover({game,className}){const [failed,setFailed]=useState(false);const url=cover(game);useEffect(()=>setFailed(false),[url]);return url&&!failed?<img className={className||undefined} src={url} loading="lazy" decoding="async" alt="" onError={()=>setFailed(true)}/>:<span className="psn-hub-cover-fallback" aria-hidden="true">{isManualGame(game)?'＋':'PS'}</span>}
 const isVerifiedAlternateCover=value=>typeof value==='string'&&/^https:\/\/(?:[a-z0-9-]+\.)*steamgriddb\.com\/[^\s?#]+/i.test(value);
 function PreferredCover({game,preferredUrl,className}){
  const [failed,setFailed]=useState(false);
  useEffect(()=>setFailed(false),[preferredUrl,game?.titleId]);
  return isVerifiedAlternateCover(preferredUrl)&&!failed
-  ?<img className={className||undefined} src={preferredUrl} alt="" loading="lazy" onError={()=>setFailed(true)}/>
+  ?<img className={className||undefined} src={preferredUrl} alt="" loading="lazy" decoding="async" onError={()=>setFailed(true)}/>
   :<GameCover game={game} className={className}/>;
 }
 const gameStatusLabels={planned:'Geplant',playing:'In Arbeit',paused:'Pausiert',completed:'Durchgespielt',platinum:'Platin-Ziel'};
+const motionBehavior=()=>typeof window!=='undefined'&&window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';
 function TrophyIcon({type}){const label={bronze:'Bronze',silver:'Silber',gold:'Gold',platinum:'Platin'}[type]||'Trophäe';return <span className={'psn-medal psn-medal-'+type} role="img" aria-label={label}><svg width="23" height="23" viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id={'medal-'+type} x1="0" y1="0" x2="1" y2="1"><stop stopColor={type==='platinum'?'#e7f8ff':type==='gold'?'#fff2a6':type==='silver'?'#f1f7ff':'#ffd3a1'}/><stop offset="1" stopColor={type==='platinum'?'#71a9df':type==='gold'?'#c18a28':type==='silver'?'#8d9eb8':'#995636'}/></linearGradient></defs><path d="M9 4h14v10c0 5-3 8-7 8s-7-3-7-8V4Z" fill={'url(#medal-'+type+')'} stroke="#ffffff77"/><path d="M9 7H5v4c0 5 3 7 7 7M23 7h4v4c0 5-3 7-7 7" stroke={'url(#medal-'+type+')'} strokeWidth="2.5" strokeLinecap="round"/><path d="M16 22v4m-7 2h14" stroke={'url(#medal-'+type+')'} strokeWidth="3" strokeLinecap="round"/></svg></span>}
-function TrophyShowcase({titles}){const [rank,setRank]=useState('platinum'),[showGallery,setShowGallery]=useState(false);const totals=titles.reduce((acc,t)=>{for(const k of ['bronze','silver','gold','platinum'])acc[k]+=Number(t.earnedTrophies?.[k]||0);return acc},{bronze:0,silver:0,gold:0,platinum:0});return <section className="psn-collection-stage" aria-label="Deine Trophäensammlung"><div className="psn-collection-stage-top"><div><span className="psn-eyebrow">DEINE TROPHÄENSAMMLUNG</span><strong>{Object.values(totals).reduce((a,b)=>a+b,0).toLocaleString('de-DE')} Erfolge</strong><small>3D-Trophäen · Mit dem Finger drehen</small></div><div className="psn-collection-stage-model"><TrophyModel rank={rank}/></div></div><div className="psn-collection-ranks" role="group" aria-label="3D-Trophäe auswählen">{[['platinum','Platin'],['gold','Gold'],['silver','Silber'],['bronze','Bronze']].map(([type,label])=><button type="button" key={type} aria-pressed={rank===type} onClick={()=>setRank(type)}><TrophyIcon type={type}/><span><strong>{totals[type]}</strong><small>{label}</small></span></button>)}</div><button type="button" className="psn-gallery-toggle" aria-expanded={showGallery} onClick={()=>setShowGallery(v=>!v)}>{showGallery?'3D-Sammlungsraum schließen':'3D-Sammlungsraum öffnen'}</button>{showGallery?<TrophyGallery counts={totals}/>:null}</section>}
+function TrophyShowcase({titles}){const [rank,setRank]=useState('platinum'),[showGallery,setShowGallery]=useState(false),[modelEnabled,setModelEnabled]=useState(false);const totals=titles.reduce((acc,t)=>{for(const k of ['bronze','silver','gold','platinum'])acc[k]+=Number(t.earnedTrophies?.[k]||0);return acc},{bronze:0,silver:0,gold:0,platinum:0});return <section className="psn-collection-stage" aria-label="Deine Trophäensammlung"><div className="psn-collection-stage-top"><div><span className="psn-eyebrow">DEINE TROPHÄENSAMMLUNG</span><strong>{Object.values(totals).reduce((a,b)=>a+b,0).toLocaleString('de-DE')} Erfolge</strong><small>{modelEnabled?'3D-Modell · mit dem Finger drehen':'3D-Modell optional aktivieren – spart Ladezeit'}</small></div><div className="psn-collection-stage-model">{modelEnabled?<TrophyModel rank={rank}/>:<div className="psn-trophy-static-preview"><TrophyIcon type={rank}/><button type="button" onClick={()=>setModelEnabled(true)}>3D-Trophäe aktivieren</button></div>}</div></div><div className="psn-collection-ranks" role="group" aria-label="3D-Trophäe auswählen">{[['platinum','Platin'],['gold','Gold'],['silver','Silber'],['bronze','Bronze']].map(([type,label])=><button type="button" key={type} aria-pressed={rank===type} onClick={()=>setRank(type)}><TrophyIcon type={type}/><span><strong>{totals[type]}</strong><small>{label}</small></span></button>)}</div><button type="button" className="psn-gallery-toggle" aria-expanded={showGallery} onClick={()=>setShowGallery(v=>!v)}>{showGallery?'3D-Sammlungsraum schließen':'3D-Sammlungsraum öffnen'}</button>{showGallery?<TrophyGallery counts={totals}/>:null}</section>}
 function trophyRank(type){return {platinum:4,gold:3,silver:2,bronze:1}[type]||0}
 function trophyRarity(t){const n=Number(t.trophyEarnedRate);return Number.isFinite(n)&&t.trophyEarnedRate!=null?n:null}
-function TrophyArtwork({trophy}){const [failed,setFailed]=useState(false);useEffect(()=>setFailed(false),[trophy.trophyIconUrl]);return trophy.trophyIconUrl&&!failed?<img src={trophy.trophyIconUrl} alt="" loading="lazy" onError={()=>setFailed(true)}/>:<TrophyIcon type={trophy.trophyType}/>}
+function TrophyArtwork({trophy}){const [failed,setFailed]=useState(false);useEffect(()=>setFailed(false),[trophy.trophyIconUrl]);return trophy.trophyIconUrl&&!failed?<img src={trophy.trophyIconUrl} alt="" loading="lazy" decoding="async" onError={()=>setFailed(true)}/>:<TrophyIcon type={trophy.trophyType}/>}
 function GameTrophies({game}){
  const [open,setOpen]=useState(false),[loading,setLoading]=useState(false),[list,setList]=useState(null),[error,setError]=useState('');
  const [status,setStatus]=useState('missing'),[sort,setSort]=useState('default'),[group,setGroup]=useState('all'),[rank,setRank]=useState('all'),[reveal,setReveal]=useState(false),[revealedIds,setRevealedIds]=useState([]),[query,setQuery]=useState(''),[targets,setTargets]=useState([]),[targetsOnly,setTargetsOnly]=useState(false);
@@ -79,8 +80,6 @@ export default function PlayStationHub({titles=[],played=[]}){
  const [visibleTrophyGames,setVisibleTrophyGames]=useState(36);
  const [focusPlatinumId,setFocusPlatinumId]=useState('');
  const [visibleGames,setVisibleGames]=useState(36);
- useEffect(()=>setVisibleGames(36),[libraryType,metadataFilter,search,order,activeCollection,viewMode]);
- useEffect(()=>setVisibleTrophyGames(36),[min,search,order]);
  const [gallery,setGallery]=useState({title:'',images:[],status:'idle'});
  const [galleryReload,setGalleryReload]=useState(0);
  const [external,setExternal]=useState({title:'',data:null,status:'idle'});
@@ -92,6 +91,8 @@ export default function PlayStationHub({titles=[],played=[]}){
  const [newCollectionName,setNewCollectionName]=useState('');
  const [collectionMessage,setCollectionMessage]=useState('');
  const [viewMode,setViewMode]=useState('cards');
+ useEffect(()=>setVisibleGames(36),[libraryType,metadataFilter,search,order,activeCollection,viewMode]);
+ useEffect(()=>setVisibleTrophyGames(36),[min,search,order]);
  useEffect(()=>{
   const refresh=()=>{
    try{setManualGames(normalizeManualGames(JSON.parse(localStorage.getItem(CUSTOM_GAMES_KEY)||'[]')))}catch{setManualGames([])}
@@ -260,7 +261,7 @@ export default function PlayStationHub({titles=[],played=[]}){
  {tab==='games'?<div className="psn-cinema-dashboard">
   <section className="psn-cinema-hero" aria-label="Dein aktuelles Spiel">
    <div className="psn-cinema-art" aria-hidden="true">
-    {featureScreenshot?<img src={featureScreenshot} alt="" loading="eager"/>:featuredGame?<PreferredCover game={featuredGame} preferredUrl={artworkChoice[featureKey]==='steamgriddb'?artworkUrls[featureKey]:null}/>:null}
+    {featureScreenshot?<img src={featureScreenshot} alt="" loading="eager" fetchPriority="high" decoding="async"/>:featuredGame?<PreferredCover game={featuredGame} preferredUrl={artworkChoice[featureKey]==='steamgriddb'?artworkUrls[featureKey]:null}/>:null}
    </div>
    <div className="psn-cinema-veil"/>
    <div className="psn-cinema-hero-content">
@@ -286,10 +287,10 @@ export default function PlayStationHub({titles=[],played=[]}){
    <div><span className="psn-cinema-metric-icon" aria-hidden="true">♥</span><strong>{countFavorites}</strong><small>Gespeicherte Favoriten</small></div>
   </div>
   <div className="psn-cinema-shortcuts" role="group" aria-label="Schnellzugriff">
-   <button type="button" onClick={()=>{setLibraryType('games');setMetadataFilter('all');document.querySelector('.psn-hub-library-head')?.scrollIntoView({behavior:'smooth',block:'start'})}}><span aria-hidden="true">▦</span><strong>Sammlung</strong><small>Spiele durchstöbern</small></button>
+   <button type="button" onClick={()=>{setLibraryType('games');setMetadataFilter('all');document.querySelector('.psn-hub-library-head')?.scrollIntoView({behavior:motionBehavior(),block:'start'})}}><span aria-hidden="true">▦</span><strong>Sammlung</strong><small>Spiele durchstöbern</small></button>
    <button type="button" onClick={()=>{setTab('trophies');setSearch('');setOrder('progress')}}><span aria-hidden="true">♛</span><strong>Platin-Jagd</strong><small>Trophäen ansehen</small></button>
-   <button type="button" onClick={()=>{const fold=document.querySelector('.psn-tools-fold');if(fold){fold.open=true;fold.scrollIntoView({behavior:'smooth',block:'center'})}}}><span aria-hidden="true">✓</span><strong>Backlog</strong><small>Nächste Ziele planen</small></button>
-   <button type="button" onClick={()=>{const fold=document.querySelectorAll('.psn-tools-fold')[1];if(fold){fold.open=true;fold.scrollIntoView({behavior:'smooth',block:'center'})}}}><span aria-hidden="true">▥</span><strong>Statistiken</strong><small>Fortschritt verstehen</small></button>
+   <button type="button" onClick={()=>{const fold=document.querySelector('.psn-tools-fold');if(fold){fold.open=true;fold.scrollIntoView({behavior:motionBehavior(),block:'center'})}}}><span aria-hidden="true">✓</span><strong>Backlog</strong><small>Nächste Ziele planen</small></button>
+   <button type="button" onClick={()=>{const fold=document.querySelectorAll('.psn-tools-fold')[1];if(fold){fold.open=true;fold.scrollIntoView({behavior:motionBehavior(),block:'center'})}}}><span aria-hidden="true">▥</span><strong>Statistiken</strong><small>Fortschritt verstehen</small></button>
   </div>
  </div>:null}
  <div className="psn-browser-controls">{tab==='trophies'?<><label className="psn-range-label" htmlFor="psn-hub-min">Mindestfortschritt <strong>{min}%</strong></label><input id="psn-hub-min" type="range" min="0" max="100" value={min} onChange={e=>setMin(Number(e.target.value))}/><div className="psn-range-presets">{[0,25,50,75,90].map(n=><button type="button" key={n} aria-pressed={min===n} onClick={()=>setMin(n)}>{n===0?'Alle':n+'%'}</button>)}</div></>:null}<div className="psn-browser-fields"><input type="search" aria-label="Spiel suchen" placeholder="Spiel suchen …" value={search} onChange={e=>setSearch(e.target.value)}/><select aria-label="Sortierung" value={order} onChange={e=>setOrder(e.target.value)}><option value="progress">{tab==='trophies'?'Fortschritt absteigend':'Spielzeit absteigend'}</option><option value="low">{tab==='trophies'?'Fortschritt aufsteigend':'Spielzeit aufsteigend'}</option><option value="name">Name A–Z</option>{tab==='games'?<><option value="recent">Zuletzt gespielt</option><option value="plan">Meine Prioritäten</option></>:null}</select></div></div>
