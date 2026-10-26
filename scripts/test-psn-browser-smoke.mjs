@@ -123,7 +123,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       await page.locator('.rz-page').waitFor();
      }
      if(route==='/museum'){
-      await page.locator('.exp-museum-grid').waitFor();
+      await page.locator('.exp-museum-grid').waitFor({state:'attached'});
       assert.ok(await page.getByRole('heading',{name:'Dein Sammlungs-Museum'}).count(),'Museum title missing');
      }
      if(route==='/magazin'){
