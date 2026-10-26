@@ -29,6 +29,7 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
   const params=new URLSearchParams(window.location.search),v=params.get('tab'),q=params.get('q');
   if(TAB_IDS.includes(v))setTab(v);
   if(q){setQuery(q);setTab('suche')}
+  const priceGame=params.get('game');if(priceGame&&priceGames[priceGame]){setRuleTitle(priceGame);setTab('preise')}
   const sync=()=>{
    const raw=readJson(WATCHLIST_KEY,[]);
    setWishlist(Array.isArray(raw)?raw.filter(x=>typeof x==='string'||x&&typeof x.title==='string').map(x=>typeof x==='string'?{title:x}:x).slice(0,500):[]);
