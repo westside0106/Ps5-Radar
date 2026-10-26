@@ -83,7 +83,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    }
 
    if(width===390||engine===chromium&&width===1280){
-    const routes=['/radar','/xbox','/ps-plus','/preise','/archive','/mein-playstation?view=games'];
+    const routes=['/radar','/xbox','/ps-plus','/preise','/archive','/zentrale','/mein-playstation?view=games'];
     for(const route of routes){
      await page.goto(base+route,{waitUntil:'domcontentloaded'});
      const nav=page.locator('.radar-global-navigation');
@@ -92,6 +92,24 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
      assert.equal(await current.count(),1,engine.name()+' missing current section for '+route);
      const overflow=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
      assert.ok(overflow.scroll<=overflow.client+3,engine.name()+' '+width+' overflow at '+route+': '+JSON.stringify(overflow));
+     if(route==='/zentrale'){
+      await page.locator('.rz-page').waitFor();
+      await page.getByRole('button',{name:'Suche',exact:true}).click();
+      await page.getByPlaceholder('Spiel, Franchise, Magazinmeldung …').fill('Assassin');
+      await page.locator('.rz-result').first().waitFor();
+      assert.ok(await page.locator('.rz-result').count(),'Universal search empty');
+      await page.getByRole('button',{name:'Kalender'}).click();
+      await page.locator('.rz-event-list').waitFor();
+      await page.getByRole('button',{name:'Quellen'}).click();
+      assert.equal(await page.locator('.rz-source').count(),4);
+      await page.getByRole('button',{name:'Preisregeln'}).click();
+      await page.locator('.rz-rule-editor select').selectOption({index:1});
+      await page.getByRole('button',{name:'Preisregel speichern'}).click();
+      await page.locator('.rz-rules .rz-rule').first().waitFor();
+      assert.ok(await page.locator('.rz-rules .rz-rule').count(),'Price alert rule was not stored');
+      await page.reload({waitUntil:'domcontentloaded'});
+      await page.locator('.rz-page').waitFor();
+     }
      if(route==='/radar')assert.ok(await page.locator('.magazine').count(),'Daily magazine missing');
      if(route==='/mein-playstation?view=games')assert.ok(await page.locator('.psn-shell').count(),'PSN profile shell missing');
     }
