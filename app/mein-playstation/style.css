@@ -658,3 +658,16 @@
 .psn-earned-day:focus-visible,.psn-earned-ranges button:focus-visible{outline:3px solid #b9e7ff;outline-offset:2px}
 .psn-earned-selected{font-size:12px;color:#e6f6ff;margin:0}
 @media(max-width:650px){.psn-earned-metrics{gap:5px}.psn-earned-metrics>div{padding:8px}.psn-earned-metrics strong{font-size:19px}.psn-earned-metrics span{font-size:9px}}
+
+
+/* #71 Cinematic contrast and tactile motion: dark neutral surfaces, restrained accent spectrum. */
+.psn-hub{--museum-ink:#f5f7fc;--museum-muted:#b9c4d3;--museum-line:rgba(177,196,222,.25)}
+.psn-hub .psn-stats>*,.psn-hub .psn-earned-metrics>div{background:linear-gradient(150deg,#202734,#121924)!important;border-color:var(--museum-line)!important}
+.psn-hub .psn-stats>*:nth-child(4n+1){border-top:2px solid #63c5ed!important}
+.psn-hub .psn-stats>*:nth-child(4n+2){border-top:2px solid #f1c56c!important}
+.psn-hub .psn-stats>*:nth-child(4n+3){border-top:2px solid #c4a0f3!important}
+.psn-hub .psn-stats>*:nth-child(4n){border-top:2px solid #73d9b2!important}
+.psn-hub button,.psn-hub a,.psn-hub .psn-hub-game{transition:transform .24s cubic-bezier(.2,.8,.2,1),border-color .24s ease,background-color .24s ease,box-shadow .24s ease}
+.psn-hub button:active,.psn-hub a:active{transform:scale(.975)}
+@media(hover:hover) and (pointer:fine){.psn-hub .psn-hub-game:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(0,0,0,.35);border-color:#9dc7db}.psn-hub button:hover{filter:brightness(1.1)}}
+@media(prefers-reduced-motion:reduce){.psn-hub button,.psn-hub a,.psn-hub .psn-hub-game{transition:none!important;animation:none!important;transform:none!important}}
