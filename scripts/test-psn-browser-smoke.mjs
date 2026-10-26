@@ -42,6 +42,18 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
+  for(const path of ['/zentrale','/museum','/magazin']){
+   const response=await context.request.get(base+path,{maxRedirects:0});
+   assert.ok([302,303,307,308].includes(response.status()),'Private experience route exposed: '+path+' -> '+response.status());
+  }
+  const manifestRequest=await context.request.get(base+'/manifest.webmanifest');
+  assert.equal(manifestRequest.status(),200,'PWA manifest missing');
+  const manifest=await manifestRequest.json();
+  assert.equal(manifest.display,'standalone');
+  assert.equal(manifest.start_url,'/zentrale');
+  const sw=await context.request.get(base+'/radar-sw.js');
+  assert.equal(sw.status(),200,'Service worker missing');
+  assert.match(await sw.text(),/startsWith\('\/_next\/static\/'\)/);
   const unauthorizedUpload=await context.request.put(base+'/mein-playstation/api/profile-sync',{data:{version:2,revision:0,data:{notes:{},history:[]}},maxRedirects:0});
   assert.ok([401,302,303,307,308].includes(unauthorizedUpload.status()),'Cloud endpoint must reject unauthenticated writes');
   const input=page.locator('input[name="password"]');
@@ -83,7 +95,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    }
 
    if(width===390||engine===chromium&&width===1280){
-    const routes=['/radar','/xbox','/ps-plus','/preise','/archive','/zentrale','/mein-playstation?view=games'];
+    const routes=['/radar','/xbox','/ps-plus','/preise','/archive','/zentrale','/museum','/magazin','/mein-playstation?view=games'];
     for(const route of routes){
      await page.goto(base+route,{waitUntil:'domcontentloaded'});
      const nav=page.locator('.radar-global-navigation');
@@ -109,6 +121,14 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       assert.ok(await page.locator('.rz-rules .rz-rule').count(),'Price alert rule was not stored');
       await page.reload({waitUntil:'domcontentloaded'});
       await page.locator('.rz-page').waitFor();
+     }
+     if(route==='/museum'){
+      await page.locator('.exp-museum-grid').waitFor();
+      assert.ok(await page.getByRole('heading',{name:'Dein Sammlungs-Museum'}).count(),'Museum title missing');
+     }
+     if(route==='/magazin'){
+      await page.locator('.exp-magazine-cover').waitFor();
+      assert.ok(await page.getByRole('button',{name:/Als PDF drucken/}).count(),'Print magazine action missing');
      }
      if(route==='/radar')assert.ok(await page.locator('.magazine').count(),'Daily magazine missing');
      if(route==='/mein-playstation?view=games')assert.ok(await page.locator('.psn-shell').count(),'PSN profile shell missing');
