@@ -1,6 +1,7 @@
 'use client';
 import {useDeferredValue,useEffect,useMemo,useState} from 'react';
 import {TAB_IDS,RULES_KEY,searchKey,findEntries,evaluateRules,normalizeRules} from '../../lib/radar-zentrale.mjs';
+import {calendarIcs} from '../../lib/radar-calendar-export.mjs';
 
 const WATCHLIST_KEY='psradar_watchlist_v1';
 const euro=value=>Number.isFinite(value)?new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(value):'—';
@@ -89,6 +90,13 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
   setRuleTitle('');
  }
  function storeNewMonth(d){setMonth(d);setLimit(36)}
+ function exportCurrentCalendar(){
+  if(!timed.length)return;
+  const blob=new Blob([calendarIcs(timed,new Date())],{type:'text/calendar;charset=utf-8'});
+  const url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='psradar-termine-'+month+'.ics';document.body.append(a);a.click();a.remove();
+  window.setTimeout(()=>URL.revokeObjectURL(url),3000);
+ }
  const backlog=Object.values(notes).filter(x=>x&&x.status).length;
  return <main className="rz-shell"><div className="rz-page">
   <header className="rz-head"><span className="rz-kicker">PLAYSTATION RADAR · COMMAND CENTER</span><h1>Deine Radar-Zentrale</h1>
@@ -111,6 +119,7 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
      {followed.length?<ul>{followed.slice(0,5).map(g=><li key={g.title}><span>{g.title}</span><strong>{g.price!==null?euro(g.price):'Kein aktueller Deal'}</strong></li>)}</ul>:<p>Merke Spiele über das Detailfenster im Radar. Deine Watchlist wird hier berücksichtigt.</p>}
      <button onClick={()=>switchTab('preise')}>Preisziele verwalten</button></article>
     <article className="rz-card"><span className="rz-kicker">DEINE SAMMLUNG</span><h3>{backlog} persönliche Spielpläne</h3><p>Setze bestehende Platin-Projekte und Sammlungen fort. PSN-Spielzeiten werden hier nicht geschätzt.</p><a href="/mein-playstation?view=games">Meine Spielwelt öffnen</a></article>
+    <article className="rz-card"><span className="rz-kicker">DEIN GAMING-MAGAZIN</span><h3>Persönliche Ausgabe und Sammlungs-Museum</h3><p>Dein persönlicher Monatsrückblick lässt sich als PDF drucken. Das Museum zeigt lokal gespeicherte Sammlungen und Cover.</p><div className="rz-card-links"><a href="/magazin">Mein Gaming-Magazin</a><a href="/museum">Sammlungs-Museum</a></div></article>
     <article className="rz-card"><span className="rz-kicker">PS+ NEU ERFASST</span><h3>Aktuelle Katalogänderungen</h3><ul>{recentlyAdded.length?recentlyAdded.map(x=><li key={x.id+'-'+x.date}><span>{x.title}</span><small>{day(x.date)}</small></li>):<li>Keine neu erfassten Titel im aktuellen Datensatz.</li>}</ul><a href="/ps-plus">Katalog öffnen</a></article>
     <article className="rz-card"><span className="rz-kicker">BEVORSTEHENDE TERMINE</span><h3>Kalender-Vorschau</h3><ul>{earliest.length?earliest.map(x=><li key={x.id}><span>{x.title}</span><small>{day(x.date)}</small></li>):<li>Derzeit keine bestätigten zukünftigen Termine hinterlegt.</li>}</ul><button onClick={()=>switchTab('kalender')}>Kalender öffnen</button></article>
    </div>
@@ -135,6 +144,7 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
   {tab==='kalender'?<section className="rz-panel"><div className="rz-panel-heading"><h2>Gaming-Kalender</h2><p>Katalogänderungen, bestätigte Abgänge und verfügbare Termine. Keine geschätzten Releases oder erfundenen PS+-Ablauffristen.</p></div>
    <div className="rz-date-controls"><label>Monat<select value={month} onChange={e=>storeNewMonth(e.target.value)}>{monthRange.map(m=><option value={m} key={m}>{new Date(m+'-15T12:00:00Z').toLocaleDateString('de-DE',{month:'long',year:'numeric'})}</option>)}</select></label>
    <label>Ereignis<select value={eventKind} onChange={e=>setEventKind(e.target.value)}><option value="all">Alle</option><option value="catalog-added">Katalogzugänge</option><option value="catalog-removed">Entfernung festgestellt</option><option value="catalog-leaving">Angekündigter Abgang</option><option value="sale-ending">Sale-Ende</option><option value="release">Release</option></select></label></div>
+   <div className="rz-calendar-export"><button type="button" onClick={exportCurrentCalendar} disabled={!timed.length}>Termine dieses Monats als .ics exportieren</button><small>Statischer Kalenderexport – keine automatische Aktualisierung</small></div>
    <div className="rz-event-list">{timed.length?timed.slice(0,limit).map(e=><a href={e.url} key={e.id} className="rz-event"><time dateTime={e.date}>{day(e.date)}</time><span><strong>{e.title}</strong><small>{e.subtitle}</small></span><span aria-hidden="true">↗</span></a>):<div className="rz-empty">Für diesen Monat und Filter liegen keine bestätigten Daten vor.</div>}</div>
    {timed.length>limit?<button type="button" className="rz-more" onClick={()=>setLimit(x=>x+36)}>Weitere Termine anzeigen</button>:null}
    <p className="rz-muted">„Entfernung festgestellt“ bedeutet: Ein Spiel wurde beim Katalogvergleich nicht mehr gefunden. Das ist nicht automatisch das Datum, an dem Sony das Spiel entfernt hat.</p>
