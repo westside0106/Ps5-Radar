@@ -223,6 +223,9 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await mission.getByRole('heading',{name:'Unplayed CI Test'}).waitFor({timeout:10000});
     const heatmap=page.locator('.psn-earned-heatmap');
     await heatmap.waitFor();
+    // The heatmap grid is hydrated in a client-side effect after the section mounts.
+    // Wait for the real daily buttons rather than asserting during the initial render.
+    await heatmap.locator('.psn-earned-day').first().waitFor({state:'attached',timeout:15000});
     assert.ok(await heatmap.locator('.psn-earned-day').count()>80,'True trophy activity heatmap missing');
     await mission.scrollIntoViewIfNeeded();
     await captureQa(page,engine.name(),width,'trophies');
