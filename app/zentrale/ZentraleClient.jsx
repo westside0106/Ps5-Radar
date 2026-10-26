@@ -3,6 +3,7 @@ import {useDeferredValue,useEffect,useMemo,useState} from 'react';
 import {TAB_IDS,RULES_KEY,searchKey,findEntries,evaluateRules,normalizeRules} from '../../lib/radar-zentrale.mjs';
 import {calendarIcs} from '../../lib/radar-calendar-export.mjs';
 import RadarAppTools from './RadarAppTools';
+import ServerPriceAlerts from './ServerPriceAlerts';
 
 const WATCHLIST_KEY='psradar_watchlist_v1';
 const euro=value=>Number.isFinite(value)?new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(value):'—';
@@ -21,6 +22,7 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
  const [eventKind,setEventKind]=useState('all');
  const [wishlist,setWishlist]=useState([]);
  const [rules,setRules]=useState([]);
+ const [serverRules,setServerRules]=useState(null);
  const [manual,setManual]=useState([]);
  const [notes,setNotes]=useState({});
  const [ruleTitle,setRuleTitle]=useState('');
@@ -60,7 +62,7 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
  const deferred=useDeferredValue(query);
  const results=useMemo(()=>findEntries(all,deferred,kind==='personal'?'personal':kind,120),[all,deferred,kind]);
  const priced=useMemo(()=>Object.entries(priceGames).sort((a,b)=>a[0].localeCompare(b[0],'de')),[priceGames]);
- const checks=useMemo(()=>evaluateRules(rules,priceGames),[rules,priceGames]);
+ const checks=useMemo(()=>evaluateRules(serverRules??rules,priceGames),[serverRules,rules,priceGames]);
  const matched=checks.filter(r=>r.matched);
  const timed=useMemo(()=>events.filter(e=>e.date.startsWith(month)&&(eventKind==='all'||e.type===eventKind)),[events,month,eventKind]);
  const earliest=useMemo(()=>events.filter(e=>e.date>=new Date().toISOString().slice(0,10)).slice(0,6),[events]);
@@ -150,18 +152,12 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
    {timed.length>limit?<button type="button" className="rz-more" onClick={()=>setLimit(x=>x+36)}>Weitere Termine anzeigen</button>:null}
    <p className="rz-muted">„Entfernung festgestellt“ bedeutet: Ein Spiel wurde beim Katalogvergleich nicht mehr gefunden. Das ist nicht automatisch das Datum, an dem Sony das Spiel entfernt hat.</p>
   </section>:null}
-  {tab==='preise'?<section className="rz-panel"><div className="rz-panel-heading"><h2>Preisziele & lokale Alarme</h2><p>Lege Preisgrenzen fest. Der Abgleich erfolgt mit den gespeicherten Radar-Daten beim Öffnen dieser Seite. Keine Push-, Telegram- oder E-Mail-Zustellung ohne zusätzliche Integration.</p></div>
-   <div className="rz-rule-editor"><label>Spiel im Preisradar<select value={ruleTitle} onChange={e=>setRuleTitle(e.target.value)}><option value="">Titel auswählen …</option>{priced.map(([t])=><option key={t} value={t}>{t}</option>)}</select></label><label>Maximalpreis in €<input inputMode="decimal" value={ruleLimit} onChange={e=>setRuleLimit(e.target.value)} aria-label="Zielpreis in Euro"/></label><button type="button" onClick={addRule}>Preisregel speichern</button></div>
-   {message?<p role="status" className="rz-message">{message}</p>:null}
-   <div className="rz-rules">{checks.map(x=><article key={x.title} className={'rz-rule'+(x.matched?' is-hit':'')}>
-    <div><strong>{x.title}</strong><small>Ziel: {euro(x.limit)} · {x.price!==null?'Aktueller verifizierter Preis '+euro(x.price):'Kein derzeit verifizierter Preis'} </small></div>
-    <span>{x.matched?'Preisziel erreicht':x.checked?'Preisziel nicht erreicht':'Noch nicht prüfbar'}</span>
-    <button onClick={()=>updateRules(rules.filter(r=>r.title!==x.title))} aria-label={'Preisregel für '+x.title+' entfernen'}>Entfernen</button>
-   </article>)}{!checks.length?<div className="rz-empty">Noch keine Preisregeln gespeichert.</div>:null}</div>
+  {tab==='preise'?<section className="rz-panel"><div className="rz-panel-heading"><h2>Preisradar & Benachrichtigungen</h2><p>Private Preisziele, echte serverseitige Prüfung und dauerhaft gespeicherte Meldungen. Nur Daten mit bestätigtem aktivem Store-Angebot lösen einen Treffer aus.</p></div>
+   <ServerPriceAlerts priceGames={priceGames} localRules={rules} initialTitle={ruleTitle} onRulesChange={setServerRules}/>
    <h3>Beobachtete Store-Titel</h3><div className="rz-price-grid">{priced.map(([title,g])=><article key={title} className="rz-price-card">
-    <strong>{title}</strong><small>{activePrice(g)!==null?'Aktuell verifizierter Preis: '+euro(activePrice(g)):'Kein verifizierter aktiver Deal'}</small><small>Historischer Tiefstwert: {euro(g.low)}</small><div>{g.storeUrl?<a href={g.storeUrl} target="_blank" rel="noopener noreferrer">Store</a>:null}<button type="button" onClick={()=>{setRuleTitle(title);setMessage('Titel für eine Preisregel ausgewählt. Lege oben den Zielpreis fest.')}}>Preisziel setzen</button></div>
+    <strong>{title}</strong><small>{activePrice(g)!==null?'Aktuell verifizierter Preis: '+euro(activePrice(g)):'Kein verifizierter aktiver Deal'}</small><small>Historischer Tiefstwert: {euro(g.low)}</small><div>{g.storeUrl?<a href={g.storeUrl} target="_blank" rel="noopener noreferrer">Store</a>:null}<button type="button" onClick={()=>{setRuleTitle(title);document.querySelector('.rz-cloud-alerts')?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})}}>Preisziel setzen</button></div>
    </article>)}</div>
-   <p className="rz-muted">Diese historischen Werte ersetzen keine Live-Shop-Abfrage. Plattformübergreifende Preise werden nicht automatisch gleichgesetzt, weil Editionen und Angebote abweichen können.</p>
+   <p className="rz-muted">Historische Preisbeobachtungen sind keine Live-Shop-Abfrage. Unterschiedliche Editionen oder Konsolenpreise werden nicht automatisch gleichgesetzt.</p>
   </section>:null}
   {tab==='quellen'?<><RadarAppTools matched={matched}/><section className="rz-panel"><div className="rz-panel-heading"><h2>Datenqualität & Quellen</h2><p>Was das Radar tatsächlich weiß – und wo Ergebnisse lückenhaft oder älter sind.</p></div>
    <div className="rz-source-grid">{sources.map(x=><article key={x.name} className="rz-source"><div><strong>{x.name}</strong><span className={x.complete?'rz-complete':'rz-partial'}>{x.complete?'Als vollständig gemeldet':'Eingeschränkt / prüfen'}</span></div><p>{x.detail}</p><dl><dt>Letzter Datenstand</dt><dd>{day(x.date)}</dd><dt>Erfasste Einträge</dt><dd>{x.count??'Nicht angegeben'}</dd></dl></article>)}</div>

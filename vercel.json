@@ -1,4 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "ignoreCommand": "test \"$VERCEL_GIT_COMMIT_REF\" != main || echo \"$VERCEL_GIT_COMMIT_MESSAGE\" | grep -q '^chore: trigger Daily PlayStation Radar'"
+  "ignoreCommand": "test \"$VERCEL_GIT_COMMIT_REF\" != main || echo \"$VERCEL_GIT_COMMIT_MESSAGE\" | grep -q '^chore: trigger Daily PlayStation Radar'",
+  "crons": [
+    {
+      "path": "/api/radar/alerts/check",
+      "schedule": "0 8 * * *"
+    }
+  ]
 }

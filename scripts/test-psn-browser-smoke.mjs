@@ -31,14 +31,33 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
  const browser=await engine.launch({headless:true});
  try{
  for(const width of widths){
-  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:engine===webkit&&width<=430,deviceScaleFactor:width<=430?2:1,reducedMotion:width===320?'reduce':'no-preference'});
+  const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:engine===webkit&&width<=430,deviceScaleFactor:width<=430?2:1,reducedMotion:width===320?'reduce':'no-preference',serviceWorkers:'block'});
   const page=await context.newPage();
+  const testCloudRules=[];
+  await page.route('**/zentrale/api/price-alerts',async route=>{
+   const method=route.request().method();
+   if(method==='GET')return route.fulfill({json:{configured:true,rules:testCloudRules,events:[]}});
+   const body=route.request().postDataJSON()||{};
+   if(method==='POST'){
+    const row={title:body.title,target_price:body.limit,enabled:true,last_status:'unverified',last_checked_at:null};
+    const i=testCloudRules.findIndex(x=>x.title===row.title);
+    if(i>=0)testCloudRules[i]=row;else testCloudRules.push(row);
+    return route.fulfill({json:{saved:true}});
+   }
+   if(method==='DELETE'){
+    const i=testCloudRules.findIndex(x=>x.title===body.title);
+    if(i>=0)testCloudRules.splice(i,1);
+    return route.fulfill({json:{deleted:true}});
+   }
+   if(method==='PUT')return route.fulfill({json:{ok:true,checked:testCloudRules.length,created:0,matched:0}});
+   return route.fulfill({json:{read:true}});
+  });
   const clientErrors=[];
   page.on('pageerror',error=>clientErrors.push(String(error?.stack||error?.message||error)));
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/extra-sources?title=Test%20Game']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
@@ -119,12 +138,15 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       assert.equal(await page.locator('.rz-source').count(),4);
       assert.ok(await page.getByRole('button',{name:/App installieren/}).count(),'PWA install help missing');
       await page.getByRole('button',{name:'Preisregeln'}).click();
-      await page.locator('.rz-rule-editor select').selectOption({index:1});
+      await page.locator('.rz-alert-state.is-ready').waitFor();
+      await page.locator('.rz-cloud-editor select').selectOption({index:1});
       await page.getByRole('button',{name:'Preisregel speichern'}).click();
-      await page.locator('.rz-rules .rz-rule').first().waitFor();
-      assert.ok(await page.locator('.rz-rules .rz-rule').count(),'Price alert rule was not stored');
+      await page.locator('.rz-cloud-rule-list .rz-rule').first().waitFor();
+      assert.ok(await page.locator('.rz-cloud-rule-list .rz-rule').count(),'Cloud price rule was not stored');
       await page.reload({waitUntil:'domcontentloaded'});
       await page.locator('.rz-page').waitFor();
+      await page.getByRole('button',{name:'Preisregeln'}).click();
+      await page.locator('.rz-cloud-rule-list .rz-rule').first().waitFor();
      }
      if(route==='/museum'){
       await page.locator('.exp-museum-grid').waitFor({state:'attached'});
@@ -135,8 +157,12 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       assert.ok(await page.getByRole('button',{name:/Als PDF drucken/}).count(),'Print magazine action missing');
      }
      if(route==='/preise')assert.ok(await page.locator('.price-analysis').count()>0,'Historical price charts missing');
+     if(route==='/zentrale')await captureQa(page,engine.name(),width,'radar-notifications');
      if(route==='/radar')assert.ok(await page.locator('.magazine').count(),'Daily magazine missing');
      if(route==='/mein-playstation?view=games')assert.ok(await page.locator('.psn-shell').count(),'PSN profile shell missing');
+     if(route!=='/zentrale'&&route!=='/mein-playstation?view=games')
+      await captureQa(page,engine.name(),width,'section-'+route.slice(1).replaceAll('/','-'));
+
     }
    }
 
