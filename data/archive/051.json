@@ -1,7 +1,7 @@
 {
   "date": "26.10.2026",
   "edition": "AUSGABE #051",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
+  "newHeadline": "RADAR-CHECK AKTUELL",
   "newCount": "26.10 · LIVE",
   "leadTitle": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
   "leadDate": "21.10.2026",
@@ -87,26 +87,19 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
-      "url": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
-      "category": "news",
-      "score": 50
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-26T18:07:07.415Z",
+    "checkedAt": "2026-10-26T18:56:06.237Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-10-26T18:06:48.803Z",
+    "lastSuccessfulCheck": "2026-10-26T18:55:21.595Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-26T18:06:48.803Z",
+    "checkedAt": "2026-10-26T18:55:21.595Z",
     "errors": [],
     "sources": [
       {
@@ -253,7 +246,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-26T18:06:59.952Z",
+    "checkedAt": "2026-10-26T18:56:00.257Z",
     "titles": 8,
     "fetched": 5,
     "enriched": 5,
@@ -307,13 +300,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-26T18:06:59.493Z",
+    "checkedAt": "2026-10-26T18:55:59.865Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-26T18:06:59.592Z",
+    "checkedAt": "2026-10-26T18:55:59.955Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -326,7 +319,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-26T18:07:07.228Z",
+    "checkedAt": "2026-10-26T18:56:06.020Z",
     "verified": 3,
     "missing": [
       "Chained Echoes"
@@ -337,7 +330,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-26T18:06:58.234Z",
+    "checkedAt": "2026-10-26T18:55:50.626Z",
     "date": "26.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -363,7 +356,7 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-26T14:20:06.092Z",
+    "checkedAt": "2026-10-26T18:07:07.627Z",
     "berlinDate": "2026-10-26",
     "newPostsToday": 1,
     "staleRelativeCopyFixed": 0,

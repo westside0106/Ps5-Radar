@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26T18:06:48.803Z",
+  "checkedAt": "2026-10-26T18:55:21.595Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,14 +54,7 @@
         "pubDate": "Wed, 21 Oct 2026 14:00:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
-        "link": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
-        "pubDate": "Mon, 26 Oct 2026 16:00:00 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
@@ -149,7 +142,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-26T18:07:07.627Z",
+      "checkedAt": "2026-10-26T18:56:06.453Z",
       "parsed": 6,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -170,7 +163,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241530,
+    "bytes": 241526,
     "updated": true,
     "parsed": {
       "trial": false,
