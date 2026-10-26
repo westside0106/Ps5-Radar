@@ -61,3 +61,22 @@
 @media(forced-colors:active){
  .psn-shell select{color-scheme:normal;background-color:Field!important;color:FieldText!important;-webkit-text-fill-color:currentColor;border-color:ButtonBorder}
 }
+
+/* #67: Sony-earned Trophy Hunter heatmap; private, observed dates only. */
+.psn-trophy-heatmap{display:grid;gap:12px;padding:clamp(13px,2.4vw,24px);margin:13px 0 20px;border:1px solid #4d81aa;border-radius:18px;background:radial-gradient(ellipse at 100% 0,#24507d66,transparent 55%),linear-gradient(145deg,#143653,#0b1c32);box-shadow:0 18px 40px #0006}
+.psn-heatmap-head{display:flex;justify-content:space-between;align-items:start;gap:15px;flex-wrap:wrap}
+.psn-heatmap-head h3{font-size:clamp(22px,2.8vw,31px);letter-spacing:-.04em;color:#f5faff;line-height:1.2;margin:5px 0 7px}
+.psn-heatmap-head p{font-size:12px;color:#b6d0e4;line-height:1.6;margin:0;max-width:59ch}
+.psn-heatmap-metrics{display:grid;align-content:center;gap:4px;padding:11px 15px;border:1px solid #638eb4;border-radius:12px;background:#173e60;min-width:140px}
+.psn-heatmap-metrics strong{font-size:28px;color:white;font-variant-numeric:tabular-nums}
+.psn-heatmap-metrics span{font-size:10px;color:#bdd9ee}
+.psn-heatmap-scroll{max-width:100%;overflow-x:auto;scrollbar-width:thin;padding:9px 3px 13px}
+.psn-heatmap-calendar{display:grid;grid-template-rows:repeat(7,11px);grid-auto-flow:column;grid-auto-columns:11px;gap:4px;width:max-content}
+.psn-heatmap-cell{display:inline-block;width:11px;height:11px;border-radius:3px;border:1px solid #bed0e71a;background:#223b55}
+.psn-heatmap-cell.level-1{background:#286596}.psn-heatmap-cell.level-2{background:#3c91c9}.psn-heatmap-cell.level-3{background:#74baf0}.psn-heatmap-cell.level-4{background:#b5dfff}
+.psn-heatmap-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:11px;color:#b4d2e8}
+.psn-heatmap-legend{display:flex;gap:5px;align-items:center;font-size:10px}
+.psn-heatmap-legend .psn-heatmap-cell{flex:none}
+.psn-heatmap-note,.psn-heatmap-empty{font-size:11px;line-height:1.65;color:#a6c6de;margin:0}
+.psn-heatmap-empty{padding:12px;border:1px dashed #416b8a;border-radius:9px;color:#c4daea}
+@media(max-width:690px){.psn-trophy-heatmap{padding:13px}.psn-heatmap-calendar{grid-template-rows:repeat(7,10px);grid-auto-columns:10px;gap:4px}.psn-heatmap-cell{width:10px;height:10px}}
