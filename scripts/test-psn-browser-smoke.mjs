@@ -100,9 +100,9 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     assert.ok(librarySize.scroll<=librarySize.client+3,engine.name()+' collection layout overflow: '+JSON.stringify(librarySize));
     await page.reload({waitUntil:'domcontentloaded'});
     await page.locator('.psn-collection-tools').waitFor();
-    assert.ok(await page.getByRole('button',{name:/CI Collection/}).count(),'Collection missing after reload');
-    assert.ok(await page.locator('.psn-hub-game').filter({hasText:'Unplayed CI Test'}).count(),'Manual game missing after reload');
-    assert.ok(await page.locator('.psn-library-shelf').count(),'View preference missing after reload');
+    await page.locator('.psn-collection-selector').getByRole('button',{name:/CI Collection/}).waitFor({timeout:10000});
+    await page.locator('.psn-hub-game').filter({hasText:'Unplayed CI Test'}).first().waitFor({timeout:10000});
+    await page.locator('.psn-library-shelf').waitFor({timeout:10000});
    }
    if(width===390){
     await page.getByRole('button',{name:'Trophäen-Zentrale'}).click();
