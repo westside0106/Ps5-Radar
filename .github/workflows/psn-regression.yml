@@ -6,6 +6,11 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+# PR edits share one runner slot; redundant queued builds are canceled instead of
+# consuming minutes for a commit that has already been superseded.
+concurrency:
+  group: psn-regression-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
   psn-metadata:
     runs-on: ubuntu-latest
