@@ -131,6 +131,19 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await page.locator('.psn-collection-selector').getByRole('button',{name:/CI Collection/}).waitFor({timeout:10000});
     await page.locator('.psn-hub-game').filter({hasText:'Unplayed CI Test'}).first().waitFor({timeout:10000});
     await page.locator('.psn-library-shelf').waitFor({timeout:10000});
+    const label=await page.locator('.psn-hub-library-head').innerText();
+    assert.match(label,/1 Spiel(?!e)/,'Use singular German game count');
+    assert.match(label,/eigene Einträge/,'Manual-only library must not claim PSN origin');
+    const sortContrast=await page.locator('.psn-browser-fields select').evaluate(el=>{
+      const style=getComputedStyle(el);
+      const component=rgb=>rgb.match(/\d+/g)?.slice(0,3).map(Number)||[0,0,0];
+      const toLinear=v=>{const n=v/255;return n<=0.04045?n/12.92:((n+0.055)/1.055)**2.4};
+      const light=rgb=>{const [r,g,b]=component(rgb).map(toLinear);return .2126*r+.7152*g+.0722*b};
+      const a=light(style.color),b=light(style.backgroundColor);
+      return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);
+    });
+    assert.ok(sortContrast>=4.5,engine.name()+' dark sort select lacks text contrast: '+sortContrast);
+    await page.locator('.psn-hub-library-head').scrollIntoViewIfNeeded();
     await captureQa(page,engine.name(),width,'shelf');
    }
    if(width===390){
@@ -139,6 +152,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await mission.waitFor();
     assert.ok(await mission.getByText('Deine Platin-Missionen').count(),'Platin mission heading missing');
     await mission.getByRole('heading',{name:'Unplayed CI Test'}).waitFor({timeout:10000});
+    await mission.scrollIntoViewIfNeeded();
     await captureQa(page,engine.name(),width,'trophies');
     const preview=page.locator('.psn-trophy-static-preview');
     await preview.waitFor();
@@ -160,7 +174,10 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await page.getByPlaceholder('Titel eingeben …').fill('CI Wide Game');
     await page.getByRole('button',{name:'Zum Backlog hinzufügen'}).click();
     await page.locator('.psn-hub-game').filter({hasText:'CI Wide Game'}).first().waitFor();
-    await captureQa(page,engine.name(),width,'desktop');
+    await page.locator('.psn-cinema-hero').scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'desktop-hero');
+    await page.locator('.psn-hub-library-head').scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'desktop-library');
    }
    // Live PSN data is not available in CI; exercise the real cards whenever fixture data is present.
    const gameCard=page.locator('.psn-hub-game').first();
