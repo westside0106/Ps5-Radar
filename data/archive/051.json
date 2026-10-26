@@ -1,23 +1,23 @@
 {
   "date": "26.10.2026",
   "edition": "AUSGABE #051",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
   "newCount": "26.10 · LIVE",
   "leadTitle": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
   "leadDate": "21.10.2026",
   "leadMeta": "Segelt ab morgen in „Isles of Abyss“: Die größte kostenlose Erweiterung von „Once Human“ erscheint auf PS5.",
   "leadPrice": null,
   "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg",
-  "secondary1Title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
-  "secondary1Date": "23.10.2026",
-  "secondary1Meta": "Erfahrt, wie Housemarque und Nixxes die epischen Bosse von Saros erschaffen haben.",
+  "secondary1Title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
+  "secondary1Date": "26.10.2026",
+  "secondary1Meta": "Feiert Liberty Day in Helldivers 2: Retro-Gewehr als Geschenk, Minispiele, Schiffsdekoration, Super Merch und mehr.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/ec63432eb0db6548cd70683f739620ad6900ef2f-scaled.jpg",
-  "secondary2Title": "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/fed5ec0fe94d9cc12ff05f2c8c96518bb345439f-scaled.png",
+  "secondary2Title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
   "secondary2Date": "23.10.2026",
-  "secondary2Meta": "Bei der Aktion „Planet der Angebote\" im PlayStation Store gibt es nur für kurze Zeit Rabatte auf eine große Auswahl von Spielen, darunter…",
+  "secondary2Meta": "Erfahrt, wie Housemarque und Nixxes die epischen Bosse von Saros erschaffen haben.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4840acc49660b14d14f188543cec3418e2725e88-scaled.png",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/ec63432eb0db6548cd70683f739620ad6900ef2f-scaled.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -77,29 +77,36 @@
       "type": "editorial"
     },
     {
-      "title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
-      "url": "https://blog.de.playstation.com/2026/10/23/saros-hinter-den-kulissen-der-epischen-herrscher-von-carcosa/",
+      "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
+      "url": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
       "type": "editorial"
     },
     {
-      "title": "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet",
-      "url": "https://blog.de.playstation.com/2026/10/23/die-aktion-planet-der-angebote-ist-im-playstation-store-gelandet/",
+      "title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
+      "url": "https://blog.de.playstation.com/2026/10/23/saros-hinter-den-kulissen-der-epischen-herrscher-von-carcosa/",
       "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
+      "url": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
+      "category": "news",
+      "score": 50
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-26T07:19:36.710Z",
+    "checkedAt": "2026-10-26T14:20:05.972Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-10-26T07:19:20.249Z",
+    "lastSuccessfulCheck": "2026-10-26T14:19:42.646Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-26T07:19:20.249Z",
+    "checkedAt": "2026-10-26T14:19:42.646Z",
     "errors": [],
     "sources": [
       {
@@ -142,8 +149,8 @@
   },
   "gameDetails": {
     "Once Human: „Isles of Abyss“ erscheint morgen auf PS5": {},
+    "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns": {},
     "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa": {},
-    "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet": {},
     "Sniper Elite: Resistance": {
       "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
       "publisher": "REBELLION INTERACTIVE",
@@ -246,7 +253,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-26T07:19:29.022Z",
+    "checkedAt": "2026-10-26T14:19:56.303Z",
     "titles": 8,
     "fetched": 5,
     "enriched": 5,
@@ -300,13 +307,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-26T07:19:28.540Z",
+    "checkedAt": "2026-10-26T14:19:55.977Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-26T07:19:28.647Z",
+    "checkedAt": "2026-10-26T14:19:56.051Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -319,7 +326,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-26T07:19:36.521Z",
+    "checkedAt": "2026-10-26T14:20:05.824Z",
     "verified": 3,
     "missing": [
       "Chained Echoes"
@@ -330,7 +337,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-26T07:19:27.668Z",
+    "checkedAt": "2026-10-26T14:19:54.791Z",
     "date": "26.10.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -341,22 +348,22 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg"
       },
       {
+        "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
+        "date": "26.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/fed5ec0fe94d9cc12ff05f2c8c96518bb345439f-scaled.png"
+      },
+      {
         "title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
         "date": "23.10.2026",
         "url": "https://blog.de.playstation.com/2026/10/23/saros-hinter-den-kulissen-der-epischen-herrscher-von-carcosa/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/ec63432eb0db6548cd70683f739620ad6900ef2f-scaled.jpg"
-      },
-      {
-        "title": "Die Aktion „Planet der Angebote\" ist im PlayStation Store gelandet",
-        "date": "23.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/23/die-aktion-planet-der-angebote-ist-im-playstation-store-gelandet/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/4840acc49660b14d14f188543cec3418e2725e88-scaled.png"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-26T02:32:36.413Z",
+    "checkedAt": "2026-10-26T07:19:36.916Z",
     "berlinDate": "2026-10-26",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,

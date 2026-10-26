@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-10-26T07:19:20.249Z",
+  "checkedAt": "2026-10-26T14:19:42.646Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
+        "link": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
+        "pubDate": "Mon, 26 Oct 2026 10:00:00 +0000"
+      },
       {
         "title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
         "link": "https://blog.de.playstation.com/2026/10/23/saros-hinter-den-kulissen-der-epischen-herrscher-von-carcosa/",
@@ -47,14 +52,16 @@
         "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
         "link": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
         "pubDate": "Tue, 20 Oct 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Saros: Kostenloses Zenith-Update ab sofort verfügbar",
-        "link": "https://blog.de.playstation.com/2026/10/19/das-update-saros-zenith-das-heute-erscheint-liefert-mehr-spielmoeglichkeiten-fuer-neulinge-und-alte-hasen/",
-        "pubDate": "Mon, 19 Oct 2026 12:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
+        "link": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
+        "pubDate": "Mon, 26 Oct 2026 10:00:00 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
@@ -142,7 +149,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-26T07:19:36.916Z",
+      "checkedAt": "2026-10-26T14:20:06.092Z",
       "parsed": 6,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -158,7 +165,7 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 598997
+    "bytes": 600014
   },
   "eaPlay": {
     "ok": true,
