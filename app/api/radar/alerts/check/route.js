@@ -1,6 +1,7 @@
 import {timingSafeEqual} from 'node:crypto';
 import {alertStorageConfig} from '../../../../lib/radar-alerts-db.mjs';
 import {scanPriceAlerts} from '../../../../lib/radar-price-alert-scan.mjs';
+import priceHistory from '../../../../data/price-history.json';
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
 export const maxDuration=30;
@@ -13,6 +14,6 @@ export async function GET(request){
   return Response.json({error:'Unauthorized'},{status:401,headers:secure});
  const config=alertStorageConfig();
  if(!config)return Response.json({error:'Alert storage unavailable'},{status:503,headers:secure});
- try{return Response.json({ok:true,...await scanPriceAlerts({config})},{headers:secure})}
+ try{return Response.json({ok:true,...await scanPriceAlerts({config,source:priceHistory})},{headers:secure})}
  catch{return Response.json({error:'Alert scan failed'},{status:503,headers:secure})}
 }
