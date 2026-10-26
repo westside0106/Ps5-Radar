@@ -3,7 +3,7 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-25T12:38:41.870Z",
+  "checkedAt": "2026-10-26T14:18:17.662Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-25T12:38:41.870Z",
+      "observedAt": "2026-10-26T14:18:17.662Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-25T12:38:41.870Z",
+      "observedAt": "2026-10-26T14:18:17.662Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-25T12:38:41.870Z",
+      "observedAt": "2026-10-26T14:18:17.662Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -1999,6 +1999,24 @@
       "regularPriceMinor": 2499,
       "genres": [
         "Platformer"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9ndvd0tsd1vl",
+      "id": "9ndvd0tsd1vl",
+      "title": "Ayasa: Shadows of Silence",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/ayasa-shadows-of-silence/9ndvd0tsd1vl",
+      "cover": "https://store-images.s-microsoft.com/image/apps.1317.13611442071593413.b43024e0-6bce-4776-8185-4500c5f3527e.3a2b5401-9543-4914-9546-8a9ca2449c7a?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1599,
+      "regularPriceMinor": 1999,
+      "genres": [
+        "Action & Abenteuer",
+        "Platformer",
+        "Rätsel & Wissen"
       ],
       "services": []
     },
@@ -16081,22 +16099,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9mwrwgkjxjb7",
-      "id": "9mwrwgkjxjb7",
-      "title": "Nikoderiko: The Magical World - Director's Cut",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/nikoderiko-the-magical-world-directors-cut/9mwrwgkjxjb7",
-      "cover": "https://store-images.s-microsoft.com/image/apps.46218.13833551682349844.5bfc1a53-89df-4c91-a308-37a8b5eca311.ef1c7a4d-1bf1-4796-92d1-572c7fb65074?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": 2999,
-      "genres": [
-        "Platformer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9n3lgkgf3cc2",
       "id": "9n3lgkgf3cc2",
       "title": "Nine Sols",
@@ -26022,22 +26024,6 @@
       ]
     },
     {
-      "key": "xbox:product:bw9tffj50mkv",
-      "id": "bw9tffj50mkv",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": null,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bsxsl6wbj0v7",
       "id": "bsxsl6wbj0v7",
       "title": "Viva Piñata",
@@ -26047,6 +26033,22 @@
         "xbox-series"
       ],
       "priceMinor": 1499,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bw9tffj50mkv",
+      "id": "bw9tffj50mkv",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
+      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": null,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
