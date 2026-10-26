@@ -1,0 +1,65 @@
+/* Private gaming museum and print-first personal monthly magazine */
+.exp-shell{min-height:100vh;background:radial-gradient(ellipse 75% 520px at 60% 0%,#2549748a,transparent),#071424;color:#ecf5ff;padding:clamp(12px,2.4vw,30px)}
+.exp-page{max-width:1290px;margin:0 auto}
+.exp-cover{padding:clamp(23px,4vw,50px);border:1px solid #557c9b;border-radius:23px;background:linear-gradient(130deg,#1a3b62,#0a1e35);box-shadow:0 25px 64px #0007;position:relative;overflow:hidden}
+.exp-cover-museum:after{content:'';position:absolute;right:-8%;bottom:-40%;width:55%;height:110%;border-radius:50%;background:radial-gradient(circle,#459fff25,transparent 65%);pointer-events:none}
+.exp-kicker{font-size:10px;color:#a2d5f8;font-weight:800;letter-spacing:.16em}
+.exp-cover h1{font-size:clamp(30px,5vw,60px);line-height:1.04;letter-spacing:-.05em;margin:12px 0}
+.exp-cover p{max-width:700px;font-size:14px;line-height:1.7;color:#bed7ec}
+.exp-metrics{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:22px}
+.exp-metrics span{font-size:11px;color:#bbd6e9;border:1px solid #4c7595;border-radius:10px;background:#0e2945;padding:9px 11px}
+.exp-metrics strong{color:#f2f9ff;font-size:18px}
+.exp-toolbar,.exp-print-toolbar{display:flex;gap:11px;align-items:end;flex-wrap:wrap;margin:20px 0;padding:14px;border:1px solid #3d6489;background:#0c2138;border-radius:13px}
+.exp-toolbar label,.exp-print-toolbar label{display:grid;gap:5px;font-size:11px;color:#b3d0e6;min-width:min(100%,220px)}
+.exp-toolbar select,.exp-toolbar input,.exp-print-toolbar select{min-height:45px;border:1px solid #638dad;border-radius:9px;padding:9px 12px;background:#102a44;color:#f5faff;color-scheme:dark;font-size:14px;max-width:100%}
+.exp-switch{margin-left:auto;display:flex;gap:5px;flex-wrap:wrap}
+.exp-switch button,.exp-print-toolbar button,.exp-print-toolbar>a{padding:11px 14px;border:1px solid #6a97c1;border-radius:10px;background:#173d61;color:#f1faff;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;min-height:44px}
+.exp-switch button[aria-pressed=true]{background:#2c78ae;border-color:#a7dcff}
+.exp-page>h2{font-size:clamp(22px,3vw,32px);letter-spacing:-.04em;margin:22px 0 14px}
+.exp-page>h2 small{font-size:12px;color:#accce2;font-weight:400;letter-spacing:0}
+.exp-museum-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(154px,1fr));gap:16px;margin:13px 0 30px}
+.exp-exhibit{min-width:0;border:1px solid #416388;border-radius:13px;overflow:hidden;background:linear-gradient(155deg,#173550,#0d253b);box-shadow:0 12px 26px #0005}
+.exp-art{position:relative;display:grid;place-items:center;background:radial-gradient(circle,#2e5880,#0d2238);aspect-ratio:3/4;overflow:hidden}
+.exp-art img{width:100%;height:100%;object-fit:cover}
+.exp-art>span{font-size:19px;font-weight:900;letter-spacing:.13em;color:#96cbe7}
+.exp-favorite{position:absolute;right:7px;top:7px;background:#092235;color:#e8c668;border:1px solid #c4a052;border-radius:7px;padding:3px 8px;font-size:14px}
+.exp-exhibit-caption{display:grid;gap:5px;padding:10px}
+.exp-exhibit-caption strong{font-size:12px;line-height:1.45;overflow-wrap:anywhere}
+.exp-exhibit-caption small{font-size:10px;line-height:1.5;color:#a6c9df}
+.exp-museum-shelf{gap:23px 11px;padding:13px 12px 26px;border-radius:14px;background:repeating-linear-gradient(0deg,transparent 0,transparent 298px,#58728e55 299px,#08172b 307px,transparent 311px)}
+.exp-museum-shelf .exp-exhibit{border:0;background:transparent;box-shadow:none}
+.exp-museum-shelf .exp-art{box-shadow:0 12px 24px #000c;border-radius:6px}
+.exp-museum-shelf .exp-exhibit-caption{padding:9px 3px}
+.exp-empty{border:1px dashed #6488a8;border-radius:14px;padding:30px 20px;color:#b5d0e3;background:#0a2139}
+.exp-empty a,.exp-footer a{display:inline-block;border:1px solid #5c8cb4;border-radius:9px;padding:10px 13px;color:#dbf1ff;text-decoration:none;background:#153e60;font-size:12px}
+.exp-footer{display:flex;gap:9px;flex-wrap:wrap;margin:23px 0}
+.exp-footnote{font-size:11px;line-height:1.7;color:#a9c9de}
+.exp-print-toolbar{justify-content:flex-end}
+.exp-print-toolbar label{margin-right:auto}
+.exp-print-toolbar button{background:#2878af;border-color:#89d4ff}
+.exp-magazine{max-width:1080px}
+.exp-magazine-cover{position:relative;isolation:isolate;min-height:470px;border-radius:20px;overflow:hidden;border:1px solid #527697;background:#173753;box-shadow:0 22px 46px #0007;display:flex;align-items:end}
+.exp-magazine-photo{position:absolute;inset:0;z-index:-2}
+.exp-magazine-photo img{width:100%;height:100%;object-fit:cover;filter:brightness(.7)}
+.exp-magazine-cover:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#030a16ef,#06172bac 52%,#091b3655)}
+.exp-magazine-overlay{padding:clamp(22px,5vw,55px)}
+.exp-magazine-overlay>span{font-size:12px;letter-spacing:.26em;color:#b4dbfc;font-weight:800}
+.exp-magazine-overlay h1{font-size:clamp(51px,10vw,116px);line-height:.9;letter-spacing:-.09em;font-weight:950;margin:20px 0}
+.exp-magazine-overlay p{font-size:clamp(20px,3vw,30px);text-transform:capitalize;margin:12px 0}
+.exp-magazine-overlay strong{display:block;font-size:12px;color:#d6eaff}
+.exp-magazine-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:17px 0}
+.exp-editorial{padding:23px;border-radius:13px;border:1px solid #456785;background:#102b44;min-width:0}
+.exp-editorial h2{font-size:clamp(22px,3vw,30px);letter-spacing:-.045em;margin:6px 0 13px}
+.exp-editorial h3{font-size:16px;color:#d1eaff}
+.exp-editorial p,.exp-editorial li{font-size:12px;line-height:1.7;color:#c6d9e8}
+.exp-editorial ul,.exp-editorial ol{padding-left:20px}
+.exp-editorial li{padding:4px 0}
+.exp-editorial li strong{color:white}
+.exp-editorial li p{margin:4px 0}
+.exp-magazine-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:15px 0}
+.exp-magazine-stats div{padding:9px;border:1px solid #567992;background:#193c5b;border-radius:9px;display:grid;gap:4px}
+.exp-magazine-stats strong{font-size:23px;color:#fff}
+.exp-magazine-stats small{font-size:10px;color:#a7c8dd;line-height:1.4}
+.exp-shell a:focus-visible,.exp-shell button:focus-visible,.exp-shell input:focus-visible,.exp-shell select:focus-visible{outline:3px solid #9bd8ff;outline-offset:3px}
+@media(max-width:680px){.exp-toolbar label{width:100%}.exp-switch{margin-left:0;width:100%}.exp-switch button{flex:1}.exp-museum-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.exp-magazine-columns{grid-template-columns:1fr}.exp-magazine-cover{min-height:400px}.exp-magazine-overlay h1{font-size:59px}.exp-magazine-overlay{padding:25px}}
+@media print{@page{size:A4;margin:10mm}html,body{background:white!important;color:#141c29!important}.radar-global-navigation,.watchlist-dock,.exp-print-toolbar,.exp-footer{display:none!important}.exp-shell{background:white!important;color:#141c29!important;padding:0!important}.exp-page{max-width:none!important}.exp-magazine-cover{min-height:240mm;page-break-after:always;box-shadow:none;border:0;border-radius:0;color:white!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}.exp-magazine-overlay h1{font-size:76pt}.exp-magazine-columns{grid-template-columns:1fr;gap:0;margin:0}.exp-editorial{border:0;border-bottom:1px solid #dce3ea;border-radius:0;background:white!important;color:#162537!important;padding:12mm 4mm;break-inside:avoid}.exp-editorial h2,.exp-editorial h3,.exp-editorial p,.exp-editorial li,.exp-editorial strong,.exp-footnote{color:#162537!important}.exp-magazine-stats div{background:#eaf1f9!important;border:1px solid #d4e1ed;print-color-adjust:exact;-webkit-print-color-adjust:exact}.exp-magazine-stats strong{color:#14273e!important}.exp-magazine-stats small{color:#3b5066!important}.exp-footnote{font-size:8pt}}
