@@ -69,3 +69,16 @@
   .price-radar-page .watchlist-card-meta{gap:4px}
   .price-radar-page .watchlist-card-meta span{font-size:8px}
 }
+
+/* #66: Evidence-led history, not a third-party or all-time price comparison. */
+.price-analysis{display:grid;gap:9px;padding:12px;margin:10px 0 12px;border:1px solid #3c678b;border-radius:11px;background:linear-gradient(145deg,#122d48,#0a2035);min-width:0}
+.price-analysis-head{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#e9f6ff;font-size:12px}
+.price-analysis-head span{font-size:10px;color:#a8cce6}
+.price-analysis-chart{display:block;width:100%;height:90px;border-radius:8px;background:linear-gradient(180deg,#1d3f6055,#0a2236)}
+.price-analysis-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.price-analysis-values>div{min-width:0;padding:7px;border:1px solid #335b7a;border-radius:7px;background:#153550}
+.price-analysis-values small{display:block;font-size:9px;line-height:1.35;color:#a9d0eb}
+.price-analysis-values strong{display:block;margin-top:4px;font-size:12px;color:#fff;font-variant-numeric:tabular-nums}
+.price-analysis-note,.price-analysis-unknown{font-size:10px;line-height:1.5;color:#b2cfe3;margin:0}
+.price-radar-shell .watchlist-card-actions a{min-height:42px}
+@media(max-width:440px){.price-analysis{padding:8px}.price-analysis-values small{font-size:9px}.price-analysis-values strong{font-size:11px}}
