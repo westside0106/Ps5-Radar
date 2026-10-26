@@ -91,6 +91,19 @@ export default function PlayStationHub({titles=[],played=[]}){
  const [newCollectionName,setNewCollectionName]=useState('');
  const [collectionMessage,setCollectionMessage]=useState('');
  const [viewMode,setViewMode]=useState('cards');
+ // Browser-only catalog snapshot for the private visual museum; never implies PSN ownership.
+ useEffect(()=>{
+  if(!Array.isArray(played)||!played.length)return;
+  const manifest=played.filter(g=>!isMediaApp(g)).slice(0,1500).map(g=>({
+   id:gameKey(g),name:String(g.name||g.titleName||'Spiel').slice(0,160),
+   cover:cover(g)||null,platform:String(g.platform||'').slice(0,36)
+  })).filter(g=>g.id);
+  try{
+   localStorage.setItem('psn-museum-library-v1',JSON.stringify(manifest));
+   window.dispatchEvent(new Event('psn-museum-update'));
+  }catch{}
+ },[played]);
+
  useEffect(()=>setVisibleGames(36),[libraryType,metadataFilter,search,order,activeCollection,viewMode]);
  useEffect(()=>setVisibleTrophyGames(36),[min,search,order]);
  useEffect(()=>{
