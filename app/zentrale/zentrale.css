@@ -132,3 +132,7 @@
 .rz-alert-event button{flex:none;border:1px solid #6f9fbd;background:#1a4b70;color:white;border-radius:9px;padding:9px 11px;min-height:42px;cursor:pointer}
 .rz-alert-event>span{font-size:11px;color:#afd5e9}
 @media(max-width:650px){.rz-alert-intro{padding:15px}.rz-cloud-editor{grid-template-columns:1fr}.rz-cloud-editor>button{grid-column:auto}.rz-scan-now{width:100%}.rz-alert-event{align-items:start;flex-wrap:wrap}}
+
+.rz-alert-fallback{display:grid;gap:12px;padding:16px;border:1px solid #9b815a;border-radius:12px;background:#2b2d2a}
+.rz-alert-fallback h4{margin:0;font-size:17px;color:#f8e6c5}
+.rz-alert-fallback p{font-size:12px;line-height:1.6;color:#e6dbcc;margin:0}
