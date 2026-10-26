@@ -1,6 +1,7 @@
 'use client';
 import {useEffect,useMemo,useState} from 'react';
 import {trophySetCandidates,trophyId,baseTrophy,platinumSummary} from '../../lib/psn-platinum-plan.mjs';
+import {recordEarnedTrophies} from '../../lib/psn-trophy-activity.mjs';
 
 const asIds=value=>Array.isArray(value)?value.filter(v=>typeof v==='string'&&v.length<100).slice(0,300):[];
 function storedGoals(setId){
@@ -26,7 +27,7 @@ export default function PlatinumTrophyGoals({game,titles=[],goal,onChange,onDirt
   const params=new URLSearchParams({id:String(selectedSet.npCommunicationId),service:selectedSet.npServiceName||'trophy',...(refresh>0?{fresh:'1'}:{})});
   fetch('/mein-playstation/api/trophies?'+params,{credentials:'same-origin',cache:'no-store',signal:controller.signal})
    .then(async response=>{const json=await response.json();if(!response.ok)throw Error(json.error||'Sony-Trophäen konnten nicht geladen werden');return json})
-   .then(json=>{if(!controller.signal.aborted){setData(Array.isArray(json.trophies)?json.trophies:[]);setState('ready')}})
+   .then(json=>{if(!controller.signal.aborted){setData(Array.isArray(json.trophies)?json.trophies:[]);recordEarnedTrophies(String(selectedSet.npCommunicationId),json.trophies||[]);setState('ready')}})
    .catch(e=>{if(!controller.signal.aborted){setState('error');setError(e.message)}})
   return()=>controller.abort();
  },[selectedSet?.npCommunicationId,selectedSet?.npServiceName,refresh]);
