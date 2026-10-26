@@ -89,7 +89,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     const dialog=page.getByRole('dialog',{name:/Spieldetails/i});
     await dialog.locator('.psn-game-modal-collections > summary').click();
     await dialog.getByRole('checkbox',{name:'CI Collection'}).check();
-    await dialog.getByRole('button',{name:'Schließen'}).click();
+    await dialog.locator('.psn-modal-close').click();
     await page.locator('.psn-collection-selector').getByRole('button',{name:/CI Collection/}).click();
     await card.waitFor();
     await page.getByRole('button',{name:'Liste',exact:true}).click();
@@ -131,7 +131,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await dialog.waitFor();
     const modalSize=await dialog.evaluate(el=>({width:el.getBoundingClientRect().width,viewport:innerWidth,scrollWidth:el.scrollWidth,clientWidth:el.clientWidth}));
     assert.ok(modalSize.width<=modalSize.viewport+1&&modalSize.scrollWidth<=modalSize.clientWidth+2,engine.name()+' modal horizontal overflow: '+JSON.stringify(modalSize));
-    await dialog.getByRole('button',{name:'Schließen'}).click();
+    await dialog.locator('.psn-modal-close').click();
     assert.equal(await dialog.count(),0);
    }
 
