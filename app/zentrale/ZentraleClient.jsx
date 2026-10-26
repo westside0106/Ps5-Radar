@@ -113,6 +113,10 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
     <article className="rz-card"><span className="rz-kicker">PS+ NEU ERFASST</span><h3>Aktuelle Katalogänderungen</h3><ul>{recentlyAdded.length?recentlyAdded.map(x=><li key={x.id+'-'+x.date}><span>{x.title}</span><small>{day(x.date)}</small></li>):<li>Keine neu erfassten Titel im aktuellen Datensatz.</li>}</ul><a href="/ps-plus">Katalog öffnen</a></article>
     <article className="rz-card"><span className="rz-kicker">BEVORSTEHENDE TERMINE</span><h3>Kalender-Vorschau</h3><ul>{earliest.length?earliest.map(x=><li key={x.id}><span>{x.title}</span><small>{day(x.date)}</small></li>):<li>Derzeit keine bestätigten zukünftigen Termine hinterlegt.</li>}</ul><button onClick={()=>switchTab('kalender')}>Kalender öffnen</button></article>
    </div>
+   <div className="rz-tiles rz-experience-tiles">
+    <article className="rz-card"><span className="rz-kicker">GAMING-MUSEUM</span><h3>Deine virtuelle Sammlung</h3><p>Individuelle Cover-Galerie, Franchise-Sammlungen und deine Platin-Ziele als Ausstellung.</p><a href="/museum">Museum besuchen</a></article>
+    <article className="rz-card"><span className="rz-kicker">PERSONAL EDITION</span><h3>Mein Gaming-Magazin</h3><p>Deine persönlichen Monatsausgaben mit Spielplänen und lokal belegten Fortschritten. Im Browser als PDF druckbar.</p><a href="/magazin">Monatsmagazin gestalten</a></article>
+   </div>
    {matched.length?<aside className="rz-matches" role="status"><strong>{matched.length} lokale Preisregel{matched.length===1?' erfüllt':'n erfüllt'}</strong><p>Aktuell erfasste aktive Angebote erreichen deinen selbst gewählten Zielpreis.</p><button onClick={()=>switchTab('preise')}>Treffer anzeigen</button></aside>:null}
   </div>:null}
   {tab==='suche'?<section className="rz-panel"><div className="rz-panel-heading"><h2>Alles durchsuchen</h2><p>PS+, Xbox, Preise, Magazin-Archiv und lokal vorgemerkte Spiele. Einzelne Editionen bleiben separate Treffer.</p></div>
