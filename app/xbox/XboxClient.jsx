@@ -1,5 +1,5 @@
 'use client';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import DetailTile from '../radar/DetailTile';
 
 const SERVICES = {
@@ -82,6 +82,10 @@ function GameTile({ game }) {
 export default function XboxClient({ snapshot }) {
   const [tab, setTab] = useState('deals');
   const [query, setQuery] = useState('');
+  useEffect(()=>{
+    const q=new URLSearchParams(window.location.search).get('q');
+    if(q)setQuery(q.slice(0,120));
+  }, []);
   const [sort, setSort] = useState('relevanz');
   const [genre, setGenre] = useState('all');
   const [onlyWithArt, setOnlyWithArt] = useState(false);

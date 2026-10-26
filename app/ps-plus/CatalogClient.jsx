@@ -81,6 +81,10 @@ export default function CatalogClient({ snapshot }) {
     return () => window.removeEventListener('popstate', syncServiceFromUrl);
   }, []);
   const [query, setQuery] = useState('');
+  useEffect(()=>{
+    const q=new URLSearchParams(window.location.search).get('q');
+    if(q)setQuery(q.slice(0,120));
+  }, []);
   const deferredQuery = useDeferredValue(query);
   const [platform, setPlatform] = useState('all');
   const [genre, setGenre] = useState('all');
