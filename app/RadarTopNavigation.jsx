@@ -7,7 +7,7 @@ const links=[
  {href:'/xbox',label:'Xbox',short:'Xbox',beta:true,match:path=>path.startsWith('/xbox')},
  {href:'/ps-plus',label:'PS+ Katalog',short:'PS+',match:path=>path.startsWith('/ps-plus')},
  {href:'/preise',label:'Preisradar',short:'Preise',match:path=>path.startsWith('/preise')},
- {href:'/zentrale',label:'Radar-Zentrale',short:'Zentrale',match:path=>path.startsWith('/zentrale')},
+ {href:'/zentrale',label:'Radar-Zentrale',short:'Zentrale',match:path=>path.startsWith('/zentrale')||path.startsWith('/museum')||path.startsWith('/magazin')},
  {href:'/archive',label:'Archiv',short:'Archiv',match:path=>path.startsWith('/archive')},
  {href:'/mein-playstation?view=games',label:'Meine Spielwelt',short:'Spielwelt',personal:true,match:path=>path.startsWith('/mein-playstation')}
 ];
