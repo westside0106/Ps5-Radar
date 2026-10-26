@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-10-26T14:19:42.646Z",
+  "checkedAt": "2026-10-26T18:06:48.803Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
+        "link": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
+        "pubDate": "Mon, 26 Oct 2026 16:00:00 +0000"
+      },
       {
         "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
         "link": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
@@ -47,25 +52,20 @@
         "title": "Stranger Than Heaven: Hands-on zum RGG-Studio-Titel",
         "link": "https://blog.de.playstation.com/2026/10/21/stranger-than-heaven-hands-on-zum-rgg-studio-titel/",
         "pubDate": "Wed, 21 Oct 2026 14:00:00 +0000"
-      },
-      {
-        "title": "Final Fantasy Resonance: Visions im Hands-on erklärt",
-        "link": "https://blog.de.playstation.com/2026/10/20/final-fantasy-resonance-visions-im-hands-on-erklaert/",
-        "pubDate": "Tue, 20 Oct 2026 13:00:00 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
-        "link": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
-        "pubDate": "Mon, 26 Oct 2026 10:00:00 +0000",
+        "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
+        "link": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
+        "pubDate": "Mon, 26 Oct 2026 16:00:00 +0000",
         "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209653,
+    "bytes": 209743,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176244,
+    "bytes": 176334,
     "updated": true,
     "parsed": {
       "games": [
@@ -149,7 +149,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-26T14:20:06.092Z",
+      "checkedAt": "2026-10-26T18:07:07.627Z",
       "parsed": 6,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -165,12 +165,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 600014
+    "bytes": 598997
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241406,
+    "bytes": 241530,
     "updated": true,
     "parsed": {
       "trial": false,
