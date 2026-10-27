@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-10-26T22:40:44.844Z",
+  "checkedAt": "2026-10-27T13:16:11.604Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
+        "link": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
+        "pubDate": "Tue, 27 Oct 2026 13:00:00 +0000"
+      },
       {
         "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
         "link": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
@@ -47,18 +52,20 @@
         "title": "Halloween-Spezial: Gruselige Indie-Games für PlayStation",
         "link": "https://blog.de.playstation.com/2026/10/21/halloween-spezial-gruselige-indie-games-fuer-playstation/",
         "pubDate": "Wed, 21 Oct 2026 16:00:00 +0000"
-      },
-      {
-        "title": "Stranger Than Heaven: Hands-on zum RGG-Studio-Titel",
-        "link": "https://blog.de.playstation.com/2026/10/21/stranger-than-heaven-hands-on-zum-rgg-studio-titel/",
-        "pubDate": "Wed, 21 Oct 2026 14:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
+        "link": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
+        "pubDate": "Tue, 27 Oct 2026 13:00:00 +0000",
+        "category": "news"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209743,
+    "bytes": 209615,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176334,
+    "bytes": 176206,
     "updated": true,
     "parsed": {
       "games": [
@@ -142,7 +149,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-26T22:41:17.973Z",
+      "checkedAt": "2026-10-27T13:16:32.865Z",
       "parsed": 6,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -176,7 +183,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173776,
+    "bytes": 173774,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

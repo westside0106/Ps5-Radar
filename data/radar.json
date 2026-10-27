@@ -1,23 +1,23 @@
 {
-  "date": "26.10.2026",
-  "edition": "AUSGABE #051",
-  "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "26.10 · LIVE",
+  "date": "27.10.2026",
+  "edition": "AUSGABE #052",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
+  "newCount": "27.10 · LIVE",
   "leadTitle": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
   "leadDate": "21.10.2026",
   "leadMeta": "Segelt ab morgen in „Isles of Abyss“: Die größte kostenlose Erweiterung von „Once Human“ erscheint auf PS5.",
   "leadPrice": null,
   "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg",
-  "secondary1Title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
-  "secondary1Date": "26.10.2026",
-  "secondary1Meta": "Erfahrt, wie „The Siege of Castle Doom“ Marvel Cosmic Invasion am 10. November mit Doctor Doom und neuem Modus erweitert.",
+  "secondary1Title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
+  "secondary1Date": "27.10.2026",
+  "secondary1Meta": "Erfahrt, wie Housemarque für SAROS eine einzigartige Audio-Identität schafft und Carcosa mit Sound, 3D-Audio und Haptik zum Leben erweckt.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/a4865cc2d000e9a974e1155d4cac216f7a63b2bb.jpg",
-  "secondary2Title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/791957a422fb836480d99b1e35cd6fac5d0c4019-scaled.jpg",
+  "secondary2Title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
   "secondary2Date": "26.10.2026",
-  "secondary2Meta": "Feiert Liberty Day in Helldivers 2: Retro-Gewehr als Geschenk, Minispiele, Schiffsdekoration, Super Merch und mehr.",
+  "secondary2Meta": "Erfahrt, wie „The Siege of Castle Doom“ Marvel Cosmic Invasion am 10. November mit Doctor Doom und neuem Modus erweitert.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/fed5ec0fe94d9cc12ff05f2c8c96518bb345439f-scaled.png",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/a4865cc2d000e9a974e1155d4cac216f7a63b2bb.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -69,7 +69,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 26.10.2026 · 9/9 Quellen · 5/8 Details",
+  "radarCheck": "Stand 27.10.2026 · 9/9 Quellen · 5/8 Details",
   "sourceAlerts": [
     {
       "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
@@ -77,20 +77,27 @@
       "type": "editorial"
     },
     {
-      "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
-      "url": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
+      "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
+      "url": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
       "type": "editorial"
     },
     {
-      "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
-      "url": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
+      "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
+      "url": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
       "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
+      "url": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
+      "category": "news",
+      "score": 50
+    }
+  ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-26T22:41:25.098Z",
+    "checkedAt": "2026-10-27T13:16:41.590Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -104,10 +111,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-26T22:41:25.098Z"
+    "lastSuccessfulCheck": "2026-10-27T13:16:41.590Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-26T22:41:25.098Z",
+    "checkedAt": "2026-10-27T13:16:41.590Z",
     "errors": [],
     "sources": [
       {
@@ -150,8 +157,8 @@
   },
   "gameDetails": {
     "Once Human: „Isles of Abyss“ erscheint morgen auf PS5": {},
+    "SAROS: So wurden Sound und Haptik für Carcosa gestaltet": {},
     "Marvel Cosmic Invasion: Die Belagerung von Castle Doom": {},
-    "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns": {},
     "Sniper Elite: Resistance": {
       "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
       "publisher": "REBELLION INTERACTIVE",
@@ -183,11 +190,11 @@
       "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
       "gallery": [
         "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202610/1116/b723fed8eb6a326f84eb8e83721bc3ac7f5f8f57be11c45c.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
         "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp"
+        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
       "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
@@ -254,7 +261,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-26T22:41:04.709Z",
+    "checkedAt": "2026-10-27T13:16:22.133Z",
     "titles": 8,
     "fetched": 5,
     "enriched": 5,
@@ -308,13 +315,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-26T22:41:03.121Z",
+    "checkedAt": "2026-10-27T13:16:21.647Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-26T22:41:03.575Z",
+    "checkedAt": "2026-10-27T13:16:21.748Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -327,7 +334,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-26T22:41:17.707Z",
+    "checkedAt": "2026-10-27T13:16:32.410Z",
     "verified": 3,
     "missing": [
       "Chained Echoes"
@@ -338,8 +345,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-26T22:41:00.674Z",
-    "date": "26.10.2026",
+    "checkedAt": "2026-10-27T13:16:19.109Z",
+    "date": "27.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -349,24 +356,24 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg"
       },
       {
+        "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
+        "date": "27.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/791957a422fb836480d99b1e35cd6fac5d0c4019-scaled.jpg"
+      },
+      {
         "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
         "date": "26.10.2026",
         "url": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/a4865cc2d000e9a974e1155d4cac216f7a63b2bb.jpg"
-      },
-      {
-        "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
-        "date": "26.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/fed5ec0fe94d9cc12ff05f2c8c96518bb345439f-scaled.png"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-26T22:41:17.973Z",
-    "berlinDate": "2026-10-26",
-    "newPostsToday": 0,
+    "checkedAt": "2026-10-27T13:16:32.865Z",
+    "berlinDate": "2026-10-27",
+    "newPostsToday": 1,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
