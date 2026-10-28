@@ -123,6 +123,21 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
      assert.equal(await current.count(),1,engine.name()+' missing current section for '+route);
      const overflow=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
      assert.ok(overflow.scroll<=overflow.client+3,engine.name()+' '+width+' overflow at '+route+': '+JSON.stringify(overflow));
+     if(route==='/archive'||route==='/xbox'){
+      const selector=route==='/archive'?'.archive-shell .archive-sort select':'.is-xbox .catalog-filters select';
+      const dropdown=page.locator(selector).first();
+      await dropdown.waitFor();
+      const visible=await dropdown.evaluate(el=>{
+       const styles=getComputedStyle(el);
+       const rgb=value=>value.match(/\\d+/g)?.slice(0,3).map(Number)||[0,0,0];
+       const channel=n=>{n/=255;return n<=.04045?n/12.92:((n+.055)/1.055)**2.4};
+       const lum=v=>{const [a,b,c]=rgb(v).map(channel);return .2126*a+.7152*b+.0722*c};
+       const text=lum(styles.color),bg=lum(styles.backgroundColor);
+       return {ratio:(Math.max(text,bg)+.05)/(Math.min(text,bg)+.05),scheme:styles.colorScheme};
+      });
+      assert.ok(visible.ratio>=4.5,engine.name()+' unreadable dark '+route+' select '+JSON.stringify(visible));
+      assert.match(visible.scheme,/dark/,engine.name()+' '+route+' select must request dark native options');
+     }
      if(route==='/zentrale'){
       await page.locator('.rz-page').waitFor();
       await page.getByRole('button',{name:'Suche',exact:true}).click();
