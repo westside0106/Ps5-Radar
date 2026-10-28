@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-27T09:21:56.503Z",
+  "checkedAt": "2026-10-28T10:02:06.365Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,23 +9,23 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-27T09:21:56.503Z"
+      "checkedAt": "2026-10-28T10:02:06.365Z"
     },
     "extra": {
       "complete": true,
-      "expected": 464,
-      "count": 444,
+      "expected": 463,
+      "count": 443,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-27T09:21:56.503Z"
+      "checkedAt": "2026-10-28T10:02:06.365Z"
     },
     "classics": {
       "complete": true,
-      "expected": 170,
-      "count": 170,
+      "expected": 169,
+      "count": 169,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-27T09:21:56.503Z"
+      "checkedAt": "2026-10-28T10:02:06.365Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-27T09:21:56.503Z"
+      "checkedAt": "2026-10-28T10:02:06.365Z"
     }
   },
   "games": [
@@ -3829,31 +3829,6 @@
         "Solo"
       ],
       "perspective": "Third-Person",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
-      "id": "concept:10014519",
-      "title": "Football Manager 26 Console",
-      "storeUrl": "https://store.playstation.com/de-de/concept/10014519",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202509/0112/e1a7a09b0d6a2adbcd22d206e82aefa406d34723c9eb2b38.png",
-      "platforms": [
-        "PS5"
-      ],
-      "genres": [
-        "Sportspiele"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2025-11-04",
-      "description": "New foundations set the stage for you to shape your football destiny. Built on the Unity engine, FM26 Console places you at the heart of the beautiful game. This is the legacy, redefined.\n\nDelivering effortless, instinctive console control, a redesigned user interface combines with the most immersive matchday experience in series history to bring you closer to every match-defining moment.\n\nBuild your superstar squad with new transfer tools and bring your footballing vision to life through innovations that deliver e",
-      "modes": [
-        "Solo",
-        "Mehrspieler"
-      ],
-      "perspective": null,
       "metadataSource": "IGDB",
       "imageSource": "PlayStation"
     },
@@ -11608,33 +11583,6 @@
       "imageSource": "PlayStation"
     },
     {
-      "id": "concept:200599",
-      "title": "BEYOND: Two Souls™",
-      "storeUrl": "https://store.playstation.com/de-de/concept/200599",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/0522/0qBPvJ5xqVxay9Ia0LviK6wG.png",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Action",
-        "Adventure"
-      ],
-      "services": [
-        "premium"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2013-10-08",
-      "description": "A unique psychological action thriller delivered by A-list Hollywood performances by Elliot Page and Willem Dafoe, Beyond: Two Souls takes you on a thrilling journey across the globe as you play out the remarkable life of Jodie Holmes.",
-      "modes": [
-        "Solo",
-        "Mehrspieler",
-        "Koop"
-      ],
-      "perspective": "Third-Person",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
       "id": "concept:10006483",
       "title": "Blade Dancer: Lineage of Light",
       "storeUrl": "https://store.playstation.com/de-de/concept/10006483",
@@ -15275,6 +15223,22 @@
   "errors": [],
   "changes": [
     {
+      "id": "concept:10014519",
+      "title": "Football Manager 26 Console",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-28T10:02:06.365Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10014519"
+    },
+    {
+      "id": "concept:200599",
+      "title": "BEYOND: Two Souls™",
+      "service": "premium",
+      "kind": "removed",
+      "date": "2026-10-28T10:02:06.365Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/200599"
+    },
+    {
       "id": "concept:10000886",
       "title": "Horizon Forbidden West™",
       "service": "extra",
@@ -15403,5 +15367,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-10-27T09:21:56.503Z"
+  "lastAttemptAt": "2026-10-28T10:02:06.365Z"
 }
