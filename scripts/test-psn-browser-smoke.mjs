@@ -57,7 +57,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/api/radar/alerts/check']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/zentrale/api/price-alerts','/api/radar/alerts/check','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
