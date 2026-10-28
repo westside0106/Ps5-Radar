@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-27T13:23:26.661Z",
+  "checkedAt": "2026-10-28T14:11:34.882Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1601,
+    "count": 1604,
     "views": {
       "deals": {
-        "expected": 916,
-        "observed": 916,
-        "count": 916,
+        "expected": 917,
+        "observed": 917,
+        "count": 917,
         "complete": true,
         "attempts": 1
       },
@@ -31,9 +31,9 @@
         "attempts": 2
       },
       "gamepass-ultimate": {
-        "expected": 694,
-        "observed": 693,
-        "count": 693,
+        "expected": 695,
+        "observed": 694,
+        "count": 694,
         "complete": false,
         "attempts": 2
       },
@@ -55,12 +55,12 @@
     "errors": [
       "gamepass-essential: keine bestaetigte Quelle (Durchlauf 1: gamepass-essential: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-essential: keine bestaetigte Anzahl und keine Filterkarten)",
       "gamepass-premium: keine bestaetigte Quelle (Durchlauf 1: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten)",
-      "gamepass-ultimate: 693/694 eindeutig belegt, Durchlauf 1: 693/694 eindeutige IDs; Durchlauf 2: 693/694 eindeutige IDs",
+      "gamepass-ultimate: 694/695 eindeutig belegt, Durchlauf 1: 694/695 eindeutige IDs; Durchlauf 2: 694/695 eindeutige IDs",
       "ea-play: keine bestaetigte Quelle (Durchlauf 1: ea-play: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: ea-play: keine bestaetigte Anzahl und keine Filterkarten)",
       "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 113/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
       "gamepass-essential: 0/? Karten gesehen",
       "gamepass-premium: 0/? Karten gesehen",
-      "gamepass-ultimate: 693/694 Karten gesehen",
+      "gamepass-ultimate: 694/695 Karten gesehen",
       "ea-play: 0/? Karten gesehen",
       "ubisoft-plus: 113/117 Karten gesehen"
     ]
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-27T13:23:26.661Z",
+      "observedAt": "2026-10-28T14:11:34.882Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-27T13:23:26.661Z",
+      "observedAt": "2026-10-28T14:11:34.882Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-27T13:23:26.661Z",
+      "observedAt": "2026-10-28T14:11:34.882Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -5624,7 +5624,7 @@
       "id": "c0n22p73qz60",
       "title": "Dead by Daylight",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/dead-by-daylight/c0n22p73qz60",
-      "cover": "https://store-images.s-microsoft.com/image/apps.51158.64366672042187759.099a5916-8b59-4db9-9ba3-146ee8e5afbb.3af5a707-fc52-4dd8-924a-07d384e361b0?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.51458.64366672042187759.733004ed-c696-44cf-98cc-30eddf2375a8.33981a4c-a34b-4492-b81f-8695c017496b?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
@@ -6100,30 +6100,14 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 899,
-      "regularPriceMinor": 2999,
+      "priceMinor": 2999,
+      "regularPriceMinor": null,
       "genres": [
         "Shooter"
       ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nfhwsj3jwsc",
-      "id": "9nfhwsj3jwsc",
-      "title": "Deep Rock Galactic - Ultimate Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/deep-rock-galactic-ultimate-edition/9nfhwsj3jwsc",
-      "cover": "https://store-images.s-microsoft.com/image/apps.58619.13598563202530704.ada3b9b0-eaaf-4d62-9a08-9470c97a9dcb.837d39b1-960d-4b1b-8164-28eea571ebee?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": 4999,
-      "genres": [
-        "Shooter"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9n6dzvbbdm7r",
@@ -8588,6 +8572,60 @@
       "regularPriceMinor": 2999,
       "genres": [
         "Action & Abenteuer"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9pgf7hxgc0h6",
+      "id": "9pgf7hxgc0h6",
+      "title": "Fall Adventure",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/fall-adventure/9pgf7hxgc0h6",
+      "cover": "https://store-images.s-microsoft.com/image/apps.3923.14186516702941687.5ce1ba9a-d274-45b2-ae82-d09837a3afb1.d0ab5372-01ad-4446-ab2b-b669b8dccb9e?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 359,
+      "regularPriceMinor": 449,
+      "genres": [
+        "Familie & Kinder",
+        "Klassiker",
+        "Platformer",
+        "Rätsel & Wissen"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9nwdb1mf69sd",
+      "id": "9nwdb1mf69sd",
+      "title": "Fall Adventure (Xbox One)",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/fall-adventure-xbox-one/9nwdb1mf69sd",
+      "cover": "https://store-images.s-microsoft.com/image/apps.3923.14186516702941687.5ce1ba9a-d274-45b2-ae82-d09837a3afb1.d0ab5372-01ad-4446-ab2b-b669b8dccb9e?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 359,
+      "regularPriceMinor": 449,
+      "genres": [
+        "Familie & Kinder",
+        "Platformer",
+        "Rätsel & Wissen"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9p6nz9mb5m8h",
+      "id": "9p6nz9mb5m8h",
+      "title": "Fallen City Brawl",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/fallen-city-brawl/9p6nz9mb5m8h",
+      "cover": "https://store-images.s-microsoft.com/image/apps.5978.14615885469612612.36fd4e38-327f-47ac-9098-24bc79584fc0.ede8884f-be53-4d31-92be-d7bbb17e5c2d?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1349,
+      "regularPriceMinor": 1499,
+      "genres": [
+        "Action & Abenteuer",
+        "Kampfspiele"
       ],
       "services": []
     },
@@ -17343,6 +17381,42 @@
       ]
     },
     {
+      "key": "xbox:product:9pbnm68gzwcw",
+      "id": "9pbnm68gzwcw",
+      "title": "Platypus Steps (Xbox One)",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/platypus-steps-xbox-one/9pbnm68gzwcw",
+      "cover": "https://store-images.s-microsoft.com/image/apps.42751.14324340006441851.c3aebca6-26db-4c70-ba43-76c200496e74.8fc89848-ce91-471b-a576-5c606ee66eb4?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 399,
+      "regularPriceMinor": 499,
+      "genres": [
+        "Action & Abenteuer",
+        "Klassiker",
+        "Platformer"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9plbqhr512cg",
+      "id": "9plbqhr512cg",
+      "title": "Platypus Steps (Xbox Series)",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/platypus-steps-xbox-series/9plbqhr512cg",
+      "cover": "https://store-images.s-microsoft.com/image/apps.42751.14324340006441851.c3aebca6-26db-4c70-ba43-76c200496e74.8fc89848-ce91-471b-a576-5c606ee66eb4?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 399,
+      "regularPriceMinor": 499,
+      "genres": [
+        "Action & Abenteuer",
+        "Klassiker",
+        "Platformer"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9msw6k446gxd",
       "id": "9msw6k446gxd",
       "title": "Pneumata",
@@ -17684,25 +17758,6 @@
       "genres": [
         "Action & Abenteuer",
         "Platformer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n9lnwn1dcvc",
-      "id": "9n9lnwn1dcvc",
-      "title": "Prison Run and Gun",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/prison-run-and-gun/9n9lnwn1dcvc",
-      "cover": "https://store-images.s-microsoft.com/image/apps.59065.13530444319419604.fb8919a3-b1fd-4178-a2c0-78d68e994a4a.ee76cb07-5342-4ebe-a4f8-20db21f43b02?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 319,
-      "regularPriceMinor": 399,
-      "genres": [
-        "Action & Abenteuer",
-        "Platformer",
-        "Rätsel & Wissen",
-        "Shooter"
       ],
       "services": []
     },
@@ -23607,6 +23662,22 @@
       ]
     },
     {
+      "key": "xbox:product:9pnrljndpp4g",
+      "id": "9pnrljndpp4g",
+      "title": "The Séance of Blake Manor",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-seance-of-blake-manor/9pnrljndpp4g",
+      "cover": "https://store-images.s-microsoft.com/image/apps.58589.14338899831126037.9571fdec-43b9-45e0-87e0-6beb38254966.921ef682-7a46-4ec0-889f-bf0df78f016d?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1999,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
       "key": "xbox:product:9npgpdcxwjq7",
       "id": "9npgpdcxwjq7",
       "title": "The Settlers®: New Allies",
@@ -24075,22 +24146,6 @@
         "Action & Abenteuer",
         "Shooter",
         "Simulation"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9npj9xjscl67",
-      "id": "9npj9xjscl67",
-      "title": "The Witch's Bakery",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-witchs-bakery/9npj9xjscl67",
-      "cover": "https://store-images.s-microsoft.com/image/apps.2533.13788587776795980.a47e90c6-8563-4086-b1aa-53fc23bc1cad.8b1d817e-b986-4801-8974-2d4b7aa29064?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1799,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Familie & Kinder"
       ],
       "services": []
     },
@@ -25470,7 +25525,7 @@
       "id": "9n1nljk9skrn",
       "title": "VALORANT",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/valorant/9n1nljk9skrn",
-      "cover": "https://store-images.s-microsoft.com/image/apps.17312.13898029070941789.8d58b251-455c-4993-a1fd-1d77e8261eaf.8291ef5a-305d-4750-8231-0467ee0d1da0?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.30107.13898029070941789.b9070612-bb75-4081-8f05-4acaf8e47425.c299c14e-745b-45c7-bdfd-d7d8c2348321?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
