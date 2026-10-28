@@ -129,7 +129,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       await dropdown.waitFor();
       const visible=await dropdown.evaluate(el=>{
        const styles=getComputedStyle(el);
-       const rgb=value=>value.match(/\\d+/g)?.slice(0,3).map(Number)||[0,0,0];
+       const rgb=value=>value.match(/\d+/g)?.slice(0,3).map(Number)||[0,0,0];
        const channel=n=>{n/=255;return n<=.04045?n/12.92:((n+.055)/1.055)**2.4};
        const lum=v=>{const [a,b,c]=rgb(v).map(channel);return .2126*a+.7152*b+.0722*c};
        const text=lum(styles.color),bg=lum(styles.backgroundColor);
