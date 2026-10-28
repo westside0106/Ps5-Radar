@@ -92,3 +92,45 @@ body{background:radial-gradient(ellipse at 48% -14%,#16345d 0,transparent 42%),v
 .radar-utility-toolbar .radar-mag-context{margin-right:auto;color:#9fbee0;letter-spacing:.13em;font-size:10px;font-weight:800}
 .radar-utility-toolbar .logout{border-radius:9px;min-height:38px}
 @media(max-width:640px){.radar-utility-toolbar .radar-mag-context{display:none}.radar-utility-toolbar .logout{font-size:11px;padding:7px 10px}}
+
+/* #75: WebKit native dropdowns were rendered light over the dark archive/Xbox UI.
+   Keep a consistent dark accessible select, preserving native keyboard selection. */
+.archive-shell .archive-sort select,
+.is-xbox .catalog-filters select{
+  -webkit-appearance:none;
+  appearance:none;
+  color-scheme:dark;
+  background-color:#102940!important;
+  color:#f3faff!important;
+  -webkit-text-fill-color:#f3faff;
+  border:1px solid #7099bd;
+  border-radius:10px;
+  min-height:44px;
+  padding-right:34px;
+  background-image:linear-gradient(45deg,transparent 50%,#d7ecff 50%),linear-gradient(135deg,#d7ecff 50%,transparent 50%);
+  background-position:calc(100% - 17px) 49%,calc(100% - 12px) 49%;
+  background-size:5px 5px;
+  background-repeat:no-repeat;
+}
+.archive-shell .archive-sort select option,
+.is-xbox .catalog-filters select option{
+  background-color:#112940;
+  color:#f3faff;
+}
+.archive-shell .archive-sort select:focus-visible,
+.is-xbox .catalog-filters select:focus-visible{
+  outline:3px solid #9fdcff;
+  outline-offset:3px;
+}
+@media(forced-colors:active){
+  .archive-shell .archive-sort select,
+  .is-xbox .catalog-filters select{
+    color-scheme:normal;
+    background:Field!important;
+    color:FieldText!important;
+    -webkit-text-fill-color:currentColor;
+    border-color:ButtonBorder;
+    -webkit-appearance:auto;
+    appearance:auto;
+  }
+}
