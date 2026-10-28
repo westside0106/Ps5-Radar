@@ -1,8 +1,23 @@
 {
-  "checkedAt": "2026-10-27T13:16:11.604Z",
+  "checkedAt": "2026-10-28T03:19:42.971Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
+        "link": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
+        "pubDate": "Tue, 27 Oct 2026 16:00:00 +0000"
+      },
+      {
+        "title": "Where Winds Meet: Neuer Handlungsbogen führt nach Hutuo",
+        "link": "https://blog.de.playstation.com/2026/10/27/where-winds-meet-neuer-handlungsbogen-fuehrt-nach-hutuo/",
+        "pubDate": "Tue, 27 Oct 2026 15:00:00 +0000"
+      },
+      {
+        "title": "Terrible Lizards: Parkour-Horror mit Dinosauriern",
+        "link": "https://blog.de.playstation.com/2026/10/27/terrible-lizards-parkour-horror-mit-dinosauriern/",
+        "pubDate": "Tue, 27 Oct 2026 14:00:00 +0000"
+      },
       {
         "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
         "link": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
@@ -37,35 +52,32 @@
         "title": "Top Downloads im September 2026",
         "link": "https://blog.de.playstation.com/2026/10/22/top-downloads-im-september-2026/",
         "pubDate": "Thu, 22 Oct 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Tomb Raider: Die Evolution von Lara Crofts Design",
-        "link": "https://blog.de.playstation.com/2026/10/22/tomb-raider-die-evolution-von-lara-crofts-design/",
-        "pubDate": "Thu, 22 Oct 2026 12:02:53 +0000"
-      },
-      {
-        "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
-        "link": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
-        "pubDate": "Wed, 21 Oct 2026 17:00:00 +0000"
-      },
-      {
-        "title": "Halloween-Spezial: Gruselige Indie-Games für PlayStation",
-        "link": "https://blog.de.playstation.com/2026/10/21/halloween-spezial-gruselige-indie-games-fuer-playstation/",
-        "pubDate": "Wed, 21 Oct 2026 16:00:00 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
-        "link": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
-        "pubDate": "Tue, 27 Oct 2026 13:00:00 +0000",
+        "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
+        "link": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
+        "pubDate": "Tue, 27 Oct 2026 16:00:00 +0000",
+        "category": "release"
+      },
+      {
+        "title": "Where Winds Meet: Neuer Handlungsbogen führt nach Hutuo",
+        "link": "https://blog.de.playstation.com/2026/10/27/where-winds-meet-neuer-handlungsbogen-fuehrt-nach-hutuo/",
+        "pubDate": "Tue, 27 Oct 2026 15:00:00 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Terrible Lizards: Parkour-Horror mit Dinosauriern",
+        "link": "https://blog.de.playstation.com/2026/10/27/terrible-lizards-parkour-horror-mit-dinosauriern/",
+        "pubDate": "Tue, 27 Oct 2026 14:00:00 +0000",
         "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209615,
+    "bytes": 209655,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +128,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176206,
+    "bytes": 176246,
     "updated": true,
     "parsed": {
       "games": [
@@ -141,7 +153,7 @@
           "hasImage": true
         },
         {
-          "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
+          "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
           "hasImage": true
         }
       ],
@@ -149,7 +161,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-27T13:16:32.865Z",
+      "checkedAt": "2026-10-28T03:20:03.891Z",
       "parsed": 6,
       "accepted": [
         "Sniper Elite: Resistance",
@@ -159,7 +171,7 @@
       ],
       "rejected": [
         "QSSR bringt KI-Upscaling auf die PS5",
-        "Once Human: „Isles of Abyss“ erscheint morgen auf PS5"
+        "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt"
       ]
     }
   },
@@ -170,7 +182,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241530,
+    "bytes": 241406,
     "updated": true,
     "parsed": {
       "trial": false,

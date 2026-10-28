@@ -1,23 +1,23 @@
 {
-  "date": "27.10.2026",
-  "edition": "AUSGABE #052",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "27.10 · LIVE",
-  "leadTitle": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
-  "leadDate": "21.10.2026",
-  "leadMeta": "Segelt ab morgen in „Isles of Abyss“: Die größte kostenlose Erweiterung von „Once Human“ erscheint auf PS5.",
+  "date": "28.10.2026",
+  "edition": "AUSGABE #053",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "28.10 · LIVE",
+  "leadTitle": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
+  "leadDate": "27.10.2026",
+  "leadMeta": "Erfahrt, wie „Aloft“ und „Conan Exiles Enhanced“ Anfang 2027 ihr PS5-Debüt feiern, mit neuen Inhalten und kostenlosem Upgrade.",
   "leadPrice": null,
-  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg",
-  "secondary1Title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1ff2229adeb89a227ae4ad157e45d5686d392267.jpg",
+  "secondary1Title": "Where Winds Meet: Neuer Handlungsbogen führt nach Hutuo",
   "secondary1Date": "27.10.2026",
-  "secondary1Meta": "Erfahrt, wie Housemarque für SAROS eine einzigartige Audio-Identität schafft und Carcosa mit Sound, 3D-Audio und Haptik zum Leben erweckt.",
+  "secondary1Meta": "Entdeckt Hutuo, den dramatischsten Handlungsbogen in Where Winds Meet: ab 13. November mit PS5-Verbesserungen und großem Jubiläums-Update.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/791957a422fb836480d99b1e35cd6fac5d0c4019-scaled.jpg",
-  "secondary2Title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
-  "secondary2Date": "26.10.2026",
-  "secondary2Meta": "Erfahrt, wie „The Siege of Castle Doom“ Marvel Cosmic Invasion am 10. November mit Doctor Doom und neuem Modus erweitert.",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/703760c7c55b06252d7ab149c83b748fd0e86c1f.jpg",
+  "secondary2Title": "Terrible Lizards: Parkour-Horror mit Dinosauriern",
+  "secondary2Date": "27.10.2026",
+  "secondary2Meta": "Erfahrt, wie WDR Studios in Terrible Lizards vertraute Dinosaurier-Nostalgie zu Horror verdreht. Ab 29. Oktober erhältlich.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/a4865cc2d000e9a974e1155d4cac216f7a63b2bb.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/227699972b1517ecf296296bd545ac10a0aa5e69.jpg",
   "psplusLabel": "SEPTEMBER 2026",
   "psplusTitle": "September-Spiele sind live",
   "psplusText": "Verfügbar bis 05.10.",
@@ -69,35 +69,28 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 27.10.2026 · 9/9 Quellen · 5/8 Details",
+  "radarCheck": "Stand 28.10.2026 · 9/9 Quellen · 5/8 Details",
   "sourceAlerts": [
     {
-      "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
-      "url": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
+      "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
+      "url": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
       "type": "editorial"
     },
     {
-      "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
-      "url": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
+      "title": "Where Winds Meet: Neuer Handlungsbogen führt nach Hutuo",
+      "url": "https://blog.de.playstation.com/2026/10/27/where-winds-meet-neuer-handlungsbogen-fuehrt-nach-hutuo/",
       "type": "editorial"
     },
     {
-      "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
-      "url": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
+      "title": "Terrible Lizards: Parkour-Horror mit Dinosauriern",
+      "url": "https://blog.de.playstation.com/2026/10/27/terrible-lizards-parkour-horror-mit-dinosauriern/",
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
-      "url": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
-      "category": "news",
-      "score": 50
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-27T13:16:41.590Z",
+    "checkedAt": "2026-10-28T03:20:12.503Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -111,10 +104,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-27T13:16:41.590Z"
+    "lastSuccessfulCheck": "2026-10-28T03:20:12.503Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-27T13:16:41.590Z",
+    "checkedAt": "2026-10-28T03:20:12.503Z",
     "errors": [],
     "sources": [
       {
@@ -156,9 +149,9 @@
     ]
   },
   "gameDetails": {
-    "Once Human: „Isles of Abyss“ erscheint morgen auf PS5": {},
-    "SAROS: So wurden Sound und Haptik für Carcosa gestaltet": {},
-    "Marvel Cosmic Invasion: Die Belagerung von Castle Doom": {},
+    "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt": {},
+    "Where Winds Meet: Neuer Handlungsbogen führt nach Hutuo": {},
+    "Terrible Lizards: Parkour-Horror mit Dinosauriern": {},
     "Sniper Elite: Resistance": {
       "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
       "publisher": "REBELLION INTERACTIVE",
@@ -261,7 +254,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-27T13:16:22.133Z",
+    "checkedAt": "2026-10-28T03:19:55.430Z",
     "titles": 8,
     "fetched": 5,
     "enriched": 5,
@@ -315,13 +308,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-27T13:16:21.647Z",
+    "checkedAt": "2026-10-28T03:19:54.953Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-27T13:16:21.748Z",
+    "checkedAt": "2026-10-28T03:19:55.061Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -334,7 +327,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-27T13:16:32.410Z",
+    "checkedAt": "2026-10-28T03:20:03.499Z",
     "verified": 3,
     "missing": [
       "Chained Echoes"
@@ -345,35 +338,35 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-27T13:16:19.109Z",
-    "date": "27.10.2026",
+    "checkedAt": "2026-10-28T03:19:52.798Z",
+    "date": "28.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
-        "title": "Once Human: „Isles of Abyss“ erscheint morgen auf PS5",
-        "date": "21.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/21/once-human-isles-of-abyss-erscheint-morgen-auf-ps5/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/8c2ab6af305c2e2ca6d1742518125bc4ef589d1e.jpg"
-      },
-      {
-        "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
+        "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
         "date": "27.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/791957a422fb836480d99b1e35cd6fac5d0c4019-scaled.jpg"
+        "url": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1ff2229adeb89a227ae4ad157e45d5686d392267.jpg"
       },
       {
-        "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
-        "date": "26.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/a4865cc2d000e9a974e1155d4cac216f7a63b2bb.jpg"
+        "title": "Where Winds Meet: Neuer Handlungsbogen führt nach Hutuo",
+        "date": "27.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/27/where-winds-meet-neuer-handlungsbogen-fuehrt-nach-hutuo/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/703760c7c55b06252d7ab149c83b748fd0e86c1f.jpg"
+      },
+      {
+        "title": "Terrible Lizards: Parkour-Horror mit Dinosauriern",
+        "date": "27.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/27/terrible-lizards-parkour-horror-mit-dinosauriern/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/227699972b1517ecf296296bd545ac10a0aa5e69.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-27T13:16:32.865Z",
-    "berlinDate": "2026-10-27",
-    "newPostsToday": 1,
+    "checkedAt": "2026-10-28T03:20:03.891Z",
+    "berlinDate": "2026-10-28",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
