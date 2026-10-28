@@ -1,15 +1,20 @@
 {
-  "checkedAt": "2026-10-28T03:19:42.971Z",
+  "checkedAt": "2026-10-28T14:03:35.339Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Rayman Legends Retold: Astro Bot-Kostüm im Crossover",
+        "link": "https://blog.de.playstation.com/2026/10/28/rayman-legends-retold-astro-bot-kostuem-im-crossover/",
+        "pubDate": "Wed, 28 Oct 2026 13:00:00 +0000"
+      },
       {
         "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
         "link": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
         "pubDate": "Tue, 27 Oct 2026 16:00:00 +0000"
       },
       {
-        "title": "Where Winds Meet: Neuer Handlungsbogen führt nach Hutuo",
+        "title": "Where Winds Meet: Hutuo bringt dramatischsten neuen Handlungsbogen",
         "link": "https://blog.de.playstation.com/2026/10/27/where-winds-meet-neuer-handlungsbogen-fuehrt-nach-hutuo/",
         "pubDate": "Tue, 27 Oct 2026 15:00:00 +0000"
       },
@@ -19,7 +24,7 @@
         "pubDate": "Tue, 27 Oct 2026 14:00:00 +0000"
       },
       {
-        "title": "SAROS: So wurden Sound und Haptik für Carcosa gestaltet",
+        "title": "Saros: So hat Housemarque den Sound von Carcosa gestaltet",
         "link": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
         "pubDate": "Tue, 27 Oct 2026 13:00:00 +0000"
       },
@@ -47,37 +52,20 @@
         "title": "Marvel’s Wolverine: Tipps und Tricks für den Fotomodus",
         "link": "https://blog.de.playstation.com/2026/10/22/marvels-wolverine-tipps-und-tricks-fuer-den-fotomodus/",
         "pubDate": "Thu, 22 Oct 2026 14:00:00 +0000"
-      },
-      {
-        "title": "Top Downloads im September 2026",
-        "link": "https://blog.de.playstation.com/2026/10/22/top-downloads-im-september-2026/",
-        "pubDate": "Thu, 22 Oct 2026 13:00:00 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
-        "link": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
-        "pubDate": "Tue, 27 Oct 2026 16:00:00 +0000",
-        "category": "release"
-      },
-      {
-        "title": "Where Winds Meet: Neuer Handlungsbogen führt nach Hutuo",
-        "link": "https://blog.de.playstation.com/2026/10/27/where-winds-meet-neuer-handlungsbogen-fuehrt-nach-hutuo/",
-        "pubDate": "Tue, 27 Oct 2026 15:00:00 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Terrible Lizards: Parkour-Horror mit Dinosauriern",
-        "link": "https://blog.de.playstation.com/2026/10/27/terrible-lizards-parkour-horror-mit-dinosauriern/",
-        "pubDate": "Tue, 27 Oct 2026 14:00:00 +0000",
+        "title": "Rayman Legends Retold: Astro Bot-Kostüm im Crossover",
+        "link": "https://blog.de.playstation.com/2026/10/28/rayman-legends-retold-astro-bot-kostuem-im-crossover/",
+        "pubDate": "Wed, 28 Oct 2026 13:00:00 +0000",
         "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209655,
+    "bytes": 209643,
     "schedule": [
       {
         "date": "03.09.",
@@ -128,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176246,
+    "bytes": 176234,
     "updated": true,
     "parsed": {
       "games": [
@@ -149,10 +137,6 @@
           "hasImage": true
         },
         {
-          "title": "QSSR bringt KI-Upscaling auf die PS5",
-          "hasImage": true
-        },
-        {
           "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
           "hasImage": true
         }
@@ -161,8 +145,8 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-28T03:20:03.891Z",
-      "parsed": 6,
+      "checkedAt": "2026-10-28T14:04:05.391Z",
+      "parsed": 5,
       "accepted": [
         "Sniper Elite: Resistance",
         "MLB The Show 26",
@@ -170,7 +154,6 @@
         "Chained Echoes"
       ],
       "rejected": [
-        "QSSR bringt KI-Upscaling auf die PS5",
         "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt"
       ]
     }
@@ -182,7 +165,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241406,
+    "bytes": 241529,
     "updated": true,
     "parsed": {
       "trial": false,
