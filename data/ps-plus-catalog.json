@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-28T10:02:06.365Z",
+  "checkedAt": "2026-10-29T10:26:28.693Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,15 +9,15 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-28T10:02:06.365Z"
+      "checkedAt": "2026-10-29T10:26:28.693Z"
     },
     "extra": {
       "complete": true,
-      "expected": 463,
-      "count": 443,
+      "expected": 459,
+      "count": 439,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-28T10:02:06.365Z"
+      "checkedAt": "2026-10-29T10:26:28.693Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 169,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-28T10:02:06.365Z"
+      "checkedAt": "2026-10-29T10:26:28.693Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-28T10:02:06.365Z"
+      "checkedAt": "2026-10-29T10:26:28.693Z"
     }
   },
   "games": [
@@ -2330,7 +2330,7 @@
       "id": "concept:227319",
       "title": "Dead by Daylight PS4® & PS5®",
       "storeUrl": "https://store.playstation.com/de-de/concept/227319",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0113/e98238835ada32e22b4e21455b4206cacd19070ea359763f.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2118/4448362515c1c03644cae01d08e4784b30224f81e6c25514.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -2565,31 +2565,6 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "PlayStation"
-    },
-    {
-      "id": "concept:222727",
-      "title": "Detroit: Become Human",
-      "storeUrl": "https://store.playstation.com/de-de/concept/222727",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2119/wl4DB5QGzlEHAXy1KLUVgOAu.png",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Action",
-        "Adventure"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2018-05-25",
-      "description": "Detroit: Become Human is an interactive narrative adventure game developed by Quantic Dream and released in 2018. Set in a near-future Detroit where androids serve humans, the story follows three android protagonists—Kara, Connor, and Markus—who shape the city’s fate through their choices. Gameplay combines exploration, dialogue interactions, and quick-time events, with branching storylines and multiple endings. The narrative explores themes of artificial intelligence, freedom, and morality.",
-      "modes": [
-        "Solo"
-      ],
-      "perspective": "Third-Person",
-      "metadataSource": "IGDB",
       "imageSource": "PlayStation"
     },
     {
@@ -3227,31 +3202,6 @@
         "Solo"
       ],
       "perspective": "First-Person",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
-      "id": "concept:209065",
-      "title": "Everybody’s Golf",
-      "storeUrl": "https://store.playstation.com/de-de/concept/209065",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2320/PT1PAMO5aZHYRoOkrVNhybKD.png",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Sportspiele"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2017-08-29",
-      "description": "A brand new entry in the Everybody's Golf/Hot Shots Golf series, featuring sandbox courses and minigames like fishing and sky diving.\n\nIt is the twelfth game in the series and also the fifth game in the series to be titled Everybody's Golf in Europe.",
-      "modes": [
-        "Solo",
-        "Mehrspieler"
-      ],
-      "perspective": "Third-Person",
       "metadataSource": "IGDB",
       "imageSource": "PlayStation"
     },
@@ -5512,24 +5462,6 @@
       "imageSource": "PlayStation"
     },
     {
-      "id": "concept:234427",
-      "title": "MediEvil",
-      "storeUrl": "https://store.playstation.com/de-de/concept/234427",
-      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307Wm1JA9ApMArVhceTfFj0uYCsQj_rAHLUJA2Ku_rDY2sjiHAfntFA57HQqRBO7M6UPoVMfF2pbEUiA_AMefq5M4YSl4O.jpg",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Action",
-        "Adventure"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "PlayStation"
-    },
-    {
       "id": "concept:202663",
       "title": "Megadimension Neptunia VII",
       "storeUrl": "https://store.playstation.com/de-de/concept/202663",
@@ -7623,31 +7555,6 @@
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
       "releaseDate": "2016-05-17",
       "description": "The story of Aarbron is told once more...\n\nMore than 20 years after the first title in the series captivated a generation of gamers, Heavy Spectrum Entertainment Labs will bring the visually stunning world of Karamoon to life once more in the PlayStation 4 system exclusive Shadow of the\nBeast.\n\nEmbark on a ferocious, action-packedjourney in your quest to dethrone the evil lord Maletoth. Relive the legend...",
-      "modes": [
-        "Solo"
-      ],
-      "perspective": "Third-Person",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
-      "id": "concept:225857",
-      "title": "Shadow of the Colossus™",
-      "storeUrl": "https://store.playstation.com/de-de/concept/225857",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2319/XtqYrG2LWer39eExYBsh9J5x.png",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Action",
-        "Adventure"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2018-02-06",
-      "description": "Tales speak of an ancient land where creatures the size of mountains, roam the majestic landscape. Bound to the land, these creatures hold a key to a mystical power of revival - a power you must obtain to waken a loved one.\n\nShadow of the Colossus is a majestic journey through ancient lands to seek out and destroy gigantic mythical beasts. With your trusty horse at your side, explore the spacious lands and unearth each Colossi. Armed with your wits, a sword and a bow, use cunning and strategy to topple each behemot",
       "modes": [
         "Solo"
       ],
@@ -15223,6 +15130,38 @@
   "errors": [],
   "changes": [
     {
+      "id": "concept:222727",
+      "title": "Detroit: Become Human",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-29T10:26:28.693Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/222727"
+    },
+    {
+      "id": "concept:209065",
+      "title": "Everybody’s Golf",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-29T10:26:28.693Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/209065"
+    },
+    {
+      "id": "concept:234427",
+      "title": "MediEvil",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-29T10:26:28.693Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/234427"
+    },
+    {
+      "id": "concept:225857",
+      "title": "Shadow of the Colossus™",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-10-29T10:26:28.693Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/225857"
+    },
+    {
       "id": "concept:10014519",
       "title": "Football Manager 26 Console",
       "service": "extra",
@@ -15367,5 +15306,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-10-28T10:02:06.365Z"
+  "lastAttemptAt": "2026-10-29T10:26:28.693Z"
 }
