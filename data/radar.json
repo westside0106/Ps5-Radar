@@ -1,50 +1,44 @@
 {
-  "date": "28.10.2026",
-  "edition": "AUSGABE #053",
+  "date": "29.10.2026",
+  "edition": "AUSGABE #054",
   "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "28.10 · LIVE",
+  "newCount": "29.10 · LIVE",
   "leadTitle": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
   "leadDate": "27.10.2026",
   "leadMeta": "Erfahrt, wie „Aloft“ und „Conan Exiles Enhanced“ Anfang 2027 ihr PS5-Debüt feiern, mit neuen Inhalten und kostenlosem Upgrade.",
   "leadPrice": null,
   "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1ff2229adeb89a227ae4ad157e45d5686d392267.jpg",
-  "secondary1Title": "Rayman Legends Retold: Astro Bot-Kostüm im Crossover",
+  "secondary1Title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
   "secondary1Date": "28.10.2026",
-  "secondary1Meta": "Schlüpft als Astro Bot ins Kostüm: Erfahrt, wie das exklusive Outfit in Rayman Legends Retold entstanden ist.",
+  "secondary1Meta": "Erlebt eure PS5-Konsole und DualSense-Controller auf völlig neue Art und Weise. Wir freuen uns sehr, euch heute die Prism-Collection vorzustellen!",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/81cdadbd862c8f6ecf69daaa6d0be855e46afd28.jpg",
-  "secondary2Title": "Where Winds Meet: Hutuo bringt dramatischsten neuen Handlungsbogen",
-  "secondary2Date": "27.10.2026",
-  "secondary2Meta": "Entdeckt Hutuo, den dramatischsten Handlungsbogen in Where Winds Meet: ab 13. November mit PS5-Verbesserungen und großem Jubiläums-Update.",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/32d5df86d3a0cd5a32019da93598ca7ce1876f19.jpg",
+  "secondary2Title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
+  "secondary2Date": "29.10.2026",
+  "secondary2Meta": "Erfahrt, wie euch Bosswaffen in Phantom Blade Zero neue Kampfstile und Erkundungswege eröffnen.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/703760c7c55b06252d7ab149c83b748fd0e86c1f.jpg",
-  "psplusLabel": "SEPTEMBER 2026",
-  "psplusTitle": "September-Spiele sind live",
-  "psplusText": "Verfügbar bis 05.10.",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/360cbcd10d4e04739e5b2745b14d6c1dd0a1d4a8.jpg",
+  "psplusLabel": "OKTOBER 2026",
+  "psplusTitle": "Oktober-Spiele sind live",
+  "psplusText": "Verfügbar bis 30.11.",
   "plusGames": [
     {
-      "title": "Sniper Elite: Resistance",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
-      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
-      "imageSource": "official-product"
-    },
-    {
-      "title": "MLB The Show 26",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
-      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
-      "imageSource": "official-product"
-    },
-    {
-      "title": "Wobbly Life",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
-      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
-      "imageSource": "official-product"
-    },
-    {
-      "title": "Chained Echoes",
+      "title": "Dead Island 2",
       "image": null,
-      "storeUrl": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748",
+      "storeUrl": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
       "imageSource": "unverified"
+    },
+    {
+      "title": "Tomb Raider IV – VI Remastered",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/product/EP1875-PPSA18151_00-TOMBRAIDER456225",
+      "imageSource": "unverified"
+    },
+    {
+      "title": "Monster Train 2",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1815/3ea7456f6925d14bd479d7b9bd251be1575e0e5fc37ad88d.png",
+      "storeUrl": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880",
+      "imageSource": "official-product"
     }
   ],
   "storeTitle": "Keine verifizierten Top-Deals",
@@ -52,7 +46,9 @@
   "storeEnd": null,
   "deals": [],
   "releases": [],
-  "quickItems": [],
+  "quickItems": [
+    "September-Spiele sind live"
+  ],
   "leavingTitle": "Kein aktives Angebotsende",
   "leavingText": "Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
@@ -69,35 +65,47 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 28.10.2026 · 9/9 Quellen · 5/8 Details",
+  "radarCheck": "Stand 29.10.2026 · 9/9 Quellen · 4/7 Details",
   "sourceAlerts": [
+    {
+      "title": "Call of Duty: Modern Warfare 4: Alle Details zu Saison 1",
+      "url": "https://blog.de.playstation.com/2026/10/28/call-of-duty-modern-warfare-4-alle-details-zu-saison-1/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "PlayStation Plus monatliche Spiele für November: Dead Island 2 & mehr",
+      "url": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
+      "source": "PlayStation Blog DE",
+      "category": "psplus"
+    },
     {
       "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
       "url": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
       "type": "editorial"
     },
     {
-      "title": "Rayman Legends Retold: Astro Bot-Kostüm im Crossover",
-      "url": "https://blog.de.playstation.com/2026/10/28/rayman-legends-retold-astro-bot-kostuem-im-crossover/",
+      "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
+      "url": "https://blog.de.playstation.com/2026/10/28/vorschau-auf-die-prism-collection-mit-drei-neuen-transparenten-designs-fuer-ps5-zubehoer/",
       "type": "editorial"
     },
     {
-      "title": "Where Winds Meet: Hutuo bringt dramatischsten neuen Handlungsbogen",
-      "url": "https://blog.de.playstation.com/2026/10/27/where-winds-meet-neuer-handlungsbogen-fuehrt-nach-hutuo/",
+      "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
+      "url": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
       "type": "editorial"
     }
   ],
   "editorial": [
     {
-      "title": "Rayman Legends Retold: Astro Bot-Kostüm im Crossover",
-      "url": "https://blog.de.playstation.com/2026/10/28/rayman-legends-retold-astro-bot-kostuem-im-crossover/",
+      "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
+      "url": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
       "category": "news",
       "score": 50
     }
   ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-28T14:04:15.121Z",
+    "checkedAt": "2026-10-29T14:24:54.748Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -105,16 +113,16 @@
     "storeDiscoveryMode": "no-active-campaign",
     "storeProductsVerified": 0,
     "storeDealsSelected": 0,
-    "enrichedTitles": 5,
-    "detailTitles": 8,
+    "enrichedTitles": 4,
+    "detailTitles": 7,
     "automationNotes": 0,
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-28T14:04:15.121Z"
+    "lastSuccessfulCheck": "2026-10-29T14:24:54.748Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-28T14:04:15.121Z",
+    "checkedAt": "2026-10-29T14:24:54.748Z",
     "errors": [],
     "sources": [
       {
@@ -157,89 +165,19 @@
   },
   "gameDetails": {
     "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt": {},
-    "Rayman Legends Retold: Astro Bot-Kostüm im Crossover": {},
-    "Where Winds Meet: Hutuo bringt dramatischsten neuen Handlungsbogen": {},
-    "Sniper Elite: Resistance": {
-      "description": "Taktischer Third-Person-Shooter mit Scharfschützenfokus, Stealth, Kampagne und Online-Modi.",
-      "publisher": "REBELLION INTERACTIVE",
-      "genre": "Taktik-Shooter · Stealth · Action",
-      "release": "30.1.2025",
-      "platform": "PS4 · PS5",
-      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/b026676dfa9d7639fef041a9f0ed4c6d076e2ad3647eae1c.png",
-        "https://i.ytimg.com/vi_webp/wPH9TFf6yfE/maxresdefault.webp",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202512/2213/609ff466049b0f842ca5b668bf370dd5614798fd1ac04ae0.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202409/2414/0d137158ea592d4b35f80fd58964d12c17c9aaf17529bcf4.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202411/1909/8aafcc75d67ed0a3c4bb8410cd57ff437ae3a726da42177f.png"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=wPH9TFf6yfE",
-      "pageUrl": "https://www.playstation.com/de-de/games/sniper-elite-resistance/",
-      "developer": "Rebellion",
-      "storeUrl": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png",
-      "title": "Sniper Elite: Resistance"
+    "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör": {},
+    "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung": {},
+    "Dead Island 2": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 30.11."
     },
-    "MLB The Show 26": {
-      "description": "Baseball-Simulation von San Diego Studio mit Road to the Show, Diamond Dynasty und weiteren Einzelspieler- und Online-Modi.",
-      "publisher": "Sony Interactive Entertainment",
-      "genre": "Sport · Baseball",
-      "release": "17.3.2026",
-      "platform": "PS5",
-      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/MLB-TheShow-26-hero-desktop-01-en-15jan26",
-        "https://i.ytimg.com/vi_webp/56rEHW4ZX7Q/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/aoNwV0jJap0/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/V1Gfv157EtE/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/odStSrkzDBs/maxresdefault.webp"
-      ],
-      "trailerUrl": "https://www.youtube.com/watch?v=odStSrkzDBs",
-      "pageUrl": "https://www.playstation.com/de-de/games/mlb-the-show/",
-      "developer": "San Diego Studio",
-      "storeUrl": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2022/f658ffa5f4fc93bb4cef6de04f4bda474766011255ca3b38.png",
-      "title": "MLB The Show 26"
+    "Tomb Raider IV – VI Remastered": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 30.11."
     },
-    "Wobbly Life": {
-      "description": "Offene Physik-Sandbox mit Jobs, Missionen, Fahrzeugen, Häusern und Koop für bis zu vier Spieler.",
-      "publisher": "RUBBERBANDGAMES LTD",
-      "genre": "Sandbox · Adventure · Familie",
-      "release": "18.9.2025",
-      "platform": "PS4 · PS5",
-      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/l2VMZjLR9en9orx3nHGCaj8U.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/3650ac7e207de17c9aa1e057339b9e5b405c97a427af26de.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/b44f53cd0e854a7e1663d3ea5908708161c3a8972d1c95c5.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/6d5fc87bf96131851634a38b4e50c1d18b1697b9f5054891.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/4a6dcb161d41908a172df2bc0b2e435d79c454198de1c08f.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202508/0714/9a3b72705f0abf31b9997bddf3e54b88883dfefcee8af8a5.jpg"
-      ],
-      "storeUrl": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
-      "developer": "RubberBandGames",
-      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202212/0810/iCrnQDLqgGBSnHkTFbOzQX2Q.png",
-      "title": "Wobbly Life"
-    },
-    "Chained Echoes": {
-      "description": "Storyfokussiertes 16-Bit-Rollenspiel mit rundenbasierten Kämpfen, Fantasywelt, Mechs und einer Reise durch den Kontinent Valandis.",
-      "publisher": "DECK13 INTERACTIVE",
-      "genre": "Rollenspiel · JRPG-inspiriert",
-      "release": "7.12.2022",
-      "platform": "PS4",
-      "psPlusStatus": "SEPTEMBER 2026 · Verfügbar bis 05.10.",
-      "gallery": [
-        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/6O2jAYhTUqhcJYYJeNex5oKJ.png",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202211/1611/2dmcrpRqwwcV89IGO9TqQsNd.jpg",
-        "https://image.api.playstation.com/vulcan/ap/rnd/202507/0913/3bfc69e8efb69db85ffef2b61280c9a9df6491d6af7b947e.png",
-        "https://gmedia.playstation.com/is/image/SIEPDC/this-month-on-playstation-cross-sell-background-block-desktop-01-en-04oct22",
-        "https://gmedia.playstation.com/is/image/SIEPDC/best-jrpgs-keyart-02-en-30aug22",
-        "https://gmedia.playstation.com/is/image/SIEPDC/loader-spinner-dark"
-      ],
-      "pageUrl": "https://www.playstation.com/de-de/games/chained-echoes/",
-      "developer": "Matthias Linda"
+    "Monster Train 2": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 30.11.",
+      "storeUrl": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1815/3ea7456f6925d14bd479d7b9bd251be1575e0e5fc37ad88d.png",
+      "title": "Monster Train 2"
     },
     "EA SPORTS FC 27": {
       "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
@@ -261,19 +199,18 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-28T14:03:47.903Z",
-    "titles": 8,
-    "fetched": 5,
-    "enriched": 5,
+    "checkedAt": "2026-10-29T14:24:41.377Z",
+    "titles": 7,
+    "fetched": 1,
+    "enriched": 4,
     "warnings": []
   },
   "resolvedSources": {
-    "psPlusMonthly": "https://blog.de.playstation.com/2026/08/26/playstation-plus-monatliche-spiele-fuer-september-2026/",
+    "psPlusMonthly": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
     "psPlusStoreUrls": {
-      "Sniper Elite: Resistance": "https://store.playstation.com/product/UP4363-PPSA17232_00-SNIPERELITERES00",
-      "MLB The Show 26": "https://store.playstation.com/product/UP9000-PPSA30630_00-MLBTHESHOW26SHIP",
-      "Wobbly Life": "https://store.playstation.com/product/UP7742-PPSA29413_00-0632159817352246",
-      "Chained Echoes": "https://store.playstation.com/product/EP0900-CUSA29547_00-4103461541053748"
+      "Dead Island 2": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
+      "Tomb Raider IV – VI Remastered": "https://store.playstation.com/product/EP1875-PPSA18151_00-TOMBRAIDER456225",
+      "Monster Train 2": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880"
     },
     "monthlyReleases": "https://blog.de.playstation.com/?p=204875",
     "releaseStoreUrls": {
@@ -315,13 +252,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-28T14:03:47.479Z",
+    "checkedAt": "2026-10-29T14:24:41.003Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-28T14:03:47.568Z",
+    "checkedAt": "2026-10-29T14:24:41.072Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -334,19 +271,21 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-28T14:04:05.042Z",
-    "verified": 3,
+    "checkedAt": "2026-10-29T14:24:46.285Z",
+    "verified": 1,
     "missing": [
-      "Chained Echoes"
+      "Dead Island 2",
+      "Tomb Raider IV – VI Remastered"
     ],
     "warnings": [
-      "Chained Echoes: Produktidentitaet oder Cover nicht bestaetigt"
+      "Dead Island 2: Produktidentitaet oder Cover nicht bestaetigt",
+      "Tomb Raider IV – VI Remastered: Produktidentitaet oder Cover nicht bestaetigt"
     ]
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-28T14:03:44.400Z",
-    "date": "28.10.2026",
+    "checkedAt": "2026-10-29T14:24:40.179Z",
+    "date": "29.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -356,28 +295,29 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1ff2229adeb89a227ae4ad157e45d5686d392267.jpg"
       },
       {
-        "title": "Rayman Legends Retold: Astro Bot-Kostüm im Crossover",
+        "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
         "date": "28.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/28/rayman-legends-retold-astro-bot-kostuem-im-crossover/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/81cdadbd862c8f6ecf69daaa6d0be855e46afd28.jpg"
+        "url": "https://blog.de.playstation.com/2026/10/28/vorschau-auf-die-prism-collection-mit-drei-neuen-transparenten-designs-fuer-ps5-zubehoer/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/32d5df86d3a0cd5a32019da93598ca7ce1876f19.jpg"
       },
       {
-        "title": "Where Winds Meet: Hutuo bringt dramatischsten neuen Handlungsbogen",
-        "date": "27.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/27/where-winds-meet-neuer-handlungsbogen-fuehrt-nach-hutuo/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/703760c7c55b06252d7ab149c83b748fd0e86c1f.jpg"
+        "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
+        "date": "29.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/360cbcd10d4e04739e5b2745b14d6c1dd0a1d4a8.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-28T14:04:05.391Z",
-    "berlinDate": "2026-10-28",
+    "checkedAt": "2026-10-29T14:24:47.002Z",
+    "berlinDate": "2026-10-29",
     "newPostsToday": 1,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
-      "PS Plus: kein verifiziertes Produktcover für Chained Echoes"
+      "PS Plus: kein verifiziertes Produktcover für Dead Island 2",
+      "PS Plus: kein verifiziertes Produktcover für Tomb Raider IV – VI Remastered"
     ]
   }
 }

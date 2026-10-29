@@ -1,8 +1,28 @@
 {
-  "checkedAt": "2026-10-28T14:03:35.339Z",
+  "checkedAt": "2026-10-29T14:24:28.210Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
+        "link": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
+        "pubDate": "Thu, 29 Oct 2026 11:28:13 +0000"
+      },
+      {
+        "title": "Call of Duty: Modern Warfare 4: Alle Details zu Saison 1",
+        "link": "https://blog.de.playstation.com/2026/10/28/call-of-duty-modern-warfare-4-alle-details-zu-saison-1/",
+        "pubDate": "Wed, 28 Oct 2026 17:15:00 +0000"
+      },
+      {
+        "title": "PlayStation Plus monatliche Spiele für November: Dead Island 2 & mehr",
+        "link": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
+        "pubDate": "Wed, 28 Oct 2026 16:24:27 +0000"
+      },
+      {
+        "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
+        "link": "https://blog.de.playstation.com/2026/10/28/vorschau-auf-die-prism-collection-mit-drei-neuen-transparenten-designs-fuer-ps5-zubehoer/",
+        "pubDate": "Wed, 28 Oct 2026 15:00:00 +0000"
+      },
       {
         "title": "Rayman Legends Retold: Astro Bot-Kostüm im Crossover",
         "link": "https://blog.de.playstation.com/2026/10/28/rayman-legends-retold-astro-bot-kostuem-im-crossover/",
@@ -32,40 +52,38 @@
         "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
         "link": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
         "pubDate": "Mon, 26 Oct 2026 16:00:00 +0000"
-      },
-      {
-        "title": "Helldivers 2: Feiert den Tag der Freiheit 2026 mit uns",
-        "link": "https://blog.de.playstation.com/2026/10/26/helldivers-2-feiert-den-tag-der-freiheit-2026-mit-uns/",
-        "pubDate": "Mon, 26 Oct 2026 10:00:00 +0000"
-      },
-      {
-        "title": "Saros: Hinter den Kulissen der epischen Herrscher von Carcosa",
-        "link": "https://blog.de.playstation.com/2026/10/23/saros-hinter-den-kulissen-der-epischen-herrscher-von-carcosa/",
-        "pubDate": "Fri, 23 Oct 2026 12:00:00 +0000"
-      },
-      {
-        "title": "Die Aktion &#8222;Planet der Angebote&#8220; ist im PlayStation Store gelandet",
-        "link": "https://blog.de.playstation.com/2026/10/23/die-aktion-planet-der-angebote-ist-im-playstation-store-gelandet/",
-        "pubDate": "Fri, 23 Oct 2026 11:47:10 +0000"
-      },
-      {
-        "title": "Marvel’s Wolverine: Tipps und Tricks für den Fotomodus",
-        "link": "https://blog.de.playstation.com/2026/10/22/marvels-wolverine-tipps-und-tricks-fuer-den-fotomodus/",
-        "pubDate": "Thu, 22 Oct 2026 14:00:00 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Rayman Legends Retold: Astro Bot-Kostüm im Crossover",
-        "link": "https://blog.de.playstation.com/2026/10/28/rayman-legends-retold-astro-bot-kostuem-im-crossover/",
-        "pubDate": "Wed, 28 Oct 2026 13:00:00 +0000",
+        "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
+        "link": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
+        "pubDate": "Thu, 29 Oct 2026 11:28:13 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Call of Duty: Modern Warfare 4: Alle Details zu Saison 1",
+        "link": "https://blog.de.playstation.com/2026/10/28/call-of-duty-modern-warfare-4-alle-details-zu-saison-1/",
+        "pubDate": "Wed, 28 Oct 2026 17:15:00 +0000",
+        "category": "news"
+      },
+      {
+        "title": "PlayStation Plus monatliche Spiele für November: Dead Island 2 & mehr",
+        "link": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
+        "pubDate": "Wed, 28 Oct 2026 16:24:27 +0000",
+        "category": "psplus"
+      },
+      {
+        "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
+        "link": "https://blog.de.playstation.com/2026/10/28/vorschau-auf-die-prism-collection-mit-drei-neuen-transparenten-designs-fuer-ps5-zubehoer/",
+        "pubDate": "Wed, 28 Oct 2026 15:00:00 +0000",
         "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209643,
+    "bytes": 209749,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +134,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176234,
+    "bytes": 176340,
     "updated": true,
     "parsed": {
       "games": [
@@ -137,6 +155,10 @@
           "hasImage": true
         },
         {
+          "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
+          "hasImage": true
+        },
+        {
           "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
           "hasImage": true
         }
@@ -145,15 +167,15 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-28T14:04:05.391Z",
-      "parsed": 5,
-      "accepted": [
+      "checkedAt": "2026-10-29T14:24:47.002Z",
+      "parsed": 6,
+      "accepted": [],
+      "rejected": [
         "Sniper Elite: Resistance",
         "MLB The Show 26",
         "Wobbly Life",
-        "Chained Echoes"
-      ],
-      "rejected": [
+        "Chained Echoes",
+        "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
         "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt"
       ]
     }
@@ -165,7 +187,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241529,
+    "bytes": 241530,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -178,7 +200,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173774,
+    "bytes": 173768,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
