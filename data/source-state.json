@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-29T14:24:28.210Z",
+  "checkedAt": "2026-10-30T14:14:44.001Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,36 +54,11 @@
         "pubDate": "Mon, 26 Oct 2026 16:00:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
-        "link": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
-        "pubDate": "Thu, 29 Oct 2026 11:28:13 +0000",
-        "category": "news"
-      },
-      {
-        "title": "Call of Duty: Modern Warfare 4: Alle Details zu Saison 1",
-        "link": "https://blog.de.playstation.com/2026/10/28/call-of-duty-modern-warfare-4-alle-details-zu-saison-1/",
-        "pubDate": "Wed, 28 Oct 2026 17:15:00 +0000",
-        "category": "news"
-      },
-      {
-        "title": "PlayStation Plus monatliche Spiele für November: Dead Island 2 & mehr",
-        "link": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
-        "pubDate": "Wed, 28 Oct 2026 16:24:27 +0000",
-        "category": "psplus"
-      },
-      {
-        "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
-        "link": "https://blog.de.playstation.com/2026/10/28/vorschau-auf-die-prism-collection-mit-drei-neuen-transparenten-designs-fuer-ps5-zubehoer/",
-        "pubDate": "Wed, 28 Oct 2026 15:00:00 +0000",
-        "category": "news"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 209749,
+    "bytes": 210080,
     "schedule": [
       {
         "date": "03.09.",
@@ -134,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176340,
+    "bytes": 176671,
     "updated": true,
     "parsed": {
       "games": [
@@ -167,7 +142,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-29T14:24:47.002Z",
+      "checkedAt": "2026-10-30T14:14:57.536Z",
       "parsed": 6,
       "accepted": [],
       "rejected": [
@@ -200,7 +175,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173768,
+    "bytes": 173776,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

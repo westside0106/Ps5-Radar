@@ -1,8 +1,8 @@
 {
-  "date": "29.10.2026",
-  "edition": "AUSGABE #054",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "29.10 · LIVE",
+  "date": "30.10.2026",
+  "edition": "AUSGABE #055",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "30.10 · LIVE",
   "leadTitle": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
   "leadDate": "27.10.2026",
   "leadMeta": "Erfahrt, wie „Aloft“ und „Conan Exiles Enhanced“ Anfang 2027 ihr PS5-Debüt feiern, mit neuen Inhalten und kostenlosem Upgrade.",
@@ -65,20 +65,8 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 29.10.2026 · 9/9 Quellen · 4/7 Details",
+  "radarCheck": "Stand 30.10.2026 · 9/9 Quellen · 4/7 Details",
   "sourceAlerts": [
-    {
-      "title": "Call of Duty: Modern Warfare 4: Alle Details zu Saison 1",
-      "url": "https://blog.de.playstation.com/2026/10/28/call-of-duty-modern-warfare-4-alle-details-zu-saison-1/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
-    {
-      "title": "PlayStation Plus monatliche Spiele für November: Dead Island 2 & mehr",
-      "url": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
-      "source": "PlayStation Blog DE",
-      "category": "psplus"
-    },
     {
       "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
       "url": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
@@ -95,17 +83,10 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
-      "url": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
-      "category": "news",
-      "score": 50
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-29T14:24:54.748Z",
+    "checkedAt": "2026-10-30T14:15:07.602Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -119,10 +100,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-29T14:24:54.748Z"
+    "lastSuccessfulCheck": "2026-10-30T14:15:07.602Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-29T14:24:54.748Z",
+    "checkedAt": "2026-10-30T14:15:07.602Z",
     "errors": [],
     "sources": [
       {
@@ -199,7 +180,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-29T14:24:41.377Z",
+    "checkedAt": "2026-10-30T14:14:53.341Z",
     "titles": 7,
     "fetched": 1,
     "enriched": 4,
@@ -252,13 +233,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-29T14:24:41.003Z",
+    "checkedAt": "2026-10-30T14:14:52.906Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-29T14:24:41.072Z",
+    "checkedAt": "2026-10-30T14:14:52.999Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -271,7 +252,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-29T14:24:46.285Z",
+    "checkedAt": "2026-10-30T14:14:57.209Z",
     "verified": 1,
     "missing": [
       "Dead Island 2",
@@ -284,8 +265,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-29T14:24:40.179Z",
-    "date": "29.10.2026",
+    "checkedAt": "2026-10-30T14:14:51.971Z",
+    "date": "30.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -310,9 +291,9 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-29T14:24:47.002Z",
-    "berlinDate": "2026-10-29",
-    "newPostsToday": 1,
+    "checkedAt": "2026-10-30T14:14:57.536Z",
+    "berlinDate": "2026-10-30",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
