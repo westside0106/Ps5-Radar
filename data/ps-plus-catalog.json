@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-29T10:26:28.693Z",
+  "checkedAt": "2026-10-30T10:28:34.410Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-29T10:26:28.693Z"
+      "checkedAt": "2026-10-30T10:28:34.410Z"
     },
     "extra": {
       "complete": true,
@@ -17,15 +17,15 @@
       "count": 439,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-10-29T10:26:28.693Z"
+      "checkedAt": "2026-10-30T10:28:34.410Z"
     },
     "classics": {
       "complete": true,
-      "expected": 169,
-      "count": 169,
+      "expected": 167,
+      "count": 167,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-29T10:26:28.693Z"
+      "checkedAt": "2026-10-30T10:28:34.410Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-10-29T10:26:28.693Z"
+      "checkedAt": "2026-10-30T10:28:34.410Z"
     }
   },
   "games": [
@@ -8444,7 +8444,7 @@
       "id": "concept:10002313",
       "title": "The Crew Motorfest Cross-Gen Bundle",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002313",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2315/607d9ed1ac762c9de33ef73fd09b3431d0b96ef4985ac2fb.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2217/aff7ae0da202d816a5761fd4ce865085320052f46223c770.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -14662,31 +14662,6 @@
       "imageSource": "PlayStation"
     },
     {
-      "id": "concept:202806",
-      "title": "Metro Redux",
-      "storeUrl": "https://store.playstation.com/de-de/concept/202806",
-      "image": "https://image.api.playstation.com/cdn/EP4062/CUSA00593_00/74C5XBvmTgxNNjvECPxlj8tC639xS0WR.png",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Action",
-        "Shooter"
-      ],
-      "services": [
-        "premium"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2014-08-25",
-      "description": "Metro Redux is the ultimate double game collection, including the definitive versions of both Metro 2033 and Metro: Last Light, each rebuilt in the latest and greatest iteration of the 4A Engine for next-gen consoles and PC.\n\nFor the first time, console owners can expect smooth 60FPS gameplay and state of the art visuals that were once only available on high-end PC hardware.\n\nNewcomers to the series will get the chance to experience two of the finest story-driven shooters of all time in one vast package; an epic ad",
-      "modes": [
-        "Solo"
-      ],
-      "perspective": "First-Person",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
       "id": "concept:10013857",
       "title": "NINJA GAIDEN: Ragebound",
       "storeUrl": "https://store.playstation.com/de-de/concept/10013857",
@@ -14811,31 +14786,6 @@
         "Koop"
       ],
       "perspective": "Third-Person",
-      "metadataSource": "IGDB",
-      "imageSource": "PlayStation"
-    },
-    {
-      "id": "concept:202807",
-      "title": "Metro 2033 Redux",
-      "storeUrl": "https://store.playstation.com/de-de/concept/202807",
-      "image": "https://image.api.playstation.com/vulcan/img/rnd/202103/0313/0XmesVquzTiWkjPy0vJlxrzZ.png",
-      "platforms": [
-        "PS4"
-      ],
-      "genres": [
-        "Action",
-        "Shooter"
-      ],
-      "services": [
-        "premium"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "releaseDate": "2014-08-26",
-      "description": "Metro 2033 Redux is the definitive version of the cult classic Metro 2033, rebuilt in the latest and greatest iteration of the 4A Engine for Next Gen. Fans of the original game will find the unique world of Metro transformed with incredible lighting, physics and dynamic weather effects. Newcomers will get the chance to experience one of the finest story-driven shooters of all time; an epic adventure combining gripping survival horror, exploration and tactical combat and stealth.\n\nAll the gameplay improvements and f",
-      "modes": [
-        "Solo"
-      ],
-      "perspective": "First-Person",
       "metadataSource": "IGDB",
       "imageSource": "PlayStation"
     },
@@ -15130,6 +15080,22 @@
   "errors": [],
   "changes": [
     {
+      "id": "concept:202806",
+      "title": "Metro Redux",
+      "service": "premium",
+      "kind": "removed",
+      "date": "2026-10-30T10:28:34.410Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/202806"
+    },
+    {
+      "id": "concept:202807",
+      "title": "Metro 2033 Redux",
+      "service": "premium",
+      "kind": "removed",
+      "date": "2026-10-30T10:28:34.410Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/202807"
+    },
+    {
       "id": "concept:222727",
       "title": "Detroit: Become Human",
       "service": "extra",
@@ -15306,5 +15272,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-10-29T10:26:28.693Z"
+  "lastAttemptAt": "2026-10-30T10:28:34.410Z"
 }
