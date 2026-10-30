@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-29T14:26:04.276Z",
+  "checkedAt": "2026-10-30T14:17:38.635Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1654,
+    "count": 1659,
     "views": {
       "deals": {
-        "expected": 966,
-        "observed": 966,
-        "count": 966,
+        "expected": 971,
+        "observed": 971,
+        "count": 971,
         "complete": true,
         "attempts": 1
       },
@@ -31,9 +31,9 @@
         "attempts": 2
       },
       "gamepass-ultimate": {
-        "expected": 697,
-        "observed": 696,
-        "count": 696,
+        "expected": 699,
+        "observed": 698,
+        "count": 698,
         "complete": false,
         "attempts": 2
       },
@@ -55,12 +55,12 @@
     "errors": [
       "gamepass-essential: keine bestaetigte Quelle (Durchlauf 1: gamepass-essential: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-essential: keine bestaetigte Anzahl und keine Filterkarten)",
       "gamepass-premium: keine bestaetigte Quelle (Durchlauf 1: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten)",
-      "gamepass-ultimate: 696/697 eindeutig belegt, Durchlauf 1: 696/697 eindeutige IDs; Durchlauf 2: 696/697 eindeutige IDs",
+      "gamepass-ultimate: 698/699 eindeutig belegt, Durchlauf 1: 698/699 eindeutige IDs; Durchlauf 2: 698/699 eindeutige IDs",
       "ea-play: keine bestaetigte Quelle (Durchlauf 1: ea-play: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: ea-play: keine bestaetigte Anzahl und keine Filterkarten)",
       "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 113/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
       "gamepass-essential: 0/? Karten gesehen",
       "gamepass-premium: 0/? Karten gesehen",
-      "gamepass-ultimate: 696/697 Karten gesehen",
+      "gamepass-ultimate: 698/699 Karten gesehen",
       "ea-play: 0/? Karten gesehen",
       "ubisoft-plus: 113/117 Karten gesehen"
     ]
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-29T14:26:04.276Z",
+      "observedAt": "2026-10-30T14:17:38.635Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-29T14:26:04.276Z",
+      "observedAt": "2026-10-30T14:17:38.635Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-29T14:26:04.276Z",
+      "observedAt": "2026-10-30T14:17:38.635Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -1872,6 +1872,23 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9n11994g514b",
+      "id": "9n11994g514b",
+      "title": "Asylum",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/asylum/9n11994g514b",
+      "cover": "https://store-images.s-microsoft.com/image/apps.42650.13915026531015961.22f4f66a-24dd-4f93-bd86-6756e2022410.1998333a-b186-477b-beb6-81797e6175ee?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 2399,
+      "regularPriceMinor": 2999,
+      "genres": [
+        "Action & Abenteuer",
+        "Andere"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:9pgdrd94g46b",
@@ -4210,6 +4227,24 @@
       ]
     },
     {
+      "key": "xbox:product:9pf42v243zdb",
+      "id": "9pf42v243zdb",
+      "title": "Candy Shop Simulator",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/candy-shop-simulator/9pf42v243zdb",
+      "cover": "https://store-images.s-microsoft.com/image/apps.10453.14212482671957545.bad0295c-85c1-4218-9a39-bf7ec89a0765.9b1c2e1b-c03a-4b8f-aea1-4e12a347b4f8?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 899,
+      "regularPriceMinor": 999,
+      "genres": [
+        "Familie & Kinder",
+        "Rollenspiele",
+        "Simulation"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:bv26w4btclkg",
       "id": "bv26w4btclkg",
       "title": "Capcom Beat 'Em Up Bundle",
@@ -4853,6 +4888,23 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9nvn2t9d87ff",
+      "id": "9nvn2t9d87ff",
+      "title": "Corner Shop: NightShift",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/corner-shop-nightshift/9nvn2t9d87ff",
+      "cover": "https://store-images.s-microsoft.com/image/apps.54250.14391392336560552.9dfd2431-be3f-4afc-b8ba-5a170411a48f.4ce3a315-c683-4d7e-aff5-59fea6d964e4?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1799,
+      "regularPriceMinor": 1999,
+      "genres": [
+        "Action & Abenteuer",
+        "Simulation"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:br74rlmh966k",
@@ -8037,7 +8089,7 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 4000,
+      "priceMinor": 5199,
       "regularPriceMinor": 7999,
       "genres": [
         "Sport"
@@ -11768,38 +11820,6 @@
       ]
     },
     {
-      "key": "xbox:product:9nn82nh949d5",
-      "id": "9nn82nh949d5",
-      "title": "HITMAN World of Assassination",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/hitman-world-of-assassination/9nn82nh949d5",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29216.13747708785346246.7357480f-2280-4f22-b230-462953a1418d.4e66c8ab-f764-4676-b604-332a24fa17c6?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2799,
-      "regularPriceMinor": 6999,
-      "genres": [
-        "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9mtbw414kk0j",
-      "id": "9mtbw414kk0j",
-      "title": "HITMAN World of Assassination Deluxe Pack",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/hitman-world-of-assassination-deluxe-pack/9mtbw414kk0j",
-      "cover": "https://store-images.s-microsoft.com/image/apps.14272.13811084764936971.9e6215d6-be14-4bbb-a1e2-0a9ecda56f5f.3aed8a9b-b5fc-4ffb-9e4f-0ef57dc7ccb3?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2099,
-      "regularPriceMinor": 2999,
-      "genres": [
-        "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9mt5nj5w7b8z",
       "id": "9mt5nj5w7b8z",
       "title": "Hogwarts Legacy",
@@ -14725,6 +14745,38 @@
       ]
     },
     {
+      "key": "xbox:product:9nh8n0m7cwln",
+      "id": "9nh8n0m7cwln",
+      "title": "Microsoft Flight Simulator (2020) Deluxe 40th Anniversary Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/microsoft-flight-simulator-2020-deluxe-40th-anniversary-edition/9nh8n0m7cwln",
+      "cover": "https://store-images.s-microsoft.com/image/apps.29318.13630274674230323.ef522ebd-e0ea-449e-b0c8-3271887caa67.dfe98ed0-2025-4ad5-a844-bf0deb45743e?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 3149,
+      "regularPriceMinor": 8999,
+      "genres": [
+        "Simulation"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9pj15d3rdxmv",
+      "id": "9pj15d3rdxmv",
+      "title": "Microsoft Flight Simulator (2020) Premium Deluxe 40th Anniversary Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/microsoft-flight-simulator-2020-premium-deluxe-40th-anniversary-edition/9pj15d3rdxmv",
+      "cover": "https://store-images.s-microsoft.com/image/apps.13845.14225646405929875.ed2b05a2-f9fd-4a33-b808-807366c017bf.5f1f24de-445f-4bf0-af0b-cf1de8aec6d5?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 4199,
+      "regularPriceMinor": 11999,
+      "genres": [
+        "Simulation"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9pmqdm08snk9",
       "id": "9pmqdm08snk9",
       "title": "Microsoft Flight Simulator (2020) Standard 40th Anniversary Edition",
@@ -14733,12 +14785,30 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 6999,
-      "regularPriceMinor": null,
-      "genres": [],
+      "priceMinor": 2449,
+      "regularPriceMinor": 6999,
+      "genres": [
+        "Simulation"
+      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9nzrkqh7z8kb",
+      "id": "9nzrkqh7z8kb",
+      "title": "Microsoft Flight Simulator (2020): 40th Anniversary Aviator Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/microsoft-flight-simulator-2020-40th-anniversary-aviator-edition/9nzrkqh7z8kb",
+      "cover": "https://store-images.s-microsoft.com/image/apps.22777.14470476271683127.5da1b6f8-c196-4d3d-8c36-f4368c4a57ad.52a03919-6868-4922-b505-a6e35b7ca46c?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 11399,
+      "regularPriceMinor": 18999,
+      "genres": [
+        "Simulation"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:9p38d19t7lrv",
@@ -17196,22 +17266,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9pdr0bvgmzqx",
-      "id": "9pdr0bvgmzqx",
-      "title": "Paradise Pack 4 in 1 (Xbox Series)",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/paradise-pack-4-in-1-xbox-series/9pdr0bvgmzqx",
-      "cover": "https://store-images.s-microsoft.com/image/apps.58433.14144883648919243.fbb69b26-3036-4ecd-b96f-0fb112c16761.536ca68b-a90d-496a-b2fb-f4adf5fbc2e6?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2679,
-      "regularPriceMinor": 3349,
-      "genres": [
-        "Simulation"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9p5ldsmw526l",
       "id": "9p5ldsmw526l",
       "title": "Pathfinder: Wrath of the Righteous",
@@ -17632,6 +17686,24 @@
       "services": []
     },
     {
+      "key": "xbox:product:9p74wl8dm66v",
+      "id": "9p74wl8dm66v",
+      "title": "Pinballoid Crush",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/pinballoid-crush/9p74wl8dm66v",
+      "cover": "https://store-images.s-microsoft.com/image/apps.53060.14606737467543529.986855e7-f6be-4715-98aa-383ead8a4089.7d0cdf91-41b3-4966-b98d-c9110d0f8305?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 959,
+      "regularPriceMinor": 1199,
+      "genres": [
+        "Action & Abenteuer",
+        "Klassiker",
+        "Simulation"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9p7d40v1z07z",
       "id": "9p7d40v1z07z",
       "title": "Pinku Kult: Hex Mortis",
@@ -17802,7 +17874,9 @@
         "Familie & Kinder",
         "Strategiespiele"
       ],
-      "services": []
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
     },
     {
       "key": "xbox:product:c4hzc7ljg6px",
@@ -18723,42 +18797,6 @@
       "regularPriceMinor": 2999,
       "genres": [
         "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9nb3m32qd49q",
-      "id": "9nb3m32qd49q",
-      "title": "Railroad Swap (Xbox One)",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/railroad-swap-xbox-one/9nb3m32qd49q",
-      "cover": "https://store-images.s-microsoft.com/image/apps.15351.14581582916159441.158d728d-f365-47b6-abc5-0bb4353be42e.7259499f-a775-4f31-931c-c382dd1fece0?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Familie & Kinder",
-        "Rätsel & Wissen",
-        "Strategiespiele"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9mxtc0jm24zj",
-      "id": "9mxtc0jm24zj",
-      "title": "Railroad Swap (Xbox Series)",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/railroad-swap-xbox-series/9mxtc0jm24zj",
-      "cover": "https://store-images.s-microsoft.com/image/apps.15351.14581582916159441.158d728d-f365-47b6-abc5-0bb4353be42e.7259499f-a775-4f31-931c-c382dd1fece0?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 399,
-      "regularPriceMinor": 499,
-      "genres": [
-        "Familie & Kinder",
-        "Rätsel & Wissen",
-        "Strategiespiele"
       ],
       "services": []
     },
@@ -20781,6 +20819,23 @@
       "services": []
     },
     {
+      "key": "xbox:product:9n5n3tm2rl53",
+      "id": "9n5n3tm2rl53",
+      "title": "Sigi Ein Furz für Melusina",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/sigi-ein-furz-fur-melusina/9n5n3tm2rl53",
+      "cover": "https://store-images.s-microsoft.com/image/apps.6190.14030450782511438.146b846f-32bf-47c7-8ee3-9f5a14000b3a.75ff2f4c-ec02-48b9-9921-e6e9a8fcf7df?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 399,
+      "regularPriceMinor": 499,
+      "genres": [
+        "Action & Abenteuer",
+        "Platformer"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9p9jdv1pv21h",
       "id": "9p9jdv1pv21h",
       "title": "SILENT HILL 2 Deluxe Edition",
@@ -22619,6 +22674,22 @@
       "services": []
     },
     {
+      "key": "xbox:product:9n65wlp4cscl",
+      "id": "9n65wlp4cscl",
+      "title": "Sword of the Sea",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/sword-of-the-sea/9n65wlp4cscl",
+      "cover": "https://store-images.s-microsoft.com/image/apps.62966.14024727994947811.5ba2b0e0-d369-4e00-870e-ee3905c94a0c.c15773ba-b1e9-4dcb-8bc8-af60b04d36fe?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 2399,
+      "regularPriceMinor": 2999,
+      "genres": [
+        "Action & Abenteuer"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9nblhdb0wlhz",
       "id": "9nblhdb0wlhz",
       "title": "Symphonia 𝄞",
@@ -22844,6 +22915,24 @@
       ]
     },
     {
+      "key": "xbox:product:9pkfl1xjt73s",
+      "id": "9pkfl1xjt73s",
+      "title": "Terrible Lizards",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/terrible-lizards/9pkfl1xjt73s",
+      "cover": "https://store-images.s-microsoft.com/image/apps.8368.14263508046410977.85ca9e89-ec54-4c85-9c49-0ce9abe3f1fd.d965509b-8659-4d15-8f26-b612fc6106cd?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1999,
+      "regularPriceMinor": 2499,
+      "genres": [
+        "Action & Abenteuer"
+      ],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
       "key": "xbox:product:9p27cck0vt8g",
       "id": "9p27cck0vt8g",
       "title": "Terrifier: The ARTcade Game",
@@ -23005,30 +23094,14 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 1574,
-      "regularPriceMinor": 3499,
+      "priceMinor": 3499,
+      "regularPriceMinor": null,
       "genres": [
         "Action & Abenteuer"
       ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9mx7lqnbqpg7",
-      "id": "9mx7lqnbqpg7",
-      "title": "The Alters: Deluxe Edition Upgrade",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-alters-deluxe-edition-upgrade/9mx7lqnbqpg7",
-      "cover": "https://store-images.s-microsoft.com/image/apps.15042.13894890531388424.8e479d1a-5ebf-4071-a798-081183c0651e.09d7ab6c-60a6-43a8-8d38-c10cff0d15af?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1079,
-      "regularPriceMinor": 1799,
-      "genres": [
-        "Action & Abenteuer"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9mwd9c99hgxt",
@@ -23891,25 +23964,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9mxx23tskd49",
-      "id": "9mxx23tskd49",
-      "title": "The Last Case",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-last-case/9mxx23tskd49",
-      "cover": "https://store-images.s-microsoft.com/image/apps.55440.13881786255427246.de9dd33d-8e51-4aa6-a75e-37283504625b.50fc815a-041e-4e75-82ca-ab27809604bd?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 799,
-      "regularPriceMinor": 999,
-      "genres": [
-        "Action & Abenteuer",
-        "Andere",
-        "Rätsel & Wissen",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9p593jt4nsl5",
       "id": "9p593jt4nsl5",
       "title": "The Last Case of John Morley",
@@ -24144,6 +24198,22 @@
       "regularPriceMinor": 2399,
       "genres": [
         "Rollenspiele"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9nvdvtzhmg0s",
+      "id": "9nvdvtzhmg0s",
+      "title": "The Night of the Exorcism",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-night-of-the-exorcism/9nvdvtzhmg0s",
+      "cover": "https://store-images.s-microsoft.com/image/apps.9682.14396150047698095.e25d02ff-c3ad-4e3b-9e4d-43860b298a10.bb53c652-dbf9-4b0b-ac9b-9c177a0aa7a1?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 559,
+      "regularPriceMinor": 699,
+      "genres": [
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -25516,6 +25586,24 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
+    },
+    {
+      "key": "xbox:product:9n9dx7dv1njl",
+      "id": "9n9dx7dv1njl",
+      "title": "Train Yard Builder",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/train-yard-builder/9n9dx7dv1njl",
+      "cover": "https://store-images.s-microsoft.com/image/apps.24656.13534220557867773.87a80b43-9aec-4583-b6d5-46445ddd9754.4ad7f234-45a8-439e-be08-e92b0fdd0093?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1799,
+      "regularPriceMinor": 1999,
+      "genres": [
+        "Andere",
+        "Familie & Kinder",
+        "Simulation"
+      ],
+      "services": []
     },
     {
       "key": "xbox:product:9nrw52q57j3s",
