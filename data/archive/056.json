@@ -1,0 +1,296 @@
+{
+  "date": "31.10.2026",
+  "edition": "AUSGABE #056",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "31.10 · LIVE",
+  "leadTitle": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
+  "leadDate": "27.10.2026",
+  "leadMeta": "Erfahrt, wie „Aloft“ und „Conan Exiles Enhanced“ Anfang 2027 ihr PS5-Debüt feiern, mit neuen Inhalten und kostenlosem Upgrade.",
+  "leadPrice": null,
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1ff2229adeb89a227ae4ad157e45d5686d392267.jpg",
+  "secondary1Title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
+  "secondary1Date": "28.10.2026",
+  "secondary1Meta": "Erlebt eure PS5-Konsole und DualSense-Controller auf völlig neue Art und Weise. Wir freuen uns sehr, euch heute die Prism-Collection vorzustellen!",
+  "secondary1Price": null,
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/32d5df86d3a0cd5a32019da93598ca7ce1876f19.jpg",
+  "secondary2Title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
+  "secondary2Date": "29.10.2026",
+  "secondary2Meta": "Erfahrt, wie euch Bosswaffen in Phantom Blade Zero neue Kampfstile und Erkundungswege eröffnen.",
+  "secondary2Price": null,
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/360cbcd10d4e04739e5b2745b14d6c1dd0a1d4a8.jpg",
+  "psplusLabel": "OKTOBER 2026",
+  "psplusTitle": "Oktober-Spiele sind live",
+  "psplusText": "Verfügbar bis 30.11.",
+  "plusGames": [
+    {
+      "title": "Dead Island 2",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
+      "imageSource": "unverified"
+    },
+    {
+      "title": "Tomb Raider IV – VI Remastered",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/product/EP1875-PPSA18151_00-TOMBRAIDER456225",
+      "imageSource": "unverified"
+    },
+    {
+      "title": "Monster Train 2",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1815/3ea7456f6925d14bd479d7b9bd251be1575e0e5fc37ad88d.png",
+      "storeUrl": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880",
+      "imageSource": "official-product"
+    }
+  ],
+  "storeTitle": "Keine verifizierten Top-Deals",
+  "storeText": "Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.",
+  "storeEnd": null,
+  "deals": [],
+  "releases": [],
+  "quickItems": [
+    "September-Spiele sind live"
+  ],
+  "leavingTitle": "Kein aktives Angebotsende",
+  "leavingText": "Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.",
+  "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
+  "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
+  "eaItems": [
+    "10 % auf digitale EA-Käufe",
+    "Monatliche Mitgliederbelohnungen",
+    "The Play List"
+  ],
+  "ubisoftTitle": "Ubisoft+ Classics",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftItems": [
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
+  ],
+  "radarCheck": "Stand 31.10.2026 · 9/9 Quellen erfolgreich geprüft",
+  "sourceAlerts": [
+    {
+      "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
+      "url": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
+      "type": "editorial"
+    },
+    {
+      "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
+      "url": "https://blog.de.playstation.com/2026/10/28/vorschau-auf-die-prism-collection-mit-drei-neuen-transparenten-designs-fuer-ps5-zubehoer/",
+      "type": "editorial"
+    },
+    {
+      "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
+      "url": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
+      "type": "editorial"
+    }
+  ],
+  "editorial": [],
+  "health": {
+    "status": "ok",
+    "checkedAt": "2026-10-31T13:41:05.898Z",
+    "okSources": 9,
+    "totalSources": 9,
+    "failedSources": 0,
+    "warnings": 0,
+    "lastSuccessfulCheck": "2026-10-31T13:40:52.598Z",
+    "editorialFreshness": "ok"
+  },
+  "sourceCheck": {
+    "checkedAt": "2026-10-31T13:40:52.598Z",
+    "errors": [],
+    "sources": [
+      {
+        "name": "PlayStation Blog",
+        "ok": true
+      },
+      {
+        "name": "Monats-Releases",
+        "ok": true
+      },
+      {
+        "name": "PS Plus monatlich",
+        "ok": true
+      },
+      {
+        "name": "PS Plus aktuell",
+        "ok": true
+      },
+      {
+        "name": "EA Play",
+        "ok": true
+      },
+      {
+        "name": "Ubisoft+",
+        "ok": true
+      },
+      {
+        "name": "Store: Hogwarts Legacy",
+        "ok": true
+      },
+      {
+        "name": "Store: Star Wars Outlaws",
+        "ok": true
+      },
+      {
+        "name": "Store: Red Dead Redemption",
+        "ok": true
+      }
+    ]
+  },
+  "gameDetails": {
+    "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt": {},
+    "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör": {},
+    "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung": {},
+    "Dead Island 2": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 30.11."
+    },
+    "Tomb Raider IV – VI Remastered": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 30.11."
+    },
+    "Monster Train 2": {
+      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 30.11.",
+      "storeUrl": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1815/3ea7456f6925d14bd479d7b9bd251be1575e0e5fc37ad88d.png",
+      "title": "Monster Train 2"
+    },
+    "EA SPORTS FC 27": {
+      "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
+      "developer": "EA SPORTS",
+      "genre": "Sport · Fußball",
+      "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
+      "publisher": "EA Swiss Sarl",
+      "release": "18.9.2026",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
+        "https://i.ytimg.com/vi_webp/LoqWKZ1kjio/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-02-en-13jul26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=LoqWKZ1kjio"
+    }
+  },
+  "enrichment": {
+    "checkedAt": "2026-10-31T13:41:02.939Z",
+    "titles": 7,
+    "fetched": 1,
+    "enriched": 4,
+    "warnings": []
+  },
+  "resolvedSources": {
+    "psPlusMonthly": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
+    "psPlusStoreUrls": {
+      "Dead Island 2": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
+      "Tomb Raider IV – VI Remastered": "https://store.playstation.com/product/EP1875-PPSA18151_00-TOMBRAIDER456225",
+      "Monster Train 2": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880"
+    },
+    "monthlyReleases": "https://blog.de.playstation.com/?p=204875",
+    "releaseStoreUrls": {
+      "The Blood of Dawnwalker": "https://store.playstation.com/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
+      "Onimusha: Way of the Sword": "https://store.playstation.com/product/UP0102-PPSA27836_00-0000000000000001",
+      "NBA 2K27": "https://store.playstation.com/product/UP1001-PPSA35889_00-NBA2K27000000000",
+      "Mewgenics": "https://store.playstation.com/concept/10019219",
+      "Marvel’s Wolverine": "https://store.playstation.com/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+      "Aniimo": "https://store.playstation.com/product/JB2238-PPSA35870_00-0588301512156043",
+      "Control Resonant": "https://store.playstation.com/product/EP5291-PPSA34547_00-0210080241603648",
+      "Silent Hill: Townfall": "https://store.playstation.com/product/JP0101-PPSA33286_00-TOWNFALLSIEJ0000",
+      "EA Sports FC 27": "https://store.playstation.com/product/UP0006-PPSA34015_00-27STANDARDBUNDLE"
+    },
+    "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
+    "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
+    "storeCampaign": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
+    "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "storeDeals": {}
+  },
+  "eaPlay": {
+    "title": "FC™ 27 · 10h Trial ab 18.09.",
+    "trial": null,
+    "items": [
+      "10 % auf digitale EA-Käufe",
+      "Monatliche Mitgliederbelohnungen",
+      "The Play List"
+    ],
+    "sourceUrl": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play"
+  },
+  "ubisoftPlus": {
+    "title": "Ubisoft+ Classics",
+    "price": "7,99 €",
+    "items": [
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
+    ],
+    "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
+  },
+  "automationV2": {
+    "version": 2,
+    "checkedAt": "2026-10-31T13:41:02.534Z",
+    "month": "Oktober",
+    "year": 2026,
+    "notes": []
+  },
+  "storeDiscovery": {
+    "checkedAt": "2026-10-31T13:41:02.621Z",
+    "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "activeCampaign": false,
+    "staticLinks": 0,
+    "browserLinks": 0,
+    "links": 0,
+    "fetched": 0,
+    "verified": 0,
+    "selected": 0,
+    "mode": "no-active-campaign",
+    "warnings": []
+  },
+  "mediaValidation": {
+    "checkedAt": "2026-10-31T13:41:05.752Z",
+    "verified": 1,
+    "missing": [
+      "Dead Island 2",
+      "Tomb Raider IV – VI Remastered"
+    ],
+    "warnings": [
+      "Dead Island 2: Produktidentitaet oder Cover nicht bestaetigt",
+      "Tomb Raider IV – VI Remastered: Produktidentitaet oder Cover nicht bestaetigt"
+    ]
+  },
+  "editorialFreshness": {
+    "status": "ok",
+    "checkedAt": "2026-10-31T13:41:00.872Z",
+    "date": "31.10.2026",
+    "maxAgeDays": 21,
+    "selected": [
+      {
+        "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
+        "date": "27.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1ff2229adeb89a227ae4ad157e45d5686d392267.jpg"
+      },
+      {
+        "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
+        "date": "28.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/28/vorschau-auf-die-prism-collection-mit-drei-neuen-transparenten-designs-fuer-ps5-zubehoer/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/32d5df86d3a0cd5a32019da93598ca7ce1876f19.jpg"
+      },
+      {
+        "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
+        "date": "29.10.2026",
+        "url": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/360cbcd10d4e04739e5b2745b14d6c1dd0a1d4a8.jpg"
+      }
+    ]
+  },
+  "temporalCheck": {
+    "status": "ok",
+    "checkedAt": "2026-10-30T14:14:57.536Z",
+    "berlinDate": "2026-10-30",
+    "newPostsToday": 0,
+    "staleRelativeCopyFixed": 0,
+    "errors": [],
+    "warnings": [
+      "PS Plus: kein verifiziertes Produktcover für Dead Island 2",
+      "PS Plus: kein verifiziertes Produktcover für Tomb Raider IV – VI Remastered"
+    ]
+  }
+}

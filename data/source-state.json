@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30T14:14:44.001Z",
+  "checkedAt": "2026-10-31T13:40:52.598Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -142,7 +142,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-30T14:14:57.536Z",
+      "checkedAt": "2026-10-31T13:41:06.090Z",
       "parsed": 6,
       "accepted": [],
       "rejected": [
@@ -162,7 +162,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241530,
+    "bytes": 241526,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -175,7 +175,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173776,
+    "bytes": 173760,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

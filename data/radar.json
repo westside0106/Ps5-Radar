@@ -1,8 +1,8 @@
 {
-  "date": "30.10.2026",
-  "edition": "AUSGABE #055",
+  "date": "31.10.2026",
+  "edition": "AUSGABE #056",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "30.10 · LIVE",
+  "newCount": "31.10 · LIVE",
   "leadTitle": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
   "leadDate": "27.10.2026",
   "leadMeta": "Erfahrt, wie „Aloft“ und „Conan Exiles Enhanced“ Anfang 2027 ihr PS5-Debüt feiern, mit neuen Inhalten und kostenlosem Upgrade.",
@@ -65,7 +65,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 30.10.2026 · 9/9 Quellen · 4/7 Details",
+  "radarCheck": "Stand 31.10.2026 · 9/9 Quellen · 4/7 Details",
   "sourceAlerts": [
     {
       "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
@@ -86,7 +86,7 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-10-30T14:15:07.602Z",
+    "checkedAt": "2026-10-31T13:41:15.661Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -100,10 +100,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-10-30T14:15:07.602Z"
+    "lastSuccessfulCheck": "2026-10-31T13:41:15.661Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-30T14:15:07.602Z",
+    "checkedAt": "2026-10-31T13:41:15.661Z",
     "errors": [],
     "sources": [
       {
@@ -180,7 +180,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-30T14:14:53.341Z",
+    "checkedAt": "2026-10-31T13:41:02.939Z",
     "titles": 7,
     "fetched": 1,
     "enriched": 4,
@@ -233,13 +233,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-30T14:14:52.906Z",
+    "checkedAt": "2026-10-31T13:41:02.534Z",
     "month": "Oktober",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-30T14:14:52.999Z",
+    "checkedAt": "2026-10-31T13:41:02.621Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -252,7 +252,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-30T14:14:57.209Z",
+    "checkedAt": "2026-10-31T13:41:05.752Z",
     "verified": 1,
     "missing": [
       "Dead Island 2",
@@ -265,8 +265,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-30T14:14:51.971Z",
-    "date": "30.10.2026",
+    "checkedAt": "2026-10-31T13:41:00.872Z",
+    "date": "31.10.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -291,8 +291,8 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-30T14:14:57.536Z",
-    "berlinDate": "2026-10-30",
+    "checkedAt": "2026-10-31T13:41:06.090Z",
+    "berlinDate": "2026-10-31",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],
