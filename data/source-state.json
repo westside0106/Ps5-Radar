@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31T13:40:52.598Z",
+  "checkedAt": "2026-11-01T14:17:43.846Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -58,7 +58,7 @@
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 210080,
+    "bytes": 210082,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176671,
+    "bytes": 176673,
     "updated": true,
     "parsed": {
       "games": [
@@ -142,7 +142,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-10-31T13:41:06.090Z",
+      "checkedAt": "2026-11-01T14:17:58.003Z",
       "parsed": 6,
       "accepted": [],
       "rejected": [
@@ -156,13 +156,12 @@
     }
   },
   "psPlusWhatsNew": {
-    "ok": true,
-    "bytes": 598997
+    "ok": false
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241526,
+    "bytes": 241529,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -175,7 +174,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173760,
+    "bytes": 173786,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

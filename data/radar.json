@@ -1,8 +1,8 @@
 {
-  "date": "31.10.2026",
-  "edition": "AUSGABE #056",
+  "date": "01.11.2026",
+  "edition": "AUSGABE #057",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "31.10 · LIVE",
+  "newCount": "01.11 · LIVE",
   "leadTitle": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
   "leadDate": "27.10.2026",
   "leadMeta": "Erfahrt, wie „Aloft“ und „Conan Exiles Enhanced“ Anfang 2027 ihr PS5-Debüt feiern, mit neuen Inhalten und kostenlosem Upgrade.",
@@ -18,8 +18,8 @@
   "secondary2Meta": "Erfahrt, wie euch Bosswaffen in Phantom Blade Zero neue Kampfstile und Erkundungswege eröffnen.",
   "secondary2Price": null,
   "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/360cbcd10d4e04739e5b2745b14d6c1dd0a1d4a8.jpg",
-  "psplusLabel": "OKTOBER 2026",
-  "psplusTitle": "Oktober-Spiele sind live",
+  "psplusLabel": "NOVEMBER 2026",
+  "psplusTitle": "November-Spiele sind live",
   "psplusText": "Verfügbar bis 30.11.",
   "plusGames": [
     {
@@ -59,13 +59,11 @@
     "The Play List"
   ],
   "ubisoftTitle": "Ubisoft+ Classics",
-  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat.",
   "ubisoftItems": [
-    "Ubisoft+ Classics",
-    "PS Plus Extra",
-    "PS Plus Premium"
+    "Ubisoft+ Classics"
   ],
-  "radarCheck": "Stand 31.10.2026 · 9/9 Quellen · 4/7 Details",
+  "radarCheck": "Stand 01.11.2026 · 8/9 Quellen · 2 Warnung(en)",
   "sourceAlerts": [
     {
       "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
@@ -85,12 +83,12 @@
   ],
   "editorial": [],
   "health": {
-    "status": "ok",
-    "checkedAt": "2026-10-31T13:41:15.661Z",
-    "okSources": 9,
+    "status": "warning",
+    "checkedAt": "2026-11-01T14:18:06.005Z",
+    "okSources": 8,
     "totalSources": 9,
-    "failedSources": 0,
-    "warnings": 0,
+    "failedSources": 1,
+    "warnings": 2,
     "storeDiscoveryMode": "no-active-campaign",
     "storeProductsVerified": 0,
     "storeDealsSelected": 0,
@@ -103,8 +101,11 @@
     "lastSuccessfulCheck": "2026-10-31T13:41:15.661Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-10-31T13:41:15.661Z",
-    "errors": [],
+    "checkedAt": "2026-11-01T14:18:06.005Z",
+    "errors": [
+      "PS Plus aktuell: Quellenabruf fehlgeschlagen",
+      "Detail-Enrichment: EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
+    ],
     "sources": [
       {
         "name": "PlayStation Blog",
@@ -120,7 +121,7 @@
       },
       {
         "name": "PS Plus aktuell",
-        "ok": true
+        "ok": false
       },
       {
         "name": "EA Play",
@@ -149,13 +150,13 @@
     "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör": {},
     "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung": {},
     "Dead Island 2": {
-      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 30.11."
+      "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11."
     },
     "Tomb Raider IV – VI Remastered": {
-      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 30.11."
+      "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11."
     },
     "Monster Train 2": {
-      "psPlusStatus": "OKTOBER 2026 · Verfügbar bis 30.11.",
+      "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11.",
       "storeUrl": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880",
       "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1815/3ea7456f6925d14bd479d7b9bd251be1575e0e5fc37ad88d.png",
       "title": "Monster Train 2"
@@ -180,11 +181,13 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-10-31T13:41:02.939Z",
+    "checkedAt": "2026-11-01T14:17:55.393Z",
     "titles": 7,
-    "fetched": 1,
+    "fetched": 0,
     "enriched": 4,
-    "warnings": []
+    "warnings": [
+      "EA SPORTS FC 27: 403 https://www.playstation.com/de-de/games/ea-sports-fc/"
+    ]
   },
   "resolvedSources": {
     "psPlusMonthly": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
@@ -225,21 +228,19 @@
     "title": "Ubisoft+ Classics",
     "price": "7,99 €",
     "items": [
-      "Ubisoft+ Classics",
-      "PS Plus Extra",
-      "PS Plus Premium"
+      "Ubisoft+ Classics"
     ],
     "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-10-31T13:41:02.534Z",
-    "month": "Oktober",
+    "checkedAt": "2026-11-01T14:17:55.063Z",
+    "month": "November",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-10-31T13:41:02.621Z",
+    "checkedAt": "2026-11-01T14:17:55.138Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -252,7 +253,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-10-31T13:41:05.752Z",
+    "checkedAt": "2026-11-01T14:17:57.730Z",
     "verified": 1,
     "missing": [
       "Dead Island 2",
@@ -265,8 +266,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-10-31T13:41:00.872Z",
-    "date": "31.10.2026",
+    "checkedAt": "2026-11-01T14:17:54.155Z",
+    "date": "01.11.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -291,8 +292,8 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-10-31T13:41:06.090Z",
-    "berlinDate": "2026-10-31",
+    "checkedAt": "2026-11-01T14:17:58.003Z",
+    "berlinDate": "2026-11-01",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],
