@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-10-31T13:51:35.101Z",
+  "checkedAt": "2026-11-01T14:27:29.010Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1660,
+    "count": 1639,
     "views": {
       "deals": {
-        "expected": 972,
-        "observed": 972,
-        "count": 972,
+        "expected": 956,
+        "observed": 956,
+        "count": 956,
         "complete": true,
         "attempts": 1
       },
@@ -31,9 +31,9 @@
         "attempts": 2
       },
       "gamepass-ultimate": {
-        "expected": 699,
-        "observed": 698,
-        "count": 698,
+        "expected": 691,
+        "observed": 690,
+        "count": 690,
         "complete": false,
         "attempts": 2
       },
@@ -55,12 +55,12 @@
     "errors": [
       "gamepass-essential: keine bestaetigte Quelle (Durchlauf 1: gamepass-essential: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-essential: keine bestaetigte Anzahl und keine Filterkarten)",
       "gamepass-premium: keine bestaetigte Quelle (Durchlauf 1: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten)",
-      "gamepass-ultimate: 698/699 eindeutig belegt, Durchlauf 1: 698/699 eindeutige IDs; Durchlauf 2: 698/699 eindeutige IDs",
+      "gamepass-ultimate: 690/691 eindeutig belegt, Durchlauf 1: 690/691 eindeutige IDs; Durchlauf 2: 690/691 eindeutige IDs",
       "ea-play: keine bestaetigte Quelle (Durchlauf 1: ea-play: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: ea-play: keine bestaetigte Anzahl und keine Filterkarten)",
-      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 113/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
+      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 112/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
       "gamepass-essential: 0/? Karten gesehen",
       "gamepass-premium: 0/? Karten gesehen",
-      "gamepass-ultimate: 698/699 Karten gesehen",
+      "gamepass-ultimate: 690/691 Karten gesehen",
       "ea-play: 0/? Karten gesehen",
       "ubisoft-plus: 113/117 Karten gesehen"
     ]
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-31T13:51:35.101Z",
+      "observedAt": "2026-11-01T14:27:29.010Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-31T13:51:35.101Z",
+      "observedAt": "2026-11-01T14:27:29.010Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-10-31T13:51:35.101Z",
+      "observedAt": "2026-11-01T14:27:29.010Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -134,20 +134,18 @@
       "services": []
     },
     {
-      "key": "xbox:product:bzjh18qjvdvw",
-      "id": "bzjh18qjvdvw",
-      "title": "#IDARB",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/idarb/bzjh18qjvdvw",
-      "cover": "https://store-images.s-microsoft.com/image/apps.56788.63690149064810272.009c04ea-35c0-4c47-b403-067aac4a313e.b5f8784c-2b3b-4a93-9ee6-890e7dc11537?q=90&w=177&h=177",
+      "key": "xbox:product:9npf9f0dcvks",
+      "id": "9npf9f0dcvks",
+      "title": "007 First Light - Standard Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/007-first-light-standard-edition/9npf9f0dcvks",
+      "cover": "https://store-images.s-microsoft.com/image/apps.20065.13724632036791617.086e1bc5-355e-4b9b-91c7-b65e54fb7cbc.a2c264ea-6cdd-48db-a78c-f5d2d40db7e0?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 824,
-      "regularPriceMinor": 1499,
+      "priceMinor": 4199,
+      "regularPriceMinor": 6999,
       "genres": [
-        "Action & Abenteuer",
-        "Platformer",
-        "Sport"
+        "Action & Abenteuer"
       ],
       "services": []
     },
@@ -1113,6 +1111,22 @@
       ]
     },
     {
+      "key": "xbox:product:9phkwcsz0sqj",
+      "id": "9phkwcsz0sqj",
+      "title": "Anno 1800",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/anno-1800/9phkwcsz0sqj",
+      "cover": "https://store-images.s-microsoft.com/image/apps.26929.13903974859798407.fe1b6a24-4577-41e3-92da-76a2503642b9.b742e727-35a7-4096-8542-69abbd3e5ebc?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 3999,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
       "key": "xbox:product:9n1c10clpf0n",
       "id": "9n1c10clpf0n",
       "title": "Anno 1800",
@@ -1126,22 +1140,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
-      "key": "xbox:product:9phkwcsz0sqj",
-      "id": "9phkwcsz0sqj",
-      "title": "Anno 1800",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/anno-1800/9phkwcsz0sqj",
-      "cover": "https://store-images.s-microsoft.com/image/apps.26929.13903974859798407.fe1b6a24-4577-41e3-92da-76a2503642b9.b742e727-35a7-4096-8542-69abbd3e5ebc?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 3999,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1759,6 +1757,22 @@
       ]
     },
     {
+      "key": "xbox:product:9nzcjf5vf1nv",
+      "id": "9nzcjf5vf1nv",
+      "title": "Assassin's Creed® Mirage",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/assassins-creed-mirage/9nzcjf5vf1nv",
+      "cover": "https://store-images.s-microsoft.com/image/apps.54416.14478378080353577.d9dde1a0-41ed-4026-93ef-d3e32de2f685.bac1bddf-4086-46f9-84ef-b6f4c35db2c3?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 4999,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
       "key": "xbox:product:9n4096hx1wwq",
       "id": "9n4096hx1wwq",
       "title": "Assassin's Creed® Mirage",
@@ -1772,22 +1786,6 @@
       "genres": [],
       "services": [
         "ubisoft-plus:ubisoft-plus",
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
-      "key": "xbox:product:9nzcjf5vf1nv",
-      "id": "9nzcjf5vf1nv",
-      "title": "Assassin's Creed® Mirage",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/assassins-creed-mirage/9nzcjf5vf1nv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.54416.14478378080353577.d9dde1a0-41ed-4026-93ef-d3e32de2f685.bac1bddf-4086-46f9-84ef-b6f4c35db2c3?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 4999,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
         "xbox-game-pass:ultimate"
       ]
     },
@@ -1904,25 +1902,6 @@
       "genres": [
         "Action & Abenteuer",
         "Klassiker",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n3tfdsq531t",
-      "id": "9n3tfdsq531t",
-      "title": "Atari 50: The Anniversary Collection",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/atari-50-the-anniversary-collection/9n3tfdsq531t",
-      "cover": "https://store-images.s-microsoft.com/image/apps.13632.13996233039055516.822ad6df-7a9e-4dc9-a490-9909272ca030.4c6c88f2-9b7a-4d62-b130-13bd747fbba8?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1599,
-      "regularPriceMinor": 3999,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Platformer",
         "Shooter"
       ],
       "services": []
@@ -2228,22 +2207,6 @@
       ]
     },
     {
-      "key": "xbox:product:bt3l7mvtd4qf",
-      "id": "bt3l7mvtd4qf",
-      "title": "Banjo-Kazooie",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/banjo-kazooie/bt3l7mvtd4qf",
-      "cover": "https://store-images.s-microsoft.com/image/apps.42360.70668741340697734.d1a736f4-760d-4e5c-a935-8dc9dea7b7b5.ca50d422-db1e-49b3-8069-210d5cbe2268?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": null,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bsjg7ttswvj2",
       "id": "bsjg7ttswvj2",
       "title": "Banjo-Kazooie",
@@ -2253,6 +2216,22 @@
         "xbox-series"
       ],
       "priceMinor": 1439,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bt3l7mvtd4qf",
+      "id": "bt3l7mvtd4qf",
+      "title": "Banjo-Kazooie",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/banjo-kazooie/bt3l7mvtd4qf",
+      "cover": "https://store-images.s-microsoft.com/image/apps.42360.70668741340697734.d1a736f4-760d-4e5c-a935-8dc9dea7b7b5.ca50d422-db1e-49b3-8069-210d5cbe2268?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": null,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
@@ -3713,24 +3692,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9p82vzjszwgs",
-      "id": "9p82vzjszwgs",
-      "title": "Bubsy 4D",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/bubsy-4d/9p82vzjszwgs",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29653.14095834592335463.b2230074-631b-4384-967a-b022ee11c271.e74b566f-1c11-48ab-a43c-379d098cfeb6?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1399,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Action & Abenteuer",
-        "Familie & Kinder",
-        "Platformer"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9p5b8cpq9s7f",
@@ -5705,22 +5666,6 @@
       ]
     },
     {
-      "key": "xbox:product:9nkk6cx54183",
-      "id": "9nkk6cx54183",
-      "title": "Day of the Tentacle Remastered",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/day-of-the-tentacle-remastered/9nkk6cx54183",
-      "cover": "https://store-images.s-microsoft.com/image/apps.18669.13659998887820416.ac97c487-e49c-4236-a48f-681c4095040e.27089192-fc55-4fcc-910d-aebc79555211?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:9mt5b3j6n9qw",
       "id": "9mt5b3j6n9qw",
       "title": "Days of Doom",
@@ -6009,9 +5954,7 @@
         "Action & Abenteuer",
         "Rollenspiele"
       ],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
+      "services": []
     },
     {
       "key": "xbox:product:9p6xd4f453dg",
@@ -6260,24 +6203,6 @@
       "priceMinor": 1499,
       "regularPriceMinor": null,
       "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
-      "key": "xbox:product:9nhfvwx1v7qj",
-      "id": "9nhfvwx1v7qj",
-      "title": "Deep Rock Galactic",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/deep-rock-galactic/9nhfvwx1v7qj",
-      "cover": "https://store-images.s-microsoft.com/image/apps.1444.13626568325427111.acf8bd0b-a403-422a-bfd4-5262a9b59ec2.8e099efd-082f-4d41-8941-17309ee91c92?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2999,
-      "regularPriceMinor": null,
-      "genres": [
-        "Shooter"
-      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
@@ -8077,7 +8002,7 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 5199,
+      "priceMinor": 4000,
       "regularPriceMinor": 7999,
       "genres": [
         "Sport"
@@ -9776,7 +9701,7 @@
       "id": "bt5p2x999vh2",
       "title": "Fortnite",
       "storeUrl": "https://www.xbox.com/de-DE/games/store/fortnite/bt5p2x999vh2",
-      "cover": "https://store-images.s-microsoft.com/image/apps.20392.70702278257994163.6d75301b-59c3-4a73-b70c-5901ae9cbb44.24e2eab9-1b75-4157-ba8b-006f4624d839?q=90&w=177&h=177",
+      "cover": "https://store-images.s-microsoft.com/image/apps.31130.70702278257994163.f7265b8a-f10e-49c4-8115-73c4d800af63.641ad74a-edd4-40c9-8049-3bb73387d09a?q=90&w=177&h=177",
       "targets": [
         "xbox-series"
       ],
@@ -9966,22 +9891,6 @@
         "Platformer"
       ],
       "services": []
-    },
-    {
-      "key": "xbox:product:9p3zrgnqvc7d",
-      "id": "9p3zrgnqvc7d",
-      "title": "Full Throttle Remastered",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/full-throttle-remastered/9p3zrgnqvc7d",
-      "cover": "https://store-images.s-microsoft.com/image/apps.7896.14598891268352765.09cb1dd7-f055-4038-983d-2721763eedbe.0bab6c1b-43ce-423d-86ae-ced85f951431?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
     },
     {
       "key": "xbox:product:9nqjm0l2nzr8",
@@ -12338,24 +12247,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9nnjpb2phcj4",
-      "id": "9nnjpb2phcj4",
-      "title": "I Have No Mouth, and I Must Scream",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/i-have-no-mouth-and-i-must-scream/9nnjpb2phcj4",
-      "cover": "https://store-images.s-microsoft.com/image/apps.65051.13741810446963407.1ed5a371-c56f-41ff-aa36-6d248969eb75.6f194f9f-461f-47aa-aebf-5080b762d272?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 349,
-      "regularPriceMinor": 999,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Rätsel & Wissen"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nrzfj38hxcx",
       "id": "9nrzfj38hxcx",
       "title": "Idle Devils(Ultimate Edition)",
@@ -13323,23 +13214,6 @@
       ]
     },
     {
-      "key": "xbox:product:9p1kqx1z4q1m",
-      "id": "9p1kqx1z4q1m",
-      "title": "KinnikuNeko: SUPER MUSCLE CAT",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/kinnikuneko-super-muscle-cat/9p1kqx1z4q1m",
-      "cover": "https://store-images.s-microsoft.com/image/apps.62068.14505336511399806.440bac72-1772-43d0-a220-ad21ff362e48.caad5d3b-2faf-493e-ad80-5227de70ce5b?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 989,
-      "regularPriceMinor": 1799,
-      "genres": [
-        "Action & Abenteuer",
-        "Platformer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9ngg3143xj73",
       "id": "9ngg3143xj73",
       "title": "KLETKA",
@@ -13522,9 +13396,7 @@
       "genres": [
         "Action & Abenteuer"
       ],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
+      "services": []
     },
     {
       "key": "xbox:product:9n4j5lfgpd87",
@@ -13641,22 +13513,6 @@
         "Action & Abenteuer"
       ],
       "services": []
-    },
-    {
-      "key": "xbox:product:brmkdczt0c4l",
-      "id": "brmkdczt0c4l",
-      "title": "LEGO® Star Wars™: Die Skywalker Saga",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/lego-star-wars-die-skywalker-saga/brmkdczt0c4l",
-      "cover": "https://store-images.s-microsoft.com/image/apps.63979.69776162813131649.c3b28bba-c81b-49e6-8333-6c1ce8e9222a.1a0bfd04-b07f-4363-a558-769029fc74ce?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": null,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
     },
     {
       "key": "xbox:product:9n4mjbl3t6qc",
@@ -14899,22 +14755,6 @@
       ]
     },
     {
-      "key": "xbox:product:9nd4jd0mxt2h",
-      "id": "9nd4jd0mxt2h",
-      "title": "Mighty Morphin Power Rangers: Rita's Rewind",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/mighty-morphin-power-rangers-ritas-rewind/9nd4jd0mxt2h",
-      "cover": "https://store-images.s-microsoft.com/image/apps.32591.13550945273647128.a035ae0c-99f0-41ed-830d-b1739fcee6d8.93aac121-78b0-4029-8a27-026c1047ae49?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1749,
-      "regularPriceMinor": 3499,
-      "genres": [
-        "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9pgmx16mx35x",
       "id": "9pgmx16mx35x",
       "title": "Mika and The Witch's Mountain",
@@ -15739,23 +15579,6 @@
       "regularPriceMinor": 5999,
       "genres": [
         "Kampfspiele"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9pkvpj0nhcts",
-      "id": "9pkvpj0nhcts",
-      "title": "Mortal Kombat: Legacy Kollection",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/mortal-kombat-legacy-kollection/9pkvpj0nhcts",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29032.14254938442836765.31ed53c9-ffc4-4d74-81c1-afb16f289bef.053eb6f0-bee9-40a8-8123-77861d2b37ae?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2749,
-      "regularPriceMinor": 4999,
-      "genres": [
-        "Kampfspiele",
-        "Klassiker"
       ],
       "services": []
     },
@@ -17078,23 +16901,6 @@
         "Action & Abenteuer",
         "Andere",
         "Rollenspiele",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n57bb45hsjx",
-      "id": "9n57bb45hsjx",
-      "title": "Outlaws + Handful of Missions: Remaster",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/outlaws-handful-of-missions-remaster/9n57bb45hsjx",
-      "cover": "https://store-images.s-microsoft.com/image/apps.64865.13968743336759251.deccd202-79c0-45fe-8f33-9df3ffd17e2f.13063645-3602-4ce2-ba96-ba9882e2bc9c?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1799,
-      "regularPriceMinor": 2999,
-      "genres": [
-        "Action & Abenteuer",
         "Shooter"
       ],
       "services": []
@@ -19934,42 +19740,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9pjv2xchzh31",
-      "id": "9pjv2xchzh31",
-      "title": "RollerCoaster Tycoon 3 Complete Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/rollercoaster-tycoon-3-complete-edition/9pjv2xchzh31",
-      "cover": "https://store-images.s-microsoft.com/image/apps.57677.14279391693832280.c07ee4b8-be42-4156-8713-61a2af3bb41e.762d15f6-3924-471e-8322-56d44bd9db0b?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1049,
-      "regularPriceMinor": 2999,
-      "genres": [
-        "Klassiker",
-        "Simulation"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n327jwc981b",
-      "id": "9n327jwc981b",
-      "title": "RollerCoaster Tycoon Classic",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/rollercoaster-tycoon-classic/9n327jwc981b",
-      "cover": "https://store-images.s-microsoft.com/image/apps.25166.13945136218269751.2d623925-b0d2-4d14-9a87-7579e1f52318.769feb76-4f3e-4b6b-a6f4-d2ddfb37ff68?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1624,
-      "regularPriceMinor": 2499,
-      "genres": [
-        "Familie & Kinder",
-        "Klassiker",
-        "Simulation",
-        "Strategiespiele"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9pcjt6tlcggv",
       "id": "9pcjt6tlcggv",
       "title": "ROUTINE",
@@ -21922,24 +21692,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9mzfgmjhbn99",
-      "id": "9mzfgmjhbn99",
-      "title": "STAR WARS™: Dark Forces Remaster",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/star-wars-dark-forces-remaster/9mzfgmjhbn99",
-      "cover": "https://store-images.s-microsoft.com/image/apps.59242.13871704281116832.3320d2cf-d14b-43ce-9e61-d070316b1fa2.4b82a188-21a8-4ddf-b16a-fb0a985f36ae?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": 2999,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:bv9cwvqwns4p",
       "id": "bv9cwvqwns4p",
       "title": "STAR WARS™: Squadrons",
@@ -22656,25 +22408,6 @@
       ]
     },
     {
-      "key": "xbox:product:9nppk20vctgm",
-      "id": "9nppk20vctgm",
-      "title": "Surgeon Simulator 2",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/surgeon-simulator-2/9nppk20vctgm",
-      "cover": "https://store-images.s-microsoft.com/image/apps.34455.13784877875223300.82d0e530-8878-4d4f-a9e5-9c3529471840.113556c3-95a3-4c60-9063-d5a6f47cf797?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 239,
-      "regularPriceMinor": 1599,
-      "genres": [
-        "Action & Abenteuer",
-        "Andere",
-        "Rätsel & Wissen",
-        "Simulation"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nbc4xfk06l9",
       "id": "9nbc4xfk06l9",
       "title": "Survivalist: Invisible Strain",
@@ -22740,24 +22473,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nvgtjklc7jg",
-      "id": "9nvgtjklc7jg",
-      "title": "System Shock",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/system-shock/9nvgtjklc7jg",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29313.14398954277994581.f0c88157-276e-471b-b185-430bb33f3364.27ea5d74-27b9-4fe7-ab46-7fc358c01f81?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1199,
-      "regularPriceMinor": 3999,
-      "genres": [
-        "Action & Abenteuer",
-        "Rollenspiele",
-        "Shooter"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9nnnmbxffg4w",
@@ -23011,24 +22726,6 @@
       "regularPriceMinor": 979,
       "genres": [
         "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9pfhc37m5qbq",
-      "id": "9pfhc37m5qbq",
-      "title": "Tetris® Forever",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/tetris-forever/9pfhc37m5qbq",
-      "cover": "https://store-images.s-microsoft.com/image/apps.56621.14205050856907237.9a6c21ef-a64a-4fda-929f-62fe387f9325.ec596f8a-7d72-4aef-8587-7fac0d03bbfd?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1574,
-      "regularPriceMinor": 3499,
-      "genres": [
-        "Familie & Kinder",
-        "Klassiker",
-        "Rätsel & Wissen"
       ],
       "services": []
     },
@@ -24637,24 +24334,6 @@
       ]
     },
     {
-      "key": "xbox:product:9n2np4245dxv",
-      "id": "9n2np4245dxv",
-      "title": "The Thing: Remastered",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-thing-remastered/9n2np4245dxv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.53442.13952953269277197.7f081882-85a1-4a17-875c-6f7ec36aba81.accdfaf1-0f17-4e3d-9e68-6d0eee2582c5?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1574,
-      "regularPriceMinor": 3149,
-      "genres": [
-        "Action & Abenteuer",
-        "Klassiker",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9pdxhhm328xq",
       "id": "9pdxhhm328xq",
       "title": "The Transference",
@@ -25489,8 +25168,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 1624,
-      "regularPriceMinor": 2499,
+      "priceMinor": 2499,
+      "regularPriceMinor": null,
       "genres": [
         "Action & Abenteuer",
         "Shooter"
@@ -25902,23 +25581,6 @@
       ],
       "priceMinor": 1049,
       "regularPriceMinor": 2999,
-      "genres": [
-        "Action & Abenteuer",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9p13dt8nx19s",
-      "id": "9p13dt8nx19s",
-      "title": "Turok Trilogy Bundle",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/turok-trilogy-bundle/9p13dt8nx19s",
-      "cover": "https://store-images.s-microsoft.com/image/apps.1918.14514742542784045.0e7dcb17-1c57-4f6f-b5b4-c488955c5e6e.99b2c062-e68b-44a8-a485-21f86ca09f0c?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": 5999,
       "genres": [
         "Action & Abenteuer",
         "Shooter"
@@ -26638,22 +26300,6 @@
       ]
     },
     {
-      "key": "xbox:product:bw9tffj50mkv",
-      "id": "bw9tffj50mkv",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": null,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bsxsl6wbj0v7",
       "id": "bsxsl6wbj0v7",
       "title": "Viva Piñata",
@@ -26663,6 +26309,22 @@
         "xbox-series"
       ],
       "priceMinor": 1499,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bw9tffj50mkv",
+      "id": "bw9tffj50mkv",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
+      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": null,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
@@ -26813,22 +26475,6 @@
         "xbox-series"
       ],
       "priceMinor": 2999,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
-      "key": "xbox:product:9nwq686jb33g",
-      "id": "9nwq686jb33g",
-      "title": "Wartales",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/wartales/9nwq686jb33g",
-      "cover": "https://store-images.s-microsoft.com/image/apps.57743.14440655325358467.0a9794a6-3645-4db4-a85e-c611d041111a.80dc7cd7-d40f-455f-9676-f0cf0946ae88?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 3999,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
@@ -27208,22 +26854,6 @@
         "xbox-series"
       ],
       "priceMinor": 7999,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
-      "key": "xbox:product:9n6vs1bmz3bw",
-      "id": "9n6vs1bmz3bw",
-      "title": "Wildgate",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/wildgate/9n6vs1bmz3bw",
-      "cover": "https://store-images.s-microsoft.com/image/apps.53490.14011062654467580.dba38bbf-80c3-4aba-afd1-78d46abb6970.2c5e30f1-0052-48aa-a526-46c234418872?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 999,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
