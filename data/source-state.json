@@ -1,8 +1,28 @@
 {
-  "checkedAt": "2026-11-01T14:17:43.846Z",
+  "checkedAt": "2026-11-02T17:07:49.277Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Derelikt: Release-Termin für PS5 enthüllt",
+        "link": "https://blog.de.playstation.com/2026/11/02/derelikt-release-termin-fuer-ps5-enthuellt/",
+        "pubDate": "Mon, 02 Nov 2026 15:00:00 +0000"
+      },
+      {
+        "title": "PS5-Spiele November 2026: Grand Theft Auto VI, Gothic 3 Classic & mehr freuen sich auf euch",
+        "link": "https://blog.de.playstation.com/2026/11/02/ps5-spiele-november-2026-grand-theft-auto-vi-gothic-3-classic-mehr-freuen-sich-auf-euch/",
+        "pubDate": "Mon, 02 Nov 2026 14:01:07 +0000"
+      },
+      {
+        "title": "Godzilla: Destroy All Monsters Melee Remastered – Euer Guide zu allen 12 Kaiju",
+        "link": "https://blog.de.playstation.com/2026/11/02/godzilla-destroy-all-monsters-melee-remastered-euer-guide-zu-allen-12-kaiju/",
+        "pubDate": "Mon, 02 Nov 2026 14:00:00 +0000"
+      },
+      {
+        "title": "20 Jahre PlayStation Store – Entwickler verraten die Spiele, die sie am meisten überrascht haben",
+        "link": "https://blog.de.playstation.com/2026/11/02/20-jahre-playstation-store-entwickler-verraten-die-spiele-die-sie-am-meisten-ueberrascht-haben/",
+        "pubDate": "Mon, 02 Nov 2026 11:00:00 +0000"
+      },
       {
         "title": "Phantom Blade Zero: Hands-on zu Kämpfen und Erkundung",
         "link": "https://blog.de.playstation.com/2026/10/29/phantom-blade-zero-hands-on-zu-kaempfen-und-erkundung/",
@@ -32,33 +52,38 @@
         "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
         "link": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
         "pubDate": "Tue, 27 Oct 2026 16:00:00 +0000"
-      },
-      {
-        "title": "Where Winds Meet: Hutuo bringt dramatischsten neuen Handlungsbogen",
-        "link": "https://blog.de.playstation.com/2026/10/27/where-winds-meet-neuer-handlungsbogen-fuehrt-nach-hutuo/",
-        "pubDate": "Tue, 27 Oct 2026 15:00:00 +0000"
-      },
-      {
-        "title": "Terrible Lizards: Parkour-Horror mit Dinosauriern",
-        "link": "https://blog.de.playstation.com/2026/10/27/terrible-lizards-parkour-horror-mit-dinosauriern/",
-        "pubDate": "Tue, 27 Oct 2026 14:00:00 +0000"
-      },
-      {
-        "title": "Saros: So hat Housemarque den Sound von Carcosa gestaltet",
-        "link": "https://blog.de.playstation.com/2026/10/27/saros-so-wurden-sound-und-haptik-fuer-carcosa-gestaltet/",
-        "pubDate": "Tue, 27 Oct 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Marvel Cosmic Invasion: Die Belagerung von Castle Doom",
-        "link": "https://blog.de.playstation.com/2026/10/26/marvel-cosmic-invasion-die-belagerung-von-castle-doom/",
-        "pubDate": "Mon, 26 Oct 2026 16:00:00 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "Derelikt: Release-Termin für PS5 enthüllt",
+        "link": "https://blog.de.playstation.com/2026/11/02/derelikt-release-termin-fuer-ps5-enthuellt/",
+        "pubDate": "Mon, 02 Nov 2026 15:00:00 +0000",
+        "category": "release"
+      },
+      {
+        "title": "PS5-Spiele November 2026: Grand Theft Auto VI, Gothic 3 Classic & mehr freuen sich auf euch",
+        "link": "https://blog.de.playstation.com/2026/11/02/ps5-spiele-november-2026-grand-theft-auto-vi-gothic-3-classic-mehr-freuen-sich-auf-euch/",
+        "pubDate": "Mon, 02 Nov 2026 14:01:07 +0000",
+        "category": "news"
+      },
+      {
+        "title": "Godzilla: Destroy All Monsters Melee Remastered – Euer Guide zu allen 12 Kaiju",
+        "link": "https://blog.de.playstation.com/2026/11/02/godzilla-destroy-all-monsters-melee-remastered-euer-guide-zu-allen-12-kaiju/",
+        "pubDate": "Mon, 02 Nov 2026 14:00:00 +0000",
+        "category": "news"
+      },
+      {
+        "title": "20 Jahre PlayStation Store – Entwickler verraten die Spiele, die sie am meisten überrascht haben",
+        "link": "https://blog.de.playstation.com/2026/11/02/20-jahre-playstation-store-entwickler-verraten-die-spiele-die-sie-am-meisten-ueberrascht-haben/",
+        "pubDate": "Mon, 02 Nov 2026 11:00:00 +0000",
+        "category": "store"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 210082,
+    "bytes": 213699,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +134,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 176673,
+    "bytes": 180290,
     "updated": true,
     "parsed": {
       "games": [
@@ -142,7 +167,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-11-01T14:17:58.003Z",
+      "checkedAt": "2026-11-02T17:08:11.773Z",
       "parsed": 6,
       "accepted": [],
       "rejected": [
@@ -156,12 +181,13 @@
     }
   },
   "psPlusWhatsNew": {
-    "ok": false
+    "ok": true,
+    "bytes": 598997
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241529,
+    "bytes": 241407,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -174,7 +200,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173786,
+    "bytes": 173766,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
