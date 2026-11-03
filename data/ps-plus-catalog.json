@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-02T11:42:27.218Z",
+  "checkedAt": "2026-11-03T11:22:17.277Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-02T11:42:27.218Z"
+      "checkedAt": "2026-11-03T11:22:17.277Z"
     },
     "extra": {
       "complete": true,
@@ -17,15 +17,15 @@
       "count": 440,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-11-02T11:42:27.218Z"
+      "checkedAt": "2026-11-03T11:22:17.277Z"
     },
     "classics": {
       "complete": true,
-      "expected": 167,
-      "count": 167,
+      "expected": 168,
+      "count": 168,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-02T11:42:27.218Z"
+      "checkedAt": "2026-11-03T11:22:17.277Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-02T11:42:27.218Z"
+      "checkedAt": "2026-11-03T11:22:17.277Z"
     }
   },
   "games": [
@@ -848,7 +848,15 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "PlayStation"
+      "imageSource": "PlayStation",
+      "releaseDate": "2019-05-29",
+      "description": "Assetto Corsa Competizione, the official GT World Challenge videogame. Thanks to the extraordinary quality of simulation, you will experience the atmosphere of the GT3 championship. Compete against official drivers, teams, cars and official circuits reproduced to the highest quality ever seen.",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     },
     {
       "id": "concept:234630",
@@ -15100,10 +15108,42 @@
       ],
       "perspective": null,
       "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:202806",
+      "title": "METRO Redux",
+      "storeUrl": "https://store.playstation.com/de-de/concept/202806",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2111/0280a6d70e309b7cb3509600a500b728ada3626192e19b74.png",
+      "platforms": [
+        "PS4"
+      ],
+      "genres": [
+        "Action",
+        "Shooter"
+      ],
+      "services": [
+        "premium"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2014-08-25",
+      "description": "Metro Redux is the ultimate double game collection, including the definitive versions of both Metro 2033 and Metro: Last Light, each rebuilt in the latest and greatest iteration of the 4A Engine for next-gen consoles and PC.\n\nFor the first time, console owners can expect smooth 60FPS gameplay and state of the art visuals that were once only available on high-end PC hardware.\n\nNewcomers to the series will get the chance to experience two of the finest story-driven shooters of all time in one vast package; an epic ad",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
     }
   ],
   "errors": [],
   "changes": [
+    {
+      "id": "concept:202806",
+      "title": "METRO Redux",
+      "service": "premium",
+      "kind": "added",
+      "date": "2026-11-03T11:22:17.277Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/202806"
+    },
     {
       "id": "concept:10014519",
       "title": "Football Manager 26 Console",
@@ -15305,5 +15345,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-11-02T11:42:27.218Z"
+  "lastAttemptAt": "2026-11-03T11:22:17.277Z"
 }
