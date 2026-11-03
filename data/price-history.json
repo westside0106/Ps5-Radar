@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T17:08:05.659Z",
+  "updatedAt": "2026-11-03T15:14:23.439Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -1405,7 +1405,7 @@
   "summary": {
     "titles": 12,
     "points": 116,
-    "archiveIssuesScanned": 58,
+    "archiveIssuesScanned": 59,
     "signals": {
       "buy": 0,
       "watch": 0,

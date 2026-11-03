@@ -1,0 +1,362 @@
+{
+  "date": "03.11.2026",
+  "edition": "AUSGABE #059",
+  "newHeadline": "3 NEUE PLAYSTATION-MELDUNGEN",
+  "newCount": "03.11 · LIVE",
+  "leadTitle": "Derelikt: Release-Termin für PS5 enthüllt",
+  "leadDate": "02.11.2026",
+  "leadMeta": "Taucht in Derelikt ein: Sci-Fi-Horror im PSOne-Stil erscheint am 13. November 2026 für PS5. Jetzt mit 10 % Rabatt vorbestellen!",
+  "leadPrice": null,
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/2ae8bf555fd319aa43d8def92b529e5086f3b18a.jpg",
+  "secondary1Title": "PS5-Spiele November 2026: Grand Theft Auto VI, Gothic 3 Classic & mehr freuen sich auf euch",
+  "secondary1Date": "02.11.2026",
+  "secondary1Meta": "Diese PS5-Spiele erscheinen im November 2026: Grand Theft Auto VI, Gothic 3 Classic, Godzilla: Destroy All Monsters Melee Remastered und weitere…",
+  "secondary1Price": null,
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/9f1ec40f466589ad4c90a7fea8327260a5fee77e.jpg",
+  "secondary2Title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+  "secondary2Date": "03.11.2026",
+  "secondary2Meta": "Sonic Racing: CrossWorlds Year Two ist da: Erfahrt mehr über Duel Mode, Super Slot und das nostalgische Sega Consoles Pack.",
+  "secondary2Price": null,
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/47a538de7425835061d3a619efebfc6e9ddb6811.jpg",
+  "psplusLabel": "NOVEMBER 2026",
+  "psplusTitle": "November-Spiele sind live",
+  "psplusText": "Verfügbar bis 30.11.",
+  "plusGames": [
+    {
+      "title": "Dead Island 2",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
+      "imageSource": "unverified"
+    },
+    {
+      "title": "Tomb Raider IV – VI Remastered",
+      "image": null,
+      "storeUrl": "https://store.playstation.com/product/EP1875-PPSA18151_00-TOMBRAIDER456225",
+      "imageSource": "unverified"
+    },
+    {
+      "title": "Monster Train 2",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1815/3ea7456f6925d14bd479d7b9bd251be1575e0e5fc37ad88d.png",
+      "storeUrl": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880",
+      "imageSource": "official-product"
+    }
+  ],
+  "storeTitle": "Keine verifizierten Top-Deals",
+  "storeText": "Derzeit wurde keine aktive offizielle Store-Aktion mit sicher verifizierbaren Top-Deals erkannt.",
+  "storeEnd": null,
+  "deals": [],
+  "releases": [
+    {
+      "date": "03.11.",
+      "title": "ZERO PARADES: Director’s Cut"
+    },
+    {
+      "date": "03.11.",
+      "title": "Godzilla: Destroy All Monsters Melee Remastered"
+    },
+    {
+      "date": "04.11.",
+      "title": "CRYMELIGHT"
+    },
+    {
+      "date": "05.11.",
+      "title": "K-Pop Rising: Dream to Shine"
+    },
+    {
+      "date": "05.11.",
+      "title": "Escape Academy 2: Back 2 School"
+    }
+  ],
+  "quickItems": [
+    "Black Friday-Angebote 2026 im PlayStation Store",
+    "September-Spiele sind live"
+  ],
+  "leavingTitle": "Kein aktives Angebotsende",
+  "leavingText": "Der Radar wartet auf die nächste verifizierte PlayStation-Store-Aktion.",
+  "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
+  "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
+  "eaItems": [
+    "10 % auf digitale EA-Käufe",
+    "Monatliche Mitgliederbelohnungen",
+    "The Play List"
+  ],
+  "ubisoftTitle": "Ubisoft+ Classics",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftItems": [
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
+  ],
+  "radarCheck": "Stand 03.11.2026 · 9/9 Quellen erfolgreich geprüft",
+  "sourceAlerts": [
+    {
+      "title": "Black Friday-Angebote 2026 im PlayStation Store",
+      "url": "https://blog.de.playstation.com/2026/11/03/playstations-black-friday-angebote-2026/",
+      "source": "PlayStation Blog DE",
+      "category": "store"
+    },
+    {
+      "title": "Helldivers 2: Heute erscheinen neue giftige Terminidentypen und mehr Bug-Höhlen in der Galaxie",
+      "url": "https://blog.de.playstation.com/2026/11/03/helldivers-2-heute-erscheinen-neue-giftige-terminidentypen-und-mehr-bug-hoehlen-in-der-galaxie/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
+    },
+    {
+      "title": "Derelikt: Release-Termin für PS5 enthüllt",
+      "url": "https://blog.de.playstation.com/2026/11/02/derelikt-release-termin-fuer-ps5-enthuellt/",
+      "type": "editorial"
+    },
+    {
+      "title": "PS5-Spiele November 2026: Grand Theft Auto VI, Gothic 3 Classic & mehr freuen sich auf euch",
+      "url": "https://blog.de.playstation.com/2026/11/02/ps5-spiele-november-2026-grand-theft-auto-vi-gothic-3-classic-mehr-freuen-sich-auf-euch/",
+      "type": "editorial"
+    },
+    {
+      "title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+      "url": "https://blog.de.playstation.com/2026/11/03/sonic-racing-crossworlds-jahr-zwei-ist-da/",
+      "type": "editorial"
+    }
+  ],
+  "editorial": [
+    {
+      "title": "Black Friday-Angebote 2026 im PlayStation Store",
+      "url": "https://blog.de.playstation.com/2026/11/03/playstations-black-friday-angebote-2026/",
+      "category": "store",
+      "score": 70
+    },
+    {
+      "title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+      "url": "https://blog.de.playstation.com/2026/11/03/sonic-racing-crossworlds-jahr-zwei-ist-da/",
+      "category": "news",
+      "score": 50
+    },
+    {
+      "title": "Helldivers 2: Heute erscheinen neue giftige Terminidentypen und mehr Bug-Höhlen in der Galaxie",
+      "url": "https://blog.de.playstation.com/2026/11/03/helldivers-2-heute-erscheinen-neue-giftige-terminidentypen-und-mehr-bug-hoehlen-in-der-galaxie/",
+      "category": "news",
+      "score": 50
+    }
+  ],
+  "health": {
+    "status": "ok",
+    "checkedAt": "2026-11-03T15:14:28.059Z",
+    "okSources": 9,
+    "totalSources": 9,
+    "failedSources": 0,
+    "warnings": 0,
+    "lastSuccessfulCheck": "2026-11-03T15:14:11.909Z",
+    "editorialFreshness": "ok"
+  },
+  "sourceCheck": {
+    "checkedAt": "2026-11-03T15:14:11.909Z",
+    "errors": [],
+    "sources": [
+      {
+        "name": "PlayStation Blog",
+        "ok": true
+      },
+      {
+        "name": "Monats-Releases",
+        "ok": true
+      },
+      {
+        "name": "PS Plus monatlich",
+        "ok": true
+      },
+      {
+        "name": "PS Plus aktuell",
+        "ok": true
+      },
+      {
+        "name": "EA Play",
+        "ok": true
+      },
+      {
+        "name": "Ubisoft+",
+        "ok": true
+      },
+      {
+        "name": "Store: Hogwarts Legacy",
+        "ok": true
+      },
+      {
+        "name": "Store: Star Wars Outlaws",
+        "ok": true
+      },
+      {
+        "name": "Store: Red Dead Redemption",
+        "ok": true
+      }
+    ]
+  },
+  "gameDetails": {
+    "Derelikt: Release-Termin für PS5 enthüllt": {},
+    "PS5-Spiele November 2026: Grand Theft Auto VI, Gothic 3 Classic & mehr freuen sich auf euch": {},
+    "Sonic Racing: CrossWorlds Jahr zwei ist da": {},
+    "Dead Island 2": {
+      "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11."
+    },
+    "Tomb Raider IV – VI Remastered": {
+      "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11."
+    },
+    "Monster Train 2": {
+      "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11.",
+      "storeUrl": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1815/3ea7456f6925d14bd479d7b9bd251be1575e0e5fc37ad88d.png",
+      "title": "Monster Train 2"
+    },
+    "ZERO PARADES: Director’s Cut": {
+      "release": "03.11.2026"
+    },
+    "Godzilla: Destroy All Monsters Melee Remastered": {
+      "release": "03.11.2026"
+    },
+    "CRYMELIGHT": {
+      "release": "04.11.2026"
+    },
+    "K-Pop Rising: Dream to Shine": {
+      "release": "05.11.2026"
+    },
+    "Escape Academy 2: Back 2 School": {
+      "release": "05.11.2026"
+    },
+    "EA SPORTS FC 27": {
+      "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
+      "developer": "EA SPORTS",
+      "genre": "Sport · Fußball",
+      "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
+      "publisher": "EA Swiss Sarl",
+      "release": "18.9.2026",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
+        "https://i.ytimg.com/vi_webp/LoqWKZ1kjio/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-02-en-13jul26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=LoqWKZ1kjio"
+    }
+  },
+  "enrichment": {
+    "checkedAt": "2026-11-03T15:14:23.491Z",
+    "titles": 12,
+    "fetched": 1,
+    "enriched": 9,
+    "warnings": []
+  },
+  "resolvedSources": {
+    "psPlusMonthly": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
+    "psPlusStoreUrls": {
+      "Dead Island 2": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
+      "Tomb Raider IV – VI Remastered": "https://store.playstation.com/product/EP1875-PPSA18151_00-TOMBRAIDER456225",
+      "Monster Train 2": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880"
+    },
+    "monthlyReleases": "https://blog.de.playstation.com/2026/11/02/ps5-spiele-november-2026-grand-theft-auto-vi-gothic-3-classic-mehr-freuen-sich-auf-euch/",
+    "releaseStoreUrls": {
+      "ZERO PARADES: Director’s Cut": "https://store.playstation.com/concept/10016673",
+      "Godzilla: Destroy All Monsters Melee Remastered": "https://store.playstation.com/concept/10018112",
+      "CRYMELIGHT": "https://store.playstation.com/product/EP2640-PPSA36937_00-PROJECTALICE0000",
+      "K-Pop Rising: Dream to Shine": "https://store.playstation.com/product/EP4295-PPSA37453_00-KPOPRISING0PS5WW",
+      "Escape Academy 2: Back 2 School": "https://store.playstation.com/concept/10019469",
+      "Grand Theft Auto VI": "https://store.playstation.com/product/EP1004-PPSA01547_00-GTAVISTANDARD001",
+      "Gothic 3 Classic": "https://store.playstation.com/concept/10009603"
+    },
+    "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
+    "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
+    "storeCampaign": "https://blog.de.playstation.com/2026/10/09/die-players-choice-angebote-sind-im-playstation-store-gelandet/",
+    "storeCollection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "storeDeals": {}
+  },
+  "eaPlay": {
+    "title": "FC™ 27 · 10h Trial ab 18.09.",
+    "trial": null,
+    "items": [
+      "10 % auf digitale EA-Käufe",
+      "Monatliche Mitgliederbelohnungen",
+      "The Play List"
+    ],
+    "sourceUrl": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play"
+  },
+  "ubisoftPlus": {
+    "title": "Ubisoft+ Classics",
+    "price": "7,99 €",
+    "items": [
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
+    ],
+    "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
+  },
+  "automationV2": {
+    "version": 2,
+    "checkedAt": "2026-11-03T15:14:23.080Z",
+    "month": "November",
+    "year": 2026,
+    "notes": []
+  },
+  "storeDiscovery": {
+    "checkedAt": "2026-11-03T15:14:23.173Z",
+    "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
+    "activeCampaign": false,
+    "staticLinks": 0,
+    "browserLinks": 0,
+    "links": 0,
+    "fetched": 0,
+    "verified": 0,
+    "selected": 0,
+    "mode": "no-active-campaign",
+    "warnings": []
+  },
+  "mediaValidation": {
+    "checkedAt": "2026-11-03T15:14:27.897Z",
+    "verified": 1,
+    "missing": [
+      "Dead Island 2",
+      "Tomb Raider IV – VI Remastered"
+    ],
+    "warnings": [
+      "Dead Island 2: Produktidentitaet oder Cover nicht bestaetigt",
+      "Tomb Raider IV – VI Remastered: Produktidentitaet oder Cover nicht bestaetigt"
+    ]
+  },
+  "editorialFreshness": {
+    "status": "ok",
+    "checkedAt": "2026-11-03T15:14:21.508Z",
+    "date": "03.11.2026",
+    "maxAgeDays": 21,
+    "selected": [
+      {
+        "title": "Derelikt: Release-Termin für PS5 enthüllt",
+        "date": "02.11.2026",
+        "url": "https://blog.de.playstation.com/2026/11/02/derelikt-release-termin-fuer-ps5-enthuellt/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/2ae8bf555fd319aa43d8def92b529e5086f3b18a.jpg"
+      },
+      {
+        "title": "PS5-Spiele November 2026: Grand Theft Auto VI, Gothic 3 Classic & mehr freuen sich auf euch",
+        "date": "02.11.2026",
+        "url": "https://blog.de.playstation.com/2026/11/02/ps5-spiele-november-2026-grand-theft-auto-vi-gothic-3-classic-mehr-freuen-sich-auf-euch/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/9f1ec40f466589ad4c90a7fea8327260a5fee77e.jpg"
+      },
+      {
+        "title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+        "date": "03.11.2026",
+        "url": "https://blog.de.playstation.com/2026/11/03/sonic-racing-crossworlds-jahr-zwei-ist-da/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/47a538de7425835061d3a619efebfc6e9ddb6811.jpg"
+      }
+    ]
+  },
+  "temporalCheck": {
+    "status": "ok",
+    "checkedAt": "2026-11-02T17:08:11.773Z",
+    "berlinDate": "2026-11-02",
+    "newPostsToday": 4,
+    "staleRelativeCopyFixed": 0,
+    "errors": [],
+    "warnings": [
+      "PS Plus: kein verifiziertes Produktcover für Dead Island 2",
+      "PS Plus: kein verifiziertes Produktcover für Tomb Raider IV – VI Remastered"
+    ]
+  }
+}

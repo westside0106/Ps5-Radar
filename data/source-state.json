@@ -1,8 +1,23 @@
 {
-  "checkedAt": "2026-11-02T17:07:49.277Z",
+  "checkedAt": "2026-11-03T15:14:11.909Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+        "link": "https://blog.de.playstation.com/2026/11/03/sonic-racing-crossworlds-jahr-zwei-ist-da/",
+        "pubDate": "Tue, 03 Nov 2026 14:00:00 +0000"
+      },
+      {
+        "title": "Black Friday-Angebote 2026 im PlayStation Store",
+        "link": "https://blog.de.playstation.com/2026/11/03/playstations-black-friday-angebote-2026/",
+        "pubDate": "Tue, 03 Nov 2026 13:57:48 +0000"
+      },
+      {
+        "title": "Helldivers 2: Heute erscheinen neue giftige Terminidentypen und mehr Bug-Höhlen in der Galaxie",
+        "link": "https://blog.de.playstation.com/2026/11/03/helldivers-2-heute-erscheinen-neue-giftige-terminidentypen-und-mehr-bug-hoehlen-in-der-galaxie/",
+        "pubDate": "Tue, 03 Nov 2026 13:00:00 +0000"
+      },
       {
         "title": "Derelikt: Release-Termin für PS5 enthüllt",
         "link": "https://blog.de.playstation.com/2026/11/02/derelikt-release-termin-fuer-ps5-enthuellt/",
@@ -37,53 +52,32 @@
         "title": "PlayStation Plus monatliche Spiele für November: Dead Island 2 & mehr",
         "link": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
         "pubDate": "Wed, 28 Oct 2026 16:24:27 +0000"
-      },
-      {
-        "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
-        "link": "https://blog.de.playstation.com/2026/10/28/vorschau-auf-die-prism-collection-mit-drei-neuen-transparenten-designs-fuer-ps5-zubehoer/",
-        "pubDate": "Wed, 28 Oct 2026 15:00:00 +0000"
-      },
-      {
-        "title": "Rayman Legends Retold: Astro Bot-Kostüm im Crossover",
-        "link": "https://blog.de.playstation.com/2026/10/28/rayman-legends-retold-astro-bot-kostuem-im-crossover/",
-        "pubDate": "Wed, 28 Oct 2026 13:00:00 +0000"
-      },
-      {
-        "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
-        "link": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
-        "pubDate": "Tue, 27 Oct 2026 16:00:00 +0000"
       }
     ],
     "newPosts": [
       {
-        "title": "Derelikt: Release-Termin für PS5 enthüllt",
-        "link": "https://blog.de.playstation.com/2026/11/02/derelikt-release-termin-fuer-ps5-enthuellt/",
-        "pubDate": "Mon, 02 Nov 2026 15:00:00 +0000",
-        "category": "release"
-      },
-      {
-        "title": "PS5-Spiele November 2026: Grand Theft Auto VI, Gothic 3 Classic & mehr freuen sich auf euch",
-        "link": "https://blog.de.playstation.com/2026/11/02/ps5-spiele-november-2026-grand-theft-auto-vi-gothic-3-classic-mehr-freuen-sich-auf-euch/",
-        "pubDate": "Mon, 02 Nov 2026 14:01:07 +0000",
+        "title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+        "link": "https://blog.de.playstation.com/2026/11/03/sonic-racing-crossworlds-jahr-zwei-ist-da/",
+        "pubDate": "Tue, 03 Nov 2026 14:00:00 +0000",
         "category": "news"
       },
       {
-        "title": "Godzilla: Destroy All Monsters Melee Remastered – Euer Guide zu allen 12 Kaiju",
-        "link": "https://blog.de.playstation.com/2026/11/02/godzilla-destroy-all-monsters-melee-remastered-euer-guide-zu-allen-12-kaiju/",
-        "pubDate": "Mon, 02 Nov 2026 14:00:00 +0000",
-        "category": "news"
-      },
-      {
-        "title": "20 Jahre PlayStation Store – Entwickler verraten die Spiele, die sie am meisten überrascht haben",
-        "link": "https://blog.de.playstation.com/2026/11/02/20-jahre-playstation-store-entwickler-verraten-die-spiele-die-sie-am-meisten-ueberrascht-haben/",
-        "pubDate": "Mon, 02 Nov 2026 11:00:00 +0000",
+        "title": "Black Friday-Angebote 2026 im PlayStation Store",
+        "link": "https://blog.de.playstation.com/2026/11/03/playstations-black-friday-angebote-2026/",
+        "pubDate": "Tue, 03 Nov 2026 13:57:48 +0000",
         "category": "store"
+      },
+      {
+        "title": "Helldivers 2: Heute erscheinen neue giftige Terminidentypen und mehr Bug-Höhlen in der Galaxie",
+        "link": "https://blog.de.playstation.com/2026/11/03/helldivers-2-heute-erscheinen-neue-giftige-terminidentypen-und-mehr-bug-hoehlen-in-der-galaxie/",
+        "pubDate": "Tue, 03 Nov 2026 13:00:00 +0000",
+        "category": "news"
       }
     ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 213699,
+    "bytes": 214186,
     "schedule": [
       {
         "date": "03.09.",
@@ -134,7 +128,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 180290,
+    "bytes": 180777,
     "updated": true,
     "parsed": {
       "games": [
@@ -155,11 +149,11 @@
           "hasImage": true
         },
         {
-          "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
+          "title": "Derelikt: Release-Termin für PS5 enthüllt",
           "hasImage": true
         },
         {
-          "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
+          "title": "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
           "hasImage": true
         }
       ],
@@ -167,7 +161,7 @@
       "label": "SEPTEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-11-02T17:08:11.773Z",
+      "checkedAt": "2026-11-03T15:14:28.258Z",
       "parsed": 6,
       "accepted": [],
       "rejected": [
@@ -175,19 +169,19 @@
         "MLB The Show 26",
         "Wobbly Life",
         "Chained Echoes",
-        "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör",
-        "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt"
+        "Derelikt: Release-Termin für PS5 enthüllt",
+        "Vorschau auf die Prism-Collection mit drei neuen transparenten Designs für PS5-Zubehör"
       ]
     }
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 598997
+    "bytes": 604709
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 241407,
+    "bytes": 241529,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -200,7 +194,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173766,
+    "bytes": 173780,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

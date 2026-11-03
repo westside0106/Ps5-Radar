@@ -1,8 +1,8 @@
 {
-  "date": "02.11.2026",
-  "edition": "AUSGABE #058",
-  "newHeadline": "4 NEUE PLAYSTATION-MELDUNGEN",
-  "newCount": "02.11 · LIVE",
+  "date": "03.11.2026",
+  "edition": "AUSGABE #059",
+  "newHeadline": "3 NEUE PLAYSTATION-MELDUNGEN",
+  "newCount": "03.11 · LIVE",
   "leadTitle": "Derelikt: Release-Termin für PS5 enthüllt",
   "leadDate": "02.11.2026",
   "leadMeta": "Taucht in Derelikt ein: Sci-Fi-Horror im PSOne-Stil erscheint am 13. November 2026 für PS5. Jetzt mit 10 % Rabatt vorbestellen!",
@@ -13,11 +13,11 @@
   "secondary1Meta": "Diese PS5-Spiele erscheinen im November 2026: Grand Theft Auto VI, Gothic 3 Classic, Godzilla: Destroy All Monsters Melee Remastered und weitere…",
   "secondary1Price": null,
   "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/9f1ec40f466589ad4c90a7fea8327260a5fee77e.jpg",
-  "secondary2Title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
-  "secondary2Date": "27.10.2026",
-  "secondary2Meta": "Erfahrt, wie „Aloft“ und „Conan Exiles Enhanced“ Anfang 2027 ihr PS5-Debüt feiern, mit neuen Inhalten und kostenlosem Upgrade.",
+  "secondary2Title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+  "secondary2Date": "03.11.2026",
+  "secondary2Meta": "Sonic Racing: CrossWorlds Year Two ist da: Erfahrt mehr über Duel Mode, Super Slot und das nostalgische Sega Consoles Pack.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1ff2229adeb89a227ae4ad157e45d5686d392267.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/47a538de7425835061d3a619efebfc6e9ddb6811.jpg",
   "psplusLabel": "NOVEMBER 2026",
   "psplusTitle": "November-Spiele sind live",
   "psplusText": "Verfügbar bis 30.11.",
@@ -68,7 +68,7 @@
     }
   ],
   "quickItems": [
-    "20 Jahre PlayStation Store – Entwickler verraten die Spiele, die sie am meisten überrascht haben",
+    "Black Friday-Angebote 2026 im PlayStation Store",
     "September-Spiele sind live"
   ],
   "leavingTitle": "Kein aktives Angebotsende",
@@ -87,19 +87,19 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 02.11.2026 · 9/9 Quellen · 9/12 Details",
+  "radarCheck": "Stand 03.11.2026 · 9/9 Quellen · 9/12 Details",
   "sourceAlerts": [
     {
-      "title": "Godzilla: Destroy All Monsters Melee Remastered – Euer Guide zu allen 12 Kaiju",
-      "url": "https://blog.de.playstation.com/2026/11/02/godzilla-destroy-all-monsters-melee-remastered-euer-guide-zu-allen-12-kaiju/",
-      "source": "PlayStation Blog DE",
-      "category": "news"
-    },
-    {
-      "title": "20 Jahre PlayStation Store – Entwickler verraten die Spiele, die sie am meisten überrascht haben",
-      "url": "https://blog.de.playstation.com/2026/11/02/20-jahre-playstation-store-entwickler-verraten-die-spiele-die-sie-am-meisten-ueberrascht-haben/",
+      "title": "Black Friday-Angebote 2026 im PlayStation Store",
+      "url": "https://blog.de.playstation.com/2026/11/03/playstations-black-friday-angebote-2026/",
       "source": "PlayStation Blog DE",
       "category": "store"
+    },
+    {
+      "title": "Helldivers 2: Heute erscheinen neue giftige Terminidentypen und mehr Bug-Höhlen in der Galaxie",
+      "url": "https://blog.de.playstation.com/2026/11/03/helldivers-2-heute-erscheinen-neue-giftige-terminidentypen-und-mehr-bug-hoehlen-in-der-galaxie/",
+      "source": "PlayStation Blog DE",
+      "category": "news"
     },
     {
       "title": "Derelikt: Release-Termin für PS5 enthüllt",
@@ -112,40 +112,34 @@
       "type": "editorial"
     },
     {
-      "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
-      "url": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
+      "title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+      "url": "https://blog.de.playstation.com/2026/11/03/sonic-racing-crossworlds-jahr-zwei-ist-da/",
       "type": "editorial"
     }
   ],
   "editorial": [
     {
-      "title": "Derelikt: Release-Termin für PS5 enthüllt",
-      "url": "https://blog.de.playstation.com/2026/11/02/derelikt-release-termin-fuer-ps5-enthuellt/",
-      "category": "release",
-      "score": 115
-    },
-    {
-      "title": "20 Jahre PlayStation Store – Entwickler verraten die Spiele, die sie am meisten überrascht haben",
-      "url": "https://blog.de.playstation.com/2026/11/02/20-jahre-playstation-store-entwickler-verraten-die-spiele-die-sie-am-meisten-ueberrascht-haben/",
+      "title": "Black Friday-Angebote 2026 im PlayStation Store",
+      "url": "https://blog.de.playstation.com/2026/11/03/playstations-black-friday-angebote-2026/",
       "category": "store",
       "score": 70
     },
     {
-      "title": "PS5-Spiele November 2026: Grand Theft Auto VI, Gothic 3 Classic & mehr freuen sich auf euch",
-      "url": "https://blog.de.playstation.com/2026/11/02/ps5-spiele-november-2026-grand-theft-auto-vi-gothic-3-classic-mehr-freuen-sich-auf-euch/",
+      "title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+      "url": "https://blog.de.playstation.com/2026/11/03/sonic-racing-crossworlds-jahr-zwei-ist-da/",
       "category": "news",
-      "score": 65
+      "score": 50
     },
     {
-      "title": "Godzilla: Destroy All Monsters Melee Remastered – Euer Guide zu allen 12 Kaiju",
-      "url": "https://blog.de.playstation.com/2026/11/02/godzilla-destroy-all-monsters-melee-remastered-euer-guide-zu-allen-12-kaiju/",
+      "title": "Helldivers 2: Heute erscheinen neue giftige Terminidentypen und mehr Bug-Höhlen in der Galaxie",
+      "url": "https://blog.de.playstation.com/2026/11/03/helldivers-2-heute-erscheinen-neue-giftige-terminidentypen-und-mehr-bug-hoehlen-in-der-galaxie/",
       "category": "news",
       "score": 50
     }
   ],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-11-02T17:08:18.992Z",
+    "checkedAt": "2026-11-03T15:14:38.091Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -159,10 +153,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "ok",
-    "lastSuccessfulCheck": "2026-11-02T17:08:18.992Z"
+    "lastSuccessfulCheck": "2026-11-03T15:14:38.091Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-11-02T17:08:18.992Z",
+    "checkedAt": "2026-11-03T15:14:38.091Z",
     "errors": [],
     "sources": [
       {
@@ -206,7 +200,7 @@
   "gameDetails": {
     "Derelikt: Release-Termin für PS5 enthüllt": {},
     "PS5-Spiele November 2026: Grand Theft Auto VI, Gothic 3 Classic & mehr freuen sich auf euch": {},
-    "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt": {},
+    "Sonic Racing: CrossWorlds Jahr zwei ist da": {},
     "Dead Island 2": {
       "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11."
     },
@@ -254,7 +248,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-11-02T17:08:05.699Z",
+    "checkedAt": "2026-11-03T15:14:23.491Z",
     "titles": 12,
     "fetched": 1,
     "enriched": 9,
@@ -305,13 +299,13 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-11-02T17:08:05.315Z",
+    "checkedAt": "2026-11-03T15:14:23.080Z",
     "month": "November",
     "year": 2026,
     "notes": []
   },
   "storeDiscovery": {
-    "checkedAt": "2026-11-02T17:08:05.391Z",
+    "checkedAt": "2026-11-03T15:14:23.173Z",
     "collection": "https://store.playstation.com/category/7fab629e-1b5e-4c29-890d-44c6dbb0a7d5",
     "activeCampaign": false,
     "staticLinks": 0,
@@ -324,7 +318,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-11-02T17:08:11.479Z",
+    "checkedAt": "2026-11-03T15:14:27.897Z",
     "verified": 1,
     "missing": [
       "Dead Island 2",
@@ -337,8 +331,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-11-02T17:08:04.103Z",
-    "date": "02.11.2026",
+    "checkedAt": "2026-11-03T15:14:21.508Z",
+    "date": "03.11.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -354,18 +348,18 @@
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/9f1ec40f466589ad4c90a7fea8327260a5fee77e.jpg"
       },
       {
-        "title": "Aloft und Conan Exiles Enhanced: PS5-Release Anfang 2027 angekündigt",
-        "date": "27.10.2026",
-        "url": "https://blog.de.playstation.com/2026/10/27/aloft-und-conan-exiles-enhanced-ps5-release-anfang-2027-angekuendigt/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/10/1ff2229adeb89a227ae4ad157e45d5686d392267.jpg"
+        "title": "Sonic Racing: CrossWorlds Jahr zwei ist da",
+        "date": "03.11.2026",
+        "url": "https://blog.de.playstation.com/2026/11/03/sonic-racing-crossworlds-jahr-zwei-ist-da/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/47a538de7425835061d3a619efebfc6e9ddb6811.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-11-02T17:08:11.773Z",
-    "berlinDate": "2026-11-02",
-    "newPostsToday": 4,
+    "checkedAt": "2026-11-03T15:14:28.258Z",
+    "berlinDate": "2026-11-03",
+    "newPostsToday": 3,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
