@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-03T11:22:17.277Z",
+  "checkedAt": "2026-11-04T11:36:30.915Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-03T11:22:17.277Z"
+      "checkedAt": "2026-11-04T11:36:30.915Z"
     },
     "extra": {
       "complete": true,
@@ -17,15 +17,15 @@
       "count": 440,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-11-03T11:22:17.277Z"
+      "checkedAt": "2026-11-04T11:36:30.915Z"
     },
     "classics": {
       "complete": true,
-      "expected": 168,
-      "count": 168,
+      "expected": 170,
+      "count": 170,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-03T11:22:17.277Z"
+      "checkedAt": "2026-11-04T11:36:30.915Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-03T11:22:17.277Z"
+      "checkedAt": "2026-11-04T11:36:30.915Z"
     }
   },
   "games": [
@@ -15115,7 +15115,8 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/202806",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2111/0280a6d70e309b7cb3509600a500b728ada3626192e19b74.png",
       "platforms": [
-        "PS4"
+        "PS4",
+        "PS5"
       ],
       "genres": [
         "Action",
@@ -15131,11 +15132,78 @@
         "Solo"
       ],
       "perspective": "First-Person",
+      "metadataSource": "IGDB",
+      "imageSource": "PlayStation"
+    },
+    {
+      "id": "concept:202807",
+      "title": "METRO 2033 Redux",
+      "storeUrl": "https://store.playstation.com/de-de/concept/202807",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0908/4c217e661408017edc10e775d9fd6c74d17246395e10b338.png",
+      "platforms": [
+        "PS4",
+        "PS5"
+      ],
+      "genres": [
+        "Action",
+        "Shooter"
+      ],
+      "services": [
+        "premium"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2014-08-26",
+      "description": "Metro 2033 Redux is the definitive version of the cult classic Metro 2033, rebuilt in the latest and greatest iteration of the 4A Engine for Next Gen. Fans of the original game will find the unique world of Metro transformed with incredible lighting, physics and dynamic weather effects. Newcomers will get the chance to experience one of the finest story-driven shooters of all time; an epic adventure combining gripping survival horror, exploration and tactical combat and stealth.\n\nAll the gameplay improvements and f",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:226459",
+      "title": "METRO Last Light Redux",
+      "storeUrl": "https://store.playstation.com/de-de/concept/226459",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202610/0908/d0c2b40c5db44a73d3b3605fdd9a07f80df8fd33716a93c3.png",
+      "platforms": [
+        "PS4",
+        "PS5"
+      ],
+      "genres": [
+        "Action",
+        "Shooter"
+      ],
+      "services": [
+        "premium"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2014-08-26",
+      "description": "Metro: Last Light Redux is the definitive version of the critically acclaimed ‘Metro: Last Light’, rebuilt in the latest and greatest iteration of the 4A Engine for Next Gen. Newcomers will get the chance to experience one of the finest story-driven shooters of all time; an epic adventure combining gripping survival horror, exploration and tactical combat and stealth.\n\nThis definitive version also includes all previously released DLC, adding 10 hours of bonus single-player content to the huge solo campaign. Fans of",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "First-Person",
       "metadataSource": "IGDB"
     }
   ],
   "errors": [],
   "changes": [
+    {
+      "id": "concept:202807",
+      "title": "METRO 2033 Redux",
+      "service": "premium",
+      "kind": "added",
+      "date": "2026-11-04T11:36:30.915Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/202807"
+    },
+    {
+      "id": "concept:226459",
+      "title": "METRO Last Light Redux",
+      "service": "premium",
+      "kind": "added",
+      "date": "2026-11-04T11:36:30.915Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/226459"
+    },
     {
       "id": "concept:202806",
       "title": "METRO Redux",
@@ -15345,5 +15413,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-11-03T11:22:17.277Z"
+  "lastAttemptAt": "2026-11-04T11:36:30.915Z"
 }
