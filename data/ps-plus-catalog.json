@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-05T11:33:14.429Z",
+  "checkedAt": "2026-11-06T11:32:14.784Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 2,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-05T11:33:14.429Z"
+      "checkedAt": "2026-11-06T11:32:14.784Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 440,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-11-05T11:33:14.429Z"
+      "checkedAt": "2026-11-06T11:32:14.784Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 170,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-05T11:33:14.429Z"
+      "checkedAt": "2026-11-06T11:32:14.784Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-05T11:33:14.429Z"
+      "checkedAt": "2026-11-06T11:32:14.784Z"
     }
   },
   "games": [
@@ -8452,7 +8452,7 @@
       "id": "concept:10002313",
       "title": "The Crew Motorfest Cross-Gen Bundle",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002313",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2315/607d9ed1ac762c9de33ef73fd09b3431d0b96ef4985ac2fb.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2217/aff7ae0da202d816a5761fd4ce865085320052f46223c770.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -15128,7 +15128,8 @@
         "Solo"
       ],
       "perspective": "Seitenansicht",
-      "metadataSource": "IGDB"
+      "metadataSource": "IGDB",
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:10009064",
@@ -15145,7 +15146,8 @@
       "services": [
         "essential"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "PlayStation"
     }
   ],
   "errors": [],
@@ -15415,5 +15417,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-11-05T11:33:14.429Z"
+  "lastAttemptAt": "2026-11-06T11:32:14.784Z"
 }
