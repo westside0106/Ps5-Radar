@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-11-06T15:11:07.833Z",
+  "checkedAt": "2026-11-07T14:10:38.999Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 1848,
+    "count": 1842,
     "views": {
       "deals": {
-        "expected": 1126,
-        "observed": 1126,
-        "count": 1126,
+        "expected": 1120,
+        "observed": 1120,
+        "count": 1120,
         "complete": true,
         "attempts": 1
       },
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-06T15:11:07.833Z",
+      "observedAt": "2026-11-07T14:10:38.999Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-06T15:11:07.833Z",
+      "observedAt": "2026-11-07T14:10:38.999Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-06T15:11:07.833Z",
+      "observedAt": "2026-11-07T14:10:38.999Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -8175,38 +8175,6 @@
       ]
     },
     {
-      "key": "xbox:product:9nf188pss04b",
-      "id": "9nf188pss04b",
-      "title": "Disney Dreamlight Valley - „Wishblossom Ranch“ Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/disney-dreamlight-valley-wishblossom-ranch-edition/9nf188pss04b",
-      "cover": "https://store-images.s-microsoft.com/image/apps.40746.13603776507720901.10eb5009-ee50-42ac-8982-29dbc0184791.017e12f2-0763-484b-aa2e-5e13dcb95351?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 3599,
-      "regularPriceMinor": 5999,
-      "genres": [
-        "Simulation"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9pj9sg2jpb1l",
-      "id": "9pj9sg2jpb1l",
-      "title": "Disney Dreamlight Valley - Ultimate Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/disney-dreamlight-valley-ultimate-edition/9pj9sg2jpb1l",
-      "cover": "https://store-images.s-microsoft.com/image/apps.27239.14215375486709271.924f6cb7-3cde-493b-a189-c85d4741434b.f4cbba9e-1da0-4bc5-8e51-5c9b07c09619?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 4799,
-      "regularPriceMinor": 7999,
-      "genres": [
-        "Simulation"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9n6z8dqxsqwh",
       "id": "9n6z8dqxsqwh",
       "title": "Disneyland Adventures",
@@ -11358,23 +11326,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nxp794qsz9f",
-      "id": "9nxp794qsz9f",
-      "title": "Forever Skies",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/forever-skies/9nxp794qsz9f",
-      "cover": "https://store-images.s-microsoft.com/image/apps.58312.14492009108061064.39e99944-7edd-4c78-9b30-c7e232af49fc.b6572331-cd0a-4340-a18a-619b397f71d1?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2799,
-      "regularPriceMinor": 3499,
-      "genres": [
-        "Action & Abenteuer",
-        "Simulation"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9pjbc4bzpsmr",
@@ -27858,24 +27809,6 @@
       ]
     },
     {
-      "key": "xbox:product:9nxc038sk8vp",
-      "id": "9nxc038sk8vp",
-      "title": "The Walking Trade",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-walking-trade/9nxc038sk8vp",
-      "cover": "https://store-images.s-microsoft.com/image/apps.18937.14432481906225438.499bca74-e5cd-4820-b1d8-4166c60c6e10.7ccb1c95-776d-442e-9b8f-049fbfd46add?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1079,
-      "regularPriceMinor": 1199,
-      "genres": [
-        "Action & Abenteuer",
-        "Shooter",
-        "Simulation"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nr8zbsjq4fd",
       "id": "9nr8zbsjq4fd",
       "title": "The Wild at Heart",
@@ -28672,24 +28605,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nrw52q57j3s",
-      "id": "9nrw52q57j3s",
-      "title": "Trainz Simulator: World Tour",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/trainz-simulator-world-tour/9nrw52q57j3s",
-      "cover": "https://store-images.s-microsoft.com/image/apps.63069.14379862117641965.14f5d96c-c274-48c3-9176-32fa37b885b8.fdd3f4c1-846f-44f7-b73e-902450ff2d83?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1199,
-      "regularPriceMinor": 3999,
-      "genres": [
-        "Andere",
-        "Familie & Kinder",
-        "Simulation"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9p74pjh3djrw",
@@ -29966,23 +29881,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9nf4ln14mv11",
-      "id": "9nf4ln14mv11",
-      "title": "Vixen 357",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/vixen-357/9nf4ln14mv11",
-      "cover": "https://store-images.s-microsoft.com/image/apps.25529.13605980541653736.dd69898a-6863-44c0-8830-2a48a6425bd8.0296e67c-cfea-4058-a91d-4e6ef3de597e?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 479,
-      "regularPriceMinor": 599,
-      "genres": [
-        "Action & Abenteuer",
-        "Strategiespiele"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9n9k5qp9g3gl",
