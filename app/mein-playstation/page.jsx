@@ -33,6 +33,21 @@ export default async function MyPlayStation({searchParams}){
  </section>:null}
  {data.errors?.length?<p className="psn-warning">Einzelne Bereiche konnten nicht geladen werden: {data.errors.join(' · ')}</p>:null}
  {!data.connected?<p className="psn-warning">Deine lokale Spielwelt, manuell vorgemerkte Spiele und Sammlungen bleiben auch ohne aktuelle PSN-Verbindung verfügbar. PSN-Spielzeiten und Trophäen fehlen in diesem Modus.</p>:null}
+  <section className="psn-panel" aria-label="PlayStation Network Einstellungen">
+ <details>
+  <summary style={{cursor:'pointer',fontWeight:600}}>Einstellungen · PSN-Verbindung erneuern</summary>
+  <div style={{paddingTop:12,fontSize:14,lineHeight:1.65}}>
+   <p>Wenn Spielzeiten oder Trophäen nicht mehr geladen werden, kann der private Sony-Anmeldetoken abgelaufen sein.</p>
+   <ol>
+    <li>Bei <a href="https://www.playstation.com/" target="_blank" rel="noopener noreferrer">PlayStation anmelden</a>.</li>
+    <li><a href="https://ca.account.sony.com/api/v1/ssocookie" target="_blank" rel="noopener noreferrer">NPSSO bei Sony abrufen</a> und nur den Wert von <code>npsso</code> kopieren.</li>
+    <li>In <a href="https://vercel.com/dashboard" target="_blank" rel="noopener noreferrer">Vercel</a> beim Radar-Projekt unter Settings → Environment Variables den geheimen Wert <code>PSN_NPSSO</code> für Production ersetzen.</li>
+    <li>Ein neues Production-Deployment auslösen und diese Seite erneut öffnen.</li>
+   </ol>
+   <p><small>Token niemals in GitHub, Screenshots oder Chats veröffentlichen. <code>expires_in</code> bezeichnet eine relative Laufzeit in Sekunden und nicht zwingend die NPSSO-Gültigkeit.</small></p>
+  </div>
+ </details>
+ </section>
  <PlayStationHub titles={titles} played={played}/>
  {data.connected?<p className="psn-foot">Synchronisiert: {new Date(data.checkedAt).toLocaleString('de-DE')} · Nur lesender Zugriff · Inoffizielle PSN-Schnittstelle</p>:null}
  </main>;
