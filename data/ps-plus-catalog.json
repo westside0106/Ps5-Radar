@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-06T11:32:14.784Z",
+  "checkedAt": "2026-11-07T10:42:28.691Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
       "complete": true,
-      "expected": 2,
-      "count": 2,
+      "expected": 3,
+      "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-06T11:32:14.784Z"
+      "checkedAt": "2026-11-07T10:42:28.691Z"
     },
     "extra": {
       "complete": true,
-      "expected": 460,
-      "count": 440,
+      "expected": 464,
+      "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-11-06T11:32:14.784Z"
+      "checkedAt": "2026-11-07T10:42:28.691Z"
     },
     "classics": {
       "complete": true,
-      "expected": 170,
-      "count": 170,
+      "expected": 171,
+      "count": 171,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-06T11:32:14.784Z"
+      "checkedAt": "2026-11-07T10:42:28.691Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-06T11:32:14.784Z"
+      "checkedAt": "2026-11-07T10:42:28.691Z"
     }
   },
   "games": [
@@ -8452,7 +8452,7 @@
       "id": "concept:10002313",
       "title": "The Crew Motorfest Cross-Gen Bundle",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002313",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2217/aff7ae0da202d816a5761fd4ce865085320052f46223c770.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2315/607d9ed1ac762c9de33ef73fd09b3431d0b96ef4985ac2fb.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -15148,10 +15148,184 @@
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
       "imageSource": "PlayStation"
+    },
+    {
+      "id": "concept:200599",
+      "title": "BEYOND: Two Souls™",
+      "storeUrl": "https://store.playstation.com/de-de/concept/200599",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/0522/0qBPvJ5xqVxay9Ia0LviK6wG.png",
+      "platforms": [
+        "PS4"
+      ],
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "services": [
+        "premium"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+    },
+    {
+      "id": "concept:201061",
+      "title": "Dead Island 2",
+      "storeUrl": "https://store.playstation.com/de-de/concept/201061",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/V6WJkRhfNIQ3ePfAmrLSfGng.png",
+      "platforms": [
+        "PS4",
+        "PS5"
+      ],
+      "genres": [
+        "Action"
+      ],
+      "services": [
+        "essential"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2023-04-21",
+      "description": "Dead Island 2 is a survival horror first-person shooter set in a zombie apocalypse in Los Angeles. Players explore an open world, gathering resources, interacting with survivors, and battling swarms of zombies in fast-paced combat. Set fifteen years after the events of Dead Island: Riptide, the game features a new cast of characters and narrative, while maintaining the series’ signature blend of brutal melee action and immersive environments.",
+      "modes": [
+        "Solo",
+        "Mehrspieler",
+        "Koop"
+      ],
+      "perspective": "First-Person",
+      "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:222727",
+      "title": "Detroit: Become Human",
+      "storeUrl": "https://store.playstation.com/de-de/concept/222727",
+      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocot9.jpg",
+      "platforms": [
+        "PS4"
+      ],
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "IGDB",
+      "releaseDate": "2018-05-25",
+      "description": "Detroit: Become Human is an interactive narrative adventure game developed by Quantic Dream and released in 2018. Set in a near-future Detroit where androids serve humans, the story follows three android protagonists—Kara, Connor, and Markus—who shape the city’s fate through their choices. Gameplay combines exploration, dialogue interactions, and quick-time events, with branching storylines and multiple endings. The narrative explores themes of artificial intelligence, freedom, and morality.",
+      "modes": [
+        "Solo"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:209065",
+      "title": "Everybody’s Golf",
+      "storeUrl": "https://store.playstation.com/de-de/concept/209065",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2320/PT1PAMO5aZHYRoOkrVNhybKD.png",
+      "platforms": [
+        "PS4"
+      ],
+      "genres": [
+        "Sportspiele"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "releaseDate": "2017-08-29",
+      "description": "A brand new entry in the Everybody's Golf/Hot Shots Golf series, featuring sandbox courses and minigames like fishing and sky diving.\n\nIt is the twelfth game in the series and also the fifth game in the series to be titled Everybody's Golf in Europe.",
+      "modes": [
+        "Solo",
+        "Mehrspieler"
+      ],
+      "perspective": "Third-Person",
+      "metadataSource": "IGDB"
+    },
+    {
+      "id": "concept:234427",
+      "title": "MediEvil",
+      "storeUrl": "https://store.playstation.com/de-de/concept/234427",
+      "image": null,
+      "platforms": [
+        "PS4"
+      ],
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+    },
+    {
+      "id": "concept:225857",
+      "title": "Shadow of the Colossus™",
+      "storeUrl": "https://store.playstation.com/de-de/concept/225857",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2319/XtqYrG2LWer39eExYBsh9J5x.png",
+      "platforms": [
+        "PS4"
+      ],
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "services": [
+        "extra"
+      ],
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
     }
   ],
   "errors": [],
   "changes": [
+    {
+      "id": "concept:201061",
+      "title": "Dead Island 2",
+      "service": "essential",
+      "kind": "added",
+      "date": "2026-11-07T10:42:28.691Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/201061"
+    },
+    {
+      "id": "concept:222727",
+      "title": "Detroit: Become Human",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-11-07T10:42:28.691Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/222727"
+    },
+    {
+      "id": "concept:209065",
+      "title": "Everybody’s Golf",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-11-07T10:42:28.691Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/209065"
+    },
+    {
+      "id": "concept:234427",
+      "title": "MediEvil",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-11-07T10:42:28.691Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/234427"
+    },
+    {
+      "id": "concept:225857",
+      "title": "Shadow of the Colossus™",
+      "service": "extra",
+      "kind": "added",
+      "date": "2026-11-07T10:42:28.691Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/225857"
+    },
+    {
+      "id": "concept:200599",
+      "title": "BEYOND: Two Souls™",
+      "service": "premium",
+      "kind": "added",
+      "date": "2026-11-07T10:42:28.691Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/200599"
+    },
     {
       "id": "concept:10012399",
       "title": "Monster Train 2",
@@ -15417,5 +15591,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-11-06T11:32:14.784Z"
+  "lastAttemptAt": "2026-11-07T10:42:28.691Z"
 }
