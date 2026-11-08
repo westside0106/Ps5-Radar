@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-07T10:42:28.691Z",
+  "checkedAt": "2026-11-08T10:46:57.893Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-07T10:42:28.691Z"
+      "checkedAt": "2026-11-08T10:46:57.893Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-11-07T10:42:28.691Z"
+      "checkedAt": "2026-11-08T10:46:57.893Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 171,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-07T10:42:28.691Z"
+      "checkedAt": "2026-11-08T10:46:57.893Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-07T10:42:28.691Z"
+      "checkedAt": "2026-11-08T10:46:57.893Z"
     }
   },
   "games": [
@@ -15164,7 +15164,8 @@
       "services": [
         "premium"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:201061",
@@ -15190,13 +15191,14 @@
         "Koop"
       ],
       "perspective": "First-Person",
-      "metadataSource": "IGDB"
+      "metadataSource": "IGDB",
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:222727",
       "title": "Detroit: Become Human",
       "storeUrl": "https://store.playstation.com/de-de/concept/222727",
-      "image": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cocot9.jpg",
+      "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2119/wl4DB5QGzlEHAXy1KLUVgOAu.png",
       "platforms": [
         "PS4"
       ],
@@ -15208,7 +15210,7 @@
         "extra"
       ],
       "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "IGDB",
+      "imageSource": "PlayStation",
       "releaseDate": "2018-05-25",
       "description": "Detroit: Become Human is an interactive narrative adventure game developed by Quantic Dream and released in 2018. Set in a near-future Detroit where androids serve humans, the story follows three android protagonists—Kara, Connor, and Markus—who shape the city’s fate through their choices. Gameplay combines exploration, dialogue interactions, and quick-time events, with branching storylines and multiple endings. The narrative explores themes of artificial intelligence, freedom, and morality.",
       "modes": [
@@ -15239,13 +15241,14 @@
         "Mehrspieler"
       ],
       "perspective": "Third-Person",
-      "metadataSource": "IGDB"
+      "metadataSource": "IGDB",
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:234427",
       "title": "MediEvil",
       "storeUrl": "https://store.playstation.com/de-de/concept/234427",
-      "image": null,
+      "image": "https://image.api.playstation.com/vulcan/img/cfn/11307Wm1JA9ApMArVhceTfFj0uYCsQj_rAHLUJA2Ku_rDY2sjiHAfntFA57HQqRBO7M6UPoVMfF2pbEUiA_AMefq5M4YSl4O.jpg",
       "platforms": [
         "PS4"
       ],
@@ -15256,7 +15259,8 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "PlayStation"
     },
     {
       "id": "concept:225857",
@@ -15273,7 +15277,8 @@
       "services": [
         "extra"
       ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/"
+      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
+      "imageSource": "PlayStation"
     }
   ],
   "errors": [],
@@ -15591,5 +15596,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-11-07T10:42:28.691Z"
+  "lastAttemptAt": "2026-11-08T10:46:57.893Z"
 }
