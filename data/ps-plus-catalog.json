@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-08T10:46:57.893Z",
+  "checkedAt": "2026-11-09T12:10:03.764Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-08T10:46:57.893Z"
+      "checkedAt": "2026-11-09T12:10:03.764Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 444,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-11-08T10:46:57.893Z"
+      "checkedAt": "2026-11-09T12:10:03.764Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 171,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-08T10:46:57.893Z"
+      "checkedAt": "2026-11-09T12:10:03.764Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-08T10:46:57.893Z"
+      "checkedAt": "2026-11-09T12:10:03.764Z"
     }
   },
   "games": [
@@ -8452,7 +8452,7 @@
       "id": "concept:10002313",
       "title": "The Crew Motorfest Cross-Gen Bundle",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002313",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2315/607d9ed1ac762c9de33ef73fd09b3431d0b96ef4985ac2fb.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2217/aff7ae0da202d816a5761fd4ce865085320052f46223c770.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -15596,5 +15596,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-11-08T10:46:57.893Z"
+  "lastAttemptAt": "2026-11-09T12:10:03.764Z"
 }
