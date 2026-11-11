@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-10T11:48:51.801Z",
+  "checkedAt": "2026-11-11T11:28:06.199Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,15 +9,15 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-10T11:48:51.801Z"
+      "checkedAt": "2026-11-11T11:28:06.199Z"
     },
     "extra": {
       "complete": true,
-      "expected": 464,
-      "count": 444,
+      "expected": 463,
+      "count": 443,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-11-10T11:48:51.801Z"
+      "checkedAt": "2026-11-11T11:28:06.199Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 171,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-10T11:48:51.801Z"
+      "checkedAt": "2026-11-11T11:28:06.199Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-10T11:48:51.801Z"
+      "checkedAt": "2026-11-11T11:28:06.199Z"
     }
   },
   "games": [
@@ -15005,31 +15005,6 @@
       "imageSource": "PlayStation"
     },
     {
-      "id": "concept:10014519",
-      "title": "Football Manager 26 Console",
-      "storeUrl": "https://store.playstation.com/de-de/concept/10014519",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202509/0112/e1a7a09b0d6a2adbcd22d206e82aefa406d34723c9eb2b38.png",
-      "platforms": [
-        "PS5"
-      ],
-      "genres": [
-        "Sportspiele"
-      ],
-      "services": [
-        "extra"
-      ],
-      "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
-      "imageSource": "PlayStation",
-      "releaseDate": "2025-11-04",
-      "description": "New foundations set the stage for you to shape your football destiny. Built on the Unity engine, FM26 Console places you at the heart of the beautiful game. This is the legacy, redefined.\n\nDelivering effortless, instinctive console control, a redesigned user interface combines with the most immersive matchday experience in series history to bring you closer to every match-defining moment.\n\nBuild your superstar squad with new transfer tools and bring your footballing vision to life through innovations that deliver e",
-      "modes": [
-        "Solo",
-        "Mehrspieler"
-      ],
-      "perspective": null,
-      "metadataSource": "IGDB"
-    },
-    {
       "id": "concept:202806",
       "title": "METRO Redux",
       "storeUrl": "https://store.playstation.com/de-de/concept/202806",
@@ -15283,6 +15258,14 @@
   ],
   "errors": [],
   "changes": [
+    {
+      "id": "concept:10014519",
+      "title": "Football Manager 26 Console",
+      "service": "extra",
+      "kind": "removed",
+      "date": "2026-11-11T11:28:06.199Z",
+      "storeUrl": "https://store.playstation.com/de-de/concept/10014519"
+    },
     {
       "id": "concept:201061",
       "title": "Dead Island 2",
@@ -15596,5 +15579,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-11-10T11:48:51.801Z"
+  "lastAttemptAt": "2026-11-11T11:28:06.199Z"
 }
