@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-11T11:28:06.199Z",
+  "checkedAt": "2026-11-12T11:52:52.170Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-11T11:28:06.199Z"
+      "checkedAt": "2026-11-12T11:52:52.170Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 443,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-11-11T11:28:06.199Z"
+      "checkedAt": "2026-11-12T11:52:52.170Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 171,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-11T11:28:06.199Z"
+      "checkedAt": "2026-11-12T11:52:52.170Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-11T11:28:06.199Z"
+      "checkedAt": "2026-11-12T11:52:52.170Z"
     }
   },
   "games": [
@@ -15579,5 +15579,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-11-11T11:28:06.199Z"
+  "lastAttemptAt": "2026-11-12T11:52:52.170Z"
 }
