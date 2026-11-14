@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-12T11:52:52.170Z",
+  "checkedAt": "2026-11-14T10:58:29.106Z",
   "sourceUrl": "https://www.playstation.com/de-de/ps-plus/games/",
   "sections": {
     "essential": {
@@ -9,7 +9,7 @@
       "count": 3,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-12T11:52:52.170Z"
+      "checkedAt": "2026-11-14T10:58:29.106Z"
     },
     "extra": {
       "complete": true,
@@ -17,7 +17,7 @@
       "count": 443,
       "invalid": 0,
       "duplicates": 20,
-      "checkedAt": "2026-11-12T11:52:52.170Z"
+      "checkedAt": "2026-11-14T10:58:29.106Z"
     },
     "classics": {
       "complete": true,
@@ -25,7 +25,7 @@
       "count": 171,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-12T11:52:52.170Z"
+      "checkedAt": "2026-11-14T10:58:29.106Z"
     },
     "ubisoft": {
       "complete": true,
@@ -33,7 +33,7 @@
       "count": 66,
       "invalid": 0,
       "duplicates": 0,
-      "checkedAt": "2026-11-12T11:52:52.170Z"
+      "checkedAt": "2026-11-14T10:58:29.106Z"
     }
   },
   "games": [
@@ -1728,7 +1728,7 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10002921",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/2119/150d779c1b72ec85eeb0bc7ab32a58044f9b44d36e603260.png",
       "platforms": [
-        "PS5"
+        "PS4"
       ],
       "genres": [
         "Horror"
@@ -5802,7 +5802,7 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10004427",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202302/1509/823903c5a84f386f467fbec8022f302a3cd76835f020efae.png",
       "platforms": [
-        "PS5"
+        "PS4"
       ],
       "genres": [
         "Action",
@@ -8452,7 +8452,7 @@
       "id": "concept:10002313",
       "title": "The Crew Motorfest Cross-Gen Bundle",
       "storeUrl": "https://store.playstation.com/de-de/concept/10002313",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2217/aff7ae0da202d816a5761fd4ce865085320052f46223c770.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2315/607d9ed1ac762c9de33ef73fd09b3431d0b96ef4985ac2fb.png",
       "platforms": [
         "PS4",
         "PS5"
@@ -10485,9 +10485,9 @@
     },
     {
       "id": "concept:230658",
-      "title": "World War Z: Aftermath",
+      "title": "World War Z: Year 1 Edition",
       "storeUrl": "https://store.playstation.com/de-de/concept/230658",
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1609/H7gbJJRlxx0gh6L40A0kkZ5x.png",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202611/0917/c8227f7b18d4f57c5461d9cc34dd004a1e54239ffa2cba1d.png",
       "platforms": [
         "PS4"
       ],
@@ -14821,8 +14821,7 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10000886",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/9v9q3P2LuokLyI0Tsp4hHq9G.png",
       "platforms": [
-        "PS4",
-        "PS5"
+        "PS4"
       ],
       "genres": [
         "Action"
@@ -14917,7 +14916,7 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10010437",
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202408/2820/7981c9f8f122ac08d5febb8b883578b895300f8248f8cb1a.png",
       "platforms": [
-        "PS5"
+        "PS4"
       ],
       "genres": [
         "Horror"
@@ -15579,5 +15578,5 @@
       "storeUrl": "https://store.playstation.com/de-de/concept/10012956"
     }
   ],
-  "lastAttemptAt": "2026-11-12T11:52:52.170Z"
+  "lastAttemptAt": "2026-11-14T10:58:29.106Z"
 }
