@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-11-17T17:03:17.705Z",
+  "checkedAt": "2026-11-18T16:37:52.643Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
     "count": 1121,
     "views": {
       "deals": {
-        "expected": 395,
-        "observed": 395,
-        "count": 395,
+        "expected": 394,
+        "observed": 394,
+        "count": 394,
         "complete": true,
         "attempts": 1
       },
@@ -57,7 +57,7 @@
       "gamepass-premium: keine bestaetigte Quelle (Durchlauf 1: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten)",
       "gamepass-ultimate: 693/694 eindeutig belegt, Durchlauf 1: 693/694 eindeutige IDs; Durchlauf 2: 693/694 eindeutige IDs",
       "ea-play: keine bestaetigte Quelle (Durchlauf 1: ea-play: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: ea-play: keine bestaetigte Anzahl und keine Filterkarten)",
-      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 112/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
+      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 113/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
       "gamepass-essential: 0/? Karten gesehen",
       "gamepass-premium: 0/? Karten gesehen",
       "gamepass-ultimate: 693/694 Karten gesehen",
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-17T17:03:17.705Z",
+      "observedAt": "2026-11-18T16:37:52.643Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-17T17:03:17.705Z",
+      "observedAt": "2026-11-18T16:37:52.643Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-17T17:03:17.705Z",
+      "observedAt": "2026-11-18T16:37:52.643Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -2185,22 +2185,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9pn2z0n9fphq",
-      "id": "9pn2z0n9fphq",
-      "title": "BLACKSHARD",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/blackshard/9pn2z0n9fphq",
-      "cover": "https://store-images.s-microsoft.com/image/apps.49269.14352415640374579.ce7d79b3-e6e4-40dd-8bbe-e4141b84803d.0dc57caa-2f0a-494c-840c-3d6d487b810a?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 799,
-      "regularPriceMinor": 999,
-      "genres": [
-        "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:btcs0lp052hl",
       "id": "btcs0lp052hl",
       "title": "BLACK™",
@@ -4034,6 +4018,24 @@
       ]
     },
     {
+      "key": "xbox:product:9plx7njfqn4b",
+      "id": "9plx7njfqn4b",
+      "title": "Dark Rail",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/dark-rail/9plx7njfqn4b",
+      "cover": "https://store-images.s-microsoft.com/image/apps.58812.14309287670454805.1a6e927a-5cc9-49e3-a3dc-abfbf40de698.b913d892-b11a-49a0-8c72-8c9cfac5d497?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 999,
+      "regularPriceMinor": 1249,
+      "genres": [
+        "Action & Abenteuer",
+        "Rollenspiele",
+        "Simulation"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9n2h63z2glbc",
       "id": "9n2h63z2glbc",
       "title": "Darkwood",
@@ -4761,9 +4763,13 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 3999,
-      "regularPriceMinor": null,
-      "genres": [],
+      "priceMinor": 2399,
+      "regularPriceMinor": 3999,
+      "genres": [
+        "Action & Abenteuer",
+        "Rollenspiele",
+        "Simulation"
+      ],
       "services": [
         "xbox-game-pass:ultimate"
       ]
@@ -7664,8 +7670,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 3999,
-      "regularPriceMinor": null,
+      "priceMinor": 1000,
+      "regularPriceMinor": 3999,
       "genres": [],
       "services": [
         "xbox-game-pass:ultimate"
@@ -8322,8 +8328,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 5999,
-      "regularPriceMinor": null,
+      "priceMinor": 3599,
+      "regularPriceMinor": 5999,
       "genres": [],
       "services": [
         "xbox-game-pass:ultimate"
@@ -8617,23 +8623,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9mxs90v0rhtv",
-      "id": "9mxs90v0rhtv",
-      "title": "Hidden Cats in Beijing",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/hidden-cats-in-beijing/9mxs90v0rhtv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.40491.13888657806990507.f0c734c7-b0dd-4d2c-92f9-8cb951493f60.89de2d84-f8ea-4b9e-8d9e-3bac21664c0d?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 319,
-      "regularPriceMinor": 399,
-      "genres": [
-        "Familie & Kinder",
-        "Rätsel & Wissen"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9nvgntjpk48g",
@@ -10764,6 +10753,57 @@
       ]
     },
     {
+      "key": "xbox:product:9nt1vlg29dg8",
+      "id": "9nt1vlg29dg8",
+      "title": "Monster Hunter Stories 3: Twisted Reflection",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/monster-hunter-stories-3-twisted-reflection/9nt1vlg29dg8",
+      "cover": "https://store-images.s-microsoft.com/image/apps.21779.13595175452373139.6d540224-993f-4ff7-842d-563f972a2798.b3b14907-1271-4ee8-9c96-bd557c094eee?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 4899,
+      "regularPriceMinor": 6999,
+      "genres": [
+        "Action & Abenteuer",
+        "Rollenspiele"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9pl329pmrf57",
+      "id": "9pl329pmrf57",
+      "title": "Monster Hunter Stories 3: Twisted Reflection Deluxe Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/monster-hunter-stories-3-twisted-reflection-deluxe-edition/9pl329pmrf57",
+      "cover": "https://store-images.s-microsoft.com/image/apps.58864.14237932392436790.813b7727-21b4-4d54-85e8-14ab65864ad1.4dd20197-1657-4f55-9fda-dfcd9feff17b?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 6029,
+      "regularPriceMinor": 8999,
+      "genres": [
+        "Action & Abenteuer",
+        "Rollenspiele"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9nsf119bsp0m",
+      "id": "9nsf119bsp0m",
+      "title": "Monster Hunter Stories 3: Twisted Reflection Premium Deluxe Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/monster-hunter-stories-3-twisted-reflection-premium-deluxe-edition/9nsf119bsp0m",
+      "cover": "https://store-images.s-microsoft.com/image/apps.51223.14005763315409333.1113a1a1-612f-487e-bd35-101ec52024cf.b6ce7a06-bd10-424c-a1bc-a6b809721c1e?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 6999,
+      "regularPriceMinor": 9999,
+      "genres": [
+        "Action & Abenteuer",
+        "Rollenspiele"
+      ],
+      "services": []
+    },
+    {
       "key": "xbox:product:9mzns9nz97pf",
       "id": "9mzns9nz97pf",
       "title": "Monster Sanctuary",
@@ -11420,8 +11460,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 5899,
-      "regularPriceMinor": null,
+      "priceMinor": 2950,
+      "regularPriceMinor": 5899,
       "genres": [],
       "services": [
         "xbox-game-pass:ultimate"
@@ -12121,23 +12161,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9npzvdch73sx",
-      "id": "9npzvdch73sx",
-      "title": "PAYDAY 3",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/payday-3/9npzvdch73sx",
-      "cover": "https://store-images.s-microsoft.com/image/apps.6891.13779457877292855.8eb1c164-e4f2-4404-90bf-936bd8f0761d.97bc5049-7e56-4505-83e8-628e0e2be04f?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1851,
-      "regularPriceMinor": 2849,
-      "genres": [
-        "Action & Abenteuer",
-        "Shooter"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9pjrqhmcfqgs",
@@ -16585,8 +16608,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 6999,
-      "regularPriceMinor": null,
+      "priceMinor": 2800,
+      "regularPriceMinor": 6999,
       "genres": [
         "Rollenspiele"
       ],
@@ -17776,22 +17799,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:bnnmlwzrnqf6",
-      "id": "bnnmlwzrnqf6",
-      "title": "Ultimate Chicken Horse",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/ultimate-chicken-horse/bnnmlwzrnqf6",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29379.68078631346001331.49a472fe-4e1f-4aab-8e4f-732405dfb269.70c5ab0c-c824-44be-b4f8-3623be2a5ecd?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 674,
-      "regularPriceMinor": 1499,
-      "genres": [
-        "Platformer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9p1h8k2v0nnp",
       "id": "9p1h8k2v0nnp",
       "title": "Ultimate Sheep Raccoon",
@@ -17800,8 +17807,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 1349,
-      "regularPriceMinor": 1799,
+      "priceMinor": 1799,
+      "regularPriceMinor": null,
       "genres": [
         "Action & Abenteuer",
         "Andere",
@@ -18275,8 +18282,8 @@
       "targets": [
         "xbox-series"
       ],
-      "priceMinor": 674,
-      "regularPriceMinor": 749,
+      "priceMinor": 749,
+      "regularPriceMinor": null,
       "genres": [
         "Action & Abenteuer"
       ],
