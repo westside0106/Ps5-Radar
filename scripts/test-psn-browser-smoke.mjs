@@ -268,6 +268,20 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     const exportButton=collector.getByRole('button',{name:/KARTE ALS SVG EXPORTIEREN/});
     const empty=await collector.locator('select').isDisabled();
     if(empty)assert.ok(await exportButton.isDisabled(),'No PSN trophy data: export must stay disabled');
+    await commandDeck.getByRole('button',{name:/KAUFHISTORIE/}).click();
+    const orders=page.getByRole('region',{name:'PlayStation-Kaufhistorie und Ausgabenanalyse'});
+    await orders.waitFor();
+    await orders.locator('input[type="file"]').setInputFiles({
+     name:'synthetic-orders.csv',mimeType:'text/csv',
+     buffer:Buffer.from('Date,Name,Category,Price paid,Store price,Refunded,Transaction ID\\n2026-11-20,CI Game Alpha,Purchased,35.99,69.99,No,txa\\n2026-11-19,CI PS Plus,PS Plus,0,59.99,No,txb\\n2026-11-19,CI Refunded,Purchased,10,50,Yes,txc'.replaceAll('\\n','\n'))
+    });
+    await orders.getByText('3 Positionen im Browser eingelesen.',{exact:false}).waitFor();
+    assert.match(await orders.innerText(),/35,99/,'Net spending must exclude refunded games');
+    await orders.scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'order-intelligence');
+    await orders.getByRole('button',{name:'DATEN VERWERFEN'}).click();
+    assert.ok(await orders.getByText('Importdaten aus dieser Ansicht gelöscht.').count(),'Clear must drop in-memory import');
+
     await page.getByRole('button',{name:'3 Mon.'}).click();
     assert.equal(await page.getByRole('button',{name:'3 Mon.'}).getAttribute('aria-pressed'),'true');
     const w=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
