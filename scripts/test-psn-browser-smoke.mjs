@@ -69,6 +69,20 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    if(route.request().method()==='PATCH')return route.fulfill({json:{ok:true,updated:true}});
    return route.fulfill({status:405});
   });
+  await page.route('**/zentrale/api/source-runs',async route=>{
+   if(route.request().method()!=='GET')return route.fulfill({status:405});
+   return route.fulfill({json:{configured:true,schedule:{hourUtc:9,graceMinutes:60},
+    runs:[
+     {id:'11111111-2222-4333-8444-555555555555',run_kind:'manual',
+      started_at:'2026-11-21T04:00:00Z',finished_at:'2026-11-21T04:00:04Z',
+      result:'success',duration_ms:4000,healthy_count:6,degraded_count:0,
+      error_count:0,unconfigured_count:0,daily_inserted:0,latest_updated:6,
+      push_accepted:0,push_failed:0},
+     {id:'22222222-3333-4444-8555-666666666666',run_kind:'scheduled',
+      started_at:'2026-11-20T09:00:00Z',finished_at:'2026-11-20T09:00:07Z',
+      result:'failed',duration_ms:7000,failure_code:'scan_failed'}
+    ]}});
+  });
   await page.route('**/zentrale/api/ntfy',async route=>{
    if(route.request().method()==='GET')return route.fulfill({json:{
     configured:true,provider:'ntfy',server:'https://ntfy.sh',topic:'ps5-radar-ci-test-topic-0123456789abcde'
@@ -93,7 +107,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/alerts/check']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/source-runs','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
@@ -201,6 +215,16 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       await page.getByRole('button',{name:'JETZT PRÜFEN & MELDUNGEN SENDEN'}).click();
       await page.getByText('Letzter Sofortlauf:',{exact:false}).waitFor();
       assert.equal(await page.locator('section[aria-label="Quellen-Sofortprüfung"]').count(),1,'Manual live operations panel missing');
+      const scanAudit=page.locator('section[aria-label="Quellen-Prüfprotokoll"]');
+      await scanAudit.locator('tbody tr').first().waitFor();
+      assert.equal(await scanAudit.locator('tbody tr').count(),2,'Audit must show scheduled and manual executions');
+      assert.ok((await scanAudit.innerText()).includes('Fehlgeschlagen'),'Failed cron must not appear as success');
+      assert.ok((await scanAudit.innerText()).includes('Erfolgreich'),'Successful manual run missing');
+      await scanAudit.getByRole('button',{name:'PROTOKOLL AKTUALISIEREN'}).click();
+      await scanAudit.locator('tbody tr').first().waitFor();
+      const auditSize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+      assert.ok(auditSize.scroll<=auditSize.client+2,'Scan audit overflows viewport: '+JSON.stringify(auditSize));
+
       assert.equal(await page.locator('section[aria-label="Datenquellen-Monitor"] article').count(),6,
        'Manual live scan should update all six source cards');
       await page.getByRole('button',{name:'TEST-PUSH SENDEN'}).waitFor();
