@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T01:15:02.385Z",
+  "checkedAt": "2026-11-21T01:50:51.992Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -138,7 +138,7 @@
       "label": "NOVEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-11-21T01:15:30.866Z",
+      "checkedAt": "2026-11-21T01:51:24.568Z",
       "parsed": 5,
       "accepted": [
         "Dead Island 2",
@@ -158,7 +158,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 245123,
+    "bytes": 245124,
     "updated": true,
     "parsed": {
       "trial": false,
