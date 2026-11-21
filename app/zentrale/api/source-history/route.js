@@ -14,10 +14,10 @@ async function authed(){
 export async function GET(){
  if(!await authed())return respond({error:'Nicht angemeldet'},401);
  const config=sourceHistoryConfig();
- if(!config)return respond({configured:false,checks:[],events:[],summary:[]},503);
+ if(!config)return respond({configured:false,checks:[],events:[],transitions:[],summary:[]},503);
  try{
   const record=await readSourceHistory(config);
-  return respond({configured:true,checks:record.checks,events:record.events,
+  return respond({configured:true,checks:record.checks,events:record.events,transitions:record.transitions,
    summary:sourceHealthSummary(record.checks,30)});
  }catch{return respond({error:'Statushistorie derzeit nicht erreichbar'},503)}
 }
