@@ -51,9 +51,9 @@ export default function ActivityFeed({played=[],titles=[]}){
      <article className={styles.item}>
       <div className={styles.rail}><span className={event.kind==='trophy'?styles.trophyIcon:styles.gameIcon} aria-hidden="true">{event.kind==='trophy'?'✦':'▶'}</span></div>
       <div className={styles.content}>
-       <div className={styles.meta}><span className={event.kind==='trophy'?styles.trophyTag:styles.gameTag}>{event.kind==='trophy'?'TROPHY UNLOCK':'LAST PLAYED'}</span><time dateTime={event.at}>{clockLabel(event.at)} Uhr</time></div>
+       <div className={styles.meta}><span className={event.kind==='trophy'?styles.trophyTag:styles.gameTag}>{event.kind==='trophy'?'TROPHY UNLOCK':'LAST PLAYED'}</span><time dateTime={event.at}>{event.kind==='trophy'?'Letzte Freischaltung ':'Zuletzt '}{clockLabel(event.at)} Uhr</time></div>
        <strong>{event.title}</strong>
-       <p>{event.kind==='trophy'?event.count===1?'1 lokal erfasste Trophäen-Freischaltung':' '+event.count+' lokal erfasste Trophäen-Freischaltungen':'Einziger von PSN gemeldeter letzter Spielzeitpunkt dieses Titels'}</p>
+       <p>{event.kind==='trophy'?event.count===1?'Eine lokal erfasste Trophäen-Freischaltung':event.count+' lokal erfasste Trophäen-Freischaltungen':'Einziger von PSN gemeldeter letzter Spielzeitpunkt dieses Titels'}</p>
       </div>
       <span className={styles.source}>{event.kind==='trophy'?'PSN TROPHY CACHE':'PSN LAST PLAYED'}</span>
      </article>
