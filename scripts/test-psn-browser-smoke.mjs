@@ -278,6 +278,18 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await orders.getByText('3 Positionen im Browser eingelesen.',{exact:false}).waitFor();
     assert.match(await orders.innerText(),/35,99/,'Net spending must exclude refunded games');
     await orders.scrollIntoViewIfNeeded();
+    const contentClips=await orders.evaluate(root=>{
+     const rootRight=root.getBoundingClientRect().right;
+     const nodes=[root.querySelector('h4'),root.querySelector('p'),root.querySelector('input[type="file"]')];
+     return nodes.filter(Boolean).map(el=>({
+      label:el.tagName,scroll:el.scrollWidth,client:el.clientWidth,
+      right:el.getBoundingClientRect().right,rootRight
+     }));
+    });
+    for(const item of contentClips){
+     if(item.label!=='INPUT')assert.ok(item.scroll<=item.client+2,engine.name()+' order text clipped internally: '+JSON.stringify(item));
+     assert.ok(item.right<=item.rootRight+1,engine.name()+' order content extends beyond card: '+JSON.stringify(item));
+    }
     await captureQa(page,engine.name(),width,'order-intelligence');
     await orders.getByRole('button',{name:'DATEN VERWERFEN'}).click();
     assert.ok(await orders.getByText('Importdaten aus dieser Ansicht gelöscht.').count(),'Clear must drop in-memory import');
