@@ -46,7 +46,9 @@ test('scheduled recording performs independent historical reads and idempotent c
  const calls=[];
  const fetcher=async(url,options={})=>{
   calls.push({url,options});
-  if(options.method==='POST')return new Response('',{status:201});
+  if(options.method==='POST')return new Response(
+   String(url).includes('radar_source_health_checks')?options.body:'[]',{status:201}
+  );
   if(String(url).includes('radar_source_health_events'))return new Response('[]',{status:200});
   if(String(url).includes('radar_source_health_checks'))
    return new Response(JSON.stringify([history('psn','2026-11-20','error')]),{status:200});
@@ -58,7 +60,7 @@ test('scheduled recording performs independent historical reads and idempotent c
   check('steamgriddb','healthy'),check('profile','healthy'),check('monitor','healthy')
  ]};
  const saved=await storeScheduledHealth(config,report,{fetcher});
- assert.deepEqual(saved,{recorded:6,incidentCandidates:1,day});
+ assert.deepEqual(saved,{recorded:6,inserted:6,incidentCandidates:1,day});
  const writes=calls.filter(c=>c.options.method==='POST');
  assert.equal(writes.length,2);
  assert.ok(writes.every(x=>x.options.headers.Prefer.includes('ignore-duplicates')));
@@ -75,4 +77,26 @@ test('acknowledgements reject unsafe IDs and write only the requested inbox row'
  assert.equal(captured.opts.method,'PATCH');
  assert.ok(captured.url.includes('id=eq.rawg%3Aoutage%3A2026-11-20'));
  assert.ok(captured.url.includes('read_at=is.null'));
+});
+
+test('manual rerun on the same UTC day does not manufacture a second daily incident',async()=>{
+ const writeTables=[];
+ const fetcher=async(url,options={})=>{
+  const name=String(url);
+  if(options.method==='POST'){
+   writeTables.push(name);
+   return new Response('[]',{status:201}); // Unique-key conflict, zero newly inserted daily rows.
+  }
+  if(name.includes('radar_source_health_events'))return new Response('[]',{status:200});
+  if(name.includes('radar_source_health_checks'))return new Response(JSON.stringify([history('psn','2026-11-20','error')]),{status:200});
+  throw Error('Unexpected data request');
+ };
+ const config={base:'https://example.supabase.co/rest/v1/',secret:'server_only'};
+ const report={checkedAt:day+'T09:00:00.000Z',checks:[
+  check('psn','error'),check('igdb','healthy'),check('rawg','healthy'),
+  check('steamgriddb','healthy'),check('profile','healthy'),check('monitor','healthy')
+ ]};
+ const result=await storeScheduledHealth(config,report,{fetcher});
+ assert.deepEqual(result,{recorded:6,inserted:0,incidentCandidates:0,day});
+ assert.equal(writeTables.length,1,'An existing day must not produce another incident write');
 });

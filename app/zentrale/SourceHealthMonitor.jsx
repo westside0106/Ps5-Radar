@@ -29,8 +29,41 @@ export default function SourceHealthMonitor(){
   }finally{if(!signal?.aborted)setLoading(false)}
  },[]);
  useEffect(()=>{
-  const controller=new AbortController();load(controller.signal);
-  return()=>controller.abort();
+  let controller=null;
+  let lastStarted=0;
+  const REFRESH_MS=3*60*1000;
+  function refresh(){
+   if(document.visibilityState!=='visible')return;
+   controller?.abort();
+   controller=new AbortController();
+   lastStarted=Date.now();
+   void load(controller.signal);
+  }
+  function onVisibility(){
+   if(document.visibilityState==='visible'){
+    if(Date.now()-lastStarted>=REFRESH_MS)refresh();
+   }else{
+    controller?.abort();
+    setLoading(false);
+   }
+  }
+  function onManualScan(event){
+   const report=event.detail;
+   if(!Array.isArray(report?.checks)||!report.summary)return;
+   controller?.abort();
+   lastStarted=Date.now();
+   setSnapshot({checkedAt:report.checkedAt,checks:report.checks,summary:report.summary,cacheSeconds:0});
+   setLoading(false);setError('');
+  }
+  refresh();
+  const timer=setInterval(()=>{if(Date.now()-lastStarted>=REFRESH_MS)refresh()},30000);
+  document.addEventListener('visibilitychange',onVisibility);
+  window.addEventListener('radar:source-scan-complete',onManualScan);
+  return()=>{
+   clearInterval(timer);controller?.abort();
+   document.removeEventListener('visibilitychange',onVisibility);
+   window.removeEventListener('radar:source-scan-complete',onManualScan);
+  };
  },[load]);
  const summary=snapshot?.summary;
  return <section className={styles.root} aria-label="Datenquellen-Monitor">
@@ -49,7 +82,7 @@ export default function SourceHealthMonitor(){
   </div>:null}
   {error?<p className={styles.error} role="alert">{error}{snapshot?' · Letzter Prüfstand bleibt zur Orientierung sichtbar.':''}</p>:null}
   {loading&&!snapshot?<p className={styles.loading} role="status">PSN, IGDB, RAWG, SteamGridDB und beide Cloud-Speicher werden geprüft …</p>:null}
-  {snapshot?<><div className={styles.timestamp} role="status"><span>LETZTER PRÜFLAUF: {localTime(snapshot.checkedAt)}</span><span>Serverseitiger Ergebnis-Cache: bis zu {snapshot.cacheSeconds} Sekunden</span></div>
+  {snapshot?<><div className={styles.timestamp} role="status"><span>LETZTER PRÜFLAUF: {localTime(snapshot.checkedAt)}</span><span>Im geöffneten Tab automatische Aktualisierung ca. alle 3 Minuten · Server-Cache bis {snapshot.cacheSeconds} Sekunden</span></div>
    <div className={styles.grid}>
     {snapshot.checks.map(item=><article key={item.id} className={styles.provider} data-state={item.state}>
      <header><span className={styles.id}>{item.id.toUpperCase()}</span><span className={styles.state}>{labels[item.state]||'Unbekannt'}</span></header>
@@ -59,6 +92,6 @@ export default function SourceHealthMonitor(){
     </article>)}
    </div>
   </>:null}
-  <p className={styles.note}>Die Prüfung startet beim Öffnen dieser Ansicht und bei manueller Wiederholung. Sie ist keine dauerhafte Hintergrundüberwachung und kein historisches SLA-Monitoring. „Erreichbar“ bestätigt nur die jeweilige Testabfrage, nicht die Vollständigkeit aller Spiele, Bilder oder Trophäen. Zugangsdaten und private Spielinhalte werden nicht ausgegeben.</p>
+  <p className={styles.note}>Diese Live-Ansicht aktualisiert sich bei geöffnetem, sichtbarem Tab etwa alle drei Minuten und pausiert im Hintergrund. Die gespeicherte Tageshistorie bleibt eine getrennte, einmal tägliche Messreihe – kein kontinuierliches SLA-Monitoring. „Erreichbar“ bestätigt nur die jeweilige Testabfrage, nicht die Vollständigkeit aller Spiele, Bilder oder Trophäen. Zugangsdaten und private Spielinhalte werden nicht ausgegeben.</p>
  </section>;
 }

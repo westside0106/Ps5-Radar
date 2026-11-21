@@ -25,6 +25,22 @@ export default function SourceHistoryPanel(){
   };
   void load();return()=>controller.abort();
  },[]);
+ useEffect(()=>{
+  let active=true;
+  async function refreshHistory(){
+   try{
+    const response=await fetch('/zentrale/api/source-history',{credentials:'same-origin',cache:'no-store'});
+    if(!response.ok)throw Error('Historie nicht aktualisiert');
+    const result=await response.json();
+    if(active&&Array.isArray(result.checks)&&Array.isArray(result.events)){
+     setData(result);setError('');
+    }
+   }catch{if(active)setNotice('Sofortprüfung abgeschlossen, aber die neue Historie konnte nicht geladen werden.')}
+  }
+  const onSourceScan=()=>{void refreshHistory()};
+  window.addEventListener('radar:source-scan-complete',onSourceScan);
+  return()=>{active=false;window.removeEventListener('radar:source-scan-complete',onSourceScan)};
+ },[]);
  const [day0]=useState(()=>new Date().toISOString().slice(0,10));
  const days=useMemo(()=>Array.from({length:14},(_,i)=>new Date(Date.parse(day0+'T00:00:00Z')-(13-i)*86400000).toISOString().slice(0,10)),[day0]);
  const dataMap=useMemo(()=>new Map((data?.checks||[]).map(x=>[x.source_id+':'+x.run_day,x])),[data]);

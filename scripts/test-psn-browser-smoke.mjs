@@ -68,6 +68,18 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    if(route.request().method()==='POST')return route.fulfill({json:{accepted:true}});
    return route.fulfill({status:405});
   });
+  await page.route('**/zentrale/api/source-live-run',async route=>{
+   if(route.request().method()!=='POST')return route.fulfill({status:405});
+   return route.fulfill({json:{
+    ok:true,checkedAt:'2026-11-21T11:30:00.000Z',cacheSeconds:0,
+    checks:['psn','igdb','rawg','steamgriddb','profile','monitor'].map(id=>({
+     id,name:id.toUpperCase(),state:id==='rawg'?'degraded':'healthy',detail:'Synthetic QA source probe'
+    })),
+    summary:{healthy:5,degraded:1,error:0,unconfigured:0},
+    stored:{recorded:6,inserted:6,incidentCandidates:0,day:'2026-11-21'},
+    push:{configured:true,attempted:0,accepted:0,failed:0}
+   }});
+  });
   const clientErrors=[];
   page.on('pageerror',error=>clientErrors.push(String(error?.stack||error?.message||error)));
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
@@ -89,6 +101,8 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   const sw=await context.request.get(base+'/radar-sw.js');
   assert.equal(sw.status(),200,'Service worker missing');
   assert.match(await sw.text(),/startsWith\('\/_next\/static\/'\)/);
+  const unauthorizedScan=await context.request.post(base+'/zentrale/api/source-live-run',{headers:{origin:base},maxRedirects:0});
+  assert.equal(unauthorizedScan.status(),401,'Private manual source scan must reject requests before login');
   const unauthorizedUpload=await context.request.put(base+'/mein-playstation/api/profile-sync',{data:{version:2,revision:0,data:{notes:{},history:[]}},maxRedirects:0});
   assert.ok([401,302,303,307,308].includes(unauthorizedUpload.status()),'Cloud endpoint must reject unauthenticated writes');
   const monitorPush=await context.request.post(base+'/mein-playstation/api/monitor-sync',{data:'Date,Status,Game name\\n',headers:{'Content-Type':'text/csv'},maxRedirects:0});
@@ -176,6 +190,11 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       const healthSize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
       assert.ok(healthSize.scroll<=healthSize.client+2,'Health dashboard overflows viewport: '+JSON.stringify(healthSize));
       assert.ok(await page.getByRole('button',{name:'ERNEUT PRÜFEN'}).count(),'Source recheck control missing');
+      await page.getByRole('button',{name:'JETZT PRÜFEN & MELDUNGEN SENDEN'}).click();
+      await page.getByText('Letzter Sofortlauf:',{exact:false}).waitFor();
+      assert.equal(await page.locator('section[aria-label="Quellen-Sofortprüfung"]').count(),1,'Manual live operations panel missing');
+      assert.equal(await page.locator('section[aria-label="Datenquellen-Monitor"] article').count(),6,
+       'Manual live scan should update all six source cards');
       await page.getByRole('button',{name:'TEST-PUSH SENDEN'}).waitFor();
       await page.getByRole('button',{name:'TEST-PUSH SENDEN'}).click();
       await page.getByText('ntfy hat den Test angenommen.',{exact:false}).waitFor();
