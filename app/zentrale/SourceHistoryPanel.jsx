@@ -1,6 +1,7 @@
 'use client';
 import {useEffect,useMemo,useState} from 'react';
 import styles from './SourceHistoryPanel.module.css';
+import SourceQualityPanel from './SourceQualityPanel';
 
 const names={psn:'PlayStation Network',igdb:'IGDB / Twitch',rawg:'RAWG',steamgriddb:'SteamGridDB',profile:'Supabase · Spielwelt',monitor:'Supabase · PSN-Monitor'};
 const stateLabel={healthy:'Erreichbar',degraded:'Eingeschränkt',error:'Fehler',unconfigured:'Nicht eingerichtet'};
@@ -90,6 +91,7 @@ export default function SourceHistoryPanel(){
    </div>
    <div className={styles.legend}><span><i data-state="healthy"/> Erreichbar</span><span><i data-state="degraded"/> Eingeschränkt</span><span><i data-state="error"/> Fehler</span><span><i data-state="unconfigured"/> Nicht eingerichtet</span><span><i data-state="missing"/> Nicht geprüft</span></div>
    <p className={styles.legendNote}>Tagesfelder: vollständige Farbe = erster Befund. Zweite Farbe rechts = letzter gespeicherter Status, falls verschieden. Automatische Live-Abfragen im Browser werden nicht als Tagesmessung archiviert; gespeichert werden Sofortprüfungen und der tägliche Serverlauf.</p>
+   <SourceQualityPanel checks={data.checks} transitions={transitions}/>
    <div className={styles.inboxHead}><h3>STATUSWECHSEL</h3><span>{transitions.length} erfasst</span></div>
    <div className={styles.changes} aria-label="Gespeicherte Statuswechsel">
     {transitions.length?transitions.slice(0,18).map(t=><article className={styles.changeItem} key={t.id}>

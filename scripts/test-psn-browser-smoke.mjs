@@ -219,6 +219,29 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
 
       await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] .ignored, section[aria-label="Datenquellen-Historie und Meldungen"] button').first().waitFor();
       assert.equal(await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] [role=listitem]').count(),84,'Six sources should render 14 calendar cells');
+       const quality=page.locator('section[aria-label="Datenqualität und Messabdeckung"]');
+       await quality.waitFor();
+       assert.equal(await quality.locator('tbody tr').count(),6,'All providers must appear in sample quality table');
+       assert.equal(await quality.getByText('Tage ohne Befund').count(),1);
+       await quality.getByRole('button',{name:'30 TAGE'}).click();
+       assert.equal(await quality.getByRole('button',{name:'30 TAGE'}).getAttribute('aria-pressed'),'true');
+       assert.equal(await quality.locator('tbody tr').count(),6);
+       await quality.getByLabel('Quelle für Datenqualität').selectOption('igdb');
+       assert.equal(await quality.locator('tbody tr').count(),1,'Provider filter must restrict quality table');
+       await quality.getByRole('button',{name:'7 TAGE'}).click();
+       assert.equal(await quality.getByRole('button',{name:'7 TAGE'}).getAttribute('aria-pressed'),'true');
+       assert.ok(await quality.getByRole('button',{name:'CSV EXPORTIEREN'}).count(),'Export action missing');
+       if(engine===chromium&&width===390){
+        const transfer=page.waitForEvent('download');
+        await quality.getByRole('button',{name:'CSV EXPORTIEREN'}).click();
+        const download=await transfer;
+        assert.equal(download.suggestedFilename(),'ps5-radar-quellen-7tage-2026-11-21.csv');
+        await quality.getByText('CSV mit Tagesbefunden',{exact:false}).waitFor();
+       }
+       const qualitySize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+       assert.ok(qualitySize.scroll<=qualitySize.client+2,
+        'Quality dashboard overflows viewport: '+JSON.stringify(qualitySize));
+
        const historyPanel=page.locator('section[aria-label="Datenquellen-Historie und Meldungen"]');
        assert.ok(await historyPanel.getByText('Erster Tagesbefund',{exact:false}).count(),'First day state missing');
        assert.ok(await historyPanel.getByText('Zuletzt gespeichert',{exact:false}).count(),'Latest saved state missing');

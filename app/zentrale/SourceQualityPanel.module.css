@@ -1,0 +1,14 @@
+.root{margin:18px 0 24px;padding:clamp(13px,2.4vw,20px);background:linear-gradient(115deg,#102b3e,#0b2235);border:1px solid #3d6c81;border-radius:13px;min-width:0;color:#e8f8ff}
+.head{display:flex;gap:15px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start}.head>div:first-child{flex:1 1 270px;min-width:0}
+.kicker{font-size:10px;letter-spacing:.09em;font-weight:850;color:#79decb}.head h3{font-size:clamp(17px,2.5vw,21px);letter-spacing:-.03em;margin:7px 0}
+.head h3 em{font-style:normal;color:#a6ecd7}.head p{font-size:11px;line-height:1.65;color:#b0cfe0;margin:0}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end;max-width:100%}.period{display:flex;gap:3px;background:#102d41;border:1px solid #52738a;border-radius:8px;padding:3px}
+.period button{border:0;background:transparent;border-radius:6px;color:#b9d1e5;padding:9px 10px;min-height:40px;font-size:10px;font-weight:800;cursor:pointer;white-space:nowrap}.period .active{background:#286b75;color:#eaffff}
+.pick{display:grid;gap:4px;font-size:9px;font-weight:850;color:#a9d1d8;min-width:0}.pick select{height:42px;max-width:100%;min-width:155px;border:1px solid #557f91;border-radius:8px;background:#14374a;color:#e1faff;padding:8px 10px;font-size:11px}
+.export{background:#226179;color:#ecffff;border:1px solid #75c9d1;border-radius:8px;padding:10px 12px;min-height:42px;font-size:10px;font-weight:850;cursor:pointer;white-space:nowrap}
+.totals{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 12px}.totals>div{flex:1 1 120px;background:#0b2234;border:1px solid #355c72;border-radius:9px;padding:11px;display:grid;gap:4px}.totals strong{font-size:19px;color:#8de0cf}.totals span{font-size:10px;color:#b6d3df}
+.tableScroll{width:100%;max-width:100%;overflow-x:auto;border:1px solid #426378;border-radius:10px}
+.tableScroll table{width:100%;border-collapse:collapse;min-width:590px;text-align:left;font-size:10px}.tableScroll th,.tableScroll td{padding:10px 8px;border-bottom:1px solid #2f4c60;vertical-align:top}.tableScroll th{color:#e5f3fa;font-weight:750}.tableScroll thead{background:#193e53}.tableScroll tbody tr:last-child th,.tableScroll tbody tr:last-child td{border-bottom:0}.tableScroll tbody td{color:#c2dce8}.tableScroll tbody strong{color:#a5efda}
+.caveat,.note{margin:12px 0 0;font-size:10px;color:#afcad7;line-height:1.65}.note{color:#a8efcf}
+.root :focus-visible{outline:3px solid #a0f5df;outline-offset:3px}
+@media(max-width:450px){.controls{width:100%}.pick{flex:1 1 100%;width:100%}.pick select{width:100%}.export{flex:1}.period{flex:1}.period button{flex:1}.tableScroll{overscroll-behavior-x:contain}}
