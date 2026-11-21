@@ -258,6 +258,15 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await commandDeck.getByRole('button',{name:/STATISTIKEN ÖFFNEN/}).click();
     const statsFold=page.locator('#psn-insights-fold');
     assert.ok(await statsFold.evaluate(el=>el.open),'Mission Deck must open the existing insights fold');
+    const activityFeed=page.getByRole('region',{name:'Dein Gaming Activity Feed'});
+    await activityFeed.waitFor();
+    await activityFeed.getByRole('button',{name:'TROPHÄEN'}).click();
+    assert.equal(await activityFeed.getByRole('button',{name:'TROPHÄEN'}).getAttribute('aria-pressed'),'true','Trophy feed filter must respond');
+    await activityFeed.getByRole('button',{name:'SPIELE'}).click();
+    assert.equal(await activityFeed.getByRole('button',{name:'SPIELE'}).getAttribute('aria-pressed'),'true','Game activity filter must respond');
+    await activityFeed.getByRole('button',{name:'ALLE EREIGNISSE'}).click();
+    await activityFeed.scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'activity-feed');
     await page.locator('.psn-chronicle').waitFor();
     const collector=page.getByRole('region',{name:'Trophy Collector Card Studio'});
     await collector.waitFor();
