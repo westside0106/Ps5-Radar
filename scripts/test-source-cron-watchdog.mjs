@@ -91,7 +91,7 @@ test('missing Cron is stored once and a generic warning receives a leased, idemp
   assert.ok(!JSON.stringify(message).includes(storage.secret));
   assert.ok(!JSON.stringify(message).includes('Twitch'));
   assert.match(message.title,/Tagescheck/);
-  assert.match(message.body,/nicht protokolliert/);
+  assert.match(message.body,/kein automatischer Quellencheck protokolliert/);
  };
  const cfg={origin:'https://ntfy.sh',topic:'some_very_long_private_test_topic'};
  const first=await runSourceCronWatchdog(storage,{now:at,db,ntfy:cfg,send});
