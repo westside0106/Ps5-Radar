@@ -20,10 +20,10 @@ Status: **Erreichbar** (Probe erfolgreich), **Eingeschränkt** (Teilversagen, Ra
 
 ## Grenzen und Sicherheit
 
-- Kein Hintergrundjob, keine historischen SLAs, keine Push-Alarme und keine neue Datenbanktabelle.
+- Die sofortige Live-Diagnose bleibt eine On-Demand-Prüfung. Ein separater, täglich ausgeführter Cron mit privaten Historientabellen und Meldungszentrale ist in `docs/source-health-history.md` beschrieben. Keine Echtzeit-SLAs oder externen Push-Alarme.
 - `lastDataAt` zeigt den Zeitpunkt einer PSN-Abfrage oder eines empfangenen Monitor-Uploads, nicht den Zeitpunkt des letzten tatsächlich gespielten Titels.
 - Supabase-Tabellen werden ausschließlich gelesen, kein Probe-POST und keine Änderung persönlicher Daten.
 - Die Anbietercodes werden in serverseitigen Antworten bewusst kategorisiert; externe Fehlermeldungen und Credentials werden nicht weitergereicht.
 - Regressionen: `npm run test:psn` und `npm run build`. In der bestehenden mobilen Browser-Suite bleibt der Quellen-Tab erreichbar.
 
-Für zukünftige permanente Ausfallhistorie sind ein separater Cron-Job und ein persistenter, zugriffsbeschränkter Statusspeicher nötig. Diese Erweiterung behauptet **keine** permanente Überwachung.
+Der ergänzende tägliche Cron erstellt gespeicherte Tagesmessungen und wiederholte Störungsmeldungen. Er behauptet **keine** kontinuierliche Hochfrequenzüberwachung.
