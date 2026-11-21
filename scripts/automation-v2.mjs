@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import {readMonthlyEdition,monthlyCandidatePriority,GERMAN_MONTHS} from '../lib/ps-plus-monthly-selection.mjs';
+import {readMonthlyEdition,monthlyCandidatePriority} from '../lib/ps-plus-monthly-selection.mjs';
 
 const radarPath = new URL('../data/radar.json', import.meta.url);
 const sourcesPath = new URL('../data/sources.json', import.meta.url);
