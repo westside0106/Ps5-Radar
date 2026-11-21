@@ -102,3 +102,17 @@ test('IGDB error classification distinguishes rate limits and network failures',
  assert.equal(result.state,'error');assert.equal(result.phase,'api');
  assert.equal(JSON.stringify(result).includes('private client token unexpected'),false);
 });
+
+test('PSN monitor probe explicitly asks for the newest upload, never an arbitrary row',async()=>{
+ const seen=[];
+ const report=await checkSourceHealth({env:configured,now:clock,useCache:false,psnReader,
+  fetcher:async(url,opts)=>{
+   if(String(url).includes('psn_monitor_snapshot'))seen.push(String(url));
+   return okFetcher(url,opts);
+  }});
+ assert.equal(seen.length,1);
+ const u=new URL(seen[0]);
+ assert.equal(u.searchParams.get('order'),'received_at.desc');
+ assert.equal(u.searchParams.get('limit'),'1');
+ assert.equal(report.checks.find(x=>x.id==='monitor').state,'healthy');
+});

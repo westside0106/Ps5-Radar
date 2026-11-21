@@ -88,7 +88,7 @@ export default function SourceHealthMonitor(){
      <header><span className={styles.id}>{item.id.toUpperCase()}</span><span className={styles.state}>{labels[item.state]||'Unbekannt'}</span></header>
      <h3>{item.name}</h3>
      <p>{item.detail}</p>
-     {item.nextStep?<div className={styles.guidance}><strong>NÄCHSTER SCHRITT</strong><span>{item.nextStep}</span></div>:null}
+     {item.nextStep?<div className={styles.guidance}><strong>NÄCHSTER SCHRITT</strong><span>{item.nextStep}</span>{item.id==='igdb'&&item.phase==='oauth'&&(item.httpStatus===401||item.httpStatus===403)?<a href="https://dev.twitch.tv/console/apps" target="_blank" rel="noopener noreferrer">Twitch Developer Console öffnen</a>:null}</div>:null}
      {item.lastDataAt?<small>DATENZEIT: {localTime(item.lastDataAt)}{Number.isFinite(item.ageMinutes)?' · '+item.ageMinutes+' min alt':''}</small>:<small>KEIN BESTÄTIGTER DATENZEITPUNKT</small>}
     </article>)}
    </div>
