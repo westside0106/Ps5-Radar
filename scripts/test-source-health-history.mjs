@@ -64,7 +64,7 @@ test('scheduled recording performs independent historical reads and idempotent c
  assert.ok(writes.every(x=>x.options.headers.Prefer.includes('ignore-duplicates')));
  assert.equal(JSON.parse(writes[0].options.body).length,6);
  assert.equal(JSON.parse(writes[1].options.body)[0].id,'psn:outage:2026-11-20');
- assert.ok(!JSON.stringify(writes).includes('sb_secret_hidden')===false,'secret is only in request headers');
+ assert.ok(writes.every(x=>!x.options.body.includes('sb_secret_hidden')),'secret must not appear in persisted payloads');
 });
 test('acknowledgements reject unsafe IDs and write only the requested inbox row',async()=>{
  let captured;
