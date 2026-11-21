@@ -1,6 +1,7 @@
 'use client';
 import {useEffect,useMemo,useState} from 'react';
 import {PSN_MONITOR_KEY,PSN_MONITOR_EVENT,MAX_MONITOR_CSV_BYTES,MAX_MONITOR_SESSIONS,parsePsnMonitorCsv,normalizeObservedSessions,mergeObservedSessions} from '../../lib/psn-monitor-import.mjs';
+import MonitorCloudLink from './MonitorCloudLink';
 import styles from './MonitorImport.module.css';
 
 const zones=[
@@ -99,6 +100,7 @@ export default function MonitorImport(){
   <div className={styles.layout}>
    <div className={styles.importer}>
     <div className={styles.boxTitle}><span>01 / IMPORT-CONSOLE</span><small>CSV → lokal → überprüft</small></div>
+    <MonitorCloudLink/>
     <label className={styles.field}>Zeitzone des Rechners, der die CSV geschrieben hat
      <select value={timeZone} onChange={e=>{setTimeZone(e.target.value);setPreview(null);setMessage('')}}>
       {zones.map(([key,label])=><option key={key} value={key}>{label}</option>)}
