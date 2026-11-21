@@ -1,0 +1,13 @@
+[Unit]
+Description=Periodic PS5 Radar monitor CSV sync
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=10min
+AccuracySec=1min
+RandomizedDelaySec=30s
+Persistent=true
+Unit=ps5-radar-monitor-push.service
+
+[Install]
+WantedBy=timers.target
