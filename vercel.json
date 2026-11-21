@@ -5,6 +5,10 @@
     {
       "path": "/api/radar/alerts/check",
       "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/radar/source-health",
+      "schedule": "0 9 * * *"
     }
   ]
 }
