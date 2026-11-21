@@ -77,6 +77,16 @@ test('long gaps, truncated logging and reversed times never invent sessions',()=
  assert.equal(q.warningCounts.outOfOrder,1);
  assert.equal(q.sessions.length,0);
 });
+test('streaming apps close a known game but do not add faux gaming time',()=>{
+ const data=parsePsnMonitorCsv(csv([
+  ['2026-11-20 10:00:00','online','Cyberpunk 2077'],
+  ['2026-11-20 10:30:00','online','YouTube'],
+  ['2026-11-20 11:30:00','online','Bloodborne'],
+  ['2026-11-20 12:00:00','offline','']
+ ]),{timeZone:'UTC',now:at});
+ assert.equal(data.sessions.length,2);
+ assert.deepEqual(data.sessions.map(x=>[x.game,x.minutes]),[['Cyberpunk 2077',30],['Bloodborne',30]]);
+});
 test('identical rows are deduplicated; media and arbitrary statuses cannot inflate durations',()=>{
  const p=parsePsnMonitorCsv(csv([
   ['2026-11-20 10:00:00','online','Alpha'],
