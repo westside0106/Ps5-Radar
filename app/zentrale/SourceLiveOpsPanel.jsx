@@ -45,6 +45,7 @@ export default function SourceLiveOpsPanel(){
    </div>
    {result.push?.deliveryError||result.push?.failed?<small>Warnung: Mindestens eine Push-Übergabe konnte nicht bestätigt werden. Die Meldung bleibt für einen späteren Versuch erhalten.</small>:null}
    {result.push?.configured===false?<small>ntfy ist nicht eingerichtet; die Quellenprüfung wurde trotzdem gespeichert.</small>:null}
+   {result.audit?.recorded===false?<small>Die Quellenprüfung wurde durchgeführt, aber der Protokolleintrag konnte nicht bestätigt werden.</small>:null}
   </div>:null}
   {!result&&lastAttempt&&!error?<p className={styles.progress}>Letzter Versuch: {stamp(lastAttempt)}</p>:null}
   <p className={styles.note}>Ein erfolgreicher Test-Push wird nicht als automatische Störungsmeldung gezählt. Missbrauchsschutz: maximal eine gespeicherte Sofortprüfung alle 10 Minuten. Nur der erste gespeicherte Tagesbefund zählt für die Tageshistorie und automatische Störungsmeldungen. Der tägliche Hintergrundjob bleibt separat aktiv; wiederholte Sofortläufe erzeugen keine doppelten Tagesalarme.</p>
