@@ -76,7 +76,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   const unauthorizedUpload=await context.request.put(base+'/mein-playstation/api/profile-sync',{data:{version:2,revision:0,data:{notes:{},history:[]}},maxRedirects:0});
   assert.ok([401,302,303,307,308].includes(unauthorizedUpload.status()),'Cloud endpoint must reject unauthenticated writes');
   const monitorPush=await context.request.post(base+'/mein-playstation/api/monitor-sync',{data:'Date,Status,Game name\\n',headers:{'Content-Type':'text/csv'},maxRedirects:0});
-  assert.notEqual(monitorPush.status(),200,'Machine upload must not accept an ordinary browser session or empty authorization');
+  assert.equal(monitorPush.status(),401,'Machine upload must reject requests without the separate push token');
   const input=page.locator('input[name="password"]');
   // WebKit rejects Secure cookies over HTTP localhost in production mode.
   // Inject only a deterministic, CI-only session cookie for WebKit's private-layout check.
@@ -94,6 +94,8 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    await page.locator('.magazine').waitFor();
    await page.goto(base+'/mein-playstation?view=games',{waitUntil:'domcontentloaded'});
   }
+  const cookieOnlyMonitorPush=await context.request.post(base+'/mein-playstation/api/monitor-sync',{data:'Date,Status,Game name\\n',headers:{'Content-Type':'text/csv'},maxRedirects:0});
+  assert.equal(cookieOnlyMonitorPush.status(),401,'Radar login cookie must not grant permission to push monitor data');
   if(await page.locator('.psn-shell').count()){
    const size=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
    assert.ok(size.scroll<=size.client+2,engine.name()+' horizontal overflow at '+width+': '+JSON.stringify(size));
