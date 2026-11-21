@@ -1,5 +1,6 @@
 'use client';
-import {useMemo,useState} from 'react';
+import {useMemo,useState,useEffect} from 'react';
+import {exportTrophyMotionVideo,preferredVideoMime} from '../../lib/psn-trophy-motion-card.mjs';
 import styles from './TrophyCardStudio.module.css';
 
 const THEMES={
@@ -73,26 +74,43 @@ export default function TrophyCardStudio({titles=[]}){
  const options=useMemo(()=>Array.isArray(titles)?[...new Map(titles.filter(t=>t?.npCommunicationId).map(t=>[String(t.npCommunicationId),t])).values()].sort((a,b)=>count(b,'platinum')-count(a,'platinum')||Number(b.progress||0)-Number(a.progress||0)||(a.trophyTitleName||'').localeCompare(b.trophyTitleName||'','de')):[],[titles]);
  const [id,setId]=useState('');
  const [foil,setFoil]=useState('aurora');
+ const [recording,setRecording]=useState(false);
+ const [renderProgress,setRenderProgress]=useState(0);
+ const [videoSupported,setVideoSupported]=useState(false);
+ const [videoMessage,setVideoMessage]=useState('');
+ useEffect(()=>setVideoSupported(Boolean(preferredVideoMime(window.MediaRecorder)&&typeof HTMLCanvasElement!=='undefined'&&typeof HTMLCanvasElement.prototype.captureStream==='function')),[]);
  const current=options.find(x=>x.npCommunicationId===id)||options[0]||null;
  const theme=THEMES[foil];
  const pct=current?progress(current):null;
  const earned=current?['bronze','silver','gold','platinum'].reduce((n,k)=>n+count(current,k),0):0;
  const platinum=current?count(current,'platinum')>0:false;
+ async function saveVideo(){
+  if(!current||recording||!videoSupported)return;
+  setRecording(true);setRenderProgress(0);setVideoMessage('');
+  try{
+   const result=await exportTrophyMotionVideo(current,THEMES[foil],{onProgress:setRenderProgress});
+   setVideoMessage('Holo-Video exportiert als '+result.extension.toUpperCase()+'. Datei bleibt auf deinem Gerät.');
+  }catch(error){setVideoMessage(String(error?.message||'Videoexport fehlgeschlagen. Der SVG-Export bleibt verfügbar.'))}
+  finally{setRecording(false)}
+ }
  return <section className={styles.studio} aria-label="Trophy Collector Card Studio">
   <div className={styles.info}>
    <span className={styles.kicker}>COLLECTOR SERIES // VOL. 001</span>
    <h4>DEINE ERFOLGE.<br/><em>DEINE SAMMLERKARTE.</em></h4>
    <p>Ein eigener, hochauflösender Trophäen-Print. Jede Karte enthält ausschließlich Werte aus deinen PSN-Trophäenlisten. Kein erfundener Platin-Status.</p>
    <label className={styles.field}>Trophäenliste
-    <select value={current?.npCommunicationId||''} onChange={e=>setId(e.target.value)} disabled={!options.length}>
+    <select value={current?.npCommunicationId||''} onChange={e=>setId(e.target.value)} disabled={!options.length||recording}>
      {options.length?options.map(t=><option key={t.npCommunicationId} value={t.npCommunicationId}>{t.trophyTitleName||t.npCommunicationId}</option>):<option value="">Keine PSN-Trophäenlisten</option>}
     </select>
    </label>
    <fieldset className={styles.foils}><legend>FINISH / FOIL</legend>
-    {Object.entries(THEMES).map(([key,t])=><button key={key} type="button" aria-pressed={foil===key} className={foil===key?styles.active:''} onClick={()=>setFoil(key)}><span style={{background:t.light}} aria-hidden="true"/>{t.name}</button>)}
+    {Object.entries(THEMES).map(([key,t])=><button key={key} type="button" aria-pressed={foil===key} className={foil===key?styles.active:''} disabled={recording} onClick={()=>setFoil(key)}><span style={{background:t.light}} aria-hidden="true"/>{t.name}</button>)}
    </fieldset>
-   <button type="button" className={styles.download} disabled={!current} onClick={()=>downloadSvg(current,foil)}>KARTE ALS SVG EXPORTIEREN <span aria-hidden="true">↗</span></button>
-   <small className={styles.disclaimer}>Originalgestaltung · 1200 × 1600 Pixel · SVG ist verlustfrei skalierbar · Export nur nach deinem Klick.</small>
+   <button type="button" className={styles.download} disabled={!current||recording} onClick={()=>downloadSvg(current,foil)}>KARTE ALS SVG EXPORTIEREN <span aria-hidden="true">↗</span></button>
+   <button type="button" className={styles.videoDownload} disabled={!current||!videoSupported||recording} onClick={()=>void saveVideo()}>{recording?'HOLO-VIDEO WIRD ERSTELLT · '+renderProgress+'%':'ANIMIERTE VIDEO-KARTE EXPORTIEREN'} <span aria-hidden="true">▶</span></button>
+   {recording?<progress className={styles.videoProgress} max="100" value={renderProgress} aria-label="Fortschritt der Videoerstellung"/>:null}
+   <p className={styles.videoNotice} role="status" aria-live="polite">{videoMessage||(!videoSupported?'Videoaufzeichnung von diesem Browser nicht unterstützt. Statische SVG-Karten bleiben verfügbar.':'Viersekündige originale Holo-Animation mit Glanz- und Lichteffekten. Format: MP4 oder WebM, je nach Browser.')}</p>
+   <small className={styles.disclaimer}>Originalgestaltung · SVG 1200 × 1600 · Video 720 × 960 · Keine Server-Uploads · Export nur auf deinen Klick.</small>
   </div>
   <div className={styles.stage}>
    <div className={styles.card} style={{'--foil':theme.light,'--glow':theme.accent,'--base':theme.base,'--secondary':theme.secondary}}>
