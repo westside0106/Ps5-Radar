@@ -281,6 +281,13 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     const exportButton=collector.getByRole('button',{name:/KARTE ALS SVG EXPORTIEREN/});
     const empty=await collector.locator('select').isDisabled();
     if(empty)assert.ok(await exportButton.isDisabled(),'No PSN trophy data: export must stay disabled');
+    if(engine===chromium&&width===390&&!empty&&await motionButton.isEnabled()){
+     const downloadPromise=page.waitForEvent('download',{timeout:16000});
+     await motionButton.click();
+     const videoDownload=await downloadPromise;
+     assert.match(videoDownload.suggestedFilename(),/PS5-Radar-.*-Holo-Card\.(?:mp4|webm)$/, 'Motion export must produce a video');
+     await collector.getByText(/Holo-Video exportiert als/).waitFor();
+    }
     await commandDeck.getByRole('button',{name:/KAUFHISTORIE/}).click();
     const orders=page.getByRole('region',{name:'PlayStation-Kaufhistorie und Ausgabenanalyse'});
     await orders.waitFor();
