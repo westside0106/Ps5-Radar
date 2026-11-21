@@ -69,6 +69,16 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    if(route.request().method()==='PATCH')return route.fulfill({json:{ok:true,updated:true}});
    return route.fulfill({status:405});
   });
+  await page.route('**/zentrale/api/source-watchdog',async route=>{
+   if(route.request().method()!=='GET')return route.fulfill({status:405});
+   return route.fulfill({json:{configured:true,schedule:{sourceHourUtc:9,watchdogHourUtc:11,watchdogMinuteUtc:15},
+    days:[
+     {run_day:'2026-11-21',checked_at:'2026-11-21T11:45:00Z',status:'failed',
+      scheduled_runs:1,daily_sources:6,push_sent_at:'2026-11-21T11:45:04Z',push_attempts:1,push_last_error:null},
+     {run_day:'2026-11-20',checked_at:'2026-11-20T11:55:00Z',status:'ok',
+      scheduled_runs:1,daily_sources:6,push_sent_at:null,push_attempts:0,push_last_error:null}
+    ]}});
+  });
   await page.route('**/zentrale/api/source-runs',async route=>{
    if(route.request().method()!=='GET')return route.fulfill({status:405});
    return route.fulfill({json:{configured:true,schedule:{hourUtc:9,graceMinutes:60},
@@ -107,7 +117,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/source-runs','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/alerts/check']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/source-runs','/zentrale/api/source-watchdog','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/source-watchdog','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
@@ -220,6 +230,16 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       assert.equal(await scanAudit.locator('tbody tr').count(),2,'Audit must show scheduled and manual executions');
       assert.ok((await scanAudit.innerText()).includes('Fehlgeschlagen'),'Failed cron must not appear as success');
       assert.ok((await scanAudit.innerText()).includes('Erfolgreich'),'Successful manual run missing');
+      const watchdog=page.locator('section[aria-label="Automatischer Quellen-Cron-Wächter"]');
+      await watchdog.locator('[role="listitem"]').first().waitFor();
+      assert.equal(await watchdog.locator('[role="listitem"]').count(),2,'Expected two watchdog day receipts');
+      assert.ok((await watchdog.innerText()).includes('Cron fehlgeschlagen'),'Failed source cron missing');
+      assert.ok((await watchdog.innerText()).includes('ntfy nahm Warnung an'),'ntfy delivery acknowledgement missing');
+      await watchdog.getByRole('button',{name:'WÄCHTER AKTUALISIEREN'}).click();
+      await watchdog.locator('[role="listitem"]').first().waitFor();
+      const watchdogSize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+      assert.ok(watchdogSize.scroll<=watchdogSize.client+2,'Cron watchdog overflows viewport: '+JSON.stringify(watchdogSize));
+
       await scanAudit.getByRole('button',{name:'PROTOKOLL AKTUALISIEREN'}).click();
       await scanAudit.locator('tbody tr').first().waitFor();
       const auditSize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
