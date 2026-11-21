@@ -1,0 +1,24 @@
+[Unit]
+Description=PS5 Radar – encrypted psn_monitor CSV push (no PSN credentials)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+# Adjust User to the unprivileged account that can read your monitor CSV.
+User=truck
+EnvironmentFile=/etc/ps5-radar/monitor-push.env
+# Adjust script path to your local checkout.
+ExecStart=/usr/bin/python3 /opt/ps5-radar/scripts/push-psn-monitor.py
+TimeoutStartSec=50
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+UMask=0077
