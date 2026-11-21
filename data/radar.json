@@ -82,7 +82,7 @@
     "The Play List"
   ],
   "ubisoftTitle": "Ubisoft+ Classics",
-  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar; zudem über PS Plus Extra/Premium.",
   "ubisoftItems": [
     "Ubisoft+ Classics",
     "PS Plus Extra",
@@ -109,7 +109,7 @@
   "editorial": [],
   "health": {
     "status": "warning",
-    "checkedAt": "2026-11-21T03:23:41.219Z",
+    "checkedAt": "2026-11-21T03:31:30.086Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -123,10 +123,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "stale",
-    "lastSuccessfulCheck": "2026-11-21T03:23:07.832Z"
+    "lastSuccessfulCheck": "2026-11-21T03:30:43.801Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-11-21T03:23:41.219Z",
+    "checkedAt": "2026-11-21T03:31:30.086Z",
     "errors": [
       "PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden"
     ],
@@ -258,7 +258,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-11-21T03:23:30.262Z",
+    "checkedAt": "2026-11-21T03:31:18.258Z",
     "titles": 10,
     "fetched": 4,
     "enriched": 7,
@@ -305,7 +305,7 @@
   },
   "ubisoftPlus": {
     "title": "Ubisoft+ Classics",
-    "price": "7,99 €",
+    "price": null,
     "items": [
       "Ubisoft+ Classics",
       "PS Plus Extra",
@@ -315,7 +315,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-11-21T03:23:16.830Z",
+    "checkedAt": "2026-11-21T03:31:06.853Z",
     "month": "November",
     "year": 2026,
     "notes": [],
@@ -329,7 +329,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-11-21T03:23:16.899Z",
+    "checkedAt": "2026-11-21T03:31:06.931Z",
     "collection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -342,7 +342,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-11-21T03:23:32.806Z",
+    "checkedAt": "2026-11-21T03:31:21.408Z",
     "verified": 2,
     "missing": [
       "Tomb Raider IV – VI Remastered"
@@ -353,7 +353,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-11-21T03:23:14.043Z",
+    "checkedAt": "2026-11-21T03:31:04.123Z",
     "date": "21.11.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -379,7 +379,7 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-11-21T03:23:33.287Z",
+    "checkedAt": "2026-11-21T03:31:21.934Z",
     "berlinDate": "2026-11-21",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
