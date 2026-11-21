@@ -34,6 +34,24 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:engine===webkit&&width<=430,deviceScaleFactor:width<=430?2:1,reducedMotion:width===320?'reduce':'no-preference',serviceWorkers:'block'});
   const page=await context.newPage();
   const testCloudRules=[];
+  await page.route('**/mein-playstation/api/game-intelligence?*',async route=>{
+   if(route.request().method()!=='GET')return route.fulfill({status:405});
+   return route.fulfill({json:{
+    title:'Unplayed CI Test',
+    framepatch:{source:'arthurcarlsonn/framepatch',match:{
+     lastVerified:'2026-10-26',entries:[{model:'PS5',appType:'Native PS5',fps:60,
+      confidence:'measured',modes:[{name:'Performance',targetFps:60,
+       unlocked:false,vrr:false,resolution:'1440p',note:null}]}],
+     evidence:[{url:'https://www.digitalfoundry.net/articles/test',publisher:'Digital Foundry'}],patch:null
+    }},
+    store:{source:'Ephellon/game-store-catalog',region:'US',snapshotAt:'2026-11-17T07:08:00Z',
+     matches:[{title:'Unplayed CI Test',platform:'PS5',priceLabel:'$19.99',usdPrice:19.99,
+      href:'https://store.playstation.com/en-us/product/UP0000-CI0000000000000'}]},
+    howlongtobeat:{status:'ready',matches:[{id:123,title:'Unplayed CI Test',
+     mainHours:12.5,extrasHours:15,completionistHours:21,mainSamples:40,
+     sourceUrl:'https://howlongtobeat.com/game/123'}]}
+   }});
+  });
   await page.route('**/zentrale/api/price-alerts',async route=>{
    const method=route.request().method();
    if(method==='GET')return route.fulfill({json:{configured:true,rules:testCloudRules,events:[]}});
@@ -133,7 +151,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/mein-playstation/api/trophy-guide-index?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/source-runs','/zentrale/api/source-watchdog','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/source-watchdog','/api/radar/alerts/check']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/mein-playstation/api/trophy-guide-index?title=Test%20Game','/mein-playstation/api/game-intelligence?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/source-runs','/zentrale/api/source-watchdog','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/source-watchdog','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
@@ -376,6 +394,18 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await page.getByRole('button',{name:'Alle Spiele'}).click();
     await card.click();
     const dialog=page.getByRole('dialog',{name:/Spieldetails/i});
+    const intel=dialog.getByRole('region',{name:/Spielzeit-, Performance- und Store-Daten/});
+    await intel.waitFor();
+    assert.ok(await intel.getByRole('button',{name:'QUELLENDATEN ABRUFEN'}).count(),
+     'Game intelligence must be explicit on-demand');
+    await intel.getByRole('button',{name:'QUELLENDATEN ABRUFEN'}).click();
+    await intel.getByText('Unplayed CI Test · Community-Zeitwerte').waitFor();
+    assert.ok((await intel.innerText()).includes('12,5 h'),'HLTB hours should display, not PSN trophy completion');
+    assert.ok((await intel.innerText()).includes('60 FPS Zielwert'),'Sourced PS5 mode missing');
+    assert.ok((await intel.innerText()).includes('USA / USD'),'US snapshot disclaimer missing');
+    assert.ok((await intel.innerText()).includes('Nicht live verifiziert'),'Unverified US prices must not claim live DE price');
+    const intelWidth=await dialog.evaluate(el=>({scroll:el.scrollWidth,client:el.clientWidth}));
+    assert.ok(intelWidth.scroll<=intelWidth.client+3,'Game intelligence overflows mobile dialog');
     await dialog.locator('.psn-game-modal-collections > summary').click();
     await dialog.getByRole('checkbox',{name:'CI Collection'}).check();
     await dialog.locator('.psn-modal-close').click();
