@@ -1,0 +1,29 @@
+.root{position:relative;isolation:isolate;margin:19px 0 25px;padding:clamp(16px,2.5vw,28px);border:1px solid #445c8a;border-radius:20px;background:radial-gradient(ellipse at 92% -25%,#2d56875f,transparent 55%),linear-gradient(130deg,#081b33,#0b0e20 72%);color:#eef7ff;overflow:hidden;box-shadow:0 24px 55px #0006}
+.root:before{content:"";position:absolute;pointer-events:none;z-index:-1;inset:0;background-image:linear-gradient(90deg,#a1c3fb08 1px,transparent 1px),linear-gradient(0deg,#a1c3fb08 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(#0009,transparent)}
+.head{margin-bottom:19px}.eyebrow{font-size:10px;letter-spacing:.18em;font-weight:850;color:#91ccff}.head h2{font-size:clamp(26px,3.3vw,45px);font-weight:950;line-height:1.04;letter-spacing:-.045em;margin:10px 0}.head h2 em{font-style:normal;color:#8cddff;background:linear-gradient(100deg,#d9f9ff,#80bbfc 60%,#b8a0ff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.head p{margin:0;color:#abbfd8;font-size:12px;line-height:1.65;max-width:66ch}.head strong{color:#e8f3ff}
+.grid{display:grid;grid-template-columns:1.04fr .96fr;gap:13px}
+.card{background:linear-gradient(155deg,#162d4aee,#0a1527ee 75%);border:1px solid #486b94;border-radius:15px;padding:clamp(14px,2vw,21px);min-width:0;position:relative;overflow:hidden}
+.card:nth-child(2){border-color:#60577f;background:linear-gradient(140deg,#20223d,#0b1426 75%)}
+.card:after{content:"";position:absolute;right:-65px;top:-75px;border:1px solid #9ccbfc21;width:185px;height:185px;border-radius:50%;pointer-events:none}
+.cardHeading{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.cardHeading h3{font-size:12px;letter-spacing:.13em;font-weight:900;margin:0;display:grid;gap:4px}
+.cardHeading h3 small{font-size:9px;color:#a1b8d4;letter-spacing:.07em;font-weight:650}
+.pill,.pillMuted{font-size:9px;letter-spacing:.08em;color:#c0eaff;border:1px solid #69acef83;padding:7px 9px;border-radius:50px;background:#224b70a0;font-weight:800;white-space:nowrap}.pillMuted{border-color:#677791;color:#ced9ea;background:#2b354a}
+.countdown{display:flex;align-items:center;gap:12px;padding:10px 0 9px;color:#fff}
+.countdown>strong{font-size:clamp(60px,10vw,116px);line-height:.95;letter-spacing:-.095em;font-weight:950;font-variant-numeric:tabular-nums;text-shadow:0 0 36px #77c7ff33}
+.countdown>div{display:grid;gap:6px;border-left:2px solid #83ccff;padding-left:12px}.countdown>div span{font-size:clamp(16px,2.4vw,23px);font-weight:900;letter-spacing:.25em;color:#9cdaff}.countdown>div small{font-size:9px;letter-spacing:.07em;line-height:1.5;font-weight:750;color:#bcd1e5}.countdown>i{font-size:26px;color:#9be9ff;opacity:.7;font-style:normal;margin-left:auto}
+.deadline{font-size:12px;font-weight:750;color:#f2f8ff;margin:5px 0 15px}.deadline time{color:#93deff}
+.list{display:grid;gap:7px;list-style:none;padding:0;margin:0 0 13px}
+.list li{position:relative;padding:10px 12px 10px 27px;border:1px solid #41678a;border-radius:8px;background:#12314caa;color:#d5ebff;font-size:12px;line-height:1.4;font-weight:650}
+.list li:before{content:"✦";position:absolute;left:9px;color:#89caff}
+.list a{color:inherit;text-decoration:none}.list a:hover{text-decoration:underline;text-underline-offset:3px}
+.note{font-size:11px;color:#a9c5dd;line-height:1.65;margin:11px 0}.note strong{color:#e4f5ff}
+.warning{font-size:11px;line-height:1.6;color:#ffcc8a;background:#593c1f4d;border:1px solid #bd87544d;padding:10px;border-radius:8px;margin:13px 0}
+.source{display:inline-flex;align-items:center;min-height:42px;gap:8px;border-radius:8px;border:1px solid #6382a1;color:#a8dfff;padding:9px 12px;margin-top:7px;font-size:11px;font-weight:800;text-decoration:none}
+.departures{display:grid;gap:7px;padding:0;list-style:none;margin:10px 0 14px}
+.departures li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #52658461;padding:8px 0 11px}
+.departures li>div{display:grid;gap:4px}.departures strong{font-size:12px}.departures li>div:last-child{text-align:right}.departures small{font-size:10px;color:#acc8dd}
+.root :focus-visible{outline:3px solid #9ed9ff;outline-offset:3px}
+@media(max-width:790px){.grid{grid-template-columns:1fr}.root{padding:15px}.card{padding:14px}.countdown>strong{font-size:clamp(64px,18vw,98px)}}
+@media(prefers-reduced-motion:reduce){.root *{transition:none!important}}

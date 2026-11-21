@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {normalizeSnapshotHistory,snapshotPairs,snapshotMonths,lastPlayedEvents,platinumProjects} from '../lib/psn-gaming-insights.mjs';
 import {trophySetCandidates} from '../lib/psn-platinum-plan.mjs';
+import {playDurationMinutes,buildPlaytimeInsights,buildTrophyInsights} from '../lib/psn-advanced-stats.mjs';
 
 test('historical local cumulative snapshots are normalized, sorted and de-duplicated',()=>{
  const raw=[
@@ -66,4 +67,59 @@ test('platinum projects require explicit personal status and Sony-confirmed trop
  assert.equal(projects[1].trophy,null,'ambiguous editions must not be silently mixed');
  const chosen=platinumProjects(games,titles,{...notes,PPSA00300:{status:'platinum',trophySetId:'NPWR00003_00'}},trophySetCandidates);
  assert.equal(chosen.find(p=>p.id==='PPSA00300').platinumEarned,true);
+});
+
+test('play durations parse exact PSN ISO durations, not human guesses',()=>{
+ assert.equal(playDurationMinutes('PT2H30M'),150);
+ assert.equal(playDurationMinutes('P1DT15M'),1455);
+ assert.equal(playDurationMinutes('PT30S'),0.5);
+ assert.equal(playDurationMinutes(240),240);
+ for(const invalid of [null,'','sieben Stunden','P','PT','PT-1H',-5,NaN])assert.equal(playDurationMinutes(invalid),null);
+});
+test('gameplay stats deduplicate title IDs, do not invent session hours, and report gaps',()=>{
+ const p=buildPlaytimeInsights([
+  {titleId:'PSA',name:'Alpha',playDuration:'PT1H',metadata:{genres:['Action','RPG']}},
+  {titleId:'PSA',name:'Alpha',playDuration:'PT30M'},
+  {titleId:'PSB',name:'Unknown',playDuration:null},
+  {titleId:'PSC',name:'Gamma',playDuration:'PT10H',metadata:{genres:['RPG']}},
+  {titleId:'PSD',name:'Delta',playDuration:'PT30M'},
+  {titleId:'APPA',name:'YouTube',playDuration:'PT100H'}
+ ]);
+ assert.equal(p.games,4);
+ assert.equal(p.knownGames,3);
+ assert.equal(p.unknownGames,1);
+ assert.equal(p.totalMinutes,690);
+ assert.equal(p.averageMinutes,230);
+ assert.equal(p.medianMinutes,60);
+ assert.deepEqual(p.bands.map(x=>x.count),[1,1,1,0,0]);
+ assert.deepEqual(p.top.map(x=>x.title),['Gamma','Alpha','Delta']);
+ assert.deepEqual(p.genres.map(x=>[x.name,x.minutes]),[['RPG',660],['Action',60]]);
+});
+test('trophy progress bands never count missing progress or equate 100% with platinum',()=>{
+ const t=buildTrophyInsights([
+  {npCommunicationId:'A',progress:0,earnedTrophies:{bronze:3}},
+  {npCommunicationId:'B',progress:100,earnedTrophies:{gold:1,platinum:0}},
+  {npCommunicationId:'C',progress:100,earnedTrophies:{platinum:1}},
+  {npCommunicationId:'D',progress:48,earnedTrophies:{silver:2}},
+  {npCommunicationId:'E',progress:null,earnedTrophies:{}},
+  {npCommunicationId:'B',progress:100,earnedTrophies:{platinum:9}},
+  {progress:100,earnedTrophies:{platinum:2}}
+ ]);
+ assert.equal(t.trophySets,5);
+ assert.equal(t.knownSets,4);
+ assert.equal(t.unknownSets,1);
+ assert.equal(t.completedSets,2);
+ assert.equal(t.completedWithoutPlatinum,1);
+ assert.equal(t.platinumSets,1);
+ assert.equal(t.earned.platinum,1);
+ assert.deepEqual(t.bands.map(x=>x.count),[1,0,1,0,0,2]);
+});
+test('empty or corrupted input produces no invented observations',()=>{
+ const p=buildPlaytimeInsights(undefined),t=buildTrophyInsights(undefined);
+ assert.equal(p.averageMinutes,null);
+ assert.equal(p.medianMinutes,null);
+ assert.equal(p.knownGames,0);
+ assert.equal(p.genres.length,0);
+ assert.equal(t.completedSets,0);
+ assert.equal(t.platinumSets,0);
 });

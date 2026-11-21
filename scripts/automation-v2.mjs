@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import {readMonthlyEdition,monthlyCandidatePriority} from '../lib/ps-plus-monthly-selection.mjs';
 
 const radarPath = new URL('../data/radar.json', import.meta.url);
 const sourcesPath = new URL('../data/sources.json', import.meta.url);
@@ -133,12 +134,13 @@ function discoverArticle(posts, kind) {
   return scored;
 }
 
-function parsePsPlus(html) {
+function parsePsPlus(html, sourceUrl) {
   const text = strip(html);
   const articleTitle = strip(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]);
-  const titleMonth = articleTitle.match(new RegExp(`(${MONTHS.join('|')})\\s+(20\\d{2})`, 'i'));
-  const labelMonth = titleMonth ? MONTHS[monthNumber(titleMonth[1]) - 1] : currentMonthName;
-  const labelYear = titleMonth ? Number(titleMonth[2]) : today.year;
+  const edition = readMonthlyEdition(articleTitle, sourceUrl);
+  if (!edition) return { label: null, window: null, games: [] };
+  const labelYear = edition.year;
+
 
   const rangeRe = new RegExp(`(?:von|ab)[^0-9]{0,30}(\\d{1,2})\\.\\s*(${MONTHS.join('|')})[^0-9]{0,80}(?:bis|zum)[^0-9]{0,30}(\\d{1,2})\\.\\s*(${MONTHS.join('|')})`, 'i');
   const range = text.match(rangeRe);
@@ -169,7 +171,7 @@ function parsePsPlus(html) {
     });
   }
 
-  return { label: `${labelMonth.toUpperCase()} ${labelYear}`, window, games: games.slice(0, 6) };
+  return { label: edition.label, edition, window, games: games.slice(0, 6) };
 }
 
 function parseReleaseSchedule(html) {
@@ -297,32 +299,45 @@ try {
 
 try {
   const candidates = discoverArticle(feedPosts, 'plus');
-  const urls = [...new Set([...candidates.map((x) => x.link), sources.psPlusMonthly].filter(Boolean))].slice(0, 8);
+  // Prefer independently announced current editions, then explicitly verified known sources.
+  // A stale configured URL may never replace an already current issue.
+  const urls = [...new Set([...candidates.slice(0, 10).map((x) => x.link), radar.resolvedSources?.psPlusMonthly, sources.psPlusMonthly].filter(Boolean))];
   let selected = null;
   for (const url of urls) {
     try {
       const page = await get(url);
-      const parsed = parsePsPlus(page.text);
+      const parsed = parsePsPlus(page.text, page.url);
       if (parsed.games.length < 3) continue;
-      const active = parsed.window && currentKey() >= dateKey(parsed.window.start) && currentKey() <= dateKey(parsed.window.end);
-      const sameMonth = parsed.label.startsWith(currentMonthName.toUpperCase());
-      if (!selected || active || (sameMonth && !selected.active)) selected = { url: page.url, parsed, active, sameMonth };
-      if (active) break;
+      const rank = monthlyCandidatePriority(parsed.edition, parsed.window, today);
+      if (rank < 0) continue;
+      if (!selected || rank > selected.rank) selected = { url: page.url, parsed, rank };
+      // A confirmed active current-month edition beats all fallbacks.
+      if (rank === 30) break;
     } catch {}
   }
   if (selected) {
     const { parsed } = selected;
-    const oldImages = new Map((radar.plusGames || []).map((g) => [g.title.toLowerCase(), g.image]));
-    radar.plusGames = parsed.games.slice(0,4).map((g) => ({
-      title: g.title,
-      image: g.image || oldImages.get(g.title.toLowerCase()) || null
-    })).filter((g) => g.image);
+    const previous = new Map((radar.plusGames || []).map((g) => [g.title.toLowerCase(), g]));
+    radar.plusGames = parsed.games.slice(0, 4).map((g) => {
+      const old = previous.get(g.title.toLowerCase()) || {};
+      const image = g.image || old.image || null;
+      return {
+        title: g.title,
+        image,
+        imageSource: image && image === old.image ? (old.imageSource || 'unverified') : 'unverified',
+        ...(g.storeUrl || old.storeUrl ? { storeUrl: g.storeUrl || old.storeUrl } : {})
+      };
+    });
     radar.psplusLabel = parsed.label;
     const monthPretty = parsed.label.split(' ')[0];
     radar.psplusTitle = `${monthPretty[0]}${monthPretty.slice(1).toLowerCase()}-Spiele sind live`;
-    if (parsed.window) radar.psplusText = `Verfügbar bis ${String(parsed.window.end.day).padStart(2,'0')}.${String(parsed.window.end.month).padStart(2,'0')}.`;
+    radar.psplusText = parsed.window
+      ? `Verfügbar bis ${String(parsed.window.end.day).padStart(2,'0')}.${String(parsed.window.end.month).padStart(2,'0')}.`
+      : 'Beanspruchungsfrist nicht bestätigt – offizielle Ankündigung prüfen.';
     setResolved('psPlusMonthly', selected.url);
     setResolved('psPlusStoreUrls', Object.fromEntries(parsed.games.filter((g) => g.storeUrl).map((g) => [g.title, g.storeUrl])));
+  } else {
+    notes.push('PS Plus: Keine explizit datierte, aktuell gültige Monatsausgabe bestätigt; unverifizierte Quellen überschreiben den letzten Stand nicht.');
   }
 } catch (e) {
   notes.push(`PS Plus V2: ${e.message}`);

@@ -2,6 +2,7 @@
 
 import { useDeferredValue, useEffect, useMemo, useState } from 'react';
 import DetailTile from '../radar/DetailTile';
+import DeadlinePanel from './DeadlinePanel';
 import { CATALOG_TABS, catalogFilter } from '../../lib/radar-catalog-view.mjs';
 
 const PAGE_SIZE = 36;
@@ -63,7 +64,7 @@ function CatalogCard({ game, service }) {
   </DetailTile>;
 }
 
-export default function CatalogClient({ snapshot }) {
+export default function CatalogClient({ snapshot, deadlines }) {
   const [service, setService] = useState('extra');
   useEffect(() => {
     const syncServiceFromUrl = () => {
@@ -135,6 +136,7 @@ export default function CatalogClient({ snapshot }) {
       
       <div className="catalog-heading"><div><span className="catalog-eyebrow">PLAYSTATION-RADAR · DEUTSCHLAND</span><h1>Dein PS+ Spielekatalog</h1><p>Alle verlässlich erfassten Katalogbereiche durchsuchen, filtern und direkt im PlayStation Store öffnen.</p></div><div className="catalog-count"><strong>{total.toLocaleString('de-DE')}</strong><span>eindeutige erfasste Titel</span></div></div>
     </header>
+    <DeadlinePanel overview={deadlines}/>
     <nav className="catalog-tabs" aria-label="PS-Plus-Bereiche">{CATALOG_TABS.map(tab => {
       const count = snapshot.sections?.[tab.id]?.count;
       return <button key={tab.id} type="button" aria-label={tab.label} className={service===tab.id?'active':''} aria-current={service===tab.id?'page':undefined} onClick={()=>selectService(tab.id)}><span>{tab.label}</span>{Number.isFinite(count) ? <small className="catalog-tab-count" aria-hidden="true">{count.toLocaleString('de-DE')}</small> : null}</button>;

@@ -671,3 +671,15 @@
 .psn-hub button:active,.psn-hub a:active{transform:scale(.975)}
 @media(hover:hover) and (pointer:fine){.psn-hub .psn-hub-game:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(0,0,0,.35);border-color:#9dc7db}.psn-hub button:hover{filter:brightness(1.1)}}
 @media(prefers-reduced-motion:reduce){.psn-hub button,.psn-hub a,.psn-hub .psn-hub-game{transition:none!important;animation:none!important;transform:none!important}}
+
+
+/* RADAR ASCEND — the new Command Deck deliberately retains the existing planner below. */
+.psn-planner>.psn-planner-heading{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;margin:0 0 12px}
+.psn-planner>.psn-planner-heading h3{margin-bottom:0}
+.psn-deck-legacy{background:#101e31;border:1px solid #32445e;border-radius:11px;padding:0 15px;margin:0 0 18px}
+.psn-deck-legacy>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;font-size:12px;font-weight:700;color:#d0e7fa}
+.psn-deck-legacy>summary span{font-size:10px;color:#91acc8;font-weight:500}
+.psn-deck-legacy[open]>summary{border-bottom:1px solid #30455c}
+.psn-deck-legacy>.psn-planner-stats{margin:12px 0}
+#psn-insights-fold,#psn-trophy-card-studio{scroll-margin-top:92px}
+@media(max-width:620px){.psn-deck-legacy{padding:0 11px}.psn-deck-legacy>summary span{display:none}}

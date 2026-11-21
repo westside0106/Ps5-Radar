@@ -250,9 +250,24 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     assert.equal(await page.locator('.psn-collection-stage-model canvas').count(),0,'WebGL scene must not be mounted by default');
 
     await page.getByRole('button',{name:'Meine Spielwelt'}).click();
-    const statsFold=page.locator('.psn-tools-fold').filter({hasText:'Gaming-Chronik & Statistiken'});
-    await statsFold.locator('summary').click();
+    const commandDeck=page.getByRole('region',{name:'PlayStation Radar Mission Control'});
+    await commandDeck.waitFor();
+    assert.ok(await commandDeck.getByText('DEIN UNIVERSUM.').count(),'Command Deck headline missing');
+    await commandDeck.scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'ascend-deck');
+    await commandDeck.getByRole('button',{name:/STATISTIKEN ÖFFNEN/}).click();
+    const statsFold=page.locator('#psn-insights-fold');
+    assert.ok(await statsFold.evaluate(el=>el.open),'Mission Deck must open the existing insights fold');
     await page.locator('.psn-chronicle').waitFor();
+    const collector=page.getByRole('region',{name:'Trophy Collector Card Studio'});
+    await collector.waitFor();
+    await collector.getByRole('button',{name:'GOLD EDITION'}).click();
+    assert.equal(await collector.getByRole('button',{name:'GOLD EDITION'}).getAttribute('aria-pressed'),'true','Foil preview must respond to selection');
+    await collector.scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'collector-card');
+    const exportButton=collector.getByRole('button',{name:/KARTE ALS SVG EXPORTIEREN/});
+    const empty=await collector.locator('select').isDisabled();
+    if(empty)assert.ok(await exportButton.isDisabled(),'No PSN trophy data: export must stay disabled');
     await page.getByRole('button',{name:'3 Mon.'}).click();
     assert.equal(await page.getByRole('button',{name:'3 Mon.'}).getAttribute('aria-pressed'),'true');
     const w=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
@@ -282,7 +297,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    }
 
   }
-  const relevantErrors=clientErrors.filter(t=>/PlayStationHub|GamingPlanner|PlatinumMissionControl|GamingChronicle|hydrate|hydration|before initialization|ReferenceError/i.test(t));
+  const relevantErrors=clientErrors.filter(t=>/PlayStationHub|GamingPlanner|PlatinumMissionControl|GamingChronicle|CommandDeck|TrophyCardStudio|DeadlinePanel|hydrate|hydration|before initialization|ReferenceError/i.test(t));
   assert.deepEqual(relevantErrors,[],engine.name()+' '+width+' runtime/hydration errors');
   await context.close();
  }
