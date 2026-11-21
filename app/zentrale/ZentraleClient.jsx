@@ -7,6 +7,7 @@ import ServerPriceAlerts from './ServerPriceAlerts';
 import SourceHealthMonitor from './SourceHealthMonitor';
 import SourceLiveOpsPanel from './SourceLiveOpsPanel';
 import SourceScanAuditPanel from './SourceScanAuditPanel';
+import SourceCronWatchdogPanel from './SourceCronWatchdogPanel';
 import SourceHistoryPanel from './SourceHistoryPanel';
 import NtfyPushPanel from './NtfyPushPanel';
 
@@ -164,7 +165,7 @@ export default function ZentraleClient({index=[],events=[],sources=[],priceGames
    </article>)}</div>
    <p className="rz-muted">Historische Preisbeobachtungen sind keine Live-Shop-Abfrage. Unterschiedliche Editionen oder Konsolenpreise werden nicht automatisch gleichgesetzt.</p>
   </section>:null}
-  {tab==='quellen'?<><SourceHealthMonitor/><SourceLiveOpsPanel/><SourceScanAuditPanel/><NtfyPushPanel/><SourceHistoryPanel/><RadarAppTools matched={matched}/><section className="rz-panel"><div className="rz-panel-heading"><h2>Datenqualität & Quellen</h2><p>Was das Radar tatsächlich weiß – und wo Ergebnisse lückenhaft oder älter sind.</p></div>
+  {tab==='quellen'?<><SourceHealthMonitor/><SourceLiveOpsPanel/><SourceScanAuditPanel/><SourceCronWatchdogPanel/><NtfyPushPanel/><SourceHistoryPanel/><RadarAppTools matched={matched}/><section className="rz-panel"><div className="rz-panel-heading"><h2>Datenqualität & Quellen</h2><p>Was das Radar tatsächlich weiß – und wo Ergebnisse lückenhaft oder älter sind.</p></div>
    <div className="rz-source-grid">{sources.map(x=><article key={x.name} className="rz-source"><div><strong>{x.name}</strong><span className={x.complete?'rz-complete':'rz-partial'}>{x.complete?'Als vollständig gemeldet':'Eingeschränkt / prüfen'}</span></div><p>{x.detail}</p><dl><dt>Letzter Datenstand</dt><dd>{day(x.date)}</dd><dt>Erfasste Einträge</dt><dd>{x.count??'Nicht angegeben'}</dd></dl></article>)}</div>
    <p className="rz-muted">„Vollständig“ bezeichnet ausschließlich den von der jeweiligen Pipeline gemeldeten Status. Unbekannte oder veraltete Drittanbieter-Informationen können weiterhin fehlen.</p>
    <div className="rz-source-actions"><a href="/ps-plus">PS+-Daten prüfen</a><a href="/xbox">Xbox Beta prüfen</a><a href="/preise">Preisverlauf prüfen</a><a href="/archive">Archiv ({archiveCount})</a></div>
