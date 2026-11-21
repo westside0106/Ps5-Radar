@@ -82,7 +82,7 @@ export default function MonitorImport(){
   persist([],'Alle lokal erfassten Monitor-Intervalle gelöscht.');
  }
  const warnings=preview?Object.entries(preview.warningCounts).filter(([,n])=>n>0):[];
- return <section className={styles.root} aria-label="PSN Monitor Sitzungsanalyse">
+ return <section id="psn-monitor-import" className={styles.root} aria-label="PSN Monitor Sitzungsanalyse">
   <div className={styles.decor} aria-hidden="true"/>
   <header className={styles.header}>
    <div><span className={styles.kicker}><span className={styles.signal}/> SESSION INTELLIGENCE // OBSERVED</span>
@@ -116,7 +116,7 @@ export default function MonitorImport(){
     </div>:null}
     {message?<p className={styles.message} role="status">{message}</p>:null}
     {saved.length?<button type="button" className={styles.delete} onClick={remove}>Gespeicherte Monitor-Intervalle löschen</button>:null}
-    <p className={styles.hint}>**Wichtig:** psn_monitor erfasst Übergänge durch wiederholte Abfragen. Monitor-Ausfall, Ruhezustand, Verzögerungen und längere Zeitlücken verfälschen die Genauigkeit. Intervalle über 12 Stunden und solche ohne Abschlussmeldung werden ausgeschlossen. Zeitstempel bei unklarer Sommerzeit-Umstellung ebenfalls.</p>
+    <p className={styles.hint}>Wichtig: psn_monitor erfasst Übergänge durch wiederholte Abfragen. Monitor-Ausfall, Ruhezustand, Verzögerungen und längere Zeitlücken verfälschen die Genauigkeit. Intervalle über 12 Stunden und solche ohne Abschlussmeldung werden ausgeschlossen. Zeitstempel bei unklarer Sommerzeit-Umstellung ebenfalls.</p>
    </div>
    <div className={styles.results}>
     <div className={styles.boxTitle}><span>02 / PLAYTIME INTELLIGENCE</span><small>Nur lokal gespeicherte Daten</small></div>
