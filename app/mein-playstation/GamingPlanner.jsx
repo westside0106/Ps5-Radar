@@ -3,6 +3,7 @@ import {useMemo,useState,useEffect} from 'react';
 import DigitalLibrary from './DigitalLibrary';
 import ProfileSync from './ProfileSync';
 import GamingChronicle from './GamingChronicle';
+import ActivityFeed from './ActivityFeed';
 import AdvancedStats from './AdvancedStats';
 import CommandDeck from './CommandDeck';
 import TrophyCardStudio from './TrophyCardStudio';
@@ -226,6 +227,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
   <div className="psn-planner-box"><h4>Platin-Kandidaten</h4><p>Ungefähre Platin-Dauer aus historischen Schätzungen. Kein garantierter Restaufwand. Tippe auf ein Spiel, um es als Platin-Ziel vorzumerken und anschließend zu speichern.</p><div className="psn-planner-items">{games.filter(g=>g.game.communityInsight?.platinumHours!=null).sort((a,b)=>a.game.communityInsight.platinumHours-b.game.communityInsight.platinumHours).slice(0,8).map(g=><button type="button" key={g.key} onClick={()=>selectGame(g.key,true)}><span>{g.name}</span><small>Platin-Schätzung: {g.game.communityInsight.platinumHours} Std. · bisher {hours(mins(g.game.playDuration))} Std. PSN</small></button>)}</div></div>
 </div></details>
   <details id="psn-insights-fold" className="psn-tools-fold"><summary>Gaming-Chronik &amp; Statistiken <span>PSN-Messpunkte, Monatsvergleich und letzte Spieltage</span></summary><div className="psn-tools-fold-body">  <div className="psn-planner-box psn-stats-ranking"><h4>Meine meistgespielten Titel</h4><p>PSN-Gesamtspielzeit je Titel, nicht nur die letzten 28 Tage.</p><div className="psn-stats-rank-list">{topPlayed.map((g,i)=><div key={g.key}><span>{i+1}. {g.name}</span><strong>{hours(mins(g.game.playDuration))} Std.</strong></div>)}</div><h4 className="psn-stats-subheading">Zuletzt aktive Titel</h4><div className="psn-stats-rank-list">{recentGameList.map(g=><div key={g.key}><span>{g.name}</span><strong>{new Date(g.game.lastPlayedDateTime).toLocaleDateString('de-DE')}</strong></div>)}</div></div>
+  <ActivityFeed played={played} titles={titles}/>
   <AdvancedStats played={played} titles={titles}/>
   <GamingChronicle played={played} history={history}/>
   <div id="psn-trophy-card-studio"><TrophyCardStudio titles={titles}/></div>
