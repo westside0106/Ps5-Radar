@@ -8,3 +8,5 @@
 .setup button{min-height:42px;border:1px solid #68c4d4;border-radius:8px;background:#1d5870;color:#f0ffff;padding:9px 13px;font-size:11px;font-weight:850;cursor:pointer;max-width:100%}.setup button:disabled{opacity:.65;cursor:progress}.setup small{display:block;margin-top:8px;color:#9bbacb;font-size:10px;line-height:1.55}
 .foot,.disabled{font-size:10px;line-height:1.65;color:#acc5d6;margin:14px 0 0}.disabled{font-size:12px}.ok{font-size:11px;color:#9dedd6}.error{font-size:11px;color:#ffb5c0}.root :focus-visible{outline:3px solid #9efff2;outline-offset:3px}
 @media(max-width:650px){.setup{grid-template-columns:1fr}.header{gap:10px}}
+
+.topicActions{display:flex;gap:7px;flex-wrap:wrap}.topicActions button{flex:1 1 125px}.topic code{min-height:17px;display:block;word-break:break-all}

@@ -199,6 +199,16 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       await page.getByRole('button',{name:'TEST-PUSH SENDEN'}).click();
       await page.getByText('ntfy hat den Test angenommen.',{exact:false}).waitFor();
       assert.equal(await page.locator('section[aria-label="ntfy Push-Benachrichtigungen"]').count(),1,'Push configuration missing');
+      const pushPanel=page.locator('section[aria-label="ntfy Push-Benachrichtigungen"]');
+      assert.equal(await pushPanel.getByLabel('Topic ausgeblendet').count(),1,'ntfy topic must be hidden by default');
+      assert.ok(!(await pushPanel.textContent()).includes('ps5-radar-ci-test-topic-0123456789abcde'),
+       'Private topic was exposed in default screenshot-visible text');
+      await pushPanel.getByRole('button',{name:'TOPIC ANZEIGEN'}).click();
+      assert.equal(await pushPanel.getByLabel('Topic sichtbar').count(),1,'Topic reveal control not working');
+      assert.ok((await pushPanel.textContent()).includes('ps5-radar-ci-test-topic-0123456789abcde'));
+      await pushPanel.getByRole('button',{name:'TOPIC VERBERGEN'}).click();
+      assert.equal(await pushPanel.getByLabel('Topic ausgeblendet').count(),1);
+
       await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] .ignored, section[aria-label="Datenquellen-Historie und Meldungen"] button').first().waitFor();
       assert.equal(await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] [role=listitem]').count(),84,'Six sources should render 14 calendar cells');
       await page.getByRole('button',{name:'Als gelesen markieren'}).click();
