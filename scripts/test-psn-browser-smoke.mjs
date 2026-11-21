@@ -192,6 +192,8 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await page.getByPlaceholder('Titel eingeben …').fill('Unplayed CI Test');
     await page.getByRole('button',{name:'Zum Backlog hinzufügen'}).click();
     await page.locator('#psn-game-editor label').filter({hasText:/^Status/}).locator('select').selectOption('platinum');
+    await page.getByLabel('Eigenes Zeitziel (Stunden)').fill('12.5');
+    await page.getByLabel('Art des Zeitziels').selectOption('platinum');
     await page.locator('#psn-game-editor .psn-save-plan').click();
     await page.locator('#psn-game-editor .psn-save-status').getByText(/Gespeichert/).waitFor();
     const card=page.locator('.psn-hub-game').filter({hasText:'Unplayed CI Test'}).first();
@@ -295,6 +297,19 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await monitor.getByText('0 neue beobachtete Intervalle importiert.',{exact:false}).waitFor();
     await monitor.scrollIntoViewIfNeeded();
     await captureQa(page,engine.name(),width,'monitor-import');
+    const timeLab=page.getByRole('region',{name:'Spielzeit-Labor und persönliche Zeitziele'});
+    await timeLab.waitFor();
+    const manualTimeCard=timeLab.locator('article').filter({hasText:'Unplayed CI Test'}).first();
+    await manualTimeCard.waitFor();
+    assert.match(await manualTimeCard.innerText(),/12,5 h/,'Personal time goal must survive browser reload and remain visible');
+    assert.match(await manualTimeCard.innerText(),/Kein gültiger kumulierter PSN-Spielzeitwert/,'Manual-only games must not gain fake PSN playtime');
+    await timeLab.getByLabel('ANZEIGE').selectOption('goals');
+    assert.ok(await manualTimeCard.count(),'Goal filter must preserve planned manual game');
+    await timeLab.getByLabel('ANZEIGE').selectOption('relevant');
+    const timeSize=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
+    assert.ok(timeSize.scroll<=timeSize.client+3,'Time lab mobile horizontal overflow: '+JSON.stringify(timeSize));
+    await timeLab.scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'time-goals-lab');
     await page.locator('.psn-chronicle').waitFor();
     const collector=page.getByRole('region',{name:'Trophy Collector Card Studio'});
     await collector.waitFor();
