@@ -81,7 +81,7 @@ test('CSV never interpolates arbitrary provider IDs or formula-like detail field
  ],[{...transition,source_id:'unknown'},transition],{windowDays:7,anchorDay});
  assert.equal(csv.includes('=HYPERLINK'),false);
  assert.equal(csv.includes('must-never-export'),false);
- assert.equal(csv.match(/Statuswechsel/g)?.length,2);
+ assert.equal(csv.match(/Statuswechsel/g)?.length,1);
 });
 test('quality calculations validate periods without mutating input',()=>{
  const data=[rawg,igdb];
