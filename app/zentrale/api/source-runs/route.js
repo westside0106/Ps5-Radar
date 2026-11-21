@@ -2,6 +2,7 @@ import {cookies} from 'next/headers';
 import {COOKIE_NAME,safeEqual,sessionToken} from '../../../auth';
 import {sourceHistoryConfig} from '../../../../lib/source-health-history.mjs';
 import {readSourceScanRuns} from '../../../../lib/source-scan-audit.mjs';
+import {readWatchdogHistory} from '../../../../lib/source-cron-watchdog.mjs';
 
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
@@ -17,7 +18,12 @@ export async function GET(){
  const storage=sourceHistoryConfig();
  if(!storage)return respond({error:'Privater Prüfspeicher nicht verfügbar'},503);
  try{
-  const runs=await readSourceScanRuns(storage,{limit:60});
-  return respond({configured:true,runs,schedule:{hourUtc:9,graceMinutes:60}});
+  const [runs,scheduledRuns,watchdogDays]=await Promise.all([
+   readSourceScanRuns(storage,{limit:60}),
+   readSourceScanRuns(storage,{limit:45,kind:'scheduled'}),
+   readWatchdogHistory(storage,{limit:45})
+  ]);
+  return respond({configured:true,runs,scheduledRuns,watchdogDays,
+   schedule:{hourUtc:9,graceMinutes:60,watchdogHourUtc:11,watchdogMinuteUtc:15}});
  }catch{return respond({error:'Prüfprotokoll nicht erreichbar'},503)}
 }

@@ -1,6 +1,8 @@
 'use client';
 import {useCallback,useEffect,useMemo,useState} from 'react';
 import styles from './SourceScanAuditPanel.module.css';
+import {sourceCronTimeline} from '../../lib/source-cron-reliability.mjs';
+import SourceCronReliabilityPanel from './SourceCronReliabilityPanel';
 
 function stamp(value){
  const ms=Date.parse(value||'');
@@ -16,18 +18,25 @@ function label(run,nowMs){
  }
  return 'Unbekannt';
 }
-function todaySchedule(runs,nowMs){
- const now=new Date(nowMs);
- const day=now.toISOString().slice(0,10);
- const today=runs.some(x=>x.run_kind==='scheduled'&&String(x.started_at||'').slice(0,10)===day);
- if(today)return {tone:'ok',text:'Heute ist ein automatischer Lauf protokolliert.'};
- const utcMinute=now.getUTCHours()*60+now.getUTCMinutes();
- if(utcMinute<540)return {tone:'pending',text:'Der automatische Tageslauf ist für 09:00 UTC vorgesehen.'};
- if(utcMinute<600)return {tone:'pending',text:'Das geplante Cron-Zeitfenster läuft (09:00–10:00 UTC).'};
- return {tone:'caution',text:'Für heute ist noch kein automatischer Lauf protokolliert. Das ist kein Beweis für einen Ausfall; Cron-Ausführung und Protokollspeicher prüfen.'};
+function todaySchedule(record){
+ const labels={
+  success:{tone:'ok',text:'Heute wurde ein automatischer Quellen-Cron erfolgreich abgeschlossen.'},
+  failed:{tone:'caution',text:'Der heutige automatische Quellen-Cron ist fehlgeschlagen.'},
+  unfinished:{tone:'caution',text:'Ein automatischer Quellen-Cron hat keinen Abschlussbeleg.'},
+  running:{tone:'pending',text:'Ein automatischer Quellen-Cron läuft noch.'},
+  upcoming:{tone:'pending',text:'Die nächste Quellenprüfung ist für 09:00–10:00 UTC vorgesehen.'},
+  window:{tone:'pending',text:'Das geplante Cron-Zeitfenster 09:00–10:00 UTC läuft.'},
+  awaiting_watchdog:{tone:'pending',text:'Noch kein Cron-Nachweis. Das Watchdog-Zeitfenster ist noch nicht abgeschlossen.'},
+  missing:{tone:'caution',text:'Der unabhängige Wächter fand keinen automatischen Cron-Beleg.'},
+  unconfirmed:{tone:'caution',text:'Die automatische Cron-Ausführung ist für heute noch nicht eindeutig bestätigt.'},
+  unknown:{tone:'pending',text:'Für heute liegen noch keine verwertbaren Cron-Nachweise vor.'}
+ };
+ return labels[record?.status]||labels.unknown;
 }
 export default function SourceScanAuditPanel(){
  const [runs,setRuns]=useState([]);
+ const [scheduledRuns,setScheduledRuns]=useState([]);
+ const [watchdogDays,setWatchdogDays]=useState([]);
  const [loading,setLoading]=useState(true);
  const [refreshing,setRefreshing]=useState(false);
  const [error,setError]=useState('');
@@ -38,8 +47,9 @@ export default function SourceScanAuditPanel(){
   });
   if(!response.ok)throw Error(response.status===401?'Sitzung abgelaufen.':'Prüfprotokoll nicht erreichbar.');
   const data=await response.json();
-  if(!Array.isArray(data.runs))throw Error('Ungültige Prüfprotokoll-Antwort.');
-  return data.runs;
+  if(!Array.isArray(data.runs)||!Array.isArray(data.scheduledRuns)||!Array.isArray(data.watchdogDays))
+   throw Error('Ungültige Prüfprotokoll-Antwort.');
+  return data;
  },[]);
  useEffect(()=>{
   let active=true;
@@ -49,7 +59,8 @@ export default function SourceScanAuditPanel(){
    setRefreshing(true);
    try{
     const result=await load(controller.signal);
-    if(active){setRuns(result);setError('');setUpdated(new Date().toISOString())}
+    if(active){setRuns(result.runs);setScheduledRuns(result.scheduledRuns);
+     setWatchdogDays(result.watchdogDays);setError('');setUpdated(new Date().toISOString())}
    }catch(e){if(active&&!controller.signal.aborted)setError(e.message||'Abfrage fehlgeschlagen')}
    finally{if(active)setRefreshing(false);if(active)setLoading(false)}
   }
@@ -64,7 +75,9 @@ export default function SourceScanAuditPanel(){
    document.removeEventListener('visibilitychange',onVisible)};
  },[load]);
  const nowMs=Date.now();
- const info=useMemo(()=>todaySchedule(runs,nowMs),[runs,nowMs]);
+ const todayRecord=useMemo(()=>sourceCronTimeline(scheduledRuns,watchdogDays,{now:new Date(nowMs),days:7}).rows[0],
+  [scheduledRuns,watchdogDays,nowMs]);
+ const info=todaySchedule(todayRecord);
  const latestScheduled=runs.find(x=>x.run_kind==='scheduled');
  const latestManual=runs.find(x=>x.run_kind==='manual');
  return <section className={styles.root} aria-label="Quellen-Prüfprotokoll">
@@ -74,7 +87,8 @@ export default function SourceScanAuditPanel(){
     <p>Hier siehst du die tatsächlichen Server-Prüfversuche – getrennt nach automatischem Tageslauf und manuellem Sofortcheck. Ein erreichbarer Anbieter beweist noch nicht, dass der geplante Job lief.</p></div>
    <button type="button" className={styles.refresh} onClick={async()=>{
     if(refreshing)return;setRefreshing(true);
-    try{const data=await load();setRuns(data);setUpdated(new Date().toISOString());setError('')}
+    try{const data=await load();setRuns(data.runs);setScheduledRuns(data.scheduledRuns);
+     setWatchdogDays(data.watchdogDays);setUpdated(new Date().toISOString());setError('')}
     catch(e){setError(e.message||'Abfrage fehlgeschlagen')}
     finally{setRefreshing(false);setLoading(false)}
    }} disabled={refreshing}>{refreshing?'AKTUALISIERE …':'PROTOKOLL AKTUALISIEREN'}</button>
@@ -93,6 +107,7 @@ export default function SourceScanAuditPanel(){
   </div>
   {loading?<p className={styles.subtle}>Prüfprotokoll wird geladen …</p>:null}
   {!loading&&!runs.length?<p className={styles.subtle}>Noch keine protokollierten Prüfläufe. Bereits früher gespeicherte Tagesmessungen bleiben separat erhalten und werden nicht rückwirkend als neue Ausführungen ausgegeben.</p>:null}
+  <SourceCronReliabilityPanel scheduledRuns={scheduledRuns} watchdogDays={watchdogDays} nowMs={nowMs}/>
   {runs.length?<div className={styles.tableScroll}>
    <table aria-label="Letzte tatsächliche Quellenprüfungen">
     <thead><tr><th scope="col">Start</th><th scope="col">Auslöser</th><th scope="col">Ergebnis</th>
