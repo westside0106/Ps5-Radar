@@ -274,6 +274,10 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     assert.equal(await collector.getByRole('button',{name:'GOLD EDITION'}).getAttribute('aria-pressed'),'true','Foil preview must respond to selection');
     await collector.scrollIntoViewIfNeeded();
     await captureQa(page,engine.name(),width,'collector-card');
+    const motionButton=collector.getByRole('button',{name:/ANIMIERTE VIDEO-KARTE EXPORTIEREN|HOLO-VIDEO WIRD ERSTELLT/});
+    await motionButton.waitFor();
+    const motionAvailable=await collector.evaluate(()=>typeof MediaRecorder!=='undefined'&&typeof HTMLCanvasElement.prototype.captureStream==='function');
+    if(!motionAvailable)assert.ok(await motionButton.isDisabled(),'Unsupported video browsers must not attempt recording');
     const exportButton=collector.getByRole('button',{name:/KARTE ALS SVG EXPORTIEREN/});
     const empty=await collector.locator('select').isDisabled();
     if(empty)assert.ok(await exportButton.isDisabled(),'No PSN trophy data: export must stay disabled');
