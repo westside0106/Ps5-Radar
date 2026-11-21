@@ -54,9 +54,17 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   });
   await page.route('**/zentrale/api/source-history',async route=>{
    if(route.request().method()==='GET')return route.fulfill({json:{
-    configured:true,checks:[{source_id:'rawg',run_day:'2026-11-21',checked_at:'2026-11-21T09:00:00Z',status:'healthy',detail:'Probe erfolgreich.'}],
+    configured:true,
+    checks:[{source_id:'igdb',run_day:'2026-11-21',checked_at:'2026-11-21T03:34:00Z',
+     status:'error',detail:'Twitch OAuth 403',
+     latest_checked_at:'2026-11-21T03:56:00Z',latest_status:'healthy',latest_detail:'OAuth OK'}],
+    transitions:[{id:1,source_id:'igdb',run_day:'2026-11-21',
+     previous_status:'error',status:'healthy',previous_checked_at:'2026-11-21T03:34:00Z',
+     checked_at:'2026-11-21T03:56:00Z',detail:'OAuth OK'}],
     events:[{id:'rawg:outage:2026-11-20',source_id:'rawg',event:'outage',status:'error',detail:'Zwei problematische Prüfungen.',created_at:'2026-11-21T09:00:00Z',read_at:null}],
-    summary:[{source_id:'rawg',total:1,healthy:1,degraded:0,errors:0,last:{checked_at:'2026-11-21T09:00:00Z',status:'healthy'}}]
+    summary:[{source_id:'igdb',total:1,healthy:0,degraded:0,errors:1,
+     last:{checked_at:'2026-11-21T03:34:00Z',status:'error',
+      latest_checked_at:'2026-11-21T03:56:00Z',latest_status:'healthy'}}]
    }});
    if(route.request().method()==='PATCH')return route.fulfill({json:{ok:true,updated:true}});
    return route.fulfill({status:405});
@@ -211,6 +219,13 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
 
       await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] .ignored, section[aria-label="Datenquellen-Historie und Meldungen"] button').first().waitFor();
       assert.equal(await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] [role=listitem]').count(),84,'Six sources should render 14 calendar cells');
+       const historyPanel=page.locator('section[aria-label="Datenquellen-Historie und Meldungen"]');
+       assert.ok(await historyPanel.getByText('Erster Tagesbefund',{exact:false}).count(),'First day state missing');
+       assert.ok(await historyPanel.getByText('Zuletzt gespeichert',{exact:false}).count(),'Latest saved state missing');
+       assert.equal(await historyPanel.locator('[role=listitem][data-state=error][data-latest-state=healthy][data-changed=true]').count(),1,
+        'IGDB day should preserve first error and latest recovered state');
+       assert.equal(await historyPanel.locator('[aria-label="Gespeicherte Statuswechsel"] article').count(),1,
+        'History must show recovered IGDB transition');
       await page.getByRole('button',{name:'Als gelesen markieren'}).click();
       assert.ok(await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"]').getByText('Gelesen').count(),'Acknowledgement not reflected');
       const historySize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
