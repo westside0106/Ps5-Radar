@@ -5,6 +5,7 @@ import radar from '../../data/radar.json';
 import catalog from '../../data/ps-plus-catalog.json';
 import { prepareCatalog } from '../../lib/radar-catalog-view.mjs';
 import CatalogClient from './CatalogClient';
+import {plusDeadlineOverview} from '../../lib/ps-plus-deadline-plan.mjs';
 import './catalog.css';
 
 // Der Katalog wird zur Build-Zeit eingebunden, genau wie data/radar.json in
@@ -18,5 +19,5 @@ export default async function PlayStationPlusPage() {
   const jar = await cookies();
   const expected = sessionToken();
   if (!expected || !safeEqual(jar.get(COOKIE_NAME)?.value, expected)) redirect('/');
-  return <CatalogClient snapshot={prepareCatalog(catalog, radar)} />;
+  return <CatalogClient snapshot={prepareCatalog(catalog, radar)} deadlines={plusDeadlineOverview({radar,catalog})} />;
 }
