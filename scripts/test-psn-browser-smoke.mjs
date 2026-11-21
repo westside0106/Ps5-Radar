@@ -267,6 +267,30 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await activityFeed.getByRole('button',{name:'ALLE EREIGNISSE'}).click();
     await activityFeed.scrollIntoViewIfNeeded();
     await captureQa(page,engine.name(),width,'activity-feed');
+    const monitor=page.getByRole('region',{name:'PSN Monitor Sitzungsanalyse'});
+    await monitor.waitFor();
+    await monitor.locator('select').selectOption('UTC');
+    const monitorCsv=[
+     '"Date","Status","Game name"',
+     '"2026-11-19 10:00:00","online","CI Game Alpha"',
+     '"2026-11-19 11:00:00","online","CI Game Beta"',
+     '"2026-11-19 12:30:00","offline",""'
+    ].join('\n');
+    const uploadMonitor=()=>monitor.locator('input[type="file"]').setInputFiles({
+     name:'synthetic-monitor.csv',mimeType:'text/csv',buffer:Buffer.from(monitorCsv,'utf8')
+    });
+    await uploadMonitor();
+    await monitor.getByText('2 abgeschlossene Intervalle',{exact:false}).waitFor();
+    await monitor.getByRole('button',{name:/PRÜFUNG BESTÄTIGEN/}).click();
+    await monitor.getByText('2 neue beobachtete Intervalle importiert.',{exact:false}).waitFor();
+    const firstSessions=await page.evaluate(()=>JSON.parse(localStorage.getItem('psn-observed-game-sessions-v1')||'[]'));
+    assert.equal(firstSessions.length,2,'Monitor import should persist exactly two intervals');
+    assert.deepEqual(firstSessions.map(x=>x.minutes),[60,90],'Monitor should preserve actual observed intervals');
+    await uploadMonitor();
+    await monitor.getByRole('button',{name:/PRÜFUNG BESTÄTIGEN/}).click();
+    await monitor.getByText('0 neue beobachtete Intervalle importiert.',{exact:false}).waitFor();
+    await monitor.scrollIntoViewIfNeeded();
+    await captureQa(page,engine.name(),width,'monitor-import');
     await page.locator('.psn-chronicle').waitFor();
     const collector=page.getByRole('region',{name:'Trophy Collector Card Studio'});
     await collector.waitFor();
