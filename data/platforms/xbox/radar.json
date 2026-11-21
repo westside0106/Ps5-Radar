@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-11-20T16:20:23.725Z",
+  "checkedAt": "2026-11-21T15:34:40.389Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 2887,
+    "count": 2879,
     "views": {
       "deals": {
-        "expected": 2441,
-        "observed": 2441,
-        "count": 2441,
+        "expected": 2433,
+        "observed": 2433,
+        "count": 2433,
         "complete": true,
         "attempts": 1
       },
@@ -46,8 +46,8 @@
       },
       "ubisoft-plus": {
         "expected": 117,
-        "observed": 113,
-        "count": 113,
+        "observed": 112,
+        "count": 112,
         "complete": false,
         "attempts": 2
       }
@@ -57,12 +57,12 @@
       "gamepass-premium: keine bestaetigte Quelle (Durchlauf 1: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten)",
       "gamepass-ultimate: 693/694 eindeutig belegt, Durchlauf 1: 693/694 eindeutige IDs; Durchlauf 2: 693/694 eindeutige IDs",
       "ea-play: keine bestaetigte Quelle (Durchlauf 1: ea-play: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: ea-play: keine bestaetigte Anzahl und keine Filterkarten)",
-      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 113/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
+      "ubisoft-plus: 112/117 eindeutig belegt, Durchlauf 1: 112/117 eindeutige IDs; Durchlauf 2: 112/117 eindeutige IDs",
       "gamepass-essential: 0/? Karten gesehen",
       "gamepass-premium: 0/? Karten gesehen",
       "gamepass-ultimate: 693/694 Karten gesehen",
       "ea-play: 0/? Karten gesehen",
-      "ubisoft-plus: 113/117 Karten gesehen"
+      "ubisoft-plus: 112/117 Karten gesehen"
     ]
   },
   "evidence": [
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-20T16:20:23.725Z",
+      "observedAt": "2026-11-21T15:34:40.389Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-20T16:20:23.725Z",
+      "observedAt": "2026-11-21T15:34:40.389Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-20T16:20:23.725Z",
+      "observedAt": "2026-11-21T15:34:40.389Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -12669,23 +12669,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9nqgc6q0d00h",
-      "id": "9nqgc6q0d00h",
-      "title": "Dont be Afraid 2: Escape the Nightmare",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/dont-be-afraid-2-escape-the-nightmare/9nqgc6q0d00h",
-      "cover": "https://store-images.s-microsoft.com/image/apps.31365.13774553765993864.600d3ed5-6c91-43f0-a3b4-34388d4bbeb8.d837ef21-eab5-44a4-9e49-f43302e5fe6a?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1199,
-      "regularPriceMinor": 1499,
-      "genres": [
-        "Andere",
-        "Rätsel & Wissen"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nljvl7rc4jr",
       "id": "9nljvl7rc4jr",
       "title": "Doodle Taxi",
@@ -13746,22 +13729,6 @@
       "regularPriceMinor": 1499,
       "genres": [
         "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9mxfrrzgngb7",
-      "id": "9mxfrrzgngb7",
-      "title": "Dungeon Bricker",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/dungeon-bricker/9mxfrrzgngb7",
-      "cover": "https://store-images.s-microsoft.com/image/apps.50743.13891118378377004.442035cb-9083-413b-87cf-0ea2870f53bb.84d3533a-9858-455a-b0b6-73b31a0996f9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 239,
-      "regularPriceMinor": 299,
-      "genres": [
-        "Rätsel & Wissen"
       ],
       "services": []
     },
@@ -15866,22 +15833,6 @@
       "regularPriceMinor": 1549,
       "genres": [
         "Simulation"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9p9m35wvgck9",
-      "id": "9p9m35wvgck9",
-      "title": "FATAL FURY: City of the Wolves",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/fatal-fury-city-of-the-wolves/9p9m35wvgck9",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29286.14135920026106660.b06e746a-f873-48df-a492-ee166984619a.cdca7018-af3f-4537-a714-46e90c6b54e5?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 499,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Kampfspiele"
       ],
       "services": []
     },
@@ -21558,22 +21509,6 @@
       "genres": [
         "Klassiker",
         "Rollenspiele"
-      ],
-      "services": []
-    },
-    {
-      "key": "xbox:product:9n2qmt5kj917",
-      "id": "9n2qmt5kj917",
-      "title": "Ice Cream Simulator",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/ice-cream-simulator/9n2qmt5kj917",
-      "cover": "https://store-images.s-microsoft.com/image/apps.13822.13947066138278174.f92a0b6c-30ed-4733-ae00-634af916aac3.8926c62a-0900-41ca-9fb8-09bb5822fc16?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 899,
-      "regularPriceMinor": 999,
-      "genres": [
-        "Simulation"
       ],
       "services": []
     },
@@ -29973,23 +29908,6 @@
       ]
     },
     {
-      "key": "xbox:product:9pkcvf4pt070",
-      "id": "9pkcvf4pt070",
-      "title": "No More Room in Hell 2 - Deluxe Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/no-more-room-in-hell-2-deluxe-edition/9pkcvf4pt070",
-      "cover": "https://store-images.s-microsoft.com/image/apps.13337.14264981923483901.750f5bb1-32c8-44f9-b8a9-22b6e2be5595.c0a766eb-c65d-4486-a988-001d8e42ddcc?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 3824,
-      "regularPriceMinor": 4499,
-      "genres": [
-        "Action & Abenteuer",
-        "Shooter"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nc1rx7bmwhp",
       "id": "9nc1rx7bmwhp",
       "title": "No Sleep For Kaname Date - From AI: THE SOMNIUM FILES",
@@ -35868,22 +35786,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9ph4hzpmrgst",
-      "id": "9ph4hzpmrgst",
-      "title": "SAMURAI SHODOWN DELUXE EDITION",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/samurai-shodown-deluxe-edition/9ph4hzpmrgst",
-      "cover": "https://store-images.s-microsoft.com/image/apps.49156.14238524422201694.804175dd-0498-42a1-8d4a-87733fd0af40.783f2d6c-a0a3-45c8-bdc7-13050c58e4cd?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1599,
-      "regularPriceMinor": 7999,
-      "genres": [
-        "Kampfspiele"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9pgcvr1c0mzh",
       "id": "9pgcvr1c0mzh",
       "title": "SAND LAND",
@@ -36919,22 +36821,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9pjz5nt47lss",
-      "id": "9pjz5nt47lss",
-      "title": "Shelterra the Skyworld",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/shelterra-the-skyworld/9pjz5nt47lss",
-      "cover": "https://store-images.s-microsoft.com/image/apps.32885.14273308789414527.1c798118-b690-4d51-8982-a3cad2c8e3fa.3170cc62-ad8a-4f6a-9672-64861c63719f?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1799,
-      "regularPriceMinor": 1999,
-      "genres": [
-        "Rollenspiele"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:9p7wx4xl1pwt",
@@ -42996,22 +42882,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9pp3cjxfkc9v",
-      "id": "9pp3cjxfkc9v",
-      "title": "THE KING OF FIGHTERS XV Ultimate Edition",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/the-king-of-fighters-xv-ultimate-edition/9pp3cjxfkc9v",
-      "cover": "https://store-images.s-microsoft.com/image/apps.36030.14336649283191035.8d9f67b8-9f4b-4e1a-83aa-195c20019441.8f457239-e5e6-4c16-8d06-726e76a3e9d0?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": 5999,
-      "genres": [
-        "Kampfspiele"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9nd5r4j0g5lv",
       "id": "9nd5r4j0g5lv",
       "title": "The Knightling",
@@ -43673,7 +43543,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ubisoft-plus:ubisoft-plus",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -47116,22 +46985,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:bw9tffj50mkv",
-      "id": "bw9tffj50mkv",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": null,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bsxsl6wbj0v7",
       "id": "bsxsl6wbj0v7",
       "title": "Viva Piñata",
@@ -47141,6 +46994,22 @@
         "xbox-series"
       ],
       "priceMinor": 1499,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bw9tffj50mkv",
+      "id": "bw9tffj50mkv",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
+      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": null,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
