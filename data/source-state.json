@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T03:52:09.959Z",
+  "checkedAt": "2026-11-21T04:05:16.616Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -138,7 +138,7 @@
       "label": "NOVEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-11-21T03:52:41.861Z",
+      "checkedAt": "2026-11-21T04:05:45.116Z",
       "parsed": 5,
       "accepted": [
         "Dead Island 2",
@@ -153,12 +153,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 678279
+    "bytes": 679299
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 244997,
+    "bytes": 245123,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -171,7 +171,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173372,
+    "bytes": 173384,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
