@@ -46,10 +46,12 @@ test('scheduled recording performs independent historical reads and idempotent c
  const calls=[];
  const fetcher=async(url,options={})=>{
   calls.push({url,options});
+  if(options.method==='PATCH')return new Response('[]',{status:200});
   if(options.method==='POST')return new Response(
    String(url).includes('radar_source_health_checks')?options.body:'[]',{status:201}
   );
   if(String(url).includes('radar_source_health_events'))return new Response('[]',{status:200});
+  if(String(url).includes('radar_source_health_transitions'))return new Response('[]',{status:200});
   if(String(url).includes('radar_source_health_checks'))
    return new Response(JSON.stringify([history('psn','2026-11-20','error')]),{status:200});
   throw Error('unexpected');
@@ -60,7 +62,7 @@ test('scheduled recording performs independent historical reads and idempotent c
   check('steamgriddb','healthy'),check('profile','healthy'),check('monitor','healthy')
  ]};
  const saved=await storeScheduledHealth(config,report,{fetcher});
- assert.deepEqual(saved,{recorded:6,inserted:6,incidentCandidates:1,day});
+ assert.deepEqual(saved,{recorded:6,inserted:6,updated:0,incidentCandidates:1,day});
  const writes=calls.filter(c=>c.options.method==='POST');
  assert.equal(writes.length,2);
  assert.ok(writes.every(x=>x.options.headers.Prefer.includes('ignore-duplicates')));
@@ -83,11 +85,13 @@ test('manual rerun on the same UTC day does not manufacture a second daily incid
  const writeTables=[];
  const fetcher=async(url,options={})=>{
   const name=String(url);
+  if(options.method==='PATCH')return new Response('[]',{status:200});
   if(options.method==='POST'){
    writeTables.push(name);
    return new Response('[]',{status:201}); // Unique-key conflict, zero newly inserted daily rows.
   }
   if(name.includes('radar_source_health_events'))return new Response('[]',{status:200});
+  if(name.includes('radar_source_health_transitions'))return new Response('[]',{status:200});
   if(name.includes('radar_source_health_checks'))return new Response(JSON.stringify([history('psn','2026-11-20','error')]),{status:200});
   throw Error('Unexpected data request');
  };
@@ -97,6 +101,41 @@ test('manual rerun on the same UTC day does not manufacture a second daily incid
   check('steamgriddb','healthy'),check('profile','healthy'),check('monitor','healthy')
  ]};
  const result=await storeScheduledHealth(config,report,{fetcher});
- assert.deepEqual(result,{recorded:6,inserted:0,incidentCandidates:0,day});
+ assert.deepEqual(result,{recorded:6,inserted:0,updated:0,incidentCandidates:0,day});
  assert.equal(writeTables.length,1,'An existing day must not produce another incident write');
+});
+
+test('latest source probes are conditionally updated without rewriting the first day reading',async()=>{
+ const updates=[];
+ const initial={
+  source_id:'igdb',run_day:'2026-11-21',checked_at:'2026-11-21T03:34:00.999Z',
+  status:'error',detail:'OAuth 403',latest_status:'error',latest_checked_at:'2026-11-21T03:34:00.999Z'
+ };
+ const fetcher=async(url,options={})=>{
+  const path=String(url);
+  if(options.method==='POST')return new Response('[]',{status:201});
+  if(options.method==='PATCH'){
+   updates.push({url:path,body:JSON.parse(options.body)});
+   return new Response(path.includes('source_id=eq.igdb')?JSON.stringify([initial]):'[]',{status:200});
+  }
+  if(path.includes('radar_source_health_transitions'))return new Response('[]',{status:200});
+  if(path.includes('radar_source_health_events'))return new Response('[]',{status:200});
+  if(path.includes('radar_source_health_checks'))return new Response(JSON.stringify([initial]),{status:200});
+  throw Error('Unexpected storage read');
+ };
+ const report={checkedAt:'2026-11-21T03:56:00.000Z',checks:[
+  check('psn','healthy'),check('igdb','healthy','Twitch OAuth OK'),
+  check('rawg','healthy'),check('steamgriddb','healthy'),
+  check('profile','healthy'),check('monitor','healthy')
+ ]};
+ const result=await storeScheduledHealth({base:'https://example.supabase.co/rest/v1/',secret:'server_only'},report,{fetcher});
+ assert.deepEqual(result,{recorded:6,inserted:0,updated:1,incidentCandidates:0,day:'2026-11-21'});
+ assert.equal(updates.length,6);
+ const igdb=updates.find(x=>x.url.includes('source_id=eq.igdb'));
+ assert.equal(igdb.body.latest_status,'healthy');
+ assert.equal(igdb.body.latest_checked_at,report.checkedAt);
+ assert.equal(Object.keys(igdb.body).some(key=>['status','checked_at','detail'].includes(key)),false,
+  'First-day columns must never be updated');
+ assert.ok(igdb.url.includes('latest_checked_at.lt.'),'Stale or concurrent observations must not overwrite newer results');
+ assert.ok(igdb.url.includes('run_day=eq.2026-11-21'));
 });
