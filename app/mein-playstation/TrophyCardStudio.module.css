@@ -21,3 +21,5 @@
 @media(max-width:810px){.studio{grid-template-columns:1fr}.info{gap:13px}.stage{padding:13px 0 9px}.card{width:min(100%,330px)}}
 @media(max-width:390px){.studio{padding:13px}.card{transform:none}}
 @media(prefers-reduced-motion:reduce){.studio *{transition:none!important;transform:none!important}}
+
+.crest svg{color:var(--foil);filter:drop-shadow(0 0 14px #ffffff42)}
