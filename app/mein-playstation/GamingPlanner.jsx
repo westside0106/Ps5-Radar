@@ -10,6 +10,7 @@ import OrderHistoryIntelligence from './OrderHistoryIntelligence';
 import PlatinumTrophyGoals,{initialTrophyGoals} from './PlatinumTrophyGoals';
 import {COLLECTIONS_KEY,normalizeCollections} from '../../lib/psn-game-collections.mjs';
 import {TROPHY_DATES_KEY,TROPHY_DATES_EVENT,normalizeTrophyDates,combineTrophyDates} from '../../lib/psn-trophy-heatmap.mjs';
+import {TROPHY_GUIDES_KEY,TROPHY_GUIDES_EVENT,normalizeTrophyGuides,mergeTrophyGuides} from '../../lib/psn-trophy-guide-links.mjs';
 const KEY='psn-game-planner-v1';
 const HISTORY_KEY='psn-playtime-snapshots-v1';
 const CUSTOM_KEY='psn-custom-games-v1';
@@ -134,7 +135,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
  }
  function exportBackup(){
   const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback))}catch{return fallback}};
-  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),coverUrls:read('psn-cover-urls-v1',{}),manualGames:read(CUSTOM_KEY,[]),collections:read(COLLECTIONS_KEY,[]),trophyDates:normalizeTrophyDates(read(TROPHY_DATES_KEY,[])),trophyTargets:read('psn-trophy-targets-v1',{}),platinumChecks:read('psn-platinum-checks-v1',{})},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),coverUrls:read('psn-cover-urls-v1',{}),manualGames:read(CUSTOM_KEY,[]),collections:read(COLLECTIONS_KEY,[]),trophyDates:normalizeTrophyDates(read(TROPHY_DATES_KEY,[])),trophyTargets:read('psn-trophy-targets-v1',{}),trophyGuides:normalizeTrophyGuides(read(TROPHY_GUIDES_KEY,{})),platinumChecks:read('psn-platinum-checks-v1',{})},null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='ps5-radar-komplett-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),500);
   setBackupMessage('Vollständiges lokales Backup erstellt. Datei enthält deine persönlichen Notizen und Trophäenziele; sicher aufbewahren.');
  }
@@ -171,6 +172,10 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
     }
     const fields=[['covers','psn-cover-preferences-v1',v=>v==='steamgriddb'||v==='original'],['coverUrls','psn-cover-urls-v1',v=>typeof v==='string'&&/^https:\/\/[a-z0-9.-]+\.steamgriddb\.com\//i.test(v)],['trophyTargets','psn-trophy-targets-v1',v=>Array.isArray(v)],['platinumChecks','psn-platinum-checks-v1',v=>Array.isArray(v)]];
     for(const [field,key,validate] of fields){const obj=raw[field];if(!obj||typeof obj!=='object'||Array.isArray(obj))continue;const cleaned={};for(const [id,value] of Object.entries(obj).slice(0,3000)){if(!id||id.length>180||!validate(value))continue;cleaned[id]=Array.isArray(value)?value.filter(x=>typeof x==='string'&&x.length<100).slice(0,400):value}let existing={};try{existing=JSON.parse(localStorage.getItem(key)||'{}')}catch{}changes.push([key,{...(existing&&typeof existing==='object'&&!Array.isArray(existing)?existing:{}),...cleaned}])}
+    if(raw.trophyGuides&&typeof raw.trophyGuides==='object'&&!Array.isArray(raw.trophyGuides)){
+     let existing={};try{existing=JSON.parse(localStorage.getItem(TROPHY_GUIDES_KEY)||'{}')}catch{}
+     changes.push([TROPHY_GUIDES_KEY,mergeTrophyGuides(existing,raw.trophyGuides)]);
+    }
    }
    // Validate all data before applying changes; avoid silently discarding existing local settings.
    const previous=changes.map(([key])=>[key,localStorage.getItem(key)]);
@@ -178,6 +183,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
    catch(error){for(const [key,value] of previous){if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value)}throw error}
    setNotes(merged);const restored=changes.find(x=>x[0]===HISTORY_KEY);if(restored)setHistory(restored[1]);const manual=changes.find(x=>x[0]===CUSTOM_KEY);if(manual)setCustomGames(manual[1]);
    window.dispatchEvent(new Event(TROPHY_DATES_EVENT));
+   window.dispatchEvent(new Event(TROPHY_GUIDES_EVENT));
    window.dispatchEvent(new Event('psn-profile-local-change'));
    setImportText('');setBackupMessage(Object.keys(clean).length+' Spieleinträge importiert'+(raw.version===2?' · inklusive unterstützter weiterer Daten':'')+'. Für Cover-/Trophäen-Zielanzeigen die Seite neu laden.');
   }catch{setBackupMessage('Import fehlgeschlagen – Dateiformat oder Browser-Speicher prüfen. Vorhandene Daten sollten unverändert bleiben.')}
