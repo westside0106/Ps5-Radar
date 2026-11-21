@@ -1,5 +1,5 @@
 'use client';
-import {useMemo,useState} from 'react';
+import {useMemo,useState,useEffect} from 'react';
 import {buildPlaytimeInsights,buildTrophyInsights,playDurationMinutes} from '../../lib/psn-advanced-stats.mjs';
 import styles from './CommandDeck.module.css';
 
@@ -17,6 +17,7 @@ function lastPlayed(game){
 function Picture({game,className}){
  const [failed,setFailed]=useState(false);
  const src=imageOf(game);
+ useEffect(()=>setFailed(false),[src]);
  return <div className={className}>{src&&!failed?<img key={src} src={src} loading="lazy" decoding="async" referrerPolicy="no-referrer" alt="" onError={()=>setFailed(true)}/>:<span className={styles.imageFallback}>PS / R</span>}</div>;
 }
 function goTo(id){
@@ -65,9 +66,9 @@ export default function CommandDeck({played=[],titles=[],notes={}}){
    </div>
   </div>
   <div className={styles.metrics} aria-label="PSN Kennzahlen">
-   <div className={styles.metric}><small>01 / GESAMTSPIELZEIT</small><strong>{displayHours(play.totalMinutes)}</strong><span>{play.knownGames} Spiele mit Messwert</span></div>
-   <div className={styles.metric}><small>02 / FREIGESCHALTET</small><strong>{totalTrophies.toLocaleString('de-DE')}</strong><span>Trophäen aus {trophy.trophySets} Listen</span></div>
-   <div className={styles.metric}><small>03 / PLATIN-SETS</small><strong>{trophy.platinumSets.toLocaleString('de-DE')}</strong><span>Sony-gemeldete Platin-Trophäen</span></div>
+   <div className={styles.metric}><small>01 / GESAMTSPIELZEIT</small><strong>{play.knownGames?displayHours(play.totalMinutes):'—'}</strong><span>{play.knownGames} Spiele mit Messwert</span></div>
+   <div className={styles.metric}><small>02 / FREIGESCHALTET</small><strong>{trophy.trophySets?totalTrophies.toLocaleString('de-DE'):'—'}</strong><span>Trophäen aus {trophy.trophySets} Listen</span></div>
+   <div className={styles.metric}><small>03 / PLATIN-SETS</small><strong>{trophy.trophySets?trophy.platinumSets.toLocaleString('de-DE'):'—'}</strong><span>Sony-gemeldete Platin-Trophäen</span></div>
    <div className={styles.metric}><small>04 / DEINE MISSIONEN</small><strong>{planned.toLocaleString('de-DE')}</strong><span>Spiele mit persönlichem Status</span></div>
   </div>
   <div className={styles.bottom}>
