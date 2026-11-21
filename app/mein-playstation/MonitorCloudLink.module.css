@@ -1,0 +1,9 @@
+.root{display:grid;gap:11px;padding:14px;border:1px solid #448c9a;border-radius:11px;background:linear-gradient(130deg,#0b3851c9,#102037);color:#eaf9ff;min-width:0}
+.heading{display:flex;align-items:center;justify-content:space-between;gap:10px}.heading>div{display:grid;gap:6px}.heading small{font-size:9px;letter-spacing:.14em;color:#8ee4ed;font-weight:850}.heading strong{font-size:12px;letter-spacing:.07em}.indicator{width:10px;height:10px;flex:none;border-radius:50%;background:#43d4ac;box-shadow:0 0 14px #43d4ac88}
+.root>p{font-size:11px;line-height:1.6;color:#bad3e2;margin:0}.switch{display:flex;align-items:center;gap:10px;color:#c9e4ef;font-size:11px;cursor:pointer;line-height:1.45}
+.switch input{width:18px;height:18px;flex:none;accent-color:#57cfe8}
+.actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px}.actions button{min-height:38px;padding:9px 11px;border:1px solid #a0ebf9;border-radius:8px;background:#8ce2f2;color:#05283a;font-size:10px;font-weight:850;cursor:pointer}
+.actions button:disabled{opacity:.7;cursor:not-allowed}.actions span{font-size:10px;line-height:1.4;color:#b9d7e8}.root .status{font-size:11px;color:#a6f0d1}.root .note{font-size:10px;line-height:1.6;color:#8eafc7}
+.root :focus-visible{outline:3px solid #d2fbff;outline-offset:3px}
+@media(max-width:410px){.root{padding:12px}.heading strong{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.root *{transition:none!important}}
