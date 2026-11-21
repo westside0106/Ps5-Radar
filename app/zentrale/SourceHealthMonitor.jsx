@@ -88,6 +88,7 @@ export default function SourceHealthMonitor(){
      <header><span className={styles.id}>{item.id.toUpperCase()}</span><span className={styles.state}>{labels[item.state]||'Unbekannt'}</span></header>
      <h3>{item.name}</h3>
      <p>{item.detail}</p>
+     {item.nextStep?<div className={styles.guidance}><strong>NÄCHSTER SCHRITT</strong><span>{item.nextStep}</span></div>:null}
      {item.lastDataAt?<small>DATENZEIT: {localTime(item.lastDataAt)}{Number.isFinite(item.ageMinutes)?' · '+item.ageMinutes+' min alt':''}</small>:<small>KEIN BESTÄTIGTER DATENZEITPUNKT</small>}
     </article>)}
    </div>
