@@ -12,7 +12,7 @@ Jeder Lauf prüft PSN, IGDB, RAWG, SteamGridDB, Supabase-Profil und Supabase-Mon
 - `unconfigured` ist kein Anbieter-Ausfall und erzeugt keine Störungsmeldung. Fehlende Tage werden nicht als gesund eingestuft.
 - Wiederholte Aufrufe am selben Tag erzeugen durch `on_conflict=ignore-duplicates` keine Duplikate.
 
-Tageshistorie ist **keine** Echtzeit-SLA-Erfassung. iOS-Push, E-Mail und externe Versanddienste sind nicht implementiert. Vorliegende Meldungen sind dauerhaft gespeichert, bis eine spätere Aufbewahrungsregel ergänzt wird.
+Tageshistorie ist **keine** Echtzeit-SLA-Erfassung. Optionaler iPhone-Push über ntfy ist in `docs/source-health-ntfy-push.md` dokumentiert und über einen privaten, zufällig erzeugten Topic konfiguriert. E-Mail-Versand ist nicht implementiert. Vorliegende Meldungen sind dauerhaft gespeichert, bis eine spätere Aufbewahrungsregel ergänzt wird.
 
 ## Datenmodell
 `public.radar_source_health_checks`: Quelle, UTC-Tag, Prüfzeitpunkt, Status, kurze Diagnose und optionaler Datenzeitpunkt.

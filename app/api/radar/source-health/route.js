@@ -1,6 +1,7 @@
 import {timingSafeEqual} from 'node:crypto';
 import {checkSourceHealth} from '../../../../lib/source-health.mjs';
 import {sourceHistoryConfig,storeScheduledHealth} from '../../../../lib/source-health-history.mjs';
+import {deliverPendingNtfy,ntfyConfig} from '../../../../lib/ntfy-source-push.mjs';
 
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
@@ -18,7 +19,12 @@ export async function GET(request){
  try{
   const report=await checkSourceHealth({useCache:false});
   const saved=await storeScheduledHealth(config,report);
-  return Response.json({ok:true,...saved,checkedAt:report.checkedAt,summary:report.summary},{headers:secure});
+  let push;
+  try{push=await deliverPendingNtfy(config,ntfyConfig(),{limit:5})}
+  catch{push={configured:Boolean(ntfyConfig()),attempted:0,accepted:0,failed:1,deliveryError:true}}
+  // A failure of the optional notification service must not erase the completed
+  // source-health scan or misrepresent an unsuccessful push as delivered.
+  return Response.json({ok:true,...saved,checkedAt:report.checkedAt,summary:report.summary,push},{headers:secure});
  }catch{
   return Response.json({error:'Scheduled status scan failed'},{status:503,headers:secure});
  }

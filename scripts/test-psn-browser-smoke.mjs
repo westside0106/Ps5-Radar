@@ -61,12 +61,19 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    if(route.request().method()==='PATCH')return route.fulfill({json:{ok:true,updated:true}});
    return route.fulfill({status:405});
   });
+  await page.route('**/zentrale/api/ntfy',async route=>{
+   if(route.request().method()==='GET')return route.fulfill({json:{
+    configured:true,provider:'ntfy',server:'https://ntfy.sh',topic:'ps5-radar-ci-test-topic-0123456789abcde'
+   }});
+   if(route.request().method()==='POST')return route.fulfill({json:{accepted:true}});
+   return route.fulfill({status:405});
+  });
   const clientErrors=[];
   page.on('pageerror',error=>clientErrors.push(String(error?.stack||error?.message||error)));
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/api/radar/source-health','/api/radar/alerts/check']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
@@ -169,6 +176,10 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       const healthSize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
       assert.ok(healthSize.scroll<=healthSize.client+2,'Health dashboard overflows viewport: '+JSON.stringify(healthSize));
       assert.ok(await page.getByRole('button',{name:'ERNEUT PRÜFEN'}).count(),'Source recheck control missing');
+      await page.getByRole('button',{name:'TEST-PUSH SENDEN'}).waitFor();
+      await page.getByRole('button',{name:'TEST-PUSH SENDEN'}).click();
+      await page.getByText('ntfy hat den Test angenommen.',{exact:false}).waitFor();
+      assert.equal(await page.locator('section[aria-label="ntfy Push-Benachrichtigungen"]').count(),1,'Push configuration missing');
       await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] .ignored, section[aria-label="Datenquellen-Historie und Meldungen"] button').first().waitFor();
       assert.equal(await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] [role=listitem]').count(),84,'Six sources should render 14 calendar cells');
       await page.getByRole('button',{name:'Als gelesen markieren'}).click();
