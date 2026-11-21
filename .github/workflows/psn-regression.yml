@@ -24,6 +24,8 @@ jobs:
       - run: npm ci
       - name: Test PSN and metadata integrations (mocked APIs; no secrets)
         run: npm run test:psn
+      - name: Verify Ubuntu monitor uploader (no network)
+        run: python3 -m unittest discover -s scripts -p 'test_psn_monitor_uploader.py'
       - name: Verify production build
         run: npm run build
       - name: Install browser
