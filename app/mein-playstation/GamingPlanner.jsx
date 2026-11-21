@@ -6,6 +6,7 @@ import GamingChronicle from './GamingChronicle';
 import AdvancedStats from './AdvancedStats';
 import CommandDeck from './CommandDeck';
 import TrophyCardStudio from './TrophyCardStudio';
+import OrderHistoryIntelligence from './OrderHistoryIntelligence';
 import PlatinumTrophyGoals,{initialTrophyGoals} from './PlatinumTrophyGoals';
 import {COLLECTIONS_KEY,normalizeCollections} from '../../lib/psn-game-collections.mjs';
 import {TROPHY_DATES_KEY,TROPHY_DATES_EVENT,normalizeTrophyDates,combineTrophyDates} from '../../lib/psn-trophy-heatmap.mjs';
@@ -228,6 +229,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
   <ProfileSync/>
   <div className="psn-planner-box"><h4>Backup &amp; Wiederherstellung</h4><p>Speichere deine eigenen Angaben als Datei oder importiere sie auf einem anderen Gerät.</p><button className="psn-planner-button" type="button" onClick={exportBackup}>Komplettes Backup sichern</button><label>Backup-Datei importieren<input type="file" accept=".json,application/json" onChange={async e=>{const f=e.target.files?.[0];if(!f)return;if(f.size>1500000){setBackupMessage('Datei zu groß.');return}setImportText(await f.text())}}/></label><button className="psn-planner-button" type="button" disabled={!importText} onClick={importBackup}>Backup einspielen</button>{backupMessage?<p role="status">{backupMessage}</p>:null}</div>
 </div></details>
+  <details id="psn-order-history-fold" className="psn-tools-fold"><summary>Kaufhistorie &amp; Ausgabenanalyse <span>CSV-/JSON-Import ohne neue PSN-Anmeldung</span></summary><div className="psn-tools-fold-body"><OrderHistoryIntelligence/></div></details>
   <p className="psn-planner-foot">Wichtig: Die PSN-Spielzeit ist kumuliert, keine Sitzungs-Historie. Trophäen-100 % bedeutet nicht automatisch Platin. Persönliche Angaben werden lokal gespeichert; eine Cloud-Sicherung ist optional. PlayStation liefert hier keine vollständige Sitzungs-Historie.</p>
  </section>;
 }

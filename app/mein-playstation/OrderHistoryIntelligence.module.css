@@ -1,0 +1,36 @@
+.root{isolation:isolate;position:relative;display:grid;gap:16px;padding:clamp(15px,2.9vw,27px);margin:20px 0;border:1px solid #627092;border-radius:19px;background:radial-gradient(ellipse at 100% 0%,#7b5aa337,transparent 50%),linear-gradient(135deg,#141c31,#091728 77%);color:#f3f7ff;overflow:hidden;min-width:0}
+.root *{box-sizing:border-box}.head{display:flex;justify-content:space-between;align-items:start;gap:15px;flex-wrap:wrap}
+.kicker{font-size:10px;letter-spacing:.15em;font-weight:800;color:#b9b4ff}.head h4{font-size:clamp(24px,3.8vw,40px)!important;line-height:1.06!important;margin:9px 0 12px!important;font-weight:950!important;letter-spacing:-.055em!important}.head h4 em{font-style:normal;color:#bbaaff;background:linear-gradient(90deg,#cef2ff,#9fbcff,#e5a9f9);background-clip:text;-webkit-text-fill-color:transparent}
+.head p{margin:0;font-size:12px;line-height:1.75;color:#bac7df;max-width:68ch}.head p a{color:#aad5ff;text-decoration:underline;text-underline-offset:3px}.security{border:1px solid #51856e;color:#aff5d8;background:#15372e76;border-radius:25px;padding:8px 11px;white-space:nowrap;font-size:10px;font-weight:850;letter-spacing:.09em}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:end}.fileInput{display:grid;gap:6px;min-width:0;font-size:10px;letter-spacing:.085em;color:#b3c8e0;font-weight:750}
+.fileInput input{max-width:100%;min-height:42px;background:#182d49;border:1px solid #4a6a93;color:#f2f5ff;border-radius:8px;padding:8px;font-size:11px}
+.fileInput input::file-selector-button{background:#88d1ff;color:#09162a;border:0;border-radius:5px;padding:8px 10px;margin-right:10px;font-weight:800;cursor:pointer}
+.currency{display:grid;gap:6px;font-size:10px;color:#b3c8e0;font-weight:750}.currency select{background:#182d49;border:1px solid #4a6a93;color:#f2f5ff;border-radius:8px;height:43px;padding:6px 11px;min-width:116px;color-scheme:dark}
+.clear{background:transparent;color:#eec2cf;border:1px solid #946176;border-radius:8px;min-height:43px;padding:8px 12px;font-weight:800;font-size:11px;cursor:pointer}
+.disclaimer{font-size:10px;line-height:1.7;color:#a4b8d2;margin:0}.message{border:1px solid #507e90;background:#183649;padding:9px 12px;font-size:11px;color:#cfe8ff;border-radius:7px;line-height:1.5}
+.loaded{display:grid;gap:13px}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.metrics>div{display:grid;align-content:start;gap:8px;background:#172942;border:1px solid #4d668a;border-radius:10px;padding:14px;min-width:0}
+.metrics small{font-size:9px;letter-spacing:.1em;color:#a7c6ea;font-weight:850}.metrics strong{font-size:clamp(19px,2.6vw,30px);font-weight:900;letter-spacing:-.05em;font-variant-numeric:tabular-nums;overflow-wrap:anywhere;line-height:1.1}.metrics span{font-size:10px;line-height:1.5;color:#acc1d6}
+.columns{display:grid;grid-template-columns:1.25fr .75fr;gap:12px}.panel,.transactions{border:1px solid #3a5575;border-radius:11px;padding:15px;background:#0e2036;min-width:0}
+.panelTitle{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:15px}.panelTitle h5{font-size:13px;font-weight:950;margin:0;letter-spacing:.07em}.panelTitle span{color:#9fbbd2;font-size:10px}.panelTitle button{background:transparent;color:#aad8ff;border:0;text-decoration:underline;cursor:pointer;font-size:11px;margin-left:6px}
+.chart{display:grid;gap:10px}.barLine{display:grid;grid-template-columns:58px minmax(0,1fr) 90px;align-items:center;gap:9px}.barLine>span{font-size:10px;color:#afc6dd}.barLine strong{text-align:right;font-size:10px;color:#e6f5ff;white-space:nowrap;font-variant-numeric:tabular-nums}
+.track{background:#243650;border-radius:20px;height:9px;overflow:hidden}.track i{height:100%;display:block;border-radius:20px;background:linear-gradient(90deg,#6f85ed,#a5deff)}
+.classes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.classes button{display:flex;align-items:center;justify-content:space-between;gap:6px;border:1px solid #44617e;border-radius:8px;padding:11px 9px;background:#162d49;color:#d5e8ff;cursor:pointer;font-size:11px;min-width:0}.classes button[aria-pressed=true]{border-color:#a0c7ff;background:#2c4a70}.classes button>span{display:flex;gap:7px;align-items:center;min-width:0}.bullet{width:7px;height:7px;background:#8eafff;border-radius:50%;flex:none}.classes strong{font-variant-numeric:tabular-nums}.footnote{color:#8faac6;font-size:10px;line-height:1.6;margin:15px 0 0}
+.entries{display:grid;gap:0}.entries article{display:grid;grid-template-columns:30px minmax(0,1fr) auto;align-items:center;gap:12px;border-top:1px solid #324a64;padding:12px 0}.entryIndex{color:#789dbd;font-size:10px}.entryName{min-width:0;display:grid;gap:5px}.entryName strong{font-size:12px;line-height:1.35;overflow-wrap:anywhere}.entryName small{font-size:10px;color:#9db8d3}.entryPrice{font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap;color:#f2f5ff}.warning{color:#f6c68e;font-size:11px}
+.empty{display:flex;align-items:center;gap:16px;border:1px dashed #557496;border-radius:11px;padding:25px;background:#122c42b8}.empty>span{font-size:37px;color:#b3d9ff}.empty>div{display:grid;gap:7px}.empty strong{font-size:12px;letter-spacing:.08em}.empty small{font-size:11px;line-height:1.65;color:#acc3d7}
+.root :focus-visible{outline:3px solid #c1ddff;outline-offset:3px}
+@media(max-width:760px){.columns{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.panel,.transactions{padding:12px}}
+@media(max-width:400px){.root{padding:13px}.barLine{grid-template-columns:48px minmax(0,1fr) 72px;gap:6px}.barLine strong{font-size:9px}.entries article{grid-template-columns:20px minmax(0,1fr);gap:8px}.entryPrice{grid-column:2;white-space:normal}.classes{grid-template-columns:1fr 1fr}.metrics>div{padding:10px}}
+@media(prefers-reduced-motion:reduce){.root *{scroll-behavior:auto!important;transition:none!important}}
+
+/* Mobile content-width QA: clipped descendants can hide overflow from document.scrollWidth. */
+.head>div{min-width:0;flex:1 1 250px;max-width:100%}
+.head h4{overflow-wrap:anywhere;word-break:normal}
+.head p,.disclaimer,.message,.empty small{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.tools{min-width:0;max-width:100%}
+.fileInput{width:100%;max-width:100%;flex:1 1 240px;min-width:0}
+.fileInput input{display:block;width:100%;min-width:0}
+.empty>div{min-width:0}
+@media(max-width:400px){
+ .head h4{font-size:clamp(20px,6.1vw,24px)!important;letter-spacing:-.052em!important}
+ .fileInput input{font-size:10px}
+}
