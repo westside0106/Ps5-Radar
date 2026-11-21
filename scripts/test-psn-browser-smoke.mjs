@@ -34,7 +34,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:engine===webkit&&width<=430,deviceScaleFactor:width<=430?2:1,reducedMotion:width===320?'reduce':'no-preference',serviceWorkers:'block'});
   const page=await context.newPage();
   const testCloudRules=[];
-  await page.route('**/mein-playstation/api/game-intelligence',async route=>{
+  await page.route('**/mein-playstation/api/game-intelligence?*',async route=>{
    if(route.request().method()!=='GET')return route.fulfill({status:405});
    return route.fulfill({json:{
     title:'Unplayed CI Test',
