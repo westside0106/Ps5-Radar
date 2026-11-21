@@ -27,3 +27,25 @@
 .root :focus-visible{outline:3px solid #9af5eb;outline-offset:3px}
 @media(max-width:760px){.timeline{grid-template-columns:1fr}}
 @media(max-width:410px){.days{gap:3px}.day{height:12px}.summary span{margin-right:6px}}
+
+/* Split day indicator: first stored daily status (left), last persisted status (right). */
+.day{position:relative;overflow:hidden}
+.day[data-changed=true]::after{content:'';position:absolute;top:0;right:0;width:50%;height:100%;border-left:1px solid #071b2d}
+.day[data-latest-state=healthy]::after{background:#52bda0}
+.day[data-latest-state=degraded]::after{background:#d9a953}
+.day[data-latest-state=error]::after{background:#d8777c}
+.day[data-latest-state=unconfigured]::after{background:#879ab0}
+.recordPair{margin-top:8px;display:grid;gap:5px}
+.recordPair span{font-size:10px;line-height:1.4;color:#b7d7e8;overflow-wrap:anywhere}
+.recordPair strong{font-weight:800;color:#e4f2fc;margin-right:5px}
+.legendNote{font-size:10px;line-height:1.65;color:#adc7d8;margin:4px 0 20px}
+.changes{display:grid;gap:7px;margin-bottom:22px}
+.changeItem{border:1px solid #385973;background:#102b41;border-radius:9px;padding:11px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.changeItem>div{display:grid;gap:4px}.changeItem strong{font-size:12px}.changeItem small{font-size:10px;color:#accadc}
+.transitionStates{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.transitionStates>span{font-size:10px;color:#c4d6e4}
+.transitionStates>span[data-state]{padding:5px 7px;border:1px solid #4b6680;border-radius:5px;background:#20394f;color:#e4f4ff}
+.transitionStates>span[data-state=healthy]{background:#1d5146;color:#adf6dc;border-color:#42876d}
+.transitionStates>span[data-state=degraded]{background:#544329;color:#ffe1a6;border-color:#94733b}
+.transitionStates>span[data-state=error]{background:#552e36;color:#ffd5da;border-color:#90565f}
+@media(max-width:400px){.changeItem{align-items:flex-start;flex-direction:column}.recordPair{gap:7px}}
