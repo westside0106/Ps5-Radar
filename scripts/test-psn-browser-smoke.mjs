@@ -57,7 +57,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/api/radar/alerts/check']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
@@ -155,6 +155,11 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       await page.locator('.rz-event-list').waitFor();
       await page.getByRole('button',{name:'Quellen'}).click();
       assert.equal(await page.locator('.rz-source').count(),4);
+      await page.locator('section[aria-label="Datenquellen-Monitor"] article').first().waitFor();
+      assert.equal(await page.locator('section[aria-label="Datenquellen-Monitor"] article').count(),6,'All six health probes must be visible');
+      const healthSize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+      assert.ok(healthSize.scroll<=healthSize.client+2,'Health dashboard overflows viewport: '+JSON.stringify(healthSize));
+      assert.ok(await page.getByRole('button',{name:'ERNEUT PRÜFEN'}).count(),'Source recheck control missing');
       assert.ok(await page.getByRole('button',{name:/App installieren/}).count(),'PWA install help missing');
       await page.getByRole('button',{name:'Preisregeln'}).click();
       await page.locator('.rz-alert-state.is-ready').waitFor();
