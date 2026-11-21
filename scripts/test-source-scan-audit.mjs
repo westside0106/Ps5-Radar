@@ -96,5 +96,13 @@ test('private audit history reads a bounded, newest-first list',async()=>{
  assert.equal(logs[0].table,'runs');
  assert.match(logs[0].query,/order=started_at.desc&limit=120/);
  assert.ok(!logs[0].query.includes(storage.secret));
+ const scheduled=await readSourceScanRuns(storage,{
+  limit:45,kind:'scheduled',
+  db:async(config,table,query)=>{logs.push({config,table,query});return []}
+ });
+ assert.deepEqual(scheduled,[]);
+ assert.ok(logs[1].query.includes('&run_kind=eq.scheduled'),'Scheduled checks must not be crowded out by manual runs');
+ assert.match(logs[1].query,/limit=45/);
+ await assert.rejects(()=>readSourceScanRuns(storage,{kind:'unknown'}),/Invalid source scan audit kind/);
  await assert.rejects(()=>readSourceScanRuns(storage,{db:async()=>({})}),/Invalid source scan audit response/);
 });
