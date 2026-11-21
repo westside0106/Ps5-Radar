@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {dailyRows,plannedIncidentEvents,sourceHealthSummary,storeScheduledHealth,markSourceEventRead} from '../lib/source-health-history.mjs';
+import {dailyRows,plannedIncidentEvents,sourceHealthSummary,storeScheduledHealth,markSourceEventRead,readSourceHistory} from '../lib/source-health-history.mjs';
 
 const day='2026-11-21';
 const check=(id,state,detail='Teststatus')=>({id,state,detail});
@@ -138,4 +138,28 @@ test('latest source probes are conditionally updated without rewriting the first
   'First-day columns must never be updated');
  assert.ok(igdb.url.includes('latest_checked_at.lt.'),'Stale or concurrent observations must not overwrite newer results');
  assert.ok(igdb.url.includes('run_day=eq.2026-11-21'));
+});
+
+test('private history API reads immutable first, latest saved statuses and independent transitions',async()=>{
+ const calls=[];
+ const config={base:'https://example.supabase.co/rest/v1/',secret:'server'};
+ const fetcher=async url=>{
+  calls.push(String(url));
+  if(String(url).includes('radar_source_health_checks'))return new Response(JSON.stringify([
+   {source_id:'igdb',run_day:'2026-11-21',status:'error',checked_at:'2026-11-21T03:34:00Z',
+    latest_status:'healthy',latest_checked_at:'2026-11-21T03:56:00Z'}
+  ]),{status:200});
+  if(String(url).includes('radar_source_health_transitions'))return new Response(JSON.stringify([
+   {id:1,source_id:'igdb',previous_status:'error',status:'healthy',checked_at:'2026-11-21T03:56:00Z'}
+  ]),{status:200});
+  return new Response('[]',{status:200});
+ };
+ const data=await readSourceHistory(config,{fetcher});
+ assert.equal(data.checks[0].status,'error');
+ assert.equal(data.checks[0].latest_status,'healthy');
+ assert.equal(data.transitions[0].previous_status,'error');
+ assert.equal(data.transitions[0].status,'healthy');
+ assert.equal(calls.length,3);
+ assert.ok(calls.some(x=>x.includes('latest_checked_at')));
+ assert.ok(calls.some(x=>x.includes('radar_source_health_transitions')));
 });
