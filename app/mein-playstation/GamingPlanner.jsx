@@ -4,6 +4,7 @@ import DigitalLibrary from './DigitalLibrary';
 import ProfileSync from './ProfileSync';
 import GamingChronicle from './GamingChronicle';
 import ActivityFeed from './ActivityFeed';
+import MonitorImport from './MonitorImport';
 import AdvancedStats from './AdvancedStats';
 import CommandDeck from './CommandDeck';
 import TrophyCardStudio from './TrophyCardStudio';
@@ -12,6 +13,7 @@ import PlatinumTrophyGoals,{initialTrophyGoals} from './PlatinumTrophyGoals';
 import {COLLECTIONS_KEY,normalizeCollections} from '../../lib/psn-game-collections.mjs';
 import {TROPHY_DATES_KEY,TROPHY_DATES_EVENT,normalizeTrophyDates,combineTrophyDates} from '../../lib/psn-trophy-heatmap.mjs';
 import {TROPHY_GUIDES_KEY,TROPHY_GUIDES_EVENT,normalizeTrophyGuides,mergeTrophyGuides} from '../../lib/psn-trophy-guide-links.mjs';
+import {PSN_MONITOR_KEY,PSN_MONITOR_EVENT,normalizeObservedSessions,mergeObservedSessions} from '../../lib/psn-monitor-import.mjs';
 const KEY='psn-game-planner-v1';
 const HISTORY_KEY='psn-playtime-snapshots-v1';
 const CUSTOM_KEY='psn-custom-games-v1';
@@ -136,7 +138,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
  }
  function exportBackup(){
   const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key)||JSON.stringify(fallback))}catch{return fallback}};
-  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),coverUrls:read('psn-cover-urls-v1',{}),manualGames:read(CUSTOM_KEY,[]),collections:read(COLLECTIONS_KEY,[]),trophyDates:normalizeTrophyDates(read(TROPHY_DATES_KEY,[])),trophyTargets:read('psn-trophy-targets-v1',{}),trophyGuides:normalizeTrophyGuides(read(TROPHY_GUIDES_KEY,{})),platinumChecks:read('psn-platinum-checks-v1',{})},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({version:2,exportedAt:new Date().toISOString(),notes,history:read(HISTORY_KEY,[]),covers:read('psn-cover-preferences-v1',{}),coverUrls:read('psn-cover-urls-v1',{}),manualGames:read(CUSTOM_KEY,[]),collections:read(COLLECTIONS_KEY,[]),trophyDates:normalizeTrophyDates(read(TROPHY_DATES_KEY,[])),trophyTargets:read('psn-trophy-targets-v1',{}),trophyGuides:normalizeTrophyGuides(read(TROPHY_GUIDES_KEY,{})),observedSessions:normalizeObservedSessions(read(PSN_MONITOR_KEY,[])),platinumChecks:read('psn-platinum-checks-v1',{})},null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='ps5-radar-komplett-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),500);
   setBackupMessage('Vollständiges lokales Backup erstellt. Datei enthält deine persönlichen Notizen und Trophäenziele; sicher aufbewahren.');
  }
@@ -173,6 +175,10 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
     }
     const fields=[['covers','psn-cover-preferences-v1',v=>v==='steamgriddb'||v==='original'],['coverUrls','psn-cover-urls-v1',v=>typeof v==='string'&&/^https:\/\/[a-z0-9.-]+\.steamgriddb\.com\//i.test(v)],['trophyTargets','psn-trophy-targets-v1',v=>Array.isArray(v)],['platinumChecks','psn-platinum-checks-v1',v=>Array.isArray(v)]];
     for(const [field,key,validate] of fields){const obj=raw[field];if(!obj||typeof obj!=='object'||Array.isArray(obj))continue;const cleaned={};for(const [id,value] of Object.entries(obj).slice(0,3000)){if(!id||id.length>180||!validate(value))continue;cleaned[id]=Array.isArray(value)?value.filter(x=>typeof x==='string'&&x.length<100).slice(0,400):value}let existing={};try{existing=JSON.parse(localStorage.getItem(key)||'{}')}catch{}changes.push([key,{...(existing&&typeof existing==='object'&&!Array.isArray(existing)?existing:{}),...cleaned}])}
+    if(Array.isArray(raw.observedSessions)){
+     let current=[];try{current=JSON.parse(localStorage.getItem(PSN_MONITOR_KEY)||'[]')}catch{}
+     changes.push([PSN_MONITOR_KEY,mergeObservedSessions(current,raw.observedSessions)]);
+    }
     if(raw.trophyGuides&&typeof raw.trophyGuides==='object'&&!Array.isArray(raw.trophyGuides)){
      let existing={};try{existing=JSON.parse(localStorage.getItem(TROPHY_GUIDES_KEY)||'{}')}catch{}
      changes.push([TROPHY_GUIDES_KEY,mergeTrophyGuides(existing,raw.trophyGuides)]);
@@ -185,6 +191,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
    setNotes(merged);const restored=changes.find(x=>x[0]===HISTORY_KEY);if(restored)setHistory(restored[1]);const manual=changes.find(x=>x[0]===CUSTOM_KEY);if(manual)setCustomGames(manual[1]);
    window.dispatchEvent(new Event(TROPHY_DATES_EVENT));
    window.dispatchEvent(new Event(TROPHY_GUIDES_EVENT));
+   window.dispatchEvent(new Event(PSN_MONITOR_EVENT));
    window.dispatchEvent(new Event('psn-profile-local-change'));
    setImportText('');setBackupMessage(Object.keys(clean).length+' Spieleinträge importiert'+(raw.version===2?' · inklusive unterstützter weiterer Daten':'')+'. Für Cover-/Trophäen-Zielanzeigen die Seite neu laden.');
   }catch{setBackupMessage('Import fehlgeschlagen – Dateiformat oder Browser-Speicher prüfen. Vorhandene Daten sollten unverändert bleiben.')}
@@ -228,6 +235,7 @@ export default function GamingPlanner({played=[],titles=[],focusGameId='',onFocu
 </div></details>
   <details id="psn-insights-fold" className="psn-tools-fold"><summary>Gaming-Chronik &amp; Statistiken <span>PSN-Messpunkte, Monatsvergleich und letzte Spieltage</span></summary><div className="psn-tools-fold-body">  <div className="psn-planner-box psn-stats-ranking"><h4>Meine meistgespielten Titel</h4><p>PSN-Gesamtspielzeit je Titel, nicht nur die letzten 28 Tage.</p><div className="psn-stats-rank-list">{topPlayed.map((g,i)=><div key={g.key}><span>{i+1}. {g.name}</span><strong>{hours(mins(g.game.playDuration))} Std.</strong></div>)}</div><h4 className="psn-stats-subheading">Zuletzt aktive Titel</h4><div className="psn-stats-rank-list">{recentGameList.map(g=><div key={g.key}><span>{g.name}</span><strong>{new Date(g.game.lastPlayedDateTime).toLocaleDateString('de-DE')}</strong></div>)}</div></div>
   <ActivityFeed played={played} titles={titles}/>
+  <MonitorImport/>
   <AdvancedStats played={played} titles={titles}/>
   <GamingChronicle played={played} history={history}/>
   <div id="psn-trophy-card-studio"><TrophyCardStudio titles={titles}/></div>

@@ -2,6 +2,7 @@
 import {useEffect,useRef,useState} from 'react';
 import {TROPHY_DATES_KEY,TROPHY_DATES_EVENT,normalizeTrophyDates,combineTrophyDates} from '../../lib/psn-trophy-heatmap.mjs';
 import {TROPHY_GUIDES_KEY,TROPHY_GUIDES_EVENT,normalizeTrophyGuides,mergeTrophyGuides} from '../../lib/psn-trophy-guide-links.mjs';
+import {PSN_MONITOR_KEY,PSN_MONITOR_EVENT,normalizeObservedSessions,mergeObservedSessions} from '../../lib/psn-monitor-import.mjs';
 
 const keys={
  notes:'psn-game-planner-v1',
@@ -13,13 +14,14 @@ const keys={
  trophyTargets:'psn-trophy-targets-v1',
  platinumChecks:'psn-platinum-checks-v1',
  trophyDates:TROPHY_DATES_KEY,
- trophyGuides:TROPHY_GUIDES_KEY
+ trophyGuides:TROPHY_GUIDES_KEY,
+ observedSessions:PSN_MONITOR_KEY
 };
-const defaults={notes:{},manualGames:[],collections:[],history:[],covers:{},coverUrls:{},trophyTargets:{},platinumChecks:{},trophyDates:[],trophyGuides:{}};
+const defaults={notes:{},manualGames:[],collections:[],history:[],covers:{},coverUrls:{},trophyTargets:{},platinumChecks:{},trophyDates:[],trophyGuides:{},observedSessions:[]};
 function localSnapshot(){
  const data={};
  for(const [name,key] of Object.entries(keys)){
-  try{const raw=localStorage.getItem(key);data[name]=name==='trophyGuides'?normalizeTrophyGuides(raw===null?{}:JSON.parse(raw)):(raw===null?defaults[name]:JSON.parse(raw))}
+  try{const raw=localStorage.getItem(key);data[name]=name==='trophyGuides'?normalizeTrophyGuides(raw===null?{}:JSON.parse(raw)):(name==='observedSessions'?normalizeObservedSessions(raw===null?[]:JSON.parse(raw)):(raw===null?defaults[name]:JSON.parse(raw)))}
   catch{data[name]=defaults[name]}
  }
  return data;
@@ -89,6 +91,9 @@ export default function ProfileSync(){
     if(key===TROPHY_DATES_KEY){
      let current=[];try{current=JSON.parse(localStorage.getItem(key)||'[]')}catch{}
      localStorage.setItem(key,JSON.stringify(combineTrophyDates(current,JSON.parse(value))));
+    }else if(key===PSN_MONITOR_KEY){
+     let existing=[];try{existing=JSON.parse(localStorage.getItem(key)||'[]')}catch{}
+     localStorage.setItem(key,JSON.stringify(mergeObservedSessions(existing,JSON.parse(value))));
     }else if(key===TROPHY_GUIDES_KEY){
      let current={};try{current=JSON.parse(localStorage.getItem(key)||'{}')}catch{}
      localStorage.setItem(key,JSON.stringify(mergeTrophyGuides(current,JSON.parse(value))));
@@ -96,6 +101,7 @@ export default function ProfileSync(){
    }
    window.dispatchEvent(new Event(TROPHY_DATES_EVENT));
    window.dispatchEvent(new Event(TROPHY_GUIDES_EVENT));
+   window.dispatchEvent(new Event(PSN_MONITOR_EVENT));
    window.location.reload();
   }catch{
    for(const [key,value] of previous){try{if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value)}catch{}}
