@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import GameCollectionToolbar from './GameCollectionToolbar';
 import PlatinumMissionControl from './PlatinumMissionControl';
 import TrophyHeatmap from './TrophyHeatmap';
+import TrophyGuideHub from './TrophyGuideHub';
 import {TROPHY_DATES_KEY,TROPHY_DATES_EVENT,mergeTrophyDates} from '../../lib/psn-trophy-heatmap.mjs';
 import {COLLECTIONS_KEY,CUSTOM_GAMES_KEY,VIEW_KEY,VIEWS,gameKey,isManualGame,normalizeManualGames,normalizeCollections,combinedGames,filterCollection,toggleCollectionGame} from '../../lib/psn-game-collections.mjs';
 const GamingPlanner=dynamic(()=>import('./GamingPlanner'),{ssr:false});
@@ -76,6 +77,7 @@ function GameTrophies({game}){
     <div className="psn-trophy-hero"><span className="psn-hub-trophy-cover-wrapper"><GameCover game={game} className="psn-hub-trophy-cover"/></span><div><h3>{displayGameName(game.trophyTitleName)}</h3><span>{game.progress||0}% abgeschlossen</span></div></div>
     <div className="psn-progress"><i style={{width:Math.max(0,Math.min(100,Number(game.progress)||0))+'%'}}/></div>
 
+    <TrophyGuideHub game={game}/>
     {loading?<p className="psn-trophy-message">Trophäen werden geladen …</p>:null}
     {error?<div className="psn-trophy-message" role="alert">{error}<button type="button" onClick={()=>{setList(null);setOpen(false)}}>Schließen und erneut öffnen</button></div>:null}
     {list?<><div className="psn-trophy-filter-head"><strong>{missing} noch offen · {earned} erhalten</strong><small>{filtered.length} Treffer</small></div>
