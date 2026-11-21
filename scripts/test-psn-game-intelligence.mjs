@@ -35,9 +35,10 @@ const storeFixture=[
 
 test('game-title normalization keeps editions separate and strips PS platform suffixes only',()=>{
  assert.equal(cleanGameTitle(' Cyberpunk® 2077 (PS5) '),'Cyberpunk 2077');
- assert.equal(gameSlug('Assassin’s Creed Shadows'),'assassin-s-creed-shadows');
+ assert.equal(gameSlug('Assassin’s Creed Shadows'),'assassins-creed-shadows');
  assert.equal(gameSlug('Cyberpunk 2077 Ultimate Edition'),'cyberpunk-2077-ultimate-edition');
  assert.notEqual(gameSlug('Cyberpunk 2077'),gameSlug('Cyberpunk 2077 Ultimate Edition'));
+ assert.equal(gameSlug("Assassin's Creed Shadows"),gameSlug('Assassin’s Creed Shadows'));
 });
 test('FramePatch snapshot keeps independently verified PS5 and Pro records and evidence, not Xbox or assumptions',()=>{
  const r=fpsEvidenceFor('Cyberpunk® 2077 (PS5)',fpsFixture);
