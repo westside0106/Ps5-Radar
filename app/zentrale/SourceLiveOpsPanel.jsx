@@ -41,12 +41,12 @@ export default function SourceLiveOpsPanel(){
     <span><b>{result.summary.degraded}</b> eingeschränkt</span>
     <span><b>{result.summary.error}</b> Fehler</span>
     <span><b>{result.stored?.inserted??0}</b> neue Tageswerte</span>
-    <span><b>{result.push?.accepted??0}</b> Push-Übergaben</span>
+    <span><b>{result.push?.accepted??0}</b> automatische ntfy-Meldungen</span>
    </div>
    {result.push?.deliveryError||result.push?.failed?<small>Warnung: Mindestens eine Push-Übergabe konnte nicht bestätigt werden. Die Meldung bleibt für einen späteren Versuch erhalten.</small>:null}
    {result.push?.configured===false?<small>ntfy ist nicht eingerichtet; die Quellenprüfung wurde trotzdem gespeichert.</small>:null}
   </div>:null}
   {!result&&lastAttempt&&!error?<p className={styles.progress}>Letzter Versuch: {stamp(lastAttempt)}</p>:null}
-  <p className={styles.note}>Missbrauchsschutz: maximal eine gespeicherte Sofortprüfung alle 10 Minuten. Nur der erste gespeicherte Tagesbefund zählt für die Tageshistorie und automatische Störungsmeldungen. Der tägliche Hintergrundjob bleibt separat aktiv; wiederholte Sofortläufe erzeugen keine doppelten Tagesalarme.</p>
+  <p className={styles.note}>Ein erfolgreicher Test-Push wird nicht als automatische Störungsmeldung gezählt. Missbrauchsschutz: maximal eine gespeicherte Sofortprüfung alle 10 Minuten. Nur der erste gespeicherte Tagesbefund zählt für die Tageshistorie und automatische Störungsmeldungen. Der tägliche Hintergrundjob bleibt separat aktiv; wiederholte Sofortläufe erzeugen keine doppelten Tagesalarme.</p>
  </section>;
 }
