@@ -64,11 +64,11 @@ export default function SourceHistoryPanel(){
    <div className={styles.inboxHead}><h3>MELDUNGSZENTRALE</h3><span>{unread} ungelesen</span></div>
    <div className={styles.inbox}>{events.length?events.slice(0,30).map(e=><article key={e.id} className={styles.event} data-event={e.event} data-read={Boolean(e.read_at)}>
     <div><strong>{e.event==='outage'?'Wiederholte Störung':'Verbindung wiederhergestellt'} · {names[e.source_id]||e.source_id}</strong>
-     <p>{e.detail}</p><small>{fmt(e.created_at)} · {e.read_at?'Gelesen':'Ungelesen'}</small></div>
+     <p>{e.detail}</p><small>{fmt(e.created_at)} · {e.read_at?'Gelesen':'Ungelesen'}</small><small>{e.push_sent_at?'ntfy-Versand: '+fmt(e.push_sent_at):e.push_last_error?'ntfy: ausstehend, letzter Versuch '+e.push_last_error:'ntfy: noch kein bestätigter Versand'}</small></div>
     {!e.read_at?<button type="button" disabled={Boolean(busy)} onClick={()=>void markRead(e.id)}>Als gelesen markieren</button>:null}
    </article>):<p className={styles.subtle}>Noch keine bestätigten Störungs- oder Wiederherstellungsereignisse. Bei zwei aufeinanderfolgenden problematischen Tagesprüfungen erscheint automatisch eine Meldung.</p>}</div>
   </>:null}
   {notice?<p className={styles.error} role="status">{notice}</p>:null}
-  <p className={styles.foot}>Automatische Erkennung bedeutet hier eine Tagesprüfung, keine Echtzeit-Alarmierung. Meldungen erscheinen in diesem privaten Posteingang, nicht als iOS-Push oder E-Mail. Zwei aufeinanderfolgende UTC-Kalendertage mit „Fehler“ oder „Eingeschränkt“ lösen eine Störungsmeldung aus; ein isolierter Fehler nicht.</p>
+  <p className={styles.foot}>Automatische Erkennung bedeutet hier eine Tagesprüfung, keine Echtzeit-Alarmierung. Meldungen erscheinen immer im privaten Posteingang und bei eingerichteter ntfy-Zustellung zusätzlich als iOS-Push. E-Mails werden nicht versendet. Zwei aufeinanderfolgende UTC-Kalendertage mit „Fehler“ oder „Eingeschränkt“ lösen eine Störungsmeldung aus; ein isolierter Fehler nicht.</p>
  </section>;
 }
