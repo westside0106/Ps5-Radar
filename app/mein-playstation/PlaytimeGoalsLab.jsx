@@ -72,7 +72,7 @@ export default function PlaytimeGoalsLab({games=[],notes={}}){
     </select>
    </label>
    <label>SPIEL SUCHEN
-    <input type="search" value={search} onChange={e=>{setSearch(e.target.value);setLimit(8)}} placeholder="Titel eingeben …" maxLength={120}/>
+    <input type="search" value={search} onChange={e=>{setSearch(e.target.value);setLimit(8)}} placeholder="Im Spielzeit-Labor suchen …" maxLength={120}/>
    </label>
    <span className={styles.count}>{candidates.length} TITEL</span>
   </div>
