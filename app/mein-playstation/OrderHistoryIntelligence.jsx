@@ -41,7 +41,7 @@ export default function OrderHistoryIntelligence(){
    <label className={styles.currency}>Währung für diesen Export<select value={currency} onChange={e=>setCurrency(e.target.value)}><option value="EUR">EUR (€)</option><option value="USD">USD ($)</option><option value="GBP">GBP (£)</option></select></label>
    {loaded?<button type="button" className={styles.clear} onClick={()=>{setLoaded(null);setCategory('all');setMessage('Importdaten aus dieser Ansicht gelöscht.');}}>DATEN VERWERFEN</button>:null}
   </div>
-  <p className={styles.disclaimer}>**Datenschutz:** Die Datei wird ausschließlich im Arbeitsspeicher dieses Browser-Tabs verarbeitet, nicht in Supabase, localStorage oder auf dem Server gespeichert. Die Währung ist im CSV-Export nicht enthalten und muss zum Export passen. Bei gemischten Store-Währungen keine Gesamtsumme verwenden.</p>
+  <p className={styles.disclaimer}><strong>Datenschutz:</strong> Die Datei wird ausschließlich im Arbeitsspeicher dieses Browser-Tabs verarbeitet, nicht in Supabase, localStorage oder auf dem Server gespeichert. Die Währung ist im CSV-Export nicht enthalten und muss zum Export passen. Bei gemischten Store-Währungen keine Gesamtsumme verwenden.</p>
   {message?<p role="status" className={styles.message}>{message}</p>:null}
   {stats?<div className={styles.loaded}>
    <div className={styles.metrics}>
