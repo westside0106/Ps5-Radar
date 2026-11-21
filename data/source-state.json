@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T02:41:03.830Z",
+  "checkedAt": "2026-11-21T02:52:20.415Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -58,7 +58,7 @@
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 213352,
+    "bytes": 213332,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 191342,
+    "bytes": 191322,
     "updated": true,
     "parsed": {
       "games": [
@@ -138,7 +138,7 @@
       "label": "NOVEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-11-21T02:41:34.008Z",
+      "checkedAt": "2026-11-21T02:52:48.173Z",
       "parsed": 5,
       "accepted": [
         "Dead Island 2",
@@ -153,12 +153,12 @@
   },
   "psPlusWhatsNew": {
     "ok": true,
-    "bytes": 679299
+    "bytes": 678279
   },
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 245001,
+    "bytes": 245123,
     "updated": true,
     "parsed": {
       "trial": false,
