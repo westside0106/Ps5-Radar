@@ -109,7 +109,7 @@
   "editorial": [],
   "health": {
     "status": "warning",
-    "checkedAt": "2026-11-21T00:49:03.473Z",
+    "checkedAt": "2026-11-21T01:15:39.010Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -123,10 +123,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "stale",
-    "lastSuccessfulCheck": "2026-11-21T00:48:30.614Z"
+    "lastSuccessfulCheck": "2026-11-21T01:15:02.385Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-11-21T00:49:03.473Z",
+    "checkedAt": "2026-11-21T01:15:39.010Z",
     "errors": [
       "PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden"
     ],
@@ -258,7 +258,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-11-21T00:48:52.004Z",
+    "checkedAt": "2026-11-21T01:15:27.191Z",
     "titles": 10,
     "fetched": 4,
     "enriched": 7,
@@ -315,7 +315,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-11-21T00:48:40.305Z",
+    "checkedAt": "2026-11-21T01:15:16.119Z",
     "month": "November",
     "year": 2026,
     "notes": [],
@@ -329,7 +329,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-11-21T00:48:40.382Z",
+    "checkedAt": "2026-11-21T01:15:16.193Z",
     "collection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -342,7 +342,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-11-21T00:48:54.540Z",
+    "checkedAt": "2026-11-21T01:15:30.068Z",
     "verified": 2,
     "missing": [
       "Tomb Raider IV – VI Remastered"
@@ -353,7 +353,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-11-21T00:48:38.228Z",
+    "checkedAt": "2026-11-21T01:15:13.169Z",
     "date": "21.11.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -379,7 +379,7 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-11-21T00:48:55.277Z",
+    "checkedAt": "2026-11-21T01:15:30.866Z",
     "berlinDate": "2026-11-21",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
