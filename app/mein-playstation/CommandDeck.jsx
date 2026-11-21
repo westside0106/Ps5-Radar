@@ -50,6 +50,7 @@ export default function CommandDeck({played=[],titles=[],notes={}}){
     <div className={styles.actions}>
      <button type="button" className={styles.primary} onClick={()=>goTo('psn-insights-fold')}>STATISTIKEN ÖFFNEN <span aria-hidden="true">↗</span></button>
      <button type="button" className={styles.secondary} onClick={()=>goTo('psn-game-editor')}>SPIELPLANER <span aria-hidden="true">→</span></button>
+     <button type="button" className={styles.secondary} onClick={()=>goTo('psn-trophy-card-studio')}>COLLECTOR CARD <span aria-hidden="true">✦</span></button>
     </div>
    </div>
    <div className={styles.featured} aria-label="Zuletzt von PSN gemeldetes Spiel">
