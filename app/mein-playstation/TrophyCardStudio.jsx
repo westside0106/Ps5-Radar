@@ -97,7 +97,7 @@ export default function TrophyCardStudio({titles=[]}){
   <div className={styles.stage}>
    <div className={styles.card} style={{'--foil':theme.light,'--glow':theme.accent,'--base':theme.base,'--secondary':theme.secondary}}>
     <div className={styles.cardTop}><span>PLAYSTATION RADAR</span><span>001 / COLLECTOR</span></div>
-    <div className={styles.crest} aria-hidden="true"><span>♜</span></div>
+    <div className={styles.crest} aria-hidden="true"><svg viewBox="0 0 120 120" width="98" height="98" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"><path d="M60 21v76 M32 32v27c0 20 14 31 28 31s28-11 28-31V32 M21 32l11-15 11 15 M49 21 60 7 71 21 M77 32l11-15 11 15 M45 101h30 M52 92v9 M68 92v9"/></svg></div>
     <div className={styles.cardMiddle}><small>PERSONAL TROPHY RECORD</small><strong>{current?.trophyTitleName||'DEINE TROPHY CARD'}</strong></div>
     <div className={styles.cardStatus}>{platinum?'PLATIN FREIGESCHALTET':pct===100?'100 % TROPHÄENFORTSCHRITT':pct===null?'FORTSCHRITT UNBEKANNT':'TROPHY HUNTER'}</div>
     <div className={styles.cardBottom}><div><small>TROPHY PROGRESS</small><strong>{pct===null?'—':pct+'%'}</strong></div><div className={styles.progressRail}><span style={{width:(pct??0)+'%'}}/></div>
