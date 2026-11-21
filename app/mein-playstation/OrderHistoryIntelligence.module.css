@@ -21,3 +21,16 @@
 @media(max-width:760px){.columns{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.panel,.transactions{padding:12px}}
 @media(max-width:400px){.root{padding:13px}.barLine{grid-template-columns:48px minmax(0,1fr) 72px;gap:6px}.barLine strong{font-size:9px}.entries article{grid-template-columns:20px minmax(0,1fr);gap:8px}.entryPrice{grid-column:2;white-space:normal}.classes{grid-template-columns:1fr 1fr}.metrics>div{padding:10px}}
 @media(prefers-reduced-motion:reduce){.root *{scroll-behavior:auto!important;transition:none!important}}
+
+/* Mobile content-width QA: clipped descendants can hide overflow from document.scrollWidth. */
+.head>div{min-width:0;flex:1 1 250px;max-width:100%}
+.head h4{overflow-wrap:anywhere;word-break:normal}
+.head p,.disclaimer,.message,.empty small{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.tools{min-width:0;max-width:100%}
+.fileInput{width:100%;max-width:100%;flex:1 1 240px;min-width:0}
+.fileInput input{display:block;width:100%;min-width:0}
+.empty>div{min-width:0}
+@media(max-width:400px){
+ .head h4{font-size:clamp(20px,6.1vw,24px)!important;letter-spacing:-.052em!important}
+ .fileInput input{font-size:10px}
+}
