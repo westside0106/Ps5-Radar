@@ -52,12 +52,21 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
    if(method==='PUT')return route.fulfill({json:{ok:true,checked:testCloudRules.length,created:0,matched:0}});
    return route.fulfill({json:{read:true}});
   });
+  await page.route('**/zentrale/api/source-history',async route=>{
+   if(route.request().method()==='GET')return route.fulfill({json:{
+    configured:true,checks:[{source_id:'rawg',run_day:'2026-11-21',checked_at:'2026-11-21T09:00:00Z',status:'healthy',detail:'Probe erfolgreich.'}],
+    events:[{id:'rawg:outage:2026-11-20',source_id:'rawg',event:'outage',status:'error',detail:'Zwei problematische Prüfungen.',created_at:'2026-11-21T09:00:00Z',read_at:null}],
+    summary:[{source_id:'rawg',total:1,healthy:1,degraded:0,errors:0,last:{checked_at:'2026-11-21T09:00:00Z',status:'healthy'}}]
+   }});
+   if(route.request().method()==='PATCH')return route.fulfill({json:{ok:true,updated:true}});
+   return route.fulfill({status:405});
+  });
   const clientErrors=[];
   page.on('pageerror',error=>clientErrors.push(String(error?.stack||error?.message||error)));
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/api/radar/alerts/check']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/api/radar/source-health','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
@@ -160,6 +169,12 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       const healthSize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
       assert.ok(healthSize.scroll<=healthSize.client+2,'Health dashboard overflows viewport: '+JSON.stringify(healthSize));
       assert.ok(await page.getByRole('button',{name:'ERNEUT PRÜFEN'}).count(),'Source recheck control missing');
+      await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] .ignored, section[aria-label="Datenquellen-Historie und Meldungen"] button').first().waitFor();
+      assert.equal(await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"] [role=listitem]').count(),84,'Six sources should render 14 calendar cells');
+      await page.getByRole('button',{name:'Als gelesen markieren'}).click();
+      assert.ok(await page.locator('section[aria-label="Datenquellen-Historie und Meldungen"]').getByText('Gelesen').count(),'Acknowledgement not reflected');
+      const historySize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
+      assert.ok(historySize.scroll<=historySize.client+2,'Source history overflows viewport: '+JSON.stringify(historySize));
       assert.ok(await page.getByRole('button',{name:/App installieren/}).count(),'PWA install help missing');
       await page.getByRole('button',{name:'Preisregeln'}).click();
       await page.locator('.rz-alert-state.is-ready').waitFor();
