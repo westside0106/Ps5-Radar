@@ -109,16 +109,16 @@
   "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-11-21T15:33:52.797Z",
+    "checkedAt": "2026-11-21T22:06:05.211Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-11-21T15:33:26.983Z",
+    "lastSuccessfulCheck": "2026-11-21T22:05:37.896Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-11-21T15:33:26.983Z",
+    "checkedAt": "2026-11-21T22:05:37.896Z",
     "errors": [],
     "sources": [
       {
@@ -248,7 +248,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-11-21T15:33:49.722Z",
+    "checkedAt": "2026-11-21T22:06:00.889Z",
     "titles": 10,
     "fetched": 4,
     "enriched": 7,
@@ -305,7 +305,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-11-21T15:33:38.774Z",
+    "checkedAt": "2026-11-21T22:05:48.956Z",
     "month": "November",
     "year": 2026,
     "notes": [],
@@ -319,7 +319,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-11-21T15:33:38.843Z",
+    "checkedAt": "2026-11-21T22:05:49.054Z",
     "collection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -332,7 +332,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-11-21T15:33:52.309Z",
+    "checkedAt": "2026-11-21T22:06:02.892Z",
     "verified": 2,
     "missing": [
       "Tomb Raider IV – VI Remastered"
@@ -343,7 +343,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-11-21T15:33:36.217Z",
+    "checkedAt": "2026-11-21T22:05:46.790Z",
     "date": "21.11.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -369,7 +369,7 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-11-21T15:25:09.830Z",
+    "checkedAt": "2026-11-21T15:33:52.900Z",
     "berlinDate": "2026-11-21",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
