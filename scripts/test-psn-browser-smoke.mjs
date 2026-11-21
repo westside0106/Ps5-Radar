@@ -79,6 +79,8 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       scheduled_runs:1,daily_sources:6,push_sent_at:null,push_attempts:0,push_last_error:null}
     ]}});
   });
+  const cronToday=new Date().toISOString().slice(0,10);
+  const cronYesterday=new Date(Date.now()-86400000).toISOString().slice(0,10);
   await page.route('**/zentrale/api/source-runs',async route=>{
    if(route.request().method()!=='GET')return route.fulfill({status:405});
    return route.fulfill({json:{configured:true,schedule:{hourUtc:9,graceMinutes:60},
@@ -91,6 +93,20 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
      {id:'22222222-3333-4444-8555-666666666666',run_kind:'scheduled',
       started_at:'2026-11-20T09:00:00Z',finished_at:'2026-11-20T09:00:07Z',
       result:'failed',duration_ms:7000,failure_code:'scan_failed'}
+    ],
+    scheduledRuns:[
+     {id:'33333333-4444-4555-8666-777777777777',run_kind:'scheduled',
+      started_at:cronToday+'T09:57:49Z',finished_at:cronToday+'T09:57:55Z',
+      result:'failed',duration_ms:6000,failure_code:'scan_failed'},
+     {id:'44444444-5555-4666-8777-888888888888',run_kind:'scheduled',
+      started_at:cronYesterday+'T09:15:00Z',finished_at:cronYesterday+'T09:15:04Z',
+      result:'success',duration_ms:4000,healthy_count:6}
+    ],
+    watchdogDays:[
+     {run_day:cronToday,checked_at:cronToday+'T11:49:51Z',status:'failed',
+      push_sent_at:cronToday+'T11:50:00Z',push_attempts:1,push_last_error:null},
+     {run_day:cronYesterday,checked_at:cronYesterday+'T11:25:00Z',status:'ok',
+      push_sent_at:null,push_attempts:0,push_last_error:null}
     ]}});
   });
   await page.route('**/zentrale/api/ntfy',async route=>{
@@ -226,10 +242,23 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       await page.getByText('Letzter Sofortlauf:',{exact:false}).waitFor();
       assert.equal(await page.locator('section[aria-label="Quellen-Sofortprüfung"]').count(),1,'Manual live operations panel missing');
       const scanAudit=page.locator('section[aria-label="Quellen-Prüfprotokoll"]');
-      await scanAudit.locator('tbody tr').first().waitFor();
-      assert.equal(await scanAudit.locator('tbody tr').count(),2,'Audit must show scheduled and manual executions');
+      await scanAudit.locator('table[aria-label="Letzte tatsächliche Quellenprüfungen"] tbody tr').first().waitFor();
+      assert.equal(await scanAudit.locator('table[aria-label="Letzte tatsächliche Quellenprüfungen"] tbody tr').count(),2,'Audit must show scheduled and manual executions');
       assert.ok((await scanAudit.innerText()).includes('Fehlgeschlagen'),'Failed cron must not appear as success');
       assert.ok((await scanAudit.innerText()).includes('Erfolgreich'),'Successful manual run missing');
+      const evidence=scanAudit.locator('section[aria-label="Cron-Zuverlässigkeit und Tagesnachweise"]');
+      await evidence.locator('tbody tr').first().waitFor();
+      assert.equal(await evidence.locator('tbody tr').count(),7,'Default 7-day Cron history must be visible');
+      assert.equal(await evidence.locator('tbody tr').first().getAttribute('data-status'),'failed',
+       'A scheduled 09:57 failure must not be shown as a healthy cron run');
+      assert.ok((await evidence.innerText()).includes('09–10 UTC ✓'),'09:57 must count as in-window on Vercel Hobby');
+      await evidence.getByRole('button',{name:'30 TAGE'}).click();
+      assert.equal(await evidence.locator('tbody tr').count(),30,'30-day reliability window missing');
+      await evidence.getByRole('button',{name:'7 TAGE'}).click();
+      assert.equal(await evidence.locator('tbody tr').count(),7);
+      assert.ok((await evidence.innerText()).includes('Keine historischen Daten'),
+       'Older unobserved days must not be represented as successful or failed');
+
       const watchdog=page.locator('section[aria-label="Automatischer Quellen-Cron-Wächter"]');
       await watchdog.locator('[role="listitem"]').first().waitFor();
       assert.equal(await watchdog.locator('[role="listitem"]').count(),2,'Expected two watchdog day receipts');
@@ -241,7 +270,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       assert.ok(watchdogSize.scroll<=watchdogSize.client+2,'Cron watchdog overflows viewport: '+JSON.stringify(watchdogSize));
 
       await scanAudit.getByRole('button',{name:'PROTOKOLL AKTUALISIEREN'}).click();
-      await scanAudit.locator('tbody tr').first().waitFor();
+      await scanAudit.locator('table[aria-label="Letzte tatsächliche Quellenprüfungen"] tbody tr').first().waitFor();
       const auditSize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
       assert.ok(auditSize.scroll<=auditSize.client+2,'Scan audit overflows viewport: '+JSON.stringify(auditSize));
 
