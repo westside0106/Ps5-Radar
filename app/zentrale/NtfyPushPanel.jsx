@@ -5,6 +5,7 @@ import styles from './NtfyPushPanel.module.css';
 export default function NtfyPushPanel(){
  const [status,setStatus]=useState(null),[loading,setLoading]=useState(true);
  const [busy,setBusy]=useState(false),[message,setMessage]=useState(''),[error,setError]=useState('');
+ const [topicVisible,setTopicVisible]=useState(false);
  useEffect(()=>{
   const controller=new AbortController();
   (async()=>{
@@ -22,7 +23,7 @@ export default function NtfyPushPanel(){
   if(!status?.topic)return;
   setError('');
   try{await navigator.clipboard.writeText(status.topic);setMessage('Topic in die Zwischenablage kopiert.')}
-  catch{setError('Kopieren nicht erlaubt. Topic unten manuell auswählen.')}
+  catch{setError('Kopieren nicht erlaubt. Wähle „TOPIC ANZEIGEN“, um es manuell zu übernehmen.')}
  }
  async function sendTest(){
   setBusy(true);setMessage('');setError('');
@@ -37,11 +38,11 @@ export default function NtfyPushPanel(){
  return <section className={styles.root} aria-label="ntfy Push-Benachrichtigungen">
   <header className={styles.header}><div><span className={styles.kicker}>DELIVERY CHANNEL / iPHONE</span><h2>NTFY-<em>PUSH</em></h2>
    <p>Störungen und Wiederherstellungen aus deiner privaten Quellenhistorie können automatisch als iOS-Mitteilung ankommen.</p></div>
-   <span className={styles.state} data-ready={Boolean(status?.configured)}>{loading?'PRÜFE …':status?.configured?'SERVER VERBUNDEN':'NICHT EINGERICHTET'}</span>
+   <span className={styles.state} data-ready={Boolean(status?.configured)}>{loading?'PRÜFE …':status?.configured?'PUSH KONFIGURIERT':'NICHT EINGERICHTET'}</span>
   </header>
   {status?.configured?<div className={styles.setup}>
-   <div><strong>1 · Auf deinem iPhone</strong><p>Die <a href="https://ntfy.sh" target="_blank" rel="noopener noreferrer">ntfy-App</a> installieren, Server <code>{status.server}</code> auswählen und das folgende Topic abonnieren.</p>
-    <div className={styles.topic}><code>{status.topic}</code><button type="button" onClick={copyTopic}>TOPIC KOPIEREN</button></div>
+   <div><strong>1 · Auf deinem iPhone</strong><p>Die <a href="https://ntfy.sh" target="_blank" rel="noopener noreferrer">ntfy-App</a> installieren, Server <code>{status.server}</code> auswählen und das Topic abonnieren. Der Name bleibt zunächst verborgen.</p>
+    <div className={styles.topic}><code aria-label={topicVisible?'Topic sichtbar':'Topic ausgeblendet'}>{topicVisible?status.topic:'••••••••••••••••••••••••'}</code><div className={styles.topicActions}><button type="button" onClick={copyTopic}>TOPIC KOPIEREN</button><button type="button" aria-pressed={topicVisible} onClick={()=>setTopicVisible(x=>!x)}>{topicVisible?'TOPIC VERBERGEN':'TOPIC ANZEIGEN'}</button></div><small>Standardmäßig verborgen, damit der Topic-Name nicht versehentlich in Screenshots erscheint.</small></div>
    </div>
    <div><strong>2 · Zustellung prüfen</strong><p>Nach dem Abonnieren einen Test senden. Der Server nimmt die Nachricht an; ob iOS sie tatsächlich anzeigt, musst du am Gerät prüfen.</p>
     <button type="button" disabled={busy} onClick={()=>void sendTest()}>{busy?'TEST WIRD GESENDET …':'TEST-PUSH SENDEN'}</button><small>Maximal ein Test pro zehn Minuten. Nur allgemeine Quelleninformationen, keine PSN- oder Kontodaten.</small>
