@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T15:14:23.439Z",
+  "updatedAt": "2026-11-21T00:20:35.079Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -1400,15 +1400,159 @@
         "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1911/33cf861ce2f42992ff43ca6ed494963dc3a1109ab9e0bae8.png"
+    },
+    "NBA 2K27": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-11-21",
+          "price": 35.99,
+          "oldPrice": 79.99,
+          "discount": 55
+        }
+      ],
+      "title": "NBA 2K27",
+      "platform": "PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA35889_00-NBA2K27000000000",
+      "signalHistory": [
+        {
+          "date": "2026-11-21",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 35.99,
+          "radarLow": 35.99,
+          "discount": 55,
+          "confidence": "niedrig"
+        }
+      ],
+      "signal": {
+        "version": 1,
+        "activeDeal": true,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 35.99,
+        "lastObservedPrice": 35.99,
+        "lastObservedDate": "2026-11-21",
+        "radarLow": 35.99,
+        "deltaFromLowPct": 0,
+        "discount": 55,
+        "daysRemaining": 10,
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-55 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2913/4a31f711e2ff460cd44ad646983f36533278cea61f639be9.png"
+    },
+    "EA SPORTS™ Madden NFL 27": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-11-21",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
+        }
+      ],
+      "title": "EA SPORTS™ Madden NFL 27",
+      "platform": "PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA32904_00-MADDENNFL27GAME0",
+      "signalHistory": [
+        {
+          "date": "2026-11-21",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 39.99,
+          "radarLow": 39.99,
+          "discount": 50,
+          "confidence": "niedrig"
+        }
+      ],
+      "signal": {
+        "version": 1,
+        "activeDeal": true,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 39.99,
+        "lastObservedPrice": 39.99,
+        "lastObservedDate": "2026-11-21",
+        "radarLow": 39.99,
+        "deltaFromLowPct": 0,
+        "discount": 50,
+        "daysRemaining": 10,
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-50 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/0319/ade29beabeee19397b478452ce70b913aeb69cec536366b3.png"
+    },
+    "EA SPORTS FC™ 27 Standard Edition PS4 & PS5": {
+      "currency": "EUR",
+      "points": [
+        {
+          "date": "2026-11-21",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
+        }
+      ],
+      "title": "EA SPORTS FC™ 27 Standard Edition PS4 & PS5",
+      "platform": "PS4 · PS5",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA34015_00-27STANDARDBUNDLE",
+      "signalHistory": [
+        {
+          "date": "2026-11-21",
+          "code": "watch",
+          "label": "BEOBACHTEN",
+          "previousCode": null,
+          "currentPrice": 39.99,
+          "radarLow": 39.99,
+          "discount": 50,
+          "confidence": "niedrig"
+        }
+      ],
+      "signal": {
+        "version": 1,
+        "activeDeal": true,
+        "subscriptionIncluded": false,
+        "subscriptionLabel": null,
+        "confidence": "niedrig",
+        "measurements": 1,
+        "currentPrice": 39.99,
+        "lastObservedPrice": 39.99,
+        "lastObservedDate": "2026-11-21",
+        "radarLow": 39.99,
+        "deltaFromLowPct": 0,
+        "discount": 50,
+        "daysRemaining": 10,
+        "code": "watch",
+        "label": "BEOBACHTEN",
+        "reason": "-50 % Rabatt, aber erst 1 Radar-Messpunkt – das Preisniveau ist noch nicht belastbar.",
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
+      },
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
     }
   },
   "summary": {
-    "titles": 12,
-    "points": 116,
-    "archiveIssuesScanned": 59,
+    "titles": 15,
+    "points": 119,
+    "archiveIssuesScanned": 60,
     "signals": {
       "buy": 0,
-      "watch": 0,
+      "watch": 3,
       "wait": 12
     },
     "changedSignals": 0,
