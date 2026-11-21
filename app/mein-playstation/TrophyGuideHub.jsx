@@ -2,6 +2,7 @@
 import {useEffect,useMemo,useState} from 'react';
 import {TROPHY_GUIDES_KEY,TROPHY_GUIDES_EVENT,normalizeTrophyGuides,normalizeGuideRecord,trustedGuideUrl,trophyGuideSearches} from '../../lib/psn-trophy-guide-links.mjs';
 import styles from './TrophyGuideHub.module.css';
+import TrophyGuideIndexPanel from './TrophyGuideIndexPanel';
 
 const empty={url:'',note:'',missable:'unknown',updatedAt:null};
 const missableLabels={unknown:'Nicht geprüft',yes:'Ja, verpassbar',no:'Nein, nicht verpassbar'};
@@ -41,6 +42,13 @@ export default function TrophyGuideHub({game}){
   if(!value){setMessage('Bitte einen Guide-Link, eine Notiz oder die Verpassbarkeitsbewertung angeben.');return}
   store(value);
  }
+ function chooseIndexedGuide(guide){
+  const url=trustedGuideUrl(guide?.url);
+  if(!url){setMessage('Guide-Link nicht als vertrauenswürdige Quelle bestätigt.');return}
+  setDraft(previous=>({...previous,url}));
+  setEditing(true);
+  setMessage('Index-Link vorgemerkt. Prüfe vor dem Speichern Spiel, Edition und Region. Der Link ist noch nicht gespeichert.');
+ }
  function remove(){
   if(!window.confirm('Gespeicherten Guide-Link, Notiz und die Bewertung dieses Trophäen-Sets entfernen?'))return;
   store(null);
@@ -59,6 +67,7 @@ export default function TrophyGuideHub({game}){
       <span className={styles.searchNum}>0{i+1}</span><strong>{item.name}</strong><small>Guide-Suche ↗</small>
     </a>)}
    </div>
+   <TrophyGuideIndexPanel title={name} onChoose={chooseIndexedGuide}/>
    {saved&&!editing?<div className={styles.saved}>
       <div className={styles.savedLeft}><small>DEINE GESPEICHERTE QUELLE</small><strong>{record.url?sourceLabel(record.url):'Persönlicher Hinweis'}</strong>
         <span>Verpassbar: {missableLabels[record.missable]}</span>
