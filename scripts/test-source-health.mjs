@@ -74,3 +74,31 @@ test('missing cloud table and malformed timestamp are not valid monitor observat
  assert.equal(data.checks.find(x=>x.id==='monitor').state,'degraded');
  assert.equal(data.checks.find(x=>x.id==='monitor').lastDataAt,undefined);
 });
+
+test('IGDB errors distinguish Twitch OAuth rejection from IGDB API rejection without exposing secrets',async()=>{
+ const oauth=await checkSourceHealth({env:configured,now:clock,useCache:false,psnReader,
+  fetcher:async(url,opts)=>String(url).includes('id.twitch.tv')?json({message:'private-igdb-secret'},401):okFetcher(url,opts)});
+ const a=oauth.checks.find(x=>x.id==='igdb');
+ assert.equal(a.state,'error');assert.equal(a.phase,'oauth');assert.equal(a.httpStatus,401);
+ assert.match(a.detail,/Twitch-OAuth/);
+ assert.match(a.nextStep,/IGDB_CLIENT_SECRET/);
+ const api=await checkSourceHealth({env:configured,now:clock,useCache:false,psnReader,
+  fetcher:async(url,opts)=>String(url).includes('api.igdb.com')?json({message:'private-access-token'},401):okFetcher(url,opts)});
+ const b=api.checks.find(x=>x.id==='igdb');
+ assert.equal(b.state,'error');assert.equal(b.phase,'api');assert.equal(b.httpStatus,401);
+ assert.match(b.detail,/IGDB-Datenabfrage/);
+ for(const value of ['private-igdb-id','private-igdb-secret','private-access-token']) {
+  assert.equal(JSON.stringify({a,b}).includes(value),false);
+ }
+});
+test('IGDB error classification distinguishes rate limits and network failures',async()=>{
+ const limited=await checkSourceHealth({env:configured,now:clock,useCache:false,psnReader,
+  fetcher:async(url,opts)=>String(url).includes('id.twitch.tv')?json({},429):okFetcher(url,opts)});
+ assert.equal(limited.checks.find(x=>x.id==='igdb').state,'degraded');
+ assert.equal(limited.checks.find(x=>x.id==='igdb').phase,'oauth');
+ const network=await checkSourceHealth({env:configured,now:clock,useCache:false,psnReader,
+  fetcher:async(url,opts)=>String(url).includes('api.igdb.com')?Promise.reject(new Error('private client token unexpected')):okFetcher(url,opts)});
+ const result=network.checks.find(x=>x.id==='igdb');
+ assert.equal(result.state,'error');assert.equal(result.phase,'api');
+ assert.equal(JSON.stringify(result).includes('private client token unexpected'),false);
+});
