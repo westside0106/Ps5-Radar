@@ -21,7 +21,7 @@ export default function OrderHistoryIntelligence(){
   if(!file)return;
   if(file.size>3_000_000){setMessage('Die Datei ist größer als 3 MB.');return}
   if(!/\.(json|csv)$/i.test(file.name)){setMessage('Nur originale CSV- oder JSON-Exporte von PS Order History+ werden unterstützt.');return}
-  setBusy(true);setMessage('');
+  setBusy(true);setMessage('');setLoaded(null);setCategory('all');
   try{
    const text=await file.text();
    const result=parseOrderHistory(text,file.name.toLowerCase().endsWith('.json')?'json':'csv');
@@ -45,7 +45,7 @@ export default function OrderHistoryIntelligence(){
   {message?<p role="status" className={styles.message}>{message}</p>:null}
   {stats?<div className={styles.loaded}>
    <div className={styles.metrics}>
-    <div><small>ERFASSTE AUSGABEN</small><strong>{money(stats.netSpent,currency)}</strong><span>Nur importierte Positionen, abzüglich vollständig erstatteter Käufe</span></div>
+    <div><small>ERFASSTE AUSGABEN</small><strong>{money(stats.netSpent,currency)}</strong><span>Nur importierte Positionen; als erstattet markierte Posten ausgeschlossen</span></div>
     <div><small>DIREKT GEKAUFT</small><strong>{stats.groups.purchased.count}</strong><span>{money(stats.groups.purchased.paid,currency)} im Export</span></div>
     <div><small>PS PLUS EINLÖSUNGEN</small><strong>{stats.groups.psplus.count}</strong><span>Teilweise heuristisch zugeordnet</span></div>
     <div><small>ABONNEMENT-POSTEN</small><strong>{stats.groups.subscription.count}</strong><span>{money(stats.groups.subscription.paid,currency)} im Export</span></div>
