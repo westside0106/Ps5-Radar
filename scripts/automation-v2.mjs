@@ -331,7 +331,9 @@ try {
     radar.psplusLabel = parsed.label;
     const monthPretty = parsed.label.split(' ')[0];
     radar.psplusTitle = `${monthPretty[0]}${monthPretty.slice(1).toLowerCase()}-Spiele sind live`;
-    if (parsed.window) radar.psplusText = `Verfügbar bis ${String(parsed.window.end.day).padStart(2,'0')}.${String(parsed.window.end.month).padStart(2,'0')}.`;
+    radar.psplusText = parsed.window
+      ? `Verfügbar bis ${String(parsed.window.end.day).padStart(2,'0')}.${String(parsed.window.end.month).padStart(2,'0')}.`
+      : 'Beanspruchungsfrist nicht bestätigt – offizielle Ankündigung prüfen.';
     setResolved('psPlusMonthly', selected.url);
     setResolved('psPlusStoreUrls', Object.fromEntries(parsed.games.filter((g) => g.storeUrl).map((g) => [g.title, g.storeUrl])));
   } else {
