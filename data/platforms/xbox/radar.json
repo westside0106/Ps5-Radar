@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-11-21T15:34:40.389Z",
+  "checkedAt": "2026-11-22T15:30:36.400Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 2879,
+    "count": 2878,
     "views": {
       "deals": {
-        "expected": 2433,
-        "observed": 2433,
-        "count": 2433,
+        "expected": 2432,
+        "observed": 2432,
+        "count": 2432,
         "complete": true,
         "attempts": 1
       },
@@ -46,8 +46,8 @@
       },
       "ubisoft-plus": {
         "expected": 117,
-        "observed": 112,
-        "count": 112,
+        "observed": 113,
+        "count": 113,
         "complete": false,
         "attempts": 2
       }
@@ -57,12 +57,12 @@
       "gamepass-premium: keine bestaetigte Quelle (Durchlauf 1: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten)",
       "gamepass-ultimate: 693/694 eindeutig belegt, Durchlauf 1: 693/694 eindeutige IDs; Durchlauf 2: 693/694 eindeutige IDs",
       "ea-play: keine bestaetigte Quelle (Durchlauf 1: ea-play: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: ea-play: keine bestaetigte Anzahl und keine Filterkarten)",
-      "ubisoft-plus: 112/117 eindeutig belegt, Durchlauf 1: 112/117 eindeutige IDs; Durchlauf 2: 112/117 eindeutige IDs",
+      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 113/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
       "gamepass-essential: 0/? Karten gesehen",
       "gamepass-premium: 0/? Karten gesehen",
       "gamepass-ultimate: 693/694 Karten gesehen",
       "ea-play: 0/? Karten gesehen",
-      "ubisoft-plus: 112/117 Karten gesehen"
+      "ubisoft-plus: 113/117 Karten gesehen"
     ]
   },
   "evidence": [
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-21T15:34:40.389Z",
+      "observedAt": "2026-11-22T15:30:36.400Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-21T15:34:40.389Z",
+      "observedAt": "2026-11-22T15:30:36.400Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-21T15:34:40.389Z",
+      "observedAt": "2026-11-22T15:30:36.400Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -25047,22 +25047,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:9ntpb0c2028v",
-      "id": "9ntpb0c2028v",
-      "title": "LOLLIPOP CHAINSAW RePOP",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/lollipop-chainsaw-repop/9ntpb0c2028v",
-      "cover": "https://store-images.s-microsoft.com/image/apps.2332.14410056198305717.61307ff4-c6b4-4890-8d05-6f60d59a7716.d2649d39-f14b-4c79-b21a-6e32b8bee269?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 2699,
-      "regularPriceMinor": 4499,
-      "genres": [
-        "Action & Abenteuer"
-      ],
-      "services": []
-    },
-    {
       "key": "xbox:product:9mx1m5wnbcss",
       "id": "9mx1m5wnbcss",
       "title": "Lonely Mountains: Downhill - Complete Bundle",
@@ -43543,6 +43527,7 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
+        "ubisoft-plus:ubisoft-plus",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -46985,22 +46970,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:bsxsl6wbj0v7",
-      "id": "bsxsl6wbj0v7",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bsxsl6wbj0v7",
-      "cover": "https://store-images.s-microsoft.com/image/apps.29891.69993262899909428.0190d6b7-60eb-4d3f-bd16-b44c0e303861.a44fc632-9741-443e-863c-cd2fce2e955b?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1499,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bw9tffj50mkv",
       "id": "bw9tffj50mkv",
       "title": "Viva Piñata",
@@ -47010,6 +46979,22 @@
         "xbox-series"
       ],
       "priceMinor": null,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bsxsl6wbj0v7",
+      "id": "bsxsl6wbj0v7",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bsxsl6wbj0v7",
+      "cover": "https://store-images.s-microsoft.com/image/apps.29891.69993262899909428.0190d6b7-60eb-4d3f-bd16-b44c0e303861.a44fc632-9741-443e-863c-cd2fce2e955b?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 1499,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
