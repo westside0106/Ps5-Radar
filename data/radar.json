@@ -1,8 +1,8 @@
 {
-  "date": "22.11.2026",
-  "edition": "AUSGABE #061",
+  "date": "23.11.2026",
+  "edition": "AUSGABE #062",
   "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "22.11 · LIVE",
+  "newCount": "23.11 · LIVE",
   "leadTitle": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
   "leadDate": "17.11.2026",
   "leadMeta": "Begleitet Duke, den Border Collie aus Hounded, und erfahrt, wie Imprnt Studios die perfekte Hundefigur erschaffen hat.",
@@ -88,7 +88,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 22.11.2026 · 9/9 Quellen · 1 Warnung(en)",
+  "radarCheck": "Stand 23.11.2026 · 9/9 Quellen · 1 Warnung(en)",
   "sourceAlerts": [
     {
       "title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
@@ -109,7 +109,7 @@
   "editorial": [],
   "health": {
     "status": "warning",
-    "checkedAt": "2026-11-22T15:24:42.967Z",
+    "checkedAt": "2026-11-23T19:17:00.140Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -123,10 +123,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "stale",
-    "lastSuccessfulCheck": "2026-11-22T15:23:31.122Z"
+    "lastSuccessfulCheck": "2026-11-23T19:16:14.793Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-11-22T15:24:42.967Z",
+    "checkedAt": "2026-11-23T19:17:00.140Z",
     "errors": [
       "PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden"
     ],
@@ -258,7 +258,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-11-22T15:24:31.113Z",
+    "checkedAt": "2026-11-23T19:16:46.426Z",
     "titles": 10,
     "fetched": 4,
     "enriched": 7,
@@ -315,7 +315,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-11-22T15:24:20.385Z",
+    "checkedAt": "2026-11-23T19:16:33.844Z",
     "month": "November",
     "year": 2026,
     "notes": [],
@@ -329,7 +329,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-11-22T15:24:20.470Z",
+    "checkedAt": "2026-11-23T19:16:33.928Z",
     "collection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -342,7 +342,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-11-22T15:24:34.019Z",
+    "checkedAt": "2026-11-23T19:16:50.041Z",
     "verified": 2,
     "missing": [
       "Tomb Raider IV – VI Remastered"
@@ -353,8 +353,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-11-22T15:24:12.721Z",
-    "date": "22.11.2026",
+    "checkedAt": "2026-11-23T19:16:26.677Z",
+    "date": "23.11.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -379,8 +379,8 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-11-22T15:24:34.608Z",
-    "berlinDate": "2026-11-22",
+    "checkedAt": "2026-11-23T19:16:50.584Z",
+    "berlinDate": "2026-11-23",
     "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],

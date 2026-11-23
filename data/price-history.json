@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T15:24:31.071Z",
+  "updatedAt": "2026-11-23T19:16:46.379Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -1415,6 +1415,12 @@
           "price": 35.99,
           "oldPrice": 79.99,
           "discount": 55
+        },
+        {
+          "date": "2026-11-23",
+          "price": 35.99,
+          "oldPrice": 79.99,
+          "discount": 55
         }
       ],
       "title": "NBA 2K27",
@@ -1447,21 +1453,21 @@
         "activeDeal": true,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
-        "confidence": "niedrig",
-        "measurements": 2,
+        "confidence": "mittel",
+        "measurements": 3,
         "currentPrice": 35.99,
         "lastObservedPrice": 35.99,
-        "lastObservedDate": "2026-11-22",
+        "lastObservedDate": "2026-11-23",
         "radarLow": 35.99,
         "deltaFromLowPct": 0,
         "discount": 55,
-        "daysRemaining": 9,
+        "daysRemaining": 8,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -55 % deutlich reduziert.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-11-22"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/2913/4a31f711e2ff460cd44ad646983f36533278cea61f639be9.png"
     },
@@ -1476,6 +1482,12 @@
         },
         {
           "date": "2026-11-22",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
+        },
+        {
+          "date": "2026-11-23",
           "price": 39.99,
           "oldPrice": 79.99,
           "discount": 50
@@ -1511,21 +1523,21 @@
         "activeDeal": true,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
-        "confidence": "niedrig",
-        "measurements": 2,
+        "confidence": "mittel",
+        "measurements": 3,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-11-22",
+        "lastObservedDate": "2026-11-23",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 9,
+        "daysRemaining": 8,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-11-22"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202606/0319/ade29beabeee19397b478452ce70b913aeb69cec536366b3.png"
     },
@@ -1540,6 +1552,12 @@
         },
         {
           "date": "2026-11-22",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
+        },
+        {
+          "date": "2026-11-23",
           "price": 39.99,
           "oldPrice": 79.99,
           "discount": 50
@@ -1575,36 +1593,36 @@
         "activeDeal": true,
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
-        "confidence": "niedrig",
-        "measurements": 2,
+        "confidence": "mittel",
+        "measurements": 3,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-11-22",
+        "lastObservedDate": "2026-11-23",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 9,
+        "daysRemaining": 8,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
-        "changedToday": true,
-        "previousCode": "watch",
-        "changedAt": "2026-11-22"
+        "changedToday": false,
+        "previousCode": null,
+        "changedAt": null
       },
       "image": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
     }
   },
   "summary": {
     "titles": 15,
-    "points": 122,
-    "archiveIssuesScanned": 61,
+    "points": 125,
+    "archiveIssuesScanned": 62,
     "signals": {
       "buy": 3,
       "watch": 0,
       "wait": 12
     },
-    "changedSignals": 3,
-    "newBuySignals": 3
+    "changedSignals": 0,
+    "newBuySignals": 0
   },
   "method": {
     "signalVersion": 1,
