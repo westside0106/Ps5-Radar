@@ -3,16 +3,16 @@
   "platform": "xbox",
   "region": "DE",
   "target": "xbox-series",
-  "checkedAt": "2026-11-22T15:30:36.400Z",
+  "checkedAt": "2026-11-23T19:26:38.077Z",
   "sourceUrl": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
   "coverage": {
     "complete": false,
-    "count": 2878,
+    "count": 2879,
     "views": {
       "deals": {
-        "expected": 2432,
-        "observed": 2432,
-        "count": 2432,
+        "expected": 2433,
+        "observed": 2433,
+        "count": 2433,
         "complete": true,
         "attempts": 1
       },
@@ -46,8 +46,8 @@
       },
       "ubisoft-plus": {
         "expected": 117,
-        "observed": 113,
-        "count": 113,
+        "observed": 112,
+        "count": 112,
         "complete": false,
         "attempts": 2
       }
@@ -57,12 +57,12 @@
       "gamepass-premium: keine bestaetigte Quelle (Durchlauf 1: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: gamepass-premium: keine bestaetigte Anzahl und keine Filterkarten)",
       "gamepass-ultimate: 693/694 eindeutig belegt, Durchlauf 1: 693/694 eindeutige IDs; Durchlauf 2: 693/694 eindeutige IDs",
       "ea-play: keine bestaetigte Quelle (Durchlauf 1: ea-play: keine bestaetigte Anzahl und keine Filterkarten; Durchlauf 2: ea-play: keine bestaetigte Anzahl und keine Filterkarten)",
-      "ubisoft-plus: 113/117 eindeutig belegt, Durchlauf 1: 113/117 eindeutige IDs; Durchlauf 2: 113/117 eindeutige IDs",
+      "ubisoft-plus: 112/117 eindeutig belegt, Durchlauf 1: 112/117 eindeutige IDs; Durchlauf 2: 112/117 eindeutige IDs",
       "gamepass-essential: 0/? Karten gesehen",
       "gamepass-premium: 0/? Karten gesehen",
       "gamepass-ultimate: 693/694 Karten gesehen",
       "ea-play: 0/? Karten gesehen",
-      "ubisoft-plus: 113/117 Karten gesehen"
+      "ubisoft-plus: 112/117 Karten gesehen"
     ]
   },
   "evidence": [
@@ -72,7 +72,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-22T15:30:36.400Z",
+      "observedAt": "2026-11-23T19:26:38.077Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Preise = Im Angebot, Ziel xbox-series"
@@ -83,7 +83,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-22T15:30:36.400Z",
+      "observedAt": "2026-11-23T19:26:38.077Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Game Pass Ultimate, Ziel xbox-series"
@@ -94,7 +94,7 @@
       "url": "https://www.xbox.com/de-DE/games/all-games/console?PlayWith=XboxSeriesX%7CS",
       "level": "store",
       "region": "DE",
-      "observedAt": "2026-11-22T15:30:36.400Z",
+      "observedAt": "2026-11-23T19:26:38.077Z",
       "publishedAt": null,
       "subject": null,
       "note": "Filter Abonnements = Ubisoft+, Ziel xbox-series"
@@ -7186,6 +7186,38 @@
       ],
       "priceMinor": 1499,
       "regularPriceMinor": 2999,
+      "genres": [
+        "Shooter"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9p36pb4n42gw",
+      "id": "9p36pb4n42gw",
+      "title": "Call of Duty®: Modern Warfare® 4",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/call-of-duty-modern-warfare-4/9p36pb4n42gw",
+      "cover": "https://store-images.s-microsoft.com/image/apps.59792.13559635275456449.72d1efe7-e297-4b01-9ff5-81f9541bc9a1.f8f4e212-4f83-45fe-8db7-bbb19d5a9582?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 6799,
+      "regularPriceMinor": 7999,
+      "genres": [
+        "Shooter"
+      ],
+      "services": []
+    },
+    {
+      "key": "xbox:product:9nwwns0c3007",
+      "id": "9nwwns0c3007",
+      "title": "Call of Duty®: Modern Warfare® 4 - Vault Edition",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/call-of-duty-modern-warfare-4-vault-edition/9nwwns0c3007",
+      "cover": "https://store-images.s-microsoft.com/image/apps.46360.14441489705635704.a6724527-bd96-4402-a2a4-58c546f842bd.2ba39754-c1a8-40e7-8cce-3f30ca9405ad?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": 9349,
+      "regularPriceMinor": 10999,
       "genres": [
         "Shooter"
       ],
@@ -21235,24 +21267,6 @@
       "services": [
         "xbox-game-pass:ultimate"
       ]
-    },
-    {
-      "key": "xbox:product:9n1305cblft8",
-      "id": "9n1305cblft8",
-      "title": "Hozy",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/hozy/9n1305cblft8",
-      "cover": "https://store-images.s-microsoft.com/image/apps.9845.13913948249016317.7af72b33-d646-4454-9d47-9f893cbf532e.dc6b6f75-c226-4833-b08c-686b74791794?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": 1199,
-      "regularPriceMinor": 1499,
-      "genres": [
-        "Andere",
-        "Familie & Kinder",
-        "Rätsel & Wissen"
-      ],
-      "services": []
     },
     {
       "key": "xbox:product:bsmzh25v6v46",
@@ -43527,7 +43541,6 @@
       "regularPriceMinor": null,
       "genres": [],
       "services": [
-        "ubisoft-plus:ubisoft-plus",
         "xbox-game-pass:ultimate"
       ]
     },
@@ -46970,22 +46983,6 @@
       "services": []
     },
     {
-      "key": "xbox:product:bw9tffj50mkv",
-      "id": "bw9tffj50mkv",
-      "title": "Viva Piñata",
-      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
-      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
-      "targets": [
-        "xbox-series"
-      ],
-      "priceMinor": null,
-      "regularPriceMinor": null,
-      "genres": [],
-      "services": [
-        "xbox-game-pass:ultimate"
-      ]
-    },
-    {
       "key": "xbox:product:bsxsl6wbj0v7",
       "id": "bsxsl6wbj0v7",
       "title": "Viva Piñata",
@@ -46995,6 +46992,22 @@
         "xbox-series"
       ],
       "priceMinor": 1499,
+      "regularPriceMinor": null,
+      "genres": [],
+      "services": [
+        "xbox-game-pass:ultimate"
+      ]
+    },
+    {
+      "key": "xbox:product:bw9tffj50mkv",
+      "id": "bw9tffj50mkv",
+      "title": "Viva Piñata",
+      "storeUrl": "https://www.xbox.com/de-DE/games/store/viva-pinata/bw9tffj50mkv",
+      "cover": "https://store-images.s-microsoft.com/image/apps.40286.71972951279590291.af9c2fdb-151a-4c1d-8ae7-d7bfb2a756ee.514e5f09-6b42-411f-8f1d-3c1e8c1ca6d9?q=90&w=177&h=177",
+      "targets": [
+        "xbox-series"
+      ],
+      "priceMinor": null,
       "regularPriceMinor": null,
       "genres": [],
       "services": [
