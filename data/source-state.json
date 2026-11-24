@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-24T18:55:32.471Z",
+  "checkedAt": "2026-11-24T22:31:25.529Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,14 +54,7 @@
         "pubDate": "Fri, 13 Nov 2026 09:32:01 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
-        "link": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
-        "pubDate": "Tue, 24 Nov 2026 11:10:52 +0000",
-        "category": "release"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
@@ -141,7 +134,7 @@
       "label": "NOVEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-11-24T18:56:02.233Z",
+      "checkedAt": "2026-11-24T22:31:57.466Z",
       "parsed": 4,
       "accepted": [
         "Dead Island 2",
@@ -160,7 +153,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 245152,
+    "bytes": 245153,
     "updated": true,
     "parsed": {
       "trial": false,

@@ -1,7 +1,7 @@
 {
   "date": "24.11.2026",
   "edition": "AUSGABE #063",
-  "newHeadline": "1 RELEASE HEUTE",
+  "newHeadline": "RADAR-CHECK AKTUELL",
   "newCount": "24.11 · LIVE",
   "leadTitle": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
   "leadDate": "17.11.2026",
@@ -106,26 +106,19 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
-      "url": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
-      "category": "release",
-      "score": 100
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "ok",
-    "checkedAt": "2026-11-24T18:56:02.068Z",
+    "checkedAt": "2026-11-24T22:31:57.311Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
     "warnings": 0,
-    "lastSuccessfulCheck": "2026-11-24T18:55:32.471Z",
+    "lastSuccessfulCheck": "2026-11-24T22:31:25.529Z",
     "editorialFreshness": "ok"
   },
   "sourceCheck": {
-    "checkedAt": "2026-11-24T18:55:32.471Z",
+    "checkedAt": "2026-11-24T22:31:25.529Z",
     "errors": [],
     "sources": [
       {
@@ -255,7 +248,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-11-24T18:55:57.749Z",
+    "checkedAt": "2026-11-24T22:31:51.893Z",
     "titles": 10,
     "fetched": 4,
     "enriched": 7,
@@ -312,7 +305,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-11-24T18:55:45.220Z",
+    "checkedAt": "2026-11-24T22:31:38.634Z",
     "month": "November",
     "year": 2026,
     "notes": [],
@@ -326,7 +319,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-11-24T18:55:45.327Z",
+    "checkedAt": "2026-11-24T22:31:38.729Z",
     "collection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -339,7 +332,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-11-24T18:56:01.242Z",
+    "checkedAt": "2026-11-24T22:31:56.193Z",
     "verified": 2,
     "missing": [
       "Tomb Raider IV – VI Remastered"
@@ -350,7 +343,7 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-11-24T18:55:41.750Z",
+    "checkedAt": "2026-11-24T22:31:34.932Z",
     "date": "24.11.2026",
     "maxAgeDays": 21,
     "selected": [
@@ -376,9 +369,9 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-11-23T19:16:50.584Z",
-    "berlinDate": "2026-11-23",
-    "newPostsToday": 0,
+    "checkedAt": "2026-11-24T18:56:02.233Z",
+    "berlinDate": "2026-11-24",
+    "newPostsToday": 1,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
