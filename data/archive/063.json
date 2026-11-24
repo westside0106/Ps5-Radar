@@ -1,0 +1,388 @@
+{
+  "date": "24.11.2026",
+  "edition": "AUSGABE #063",
+  "newHeadline": "1 RELEASE HEUTE",
+  "newCount": "24.11 · LIVE",
+  "leadTitle": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
+  "leadDate": "17.11.2026",
+  "leadMeta": "Begleitet Duke, den Border Collie aus Hounded, und erfahrt, wie Imprnt Studios die perfekte Hundefigur erschaffen hat.",
+  "leadPrice": null,
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/adb5c2c64b172c47840d21215960cdceb7c689d9.jpg",
+  "secondary1Title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
+  "secondary1Date": "24.11.2026",
+  "secondary1Meta": "Nach langem Warten war es endlich so weit: Spieler konnten sich in Grand Theft Auto VI stürzen.",
+  "secondary1Price": null,
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/c5cf1b37175a6c6da3f6b506bd864bea7845c49d.jpg",
+  "secondary2Title": "Grand Theft Auto VI erscheint morgen, 19. November",
+  "secondary2Date": "18.11.2026",
+  "secondary2Meta": "Erlebt Grand Theft Auto VI: Taucht ein in den Bundesstaat Leonida mit Vice City und fünf weiteren einzigartigen Regionen.",
+  "secondary2Price": null,
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/546dfdaf600857d374e37f58fe4b3d8f6482c2f8.jpg",
+  "psplusLabel": "NOVEMBER 2026",
+  "psplusTitle": "November-Spiele sind live",
+  "psplusText": "Verfügbar bis 30.11.",
+  "plusGames": [
+    {
+      "title": "Dead Island 2",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/V6WJkRhfNIQ3ePfAmrLSfGng.png",
+      "imageSource": "official-product",
+      "storeUrl": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000"
+    },
+    {
+      "title": "Tomb Raider IV – VI Remastered",
+      "image": null,
+      "imageSource": "unverified",
+      "storeUrl": "https://store.playstation.com/product/EP1875-PPSA18151_00-TOMBRAIDER456225"
+    },
+    {
+      "title": "Monster Train 2",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1815/3ea7456f6925d14bd479d7b9bd251be1575e0e5fc37ad88d.png",
+      "imageSource": "official-product",
+      "storeUrl": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880"
+    }
+  ],
+  "storeTitle": "Aktuelle Store-Top-Deals",
+  "storeText": "Automatisch aus der aktuell verifizierten PlayStation-Store-Aktion ausgewählt.",
+  "storeEnd": "2026-11-30T23:59:00+01:00",
+  "deals": [
+    {
+      "title": "NBA 2K27",
+      "platform": "PS5",
+      "price": "35,99 €",
+      "oldPrice": "79,99 €",
+      "discount": "-55 %",
+      "image": null
+    },
+    {
+      "title": "EA SPORTS™ Madden NFL 27",
+      "platform": "PS5",
+      "price": "39,99 €",
+      "oldPrice": "79,99 €",
+      "discount": "-50 %",
+      "image": null
+    },
+    {
+      "title": "EA SPORTS FC™ 27 Standard Edition PS4 & PS5",
+      "platform": "PS4 · PS5",
+      "price": "39,99 €",
+      "oldPrice": "79,99 €",
+      "discount": "-50 %",
+      "image": null
+    }
+  ],
+  "releases": [],
+  "quickItems": [],
+  "leavingTitle": "Aktuelle Store-Aktion endet bald",
+  "leavingText": "Aktuelle Store-Aktion endet am 30.11., 23:59 Uhr.",
+  "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
+  "benefitsText": "EA Play: FC™ 27 · 10h Trial ab 18.09.; 10 % auf digitale EA-Käufe; Monatliche Mitgliederbelohnungen; The Play List.",
+  "eaItems": [
+    "10 % auf digitale EA-Käufe",
+    "Monatliche Mitgliederbelohnungen",
+    "The Play List"
+  ],
+  "ubisoftTitle": "Ubisoft+ Classics",
+  "ubisoftText": "Auf PlayStation als Ubisoft+ Classics verfügbar · 7,99 €/Monat; zudem über PS Plus Extra/Premium.",
+  "ubisoftItems": [
+    "Ubisoft+ Classics",
+    "PS Plus Extra",
+    "PS Plus Premium"
+  ],
+  "radarCheck": "Stand 24.11.2026 · 9/9 Quellen erfolgreich geprüft",
+  "sourceAlerts": [
+    {
+      "title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
+      "url": "https://blog.de.playstation.com/2026/11/17/hounded-angekuendigt-das-hunde-abenteuer-kommt-2027-auf-ps5/",
+      "type": "editorial"
+    },
+    {
+      "title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
+      "url": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
+      "type": "editorial"
+    },
+    {
+      "title": "Grand Theft Auto VI erscheint morgen, 19. November",
+      "url": "https://blog.de.playstation.com/2026/11/18/grand-theft-auto-vi-erscheint-morgen-19-november/",
+      "type": "editorial"
+    }
+  ],
+  "editorial": [
+    {
+      "title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
+      "url": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
+      "category": "release",
+      "score": 100
+    }
+  ],
+  "health": {
+    "status": "ok",
+    "checkedAt": "2026-11-24T18:56:02.068Z",
+    "okSources": 9,
+    "totalSources": 9,
+    "failedSources": 0,
+    "warnings": 0,
+    "lastSuccessfulCheck": "2026-11-24T18:55:32.471Z",
+    "editorialFreshness": "ok"
+  },
+  "sourceCheck": {
+    "checkedAt": "2026-11-24T18:55:32.471Z",
+    "errors": [],
+    "sources": [
+      {
+        "name": "PlayStation Blog",
+        "ok": true
+      },
+      {
+        "name": "Monats-Releases",
+        "ok": true
+      },
+      {
+        "name": "PS Plus monatlich",
+        "ok": true
+      },
+      {
+        "name": "PS Plus aktuell",
+        "ok": true
+      },
+      {
+        "name": "EA Play",
+        "ok": true
+      },
+      {
+        "name": "Ubisoft+",
+        "ok": true
+      },
+      {
+        "name": "Store: Hogwarts Legacy",
+        "ok": true
+      },
+      {
+        "name": "Store: Star Wars Outlaws",
+        "ok": true
+      },
+      {
+        "name": "Store: Red Dead Redemption",
+        "ok": true
+      }
+    ]
+  },
+  "gameDetails": {
+    "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5": {},
+    "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt": {},
+    "Grand Theft Auto VI erscheint morgen, 19. November": {},
+    "Dead Island 2": {
+      "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11.",
+      "storeUrl": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/V6WJkRhfNIQ3ePfAmrLSfGng.png",
+      "title": "Dead Island 2"
+    },
+    "Tomb Raider IV – VI Remastered": {
+      "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11."
+    },
+    "Monster Train 2": {
+      "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11.",
+      "storeUrl": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880",
+      "coverImage": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1815/3ea7456f6925d14bd479d7b9bd251be1575e0e5fc37ad88d.png",
+      "title": "Monster Train 2"
+    },
+    "NBA 2K27": {
+      "description": "Basketball-Simulation von 2K mit MyCAREER, MyTEAM, The City und Online-Modi auf PS5.",
+      "publisher": "Take-Two",
+      "genre": "Sport · Basketball",
+      "release": "04.09.2026",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/2913/4a31f711e2ff460cd44ad646983f36533278cea61f639be9.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-hero-desktop-03-en-16jul26",
+        "https://i.ytimg.com/vi_webp/5l-a3U3Y8aA/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/x3VbMlmerXg/maxresdefault.webp",
+        "https://i.ytimg.com/vi_webp/YUbJfNJSG-M/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-screenshot-05-en-16jul26"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=5l-a3U3Y8aA",
+      "pageUrl": "https://www.playstation.com/de-de/games/nba-2k/",
+      "developer": "Visual Concepts",
+      "storeUrl": "https://store.playstation.com/de-de/product/UP1001-PPSA35889_00-NBA2K27000000000"
+    },
+    "EA SPORTS™ Madden NFL 27": {
+      "description": "Führe die Liga Entscheidung für Entscheidung an.",
+      "publisher": "EA Swiss Sarl",
+      "genre": "Sport",
+      "release": "6.8.2026",
+      "platform": "PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/0319/7f14e0462ed00787046f8b133aa1a1db408c2d92d82a2312.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/1619/6f2951877ad948c448fc1e65b385a7d4db9a02891cf677e7.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/1619/f9bc60f1d97723323184bc199c271d1af3b8532b251877b8.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/1619/d1654be023531cbe79f6b479b3c90921c9f1d073048d2054.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/1619/faeef60490fcf19b86780fcec2d5c5beaee94a57be55d4bc.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202606/1619/22cd96cdb8ab852a83ab141f9fed1087a6a9f4b287302922.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA32904_00-MADDENNFL27GAME0"
+    },
+    "EA SPORTS FC™ 27 Standard Edition PS4 & PS5": {
+      "description": "The Worlds Game",
+      "publisher": "EA Swiss Sarl",
+      "release": "18.9.2026",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/31767ed959062148430bb9b54aa5cf1861c02496bdfeea2a.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202609/2115/2f96f019a9a612a34b24caabc2ce5c917bdafdad15b3165f.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202609/2115/371d926c74eca4b13fcf14f7b904ce77b392cf51f3b1d25d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202609/2115/2999acaf5cfc912a063c6a853ffcb0dfe441e619268d588d.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202609/2115/c84f40d40a426a11547ed334db8e7f7e5074b9ba09861ec4.jpg",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202609/2115/cd463707b92308f4e5caad126971241e71b5352ff3fa679d.jpg"
+      ],
+      "storeUrl": "https://store.playstation.com/de-de/product/UP0006-PPSA34015_00-27STANDARDBUNDLE"
+    },
+    "EA SPORTS FC 27": {
+      "pageUrl": "https://www.playstation.com/de-de/games/ea-sports-fc/",
+      "developer": "EA SPORTS",
+      "genre": "Sport · Fußball",
+      "description": "Fußballspiel mit Karriere, Football Ultimate Team, The Grounds und umfangreichen lizenzierten Vereinen, Spielern und Ligen.",
+      "publisher": "EA Swiss Sarl",
+      "release": "18.9.2026",
+      "platform": "PS4 · PS5",
+      "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png",
+        "https://image.api.playstation.com/vulcan/ap/rnd/202607/2322/78e0ba12f88a79c454b6b17d1638f2ae0b2943f1dbc98a17.png",
+        "https://gmedia.playstation.com/is/image/SIEPDC/EA-FC27-hero-desktop-01-en-16jul26",
+        "https://i.ytimg.com/vi_webp/LoqWKZ1kjio/maxresdefault.webp",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-02-en-13jul26",
+        "https://gmedia.playstation.com/is/image/SIEPDC/ea-sports-fc-25-screenshot-05-en-13jul26"
+      ],
+      "trailerUrl": "https://www.youtube.com/watch?v=LoqWKZ1kjio"
+    }
+  },
+  "enrichment": {
+    "checkedAt": "2026-11-24T18:55:57.749Z",
+    "titles": 10,
+    "fetched": 4,
+    "enriched": 7,
+    "warnings": []
+  },
+  "resolvedSources": {
+    "psPlusMonthly": "https://blog.de.playstation.com/2026/10/28/playstation-plus-monatliche-spiele-fuer-november-dead-island-2-mehr/",
+    "psPlusStoreUrls": {
+      "Dead Island 2": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
+      "Tomb Raider IV – VI Remastered": "https://store.playstation.com/product/EP1875-PPSA18151_00-TOMBRAIDER456225",
+      "Monster Train 2": "https://store.playstation.com/product/EP8909-PPSA25758_00-0047300101977880"
+    },
+    "monthlyReleases": "https://blog.de.playstation.com/?p=204875",
+    "releaseStoreUrls": {
+      "The Blood of Dawnwalker": "https://store.playstation.com/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
+      "Onimusha: Way of the Sword": "https://store.playstation.com/product/UP0102-PPSA27836_00-0000000000000001",
+      "NBA 2K27": "https://store.playstation.com/product/UP1001-PPSA35889_00-NBA2K27000000000",
+      "Mewgenics": "https://store.playstation.com/concept/10019219",
+      "Marvel’s Wolverine": "https://store.playstation.com/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+      "Aniimo": "https://store.playstation.com/product/JB2238-PPSA35870_00-0588301512156043",
+      "Control Resonant": "https://store.playstation.com/product/EP5291-PPSA34547_00-0210080241603648",
+      "Silent Hill: Townfall": "https://store.playstation.com/product/JP0101-PPSA33286_00-TOWNFALLSIEJ0000",
+      "EA Sports FC 27": "https://store.playstation.com/product/UP0006-PPSA34015_00-27STANDARDBUNDLE"
+    },
+    "eaPlay": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
+    "ubisoftPlus": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M",
+    "storeCampaign": "https://blog.de.playstation.com/2026/11/16/playstations-black-friday-angebote-2026-im-ueberblick/",
+    "storeCollection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
+    "storeDeals": {
+      "NBA 2K27": "https://store.playstation.com/de-de/product/UP1001-PPSA35889_00-NBA2K27000000000",
+      "EA SPORTS™ Madden NFL 27": "https://store.playstation.com/de-de/product/UP0006-PPSA32904_00-MADDENNFL27GAME0",
+      "EA SPORTS FC™ 27 Standard Edition PS4 & PS5": "https://store.playstation.com/de-de/product/UP0006-PPSA34015_00-27STANDARDBUNDLE"
+    }
+  },
+  "eaPlay": {
+    "title": "FC™ 27 · 10h Trial ab 18.09.",
+    "trial": null,
+    "items": [
+      "10 % auf digitale EA-Käufe",
+      "Monatliche Mitgliederbelohnungen",
+      "The Play List"
+    ],
+    "sourceUrl": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play"
+  },
+  "ubisoftPlus": {
+    "title": "Ubisoft+ Classics",
+    "price": "7,99 €",
+    "items": [
+      "Ubisoft+ Classics",
+      "PS Plus Extra",
+      "PS Plus Premium"
+    ],
+    "sourceUrl": "https://store.playstation.com/de-de/product/EP0001-PPSA15773_00-UBISOFTPLUS1T01M"
+  },
+  "automationV2": {
+    "version": 2,
+    "checkedAt": "2026-11-24T18:55:45.220Z",
+    "month": "November",
+    "year": 2026,
+    "notes": [],
+    "resolved": {
+      "storeDiscoveryMode": "dynamic-browser",
+      "storeDiscoveryStaticLinks": 1,
+      "storeDiscoveryBrowserLinks": 11,
+      "storeDiscoveryLinks": 12,
+      "storeDiscoveryVerified": 9,
+      "storeDiscoverySelected": 3
+    }
+  },
+  "storeDiscovery": {
+    "checkedAt": "2026-11-24T18:55:45.327Z",
+    "collection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
+    "activeCampaign": true,
+    "staticLinks": 1,
+    "browserLinks": 11,
+    "links": 12,
+    "fetched": 12,
+    "verified": 9,
+    "selected": 3,
+    "mode": "dynamic-browser",
+    "warnings": []
+  },
+  "mediaValidation": {
+    "checkedAt": "2026-11-24T18:56:01.242Z",
+    "verified": 2,
+    "missing": [
+      "Tomb Raider IV – VI Remastered"
+    ],
+    "warnings": [
+      "Tomb Raider IV – VI Remastered: Produktidentitaet oder Cover nicht bestaetigt"
+    ]
+  },
+  "editorialFreshness": {
+    "status": "ok",
+    "checkedAt": "2026-11-24T18:55:41.750Z",
+    "date": "24.11.2026",
+    "maxAgeDays": 21,
+    "selected": [
+      {
+        "title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
+        "date": "17.11.2026",
+        "url": "https://blog.de.playstation.com/2026/11/17/hounded-angekuendigt-das-hunde-abenteuer-kommt-2027-auf-ps5/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/adb5c2c64b172c47840d21215960cdceb7c689d9.jpg"
+      },
+      {
+        "title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
+        "date": "24.11.2026",
+        "url": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/c5cf1b37175a6c6da3f6b506bd864bea7845c49d.jpg"
+      },
+      {
+        "title": "Grand Theft Auto VI erscheint morgen, 19. November",
+        "date": "18.11.2026",
+        "url": "https://blog.de.playstation.com/2026/11/18/grand-theft-auto-vi-erscheint-morgen-19-november/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/546dfdaf600857d374e37f58fe4b3d8f6482c2f8.jpg"
+      }
+    ]
+  },
+  "temporalCheck": {
+    "status": "ok",
+    "checkedAt": "2026-11-23T19:16:50.584Z",
+    "berlinDate": "2026-11-23",
+    "newPostsToday": 0,
+    "staleRelativeCopyFixed": 0,
+    "errors": [],
+    "warnings": [
+      "PS Plus: kein verifiziertes Produktcover für Tomb Raider IV – VI Remastered"
+    ]
+  }
+}

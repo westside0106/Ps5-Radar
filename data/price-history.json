@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T19:16:46.379Z",
+  "updatedAt": "2026-11-24T18:55:57.697Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -1421,6 +1421,12 @@
           "price": 35.99,
           "oldPrice": 79.99,
           "discount": 55
+        },
+        {
+          "date": "2026-11-24",
+          "price": 35.99,
+          "oldPrice": 79.99,
+          "discount": 55
         }
       ],
       "title": "NBA 2K27",
@@ -1454,14 +1460,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 35.99,
         "lastObservedPrice": 35.99,
-        "lastObservedDate": "2026-11-23",
+        "lastObservedDate": "2026-11-24",
         "radarLow": 35.99,
         "deltaFromLowPct": 0,
         "discount": 55,
-        "daysRemaining": 8,
+        "daysRemaining": 7,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -55 % deutlich reduziert.",
@@ -1488,6 +1494,12 @@
         },
         {
           "date": "2026-11-23",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
+        },
+        {
+          "date": "2026-11-24",
           "price": 39.99,
           "oldPrice": 79.99,
           "discount": 50
@@ -1524,14 +1536,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-11-23",
+        "lastObservedDate": "2026-11-24",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 8,
+        "daysRemaining": 7,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
@@ -1558,6 +1570,12 @@
         },
         {
           "date": "2026-11-23",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
+        },
+        {
+          "date": "2026-11-24",
           "price": 39.99,
           "oldPrice": 79.99,
           "discount": 50
@@ -1594,14 +1612,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 3,
+        "measurements": 4,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-11-23",
+        "lastObservedDate": "2026-11-24",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 8,
+        "daysRemaining": 7,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
@@ -1614,8 +1632,8 @@
   },
   "summary": {
     "titles": 15,
-    "points": 125,
-    "archiveIssuesScanned": 62,
+    "points": 128,
+    "archiveIssuesScanned": 63,
     "signals": {
       "buy": 3,
       "watch": 0,
