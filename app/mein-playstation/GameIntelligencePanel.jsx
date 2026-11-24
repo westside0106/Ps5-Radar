@@ -119,7 +119,7 @@ export default function GameIntelligencePanel({game}){
    </article>
    <article className={styles.card}>
     <div className={styles.cardHead}><strong>DEIN PREISRADAR · EUR</strong><a href="/preise">Preisverlauf öffnen</a></div>
-    {priceRadar?.tracked?<><p className={styles.title}>Genau dieser Titel ist im eigenen deutschen Radar-Preisarchiv enthalten: <strong>{priceRadar.title}</strong>.</p>
+    {priceRadar?.tracked?<><p className={styles.title}>Genau dieser Titel ist im eigenen EUR-Radar-Preisarchiv enthalten: <strong>{priceRadar.title}</strong>.</p>
      <div className={styles.facts}>
       <div><small>Aktuell bestätigter Deal</small><strong>{eur(priceRadar.currentVerifiedPrice)}</strong></div>
       <div><small>Radar-Tiefstwert</small><strong>{eur(priceRadar.radarLow)}</strong></div>
