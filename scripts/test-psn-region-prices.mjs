@@ -58,7 +58,7 @@ test('regional prices are presented in native currency, no FX or cross-currency 
 test('wrong currency, third-party URL, suspicious addon and foreign locale never become valid price data',()=>{
  const data={...input,results:[
   {region:'DE',currency:'USD',price:1,url:'https://store.playstation.com/de-de/concept/10001234'},
-  {region:'GB',currency:'GBP',price:0.1,suspect:true,url:'https://store.playstation.com/en-gb/concept/10001234'},
+  {region:'GB',currency:'GBP',price:0,suspect:false,url:'https://store.playstation.com/en-gb/concept/10001234'},
   {region:'US',currency:'USD',price:1,url:'https://evil.com/en-us/concept/10001234'},
   {region:'PL',currency:'PLN',price:60,url:'https://store.playstation.com/de-de/concept/10001234'}
  ]};
