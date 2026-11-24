@@ -331,7 +331,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
         const transfer=page.waitForEvent('download');
         await quality.getByRole('button',{name:'CSV EXPORTIEREN'}).click();
         const download=await transfer;
-        assert.equal(download.suggestedFilename(),'ps5-radar-quellen-7tage-2026-11-21.csv');
+        assert.equal(download.suggestedFilename(),`ps5-radar-quellen-7tage-${new Date().toISOString().slice(0,10)}.csv`);
         await quality.getByText('CSV mit Tagesbefunden',{exact:false}).waitFor();
        }
        const qualitySize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
