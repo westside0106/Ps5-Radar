@@ -1,0 +1,11 @@
+.root{min-width:0;border:1px solid #456c84;border-radius:12px;padding:13px;background:#112e45;display:grid;gap:12px}
+.head small{color:#90dccc;font-size:9px;letter-spacing:.12em;font-weight:850}
+.head h5{font-size:14px;margin:5px 0;color:#f0ffff}
+.head p,.disclaimer,.info{font-size:10px;line-height:1.65;color:#b8d1dd;margin:0}
+.field{display:grid;gap:6px;color:#d9edf7;font-size:10px;font-weight:700}.field input{min-width:0;width:100%;box-sizing:border-box;background:#091c2d;color:#e8faff;border:1px solid #52738b;border-radius:7px;padding:11px;font-size:12px}.field small{font-weight:400;line-height:1.55;color:#a8c6d6}
+.actions{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.actions button{border:1px solid #9ce8d0;background:#26616f;color:#effff8;padding:10px 13px;border-radius:8px;min-height:42px;font-size:10px;font-weight:850;cursor:pointer}.actions button:disabled{opacity:.6;cursor:progress}.actions a{font-size:10px;color:#a9def6}
+.error{margin:0;color:#ffbac5;font-size:11px}.meta{display:flex;gap:6px;flex-wrap:wrap}.meta span{font-size:10px;color:#c7e2eb;background:#1e3e56;border:1px solid #466b86;border-radius:6px;padding:7px}.caution{margin:0;color:#f3d5a7;font-size:10px;line-height:1.65}
+.filter{font-size:11px;color:#cae7ef;display:flex;gap:8px;align-items:center}.filter input{width:17px;height:17px;accent-color:#65cdbb}
+.regions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.region{min-width:0;border:1px solid #42617c;border-radius:9px;background:#0d273c;padding:11px;display:grid;align-content:start;gap:8px}.rowHead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:5px}.rowHead strong{font-size:12px;color:#e4f7ff}.rowHead span{font-size:10px;color:#8cbcd4}.price{font-size:20px;color:#b7ffe2;font-variant-numeric:tabular-nums}.discount{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0;font-size:10px}.discount s{color:#a6bdc9}.discount strong{color:#bbefc6}.region small{font-size:10px;color:#a9c9da;line-height:1.5}.missing{font-size:11px;color:#c6d3de;margin:0;line-height:1.6}.region>a{font-size:10px;color:#c1f8f1;min-height:38px;display:flex;align-items:center;font-weight:800;text-underline-offset:3px}
+.root :focus-visible{outline:3px solid #aaf8e6;outline-offset:3px}
+@media(max-width:530px){.regions{grid-template-columns:minmax(0,1fr)}.actions button{width:100%}}
