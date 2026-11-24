@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
- cleanGameTitle,gameSlug,fpsEvidenceFor,storeSnapshotFor,
+ cleanGameTitle,gameSlug,fpsEvidenceFor,storeSnapshotFor,storeRelatedEditionsFor,priceRadarReferenceFor,
  hltbCandidates,getHltbEstimates,getGameIntelligence,
  getFramePatchSnapshot,getStoreCatalogSnapshot
 } from '../lib/psn-game-intelligence.mjs';
@@ -29,6 +29,14 @@ const storeFixture=[
  {name:'Cyberpunk 2077',price:'$49.99',href:'https://store.playstation.com/en-us/product/UP0000-VALIDGAME00000',platforms:['PS5'],type:'game'},
  {name:'Cyberpunk 2077 Ultimate Edition',price:'$79.99',
   href:'https://store.playstation.com/en-us/product/UP0000-ULTIMATEGAME',platforms:['PS5']},
+ {name:'Cyberpunk 2077: Phantom Liberty',price:'$29.99',
+  href:'https://store.playstation.com/en-us/product/UP0000-DLCGAME',platforms:['PS5']},
+ {name:'Cyberpunk 2077 Gold Edition',price:'$64.99',
+  href:'https://store.playstation.com/en-us/product/UP0000-GOLDGAME',platforms:['PS4','PS5']},
+ {name:'Cyberpunk 2077 2',price:'$79.99',
+  href:'https://store.playstation.com/en-us/product/UP0000-SECONDGAME',platforms:['PS5']},
+ {name:'Cyberpunk 2077 Ultimate Edition',price:'$0.01',
+  href:'https://store.playstation.com/en-gb/product/INVALID',platforms:['PS5']},
  {name:'Cyberpunk 2077',price:'$20.00',href:'https://store.playstation.com/en-gb/product/EX0000',platforms:['PS5']},
  {name:'Cyberpunk 2077',price:'$0.00',href:'https://evil.org/game',platforms:['PS5']}
 ];
@@ -67,6 +75,41 @@ test('Store snapshot is exact-title, US-only, displays an observed USD price as 
  assert.equal(rows[0].href,'https://store.playstation.com/en-us/product/UP0000-VALIDGAME00000');
  assert.equal(storeSnapshotFor('Cyberpunk 2077 Ultimate Edition',storeFixture,null).length,1);
 });
+test('related US editions are explicitly distinct candidates, never blended with DLC or another numbered game',()=>{
+ const rows=storeRelatedEditionsFor('Cyberpunk 2077',storeFixture,'2026-11-17T07:08:00Z');
+ assert.equal(rows.length,2);
+ assert.deepEqual(rows.map(x=>x.title).sort(),['Cyberpunk 2077 Gold Edition','Cyberpunk 2077 Ultimate Edition']);
+ assert.ok(rows.every(x=>x.relation==='edition-to-verify'&&x.region==='US'&&x.currency==='USD'));
+ assert.ok(rows.every(x=>x.href.startsWith('https://store.playstation.com/en-us/product/')));
+ assert.ok(!rows.some(x=>x.title.includes('Phantom Liberty')||x.title.endsWith(' 2')));
+ assert.equal(storeRelatedEditionsFor('Cyberpunk 2077 Ultimate Edition',storeFixture,null).length,0);
+ assert.deepEqual(storeRelatedEditionsFor('Cyberpunk 2077',null,null),[]);
+});
+
+test('EUR Radar links only an exact monitored edition; it does not treat US snapshot USD as a German deal',()=>{
+ const now=new Date('2026-11-24T12:00:00Z');
+ const source={
+  'Cyberpunk 2077':{points:[{date:'2026-11-19',price:39.99},{date:'2026-11-23',price:24.99}],
+   signal:{activeDeal:true,currentPrice:24.99,lastObservedDate:'2026-11-23',radarLow:19.99}},
+  'Cyberpunk 2077 Ultimate Edition':{points:[{date:'2026-11-10',price:69.99}],
+   signal:{activeDeal:false,currentPrice:null,radarLow:69.99}}
+ };
+ const base=priceRadarReferenceFor('Cyberpunk 2077 (PS5)',source,now);
+ assert.equal(base.title,'Cyberpunk 2077');
+ assert.equal(base.historyCount,2);
+ assert.equal(base.currentVerifiedPrice,24.99);
+ assert.equal(base.radarLow,19.99);
+ assert.equal(base.priceGoalUrl,'/zentrale?tab=preise&game=Cyberpunk%202077');
+ const ultimate=priceRadarReferenceFor('Cyberpunk 2077 Ultimate Edition',source,now);
+ assert.equal(ultimate.currentVerifiedPrice,null);
+ assert.equal(ultimate.historyCount,1);
+ assert.equal(priceRadarReferenceFor('Cyberpunk 2077 Phantom Liberty',source,now),null);
+ const later=priceRadarReferenceFor('Cyberpunk 2077',source,new Date('2026-11-29T12:00:00Z'));
+ assert.equal(later.currentVerifiedPrice,null,'Stale deals may not trigger EUR price goals');
+ const ambiguous={...source,'Cyberpunk® 2077':source['Cyberpunk 2077']};
+ assert.equal(priceRadarReferenceFor('Cyberpunk 2077',ambiguous,now),null);
+});
+
 test('Provider entry fetchers use hardcoded official-source paths with no account data',async()=>{
  const fps=await getFramePatchSnapshot('Cyberpunk 2077',{load:async(url)=>{
   assert.equal(url,'https://raw.githubusercontent.com/arthurcarlsonn/framepatch/main/data/fpsRecords.json');
@@ -81,6 +124,8 @@ test('Provider entry fetchers use hardcoded official-source paths with no accoun
  assert.equal(urls.length,2);
  assert.ok(urls.every(x=>!x.includes('NPWR')&&!x.includes('token')));
  assert.equal(store.matches.length,1);
+ assert.equal(store.relatedEditions.length,2);
+ assert.equal(store.relatedEditions[0].relation,'edition-to-verify');
  assert.equal(store.snapshotAt,'2026-11-17T07:08:00.125Z');
 });
 test('HowLongToBeat converts seconds to hours but does not falsely equate community 100% with platinum',()=>{
