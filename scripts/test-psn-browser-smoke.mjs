@@ -34,6 +34,28 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   const context=await browser.newContext({viewport:{width,height:844},locale:'de-DE',isMobile:false,hasTouch:engine===webkit&&width<=430,deviceScaleFactor:width<=430?2:1,reducedMotion:width===320?'reduce':'no-preference',serviceWorkers:'block'});
   const page=await context.newPage();
   const testCloudRules=[];
+  await page.route('**/mein-playstation/api/region-prices?*',async route=>{
+   if(route.request().method()!=='GET')return route.fulfill({status:405});
+   return route.fulfill({json:{
+    source:'imbbloh/ps-prices',sourceUrl:'https://github.com/imbbloh/ps-prices',
+    title:'Unplayed CI Test',status:'provider-results',match:'title-review',
+    reviewRequired:true,identityInput:'title',observedAt:'2026-11-25T00:03:00Z',
+    providerCached:false,
+    rows:[
+     {region:'DE',label:'Deutschland',currency:'EUR',price:29.99,original:59.99,discountPct:50,
+      link:'https://store.playstation.com/de-de/concept/10001234',sourceMode:'concept',
+      english:'yes',editionsCount:2,suspicious:false},
+     {region:'GB',label:'Großbritannien',currency:'GBP',price:24.99,original:null,discountPct:null,
+      link:'https://store.playstation.com/en-gb/concept/10001234',sourceMode:'concept',
+      english:'unknown',editionsCount:1,suspicious:false},
+     {region:'US',label:'USA',currency:'USD',price:19.99,original:49.99,discountPct:60,
+      link:'https://store.playstation.com/en-us/concept/10001234',sourceMode:'search',
+      english:'no',editionsCount:2,suspicious:false},
+     {region:'PL',label:'Polen',currency:'PLN',price:null,original:null,discountPct:null,
+      link:null,sourceMode:'none',english:'unknown',editionsCount:null,suspicious:true}
+    ]
+   }});
+  });
   await page.route('**/mein-playstation/api/game-intelligence?*',async route=>{
    if(route.request().method()!=='GET')return route.fulfill({status:405});
    return route.fulfill({json:{
@@ -156,7 +178,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/mein-playstation/api/trophy-guide-index?title=Test%20Game','/mein-playstation/api/game-intelligence?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/source-runs','/zentrale/api/source-watchdog','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/source-watchdog','/api/radar/alerts/check']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/mein-playstation/api/trophy-guide-index?title=Test%20Game','/mein-playstation/api/game-intelligence?title=Test%20Game','/mein-playstation/api/region-prices?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/source-runs','/zentrale/api/source-watchdog','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/source-watchdog','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
@@ -416,6 +438,23 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
      'Stale EUR price history must not claim a verified current deal');
     assert.equal(await intel.getByRole('link',{name:'EUR-PREISZIEL FESTLEGEN'}).getAttribute('href'),
      '/zentrale?tab=preise&game=Unplayed%20CI%20Test');
+    const regional=intel.getByRole('region',{name:/Regionaler PlayStation Store-Preisvergleich/});
+    await regional.waitFor();
+    assert.ok((await regional.innerText()).includes('Keine Währungsumrechnung'),
+     'Region comparison must not fabricate converted cheapest currency');
+    await regional.getByRole('button',{name:'VIER REGIONEN VERGLEICHEN'}).click();
+    await regional.getByText('29,99 €').waitFor();
+    assert.ok((await regional.innerText()).includes('24,99'),'UK native GBP price missing');
+    assert.ok((await regional.innerText()).includes('19,99'),'US native USD price missing');
+    assert.ok((await regional.innerText()).includes('Kein belastbarer Preis'),
+     'Questionable regional prices must not display as valid offers');
+    assert.equal(await regional.getByRole('link',{name:'IM DE-STORE PRÜFEN'}).getAttribute('href'),
+     'https://store.playstation.com/de-de/concept/10001234');
+    await regional.getByRole('checkbox',{name:/Nur Regionen mit ausgewiesenem Preisnachlass/}).check();
+    assert.equal(await regional.locator('article').count(),2,'Discount filter should retain only real discounted regional records');
+    await regional.getByRole('checkbox',{name:/Nur Regionen mit ausgewiesenem Preisnachlass/}).uncheck();
+    assert.equal(await regional.locator('article').count(),4);
+
 
     const intelWidth=await dialog.evaluate(el=>({scroll:el.scrollWidth,client:el.clientWidth}));
     assert.ok(intelWidth.scroll<=intelWidth.client+3,'Game intelligence overflows mobile dialog');

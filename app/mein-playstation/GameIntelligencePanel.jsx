@@ -2,6 +2,7 @@
 import {useEffect,useMemo,useState} from 'react';
 import {playDurationMinutes} from '../../lib/psn-advanced-stats.mjs';
 import {normalizeTimeGoalHours} from '../../lib/psn-playtime-goals.mjs';
+import RegionalPriceComparison from './RegionalPriceComparison';
 import styles from './GameIntelligencePanel.module.css';
 
 const fmt=value=>Number.isFinite(value)?value.toLocaleString('de-DE',{maximumFractionDigits:1})+' h':'—';
@@ -133,5 +134,6 @@ export default function GameIntelligencePanel({game}){
     </>:<p className={styles.small}>Für diese genaue Edition existiert noch kein Eintrag im eigenen Euro-Preisradar. Ein US-Store-Snapshot wird nicht automatisch in EUR umgerechnet oder als Preisalarm übernommen.</p>}
    </article>
   </div>:<p className={styles.hint}>Keine automatischen externen Abfragen beim Öffnen der Spieleübersicht. Erst mit dem Button werden die drei externen Quellen geprüft.</p>}
+  <RegionalPriceComparison game={game} title={title}/>
  </section>;
 }
