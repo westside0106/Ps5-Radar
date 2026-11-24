@@ -5,6 +5,7 @@ import {normalizeTimeGoalHours} from '../../lib/psn-playtime-goals.mjs';
 import styles from './GameIntelligencePanel.module.css';
 
 const fmt=value=>Number.isFinite(value)?value.toLocaleString('de-DE',{maximumFractionDigits:1})+' h':'—';
+const eur=value=>Number.isFinite(value)?new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(value):'—';
 const lang={official:'Offizielle Angabe',measured:'Unabhängig gemessen',
  reported:'Berichtet',unknown:'Nicht bestätigt'};
 const int=x=>typeof x==='number'&&Number.isFinite(x)?x:null;
@@ -34,6 +35,7 @@ export default function GameIntelligencePanel({game}){
  const fps=data?.framepatch?.match;
  const hltb=data?.howlongtobeat;
  const store=data?.store;
+ const priceRadar=data?.priceRadar;
  const primary=hltb?.matches?.[0]||null;
  function useAsGoal(hours,kind){
   const rounded=Math.round(Number(hours)*2)/2;
@@ -105,6 +107,30 @@ export default function GameIntelligencePanel({game}){
      </div><div><span>{row.priceLabel}</span>
       <a href={row.href} target="_blank" rel="noopener noreferrer">US-Store ansehen</a></div></div>)}
     </div>:<p className={styles.small}>Kein exakt passender US-Store-Titel im Snapshot gefunden; ein fehlender Treffer belegt keine Nichtverfügbarkeit.</p>}
+    {store?.relatedEditions?.length?<div className={styles.relatedEditions}>
+     <strong>Andere Editionen – nicht direkt vergleichbar</strong>
+     <p className={styles.small}>Nur anhand eines Editionsnamens zugeordnet. Inhalt, enthaltene DLCs, Plattform und Region vor einer Kaufentscheidung prüfen; die Preise sind historische US-Momentaufnahmen.</p>
+     {store.relatedEditions.map((row,i)=><div key={row.href||i}>
+      <span>{row.title} · {row.platform||'Plattform ungeprüft'}</span>
+      <small>{row.priceLabel} · US-Snapshot</small>
+      <a href={row.href} target="_blank" rel="noopener noreferrer">Edition prüfen</a>
+     </div>)}
+    </div>:null}
+   </article>
+   <article className={styles.card}>
+    <div className={styles.cardHead}><strong>DEIN PREISRADAR · EUR</strong><a href="/preise">Preisverlauf öffnen</a></div>
+    {priceRadar?.tracked?<><p className={styles.title}>Genau dieser Titel ist im eigenen deutschen Radar-Preisarchiv enthalten: <strong>{priceRadar.title}</strong>.</p>
+     <div className={styles.facts}>
+      <div><small>Aktuell bestätigter Deal</small><strong>{eur(priceRadar.currentVerifiedPrice)}</strong></div>
+      <div><small>Radar-Tiefstwert</small><strong>{eur(priceRadar.radarLow)}</strong></div>
+      <div><small>Historische Messpunkte</small><strong>{priceRadar.historyCount}</strong></div>
+      <div><small>Letzter Messpunkt</small><strong>{priceRadar.latestDate||'—'}</strong></div>
+     </div>
+     <p className={styles.small}>{priceRadar.currentVerifiedPrice===null
+      ?'Es liegt kein aktueller, ausreichend frisch bestätigter Deal vor. Ein historischer US-Preis löst niemals einen Euro-Preisalarm aus.'
+      :'Dieser Preis ist in den letzten 72 Stunden im eigenen Radar als aktiver Deal bestätigt worden; keine garantierte Live-Verfügbarkeit.'}</p>
+     <div className={styles.actions}><a className={styles.priceGoal} href={priceRadar.priceGoalUrl}>EUR-PREISZIEL FESTLEGEN</a></div>
+    </>:<p className={styles.small}>Für diese genaue Edition existiert noch kein Eintrag im eigenen Euro-Preisradar. Ein US-Store-Snapshot wird nicht automatisch in EUR umgerechnet oder als Preisalarm übernommen.</p>}
    </article>
   </div>:<p className={styles.hint}>Keine automatischen externen Abfragen beim Öffnen der Spieleübersicht. Erst mit dem Button werden die drei externen Quellen geprüft.</p>}
  </section>;
