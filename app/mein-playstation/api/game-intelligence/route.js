@@ -1,6 +1,7 @@
 import {cookies} from 'next/headers';
 import {COOKIE_NAME,safeEqual,sessionToken} from '../../../auth';
-import {getGameIntelligence} from '../../../../lib/psn-game-intelligence.mjs';
+import {getGameIntelligence,priceRadarReferenceFor} from '../../../../lib/psn-game-intelligence.mjs';
+import priceHistory from '../../../../data/price-history.json' with {type:'json'};
 
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
@@ -15,7 +16,7 @@ export async function GET(request){
   return Response.json({error:'Ungültiger Spielname'},{status:400,headers});
  try{
   const result=await getGameIntelligence(title);
-  return Response.json(result,{headers});
+  return Response.json({...result,priceRadar:priceRadarReferenceFor(title,priceHistory.games||{})},{headers});
  }catch{
   return Response.json({error:'Datenabruf nicht möglich'},{status:503,headers});
  }
