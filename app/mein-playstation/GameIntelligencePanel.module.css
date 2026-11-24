@@ -8,3 +8,11 @@
 .storeRows{display:grid;gap:7px}.storeRows>div{border:1px solid #3b607a;border-radius:8px;background:#153449;display:flex;gap:10px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;padding:9px}.storeRows>div>div{min-width:0;display:grid;gap:5px}.storeRows strong,.storeRows span{font-size:11px;color:#e7f3ff}.storeRows small,.storeRows a{font-size:10px;color:#b2d1e0}.storeRows a{color:#9fdfef}.notice{font-size:10px;color:#a6f0c9;margin:0}.error{font-size:10px;color:#ffc3c7;margin:0}
 .root :focus-visible{outline:3px solid #aaf7eb;outline-offset:3px}
 @media(max-width:550px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.head>button{width:100%}}
+
+.relatedEditions{display:grid;gap:8px;border-top:1px solid #3b5870;padding-top:10px;min-width:0}
+.relatedEditions>strong{font-size:11px;color:#a7e5d6}
+.relatedEditions>div{border:1px solid #436783;background:#18394c;border-radius:8px;padding:9px;display:flex;align-items:flex-start;flex-wrap:wrap;gap:7px}
+.relatedEditions>div span{font-size:11px;color:#e0f3fa;flex:1 1 140px;overflow-wrap:anywhere}
+.relatedEditions>div small{font-size:10px;color:#a9c6d5}
+.relatedEditions a{font-size:10px;color:#b2effb;text-decoration:underline;text-underline-offset:3px}
+.actions a.priceGoal{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:10px 13px;background:#1c625e;color:#eafff8;border:1px solid #86d7c6;border-radius:8px;font-size:10px;font-weight:800;text-decoration:none}

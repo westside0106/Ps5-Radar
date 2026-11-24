@@ -46,10 +46,15 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     }},
     store:{source:'Ephellon/game-store-catalog',region:'US',snapshotAt:'2026-11-17T07:08:00Z',
      matches:[{title:'Unplayed CI Test',platform:'PS5',priceLabel:'$19.99',usdPrice:19.99,
-      href:'https://store.playstation.com/en-us/product/UP0000-CI0000000000000'}]},
+      href:'https://store.playstation.com/en-us/product/UP0000-CI0000000000000'}],
+     relatedEditions:[{title:'Unplayed CI Test Deluxe Edition',platform:'PS5',priceLabel:'$29.99',
+      relation:'edition-to-verify',href:'https://store.playstation.com/en-us/product/UP0000-CIDELUXE000000'}]},
     howlongtobeat:{status:'ready',matches:[{id:123,title:'Unplayed CI Test',
      mainHours:12.5,extrasHours:15,completionistHours:21,mainSamples:40,
-     sourceUrl:'https://howlongtobeat.com/game/123'}]}
+     sourceUrl:'https://howlongtobeat.com/game/123'}]},
+    priceRadar:{tracked:true,title:'Unplayed CI Test',historyCount:2,latestDate:'2026-11-23',
+     radarLow:12.99,currentVerifiedPrice:null,priceGoalUrl:'/zentrale?tab=preise&game=Unplayed%20CI%20Test',
+     historyUrl:'/preise'}
    }});
   });
   await page.route('**/zentrale/api/price-alerts',async route=>{
@@ -326,7 +331,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
         const transfer=page.waitForEvent('download');
         await quality.getByRole('button',{name:'CSV EXPORTIEREN'}).click();
         const download=await transfer;
-        assert.equal(download.suggestedFilename(),'ps5-radar-quellen-7tage-2026-11-21.csv');
+        assert.equal(download.suggestedFilename(),`ps5-radar-quellen-7tage-${new Date().toISOString().slice(0,10)}.csv`);
         await quality.getByText('CSV mit Tagesbefunden',{exact:false}).waitFor();
        }
        const qualitySize=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));
@@ -404,6 +409,14 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     assert.ok((await intel.innerText()).includes('60 FPS Zielwert'),'Sourced PS5 mode missing');
     assert.ok((await intel.innerText()).includes('USA / USD'),'US snapshot disclaimer missing');
     assert.ok((await intel.innerText()).includes('Nicht live verifiziert'),'Unverified US prices must not claim live DE price');
+    assert.ok((await intel.innerText()).includes('Andere Editionen – nicht direkt vergleichbar'),
+     'US editions must not be represented as equivalent deals');
+    assert.ok((await intel.innerText()).includes('Kein aktueller, ausreichend frisch bestätigter Deal')||
+     (await intel.innerText()).includes('kein aktueller, ausreichend frisch bestätigter Deal'),
+     'Stale EUR price history must not claim a verified current deal');
+    assert.equal(await intel.getByRole('link',{name:'EUR-PREISZIEL FESTLEGEN'}).getAttribute('href'),
+     '/zentrale?tab=preise&game=Unplayed%20CI%20Test');
+
     const intelWidth=await dialog.evaluate(el=>({scroll:el.scrollWidth,client:el.clientWidth}));
     assert.ok(intelWidth.scroll<=intelWidth.client+3,'Game intelligence overflows mobile dialog');
     await dialog.locator('.psn-game-modal-collections > summary').click();
