@@ -9,3 +9,7 @@
 .regions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.region{min-width:0;border:1px solid #42617c;border-radius:9px;background:#0d273c;padding:11px;display:grid;align-content:start;gap:8px}.rowHead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:5px}.rowHead strong{font-size:12px;color:#e4f7ff}.rowHead span{font-size:10px;color:#8cbcd4}.price{font-size:20px;color:#b7ffe2;font-variant-numeric:tabular-nums}.discount{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0;font-size:10px}.discount s{color:#a6bdc9}.discount strong{color:#bbefc6}.region small{font-size:10px;color:#a9c9da;line-height:1.5}.missing{font-size:11px;color:#c6d3de;margin:0;line-height:1.6}.region>a{font-size:10px;color:#c1f8f1;min-height:38px;display:flex;align-items:center;font-weight:800;text-underline-offset:3px}
 .root :focus-visible{outline:3px solid #aaf8e6;outline-offset:3px}
 @media(max-width:530px){.regions{grid-template-columns:minmax(0,1fr)}.actions button{width:100%}}
+
+.archiveOption{display:flex;gap:8px;align-items:flex-start;color:#d3eeef;font-size:11px;line-height:1.5}
+.archiveOption input{height:18px;width:18px;min-width:18px;accent-color:#65cdbb;margin:0}
+.archiveStatus{margin:0;border-left:3px solid #7bbeb0;padding:7px 9px;background:#16384b;color:#d6efe9;font-size:10px;line-height:1.6}
