@@ -35,12 +35,22 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   const page=await context.newPage();
   const testCloudRules=[];
   await page.route('**/mein-playstation/api/region-prices?*',async route=>{
-   if(route.request().method()!=='GET')return route.fulfill({status:405});
+   if(!['GET','POST'].includes(route.request().method()))return route.fulfill({status:405});
+   const isArchive=route.request().method()==='POST';
+   const today=new Date().toISOString().slice(0,10);
    return route.fulfill({json:{
     source:'imbbloh/ps-prices',sourceUrl:'https://github.com/imbbloh/ps-prices',
     title:'Unplayed CI Test',status:'provider-results',match:'title-review',
     reviewRequired:true,identityInput:'title',observedAt:'2026-11-25T00:03:00Z',
     providerCached:false,
+    ...(isArchive?{archive:{configured:true,saved:3,
+     history:{source:'imbbloh/ps-prices',periodDays:90,sampleCount:4,days:2,
+      points:[
+       {region:'DE',currency:'EUR',price:39.99,day:new Date(Date.now()-86400000).toISOString().slice(0,10)},
+       {region:'DE',currency:'EUR',price:29.99,day:today},
+       {region:'GB',currency:'GBP',price:24.99,day:today},
+       {region:'US',currency:'USD',price:19.99,day:today}
+      ]}}}:{ }),
     rows:[
      {region:'DE',label:'Deutschland',currency:'EUR',price:29.99,original:59.99,discountPct:50,
       link:'https://store.playstation.com/de-de/concept/10001234',sourceMode:'concept',
@@ -55,6 +65,13 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
       link:null,sourceMode:'none',english:'unknown',editionsCount:null,suspicious:true}
     ]
    }});
+  });
+  await page.route('**/mein-playstation/api/region-price-history?*',async route=>{
+   const today=new Date().toISOString().slice(0,10);
+   return route.fulfill({json:{configured:true,history:{
+    source:'imbbloh/ps-prices',periodDays:90,sampleCount:1,days:1,
+    points:[{region:'DE',currency:'EUR',price:29.99,day:today}]
+   }}});
   });
   await page.route('**/mein-playstation/api/game-intelligence?*',async route=>{
    if(route.request().method()!=='GET')return route.fulfill({status:405});
@@ -178,7 +195,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   await page.goto(base+'/',{waitUntil:'domcontentloaded'});
   assert.ok(await page.title()!==undefined);
   // Private API requests must never return private data before authentication.
-  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/mein-playstation/api/trophy-guide-index?title=Test%20Game','/mein-playstation/api/game-intelligence?title=Test%20Game','/mein-playstation/api/region-prices?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/source-runs','/zentrale/api/source-watchdog','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/source-watchdog','/api/radar/alerts/check']){
+  for(const endpoint of ['/mein-playstation/api/trophies?id=NPWR00001_00','/mein-playstation/api/digital-library','/mein-playstation/api/profile-sync','/mein-playstation/api/monitor-sync','/mein-playstation/api/extra-sources?title=Test%20Game','/mein-playstation/api/trophy-guide-index?title=Test%20Game','/mein-playstation/api/game-intelligence?title=Test%20Game','/mein-playstation/api/region-prices?title=Test%20Game','/mein-playstation/api/region-price-history?title=Test%20Game','/zentrale/api/price-alerts','/zentrale/api/source-health','/zentrale/api/source-history','/zentrale/api/source-runs','/zentrale/api/source-watchdog','/zentrale/api/ntfy','/api/radar/source-health','/api/radar/source-watchdog','/api/radar/alerts/check']){
    const r=await context.request.get(base+endpoint,{maxRedirects:0});
    assert.ok([401,302,303,307,308].includes(r.status()),endpoint+' unexpectedly available: '+r.status());
   }
@@ -196,6 +213,9 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
   assert.match(await sw.text(),/startsWith\('\/_next\/static\/'\)/);
   const unauthorizedScan=await context.request.post(base+'/zentrale/api/source-live-run',{headers:{origin:base},maxRedirects:0});
   assert.equal(unauthorizedScan.status(),401,'Private manual source scan must reject requests before login');
+  const unauthorizedRegionalPost=await context.request.post(base+'/mein-playstation/api/region-prices',{
+   data:{title:'Test Game',saveHistory:true},maxRedirects:0});
+  assert.equal(unauthorizedRegionalPost.status(),401,'Regional archive write endpoint must require a Radar session');
   const unauthorizedUpload=await context.request.put(base+'/mein-playstation/api/profile-sync',{data:{version:2,revision:0,data:{notes:{},history:[]}},maxRedirects:0});
   assert.ok([401,302,303,307,308].includes(unauthorizedUpload.status()),'Cloud endpoint must reject unauthenticated writes');
   const monitorPush=await context.request.post(base+'/mein-playstation/api/monitor-sync',{data:'Date,Status,Game name\\n',headers:{'Content-Type':'text/csv'},maxRedirects:0});
@@ -439,10 +459,21 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     assert.equal(await intel.getByRole('link',{name:'EUR-PREISZIEL FESTLEGEN'}).getAttribute('href'),
      '/zentrale?tab=preise&game=Unplayed%20CI%20Test');
     const regional=intel.getByRole('region',{name:/Regionaler PlayStation Store-Preisvergleich/});
+    assert.equal(await regional.getByRole('checkbox',{name:/Plausible Regionalpreise/}).isChecked(),true,
+      'Private archive must be explicitly disclosed and opt-out available');
     await regional.waitFor();
     assert.ok((await regional.innerText()).includes('Keine Währungsumrechnung'),
      'Region comparison must not fabricate converted cheapest currency');
     await regional.getByRole('button',{name:'VIER REGIONEN VERGLEICHEN'}).click();
+    const historical=regional.getByRole('region',{name:'Privater Regionalpreisverlauf'});
+    await historical.waitFor();
+    assert.equal(await historical.locator('svg circle').count(),2,'Two recorded DE observations must render as samples');
+    await historical.getByRole('combobox',{name:'Region für Preisverlauf'}).selectOption('GB');
+    assert.ok((await historical.innerText()).includes('24,99'),'History must preserve source currency');
+    await historical.getByRole('button',{name:'90T'}).click();
+    await historical.getByRole('combobox',{name:'Region für Preisverlauf'}).selectOption('DE');
+    assert.ok((await historical.innerText()).includes('39,99'),'History must preserve past date values');
+
     await regional.getByText('29,99 €').waitFor();
     assert.ok((await regional.innerText()).includes('24,99'),'UK native GBP price missing');
     assert.ok((await regional.innerText()).includes('19,99'),'US native USD price missing');
