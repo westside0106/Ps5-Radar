@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-25T17:59:21.311Z",
+  "checkedAt": "2026-11-25T22:54:16.369Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
@@ -54,18 +54,11 @@
         "pubDate": "Fri, 13 Nov 2026 13:01:00 +0000"
       }
     ],
-    "newPosts": [
-      {
-        "title": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
-        "link": "https://blog.de.playstation.com/2026/11/25/playstation-plus-monatliche-spiele-fuer-dezember-2026/",
-        "pubDate": "Wed, 25 Nov 2026 16:30:00 +0000",
-        "category": "psplus"
-      }
-    ]
+    "newPosts": []
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 207979,
+    "bytes": 207980,
     "schedule": [
       {
         "date": "03.09.",
@@ -116,7 +109,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 186028,
+    "bytes": 186029,
     "updated": true,
     "parsed": {
       "games": [
@@ -141,7 +134,7 @@
       "label": "DEZEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-11-25T17:59:52.032Z",
+      "checkedAt": "2026-11-25T22:54:44.142Z",
       "parsed": 4,
       "accepted": [
         "Dead Island 2",
@@ -173,7 +166,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173364,
+    "bytes": 173348,
     "updated": true,
     "parsed": {
       "price": "7,99 €",
