@@ -1,8 +1,13 @@
 {
-  "checkedAt": "2026-11-24T23:47:54.588Z",
+  "checkedAt": "2026-11-25T17:59:21.311Z",
   "playstationBlog": {
     "ok": true,
     "posts": [
+      {
+        "title": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
+        "link": "https://blog.de.playstation.com/2026/11/25/playstation-plus-monatliche-spiele-fuer-dezember-2026/",
+        "pubDate": "Wed, 25 Nov 2026 16:30:00 +0000"
+      },
       {
         "title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
         "link": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
@@ -47,18 +52,20 @@
         "title": "Guild Saga: Vanished Worlds erscheint im Mai 2027 für PS5",
         "link": "https://blog.de.playstation.com/2026/11/13/guild-saga-vanished-worlds-erscheint-im-mai-2027-fuer-ps5/",
         "pubDate": "Fri, 13 Nov 2026 13:01:00 +0000"
-      },
-      {
-        "title": "Once Human Season 5: Koop-Bosskampf gegen Sky Colossus",
-        "link": "https://blog.de.playstation.com/2026/11/13/once-human-season-5-koop-bosskampf-gegen-sky-colossus/",
-        "pubDate": "Fri, 13 Nov 2026 09:32:01 +0000"
       }
     ],
-    "newPosts": []
+    "newPosts": [
+      {
+        "title": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
+        "link": "https://blog.de.playstation.com/2026/11/25/playstation-plus-monatliche-spiele-fuer-dezember-2026/",
+        "pubDate": "Wed, 25 Nov 2026 16:30:00 +0000",
+        "category": "psplus"
+      }
+    ]
   },
   "monthlyReleases": {
     "ok": true,
-    "bytes": 207889,
+    "bytes": 207979,
     "schedule": [
       {
         "date": "03.09.",
@@ -109,7 +116,7 @@
   },
   "psPlusMonthly": {
     "ok": true,
-    "bytes": 185938,
+    "bytes": 186028,
     "updated": true,
     "parsed": {
       "games": [
@@ -128,26 +135,21 @@
         {
           "title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
           "hasImage": true
-        },
-        {
-          "title": "Vindictus: Defying Fate erscheint 2027 für PS5",
-          "hasImage": true
         }
       ],
       "range": null,
-      "label": "NOVEMBER 2026"
+      "label": "DEZEMBER 2026"
     },
     "candidateAudit": {
-      "checkedAt": "2026-11-24T23:48:23.990Z",
-      "parsed": 5,
+      "checkedAt": "2026-11-25T17:59:52.032Z",
+      "parsed": 4,
       "accepted": [
         "Dead Island 2",
         "Tomb Raider IV – VI Remastered",
         "Monster Train 2"
       ],
       "rejected": [
-        "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
-        "Vindictus: Defying Fate erscheint 2027 für PS5"
+        "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5"
       ]
     }
   },
@@ -158,7 +160,7 @@
   "eaPlay": {
     "ok": true,
     "source": "https://www.ea.com/de-de/games/ea-sports-fc/ea-play",
-    "bytes": 245030,
+    "bytes": 245153,
     "updated": true,
     "parsed": {
       "trial": false,
@@ -171,7 +173,7 @@
   },
   "ubisoftPlus": {
     "ok": true,
-    "bytes": 173372,
+    "bytes": 173364,
     "updated": true,
     "parsed": {
       "price": "7,99 €",

@@ -1,23 +1,23 @@
 {
   "date": "25.11.2026",
   "edition": "AUSGABE #064",
-  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
   "newCount": "25.11 · LIVE",
-  "leadTitle": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
-  "leadDate": "17.11.2026",
-  "leadMeta": "Begleitet Duke, den Border Collie aus Hounded, und erfahrt, wie Imprnt Studios die perfekte Hundefigur erschaffen hat.",
+  "leadTitle": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
+  "leadDate": "25.11.2026",
+  "leadMeta": "Entdeckt die PlayStation Plus-Spiele für November: Tony Hawk’s Pro Skater 3+4, Dragon Ball Xenoverse 2 und Amnesia: The Bunker.",
   "leadPrice": null,
-  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/adb5c2c64b172c47840d21215960cdceb7c689d9.jpg",
-  "secondary1Title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
-  "secondary1Date": "24.11.2026",
-  "secondary1Meta": "Nach langem Warten war es endlich so weit: Spieler konnten sich in Grand Theft Auto VI stürzen.",
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/19520f94bfd21727446bcf5bf12928d25070e65e.jpg",
+  "secondary1Title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
+  "secondary1Date": "17.11.2026",
+  "secondary1Meta": "Begleitet Duke, den Border Collie aus Hounded, und erfahrt, wie Imprnt Studios die perfekte Hundefigur erschaffen hat.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/c5cf1b37175a6c6da3f6b506bd864bea7845c49d.jpg",
-  "secondary2Title": "Grand Theft Auto VI erscheint morgen, 19. November",
-  "secondary2Date": "18.11.2026",
-  "secondary2Meta": "Erlebt Grand Theft Auto VI: Taucht ein in den Bundesstaat Leonida mit Vice City und fünf weiteren einzigartigen Regionen.",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/adb5c2c64b172c47840d21215960cdceb7c689d9.jpg",
+  "secondary2Title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
+  "secondary2Date": "24.11.2026",
+  "secondary2Meta": "Nach langem Warten war es endlich so weit: Spieler konnten sich in Grand Theft Auto VI stürzen.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/546dfdaf600857d374e37f58fe4b3d8f6482c2f8.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/c5cf1b37175a6c6da3f6b506bd864bea7845c49d.jpg",
   "psplusLabel": "NOVEMBER 2026",
   "psplusTitle": "November-Spiele sind live",
   "psplusText": "Verfügbar bis 30.11.",
@@ -71,7 +71,9 @@
     }
   ],
   "releases": [],
-  "quickItems": [],
+  "quickItems": [
+    "Dezember-Spiele sind live"
+  ],
   "leavingTitle": "Aktuelle Store-Aktion endet bald",
   "leavingText": "Aktuelle Store-Aktion endet am 30.11., 23:59 Uhr.",
   "eaTitle": "FC™ 27 · 10h Trial ab 18.09.",
@@ -91,6 +93,11 @@
   "radarCheck": "Stand 25.11.2026 · 9/9 Quellen · 1 Warnung(en)",
   "sourceAlerts": [
     {
+      "title": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
+      "url": "https://blog.de.playstation.com/2026/11/25/playstation-plus-monatliche-spiele-fuer-dezember-2026/",
+      "type": "editorial"
+    },
+    {
       "title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
       "url": "https://blog.de.playstation.com/2026/11/17/hounded-angekuendigt-das-hunde-abenteuer-kommt-2027-auf-ps5/",
       "type": "editorial"
@@ -99,17 +106,19 @@
       "title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
       "url": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
       "type": "editorial"
-    },
-    {
-      "title": "Grand Theft Auto VI erscheint morgen, 19. November",
-      "url": "https://blog.de.playstation.com/2026/11/18/grand-theft-auto-vi-erscheint-morgen-19-november/",
-      "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
+      "url": "https://blog.de.playstation.com/2026/11/25/playstation-plus-monatliche-spiele-fuer-dezember-2026/",
+      "category": "psplus",
+      "score": 85
+    }
+  ],
   "health": {
     "status": "warning",
-    "checkedAt": "2026-11-24T23:48:32.548Z",
+    "checkedAt": "2026-11-25T18:00:00.136Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -123,10 +132,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "stale",
-    "lastSuccessfulCheck": "2026-11-24T23:47:54.588Z"
+    "lastSuccessfulCheck": "2026-11-25T17:59:21.311Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-11-24T23:48:32.548Z",
+    "checkedAt": "2026-11-25T18:00:00.136Z",
     "errors": [
       "PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden"
     ],
@@ -170,9 +179,9 @@
     ]
   },
   "gameDetails": {
+    "PlayStation Plus: Monatliche Spiele für Dezember 2026": {},
     "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5": {},
     "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt": {},
-    "Grand Theft Auto VI erscheint morgen, 19. November": {},
     "Dead Island 2": {
       "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11.",
       "storeUrl": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
@@ -258,7 +267,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-11-24T23:48:20.621Z",
+    "checkedAt": "2026-11-25T17:59:47.518Z",
     "titles": 10,
     "fetched": 4,
     "enriched": 7,
@@ -315,7 +324,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-11-24T23:48:08.871Z",
+    "checkedAt": "2026-11-25T17:59:35.128Z",
     "month": "November",
     "year": 2026,
     "notes": [],
@@ -329,7 +338,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-11-24T23:48:08.949Z",
+    "checkedAt": "2026-11-25T17:59:35.205Z",
     "collection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -342,7 +351,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-11-24T23:48:22.604Z",
+    "checkedAt": "2026-11-25T17:59:51.188Z",
     "verified": 2,
     "missing": [
       "Tomb Raider IV – VI Remastered"
@@ -353,10 +362,16 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-11-24T23:48:06.115Z",
+    "checkedAt": "2026-11-25T17:59:32.604Z",
     "date": "25.11.2026",
     "maxAgeDays": 21,
     "selected": [
+      {
+        "title": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
+        "date": "25.11.2026",
+        "url": "https://blog.de.playstation.com/2026/11/25/playstation-plus-monatliche-spiele-fuer-dezember-2026/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/19520f94bfd21727446bcf5bf12928d25070e65e.jpg"
+      },
       {
         "title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
         "date": "17.11.2026",
@@ -368,20 +383,14 @@
         "date": "24.11.2026",
         "url": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/c5cf1b37175a6c6da3f6b506bd864bea7845c49d.jpg"
-      },
-      {
-        "title": "Grand Theft Auto VI erscheint morgen, 19. November",
-        "date": "18.11.2026",
-        "url": "https://blog.de.playstation.com/2026/11/18/grand-theft-auto-vi-erscheint-morgen-19-november/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/546dfdaf600857d374e37f58fe4b3d8f6482c2f8.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-11-24T23:48:23.990Z",
+    "checkedAt": "2026-11-25T17:59:52.032Z",
     "berlinDate": "2026-11-25",
-    "newPostsToday": 0,
+    "newPostsToday": 1,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
