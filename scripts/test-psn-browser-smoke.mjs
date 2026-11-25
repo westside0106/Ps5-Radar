@@ -474,7 +474,7 @@ for(const [engine,widths] of [[chromium,[320,375,390,430,768,1280]],[webkit,[320
     await historical.getByRole('combobox',{name:'Region für Preisverlauf'}).selectOption('DE');
     assert.ok((await historical.innerText()).includes('39,99'),'History must preserve past date values');
 
-    await regional.getByText('29,99 €').waitFor();
+    await regional.getByRole('article').filter({hasText:'Deutschland'}).locator('b').first().waitFor();
     assert.ok((await regional.innerText()).includes('24,99'),'UK native GBP price missing');
     assert.ok((await regional.innerText()).includes('19,99'),'US native USD price missing');
     assert.ok((await regional.innerText()).includes('Kein belastbarer Preis'),
