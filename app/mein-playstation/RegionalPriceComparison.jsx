@@ -1,5 +1,6 @@
 'use client';
 import {useEffect,useMemo,useState} from 'react';
+import RegionalPriceHistory from './RegionalPriceHistory';
 import styles from './RegionalPriceComparison.module.css';
 
 const money=(value,currency)=>{
@@ -16,21 +17,53 @@ export default function RegionalPriceComparison({game,title}){
  const [pending,setPending]=useState(false);
  const [error,setError]=useState('');
  const [discountOnly,setDiscountOnly]=useState(false);
- useEffect(()=>{setLink(suggestedUrl);setResult(null);setError('');setPending(false);setDiscountOnly(false)},[title,suggestedUrl]);
+ const [saveHistory,setSaveHistory]=useState(true);
+ const [savedHistory,setSavedHistory]=useState(null);
+ const [archiveNotice,setArchiveNotice]=useState('');
+ const [historyLoading,setHistoryLoading]=useState(false);
+ useEffect(()=>{setLink(suggestedUrl);setResult(null);setError('');setPending(false);setDiscountOnly(false);setSavedHistory(null);setArchiveNotice('')},[title,suggestedUrl]);
  async function compare(){
   if(pending||!title)return;
   setPending(true);setError('');setResult(null);
   try{
    const qs=new URLSearchParams({title});
    if(link.trim())qs.set('storeUrl',link.trim());
-   const response=await fetch('/mein-playstation/api/region-prices?'+qs.toString(),{
-    credentials:'same-origin',cache:'no-store'
-   });
+   const response=await fetch('/mein-playstation/api/region-prices?'+qs.toString(),
+    saveHistory?{
+     credentials:'same-origin',cache:'no-store',method:'POST',
+     headers:{'Content-Type':'application/json'},
+     body:JSON.stringify({title,storeUrl:link.trim()||null,saveHistory:true})
+    }:{credentials:'same-origin',cache:'no-store'});
    const json=await response.json();
    if(!response.ok)throw Error(json.error||'Regionaldienst nicht erreichbar');
    setResult(json);
+   if(saveHistory){
+    const a=json.archive;
+    if(a?.history)setSavedHistory(a.history);
+    setArchiveNotice(!a?.configured?'Privates Archiv nicht eingerichtet; Regionalergebnis wurde nicht gespeichert.':
+     a?.error||a?.historyError||a?.reason||
+     (a?.saved?'Archiviert: '+a.saved+' plausible Regionalpreise für diesen UTC-Tag.':
+      'Keine neuen Messpunkte gespeichert.'));
+   }else setArchiveNotice('Archivierung für diesen Abruf deaktiviert.');
   }catch(e){setError(e.message||'Regionalvergleich fehlgeschlagen');}
   finally{setPending(false)}
+ }
+ async function loadHistory(){
+  if(historyLoading||!title)return;
+  setHistoryLoading(true);
+  try{
+   const qs=new URLSearchParams({title});
+   if(link.trim())qs.set('storeUrl',link.trim());
+   const response=await fetch('/mein-playstation/api/region-price-history?'+qs.toString(),
+    {credentials:'same-origin',cache:'no-store'});
+   const data=await response.json();
+   if(!response.ok)throw Error(data.error||'Gespeicherter Verlauf nicht verfügbar');
+   setSavedHistory(data.history||null);
+   setArchiveNotice(!data.configured?'Privates Archiv nicht konfiguriert.':
+    data.history?.sampleCount?'Gespeicherte Preisbeobachtungen geladen.':
+    'Für diese Titel-/Store-Zuordnung ist noch kein Messpunkt gespeichert.');
+  }catch(e){setArchiveNotice(e.message||'Verlauf nicht abrufbar')}
+  finally{setHistoryLoading(false)}
  }
  const rows=useMemo(()=>Array.isArray(result?.rows)
   ?result.rows.filter(r=>!discountOnly||Number(r.discountPct)>0):[],[result,discountOnly]);
@@ -47,12 +80,19 @@ export default function RegionalPriceComparison({game,title}){
     autoComplete="off" inputMode="url" maxLength={320}/>
    <small>Ein offizieller Konzept-Link verbessert die Titelzuordnung. Ohne passenden Store-Link sucht der externe Dienst nach dem Titel und die Edition muss überprüft werden.</small>
   </label>
+  <label className={styles.archiveOption}><input type="checkbox" checked={saveHistory} onChange={e=>setSaveHistory(e.target.checked)}/>
+   Plausible Regionalpreise bei dieser Abfrage im privaten 90-Tage-Archiv speichern
+  </label>
   <div className={styles.actions}>
    <button type="button" disabled={pending||title.length<3} onClick={compare}>
     {pending?'REGIONEN WERDEN ABGEFRAGT …':result?'REGIONEN ERNEUT PRÜFEN':'VIER REGIONEN VERGLEICHEN'}
    </button>
+   <button type="button" disabled={historyLoading||pending} onClick={loadHistory}>
+    {historyLoading?'VERLAUF WIRD GELADEN …':'GESPEICHERTEN VERLAUF LADEN'}
+   </button>
    <a href="https://github.com/imbbloh/ps-prices" target="_blank" rel="noopener noreferrer">Quellprojekt ansehen</a>
   </div>
+  {archiveNotice?<p className={styles.archiveStatus} role="status">{archiveNotice}</p>:null}
   {pending?<p className={styles.info} role="status">Der externe Anbieter ermittelt Preise aus mehreren PlayStation-Stores. Der Dienst kann verzögert antworten oder zeitweise nicht erreichbar sein.</p>:null}
   {error?<p role="alert" className={styles.error}>{error}</p>:null}
   {result?.status==='unavailable'||result?.status==='no-results'
@@ -82,6 +122,7 @@ export default function RegionalPriceComparison({game,title}){
    </div>
    {rows.length===0?<p className={styles.info}>Keine Regionen mit ausgewiesenem Rabatt. Deaktiviere den Filter, um alle Regionen zu sehen.</p>:null}
   </>:null}
+  <RegionalPriceHistory history={savedHistory}/>
   <p className={styles.disclaimer}>Keine Währungsumrechnung und keine automatische Bestpreis-Rangfolge. Ein Preis aus einem anderen Land ist nicht automatisch mit einem deutschen PSN-Konto kaufbar. PS5-Radar übernimmt diese Fremdpreise <strong>nicht</strong> in seine EUR-Preisalarme.</p>
  </section>;
 }
