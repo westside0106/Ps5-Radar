@@ -19,11 +19,16 @@ export async function PUT(request){
  const raw=await request.text();if(raw.length>1400000)return Response.json({error:'Daten zu groß'},{status:413});
  let body;try{body=JSON.parse(raw)}catch{return Response.json({error:'Ungültiges JSON'},{status:400})}
  if(!body||!Number.isSafeInteger(body.revision)||body.revision<0||body.version!==2||!body.data||typeof body.data!=='object'||Array.isArray(body.data))return Response.json({error:'Ungültiges Sync-Paket'},{status:400});
- const data=body.data;
+ let data=body.data;
  if(!validCloudPayload(data))return Response.json({error:'Ungültige Datenfelder'},{status:400});
  try{
   const current=await read(config),revision=current?.revision??0;
   if(body.revision!==revision)return Response.json({error:'Versionskonflikt',revision,record:current},{status:409});
+  const history=new Map();
+  for(const point of [...(data.history??[]),...(current?.payload?.history??[])]){
+   if(point&&typeof point.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(point.date)&&Number.isFinite(point.minutes)&&point.minutes>=0&&Number.isInteger(point.games)&&point.games>=0)history.set(point.date,point);
+  }
+  data={...data,history:[...history.values()].sort((a,b)=>a.date.localeCompare(b.date))};
   const next={id:'default',payload:data,revision:revision+1,updated_at:new Date().toISOString()};
   const opts=current?{method:'PATCH',url:config.url+'?id=eq.default&revision=eq.'+revision,body:{payload:data,revision:revision+1,updated_at:next.updated_at}}:{method:'POST',url:config.url,body:next};
   const response=await fetch(opts.url,{method:opts.method,headers:{...headers(config.secret),Prefer:'return=representation'},body:JSON.stringify(opts.body),cache:'no-store'});
