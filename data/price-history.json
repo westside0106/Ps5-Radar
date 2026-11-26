@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T22:54:39.992Z",
+  "updatedAt": "2026-11-26T17:45:30.163Z",
   "games": {
     "Hogwarts Legacy": {
       "currency": "EUR",
@@ -1433,6 +1433,12 @@
           "price": 35.99,
           "oldPrice": 79.99,
           "discount": 55
+        },
+        {
+          "date": "2026-11-26",
+          "price": 35.99,
+          "oldPrice": 79.99,
+          "discount": 55
         }
       ],
       "title": "NBA 2K27",
@@ -1466,14 +1472,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 5,
+        "measurements": 6,
         "currentPrice": 35.99,
         "lastObservedPrice": 35.99,
-        "lastObservedDate": "2026-11-25",
+        "lastObservedDate": "2026-11-26",
         "radarLow": 35.99,
         "deltaFromLowPct": 0,
         "discount": 55,
-        "daysRemaining": 6,
+        "daysRemaining": 5,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -55 % deutlich reduziert.",
@@ -1515,6 +1521,12 @@
           "price": 39.99,
           "oldPrice": 79.99,
           "discount": 50
+        },
+        {
+          "date": "2026-11-26",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
         }
       ],
       "title": "EA SPORTS™ Madden NFL 27",
@@ -1548,14 +1560,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 5,
+        "measurements": 6,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-11-25",
+        "lastObservedDate": "2026-11-26",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 6,
+        "daysRemaining": 5,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
@@ -1597,6 +1609,12 @@
           "price": 39.99,
           "oldPrice": 79.99,
           "discount": 50
+        },
+        {
+          "date": "2026-11-26",
+          "price": 39.99,
+          "oldPrice": 79.99,
+          "discount": 50
         }
       ],
       "title": "EA SPORTS FC™ 27 Standard Edition PS4 & PS5",
@@ -1630,14 +1648,14 @@
         "subscriptionIncluded": false,
         "subscriptionLabel": null,
         "confidence": "mittel",
-        "measurements": 5,
+        "measurements": 6,
         "currentPrice": 39.99,
         "lastObservedPrice": 39.99,
-        "lastObservedDate": "2026-11-25",
+        "lastObservedDate": "2026-11-26",
         "radarLow": 39.99,
         "deltaFromLowPct": 0,
         "discount": 50,
-        "daysRemaining": 6,
+        "daysRemaining": 5,
         "code": "buy",
         "label": "KAUFEN",
         "reason": "Aktuell am eigenen Radar-Tief und mit -50 % deutlich reduziert.",
@@ -1650,8 +1668,8 @@
   },
   "summary": {
     "titles": 15,
-    "points": 131,
-    "archiveIssuesScanned": 64,
+    "points": 134,
+    "archiveIssuesScanned": 65,
     "signals": {
       "buy": 3,
       "watch": 0,
