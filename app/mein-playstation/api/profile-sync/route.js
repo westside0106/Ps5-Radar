@@ -1,3 +1,4 @@
+import {mergePurchases} from '../../../../lib/psn-purchase-import.mjs';
 import {cookies} from 'next/headers';
 import {COOKIE_NAME,safeEqual,sessionToken} from '../../../auth';
 import {cloudHeaders,validCloudPayload} from '../../../../lib/psn-cloud-helpers.mjs';
@@ -29,6 +30,7 @@ export async function PUT(request){
    if(point&&typeof point.date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(point.date)&&Number.isFinite(point.minutes)&&point.minutes>=0&&Number.isInteger(point.games)&&point.games>=0)history.set(point.date,point);
   }
   data={...data,history:[...history.values()].sort((a,b)=>a.date.localeCompare(b.date))};
+  try{data.purchases=mergePurchases(current?.payload?.purchases,data.purchases)}catch{return Response.json({error:'Ungültige oder widersprüchliche Kaufbelege'},{status:400})}
   const next={id:'default',payload:data,revision:revision+1,updated_at:new Date().toISOString()};
   const opts=current?{method:'PATCH',url:config.url+'?id=eq.default&revision=eq.'+revision,body:{payload:data,revision:revision+1,updated_at:next.updated_at}}:{method:'POST',url:config.url,body:next};
   const response=await fetch(opts.url,{method:opts.method,headers:{...headers(config.secret),Prefer:'return=representation'},body:JSON.stringify(opts.body),cache:'no-store'});
