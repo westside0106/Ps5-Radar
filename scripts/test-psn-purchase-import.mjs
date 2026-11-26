@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {normalizePurchases,mergePurchases} from '../lib/psn-purchase-import.mjs';
+import {financeRows} from '../lib/psn-analytics-finance.mjs';
+const p={id:'fixture-1',title:'Test',titleId:'TEST',date:'2026-01-01',kind:'purchase',amountCents:1999,currency:'EUR'};
+assert.equal(mergePurchases([p],[p]).length,1);
+assert.equal(mergePurchases([p],undefined).length,1);
+assert.throws(()=>mergePurchases([p],[{...p,amountCents:2000}]));
+assert.throws(()=>normalizePurchases([{...p,date:'2026-02-30'}]));
+assert.throws(()=>normalizePurchases([{...p,kind:'plus'}]));
+const f=financeRows({purchases:[p,p],games:[{id:'TEST',title:'Test',sonyMinutes:600}],library:[]});
+assert.equal(f.ranking[1][2],19.99);
+assert.equal(f.ranking[1][4],2);
+assert.equal(f.monthly[1][1],19.99);
+assert.equal(financeRows({games:[],library:[]}).summary[2][1],null);
+console.log('Purchase import and finance assertions passed');
