@@ -1,23 +1,23 @@
 {
-  "date": "26.11.2026",
-  "edition": "AUSGABE #065",
-  "newHeadline": "RADAR-CHECK AKTUELL",
-  "newCount": "26.11 · LIVE",
-  "leadTitle": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
-  "leadDate": "25.11.2026",
-  "leadMeta": "Entdeckt die PlayStation Plus-Spiele für November: Tony Hawk’s Pro Skater 3+4, Dragon Ball Xenoverse 2 und Amnesia: The Bunker.",
+  "date": "27.11.2026",
+  "edition": "AUSGABE #066",
+  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
+  "newCount": "27.11 · LIVE",
+  "leadTitle": "Infinity Nikki: Update 3.0 „Of Yesterday and Tomorrow“ für PS5",
+  "leadDate": "27.11.2026",
+  "leadMeta": "Erkundet in Infinity Nikki Version 3.0 zwei neue Städte, entdeckt neue Fähigkeiten und Kampfsysteme und feiert Nikkis Geburtstag.",
   "leadPrice": null,
-  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/19520f94bfd21727446bcf5bf12928d25070e65e.jpg",
-  "secondary1Title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
-  "secondary1Date": "17.11.2026",
-  "secondary1Meta": "Begleitet Duke, den Border Collie aus Hounded, und erfahrt, wie Imprnt Studios die perfekte Hundefigur erschaffen hat.",
+  "leadImage": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/c72a6b0791e1a99d02c47c3e934c2ac099ea79e6.jpg",
+  "secondary1Title": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
+  "secondary1Date": "25.11.2026",
+  "secondary1Meta": "Entdeckt die PlayStation Plus-Spiele für November: Tony Hawk’s Pro Skater 3+4, Dragon Ball Xenoverse 2 und Amnesia: The Bunker.",
   "secondary1Price": null,
-  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/adb5c2c64b172c47840d21215960cdceb7c689d9.jpg",
-  "secondary2Title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
-  "secondary2Date": "24.11.2026",
-  "secondary2Meta": "Nach langem Warten war es endlich so weit: Spieler konnten sich in Grand Theft Auto VI stürzen.",
+  "secondary1Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/19520f94bfd21727446bcf5bf12928d25070e65e.jpg",
+  "secondary2Title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
+  "secondary2Date": "17.11.2026",
+  "secondary2Meta": "Begleitet Duke, den Border Collie aus Hounded, und erfahrt, wie Imprnt Studios die perfekte Hundefigur erschaffen hat.",
   "secondary2Price": null,
-  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/c5cf1b37175a6c6da3f6b506bd864bea7845c49d.jpg",
+  "secondary2Image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/adb5c2c64b172c47840d21215960cdceb7c689d9.jpg",
   "psplusLabel": "NOVEMBER 2026",
   "psplusTitle": "November-Spiele sind live",
   "psplusText": "Verfügbar bis 30.11.",
@@ -90,8 +90,13 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 26.11.2026 · 9/9 Quellen · 1 Warnung(en)",
+  "radarCheck": "Stand 27.11.2026 · 9/9 Quellen · 1 Warnung(en)",
   "sourceAlerts": [
+    {
+      "title": "Infinity Nikki: Update 3.0 „Of Yesterday and Tomorrow“ für PS5",
+      "url": "https://blog.de.playstation.com/2026/11/27/infinity-nikki-update-3-0-of-yesterday-and-tomorrow-fuer-ps5/",
+      "type": "editorial"
+    },
     {
       "title": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
       "url": "https://blog.de.playstation.com/2026/11/25/playstation-plus-monatliche-spiele-fuer-dezember-2026/",
@@ -101,17 +106,19 @@
       "title": "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5",
       "url": "https://blog.de.playstation.com/2026/11/17/hounded-angekuendigt-das-hunde-abenteuer-kommt-2027-auf-ps5/",
       "type": "editorial"
-    },
-    {
-      "title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
-      "url": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
-      "type": "editorial"
     }
   ],
-  "editorial": [],
+  "editorial": [
+    {
+      "title": "Infinity Nikki: Update 3.0 „Of Yesterday and Tomorrow“ für PS5",
+      "url": "https://blog.de.playstation.com/2026/11/27/infinity-nikki-update-3-0-of-yesterday-and-tomorrow-fuer-ps5/",
+      "category": "news",
+      "score": 68
+    }
+  ],
   "health": {
     "status": "warning",
-    "checkedAt": "2026-11-26T17:45:43.022Z",
+    "checkedAt": "2026-11-27T17:30:38.975Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -125,10 +132,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "stale",
-    "lastSuccessfulCheck": "2026-11-26T17:45:06.387Z"
+    "lastSuccessfulCheck": "2026-11-27T17:29:48.813Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-11-26T17:45:43.022Z",
+    "checkedAt": "2026-11-27T17:30:38.975Z",
     "errors": [
       "PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden"
     ],
@@ -172,9 +179,9 @@
     ]
   },
   "gameDetails": {
+    "Infinity Nikki: Update 3.0 „Of Yesterday and Tomorrow“ für PS5": {},
     "PlayStation Plus: Monatliche Spiele für Dezember 2026": {},
     "Hounded angekündigt: Das Hunde-Abenteuer kommt 2027 auf PS5": {},
-    "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt": {},
     "Dead Island 2": {
       "psPlusStatus": "NOVEMBER 2026 · Verfügbar bis 30.11.",
       "storeUrl": "https://store.playstation.com/product/EP4062-PPSA09377_00-DI2MAINUSKPS5000",
@@ -260,7 +267,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-11-26T17:45:30.206Z",
+    "checkedAt": "2026-11-27T17:30:22.874Z",
     "titles": 10,
     "fetched": 4,
     "enriched": 7,
@@ -317,7 +324,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-11-26T17:45:19.334Z",
+    "checkedAt": "2026-11-27T17:30:09.520Z",
     "month": "November",
     "year": 2026,
     "notes": [],
@@ -331,7 +338,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-11-26T17:45:19.422Z",
+    "checkedAt": "2026-11-27T17:30:09.611Z",
     "collection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -344,7 +351,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-11-26T17:45:33.467Z",
+    "checkedAt": "2026-11-27T17:30:27.497Z",
     "verified": 2,
     "missing": [
       "Tomb Raider IV – VI Remastered"
@@ -355,10 +362,16 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-11-26T17:45:16.556Z",
-    "date": "26.11.2026",
+    "checkedAt": "2026-11-27T17:30:00.334Z",
+    "date": "27.11.2026",
     "maxAgeDays": 21,
     "selected": [
+      {
+        "title": "Infinity Nikki: Update 3.0 „Of Yesterday and Tomorrow“ für PS5",
+        "date": "27.11.2026",
+        "url": "https://blog.de.playstation.com/2026/11/27/infinity-nikki-update-3-0-of-yesterday-and-tomorrow-fuer-ps5/",
+        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/c72a6b0791e1a99d02c47c3e934c2ac099ea79e6.jpg"
+      },
       {
         "title": "PlayStation Plus: Monatliche Spiele für Dezember 2026",
         "date": "25.11.2026",
@@ -370,20 +383,14 @@
         "date": "17.11.2026",
         "url": "https://blog.de.playstation.com/2026/11/17/hounded-angekuendigt-das-hunde-abenteuer-kommt-2027-auf-ps5/",
         "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/adb5c2c64b172c47840d21215960cdceb7c689d9.jpg"
-      },
-      {
-        "title": "Danke, dass ihr Grand Theft Auto VI zum größten Launch in der Geschichte von PlayStation gemacht habt",
-        "date": "24.11.2026",
-        "url": "https://blog.de.playstation.com/2026/11/24/danke-dass-ihr-grand-theft-auto-vi-zum-groessten-launch-in-der-geschichte-von-playstation-gemacht-habt/",
-        "image": "https://blog.de.playstation.com/tachyon/sites/13/2026/11/c5cf1b37175a6c6da3f6b506bd864bea7845c49d.jpg"
       }
     ]
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-11-26T17:45:34.071Z",
-    "berlinDate": "2026-11-26",
-    "newPostsToday": 0,
+    "checkedAt": "2026-11-27T17:30:28.272Z",
+    "berlinDate": "2026-11-27",
+    "newPostsToday": 1,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
