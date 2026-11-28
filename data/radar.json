@@ -1,8 +1,8 @@
 {
-  "date": "27.11.2026",
-  "edition": "AUSGABE #066",
-  "newHeadline": "1 NEUE PLAYSTATION-MELDUNG",
-  "newCount": "27.11 · LIVE",
+  "date": "28.11.2026",
+  "edition": "AUSGABE #067",
+  "newHeadline": "RADAR-CHECK AKTUELL",
+  "newCount": "28.11 · LIVE",
   "leadTitle": "Infinity Nikki: Update 3.0 „Of Yesterday and Tomorrow“ für PS5",
   "leadDate": "27.11.2026",
   "leadMeta": "Erkundet in Infinity Nikki Version 3.0 zwei neue Städte, entdeckt neue Fähigkeiten und Kampfsysteme und feiert Nikkis Geburtstag.",
@@ -90,7 +90,7 @@
     "PS Plus Extra",
     "PS Plus Premium"
   ],
-  "radarCheck": "Stand 27.11.2026 · 9/9 Quellen · 1 Warnung(en)",
+  "radarCheck": "Stand 28.11.2026 · 9/9 Quellen · 1 Warnung(en)",
   "sourceAlerts": [
     {
       "title": "Infinity Nikki: Update 3.0 „Of Yesterday and Tomorrow“ für PS5",
@@ -108,17 +108,10 @@
       "type": "editorial"
     }
   ],
-  "editorial": [
-    {
-      "title": "Infinity Nikki: Update 3.0 „Of Yesterday and Tomorrow“ für PS5",
-      "url": "https://blog.de.playstation.com/2026/11/27/infinity-nikki-update-3-0-of-yesterday-and-tomorrow-fuer-ps5/",
-      "category": "news",
-      "score": 68
-    }
-  ],
+  "editorial": [],
   "health": {
     "status": "warning",
-    "checkedAt": "2026-11-27T17:30:38.975Z",
+    "checkedAt": "2026-11-28T16:13:52.767Z",
     "okSources": 9,
     "totalSources": 9,
     "failedSources": 0,
@@ -132,10 +125,10 @@
     "editorialFreshness": "ok",
     "temporalSemantics": "ok",
     "catalogFreshness": "stale",
-    "lastSuccessfulCheck": "2026-11-27T17:29:48.813Z"
+    "lastSuccessfulCheck": "2026-11-28T16:13:14.637Z"
   },
   "sourceCheck": {
-    "checkedAt": "2026-11-27T17:30:38.975Z",
+    "checkedAt": "2026-11-28T16:13:52.767Z",
     "errors": [
       "PS+ Katalog: letzter vollständiger Quellencheck ist älter als 48 Stunden"
     ],
@@ -204,12 +197,12 @@
       "release": "04.09.2026",
       "platform": "PS5",
       "gallery": [
+        "https://image.api.playstation.com/vulcan/ap/rnd/202611/0919/8a74b63abd198a9ca07d360a6e7fb9c579c87985fb6b2e95.png",
         "https://image.api.playstation.com/vulcan/ap/rnd/202606/2913/4a31f711e2ff460cd44ad646983f36533278cea61f639be9.png",
         "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-hero-desktop-03-en-16jul26",
         "https://i.ytimg.com/vi_webp/5l-a3U3Y8aA/maxresdefault.webp",
         "https://i.ytimg.com/vi_webp/x3VbMlmerXg/maxresdefault.webp",
-        "https://i.ytimg.com/vi_webp/YUbJfNJSG-M/maxresdefault.webp",
-        "https://gmedia.playstation.com/is/image/SIEPDC/nba-2k27-screenshot-05-en-16jul26"
+        "https://i.ytimg.com/vi_webp/YUbJfNJSG-M/maxresdefault.webp"
       ],
       "trailerUrl": "https://www.youtube.com/watch?v=5l-a3U3Y8aA",
       "pageUrl": "https://www.playstation.com/de-de/games/nba-2k/",
@@ -267,7 +260,7 @@
     }
   },
   "enrichment": {
-    "checkedAt": "2026-11-27T17:30:22.874Z",
+    "checkedAt": "2026-11-28T16:13:37.380Z",
     "titles": 10,
     "fetched": 4,
     "enriched": 7,
@@ -324,7 +317,7 @@
   },
   "automationV2": {
     "version": 2,
-    "checkedAt": "2026-11-27T17:30:09.520Z",
+    "checkedAt": "2026-11-28T16:13:26.216Z",
     "month": "November",
     "year": 2026,
     "notes": [],
@@ -338,7 +331,7 @@
     }
   },
   "storeDiscovery": {
-    "checkedAt": "2026-11-27T17:30:09.611Z",
+    "checkedAt": "2026-11-28T16:13:26.299Z",
     "collection": "https://store.playstation.com/view/7bbceafe-bfa8-11ee-b375-5e45f4e139ac/c4544e4c-d2b8-11f1-b77a-beedeb078121",
     "activeCampaign": true,
     "staticLinks": 1,
@@ -351,7 +344,7 @@
     "warnings": []
   },
   "mediaValidation": {
-    "checkedAt": "2026-11-27T17:30:27.497Z",
+    "checkedAt": "2026-11-28T16:13:43.445Z",
     "verified": 2,
     "missing": [
       "Tomb Raider IV – VI Remastered"
@@ -362,8 +355,8 @@
   },
   "editorialFreshness": {
     "status": "ok",
-    "checkedAt": "2026-11-27T17:30:00.334Z",
-    "date": "27.11.2026",
+    "checkedAt": "2026-11-28T16:13:22.630Z",
+    "date": "28.11.2026",
     "maxAgeDays": 21,
     "selected": [
       {
@@ -388,9 +381,9 @@
   },
   "temporalCheck": {
     "status": "ok",
-    "checkedAt": "2026-11-27T17:30:28.272Z",
-    "berlinDate": "2026-11-27",
-    "newPostsToday": 1,
+    "checkedAt": "2026-11-28T16:13:44.067Z",
+    "berlinDate": "2026-11-28",
+    "newPostsToday": 0,
     "staleRelativeCopyFixed": 0,
     "errors": [],
     "warnings": [
